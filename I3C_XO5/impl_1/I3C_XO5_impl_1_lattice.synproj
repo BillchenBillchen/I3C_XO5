@@ -1,0 +1,79 @@
+-a "LFMXO5"
+-p LFMXO5-25
+-t BBG400
+-sp "9_High-Performance_1.0V"
+-frequency 200
+-optimization_goal Timing
+-bram_utilization 100
+-ramstyle Auto
+-romstyle auto
+-dsp_utilization 100
+-use_dsp 1
+-use_carry_chain 1
+-carry_chain_length 0
+-resource_sharing 1
+-propagate_constants 1
+-remove_duplicate_regs 1
+
+-max_fanout 1000
+-fsm_encoding_style Auto
+
+-fix_gated_clocks 1
+-loop_limit 1950
+
+
+
+
+
+
+-use_io_reg auto
+-use_dcc_insertion none
+
+
+
+
+
+
+
+
+-drc_cfg 35103300 20
+-use_io_insertion 1
+-force_gsr No
+-resolve_mixed_drivers 0
+-path  "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/risc_mc/2.8.1/testbench"
+-path "C:/Users/billzhang/Desktop/I3C_XO5/I3C_sim/I3C_target_sim/I3C_target_inst"
+-path "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/gpio0/1.8.0"
+-path "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/i3c_m/3.7.0"
+-path "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/i3c_s/3.7.0"
+-path "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/risc_mc/2.8.1"
+-path "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/sys_mem/2.5.1"
+-path "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/uart0/1.5.0"
+-path "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/ahb2apb/1.2.0"
+-path "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/ahbl/1.5.0"
+-path "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/apb0/1.4.0"
+-path "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/osc0/1.4.0"
+-path "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/pll0/1.9.1"
+-path "C:/lscc/radiant/2025.2/ispfpga/jd5f00/data" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1/reveal_workspace/I3C_XO5" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/i3c_m/3.7.0" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/i3c_s/3.7.0" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/ahb2apb/1.2.0" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/pll0/1.9.1" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/apb0/1.4.0" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/uart0/1.5.0" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/osc0/1.4.0" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/gpio0/1.8.0" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/ahbl/1.5.0" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/risc_mc/2.8.1" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/sys_mem/2.5.1" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_sim/I3C_target_sim/I3C_target_inst"
+-ver "C:/lscc/radiant/2025.2/ip/pmi/pmi_lfmxo5.v"
+-lib pmi -vhd "C:/lscc/radiant/2025.2/ip/pmi/pmi_lfmxo5.vhd"
+-ver "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/i3c_m/3.7.0/rtl/i3c_m.v"
+"C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/i3c_s/3.7.0/rtl/i3c_s.v"
+-sver "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/ahb2apb/1.2.0/rtl/ahb2apb.sv"
+-ver "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/pll0/1.9.1/rtl/pll0.v"
+"C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/apb0/1.4.0/rtl/apb0.v"
+"C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.v"
+"C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/uart0/1.5.0/rtl/uart0.v"
+"C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/osc0/1.4.0/rtl/osc0.v"
+"C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/gpio0/1.8.0/rtl/gpio0.v"
+"C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/ahbl/1.5.0/rtl/ahbl.v"
+-sver "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/risc_mc/2.8.1/rtl/risc_mc.sv"
+-ver "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/sys_mem/2.5.1/rtl/sys_mem.v"
+"C:/Users/billzhang/Desktop/I3C_XO5/I3C_sim/I3C_target_sim/I3C_target_inst/rtl/I3C_target_inst.v"
+
+
+-path "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5"
+"C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5"
+-top I3C_XO5
+-udb "I3C_XO5_impl_1_rtl.udb"
+-output_hdl "I3C_XO5_impl_1.vm"
+

@@ -1,0 +1,7 @@
+#Start recording tcl command: 2/25/2026 16:15:29
+#Project Location: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5; Project name: I3C_XO5
+prj_open "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5.rdf"
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1 -forceAll
+prj_run Export -impl impl_1
+#Stop recording: 2/25/2026 17:42:31

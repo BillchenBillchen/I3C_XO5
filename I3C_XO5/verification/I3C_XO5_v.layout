@@ -1,0 +1,13 @@
+{
+    "SchColors": {
+        "Dark": {
+        }
+    },
+    "SchGroupInfo": {
+        "sch_group_list": {
+        }
+    },
+    "SchLayout": "# # String gsaved with Nlview 7.6.3 2022-11-21 7196 VDI=42 GEI=38 GUI=QT:6.5.6\n#  -string -flagsOSRD\npreplace inst dut_inst -pg 1 -lvl 1 -x 50 -y 60 -defaultsOSRD\npreplace inst dut_inst.ahb2apb_inst -pg 1 -defaultsOSRD\npreplace inst dut_inst.ahbl_inst -pg 1 -defaultsOSRD\npreplace inst dut_inst.apb0_inst -pg 1 -defaultsOSRD\npreplace inst dut_inst.equation_module_inst -pg 1 -defaultsOSRD\npreplace inst dut_inst.gpio0_inst -pg 1 -defaultsOSRD\npreplace inst dut_inst.i3c_m_inst -pg 1 -defaultsOSRD\npreplace inst dut_inst.i3c_s_inst -pg 1 -defaultsOSRD\npreplace inst dut_inst.osc0_inst -pg 1 -defaultsOSRD\npreplace inst dut_inst.pll0_inst -pg 1 -defaultsOSRD\npreplace inst dut_inst.risc_mc_inst -pg 1 -defaultsOSRD\npreplace inst dut_inst.sys_mem_inst -pg 1 -defaultsOSRD\npreplace inst dut_inst.uart0_inst -pg 1 -defaultsOSRD\nlevelinfo -pg 1 -30 50 130\npagesize -pg 1 -db -bbox -sgen -30 -60 130 160\n",
+    "comments": {
+    }
+}

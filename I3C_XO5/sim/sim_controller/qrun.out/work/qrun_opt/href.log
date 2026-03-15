@@ -1,0 +1,61 @@
+BEGIN 1:i3c_device_inst:fast:work
+    apb_penable_i :  1:tb_top:fast:work
+    tx_valid_i :  1:tb_top:fast:work
+    sc0_apb_psel_i :  1:tb_top:fast:work
+    tgt1_int_o :  1:tb_top:fast:work
+    tgt0_apb_pwrite_i :  1:tb_top:fast:work
+    apb_prdata_o :  1:tb_top:fast:work
+    tgt1_apb_pwdata_i :  1:tb_top:fast:work
+    apb_psel_i :  1:tb_top:fast:work
+    tgt0_int_o :  1:tb_top:fast:work
+    sc0_apb_pwrite_i :  1:tb_top:fast:work
+    tx_ready_o :  1:tb_top:fast:work
+    tgt0_apb_pwdata_i :  1:tb_top:fast:work
+    sc0_int_o :  1:tb_top:fast:work
+    apb_pwrite_i :  1:tb_top:fast:work
+    tx_data_i :  1:tb_top:fast:work
+    tgt1_apb_paddr_i :  1:tb_top:fast:work
+    sc0_apb_pwdata_i :  1:tb_top:fast:work
+    rx_valid_o :  1:tb_top:fast:work
+    int_o :  1:tb_top:fast:work
+    tgt1_apb_pready_o :  1:tb_top:fast:work
+    tgt0_apb_paddr_i :  1:tb_top:fast:work
+    apb_pwdata_i :  1:tb_top:fast:work
+    tgt0_apb_pready_o :  1:tb_top:fast:work
+    sc0_apb_paddr_i :  1:tb_top:fast:work
+    tgt1_apb_pslverr_o :  1:tb_top:fast:work
+    rx_ready_i :  1:tb_top:fast:work
+    tgt1_apb_penable_i :  1:tb_top:fast:work
+    sc0_apb_pready_o :  1:tb_top:fast:work
+    apb_paddr_i :  1:tb_top:fast:work
+    rx_data_o :  1:tb_top:fast:work
+    tgt0_apb_pslverr_o :  1:tb_top:fast:work
+    tgt1_apb_prdata_o :  1:tb_top:fast:work
+    tgt0_apb_penable_i :  1:tb_top:fast:work
+    apb_pready_o :  1:tb_top:fast:work
+    tgt1_apb_psel_i :  1:tb_top:fast:work
+    sc0_apb_pslverr_o :  1:tb_top:fast:work
+    tgt0_apb_prdata_o :  1:tb_top:fast:work
+    sc0_apb_penable_i :  1:tb_top:fast:work
+    tgt0_apb_psel_i :  1:tb_top:fast:work
+    apb_pslverr_o :  1:tb_top:fast:work
+    tgt1_apb_pwrite_i :  1:tb_top:fast:work
+    sc0_apb_prdata_o :  1:tb_top:fast:work
+END 
+BEGIN 1:tb_c_i3c_p2s_sys:fast:work
+    i3c_sm_cs :  1:tb_c_i3c_mst:fast:work
+END 
+BEGIN 1:GSR:fast:ovi_lfmxo5
+    GSROUT :  1:EBR_CORE:fast:ovi_lfmxo5 1:EBR_CORE:fast__1:ovi_lfmxo5 1:EBR_CORE:fast__2:ovi_lfmxo5
+END 
+BEGIN 1:tb_c_i3c_mst:fast:work
+    gen_sim.debug_bus :  1:tb_c_lscc_i3c_controller:fast:work
+END 
+BEGIN 1:ebr_tdp:fast:ovi_lfmxo5
+    mem :  1:EBR_CORE:fast:ovi_lfmxo5 1:EBR_CORE:fast__1:ovi_lfmxo5 1:EBR_CORE:fast__2:ovi_lfmxo5
+    ecc_array :  1:EBR_CORE:fast:ovi_lfmxo5 1:EBR_CORE:fast__1:ovi_lfmxo5 1:EBR_CORE:fast__2:ovi_lfmxo5
+    parity_array :  1:EBR_CORE:fast:ovi_lfmxo5 1:EBR_CORE:fast__1:ovi_lfmxo5 1:EBR_CORE:fast__2:ovi_lfmxo5
+END 
+BEGIN 1:tb_c_packet_decode:fast:work
+    debug_bus :  1:tb_c_i3c_mst:fast:work
+END 

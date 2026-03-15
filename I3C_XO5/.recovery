@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RadiantProject version="4.2" radiant="2025.2.0.48.0" title="I3C_XO5" device="LFMXO5-25-9BBG400C" performance_grade="9_High-Performance_1.0V" family_int="jd5f00" device_int="jd5f25" package_int="BBG400" operation_int="COM" speed_int="12" default_implementation="impl_1">
+    <Options/>
+    <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="I3C_target_inst">
+            <Option name="include path" value="."/>
+            <Option name="top" value="I3C_XO5"/>
+        </Options>
+        <Source name="I3C_XO5/lib/latticesemi.com/ip/i3c_m/3.7.0/i3c_m.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="I3C_XO5/lib/latticesemi.com/ip/i3c_s/3.7.0/i3c_s.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="I3C_XO5/lib/latticesemi.com/module/ahb2apb/1.2.0/ahb2apb.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="I3C_XO5/lib/latticesemi.com/module/pll0/1.9.1/pll0.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="I3C_XO5/lib/latticesemi.com/module/apb0/1.4.0/apb0.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="I3C_XO5/I3C_XO5.v" type="Verilog" type_short="Verilog">
+            <Options top_module="I3C_XO5"/>
+        </Source>
+        <Source name="I3C_XO5/lib/latticesemi.com/ip/uart0/1.5.0/uart0.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="I3C_XO5/lib/latticesemi.com/module/osc0/1.4.0/osc0.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="I3C_XO5/lib/latticesemi.com/ip/gpio0/1.8.0/gpio0.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="I3C_XO5/lib/latticesemi.com/module/ahbl/1.5.0/ahbl.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="I3C_XO5/lib/latticesemi.com/ip/risc_mc/2.8.1/risc_mc.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="I3C_XO5/lib/latticesemi.com/ip/sys_mem/2.5.1/sys_mem.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="../I3C_sim/I3C_target_sim/I3C_target_inst/I3C_target_inst.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="sim/i3c_controller/i3c_controller.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim/sim_controller/sim_controller.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="sim/sim_controller/sim_controller/sim_controller.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/I3C_XO5.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/I3C_XO5.rvl" type="Reveal" type_short="Reveal">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1/untitled.rva" type="Reveal Analyzer Project File" type_short="RVA">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="I3C_XO51.sty"/>
+</RadiantProject>

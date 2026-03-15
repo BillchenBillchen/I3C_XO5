@@ -1,0 +1,27 @@
+#Start recording tcl command: 2/4/2026 10:19:12
+sbp_design open -name I3C_XO5 -path {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx}
+sbp_design generate -force
+sbp_design save
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design pge dge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -radiant
+sbp_config_ip -vlnv {latticesemi.com:module:osc0:1.4.0} -meta_vlnv {latticesemi.com:module:osc:1.4.0} -cfg_value {HF_CLK_FREQ:45}
+sbp_replace -vlnv {latticesemi.com:module:osc0:1.4.0} -name {osc0_inst} -component {I3C_XO5/osc0_inst}
+sbp_config_ip -vlnv {latticesemi.com:module:pll0:1.9.1} -meta_vlnv {latticesemi.com:module:pll:1.9.1} -cfg_value {gui_clk_op_freq:45,gui_clk_os_en:true,gui_clk_os_freq:12.5,gui_refclk_freq:45}
+sbp_replace -vlnv {latticesemi.com:module:pll0:1.9.1} -name {pll0_inst} -component {I3C_XO5/pll0_inst}
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design generate
+sbp_design save
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design generate
+sbp_design save
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design close
+#Stop recording: 2/6/2026 08:57:47

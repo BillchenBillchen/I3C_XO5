@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<propelProject>
+    <builder-resource>
+        <socProject sbxfile="./I3C_XO5/I3C_XO5.sbx" />
+        <verifyProject sbxfile="./verification/I3C_XO5_v.sbx" />
+    </builder-resource>
+    <builderInfo version="2025.2.0.2512111315" />
+</propelProject>

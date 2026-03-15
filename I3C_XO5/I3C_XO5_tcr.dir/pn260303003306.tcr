@@ -1,0 +1,57 @@
+#Start recording tcl command: 2/25/2026 17:43:51
+#Project Location: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5; Project name: I3C_XO5
+prj_open "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5.rdf"
+prj_remove_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.pdc"
+prj_remove_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5.pdc"
+prj_add_source -exclude "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.pdc"
+prj_enable_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.pdc"
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_set_device -part LFMXO5-25-7BBG400C -performance "7_High-Performance_1.0V"
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_set_device -part LFMXO5-25-9BBG400C -performance "9_High-Performance_1.0V"
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1 -forceAll
+prj_run Map -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_add_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_sim/I3C_target_sim/I3C_target_inst/I3C_target_inst.ipx"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 3/3/2026 00:33:06

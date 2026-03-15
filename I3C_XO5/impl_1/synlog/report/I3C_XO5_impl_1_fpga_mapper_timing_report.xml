@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\synlog\I3C_XO5_impl_1_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>I3C_XO5|reveal_jtck_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>181.6 MHz</data>
+<data>-0.506</data>
+</row>
+<row>
+<data>i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i</data>
+<data>200.0 MHz</data>
+<data>87.3 MHz</data>
+<data>-3.258</data>
+</row>
+<row>
+<data>i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i</data>
+<data>200.0 MHz</data>
+<data>369.8 MHz</data>
+<data>1.148</data>
+</row>
+<row>
+<data>pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>118.6 MHz</data>
+<data>-3.433</data>
+</row>
+<row>
+<data>pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>127.3 MHz</data>
+<data>-1.702</data>
+</row>
+<row>
+<data>risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bbICH_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>192.8 MHz</data>
+<data>-0.093</data>
+</row>
+<row>
+<data>risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bqAaKcoy7LeAHb1_inferred_clock</data>
+<data>200.0 MHz</data>
+<data>292.1 MHz</data>
+<data>0.788</data>
+</row>
+<row>
+<data>System</data>
+<data>200.0 MHz</data>
+<data>186.4 MHz</data>
+<data>-0.366</data>
+</row>
+</report_table>

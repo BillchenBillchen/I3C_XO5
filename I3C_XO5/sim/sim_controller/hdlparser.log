@@ -1,0 +1,47 @@
+-- Analyzing Verilog file 'C:/lscc/radiant/2025.2/cae_library/synthesis/verilog/lfmxo5.v' (VERI-1482)
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v(33): ERROR: cannot open include file 'dut_params.v' (SORT-1015)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/i3c_device_inst.v(39): ERROR: cannot open include file 'dut_params.v' (SORT-1015)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/i3c_device_inst.v(114): ERROR: cannot open include file 'dut_inst.v' (SORT-1015)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+-- Analyzing Verilog file 'C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/dut_params.sv' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v' (VERI-1482)
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v(33): ERROR: cannot open include file 'dut_params.v' (VERI-1245)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v(3878): ERROR: module 'tb_top' is ignored due to previous errors (VERI-1072)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/i3c_device_inst.v(39): ERROR: cannot open include file 'dut_params.v' (VERI-1245)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/i3c_device_inst.v(114): ERROR: cannot open include file 'dut_inst.v' (VERI-1245)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/i3c_device_inst.v(783): ERROR: module 'i3c_device_inst' is ignored due to previous errors (VERI-1072)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v(3991): ERROR: module 'mst_bfm_lmmi' is ignored due to previous errors (VERI-1072)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v(4113): ERROR: module 'mst_bfm_apb' is ignored due to previous errors (VERI-1072)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v(4241): ERROR: module 'mst_bfm_ahbl' is ignored due to previous errors (VERI-1072)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v(4324): ERROR: module 'mst_bfm_stream' is ignored due to previous errors (VERI-1072)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+-- Verilog file 'C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v' ignored due to errors (VERI-1483)
+-- Analyzing Verilog file 'C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/rtl/i3c_m.v' (VERI-1482)
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v(33): ERROR: cannot open include file 'dut_params.v' (SORT-1015)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/i3c_device_inst.v(39): ERROR: cannot open include file 'dut_params.v' (SORT-1015)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/i3c_device_inst.v(114): ERROR: cannot open include file 'dut_inst.v' (SORT-1015)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v(33): ERROR: cannot open include file 'dut_params.v' (SORT-1015)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/i3c_device_inst.v(39): ERROR: cannot open include file 'dut_params.v' (SORT-1015)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/i3c_device_inst.v(114): ERROR: cannot open include file 'dut_inst.v' (SORT-1015)
+ERROR <1009990> - Stopping Synthesis Tool flow due to error.
+-- Analyzing Verilog file 'C:/lscc/radiant/2025.2/cae_library/synthesis/verilog/lfmxo5.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/rtl/i3c_m.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/dut_params.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v' (VERI-1482)

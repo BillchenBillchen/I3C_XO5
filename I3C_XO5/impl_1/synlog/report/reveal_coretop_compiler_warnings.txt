@@ -1,0 +1,2 @@
+@W: CG360 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_reveal_coretop.v":41:21:41:31|Removing wire trigger_out, as there is no assignment to it.
+

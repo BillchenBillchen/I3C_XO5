@@ -1,0 +1,2019 @@
+Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2025.2.0.48.0
+
+Fri Mar 13 10:13:59 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2025 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:    timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt I3C_XO5_impl_1.tws I3C_XO5_impl_1_syn.udb -gui -msgset C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/promote.xml
+
+-------------------------------------------
+Design:          I3C_XO5
+Family:          LFMXO5
+Device:          LFMXO5-25
+Package:         BBG400
+Performance:     9_High-Performance_1.0V
+Package Status:                     Final          Version 8
+-------------------------------------------
+
+
+=====================================================================
+                    Table of Contents
+=====================================================================
+    1  Timing Overview
+        1.1  SDC Constraints
+        1.2  Constraint Coverage
+        1.3  Overall Summary
+        1.4  Unconstrained Report
+        1.5  Combinational Loop
+        1.6  Error/Warning Messages
+    2  Setup at Speed Grade 9_High-Performance_1.0V Corner at 85 Degrees
+        2.1  Clock Summary
+        2.2  Endpoint slacks
+        2.3  Skew Detailed Report
+        2.4  Detailed Report
+    3  Hold at Speed Grade M Corner at 0 Degrees
+        3.1  Endpoint slacks
+        3.2  Detailed Report
+
+=====================================================================
+                    End of Table of Contents
+=====================================================================
+
+==============================================
+1  Timing Overview
+==============================================
+
+1.1  SDC Constraints
+=====================
+create_clock -name {osc0_inst_hf_clk_out_o_net} -period 20 [get_pins {osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT }] 
+create_generated_clock -name {pll0_inst_clkos_o_net} -source [get_pins {pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -divide_by 2 [get_pins {pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS }] 
+create_generated_clock -name {pll0_inst_clkop_o_net} -source [get_pins {pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -multiply_by 2 [get_pins {pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP }] 
+create_clock -name {rvltck} -period 33.33 [get_ports TCK]
+create_generated_clock -name {rvjtck} -source [get_ports TCK] [get_nets reveal_jtck]
+set_false_path -to [get_clocks rvltck]
+set_false_path -from [get_clocks rvltck]
+set_false_path -to [get_clocks rvjtck]
+set_false_path -from [get_clocks rvjtck]
+set_max_skew [get_pins {i3c_m_inst/lscc_i3c_controller_inst/gen_prim.u_i3c_scl.SEIO33_inst/I i3c_m_inst/lscc_i3c_controller_inst/gen_prim.u_i3c_scl.SEIO33_inst/T i3c_m_inst/lscc_i3c_controller_inst/gen_prim.u_i3c_sda.SEIO33_inst/I i3c_m_inst/lscc_i3c_controller_inst/gen_prim.u_i3c_sda.SEIO33_inst/T}] 2
+set_false_path -from [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/main_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_4 i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_4 i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_4 i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_4 i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/main_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rst_n_i_i}]
+set_false_path -from [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/tgt_reset i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/u_i3c_tgt_pattern_detector/is_reset_sr i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/u_i3c_tgt_pattern_detector/poss_reset_sr i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/u_i3c_tgt_pattern_detector/det_reset_sr i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/u_i3c_tgt_pattern_detector/poss_reset_sr6}]
+[IGNORED:]set_false_path -to [get_nets i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_reg_sclp]
+set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_reg_scln i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_reg_scln_3}]
+[IGNORED:]set_false_path -to [get_nets i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_sdap]
+set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_sdan i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_sdan.CN}]
+set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[2] i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[1] i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[0]}]
+set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/stop_det i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/stop_det6}]
+[IGNORED:]set_false_path -to [get_nets i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_oe_reset]
+set_max_delay -from [get_pins {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_encode_async.wr_grey_sync_r[0].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_encode_async.wr_grey_sync_r[1].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_encode_async.wr_grey_sync_r[2].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_encode_async.wr_grey_sync_r[3].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_encode_async.wr_grey_sync_r[4].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_encode_async.wr_grey_sync_r[5].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_encode_async.wr_grey_sync_r[6].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_encode_async.wr_grey_sync_r[7].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_encode_async.wr_grey_sync_r[8].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/wr_encode_async.wr_grey_sync_r[9].ff_inst/Q }] -to [get_pins {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/.wp_sync1_r[0].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/.wp_sync1_r[1].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/.wp_sync1_r[2].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/.wp_sync1_r[3].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/.wp_sync1_r[4].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/.wp_sync1_r[5].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/.wp_sync1_r[6].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/.wp_sync1_r[7].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/.wp_sync1_r[8].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/.wp_sync1_r[9].ff_inst/DF }] -datapath_only 2.5
+set_max_delay -from [get_pins {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_encode_async.rd_grey_sync_r[0].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_encode_async.rd_grey_sync_r[1].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_encode_async.rd_grey_sync_r[2].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_encode_async.rd_grey_sync_r[3].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_encode_async.rd_grey_sync_r[4].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_encode_async.rd_grey_sync_r[5].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_encode_async.rd_grey_sync_r[6].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_encode_async.rd_grey_sync_r[7].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_encode_async.rd_grey_sync_r[8].ff_inst/Q i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/rd_encode_async.rd_grey_sync_r[9].ff_inst/Q }] -to [get_pins {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/genblk2.rp_sync1_r[0].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/genblk2.rp_sync1_r[1].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/genblk2.rp_sync1_r[2].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/genblk2.rp_sync1_r[3].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/genblk2.rp_sync1_r[4].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/genblk2.rp_sync1_r[5].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/genblk2.rp_sync1_r[6].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/genblk2.rp_sync1_r[7].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/genblk2.rp_sync1_r[8].ff_inst/DF i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_async.u_fifo/u_fifo0/fifo_dc0/_FABRIC.u_fifo/genblk2.rp_sync1_r[9].ff_inst/DF }] -datapath_only 36
+
+1.2  Constraint Coverage
+---------------------------
+Constraint Coverage: 91.5334%
+
+
+1.3  Overall Summary
+---------------------------
+ Setup at Speed Grade 9_High-Performance_1.0V Corner at 85 Degrees    Timing Errors: 438 endpoints;  Total Negative Slack: 897.472 ns 
+ Hold at Speed Grade M Corner at 0 Degrees                            Timing Errors: 0 endpoints;  Total Negative Slack: 0.000 ns 
+
+1.4  Unconstrained Report
+===========================
+
+1.4.1  Unconstrained Start/End Points
+--------------------------------------
+
+Clocked but unconstrained timing start points
+-------------------------------------------------------------------
+         Listing 1 Start Points         |           Type           
+-------------------------------------------------------------------
+uart0_inst/lscc_uart_inst/u_txmitt/tx_output_reg.ff_inst/Q                           
+                                        |          No required time
+-------------------------------------------------------------------
+                                        |                          
+Number of unconstrained timing start po |                          
+ints                                    |                         1
+                                        |                          
+-------------------------------------------------------------------
+
+Clocked but unconstrained timing end points
+-------------------------------------------------------------------
+         Listing 10 End Points          |           Type           
+-------------------------------------------------------------------
+i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_timing_control.u_i3c_tgt_timing_control/timing_control_active_sync_reg[0].ff_inst/DF                           
+                                        |    No arrival or required
+i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_timing_control.u_i3c_tgt_timing_control/eot_c2_reg[0].ff_inst/DF                           
+                                        |    No arrival or required
+i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_timing_control.u_i3c_tgt_timing_control/eot_c1_reg[0].ff_inst/DF                           
+                                        |    No arrival or required
+i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_pipeline.u_rdat_pipeline/IyblE6e1x8h[0].ff_inst/DF                           
+                                        |    No arrival or required
+i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_pipeline.u_rdat_pipeline/IyblE6e1x8h[0].ff_inst/CE                           
+                                        |    No arrival or required
+i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_pipeline.u_rdat_pipeline/IyblE6e1x8h[1].ff_inst/DF                           
+                                        |    No arrival or required
+i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_pipeline.u_rdat_pipeline/IyblE6e1x8h[1].ff_inst/CE                           
+                                        |    No arrival or required
+i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_pipeline.u_rdat_pipeline/IhtnomB[0].ff_inst/DF                           
+                                        |    No arrival or required
+i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_pipeline.u_rdat_pipeline/IhtnomB[1].ff_inst/DF                           
+                                        |    No arrival or required
+i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/gen_pmi.gen_pipeline.u_rdat_pipeline/IhtnomB[2].ff_inst/DF                           
+                                        |    No arrival or required
+-------------------------------------------------------------------
+                                        |                          
+Number of unconstrained timing end poin |                          
+ts                                      |                       564
+                                        |                          
+-------------------------------------------------------------------
+
+1.4.2  Start/End Points Without Timing Constraints
+---------------------------------------------------
+
+I/O ports without constraint
+----------------------------
+Possible constraints to use on I/O ports are:
+set_input_delay,
+set_output_delay,
+set_max_delay,
+create_clock,
+create_generated_clock,
+...
+
+-------------------------------------------------------------------
+     Listing 10 Start or End Points     |           Type           
+-------------------------------------------------------------------
+rstn_I                                  |                     input
+rxd_i                                   |                     input
+TMS                                     |                     input
+TDI                                     |                     input
+led_o[8]                                |                    output
+led_o[7]                                |                    output
+led_o[6]                                |                    output
+led_o[5]                                |                    output
+led_o[4]                                |                    output
+led_o[3]                                |                    output
+-------------------------------------------------------------------
+                                        |                          
+Number of I/O ports without constraint  |                        16
+                                        |                          
+-------------------------------------------------------------------
+
+Nets without clock definition
+Define a clock on a top level port or a generated clock on a clock divider pin associated with this net(s).
+--------------------------------------------------
+There is no instance satisfying reporting criteria
+
+
+
+1.5  Combinational Loop
+========================
+None
+
+
+1.6  Error/Warning Messages
+============================
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_4_cZ/Z in the option "-from" of constraint set_false_path -from [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/main_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n i3c_s_inst/lscc_i3c   ....   i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_4 i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/main_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rst_n_i_i}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_RNO/Z in the option "-from" of constraint set_false_path -from [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/main_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n i3c_s_inst/lscc_i3c   ....   i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_4 i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/main_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rst_n_i_i}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_4_cZ/Z in the option "-from" of constraint set_false_path -from [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/main_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n i3c_s_inst/lscc_i3c   ....   i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_4 i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/main_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rst_n_i_i}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_4_cZ/Z in the option "-from" of constraint set_false_path -from [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/main_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n i3c_s_inst/lscc_i3c   ....   i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_4 i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/main_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rst_n_i_i}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/main_rst_n_RNIAK3E1/Z in the option "-from" of constraint set_false_path -from [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/main_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n i3c_s_inst/lscc_i3c   ....   i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_4 i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/main_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rst_n_i_i}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rst_n_i_RNIEAOI1/Z in the option "-from" of constraint set_false_path -from [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/main_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n i3c_s_inst/lscc_i3c   ....   i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_4 i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/main_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rst_n_i_i}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/u_i3c_tgt_pattern_detector/poss_reset_sr6_cZ/Z in the option "-from" of constraint set_false_path -from [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/tgt_reset i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/u_i3c_tgt_pattern_detector/is_reset_sr i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/u_i3c_tgt_pattern_detector/poss_reset_sr i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/u_i3c_tgt_pattern_detector/det_reset_sr i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/u_i3c_tgt_pattern_detector/poss_reset_sr6}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/repeated_start_cZ/D in the option "-to" of constraint set_false_path -to [get_nets i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_reg_sclp] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_reg_scln_3_cZ/B in the option "-to" of constraint set_false_path -to [get_nets i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_reg_sclp] is not valid.
+WARNING "70001908" - set_false_path -to [get_nets i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_reg_sclp] is being ignored due to errors
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/repeated_start_cZ/C in the option "-to" of constraint set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_reg_scln i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_reg_scln_3}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/start_reg_1_sqmuxa_i_cZ/B in the option "-to" of constraint set_false_path -to [get_nets i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_sdap] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/repeated_start_cZ/B in the option "-to" of constraint set_false_path -to [get_nets i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_sdap] is not valid.
+WARNING "70001908" - set_false_path -to [get_nets i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_sdap] is being ignored due to errors
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_oe_reset_RNO_0/C in the option "-to" of constraint set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_sdan i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_sdan.CN}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/repeated_start_cZ/A in the option "-to" of constraint set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_sdan i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_sdan.CN}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/start_reg_4_cZ/B in the option "-to" of constraint set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_sdan i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_sdan.CN}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_ibi_oe_RNO/A in the option "-to" of constraint set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[2] i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[1] i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[0]}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_ibi_o10_cZ/D in the option "-to" of constraint set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[2] i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[1] i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[0]}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_ibi_oe_RNO/B in the option "-to" of constraint set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[2] i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[1] i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[0]}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_ibi_o10_cZ/C in the option "-to" of constraint set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[2] i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[1] i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[0]}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/stop_reg8_cZ/A in the option "-to" of constraint set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[2] i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[1] i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/scl_reg_clkp[0]}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/counter_start_w_RNO/A in the option "-to" of constraint set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/stop_det i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/stop_det6}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/stop_det_RNO/A in the option "-to" of constraint set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/stop_det i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/stop_det6}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_oe_reset_RNO/B in the option "-to" of constraint set_false_path -to [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/stop_det i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/stop_det6}] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_oe_reset_RNO/A in the option "-to" of constraint set_false_path -to [get_nets i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_oe_reset] is not valid.
+WARNING "70001949" - The object i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_oe_reset_RNIRFAJ7/B in the option "-to" of constraint set_false_path -to [get_nets i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_oe_reset] is not valid.
+WARNING "70001908" - set_false_path -to [get_nets i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/sda_oe_reset] is being ignored due to errors
+
+===============================================================
+2  Setup at Speed Grade 9_High-Performance_1.0V Corner at 85 Degrees
+===============================================================
+
+2.1  Clock Summary
+=======================
+
+2.1.1 Clock "pll0_inst_clkop_o_net"
+=======================
+create_generated_clock -name {pll0_inst_clkop_o_net} -source [get_pins {pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -multiply_by 2 [get_pins {pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP }] 
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+      Clock pll0_inst_clkop_o_net       |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From pll0_inst_clkop_o_net             |             Target |          10.000 ns |        100.000 MHz 
+                                        | Actual (all paths) |          17.855 ns |         56.007 MHz 
+risc_mc_inst/riscvsmall_inst/IFlxF6gdLixced0w9ycGt5IJbK820JIJ6alK4jqptqfG322A1dF57t/Id0FJ1vtz70kBfffKEKB2msjHBq2e0ynj9tvGK0vD4vp6DDw1jae3.PREADD9_L0/CLK (MPW)                                                                
+                                        |   (50% duty cycle) |           2.850 ns |        350.877 MHz 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+      Clock pll0_inst_clkop_o_net       |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From pll0_inst_clkos_o_net             |                    10.000 ns |             slack = 5.408 ns 
+ From osc0_inst_hf_clk_out_o_net        |                         ---- |                      No path 
+ From rvltck                            |                         ---- |                   False path 
+ From rvjtck                            |                         ---- |                   False path 
+------------------------------------------------------------------------------------------------------
+
+2.1.2 Clock "pll0_inst_clkos_o_net"
+=======================
+create_generated_clock -name {pll0_inst_clkos_o_net} -source [get_pins {pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK}] -divide_by 2 [get_pins {pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS }] 
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+      Clock pll0_inst_clkos_o_net       |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From pll0_inst_clkos_o_net             |             Target |          40.000 ns |         25.000 MHz 
+                                        | Actual (all paths) |          10.058 ns |         99.423 MHz 
+apb0_inst/Ibedge2zg99z6u5p28hcvaidibrIgILLGis9DxA/apb_bus.u_lscc_apb_bus/u_lscc_apb_multiplexor/apb_psel_def_r_reg.ff_inst/CLK (MPW)                                                                
+                                        |   (50% duty cycle) |           1.000 ns |       1000.000 MHz 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+      Clock pll0_inst_clkos_o_net       |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From pll0_inst_clkop_o_net             |                    10.000 ns |            slack = -4.381 ns 
+ From osc0_inst_hf_clk_out_o_net        |                         ---- |                      No path 
+ From rvltck                            |                         ---- |                   False path 
+ From rvjtck                            |                         ---- |                   False path 
+------------------------------------------------------------------------------------------------------
+
+2.1.3 Clock "osc0_inst_hf_clk_out_o_net"
+=======================
+create_clock -name {osc0_inst_hf_clk_out_o_net} -period 20 [get_pins {osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT }] 
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+    Clock osc0_inst_hf_clk_out_o_net    |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From osc0_inst_hf_clk_out_o_net        |             Target |          20.000 ns |         50.000 MHz 
+                                        | Actual (all paths) |           4.444 ns |        225.023 MHz 
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT (MPW)                                                                
+                                        |   (50% duty cycle) |           4.444 ns |        225.023 MHz 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+    Clock osc0_inst_hf_clk_out_o_net    |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From pll0_inst_clkop_o_net             |                         ---- |                      No path 
+ From pll0_inst_clkos_o_net             |                         ---- |                      No path 
+ From rvltck                            |                         ---- |                   False path 
+ From rvjtck                            |                         ---- |                   False path 
+------------------------------------------------------------------------------------------------------
+
+2.1.4 Clock "rvltck"
+=======================
+create_clock -name {rvltck} -period 33.33 [get_ports TCK]
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+              Clock rvltck              |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From rvltck                            |             Target |          33.330 ns |         30.003 MHz 
+                                        | Actual (all paths) |           5.000 ns |        200.000 MHz 
+reveal_jtaghub_inst/IB_inst2.bb_inst/B (MPW)                                                                
+                                        |   (50% duty cycle) |           5.000 ns |        200.000 MHz 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+              Clock rvltck              |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From pll0_inst_clkop_o_net             |                         ---- |                   False path 
+ From pll0_inst_clkos_o_net             |                         ---- |                   False path 
+ From osc0_inst_hf_clk_out_o_net        |                         ---- |                   False path 
+ From rvjtck                            |                         ---- |                   False path 
+------------------------------------------------------------------------------------------------------
+
+2.1.5 Clock "rvjtck"
+=======================
+create_generated_clock -name {rvjtck} -source [get_ports TCK] [get_nets reveal_jtck]
+
+Single Clock Domain
+-------------------------------------------------------------------------------------------------------
+              Clock rvjtck              |                    |       Period       |     Frequency      
+-------------------------------------------------------------------------------------------------------
+ From rvjtck                            |             Target |          33.330 ns |         30.003 MHz 
+                                        | Actual (all paths) |           1.000 ns |       1000.000 MHz 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IxGmp4v571xtocbczv1mJ/IbxJ0HzEv3gn54Dx[14].ff_inst/CLK (MPW)                                                                
+                                        |   (50% duty cycle) |           1.000 ns |       1000.000 MHz 
+-------------------------------------------------------------------------------------------------------
+
+Clock Domain Crossing
+------------------------------------------------------------------------------------------------------
+              Clock rvjtck              |   Worst Time Between Edges   |           Comment            
+------------------------------------------------------------------------------------------------------
+ From pll0_inst_clkop_o_net             |                         ---- |                   False path 
+ From pll0_inst_clkos_o_net             |                         ---- |                   False path 
+ From osc0_inst_hf_clk_out_o_net        |                         ---- |                   False path 
+ From rvltck                            |                         ---- |                   False path 
+------------------------------------------------------------------------------------------------------
+
+2.2  Endpoint slacks
+=======================
+-------------------------------------------------------
+          Listing 10 End Points          |    Slack    
+-------------------------------------------------------
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF              
+                                         |   -7.855 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF              
+                                         |   -7.855 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF              
+                                         |   -7.855 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF              
+                                         |   -7.855 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF              
+                                         |   -7.855 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF              
+                                         |   -7.855 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF              
+                                         |   -7.855 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF              
+                                         |   -7.855 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF              
+                                         |   -7.855 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF              
+                                         |   -7.855 ns 
+-------------------------------------------------------
+                                         |             
+Setup # of endpoints with negative slack:|         438 
+                                         |             
+-------------------------------------------------------
+
+2.3  Skew Detailed Report
+===========================
+
+
+Constraint          : set_max_skew [get_pins {i3c_m_inst/lscc_i3c_controller_inst/gen_prim.u_i3c_scl.SEIO33_inst/I i3c_m_inst/lscc_i3c_controller_inst/gen_prim.u_i3c_scl.SEIO33_inst/T i3c_m_inst/lscc_i3c_controller_inst/gen_prim.u_i3c_sda.SEIO33_inst/I i3c_m_inst/lscc_i3c_controller_inst/gen_prim.u_i3c_sda.SEIO33_inst/T}] 2
+Max Delay Load pin  : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/Iiywe27GJcnrher8e[16].ff_inst/DF 
+Max Delay           :                                                        0.435
+Min Delay Load pin  : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/Iiywe27GJcnrher8e[16].ff_inst/DF
+Min Delay           :                                                        0.435
+Max skew            :                                                        2.000
+Actual skew         :                                                        0.000
+Skew Slack          :                                                        2.000
+
+
+2.4  Detailed Report
+=======================
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Detail report of critical paths
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    Detailed Report for timing paths 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 8
+Delay Ratio      : 90.0% (route), 10.0% (logic)
+Clock Skew       : 0.000 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -7.855 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK
+                                                          CLOCK PIN          0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q
+                                          SLICEREG        REG_DEL            0.304                 13.789  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_out[3]
+                                                          NET DELAY         13.050                 26.839  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/RAD3->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/DO0
+                                          DPRAM           CTOF_DEL           0.213                 27.052  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/secured_instance_23_79/secured_signal_22_217
+                                                          NET DELAY          0.435                 27.487  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/B->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 27.700  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/secured_instance_23_79/secured_signal_22_27
+                                                          NET DELAY          0.435                 28.135  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.348  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/secured_instance_23_79/secured_signal_22_31
+                                                          NET DELAY          0.435                 28.783  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.996  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/secured_instance_23_79/secured_signal_22_39
+                                                          NET DELAY          0.435                 29.431  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 29.644  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/secured_instance_23_79/secured_signal_22_55
+                                                          NET DELAY          0.435                 30.079  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.292  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/secured_instance_23_79/secured_signal_22_87
+                                                          NET DELAY          0.435                 30.727  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.940  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/secured_instance_23_79/secured_signal_22_151
+                                                          NET DELAY          0.435                 31.375  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF
+                                                          ENDPOINT           0.000                 31.375  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+                                                          CONSTRAINT         0.000                 10.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                 10.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 23.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/CLK
+                                                          CLOCK PIN          0.000                 23.485  1       
+                                                          Uncertainty     -(0.000)                 23.485  
+                                                          Setup time     -(-0.035)                 23.520  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                      23.520  
+Arrival Time                                                                                    -(31.375)  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                               -7.855  
+
+
+
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 8
+Delay Ratio      : 90.0% (route), 10.0% (logic)
+Clock Skew       : 0.000 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -7.855 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK
+                                                          CLOCK PIN          0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q
+                                          SLICEREG        REG_DEL            0.304                 13.789  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_out[3]
+                                                          NET DELAY         13.050                 26.839  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/RAD3->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/DO0
+                                          DPRAM           CTOF_DEL           0.213                 27.052  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/secured_instance_21_77/secured_signal_20_217
+                                                          NET DELAY          0.435                 27.487  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/B->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 27.700  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/secured_instance_21_77/secured_signal_20_27
+                                                          NET DELAY          0.435                 28.135  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.348  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/secured_instance_21_77/secured_signal_20_31
+                                                          NET DELAY          0.435                 28.783  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.996  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/secured_instance_21_77/secured_signal_20_39
+                                                          NET DELAY          0.435                 29.431  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 29.644  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/secured_instance_21_77/secured_signal_20_55
+                                                          NET DELAY          0.435                 30.079  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.292  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/secured_instance_21_77/secured_signal_20_87
+                                                          NET DELAY          0.435                 30.727  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.940  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/secured_instance_21_77/secured_signal_20_151
+                                                          NET DELAY          0.435                 31.375  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF
+                                                          ENDPOINT           0.000                 31.375  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+                                                          CONSTRAINT         0.000                 10.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                 10.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 23.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/CLK
+                                                          CLOCK PIN          0.000                 23.485  1       
+                                                          Uncertainty     -(0.000)                 23.485  
+                                                          Setup time     -(-0.035)                 23.520  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                      23.520  
+Arrival Time                                                                                    -(31.375)  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                               -7.855  
+
+
+
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 8
+Delay Ratio      : 90.0% (route), 10.0% (logic)
+Clock Skew       : 0.000 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -7.855 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK
+                                                          CLOCK PIN          0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q
+                                          SLICEREG        REG_DEL            0.304                 13.789  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_out[3]
+                                                          NET DELAY         13.050                 26.839  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/RAD3->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/DO0
+                                          DPRAM           CTOF_DEL           0.213                 27.052  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/secured_instance_19_77/secured_signal_18_217
+                                                          NET DELAY          0.435                 27.487  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/B->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 27.700  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/secured_instance_19_77/secured_signal_18_27
+                                                          NET DELAY          0.435                 28.135  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.348  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/secured_instance_19_77/secured_signal_18_31
+                                                          NET DELAY          0.435                 28.783  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.996  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/secured_instance_19_77/secured_signal_18_39
+                                                          NET DELAY          0.435                 29.431  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 29.644  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/secured_instance_19_77/secured_signal_18_55
+                                                          NET DELAY          0.435                 30.079  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.292  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/secured_instance_19_77/secured_signal_18_87
+                                                          NET DELAY          0.435                 30.727  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.940  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/secured_instance_19_77/secured_signal_18_151
+                                                          NET DELAY          0.435                 31.375  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF
+                                                          ENDPOINT           0.000                 31.375  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+                                                          CONSTRAINT         0.000                 10.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                 10.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 23.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/CLK
+                                                          CLOCK PIN          0.000                 23.485  1       
+                                                          Uncertainty     -(0.000)                 23.485  
+                                                          Setup time     -(-0.035)                 23.520  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                      23.520  
+Arrival Time                                                                                    -(31.375)  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                               -7.855  
+
+
+
+
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 8
+Delay Ratio      : 90.0% (route), 10.0% (logic)
+Clock Skew       : 0.000 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -7.855 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK
+                                                          CLOCK PIN          0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q
+                                          SLICEREG        REG_DEL            0.304                 13.789  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_out[3]
+                                                          NET DELAY         13.050                 26.839  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/RAD3->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/DO0
+                                          DPRAM           CTOF_DEL           0.213                 27.052  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/secured_instance_17_77/secured_signal_16_217
+                                                          NET DELAY          0.435                 27.487  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/B->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 27.700  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/secured_instance_17_77/secured_signal_16_27
+                                                          NET DELAY          0.435                 28.135  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.348  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/secured_instance_17_77/secured_signal_16_31
+                                                          NET DELAY          0.435                 28.783  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.996  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/secured_instance_17_77/secured_signal_16_39
+                                                          NET DELAY          0.435                 29.431  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 29.644  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/secured_instance_17_77/secured_signal_16_55
+                                                          NET DELAY          0.435                 30.079  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.292  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/secured_instance_17_77/secured_signal_16_87
+                                                          NET DELAY          0.435                 30.727  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.940  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/secured_instance_17_77/secured_signal_16_151
+                                                          NET DELAY          0.435                 31.375  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF
+                                                          ENDPOINT           0.000                 31.375  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+                                                          CONSTRAINT         0.000                 10.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                 10.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 23.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/CLK
+                                                          CLOCK PIN          0.000                 23.485  1       
+                                                          Uncertainty     -(0.000)                 23.485  
+                                                          Setup time     -(-0.035)                 23.520  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                      23.520  
+Arrival Time                                                                                    -(31.375)  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                               -7.855  
+
+
+
+
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 8
+Delay Ratio      : 90.0% (route), 10.0% (logic)
+Clock Skew       : 0.000 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -7.855 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK
+                                                          CLOCK PIN          0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q
+                                          SLICEREG        REG_DEL            0.304                 13.789  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_out[3]
+                                                          NET DELAY         13.050                 26.839  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/RAD3->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/DO0
+                                          DPRAM           CTOF_DEL           0.213                 27.052  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/secured_instance_15_77/secured_signal_14_217
+                                                          NET DELAY          0.435                 27.487  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/B->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 27.700  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/secured_instance_15_77/secured_signal_14_27
+                                                          NET DELAY          0.435                 28.135  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.348  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/secured_instance_15_77/secured_signal_14_31
+                                                          NET DELAY          0.435                 28.783  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.996  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/secured_instance_15_77/secured_signal_14_39
+                                                          NET DELAY          0.435                 29.431  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 29.644  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/secured_instance_15_77/secured_signal_14_55
+                                                          NET DELAY          0.435                 30.079  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.292  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/secured_instance_15_77/secured_signal_14_87
+                                                          NET DELAY          0.435                 30.727  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.940  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/secured_instance_15_77/secured_signal_14_151
+                                                          NET DELAY          0.435                 31.375  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF
+                                                          ENDPOINT           0.000                 31.375  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+                                                          CONSTRAINT         0.000                 10.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                 10.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 23.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/CLK
+                                                          CLOCK PIN          0.000                 23.485  1       
+                                                          Uncertainty     -(0.000)                 23.485  
+                                                          Setup time     -(-0.035)                 23.520  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                      23.520  
+Arrival Time                                                                                    -(31.375)  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                               -7.855  
+
+
+
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 8
+Delay Ratio      : 90.0% (route), 10.0% (logic)
+Clock Skew       : 0.000 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -7.855 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK
+                                                          CLOCK PIN          0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q
+                                          SLICEREG        REG_DEL            0.304                 13.789  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_out[3]
+                                                          NET DELAY         13.050                 26.839  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/RAD3->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/DO0
+                                          DPRAM           CTOF_DEL           0.213                 27.052  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/secured_instance_13_77/secured_signal_12_217
+                                                          NET DELAY          0.435                 27.487  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/B->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 27.700  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/secured_instance_13_77/secured_signal_12_27
+                                                          NET DELAY          0.435                 28.135  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.348  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/secured_instance_13_77/secured_signal_12_31
+                                                          NET DELAY          0.435                 28.783  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.996  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/secured_instance_13_77/secured_signal_12_39
+                                                          NET DELAY          0.435                 29.431  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 29.644  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/secured_instance_13_77/secured_signal_12_55
+                                                          NET DELAY          0.435                 30.079  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.292  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/secured_instance_13_77/secured_signal_12_87
+                                                          NET DELAY          0.435                 30.727  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.940  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/secured_instance_13_77/secured_signal_12_151
+                                                          NET DELAY          0.435                 31.375  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF
+                                                          ENDPOINT           0.000                 31.375  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+                                                          CONSTRAINT         0.000                 10.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                 10.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 23.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/CLK
+                                                          CLOCK PIN          0.000                 23.485  1       
+                                                          Uncertainty     -(0.000)                 23.485  
+                                                          Setup time     -(-0.035)                 23.520  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                      23.520  
+Arrival Time                                                                                    -(31.375)  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                               -7.855  
+
+
+
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 8
+Delay Ratio      : 90.0% (route), 10.0% (logic)
+Clock Skew       : 0.000 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -7.855 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK
+                                                          CLOCK PIN          0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q
+                                          SLICEREG        REG_DEL            0.304                 13.789  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_out[3]
+                                                          NET DELAY         13.050                 26.839  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/RAD3->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/DO0
+                                          DPRAM           CTOF_DEL           0.213                 27.052  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/secured_instance_11_77/secured_signal_10_217
+                                                          NET DELAY          0.435                 27.487  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/B->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 27.700  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/secured_instance_11_77/secured_signal_10_27
+                                                          NET DELAY          0.435                 28.135  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.348  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/secured_instance_11_77/secured_signal_10_31
+                                                          NET DELAY          0.435                 28.783  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.996  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/secured_instance_11_77/secured_signal_10_39
+                                                          NET DELAY          0.435                 29.431  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 29.644  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/secured_instance_11_77/secured_signal_10_55
+                                                          NET DELAY          0.435                 30.079  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.292  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/secured_instance_11_77/secured_signal_10_87
+                                                          NET DELAY          0.435                 30.727  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.940  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/secured_instance_11_77/secured_signal_10_151
+                                                          NET DELAY          0.435                 31.375  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF
+                                                          ENDPOINT           0.000                 31.375  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+                                                          CONSTRAINT         0.000                 10.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                 10.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 23.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/CLK
+                                                          CLOCK PIN          0.000                 23.485  1       
+                                                          Uncertainty     -(0.000)                 23.485  
+                                                          Setup time     -(-0.035)                 23.520  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                      23.520  
+Arrival Time                                                                                    -(31.375)  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                               -7.855  
+
+
+
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 8
+Delay Ratio      : 90.0% (route), 10.0% (logic)
+Clock Skew       : 0.000 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -7.855 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK
+                                                          CLOCK PIN          0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q
+                                          SLICEREG        REG_DEL            0.304                 13.789  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_out[3]
+                                                          NET DELAY         13.050                 26.839  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/RAD3->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/DO0
+                                          DPRAM           CTOF_DEL           0.213                 27.052  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/secured_instance_9_77/secured_signal_8_217
+                                                          NET DELAY          0.435                 27.487  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/B->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 27.700  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/secured_instance_9_77/secured_signal_8_27
+                                                          NET DELAY          0.435                 28.135  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.348  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/secured_instance_9_77/secured_signal_8_31
+                                                          NET DELAY          0.435                 28.783  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.996  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/secured_instance_9_77/secured_signal_8_39
+                                                          NET DELAY          0.435                 29.431  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 29.644  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/secured_instance_9_77/secured_signal_8_55
+                                                          NET DELAY          0.435                 30.079  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.292  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/secured_instance_9_77/secured_signal_8_87
+                                                          NET DELAY          0.435                 30.727  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.940  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/secured_instance_9_77/secured_signal_8_151
+                                                          NET DELAY          0.435                 31.375  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF
+                                                          ENDPOINT           0.000                 31.375  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+                                                          CONSTRAINT         0.000                 10.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                 10.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 23.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/CLK
+                                                          CLOCK PIN          0.000                 23.485  1       
+                                                          Uncertainty     -(0.000)                 23.485  
+                                                          Setup time     -(-0.035)                 23.520  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                      23.520  
+Arrival Time                                                                                    -(31.375)  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                               -7.855  
+
+
+
+
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 8
+Delay Ratio      : 90.0% (route), 10.0% (logic)
+Clock Skew       : 0.000 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -7.855 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK
+                                                          CLOCK PIN          0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q
+                                          SLICEREG        REG_DEL            0.304                 13.789  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_out[3]
+                                                          NET DELAY         13.050                 26.839  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/RAD3->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/DO0
+                                          DPRAM           CTOF_DEL           0.213                 27.052  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/secured_instance_7_76/secured_signal_6_217
+                                                          NET DELAY          0.435                 27.487  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/B->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 27.700  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/secured_instance_7_76/secured_signal_6_27
+                                                          NET DELAY          0.435                 28.135  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.348  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/secured_instance_7_76/secured_signal_6_31
+                                                          NET DELAY          0.435                 28.783  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.996  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/secured_instance_7_76/secured_signal_6_39
+                                                          NET DELAY          0.435                 29.431  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 29.644  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/secured_instance_7_76/secured_signal_6_55
+                                                          NET DELAY          0.435                 30.079  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.292  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/secured_instance_7_76/secured_signal_6_87
+                                                          NET DELAY          0.435                 30.727  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.940  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/secured_instance_7_76/secured_signal_6_151
+                                                          NET DELAY          0.435                 31.375  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF
+                                                          ENDPOINT           0.000                 31.375  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+                                                          CONSTRAINT         0.000                 10.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                 10.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 23.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/CLK
+                                                          CLOCK PIN          0.000                 23.485  1       
+                                                          Uncertainty     -(0.000)                 23.485  
+                                                          Setup time     -(-0.035)                 23.520  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                      23.520  
+Arrival Time                                                                                    -(31.375)  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                               -7.855  
+
+
+
+
+++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 8
+Delay Ratio      : 90.0% (route), 10.0% (logic)
+Clock Skew       : 0.000 ns 
+Setup Constraint : 10.000 ns 
+Path Slack       : -7.855 ns  (Failed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK
+                                                          CLOCK PIN          0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3/Ie0fvlc4DA.ff_inst/Q
+                                          SLICEREG        REG_DEL            0.304                 13.789  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_out[3]
+                                                          NET DELAY         13.050                 26.839  640     
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/RAD3->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Inx0chE2cwnECq.dpram_inst_0/DO0
+                                          DPRAM           CTOF_DEL           0.213                 27.052  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/secured_instance_5_76/secured_signal_4_217
+                                                          NET DELAY          0.435                 27.487  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/B->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4ICq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 27.700  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/secured_instance_5_76/secured_signal_4_27
+                                                          NET DELAY          0.435                 28.135  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IpCdwG5mhL11or6zl4I1A[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.348  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/secured_instance_5_76/secured_signal_4_31
+                                                          NET DELAY          0.435                 28.783  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCw[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 28.996  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/secured_instance_5_76/secured_signal_4_39
+                                                          NET DELAY          0.435                 29.431  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCs[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 29.644  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/secured_instance_5_76/secured_signal_4_55
+                                                          NET DELAY          0.435                 30.079  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IcKg5nLFnxIif7pe9iCq[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.292  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/secured_instance_5_76/secured_signal_4_87
+                                                          NET DELAY          0.435                 30.727  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/A->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/IeLFkC3A5Brz73kwL[0]/Z
+                                          LUT4            CTOF_DEL           0.213                 30.940  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/secured_instance_5_76/secured_signal_4_151
+                                                          NET DELAY          0.435                 31.375  1       
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/DF
+                                                          ENDPOINT           0.000                 31.375  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr       Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+                                                          CONSTRAINT         0.000                 10.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY      0.000                 10.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY          0.435                 10.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                           0.000                 10.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY         13.050                 23.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9/IcJqK4vCkkI3A42Eer0fAh4HlL8ecj7IJ/Iolb7JEGql8[0].ff_inst/CLK
+                                                          CLOCK PIN          0.000                 23.485  1       
+                                                          Uncertainty     -(0.000)                 23.485  
+                                                          Setup time     -(-0.035)                 23.520  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Required Time                                                                                      23.520  
+Arrival Time                                                                                    -(31.375)  
+----------------------------------------  --------------  -------------  ---------  ---------------------  ------  
+Path Slack  (Failed)                                                                               -7.855  
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                    End of Detailed Report for timing paths 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+
+##########################################################
+
+
+
+===============================================================
+3  Hold at Speed Grade M Corner at 0 Degrees
+===============================================================
+
+3.1  Endpoint slacks
+=======================
+-------------------------------------------------------
+          Listing 10 End Points          |    Slack    
+-------------------------------------------------------
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[9].ff_inst/DF              
+                                         |    0.563 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[8].ff_inst/DF              
+                                         |    0.563 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[7].ff_inst/DF              
+                                         |    0.563 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[6].ff_inst/DF              
+                                         |    0.563 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[5].ff_inst/DF              
+                                         |    0.563 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[4].ff_inst/DF              
+                                         |    0.563 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[3].ff_inst/DF              
+                                         |    0.563 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[2].ff_inst/DF              
+                                         |    0.563 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[1].ff_inst/DF              
+                                         |    0.563 ns 
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[0].ff_inst/DF              
+                                         |    0.563 ns 
+-------------------------------------------------------
+                                         |             
+Hold # of endpoints with negative slack: |           0 
+                                         |             
+-------------------------------------------------------
+
+3.2  Detailed Report
+=======================
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Detail report of critical paths
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+                    Detailed Report for timing paths 
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ ++++Path 1  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[9].ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[9].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 61.6% (route), 38.4% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.563 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[9].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[9].ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[9].ff_inst/Q
+                                          SLICEREG        REG_DEL         0.271                 13.756  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/secured_instance_1_214/secured_signal_0_38
+                                                          NET DELAY       0.435                 14.191  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[9].ff_inst/DF
+                                                          ENDPOINT        0.000                 14.191  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+                                                          CONSTRAINT      0.000                  0.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[9].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+                                                          Uncertainty     0.000                 13.485  
+                                                          Hold time       0.143                 13.628  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                  -13.628  
+Arrival Time                                                                                    14.191  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                             0.563  
+
+
+
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[8].ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[8].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 61.6% (route), 38.4% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.563 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[8].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[8].ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[8].ff_inst/Q
+                                          SLICEREG        REG_DEL         0.271                 13.756  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/secured_instance_1_214/secured_signal_0_39
+                                                          NET DELAY       0.435                 14.191  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[8].ff_inst/DF
+                                                          ENDPOINT        0.000                 14.191  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+                                                          CONSTRAINT      0.000                  0.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[8].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+                                                          Uncertainty     0.000                 13.485  
+                                                          Hold time       0.143                 13.628  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                  -13.628  
+Arrival Time                                                                                    14.191  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                             0.563  
+
+
+
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[7].ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[7].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 61.6% (route), 38.4% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.563 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[7].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[7].ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[7].ff_inst/Q
+                                          SLICEREG        REG_DEL         0.271                 13.756  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/secured_instance_1_214/secured_signal_0_40
+                                                          NET DELAY       0.435                 14.191  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[7].ff_inst/DF
+                                                          ENDPOINT        0.000                 14.191  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+                                                          CONSTRAINT      0.000                  0.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[7].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+                                                          Uncertainty     0.000                 13.485  
+                                                          Hold time       0.143                 13.628  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                  -13.628  
+Arrival Time                                                                                    14.191  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                             0.563  
+
+
+
+
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[6].ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[6].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 61.6% (route), 38.4% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.563 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[6].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[6].ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[6].ff_inst/Q
+                                          SLICEREG        REG_DEL         0.271                 13.756  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/secured_instance_1_214/secured_signal_0_41
+                                                          NET DELAY       0.435                 14.191  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[6].ff_inst/DF
+                                                          ENDPOINT        0.000                 14.191  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+                                                          CONSTRAINT      0.000                  0.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[6].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+                                                          Uncertainty     0.000                 13.485  
+                                                          Hold time       0.143                 13.628  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                  -13.628  
+Arrival Time                                                                                    14.191  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                             0.563  
+
+
+
+
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[5].ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[5].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 61.6% (route), 38.4% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.563 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[5].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[5].ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[5].ff_inst/Q
+                                          SLICEREG        REG_DEL         0.271                 13.756  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/secured_instance_1_214/secured_signal_0_42
+                                                          NET DELAY       0.435                 14.191  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[5].ff_inst/DF
+                                                          ENDPOINT        0.000                 14.191  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+                                                          CONSTRAINT      0.000                  0.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[5].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+                                                          Uncertainty     0.000                 13.485  
+                                                          Hold time       0.143                 13.628  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                  -13.628  
+Arrival Time                                                                                    14.191  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                             0.563  
+
+
+
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[4].ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[4].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 61.6% (route), 38.4% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.563 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[4].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[4].ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[4].ff_inst/Q
+                                          SLICEREG        REG_DEL         0.271                 13.756  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/secured_instance_1_214/secured_signal_0_43
+                                                          NET DELAY       0.435                 14.191  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[4].ff_inst/DF
+                                                          ENDPOINT        0.000                 14.191  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+                                                          CONSTRAINT      0.000                  0.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[4].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+                                                          Uncertainty     0.000                 13.485  
+                                                          Hold time       0.143                 13.628  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                  -13.628  
+Arrival Time                                                                                    14.191  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                             0.563  
+
+
+
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[3].ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[3].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 61.6% (route), 38.4% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.563 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[3].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[3].ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[3].ff_inst/Q
+                                          SLICEREG        REG_DEL         0.271                 13.756  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/secured_instance_1_214/secured_signal_0_44
+                                                          NET DELAY       0.435                 14.191  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[3].ff_inst/DF
+                                                          ENDPOINT        0.000                 14.191  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+                                                          CONSTRAINT      0.000                  0.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[3].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+                                                          Uncertainty     0.000                 13.485  
+                                                          Hold time       0.143                 13.628  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                  -13.628  
+Arrival Time                                                                                    14.191  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                             0.563  
+
+
+
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[2].ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[2].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 61.6% (route), 38.4% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.563 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[2].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[2].ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[2].ff_inst/Q
+                                          SLICEREG        REG_DEL         0.271                 13.756  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/secured_instance_1_214/secured_signal_0_45
+                                                          NET DELAY       0.435                 14.191  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[2].ff_inst/DF
+                                                          ENDPOINT        0.000                 14.191  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+                                                          CONSTRAINT      0.000                  0.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[2].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+                                                          Uncertainty     0.000                 13.485  
+                                                          Hold time       0.143                 13.628  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                  -13.628  
+Arrival Time                                                                                    14.191  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                             0.563  
+
+
+
+
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[1].ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[1].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 61.6% (route), 38.4% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.563 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[1].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[1].ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[1].ff_inst/Q
+                                          SLICEREG        REG_DEL         0.271                 13.756  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/secured_instance_1_214/secured_signal_0_46
+                                                          NET DELAY       0.435                 14.191  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[1].ff_inst/DF
+                                                          ENDPOINT        0.000                 14.191  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+                                                          CONSTRAINT      0.000                  0.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[1].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+                                                          Uncertainty     0.000                 13.485  
+                                                          Hold time       0.143                 13.628  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                  -13.628  
+Arrival Time                                                                                    14.191  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                             0.563  
+
+
+
+
+++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[0].ff_inst/Q  (SLICEREG)
+Path End         : I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[0].ff_inst/DF  (SLICEREG)
+Source Clock     : pll0_inst_clkop_o_net (R)
+Destination Clock: pll0_inst_clkop_o_net (R)
+Logic Level      : 1
+Delay Ratio      : 61.6% (route), 38.4% (logic)
+Clock Skew       : 0.000 ns 
+Hold Constraint  : 0.000 ns 
+Path Slack       : 0.563 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[0].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+
+
+Data Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[0].ff_inst/CLK->I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IcLtEjj5dffxkaEny9yFAcs[0].ff_inst/Q
+                                          SLICEREG        REG_DEL         0.271                 13.756  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/secured_instance_1_214/secured_signal_0_47
+                                                          NET DELAY       0.435                 14.191  39      
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[0].ff_inst/DF
+                                                          ENDPOINT        0.000                 14.191  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name  Delay Name     Incr    Arrival/Required Time  Fanout  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+                                                          CONSTRAINT      0.000                  0.000  1       
+osc0_inst/lscc_osc_inst/gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT
+                                          OSC_CORE        CLOCK LATENCY   0.000                  0.000  2       
+osc0_inst_hf_clk_out_o_net                                NET DELAY       0.435                  0.435  2       
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/REFCK->pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP (TOTAL_ADJUSTMENTS)
+                                          PLL_CORE                        0.000                  0.435  3863    
+pll0_inst_clkop_o_net                                     NET DELAY      13.050                 13.485  3863    
+I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u/IJsvJCgIeE1lijpcsh[0].ff_inst/CLK
+                                                          CLOCK PIN       0.000                 13.485  1       
+                                                          Uncertainty     0.000                 13.485  
+                                                          Hold time       0.143                 13.628  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Required Time                                                                                  -13.628  
+Arrival Time                                                                                    14.191  
+----------------------------------------  --------------  -------------  ------  ---------------------  ------  
+Path Slack  (Passed)                                                                             0.563  
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+                    End of Detailed Report for timing paths 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+
+##########################################################
+
+
+

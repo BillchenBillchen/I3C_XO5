@@ -1,0 +1,11 @@
+13:33:56 **** Incremental Build of configuration Debug for project i3c_sw ****
+make all 
+Invoking: GNU RISC-V Cross Print Size
+riscv-none-embed-size --format=berkeley "i3c_sw.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5804	     20	   3280	   9104	   2390	i3c_sw.elf
+Finished building: i3c_sw.siz
+ 
+
+13:33:57 Build Finished. 0 errors, 0 warnings. (took 997ms)
+

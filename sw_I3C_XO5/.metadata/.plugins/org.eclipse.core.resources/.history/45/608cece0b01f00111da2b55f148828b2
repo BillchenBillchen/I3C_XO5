@@ -1,0 +1,250 @@
+#include "i3c_controller.h"
+#include "i3c_target.h"      // 新增：引入 Target 驅動標頭檔
+#include "uart.h"
+#include "utils.h"
+#include "reg_access.h"
+#include <stdio.h>
+#include <stdbool.h>
+#include "sys_platform.h"
+#include "iob.h"
+
+#define I3C_SLAVE_NUMS 1
+#define DATA_LENGTH 32
+#define SLAVE_ADDR 0x20
+
+#ifdef GPIO_INST_BASE_ADDR
+#include "gpio.h"
+struct gpio_instance gpio_inst;
+#endif
+
+struct uart_instance uart_core_uart;
+struct i3c_master_instance i3cm;
+struct i3c_dev_info i3c_devinfo;
+
+// 新增：宣告 I3C Target 的 Instance
+struct i3c_target_handle_t i3cs;
+
+const uint8_t wr_buf[DATA_LENGTH] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F,
+                   0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17, 0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F};
+uint8_t rd_buf[DATA_LENGTH];
+
+// --- stdio routing functions for printf ---
+static int lscc_uart_putc(char c, FILE *file) {
+	int ret = uart_putc(&uart_core_uart, c);
+	if (c == '\n' && ret == 0)
+		ret = uart_putc(&uart_core_uart, '\r');
+	return ret;
+}
+
+static int lscc_uart_getc(FILE *file) { return EOF; }
+static int lscc_uart_flush(FILE *file) { return EOF; }
+// ------------------------------------------
+
+// Simple blocking delay
+static void simple_delay_ms(uint32_t ms) {
+	for (volatile uint32_t i = 0; i < (ms * 10000); i++);
+}
+
+static void set_led_all_off() {
+#ifdef GPIO_INST_BASE_ADDR
+    for (int i = 0; i < GPIO_INST_LINES_NUM; i++) {
+        gpio_output_write(&gpio_inst, i, 0xFF);
+    }
+#endif
+}
+
+static void set_led_on(uint8_t id) {
+#ifdef GPIO_INST_BASE_ADDR
+    gpio_output_write(&gpio_inst, id, 0x00);
+#endif
+}
+
+/**
+ * [除錯工具] 硬體監控器：直接讀取 I3C Target (S0) 的底層狀態並顯示於 LED
+ * L0 (LED 0): 核心活動 - 亮起代表底層硬體看到訊號在跳動 (BUSAVL 0x02)
+ * L1 (LED 1): 地址狀態 - 亮起代表 DAA 已成功分配動態地址 (dyn_addr != 0)
+ * L2 (LED 2): 資料狀態 - 亮起代表目標端 FIFO 已經有控制器丟進來的資料了 (NotEmpty)
+ * L3 (LED 3): 控制狀態 - 亮起代表控制器正卡在 DAA 迴圈中
+ */
+void i3c_hardware_observer(void) {
+    i3c_tgt_reg_type_t *tgt = (i3c_tgt_reg_type_t *)I3C_S_INST_BASE_ADDR;
+    
+    // 監控 0: 物理層活動 (只要 SCL/SDA 有正常停止訊號，這個位元會被硬體鎖定為 1)
+    gpio_output_write(&gpio_inst, 0, (tgt->interrupt_3 & 0x02) ? 0x00 : 0xFF);
+    
+    // 監控 1: 協議層 - 是否有取得動態地址
+    gpio_output_write(&gpio_inst, 1, (tgt->dyn_addr != 0) ? 0x00 : 0xFF);
+    
+    // 監控 2: 傳輸層 - 接收 FIFO 是否已有數據
+    gpio_output_write(&gpio_inst, 2, (tgt->interrupt_2 & 0x40) ? 0x00 : 0xFF);
+}
+
+static void bsp_init(void)
+{
+#ifdef GPIO_INST_BASE_ADDR
+	gpio_inst.instance_name = GPIO_INST_NAME;
+	gpio_init(&gpio_inst, GPIO_INST_BASE_ADDR, GPIO_INST_LINES_NUM, GPIO_INST_GPIO_DIRS);
+    set_led_all_off();
+#endif
+
+	unsigned char uart_status = uart_init(&uart_core_uart, UART0_INST_BASE_ADDR, UART0_INST_SYS_CLK, UART0_INST_BAUD_RATE, 1, 8);
+	
+	if (uart_status != 0) {
+#ifdef GPIO_INST_BASE_ADDR
+		set_led_on(7); // Error state
+#endif
+		while(1); 
+	}
+
+	iob_init(lscc_uart_putc, lscc_uart_getc, lscc_uart_flush);
+}
+
+int main(void) {
+	bsp_init();
+
+	printf("Started! Running 3-second LED breathing effect...\n");
+
+	// Step 1: 3 Seconds "Breathing" (or sweeping) LED startup
+	uint32_t sweep_time_ms = 0;
+	uint8_t sweep_idx = 0;
+//	while (sweep_time_ms < 3000) {
+//        set_led_on(sweep_idx);
+//		simple_delay_ms(100);
+//		set_led_all_off();
+		
+//		sweep_idx++;
+//		if (sweep_idx >= 8) {
+//			sweep_idx = 0;
+//		}
+//		sweep_time_ms += 100;
+//	}
+
+	// Step 2: Initialize I3C Master and Auto-Tune Timing Parameters
+	printf("Starting I3C Master Configuration...\n");
+
+	if (i3c_master_init(&i3cm, I3C_M_INST_BASE_ADDR, 0, I3C_M_INST_GUI_I2C_SCL_PULSE_WIDTH - 1, 1) != 0) {
+		printf("I3C master base initialization FAILED! Cannot proceed.\n");
+		set_led_all_off();
+		set_led_on(7); // LED 7 恆亮代表硬體 IP Init 初始化發生錯誤
+        while(1);
+	} 
+	
+    printf("I3C Master init OK.\n");
+
+    // ==========================================
+    // 新增：初始化並啟用 I3C Target (Slave)
+    // 這是單板 Loopback 測試必須的，Target IP 需要被 CPU 喚醒
+    // ==========================================
+    //printf("Starting I3C Target Configuration...\n");
+    
+    // 設定 Target IP 的 Base Address (使用系統產生的 sys_platform.h 裡的定義)
+    //i3cs.base_addr = I3C_S_INST_BASE_ADDR; 
+    
+    // 呼叫驅動程式裡的初始化函式
+    //if (i3c_target_init(&i3cs) != SUCCESS) {
+    //    printf("I3C Target initialization FAILED! Cannot proceed.\n");
+    //    set_led_all_off();
+    //    set_led_on(6); // 亮第 6 顆燈表示 Target 初始化失敗
+    //    while(1);
+    
+    
+    //printf("I3C Target init OK. STARTING DAA TEST...\n");
+    // ==========================================
+    
+    // We will test timing parameters. For simplicity, let's test a stable safe value 
+    uint8_t clk_val = 15; // Slower clock for better stability
+    uint8_t od_val = 15;  // Max OD timer for stability
+
+    // Apply safe timing parameters once
+    uint8_t ctrl_val = 0;
+    reg_8b_read(i3cm.base_addr | 0x04, &ctrl_val);
+    reg_8b_write(i3cm.base_addr | 0x04, ctrl_val & ~0x01); // Disable
+    reg_8b_write(i3cm.base_addr | 0x00, clk_val); 
+    reg_8b_write(i3cm.base_addr | 0x1A, od_val);
+    reg_8b_write(i3cm.base_addr | 0x04, ctrl_val | 0x01); // Enable
+
+    // Process DAA (單次執行，不做無窮迴圈重試)
+    i3c_devinfo.pid = 0;
+    uint8_t dyn_address = 0;
+    
+    printf("STARTING DAA TEST...\n");
+
+    uint8_t ret = i3c_master_daa(&i3cm, &i3c_devinfo, &dyn_address, I3C_SLAVE_NUMS, SLAVE_ADDR);
+
+    // ⚠️ Debug Point: DAA 後更新 LED 狀態
+    i3c_hardware_observer();
+
+    if (ret) {
+        printf("Fail I3C master DAA: error = %d\n", ret);
+        set_led_on(5); // LED 5 亮起代表 DAA 失敗
+        while(1);      // 停在這裡，觀察 LED 0/1/2 的狀態來判斷原因
+    } else {
+        printf("I3C master DAA is success\n");
+        printf("bcr = %x\n", i3c_devinfo.bcr);
+        printf("dcr = %x\n", i3c_devinfo.dcr);
+        printf("pid = %016llx \n", i3c_devinfo.pid);
+        printf("dyn addr = %x\n", i3c_devinfo.init_dyn_addr);
+    }
+    
+    // Step 3: Write and Read process
+    printf("STARTING I3C TESTS: Private Write ...\n");
+    printf("Writing data from I3C controller to the target\n");
+    
+    // 注意：如果控制器驅動內部有無窮迴圈且掛掉，LED 3 會保持在進入前的狀態
+    set_led_on(4); // LED 4 亮起代表開始嘗試 Private Write
+    i3c_master_private_i3c_write(&i3cm, (uint8_t *) wr_buf, DATA_LENGTH, SLAVE_ADDR);
+    
+    // 更新觀測器 (此時 LED 2 應該要亮起，因為 FIFO 應該有資料了)
+    i3c_hardware_observer();
+    
+    simple_delay_ms(100); // Give slave a little time to process
+
+    printf("STARTING I3C TESTS: Private Read ...\n");
+    i3c_master_private_i3c_read(&i3cm, (uint8_t *) rd_buf, DATA_LENGTH-2, SLAVE_ADDR);
+    
+    bool data_match = true;
+    for (int i = 0; i < DATA_LENGTH-2; i++) {
+        printf("Read back data from I3C slave at count %d: %x\n", i, rd_buf[i]);
+
+        if (rd_buf[i] != wr_buf[i]) {
+            printf("Data mismatch %x != %x\n", rd_buf[i], wr_buf[i]);
+            data_match = false;
+        }
+    }
+
+    i3c_master_private_i3c_read(&i3cm, (uint8_t *) rd_buf, 2, SLAVE_ADDR);
+    printf("Read back data from I3C target: %x\n", rd_buf[0]);
+    printf("Read back data from I3C target: %x\n", rd_buf[1]);
+    
+    if (data_match) {
+        printf("All Data Matches Write!\n");
+        
+        printf("TEST FINISHED\n");
+
+        // Success Loop: Provide the original "Breathing/Sweeping" effect indefinitely
+        set_led_all_off();
+        sweep_idx = 0;
+        while(1) {
+            set_led_on(sweep_idx);
+            simple_delay_ms(100); 
+            set_led_all_off();
+            
+            sweep_idx++;
+            if (sweep_idx >= 8) {
+                sweep_idx = 0;
+            }
+        }
+    } else {
+        printf("Data mismatch error!\n");
+        // Error Loop: Blink LED 6 continuously if data verfication failed
+        while(1) {
+            set_led_all_off();
+            set_led_on(6);
+            simple_delay_ms(500); 
+            set_led_all_off();
+            simple_delay_ms(500); 
+        }
+    }
+    
+	return 0;
+}

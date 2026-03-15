@@ -1,0 +1,32 @@
+#Start recording tcl command: 3/6/2026 12:56:52
+sbp_design open -name I3C_XO5 -path {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx}
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../}
+sbp_config_ip -vlnv {latticesemi.com:ip:i3c_s:3.7.0} -meta_vlnv {latticesemi.com:ip:i3c_target:3.7.0} -cfg_value {EN_FIFOINTF:false,EN_IO_PRIM:false}
+sbp_replace -vlnv {latticesemi.com:ip:i3c_s:3.7.0} -name {i3c_s_inst} -component {I3C_XO5/i3c_s_inst}
+sbp_design generate
+sbp_design save
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_config_ip -vlnv {latticesemi.com:ip:i3c_s:3.7.0} -meta_vlnv {latticesemi.com:ip:i3c_target:3.7.0} -cfg_value {EN_FIFOINTF:true,EN_IO_PRIM:true}
+sbp_replace -vlnv {latticesemi.com:ip:i3c_s:3.7.0} -name {i3c_s_inst} -component {I3C_XO5/i3c_s_inst}
+sbp_connect_net {I3C_XO5/s0_scl_io} {I3C_XO5/i3c_s_inst/scl_io}
+sbp_connect_net {I3C_XO5/s0_sda_io} {I3C_XO5/i3c_s_inst/sda_io}
+sbp_config_ip -vlnv {latticesemi.com:module:i3c_s_fifo:2.5.0} -meta_vlnv {latticesemi.com:module:fifo:2.5.0}
+sbp_add_component -vlnv {latticesemi.com:module:i3c_s_fifo:2.5.0} -name {i3c_s_fifo_inst}
+sbp_config_ip -vlnv {latticesemi.com:module:i3c_s_fifo:2.5.0} -meta_vlnv {latticesemi.com:module:fifo:2.5.0} -cfg_value {ADDRESS_DEPTH:512,DATA_WIDTH:8}
+sbp_replace -vlnv {latticesemi.com:module:i3c_s_fifo:2.5.0} -name {i3c_s_fifo_inst} -component {I3C_XO5/i3c_s_fifo_inst}
+sbp_connect_net {I3C_XO5/i3c_s_fifo_inst/wr_data_i} {I3C_XO5/i3c_s_inst/rx_data_o}
+sbp_connect_net {I3C_XO5/i3c_s_inst/tx_data_i} {I3C_XO5/i3c_s_fifo_inst/rd_data_o}
+sbp_connect_net -name {I3C_XO5/pll0_inst_clkos_o_net} {I3C_XO5/i3c_s_fifo_inst/clk_i}
+sbp_connect_net -name {I3C_XO5/risc_mc_inst_system_resetn_o_net} {I3C_XO5/i3c_s_fifo_inst/rst_i}
+sbp_connect_net {I3C_XO5/i3c_s_inst/rx_valid_o} {I3C_XO5/i3c_s_fifo_inst/wr_en_i}
+sbp_delete {I3C_XO5/i3c_s_fifo_inst} -type component
+sbp_config_ip -vlnv {latticesemi.com:ip:i3c_s:3.7.0} -meta_vlnv {latticesemi.com:ip:i3c_target:3.7.0} -cfg_value {EN_FIFOINTF:false,EN_IO_PRIM:true,STATIC_ADDR_EN:false}
+sbp_replace -vlnv {latticesemi.com:ip:i3c_s:3.7.0} -name {i3c_s_inst} -component {I3C_XO5/i3c_s_inst}
+sbp_design generate
+sbp_design save
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design generate
+sbp_design save
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design close
+#Stop recording: 3/12/2026 13:33:34

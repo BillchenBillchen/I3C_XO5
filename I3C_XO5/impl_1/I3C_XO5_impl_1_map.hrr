@@ -1,0 +1,2147 @@
+---------------------------------------------------
+Report for cell I3C_XO5
+   Instance path: I3C_XO5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       6.00        100.0
+                                  LUT4	      16999        100.0
+                               LUTGATE	      11551        100.0
+                                LUTRAM	       3840        100.0
+                                LUTCCU	       1608        100.0
+                                 IOREG	          9        100.0
+                                 IOBUF	         22        100.0
+                                PFUREG	       5718        100.0
+                                   EBR	         74        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                             JTAGH19v1	          1         0.2
+                        ahb2apb_uniq_1	          1         1.2
+                          gpio0_uniq_1	          1         0.7
+                          i3c_m_uniq_1	          1         8.8
+                          i3c_s_uniq_1	          1        11.9
+                           osc0_uniq_1	          1         0.0
+                           pll0_uniq_1	          1         0.0
+                        reveal_coretop	          1        47.2
+risc_mc_uniq_1_0s_0s_18446744073709551615_0_18446744073709551615_0_18446744073709486080_56_layer0	          1        22.7
+                     secured_design_36	          1         0.4
+                     secured_design_49	          1         0.5
+                sys_mem_uniq_1_sys_mem	          1         4.9
+                          uart0_uniq_1	          1         1.4
+---------------------------------------------------
+Report for cell JTAGH19v1
+   Instance path: I3C_XO5/reveal_jtaghub_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         35         0.2
+                               LUTGATE	         21         0.2
+                                LUTCCU	         14         0.9
+                                 IOBUF	          4        18.2
+                                PFUREG	         53         0.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                       ROM6_1_layer0v2	          1         0.0
+---------------------------------------------------
+Report for cell ROM6_1_layer0v2
+   Instance path: I3C_XO5/reveal_jtaghub_inst/jtaghub_rom
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                          rom_mux4_0v3	          1         0.0
+---------------------------------------------------
+Report for cell rom_mux4_0v3
+   Instance path: I3C_XO5/reveal_jtaghub_inst/jtaghub_rom/inst21
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+---------------------------------------------------
+Report for cell reveal_coretop
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       8027        47.2
+                               LUTGATE	       3809        33.0
+                                LUTRAM	       3840        100.0
+                                LUTCCU	        378        23.5
+                                PFUREG	        904        15.8
+                                   EBR	         36        48.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                           i3c_xo5_la0	          1        47.2
+---------------------------------------------------
+Report for cell i3c_xo5_la0
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       8027        47.2
+                               LUTGATE	       3809        33.0
+                                LUTRAM	       3840        100.0
+                                LUTCCU	        378        23.5
+                                PFUREG	        904        15.8
+                                   EBR	         36        48.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      i3c_xo5_la0_trig	          1        44.4
+                      secured_design_1	          1         1.5
+                      secured_design_3	          1         1.3
+---------------------------------------------------
+Report for cell secured_design_1
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/tm_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        262         1.5
+                               LUTGATE	        198         1.7
+                                LUTCCU	         64         4.0
+                                PFUREG	        211         3.7
+                                   EBR	         36        48.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_2	          1         0.1
+---------------------------------------------------
+Report for cell secured_design_2
+   Instance path: I3C_XO5/secured_instance_2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         20         0.1
+                               LUTGATE	         20         0.2
+                                PFUREG	         19         0.3
+                                   EBR	         36        48.6
+---------------------------------------------------
+Report for cell secured_design_3
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/jtag_int_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        223         1.3
+                               LUTGATE	        209         1.8
+                                LUTCCU	         14         0.9
+                                PFUREG	        135         2.4
+---------------------------------------------------
+Report for cell i3c_xo5_la0_trig
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       7541        44.4
+                               LUTGATE	       3401        29.4
+                                LUTRAM	       3840        100.0
+                                LUTCCU	        300        18.7
+                                PFUREG	        558         9.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_11	          1         4.3
+                     secured_design_13	          1         4.3
+                     secured_design_15	          1         4.3
+                     secured_design_17	          1         4.3
+                     secured_design_19	          1         4.3
+                     secured_design_21	          1         4.3
+                     secured_design_23	          1         4.3
+                     secured_design_25	          1         0.1
+                     secured_design_26	          1         0.1
+                     secured_design_27	          1         0.1
+                     secured_design_28	          1         0.1
+                     secured_design_29	          1         0.1
+                     secured_design_30	          1         0.1
+                     secured_design_31	          1         0.1
+                     secured_design_32	          1         0.1
+                     secured_design_33	          1         0.1
+                     secured_design_34	          1         0.1
+                     secured_design_35	          1         0.2
+                      secured_design_4	          1         0.2
+                      secured_design_5	          1         4.3
+                      secured_design_7	          1         4.3
+                      secured_design_9	          1         4.3
+---------------------------------------------------
+Report for cell secured_design_4
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tcnt_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         42         0.2
+                               LUTGATE	         42         0.4
+                                PFUREG	         21         0.4
+---------------------------------------------------
+Report for cell secured_design_5
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_9
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        726         4.3
+                               LUTGATE	        312         2.7
+                                LUTRAM	        384        10.0
+                                LUTCCU	         30         1.9
+                                PFUREG	         44         0.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_6	          1         3.8
+---------------------------------------------------
+Report for cell secured_design_6
+   Instance path: I3C_XO5/secured_instance_6
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        638         3.8
+                               LUTGATE	        254         2.2
+                                LUTRAM	        384        10.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_7
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_8
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        726         4.3
+                               LUTGATE	        312         2.7
+                                LUTRAM	        384        10.0
+                                LUTCCU	         30         1.9
+                                PFUREG	         44         0.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                      secured_design_8	          1         3.8
+---------------------------------------------------
+Report for cell secured_design_8
+   Instance path: I3C_XO5/secured_instance_8
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        638         3.8
+                               LUTGATE	        254         2.2
+                                LUTRAM	        384        10.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_9
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_7
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        727         4.3
+                               LUTGATE	        313         2.7
+                                LUTRAM	        384        10.0
+                                LUTCCU	         30         1.9
+                                PFUREG	         44         0.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_10	          1         3.8
+---------------------------------------------------
+Report for cell secured_design_10
+   Instance path: I3C_XO5/secured_instance_10
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        638         3.8
+                               LUTGATE	        254         2.2
+                                LUTRAM	        384        10.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_11
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_6
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        727         4.3
+                               LUTGATE	        313         2.7
+                                LUTRAM	        384        10.0
+                                LUTCCU	         30         1.9
+                                PFUREG	         44         0.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_12	          1         3.8
+---------------------------------------------------
+Report for cell secured_design_12
+   Instance path: I3C_XO5/secured_instance_12
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        638         3.8
+                               LUTGATE	        254         2.2
+                                LUTRAM	        384        10.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_13
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        727         4.3
+                               LUTGATE	        313         2.7
+                                LUTRAM	        384        10.0
+                                LUTCCU	         30         1.9
+                                PFUREG	         44         0.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_14	          1         3.8
+---------------------------------------------------
+Report for cell secured_design_14
+   Instance path: I3C_XO5/secured_instance_14
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        638         3.8
+                               LUTGATE	        254         2.2
+                                LUTRAM	        384        10.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_15
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        727         4.3
+                               LUTGATE	        313         2.7
+                                LUTRAM	        384        10.0
+                                LUTCCU	         30         1.9
+                                PFUREG	         44         0.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_16	          1         3.8
+---------------------------------------------------
+Report for cell secured_design_16
+   Instance path: I3C_XO5/secured_instance_16
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        638         3.8
+                               LUTGATE	        254         2.2
+                                LUTRAM	        384        10.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_17
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        727         4.3
+                               LUTGATE	        313         2.7
+                                LUTRAM	        384        10.0
+                                LUTCCU	         30         1.9
+                                PFUREG	         44         0.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_18	          1         3.8
+---------------------------------------------------
+Report for cell secured_design_18
+   Instance path: I3C_XO5/secured_instance_18
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        638         3.8
+                               LUTGATE	        254         2.2
+                                LUTRAM	        384        10.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_19
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        727         4.3
+                               LUTGATE	        313         2.7
+                                LUTRAM	        384        10.0
+                                LUTCCU	         30         1.9
+                                PFUREG	         44         0.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_20	          1         3.8
+---------------------------------------------------
+Report for cell secured_design_20
+   Instance path: I3C_XO5/secured_instance_20
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        638         3.8
+                               LUTGATE	        254         2.2
+                                LUTRAM	        384        10.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_21
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        727         4.3
+                               LUTGATE	        313         2.7
+                                LUTRAM	        384        10.0
+                                LUTCCU	         30         1.9
+                                PFUREG	         44         0.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_22	          1         3.8
+---------------------------------------------------
+Report for cell secured_design_22
+   Instance path: I3C_XO5/secured_instance_22
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        638         3.8
+                               LUTGATE	        254         2.2
+                                LUTRAM	        384        10.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_23
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/te_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        729         4.3
+                               LUTGATE	        315         2.7
+                                LUTRAM	        384        10.0
+                                LUTCCU	         30         1.9
+                                PFUREG	         61         1.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_24	          1         3.8
+---------------------------------------------------
+Report for cell secured_design_24
+   Instance path: I3C_XO5/secured_instance_24
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        638         3.8
+                               LUTGATE	        254         2.2
+                                LUTRAM	        384        10.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_25
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_9
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         15         0.1
+                               LUTGATE	         15         0.1
+                                PFUREG	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_26
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_8
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         15         0.1
+                               LUTGATE	         15         0.1
+                                PFUREG	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_27
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_7
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         15         0.1
+                               LUTGATE	         15         0.1
+                                PFUREG	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_28
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_6
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         15         0.1
+                               LUTGATE	         15         0.1
+                                PFUREG	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_29
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         15         0.1
+                               LUTGATE	         15         0.1
+                                PFUREG	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_30
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         15         0.1
+                               LUTGATE	         15         0.1
+                                PFUREG	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_31
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         15         0.1
+                               LUTGATE	         15         0.1
+                                PFUREG	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_32
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         15         0.1
+                               LUTGATE	         15         0.1
+                                PFUREG	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_33
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         15         0.1
+                               LUTGATE	         15         0.1
+                                PFUREG	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_34
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/tu_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         15         0.1
+                               LUTGATE	         15         0.1
+                                PFUREG	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_35
+   Instance path: I3C_XO5/I3C_XO5_reveal_coretop_instance/i3c_xo5_la0_inst_0/trig_u/decode_u
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         32         0.2
+                               LUTGATE	         32         0.3
+---------------------------------------------------
+Report for cell secured_design_36
+   Instance path: I3C_XO5/apb0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         71         0.4
+                               LUTGATE	         71         0.6
+                                PFUREG	          5         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_37	          1         0.4
+---------------------------------------------------
+Report for cell secured_design_37
+   Instance path: I3C_XO5/secured_instance_37
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         71         0.4
+                               LUTGATE	         71         0.6
+                                PFUREG	          5         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_38	          1         0.4
+---------------------------------------------------
+Report for cell secured_design_38
+   Instance path: I3C_XO5/secured_instance_38
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         71         0.4
+                               LUTGATE	         71         0.6
+                                PFUREG	          5         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_39	          1         0.2
+                     secured_design_40	          1         0.2
+---------------------------------------------------
+Report for cell secured_design_39
+   Instance path: I3C_XO5/secured_instance_39
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         34         0.2
+                               LUTGATE	         34         0.3
+                                PFUREG	          5         0.1
+---------------------------------------------------
+Report for cell secured_design_40
+   Instance path: I3C_XO5/secured_instance_40
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         37         0.2
+                               LUTGATE	         37         0.3
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_41	          1         0.0
+                     secured_design_43	          1         0.0
+                     secured_design_45	          1         0.0
+                     secured_design_47	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_41
+   Instance path: I3C_XO5/secured_instance_41
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         0.0
+                               LUTGATE	          8         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_42	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_42
+   Instance path: I3C_XO5/secured_instance_42
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         0.0
+                               LUTGATE	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_43
+   Instance path: I3C_XO5/secured_instance_43
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         0.0
+                               LUTGATE	          8         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_44	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_44
+   Instance path: I3C_XO5/secured_instance_44
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         0.0
+                               LUTGATE	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_45
+   Instance path: I3C_XO5/secured_instance_45
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         0.0
+                               LUTGATE	          8         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_46	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_46
+   Instance path: I3C_XO5/secured_instance_46
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         0.0
+                               LUTGATE	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_47
+   Instance path: I3C_XO5/secured_instance_47
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         0.0
+                               LUTGATE	          8         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_48	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_48
+   Instance path: I3C_XO5/secured_instance_48
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         0.0
+                               LUTGATE	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_49
+   Instance path: I3C_XO5/ahbl_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         89         0.5
+                               LUTGATE	         89         0.8
+                                PFUREG	          8         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_50	          1         0.5
+---------------------------------------------------
+Report for cell secured_design_50
+   Instance path: I3C_XO5/secured_instance_50
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         89         0.5
+                               LUTGATE	         89         0.8
+                                PFUREG	          8         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_51	          1         0.5
+---------------------------------------------------
+Report for cell secured_design_51
+   Instance path: I3C_XO5/secured_instance_51
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         89         0.5
+                               LUTGATE	         89         0.8
+                                PFUREG	          8         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_52	          1         0.0
+                     secured_design_53	          1         0.4
+                     secured_design_54	          1         0.1
+---------------------------------------------------
+Report for cell secured_design_52
+   Instance path: I3C_XO5/secured_instance_52
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_53
+   Instance path: I3C_XO5/secured_instance_53
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         74         0.4
+                               LUTGATE	         74         0.6
+                                PFUREG	          6         0.1
+---------------------------------------------------
+Report for cell secured_design_54
+   Instance path: I3C_XO5/secured_instance_54
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         13         0.1
+                               LUTGATE	         13         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_55	          1         0.0
+                     secured_design_57	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_55
+   Instance path: I3C_XO5/secured_instance_55
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7         0.0
+                               LUTGATE	          7         0.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_56	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_56
+   Instance path: I3C_XO5/secured_instance_56
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7         0.0
+                               LUTGATE	          7         0.1
+---------------------------------------------------
+Report for cell secured_design_57
+   Instance path: I3C_XO5/secured_instance_57
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_58	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_58
+   Instance path: I3C_XO5/secured_instance_58
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.0
+---------------------------------------------------
+Report for cell ahb2apb_uniq_1
+   Instance path: I3C_XO5/ahb2apb_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        211         1.2
+                               LUTGATE	        211         1.8
+                                PFUREG	        220         3.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_59	          1         1.2
+---------------------------------------------------
+Report for cell secured_design_59
+   Instance path: I3C_XO5/ahb2apb_inst/lscc_ahbl2apb_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        211         1.2
+                               LUTGATE	        211         1.8
+                                PFUREG	        220         3.8
+---------------------------------------------------
+Report for cell gpio0_uniq_1
+   Instance path: I3C_XO5/gpio0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        121         0.7
+                               LUTGATE	        121         1.0
+                                 IOREG	          9        100.0
+                                 IOBUF	          9        40.9
+                                PFUREG	         99         1.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+gpio0_ipgen_lscc_gpio_uniq_1_Z12_layer0	          1         0.7
+---------------------------------------------------
+Report for cell gpio0_ipgen_lscc_gpio_uniq_1_Z12_layer0
+   Instance path: I3C_XO5/gpio0_inst/lscc_gpio_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        121         0.7
+                               LUTGATE	        121         1.0
+                                 IOREG	          9        100.0
+                                 IOBUF	          9        40.9
+                                PFUREG	         99         1.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+gpio0_ipgen_lscc_apb2lmmi_uniq_1_9s_6s_1s_1_2_4_8_4s	          1         0.1
+gpio0_ipgen_lscc_gpio_lmmi_uniq_1_Z11_layer0	          1         0.6
+---------------------------------------------------
+Report for cell gpio0_ipgen_lscc_gpio_lmmi_uniq_1_Z11_layer0
+   Instance path: I3C_XO5/gpio0_inst/lscc_gpio_inst/genblk1.lscc_gpio_lmmi_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        106         0.6
+                               LUTGATE	        106         0.9
+                                 IOREG	          9        100.0
+                                 IOBUF	          9        40.9
+                                PFUREG	         72         1.3
+---------------------------------------------------
+Report for cell gpio0_ipgen_lscc_apb2lmmi_uniq_1_9s_6s_1s_1_2_4_8_4s
+   Instance path: I3C_XO5/gpio0_inst/lscc_gpio_inst/genblk2.lscc_apb2lmmi_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         15         0.1
+                               LUTGATE	         15         0.1
+                                PFUREG	         27         0.5
+---------------------------------------------------
+Report for cell i3c_m_uniq_1
+   Instance path: I3C_XO5/i3c_m_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1501         8.8
+                               LUTGATE	       1361        11.8
+                                LUTCCU	        140         8.7
+                                 IOBUF	          2         9.1
+                                PFUREG	        688        12.0
+                                   EBR	          2         2.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+i3c_m_ipgen_lscc_i3c_controller_uniq_1_Z37_layer0	          1         8.8
+---------------------------------------------------
+Report for cell i3c_m_ipgen_lscc_i3c_controller_uniq_1_Z37_layer0
+   Instance path: I3C_XO5/i3c_m_inst/lscc_i3c_controller_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1501         8.8
+                               LUTGATE	       1361        11.8
+                                LUTCCU	        140         8.7
+                                 IOBUF	          2         9.1
+                                PFUREG	        688        12.0
+                                   EBR	          2         2.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_60	          1         8.7
+                     secured_design_94	          1         0.1
+---------------------------------------------------
+Report for cell secured_design_60
+   Instance path: I3C_XO5/i3c_m_inst/lscc_i3c_controller_inst/u_i3c_mst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1487         8.7
+                               LUTGATE	       1347        11.7
+                                LUTCCU	        140         8.7
+                                PFUREG	        658        11.5
+                                   EBR	          2         2.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_61	          1         1.4
+                     secured_design_62	          1         0.1
+                     secured_design_63	          1         3.7
+                     secured_design_67	          1         3.5
+---------------------------------------------------
+Report for cell secured_design_61
+   Instance path: I3C_XO5/secured_instance_61
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        243         1.4
+                               LUTGATE	        243         2.1
+                                PFUREG	         98         1.7
+---------------------------------------------------
+Report for cell secured_design_62
+   Instance path: I3C_XO5/secured_instance_62
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         25         0.1
+                               LUTGATE	         25         0.2
+                                PFUREG	         40         0.7
+---------------------------------------------------
+Report for cell secured_design_63
+   Instance path: I3C_XO5/secured_instance_63
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        625         3.7
+                               LUTGATE	        575         5.0
+                                LUTCCU	         50         3.1
+                                PFUREG	        185         3.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_64	          1         0.1
+                     secured_design_65	          1         0.1
+                     secured_design_66	          1         0.1
+---------------------------------------------------
+Report for cell secured_design_64
+   Instance path: I3C_XO5/secured_instance_64
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         10         0.1
+                               LUTGATE	         10         0.1
+                                PFUREG	          4         0.1
+---------------------------------------------------
+Report for cell secured_design_65
+   Instance path: I3C_XO5/secured_instance_65
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         20         0.1
+                               LUTGATE	         20         0.2
+                                PFUREG	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_66
+   Instance path: I3C_XO5/secured_instance_66
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         16         0.1
+                               LUTGATE	         16         0.1
+                                PFUREG	          7         0.1
+---------------------------------------------------
+Report for cell secured_design_67
+   Instance path: I3C_XO5/secured_instance_67
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        590         3.5
+                               LUTGATE	        500         4.3
+                                LUTCCU	         90         5.6
+                                PFUREG	        326         5.7
+                                   EBR	          2         2.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_68	          1         0.9
+                     secured_design_78	          1         0.9
+                     secured_design_88	          1         1.7
+---------------------------------------------------
+Report for cell secured_design_68
+   Instance path: I3C_XO5/secured_instance_68
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        145         0.9
+                               LUTGATE	        105         0.9
+                                LUTCCU	         40         2.5
+                                PFUREG	        107         1.9
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_69	          1         0.2
+                     secured_design_70	          1         0.6
+---------------------------------------------------
+Report for cell secured_design_69
+   Instance path: I3C_XO5/secured_instance_69
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         42         0.2
+                               LUTGATE	         42         0.4
+                                PFUREG	         18         0.3
+---------------------------------------------------
+Report for cell secured_design_70
+   Instance path: I3C_XO5/secured_instance_70
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        100         0.6
+                               LUTGATE	         60         0.5
+                                LUTCCU	         40         2.5
+                                PFUREG	         86         1.5
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_71	          1         0.6
+---------------------------------------------------
+Report for cell secured_design_71
+   Instance path: I3C_XO5/secured_instance_71
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        100         0.6
+                               LUTGATE	         60         0.5
+                                LUTCCU	         40         2.5
+                                PFUREG	         86         1.5
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_72	          1         0.6
+---------------------------------------------------
+Report for cell secured_design_72
+   Instance path: I3C_XO5/secured_instance_72
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        100         0.6
+                               LUTGATE	         60         0.5
+                                LUTCCU	         40         2.5
+                                PFUREG	         86         1.5
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_73	          1         0.6
+---------------------------------------------------
+Report for cell secured_design_73
+   Instance path: I3C_XO5/secured_instance_73
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        100         0.6
+                               LUTGATE	         60         0.5
+                                LUTCCU	         40         2.5
+                                PFUREG	         86         1.5
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_74	          1         0.0
+                     secured_design_75	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_74
+   Instance path: I3C_XO5/secured_instance_74
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_75
+   Instance path: I3C_XO5/secured_instance_75
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_76	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_76
+   Instance path: I3C_XO5/secured_instance_76
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_77	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_77
+   Instance path: I3C_XO5/secured_instance_77
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell secured_design_78
+   Instance path: I3C_XO5/secured_instance_78
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        156         0.9
+                               LUTGATE	        116         1.0
+                                LUTCCU	         40         2.5
+                                PFUREG	        107         1.9
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_79	          1         0.2
+                     secured_design_80	          1         0.7
+---------------------------------------------------
+Report for cell secured_design_79
+   Instance path: I3C_XO5/secured_instance_79
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         41         0.2
+                               LUTGATE	         41         0.4
+                                PFUREG	         18         0.3
+---------------------------------------------------
+Report for cell secured_design_80
+   Instance path: I3C_XO5/secured_instance_80
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        111         0.7
+                               LUTGATE	         71         0.6
+                                LUTCCU	         40         2.5
+                                PFUREG	         86         1.5
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_81	          1         0.7
+---------------------------------------------------
+Report for cell secured_design_81
+   Instance path: I3C_XO5/secured_instance_81
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        111         0.7
+                               LUTGATE	         71         0.6
+                                LUTCCU	         40         2.5
+                                PFUREG	         86         1.5
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_82	          1         0.7
+---------------------------------------------------
+Report for cell secured_design_82
+   Instance path: I3C_XO5/secured_instance_82
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        111         0.7
+                               LUTGATE	         71         0.6
+                                LUTCCU	         40         2.5
+                                PFUREG	         86         1.5
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_83	          1         0.7
+---------------------------------------------------
+Report for cell secured_design_83
+   Instance path: I3C_XO5/secured_instance_83
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        111         0.7
+                               LUTGATE	         71         0.6
+                                LUTCCU	         40         2.5
+                                PFUREG	         86         1.5
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_84	          1         0.0
+                     secured_design_85	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_84
+   Instance path: I3C_XO5/secured_instance_84
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_85
+   Instance path: I3C_XO5/secured_instance_85
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_86	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_86
+   Instance path: I3C_XO5/secured_instance_86
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_87	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_87
+   Instance path: I3C_XO5/secured_instance_87
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell secured_design_88
+   Instance path: I3C_XO5/secured_instance_88
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        286         1.7
+                               LUTGATE	        276         2.4
+                                LUTCCU	         10         0.6
+                                PFUREG	        110         1.9
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_89	          1         0.7
+---------------------------------------------------
+Report for cell secured_design_89
+   Instance path: I3C_XO5/secured_instance_89
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        114         0.7
+                               LUTGATE	        104         0.9
+                                LUTCCU	         10         0.6
+                                PFUREG	         57         1.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_90	          1         0.1
+                     secured_design_91	          1         0.0
+                     secured_design_92	          1         0.2
+                     secured_design_93	          1         0.1
+---------------------------------------------------
+Report for cell secured_design_90
+   Instance path: I3C_XO5/secured_instance_90
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         19         0.1
+                               LUTGATE	          9         0.1
+                                LUTCCU	         10         0.6
+                                PFUREG	          8         0.1
+---------------------------------------------------
+Report for cell secured_design_91
+   Instance path: I3C_XO5/secured_instance_91
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8         0.0
+                               LUTGATE	          8         0.1
+                                PFUREG	          4         0.1
+---------------------------------------------------
+Report for cell secured_design_92
+   Instance path: I3C_XO5/secured_instance_92
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         37         0.2
+                               LUTGATE	         37         0.3
+                                PFUREG	         18         0.3
+---------------------------------------------------
+Report for cell secured_design_93
+   Instance path: I3C_XO5/secured_instance_93
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         20         0.1
+                               LUTGATE	         20         0.2
+                                PFUREG	         17         0.3
+---------------------------------------------------
+Report for cell secured_design_94
+   Instance path: I3C_XO5/i3c_m_inst/lscc_i3c_controller_inst/gen_apb.u_apb_intf
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         14         0.1
+                               LUTGATE	         14         0.1
+                                PFUREG	         30         0.5
+---------------------------------------------------
+Report for cell i3c_s_uniq_1
+   Instance path: I3C_XO5/i3c_s_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       2016        11.9
+                               LUTGATE	       1748        15.1
+                                LUTCCU	        268        16.7
+                                 IOBUF	          2         9.1
+                                PFUREG	        950        16.6
+                                   EBR	          2         2.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0	          1        11.9
+---------------------------------------------------
+Report for cell i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0
+   Instance path: I3C_XO5/i3c_s_inst/lscc_i3c_target_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       2016        11.9
+                               LUTGATE	       1748        15.1
+                                LUTCCU	        268        16.7
+                                 IOBUF	          2         9.1
+                                PFUREG	        950        16.6
+                                   EBR	          2         2.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_123	          1         0.1
+                     secured_design_95	          1        11.8
+---------------------------------------------------
+Report for cell secured_design_95
+   Instance path: I3C_XO5/i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       2002        11.8
+                               LUTGATE	       1734        15.0
+                                LUTCCU	        268        16.7
+                                PFUREG	        920        16.1
+                                   EBR	          2         2.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_107	          1         1.0
+                    secured_design_117	          1         1.9
+                    secured_design_118	          1         0.2
+                    secured_design_119	          1         7.2
+                     secured_design_96	          1         0.3
+                     secured_design_97	          1         1.0
+---------------------------------------------------
+Report for cell secured_design_96
+   Instance path: I3C_XO5/secured_instance_96
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         47         0.3
+                               LUTGATE	         19         0.2
+                                LUTCCU	         28         1.7
+                                PFUREG	         38         0.7
+---------------------------------------------------
+Report for cell secured_design_97
+   Instance path: I3C_XO5/secured_instance_97
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        171         1.0
+                               LUTGATE	        107         0.9
+                                LUTCCU	         64         4.0
+                                PFUREG	        117         2.0
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     secured_design_98	          1         0.2
+                     secured_design_99	          1         0.7
+---------------------------------------------------
+Report for cell secured_design_98
+   Instance path: I3C_XO5/secured_instance_98
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         41         0.2
+                               LUTGATE	         41         0.4
+                                PFUREG	         18         0.3
+---------------------------------------------------
+Report for cell secured_design_99
+   Instance path: I3C_XO5/secured_instance_99
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        127         0.7
+                               LUTGATE	         63         0.5
+                                LUTCCU	         64         4.0
+                                PFUREG	         96         1.7
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_100	          1         0.7
+---------------------------------------------------
+Report for cell secured_design_100
+   Instance path: I3C_XO5/secured_instance_100
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        127         0.7
+                               LUTGATE	         63         0.5
+                                LUTCCU	         64         4.0
+                                PFUREG	         96         1.7
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_101	          1         0.7
+---------------------------------------------------
+Report for cell secured_design_101
+   Instance path: I3C_XO5/secured_instance_101
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        127         0.7
+                               LUTGATE	         63         0.5
+                                LUTCCU	         64         4.0
+                                PFUREG	         96         1.7
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_102	          1         0.7
+---------------------------------------------------
+Report for cell secured_design_102
+   Instance path: I3C_XO5/secured_instance_102
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        127         0.7
+                               LUTGATE	         63         0.5
+                                LUTCCU	         64         4.0
+                                PFUREG	         96         1.7
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_103	          1         0.0
+                    secured_design_104	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_103
+   Instance path: I3C_XO5/secured_instance_103
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_104
+   Instance path: I3C_XO5/secured_instance_104
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_105	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_105
+   Instance path: I3C_XO5/secured_instance_105
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_106	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_106
+   Instance path: I3C_XO5/secured_instance_106
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell secured_design_107
+   Instance path: I3C_XO5/secured_instance_107
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        172         1.0
+                               LUTGATE	        108         0.9
+                                LUTCCU	         64         4.0
+                                PFUREG	        117         2.0
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_108	          1         0.2
+                    secured_design_109	          1         0.7
+---------------------------------------------------
+Report for cell secured_design_108
+   Instance path: I3C_XO5/secured_instance_108
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         42         0.2
+                               LUTGATE	         42         0.4
+                                PFUREG	         18         0.3
+---------------------------------------------------
+Report for cell secured_design_109
+   Instance path: I3C_XO5/secured_instance_109
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        127         0.7
+                               LUTGATE	         63         0.5
+                                LUTCCU	         64         4.0
+                                PFUREG	         96         1.7
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_110	          1         0.7
+---------------------------------------------------
+Report for cell secured_design_110
+   Instance path: I3C_XO5/secured_instance_110
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        127         0.7
+                               LUTGATE	         63         0.5
+                                LUTCCU	         64         4.0
+                                PFUREG	         96         1.7
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_111	          1         0.7
+---------------------------------------------------
+Report for cell secured_design_111
+   Instance path: I3C_XO5/secured_instance_111
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        127         0.7
+                               LUTGATE	         63         0.5
+                                LUTCCU	         64         4.0
+                                PFUREG	         96         1.7
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_112	          1         0.7
+---------------------------------------------------
+Report for cell secured_design_112
+   Instance path: I3C_XO5/secured_instance_112
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        127         0.7
+                               LUTGATE	         63         0.5
+                                LUTCCU	         64         4.0
+                                PFUREG	         96         1.7
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_113	          1         0.0
+                    secured_design_114	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_113
+   Instance path: I3C_XO5/secured_instance_113
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_114
+   Instance path: I3C_XO5/secured_instance_114
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_115	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_115
+   Instance path: I3C_XO5/secured_instance_115
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_116	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_116
+   Instance path: I3C_XO5/secured_instance_116
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell secured_design_117
+   Instance path: I3C_XO5/secured_instance_117
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        328         1.9
+                               LUTGATE	        328         2.8
+                                PFUREG	        264         4.6
+---------------------------------------------------
+Report for cell secured_design_118
+   Instance path: I3C_XO5/secured_instance_118
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         36         0.2
+                               LUTGATE	         36         0.3
+                                PFUREG	         32         0.6
+---------------------------------------------------
+Report for cell secured_design_119
+   Instance path: I3C_XO5/secured_instance_119
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1226         7.2
+                               LUTGATE	       1114         9.6
+                                LUTCCU	        112         7.0
+                                PFUREG	        321         5.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_120	          1         0.0
+                    secured_design_121	          1         0.5
+                    secured_design_122	          1         0.3
+---------------------------------------------------
+Report for cell secured_design_120
+   Instance path: I3C_XO5/secured_instance_120
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          3         0.0
+                               LUTGATE	          3         0.0
+                                PFUREG	         12         0.2
+---------------------------------------------------
+Report for cell secured_design_121
+   Instance path: I3C_XO5/secured_instance_121
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         80         0.5
+                               LUTGATE	         80         0.7
+---------------------------------------------------
+Report for cell secured_design_122
+   Instance path: I3C_XO5/secured_instance_122
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         47         0.3
+                               LUTGATE	         27         0.2
+                                LUTCCU	         20         1.2
+                                PFUREG	         26         0.5
+---------------------------------------------------
+Report for cell secured_design_123
+   Instance path: I3C_XO5/i3c_s_inst/lscc_i3c_target_inst/gen_apb.u_apb_intf
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         14         0.1
+                               LUTGATE	         14         0.1
+                                PFUREG	         30         0.5
+---------------------------------------------------
+Report for cell osc0_uniq_1
+   Instance path: I3C_XO5/osc0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ osc0_ipgen_lscc_osc_uniq_1_Z52_layer0	          1         0.0
+---------------------------------------------------
+Report for cell osc0_ipgen_lscc_osc_uniq_1_Z52_layer0
+   Instance path: I3C_XO5/osc0_inst/lscc_osc_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell pll0_uniq_1
+   Instance path: I3C_XO5/pll0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+ pll0_ipgen_lscc_pll_uniq_1_Z53_layer0	          1         0.0
+---------------------------------------------------
+Report for cell pll0_ipgen_lscc_pll_uniq_1_Z53_layer0
+   Instance path: I3C_XO5/pll0_inst/lscc_pll_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+---------------------------------------------------
+Report for cell risc_mc_uniq_1_0s_0s_18446744073709551615_0_18446744073709551615_0_18446744073709486080_56_layer0
+   Instance path: I3C_XO5/risc_mc_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       6.00        100.0
+                                  LUT4	       3853        22.7
+                               LUTGATE	       3137        27.2
+                                LUTCCU	        716        44.5
+                                PFUREG	       1963        34.3
+                                   EBR	          2         2.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_124	          1        22.7
+---------------------------------------------------
+Report for cell secured_design_124
+   Instance path: I3C_XO5/risc_mc_inst/riscvsmall_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       6.00        100.0
+                                  LUT4	       3853        22.7
+                               LUTGATE	       3137        27.2
+                                LUTCCU	        716        44.5
+                                PFUREG	       1963        34.3
+                                   EBR	          2         2.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_125	          1        18.9
+                    secured_design_128	          1         0.6
+                    secured_design_142	          1         0.0
+                    secured_design_143	          1         2.5
+                    secured_design_144	          1         0.2
+                    secured_design_145	          1         0.3
+---------------------------------------------------
+Report for cell secured_design_125
+   Instance path: I3C_XO5/secured_instance_125
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                MULT18	       6.00        100.0
+                                  LUT4	       3219        18.9
+                               LUTGATE	       2635        22.8
+                                LUTCCU	        584        36.3
+                                PFUREG	       1507        26.4
+                                   EBR	          2         2.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_126	          1         0.2
+---------------------------------------------------
+Report for cell secured_design_126
+   Instance path: I3C_XO5/secured_instance_126
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         35         0.2
+                               LUTGATE	         35         0.3
+                                PFUREG	         33         0.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_127	          1         0.2
+---------------------------------------------------
+Report for cell secured_design_127
+   Instance path: I3C_XO5/secured_instance_127
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         35         0.2
+                               LUTGATE	         35         0.3
+                                PFUREG	         33         0.6
+---------------------------------------------------
+Report for cell secured_design_128
+   Instance path: I3C_XO5/secured_instance_128
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        103         0.6
+                               LUTGATE	        103         0.9
+                                PFUREG	        214         3.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_129	          1         0.1
+                    secured_design_130	          1         0.5
+                    secured_design_133	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_129
+   Instance path: I3C_XO5/secured_instance_129
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         14         0.1
+                               LUTGATE	         14         0.1
+                                PFUREG	         78         1.4
+---------------------------------------------------
+Report for cell secured_design_130
+   Instance path: I3C_XO5/secured_instance_130
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         80         0.5
+                               LUTGATE	         80         0.7
+                                PFUREG	        122         2.1
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_131	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_131
+   Instance path: I3C_XO5/secured_instance_131
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                               LUTGATE	          2         0.0
+                                PFUREG	          9         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_132	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_132
+   Instance path: I3C_XO5/secured_instance_132
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_133
+   Instance path: I3C_XO5/secured_instance_133
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7         0.0
+                               LUTGATE	          7         0.1
+                                PFUREG	          9         0.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                    secured_design_134	          1         0.0
+                    secured_design_135	          1         0.0
+                    secured_design_136	          1         0.0
+                    secured_design_137	          1         0.0
+                    secured_design_138	          1         0.0
+                    secured_design_139	          1         0.0
+                    secured_design_140	          1         0.0
+                    secured_design_141	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_134
+   Instance path: I3C_XO5/secured_instance_134
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          2         0.0
+---------------------------------------------------
+Report for cell secured_design_135
+   Instance path: I3C_XO5/secured_instance_135
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_136
+   Instance path: I3C_XO5/secured_instance_136
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_137
+   Instance path: I3C_XO5/secured_instance_137
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_138
+   Instance path: I3C_XO5/secured_instance_138
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_139
+   Instance path: I3C_XO5/secured_instance_139
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_140
+   Instance path: I3C_XO5/secured_instance_140
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_141
+   Instance path: I3C_XO5/secured_instance_141
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell secured_design_142
+   Instance path: I3C_XO5/secured_instance_142
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.0
+                                PFUREG	         70         1.2
+---------------------------------------------------
+Report for cell secured_design_143
+   Instance path: I3C_XO5/secured_instance_143
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        431         2.5
+                               LUTGATE	        299         2.6
+                                LUTCCU	        132         8.2
+                                PFUREG	        144         2.5
+---------------------------------------------------
+Report for cell secured_design_144
+   Instance path: I3C_XO5/secured_instance_144
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         42         0.2
+                               LUTGATE	         42         0.4
+                                PFUREG	         24         0.4
+---------------------------------------------------
+Report for cell secured_design_145
+   Instance path: I3C_XO5/secured_instance_145
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         53         0.3
+                               LUTGATE	         53         0.5
+                                PFUREG	          3         0.1
+---------------------------------------------------
+Report for cell sys_mem_uniq_1_sys_mem
+   Instance path: I3C_XO5/sys_mem_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        832         4.9
+                               LUTGATE	        786         6.8
+                                LUTCCU	         46         2.9
+                                PFUREG	        681        11.9
+                                   EBR	         32        43.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+sys_mem_ipgen_lscc_sys_mem_uniq_1_Z101_layer0	          1         4.9
+---------------------------------------------------
+Report for cell sys_mem_ipgen_lscc_sys_mem_uniq_1_Z101_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        832         4.9
+                               LUTGATE	        786         6.8
+                                LUTCCU	         46         2.9
+                                PFUREG	        681        11.9
+                                   EBR	         32        43.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+sys_mem_ipgen_lscc_ahblmem_subordinate_uniq_1_Z60_layer0	          1         2.2
+sys_mem_ipgen_lscc_ahblmem_subordinate_uniq_2_Z64_layer0	          1         2.7
+sys_mem_ipgen_lscc_mem_uniq_1_Z100_layer0	          1         0.0
+---------------------------------------------------
+Report for cell sys_mem_ipgen_lscc_ahblmem_subordinate_uniq_1_Z60_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/bridge_s0.genblk1.bridge_s0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        367         2.2
+                               LUTGATE	        345         3.0
+                                LUTCCU	         22         1.4
+                                PFUREG	        243         4.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+sys_mem_ipgen_shreg_fifo_uniq_1_Z57_layer0	          1         0.8
+sys_mem_ipgen_shreg_fifo_uniq_3_Z58_layer0	          1         0.0
+sys_mem_ipgen_shreg_fifo_uniq_4_Z59_layer0	          1         0.7
+---------------------------------------------------
+Report for cell sys_mem_ipgen_shreg_fifo_uniq_1_Z57_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/bridge_s0.genblk1.bridge_s0/u_ahbl_raddrq
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        142         0.8
+                               LUTGATE	        142         1.2
+                                PFUREG	         79         1.4
+---------------------------------------------------
+Report for cell sys_mem_ipgen_shreg_fifo_uniq_3_Z58_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/bridge_s0.genblk1.bridge_s0/gen_wdata_fifo.u_ahbl_wdataq
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.0
+                               LUTGATE	          4         0.0
+                                PFUREG	          4         0.1
+---------------------------------------------------
+Report for cell sys_mem_ipgen_shreg_fifo_uniq_4_Z59_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/bridge_s0.genblk1.bridge_s0/no_gen_reg_mode.u_ahbl_rdatq
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        120         0.7
+                               LUTGATE	        120         1.0
+                                PFUREG	        138         2.4
+---------------------------------------------------
+Report for cell sys_mem_ipgen_lscc_ahblmem_subordinate_uniq_2_Z64_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/bridge_s1.genblk1.bridge_s1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        460         2.7
+                               LUTGATE	        436         3.8
+                                LUTCCU	         24         1.5
+                                PFUREG	        438         7.7
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+sys_mem_ipgen_shreg_fifo_uniq_2_Z61_layer0	          1         0.9
+sys_mem_ipgen_shreg_fifo_uniq_5_Z62_layer0	          1         0.7
+sys_mem_ipgen_shreg_fifo_uniq_6_Z63_layer0	          1         0.7
+---------------------------------------------------
+Report for cell sys_mem_ipgen_shreg_fifo_uniq_2_Z61_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/bridge_s1.genblk1.bridge_s1/u_ahbl_raddrq
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        148         0.9
+                               LUTGATE	        148         1.3
+                                PFUREG	        104         1.8
+---------------------------------------------------
+Report for cell sys_mem_ipgen_shreg_fifo_uniq_5_Z62_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/bridge_s1.genblk1.bridge_s1/gen_wdata_fifo.u_ahbl_wdataq
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        125         0.7
+                               LUTGATE	        125         1.1
+                                PFUREG	        169         3.0
+---------------------------------------------------
+Report for cell sys_mem_ipgen_shreg_fifo_uniq_6_Z63_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/bridge_s1.genblk1.bridge_s1/no_gen_reg_mode.u_ahbl_rdatq
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        120         0.7
+                               LUTGATE	        120         1.0
+                                PFUREG	        137         2.4
+---------------------------------------------------
+Report for cell sys_mem_ipgen_lscc_mem_uniq_1_Z100_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          5         0.0
+                               LUTGATE	          5         0.0
+                                   EBR	         32        43.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+           lscc_ram_dp_true_Z99_layer0	          1         0.0
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_Z99_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.0
+                               LUTGATE	          4         0.0
+                                   EBR	         32        43.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+      lscc_ram_dp_true_main_Z98_layer0	          1         0.0
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_main_Z98_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.0
+                               LUTGATE	          4         0.0
+                                   EBR	         32        43.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+      lscc_ram_dp_true_inst_Z65_layer0	          1         0.0
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_inst_Z65_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          4         0.0
+                               LUTGATE	          4         0.0
+                                   EBR	         32        43.2
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+      lscc_ram_dp_true_core_Z66_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z67_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z68_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z69_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z70_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z71_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z72_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z73_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z74_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z75_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z76_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z77_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z78_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z79_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z80_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z81_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z82_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z83_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z84_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z85_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z86_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z87_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z88_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z89_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z90_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z91_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z92_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z93_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z94_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z95_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z96_layer0	          1         0.0
+      lscc_ram_dp_true_core_Z97_layer0	          1         0.0
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z70_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[4].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z97_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[31].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z95_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[29].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z92_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[26].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z66_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[0].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z94_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[28].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z91_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[25].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z82_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[16].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z86_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[20].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z90_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[24].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z81_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[15].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z85_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[19].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z83_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[17].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z80_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[14].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z84_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[18].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z88_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[22].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z79_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[13].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z76_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[10].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z87_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[21].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z78_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[12].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z69_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[3].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z73_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[7].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z77_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[11].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z68_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[2].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z72_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[6].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z93_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[27].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z67_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[1].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z71_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[5].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z75_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[9].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z96_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[30].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z89_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[23].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell lscc_ram_dp_true_core_Z74_layer0
+   Instance path: I3C_XO5/sys_mem_inst/lscc_sys_mem_inst/CORE_MEMORY.genblk1.u_lscc_mem0/intf_AHBL.lifcl_LAVAT.ebr.dp.LIFCL.u_mem/mem_main/uinst_0/prim.NON_MIX.xADDR[0].xDATA[8].no_mem_file.u_mem0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          1         0.0
+                               LUTGATE	          1         0.0
+                                   EBR	          1         1.4
+---------------------------------------------------
+Report for cell uart0_uniq_1
+   Instance path: I3C_XO5/uart0_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        240         1.4
+                               LUTGATE	        194         1.7
+                                LUTCCU	         46         2.9
+                                PFUREG	        147         2.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+uart0_ipgen_lscc_uart_uniq_1_Z103_layer0	          1         1.4
+---------------------------------------------------
+Report for cell uart0_ipgen_lscc_uart_uniq_1_Z103_layer0
+   Instance path: I3C_XO5/uart0_inst/lscc_uart_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        240         1.4
+                               LUTGATE	        194         1.7
+                                LUTCCU	         46         2.9
+                                PFUREG	        147         2.6
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+uart0_ipgen_lscc_uart_intface_uniq_1_Z102_layer0	          1         0.3
+uart0_ipgen_lscc_uart_rxcver_uniq_1_8s_0s_5s_1_2_4_8_16_MachXO3D	          1         0.6
+uart0_ipgen_lscc_uart_txmitt_uniq_1_8s_0s_7s_1_2_4_8_16_32_64	          1         0.5
+---------------------------------------------------
+Report for cell uart0_ipgen_lscc_uart_intface_uniq_1_Z102_layer0
+   Instance path: I3C_XO5/uart0_inst/lscc_uart_inst/u_intface
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         54         0.3
+                               LUTGATE	         54         0.5
+                                PFUREG	         48         0.8
+---------------------------------------------------
+Report for cell uart0_ipgen_lscc_uart_rxcver_uniq_1_8s_0s_5s_1_2_4_8_16_MachXO3D
+   Instance path: I3C_XO5/uart0_inst/lscc_uart_inst/u_rxcver
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	        106         0.6
+                               LUTGATE	         78         0.7
+                                LUTCCU	         28         1.7
+                                PFUREG	         57         1.0
+---------------------------------------------------
+Report for cell uart0_ipgen_lscc_uart_txmitt_uniq_1_8s_0s_7s_1_2_4_8_16_32_64
+   Instance path: I3C_XO5/uart0_inst/lscc_uart_inst/u_txmitt
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         80         0.5
+                               LUTGATE	         62         0.5
+                                LUTCCU	         18         1.1
+                                PFUREG	         42         0.7

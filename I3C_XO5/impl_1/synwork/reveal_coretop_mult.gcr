@@ -1,0 +1,14 @@
+i jtck
+m 0 0
+u 62 189
+p {p:jtck}{t:i3c_xo5_la0_inst_0.jtck}{p:i3c_xo5_la0_inst_0.jtck}{t:i3c_xo5_la0_inst_0.tm_u.jtck}{p:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_0 {t:ENCRYPTED} <ENCRYPTED>
+c ckid0_0 {p:jtck} port Unsupported/too complex instance on clock path
+i clk[0]
+m 0 0
+u 61 159
+p {p:clk[0]}{t:i3c_xo5_la0_inst_0.clk}{p:i3c_xo5_la0_inst_0.clk}{t:i3c_xo5_la0_inst_0.tm_u.clk}{p:ENCRYPTED}{t:ENCRYPTED}
+e ckid0_1 {t:ENCRYPTED} <ENCRYPTED>
+c ckid0_1 {p:clk[0]} port Unsupported/too complex instance on clock path
+l 0 0 0 0 0 0
+r 0 0 0 0 0 0 0 0

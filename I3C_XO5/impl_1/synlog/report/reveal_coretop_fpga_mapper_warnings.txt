@@ -1,0 +1,2 @@
+@W: MT420 |Found inferred clock reveal_coretop|jtck with period 5.00ns. Please declare a user-defined clock on port jtck.
+@W: MT420 |Found inferred clock reveal_coretop|clk[0] with period 5.00ns. Please declare a user-defined clock on port clk[0].

@@ -1,0 +1,29 @@
+11:02:57 **** Incremental Build of configuration Debug for project riscv_mc_helloworld ****
+make all 
+Building file: ../src/main.c
+Invoking: GNU RISC-V Cross C Compiler
+riscv-none-embed-gcc -march=rv32imc -mabi=ilp32 -msmall-data-limit=8 -mno-save-restore -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wframe-larger-than=2560  -g3 -DLSCC_STDIO_UART_APB -I"C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\riscv_mc_helloworld/src" -I"C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\riscv_mc_helloworld/src/bsp" -I"C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\riscv_mc_helloworld/src/bsp/driver" -I"C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\riscv_mc_helloworld/src/bsp/driver/gpio" -I"C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\riscv_mc_helloworld/src/bsp/driver/i3c_controller" -I"C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\riscv_mc_helloworld/src/bsp/driver/i3c_target" -I"C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\riscv_mc_helloworld/src/bsp/driver/riscv_mc" -I"C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\riscv_mc_helloworld/src/bsp/driver/uart" -std=gnu11 --specs=picolibc.specs -DPICOLIBC_INTEGER_PRINTF_SCANF -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: riscv_mc_helloworld.elf
+Invoking: GNU RISC-V Cross C++ Linker
+riscv-none-embed-g++ -march=rv32imc -mabi=ilp32 -msmall-data-limit=8 -mno-save-restore -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wframe-larger-than=2560  -g3 -T "C:/Users/billzhang/Desktop/I3C_XO5/sw_I3C_XO5/riscv_mc_helloworld/src/linker.ld" -nostartfiles -Xlinker --gc-sections -Wl,-Map,"riscv_mc_helloworld.map" --specs=picolibcpp.specs -DPICOLIBC_INTEGER_PRINTF_SCANF -o "riscv_mc_helloworld.elf"  ./src/bsp/driver/uart/uart.o  ./src/bsp/driver/riscv_mc/cache.o ./src/bsp/driver/riscv_mc/crt0.o ./src/bsp/driver/riscv_mc/exit.o ./src/bsp/driver/riscv_mc/interrupt.o ./src/bsp/driver/riscv_mc/iob.o ./src/bsp/driver/riscv_mc/pic.o ./src/bsp/driver/riscv_mc/reg_access.o ./src/bsp/driver/riscv_mc/timer.o ./src/bsp/driver/riscv_mc/util.o  ./src/bsp/driver/i3c_target/i3c_target.o  ./src/bsp/driver/i3c_controller/i3c_controller.o  ./src/bsp/driver/gpio/gpio.o  ./src/main.o ./src/terminal.o ./src/utils.o   
+Finished building target: riscv_mc_helloworld.elf
+ 
+Invoking: GNU RISC-V Cross Create Listing
+riscv-none-embed-objdump --source --all-headers --demangle --line-numbers --wide "riscv_mc_helloworld.elf" > "riscv_mc_helloworld.lst"
+Finished building: riscv_mc_helloworld.lst
+ 
+Invoking: GNU RISC-V Cross Print Size
+riscv-none-embed-size --format=berkeley "riscv_mc_helloworld.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6728	     20	   3280	  10028	   272c	riscv_mc_helloworld.elf
+Finished building: riscv_mc_helloworld.siz
+ 
+Invoking: Lattice Create Memory Deployment
+riscv-none-embed-objcopy -O binary --gap-fill 0 "riscv_mc_helloworld.elf" "riscv_mc_helloworld.bin"; srec_cat "riscv_mc_helloworld.bin" -Binary -byte-swap 4 -DISable Header -Output "riscv_mc_helloworld.mem" -MEM 32
+Finished building: riscv_mc_helloworld.mem
+ 
+
+11:03:05 Build Finished. 0 errors, 0 warnings. (took 8s.27ms)
+

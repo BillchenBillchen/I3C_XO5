@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+gdb.client.commands=set remotetimeout 60\r\nset arch riscv\:rv32\r\nset mem inaccessible-by-default off\r\nset can-use-hw-watchpoints 0
+gdb.client.doStart=true
+gdb.client.executable=${cross_prefix}gdb${cross_suffix}
+gdb.client.other=
+gdb.openocd.connectOnlyMode=false
+gdb.openocd.doDebugInRam=false
+gdb.openocd.doInitialReset=true
+gdb.openocd.doPreRunReset=true
+gdb.openocd.enableSemihosting=true
+gdb.openocd.init.other=
+gdb.openocd.initialReset.type=init
+gdb.openocd.preRun.other=
+gdb.openocd.preRunReset.type=halt
+gdb.server.doStart=true
+gdb.server.executable=${openocd_path}/${openocd_executable}
+gdb.server.other=-c 'echo "DEBUG_ENABLE\=${DEBUGENABLE}"' -c "set target ${DEVICE}" -c "set tck ${TCKDIV}" -c "set port ${PORT}" -c "set channel ${CHANNEL}" -c "set cmdlength ${CMDLENGTH}" -c "set loc ${LOCATION}" -f interface/lattice-cable.cfg -c "set RISCV_SMALL_YAML {${ProjDirPath}/src/cpu.yaml}" -f target/riscv-small.cfg

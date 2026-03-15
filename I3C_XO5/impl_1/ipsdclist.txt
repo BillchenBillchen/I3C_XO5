@@ -1,0 +1,3 @@
+i3c_m=C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/i3c_m/3.7.0/constraints/constraint.sdc
+i3c_s=C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/i3c_s/3.7.0/constraints/constraint.sdc
+I3C_target_inst=C:/Users/billzhang/Desktop/I3C_XO5/I3C_sim/I3C_target_sim/I3C_target_inst/constraints/constraint.sdc

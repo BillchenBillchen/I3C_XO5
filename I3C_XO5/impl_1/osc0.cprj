@@ -1,0 +1,8 @@
+-ver "C:/lscc/radiant/2025.2/ip/pmi/pmi_lfmxo5.v"
+-lib pmi -vhd "C:/lscc/radiant/2025.2/ip/pmi/pmi_lfmxo5.vhd"
+-ver "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/osc0/1.4.0/rtl/osc0.v"
+-sdc "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/osc0/1.4.0/constraints/osc0.ldc"
+-path "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/osc0/1.4.0" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5"
+-top osc0
+-a "LFMXO5"
+-t "LFMXO5-25"

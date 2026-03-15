@@ -1,0 +1,29 @@
+#Start recording tcl command: 1/27/2026 10:45:51
+sbp_create_project -name {I3C_XO5} -path {C:/Users/billzhang/Desktop/I3C Controller IP Design Example/I3C_XO5} -device {LFMXO5-25-7BBG256C} -speed {7_High-Performance_1.0V} -language Verilog -psc {C:/lscc/propel/2025.2/templates/MachXO3D_Template01/MachXO3D_Template01.psc}
+sbp_config_ip -vlnv {latticesemi.com:ip:risc_mc:2.8.1} -meta_vlnv {latticesemi.com:ip:riscv_mc:2.8.1} -cfg_value {CACHE_ENABLE:false,JTAG_CHANNEL_EXTEND:false,M_STANDALONE:true,SOFT_JTAG:false}
+sbp_add_component -vlnv {latticesemi.com:ip:risc_mc:2.8.1} -name {risc_mc_inst}
+sbp_config_ip -vlnv {latticesemi.com:ip:i3c_s:3.7.0} -meta_vlnv {latticesemi.com:ip:i3c_target:3.7.0} -cfg_value {EN_FIFOINTF:false}
+sbp_add_component -vlnv {latticesemi.com:ip:i3c_s:3.7.0} -name {i3c_s_inst}
+sbp_config_ip -vlnv {latticesemi.com:ip:i3c_m:3.7.0} -meta_vlnv {latticesemi.com:ip:i3c_controller:3.7.0} -cfg_value {ENABLE_HJI:true,ENABLE_IBI:true}
+sbp_add_component -vlnv {latticesemi.com:ip:i3c_m:3.7.0} -name {i3c_m_inst}
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C Controller IP Design Example/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C Controller IP Design Example/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_config_ip -vlnv {latticesemi.com:module:ahbl:1.5.0} -meta_vlnv {latticesemi.com:module:ahb_lite_interconnect:1.5.0} -cfg_value {TOTAL_MASTER_CNT:1,TOTAL_SLAVE_CNT:2}
+sbp_add_component -vlnv {latticesemi.com:module:ahbl:1.5.0} -name {ahbl_inst}
+sbp_connect_interface_net {I3C_XO5/risc_mc_inst/AHBL_M1_DATA} {I3C_XO5/ahbl_inst/AHBL_S00}
+sbp_connect_net {I3C_XO5/ahbl_inst/ahbl_hresetn_i} {I3C_XO5/risc_mc_inst/system_resetn_o}
+sbp_connect_net -name {I3C_XO5/risc_mc_inst_system_resetn_o_net} {I3C_XO5/i3c_m_inst/rst_n_i}
+sbp_connect_net -name {I3C_XO5/risc_mc_inst_system_resetn_o_net} {I3C_XO5/i3c_s_inst/rst_n_i}
+sbp_config_ip -vlnv {latticesemi.com:ip:sys_mem:2.5.1} -meta_vlnv {latticesemi.com:ip:system_memory:2.5.1} -cfg_value {DATA_STREAMER_EN:false,PORT_COUNT:2}
+sbp_add_component -vlnv {latticesemi.com:ip:sys_mem:2.5.1} -name {sys_mem_inst}
+sbp_connect_interface_net {I3C_XO5/sys_mem_inst/AHBL_S1} {I3C_XO5/ahbl_inst/AHBL_M00}
+sbp_connect_interface_net {I3C_XO5/risc_mc_inst/AHBL_M0_INSTR} {I3C_XO5/sys_mem_inst/AHBL_S0}
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C Controller IP Design Example/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C Controller IP Design Example/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C Controller IP Design Example/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C Controller IP Design Example/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design close
+#Stop recording: 1/27/2026 14:57:25

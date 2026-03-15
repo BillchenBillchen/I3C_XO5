@@ -1,0 +1,18 @@
+#Start recording tcl command: 2/26/2026 09:22:52
+sbp_design open -name I3C_XO5 -path {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx}
+sbp_config_ip -vlnv {latticesemi.com:module:pll0:1.9.1} -meta_vlnv {latticesemi.com:module:pll:1.9.1} -cfg_value {gui_clk_op_freq:100,gui_clk_os_en:true,gui_clk_os_freq:25,gui_refclk_freq:50}
+sbp_replace -vlnv {latticesemi.com:module:pll0:1.9.1} -name {pll0_inst} -component {I3C_XO5/pll0_inst}
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../}
+sbp_config_ip -vlnv {latticesemi.com:ip:gpio0:1.8.0} -meta_vlnv {latticesemi.com:ip:gpio:1.8.0} -cfg_value {DIRECTION_DEF_VAL_INPUT:FF,IO_LINES_COUNT:9}
+sbp_replace -vlnv {latticesemi.com:ip:gpio0:1.8.0} -name {gpio0_inst} -component {I3C_XO5/gpio0_inst}
+sbp_delete {I3C_XO5/led_o} -type portbus
+sbp_export_pins {I3C_XO5/gpio0_inst/gpio_io}
+sbp_rename -name  {led_o} {I3C_XO5/gpio0_inst_gpio_io_portbus}
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design generate
+sbp_design save
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design close
+#Stop recording: 3/3/2026 00:32:54

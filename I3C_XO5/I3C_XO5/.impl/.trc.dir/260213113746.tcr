@@ -1,0 +1,53 @@
+#Start recording tcl command: 2/11/2026 09:42:38
+sbp_design open -name I3C_XO5 -path {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx}
+sbp_delete {I3C_XO5/pll0_inst_lock_o_net} -type net
+sbp_delete {I3C_XO5/pll0_inst_clkos_o_net} -type net
+sbp_connect_net {I3C_XO5/equation_module_inst/B} {I3C_XO5/pll0_inst/lock_o}
+sbp_connect_net {I3C_XO5/ahb2apb_inst/pclk_i} {I3C_XO5/pll0_inst/clkos_o}
+sbp_connect_net -name {I3C_XO5/pll0_inst_clkos_o_net} {I3C_XO5/apb0_inst/apb_pclk_i}
+sbp_connect_net -name {I3C_XO5/pll0_inst_clkos_o_net} {I3C_XO5/i3c_s_inst/clk_i}
+sbp_connect_net -name {I3C_XO5/pll0_inst_clkos_o_net} {I3C_XO5/i3c_m_inst/clk_i}
+sbp_connect_net -name {I3C_XO5/pll0_inst_clkos_o_net} {I3C_XO5/uart0_inst/clk_i}
+sbp_connect_net -name {I3C_XO5/pll0_inst_clkos_o_net} {I3C_XO5/gpio0_inst/clk_i}
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design drc
+sbp_design generate
+sbp_design save
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design generate
+sbp_design save
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design generate
+sbp_design save
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../}
+sbp_unassign_addr_seg {I3C_XO5/sys_mem_inst/AHBL_S0}
+sbp_unassign_addr_seg {I3C_XO5/gpio0_inst/APB_S0}
+sbp_unassign_addr_seg {I3C_XO5/i3c_m_inst/APB_S0}
+sbp_unassign_addr_seg {I3C_XO5/i3c_s_inst/APB_S0}
+sbp_unassign_addr_seg {I3C_XO5/uart0_inst/APB_S0}
+sbp_assign_addr_seg -offset 'h00000000 {I3C_XO5/risc_mc_inst/AHBL_M0_INSTR} {I3C_XO5/sys_mem_inst/AHBL_S0}
+sbp_unassign_addr_seg {I3C_XO5/sys_mem_inst/AHBL_S0}
+sbp_assign_addr_seg -offset 'h00000000 {I3C_XO5/risc_mc_inst/AHBL_M0_INSTR} {I3C_XO5/sys_mem_inst/AHBL_S0}
+sbp_assign_addr_seg -offset 'h00011000 {I3C_XO5/apb0_inst/APB_M00} {I3C_XO5/gpio0_inst/APB_S0}
+sbp_assign_addr_seg -offset 'h00010C00 {I3C_XO5/apb0_inst/APB_M01} {I3C_XO5/i3c_m_inst/APB_S0}
+sbp_assign_addr_seg -offset 'h00010400 {I3C_XO5/apb0_inst/APB_M03} {I3C_XO5/i3c_s_inst/APB_S0}
+sbp_assign_addr_seg -offset 'h00010800 {I3C_XO5/apb0_inst/APB_M02} {I3C_XO5/uart0_inst/APB_S0}
+sbp_assign_addr_seg -offset 'h00008400 {I3C_XO5/apb0_inst/APB_M00} {I3C_XO5/gpio0_inst/APB_S0}
+sbp_assign_addr_seg -offset 'h00008C00 {I3C_XO5/apb0_inst/APB_M01} {I3C_XO5/i3c_m_inst/APB_S0}
+sbp_assign_addr_seg -offset 'h00008800 {I3C_XO5/apb0_inst/APB_M03} {I3C_XO5/i3c_s_inst/APB_S0}
+sbp_assign_addr_seg -offset 'h00008000 {I3C_XO5/apb0_inst/APB_M02} {I3C_XO5/uart0_inst/APB_S0}
+sbp_assign_addr_seg -offset 'h00010000 {I3C_XO5/apb0_inst/APB_M00} {I3C_XO5/gpio0_inst/APB_S0}
+sbp_design undo
+sbp_assign_addr_seg -offset 'h00000000 {I3C_XO5/apb0_inst/APB_M00} {I3C_XO5/gpio0_inst/APB_S0}
+sbp_assign_addr_seg -offset 'h00010000 {I3C_XO5/apb0_inst/APB_M00} {I3C_XO5/gpio0_inst/APB_S0}
+sbp_assign_addr_seg -offset 'h00010400 {I3C_XO5/apb0_inst/APB_M01} {I3C_XO5/i3c_m_inst/APB_S0}
+sbp_assign_addr_seg -offset 'h00010800 {I3C_XO5/apb0_inst/APB_M03} {I3C_XO5/i3c_s_inst/APB_S0}
+sbp_assign_addr_seg -offset 'h00010C00 {I3C_XO5/apb0_inst/APB_M02} {I3C_XO5/uart0_inst/APB_S0}
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design close
+#Stop recording: 2/13/2026 11:37:46

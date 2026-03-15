@@ -1,0 +1,410 @@
+# //  Questa Lattice OEM Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/sim_controller/sim_controller.vdo
+# ** Note: (qrun-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
+# Creating library 'qrun.out/work'.
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# 
+# 
+# Start time: 09:42:04 on Mar 12,2026
+# 
+# vlog -reportprogress 300 -L work "+incdir+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5" -L pmi_work -L ovi_lfmxo5 C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/rtl/i3c_m.v C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/dut_params.v C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v -work qrun.out/work -statslog qrun.out/stats_log -csession=incr 
+# 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
+# 
+# -- Compiling module i3c_m
+# 
+# -- Compiling module i3c_m_ipgen_lscc_i3c_controller
+# 
+# ** Error: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/dut_params.v(1): (vlog-2155) Global declarations are illegal in Verilog 2001 syntax.
+# 
+# End time: 09:42:05 on Mar 12,2026, Elapsed time: 0:00:01
+# 
+# Errors: 1, Warnings: 0
+# 
+# *** Summary *********************************************
+#     qrun: Errors:   0, Warnings:   0
+#     vlog: Errors:   1, Warnings:   0
+#   Totals: Errors:   1, Warnings:   0
+# ** Error: C:/lscc/radiant/2025.2/questasim/win64/qrun failed.
+# Error in macro C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\sim\sim_controller\sim_controller.vdo line 1
+# C:/lscc/radiant/2025.2/questasim/win64/qrun failed.
+#     while executing
+# "qrun -clean -f "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/sim_controller/sim_controller.f""
+do sim_controller.vdo
+# ** Note: (qrun-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
+# Deleting directory qrun.out...
+# Creating library 'qrun.out/work'.
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# 
+# 
+# Start time: 10:00:18 on Mar 12,2026
+# 
+# vlog -reportprogress 300 -L work "+incdir+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5" "+incdir+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench" -L pmi_work -L ovi_lfmxo5 C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/rtl/i3c_m.v C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/dut_params.v C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v -work qrun.out/work -statslog qrun.out/stats_log -csession=incr 
+# 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
+# 
+# -- Compiling module i3c_m
+# 
+# -- Compiling module i3c_m_ipgen_lscc_i3c_controller
+# 
+# ** Error: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/dut_params.v(1): (vlog-2155) Global declarations are illegal in Verilog 2001 syntax.
+# 
+# End time: 10:00:20 on Mar 12,2026, Elapsed time: 0:00:02
+# 
+# Errors: 1, Warnings: 0
+# 
+# *** Summary *********************************************
+#     qrun: Errors:   0, Warnings:   0
+#     vlog: Errors:   1, Warnings:   0
+#   Totals: Errors:   1, Warnings:   0
+# ** Error: C:/lscc/radiant/2025.2/questasim/win64/qrun failed.
+# Error in macro ./sim_controller.vdo line 1
+# C:/lscc/radiant/2025.2/questasim/win64/qrun failed.
+#     while executing
+# "qrun -clean -f "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/sim_controller/sim_controller.f""
+do sim_controller.vdo
+# ** Note: (qrun-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
+# Deleting directory qrun.out...
+# Creating library 'qrun.out/work'.
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# 
+# 
+# Start time: 10:01:58 on Mar 12,2026
+# 
+# vlog -reportprogress 300 -L work -sv "+incdir+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5" "+incdir+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench" -L pmi_work -L ovi_lfmxo5 C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/rtl/i3c_m.v C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/dut_params.v C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v -work qrun.out/work -statslog qrun.out/stats_log -csession=incr 
+# 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
+# 
+# -- Compiling module i3c_m
+# 
+# -- Compiling module i3c_m_ipgen_lscc_i3c_controller
+# 
+# -- Compiling package dut_params_v_unit
+# 
+# -- Compiling module tb_top
+# 
+# -- Compiling module i3c_device_inst
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# -- Compiling module mst_bfm_lmmi
+# 
+# -- Compiling module mst_bfm_apb
+# 
+# -- Compiling module mst_bfm_ahbl
+# 
+# -- Compiling module mst_bfm_stream
+# 
+# 
+# 
+# Top level modules:
+# 
+# 	tb_top
+# 
+# End time: 10:02:00 on Mar 12,2026, Elapsed time: 0:00:02
+# 
+# Errors: 0, Warnings: 54
+# 
+# Questa Lattice OEM Edition-64 vopt 2025.2 Compiler 2025.05 May 31 2025
+# 
+# 
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# 
+# Start time: 10:02:03 on Mar 12,2026
+# 
+# vopt -reportprogress 300 -L work "+acc" "+noacc+pmi_work.*" "+noacc+ovi_lfmxo5.*" -L pmi_work -L ovi_lfmxo5 tb_top -suppress vopt-7033 -work qrun.out/work -statslog qrun.out/stats_log -csession=incr -o qrun_opt -csessionid=3 
+# 
+# ** Note: (vopt-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
+# 
+# 
+# 
+# Top level modules:
+# 
+# 	tb_top
+# 
+# 
+# 
+# Analyzing design...
+# 
+# -- Loading module tb_top
+# 
+# -- Loading module ovi_lfmxo5.GSR
+# 
+# -- Loading module ovi_lfmxo5.GSR_CORE
+# 
+# -- Loading module ovi_lfmxo5.VHI
+# 
+# -- Loading module ovi_lfmxo5.VLO
+# 
+# -- Loading module i3c_device_inst
+# 
+# -- Loading module i3c_m
+# 
+# -- Loading module i3c_m_ipgen_lscc_i3c_controller
+# 
+# -- Loading module mst_bfm_stream
+# 
+# -- Loading module ovi_lfmxo5.BB_I3C_A
+# 
+# -- Loading module ovi_lfmxo5.SEIO33_CORE
+# 
+# -- Loading module pmi_work.pmi_fifo_dc
+# 
+# -- Loading module pmi_work.lscc_fifo_dc
+# 
+# -- Loading module pmi_work.lscc_fifo_dc_fwft_fabric
+# 
+# -- Loading module pmi_work.lscc_fifo_dc_main
+# 
+# -- Loading module mst_bfm_apb
+# 
+# -- Loading module pmi_work.lscc_soft_fifo_dc
+# 
+# -- Loading module pmi_work.lscc_reset_async
+# 
+# -- Loading module pmi_work.lscc_hard_fifo_dc
+# 
+# -- Loading module pmi_work.lscc_fifo_soft_mem
+# 
+# -- Loading module pmi_work.lscc_fifo_mem_main
+# 
+# -- Loading module pmi_work.lscc_fifo_dc_hw_core
+# 
+# -- Loading module pmi_work.lscc_fifo_mem_core
+# 
+# -- Loading module ovi_lfmxo5.FIFO16K
+# 
+# -- Loading module ovi_lfmxo5.FIFO16K_MODE
+# 
+# -- Loading module ovi_lfmxo5.EBR_CORE
+# 
+# -- Loading module ovi_lfmxo5.PDP16K
+# 
+# -- Loading module ovi_lfmxo5.PDP16K_MODE
+# 
+# Optimizing 118 design-units (inlining 290/324 module instances):
+# 
+# -- Optimizing module i3c_device_inst(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_fwft_fabric(fast)
+# 
+# -- Inlining module pmi_work.lscc_reset_async(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_mem_core(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_mem_main(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_soft_mem(fast)
+# 
+# -- Inlining module pmi_work.lscc_soft_fifo_dc(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_main(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc(fast)
+# 
+# -- Optimizing module pmi_work.pmi_fifo_dc(fast)
+# 
+# -- Inlining module pmi_work.lscc_soft_fifo_dc(fast__1)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_main(fast__1)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc(fast__1)
+# 
+# -- Optimizing module pmi_work.pmi_fifo_dc(fast__1)
+# 
+# -- Optimizing module i3c_m_ipgen_lscc_i3c_controller(fast)
+# 
+# -- Optimizing module tb_top(fast)
+# 
+# -- Inlining module ovi_lfmxo5.EBR_CORE(fast)
+# 
+# -- Inlining module ovi_lfmxo5.VHI(fast)
+# 
+# -- Inlining module ovi_lfmxo5.VLO(fast)
+# 
+# -- Inlining module ovi_lfmxo5.PDP16K_MODE(fast)
+# 
+# -- Optimizing module ovi_lfmxo5.PDP16K(fast)
+# 
+# -- Inlining module ovi_lfmxo5.EBR_CORE(fast__2)
+# 
+# -- Inlining module ovi_lfmxo5.FIFO16K_MODE(fast__1)
+# 
+# -- Optimizing module ovi_lfmxo5.FIFO16K(fast__1)
+# 
+# -- Inlining module ovi_lfmxo5.EBR_CORE(fast__1)
+# 
+# -- Inlining module ovi_lfmxo5.VHI(fast)
+# 
+# -- Inlining module ovi_lfmxo5.VLO(fast)
+# 
+# -- Inlining module ovi_lfmxo5.FIFO16K_MODE(fast)
+# 
+# -- Optimizing module ovi_lfmxo5.FIFO16K(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_fwft_fabric(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_hw_core(fast__1)
+# 
+# -- Inlining module pmi_work.lscc_hard_fifo_dc(fast__1)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_main(fast__3)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc(fast__3)
+# 
+# -- Optimizing module pmi_work.pmi_fifo_dc(fast__3)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_hw_core(fast)
+# 
+# -- Inlining module pmi_work.lscc_hard_fifo_dc(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_main(fast__2)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc(fast__2)
+# 
+# -- Optimizing module pmi_work.pmi_fifo_dc(fast__2)
+# 
+# -- Inlining module ovi_lfmxo5.SEIO33_CORE(fast)
+# 
+# -- Inlining module ovi_lfmxo5.VHI(fast)
+# 
+# -- Inlining module ovi_lfmxo5.VLO(fast)
+# 
+# -- Optimizing module ovi_lfmxo5.BB_I3C_A(fast)
+# 
+# -- Inlining module ovi_lfmxo5.GSR_CORE(fast)
+# 
+# -- Optimizing module ovi_lfmxo5.GSR(fast)
+# 
+# -- Optimizing module mst_bfm_apb(fast)
+# 
+# -- Optimizing module mst_bfm_stream(fast)
+# 
+# -- Optimizing module i3c_m(fast)
+# 
+# Optimized design name is qrun_opt
+# 
+# End time: 10:02:10 on Mar 12,2026, Elapsed time: 0:00:07
+# 
+# Errors: 0, Warnings: 1
+# 
+vsim -L work -L pmi_work -L ovi_lfmxo5 -lib qrun.out/work -wlf vsim.wlf -gui -do {view wave} -do {add wave /*} -do {run -all} -statslog qrun.out/stats_log qrun_opt -suppress vsim-7033,vsim-8630,3009,3389 -appendlog -l qrun.log

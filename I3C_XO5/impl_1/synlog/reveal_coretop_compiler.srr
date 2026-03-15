@@ -1,0 +1,459 @@
+
+Copyright (C) 1994-2025 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: W-2025.03LR-SP1
+Install: C:\lscc\radiant\2025.2\synpbase
+OS: Windows 10 or later
+Hostname: TE9BILL397
+
+Implementation : impl_1
+Synopsys HDL Compiler, Version comp202503synp2, Build 178R, Built Nov 11 2025 09:38:30, @
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2025 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: W-2025.03LR-SP1
+Install: C:\lscc\radiant\2025.2\synpbase
+OS: Windows 10 or later
+Hostname: TE9BILL397
+
+Implementation : impl_1
+Synopsys VHDL Compiler, Version comp202503synp2, Build 178R, Built Nov 11 2025 09:38:30, @
+
+@N|Running in 64-bit mode
+@N:Can't find top module!
+Top entity isn't set yet!
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.vhd'.
+VHDL syntax check successful!
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 149MB peak: 150MB)
+
+
+Process completed successfully.
+# Sun Mar  8 01:24:16 2026
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2025 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: W-2025.03LR-SP1
+Install: C:\lscc\radiant\2025.2\synpbase
+OS: Windows 10 or later
+Hostname: TE9BILL397
+
+Implementation : impl_1
+Synopsys Verilog Compiler, Version comp202503synp2, Build 178R, Built Nov 11 2025 09:38:30, @
+
+@N|Running in 64-bit mode
+@I::"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lfmxo5.v" (library work)
+@I::"C:\lscc\radiant\2025.2\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\radiant\2025.2\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_addsub.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_addsub.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_add.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_add.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/adder/rtl\lscc_adder.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_counter.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_counter.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_dpram.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_dpram.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/distributed_dpram/rtl\lscc_distributed_dpram.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_spram.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_spram.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/distributed_spram/rtl\lscc_distributed_spram.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_rom.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_rom.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/distributed_rom/rtl\lscc_distributed_rom.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_shift_reg/rtl\lscc_shift_register.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3275:17:3275:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3282:17:3282:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3339:17:3339:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3346:17:3346:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3401:17:3401:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3408:17:3408:28|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo_dc.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo_dc.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5142:25:5142:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5146:25:5146:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5177:29:5177:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5181:29:5181:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1060:25:1060:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1064:25:1064:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1095:29:1095:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1099:29:1099:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp.v":"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2040:25:2040:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2048:25:2048:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2114:29:2114:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2122:29:2122:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v":194:11:194:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v":203:11:203:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_true.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_true.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1880:29:1880:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1885:29:1885:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1916:33:1916:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1920:33:1920:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1953:29:1953:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1958:29:1958:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1988:33:1988:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1992:33:1992:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2502:29:2502:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2507:29:2507:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2538:33:2538:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2542:33:2542:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2575:29:2575:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2580:29:2580:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2611:33:2611:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2615:33:2615:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3097:29:3097:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3102:29:3102:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3133:33:3133:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3137:33:3137:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3170:29:3170:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3175:29:3175:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3206:33:3206:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3210:33:3210:44|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_true.v":"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1897:29:1897:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1902:29:1902:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1933:33:1933:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1937:33:1937:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1970:29:1970:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1975:29:1975:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2006:33:2006:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2010:33:2010:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2439:29:2439:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2444:29:2444:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2475:33:2475:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2479:33:2479:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2512:29:2512:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2517:29:2517:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2548:33:2548:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2552:33:2552:44|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v":1485:25:1485:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v":1491:25:1491:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq.v":"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dq/rtl\lscc_lfmxo4_ram_dq.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v":100:11:100:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_rom.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_rom.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":970:25:970:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":976:25:976:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_sub.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_sub.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" (library work)
+@I::"C:\lscc\radiant\2025.2\data\reveal\src\ertl\ertl.v" (library work)
+@I::"C:\lscc\radiant\2025.2\data\reveal\src\ertl\JTAG_SOFT.v" (library work)
+@I::"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v" (library work)
+@I::"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v" (library work)
+@I::"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_reveal_coretop.v" (library work)
+Verilog syntax check successful!
+
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 194MB peak: 195MB)
+
+
+Process completed successfully.
+# Sun Mar  8 01:24:18 2026
+
+###########################################################]
+###########################################################[
+@I::"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lfmxo5.v" (library work)
+@I::"C:\lscc\radiant\2025.2\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\radiant\2025.2\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_addsub.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_addsub.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_add.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_add.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/adder/rtl\lscc_adder.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/complex_mult/rtl\lscc_complex_mult.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_counter.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_counter.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_dpram.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_dpram.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/distributed_dpram/rtl\lscc_distributed_dpram.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_spram.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_spram.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/distributed_spram/rtl\lscc_distributed_spram.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_rom.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_rom.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/distributed_rom/rtl\lscc_distributed_rom.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_shift_reg/rtl\lscc_shift_register.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3275:17:3275:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3282:17:3282:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3339:17:3339:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3346:17:3346:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3401:17:3401:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3408:17:3408:28|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo_dc.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_fifo_dc.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5142:25:5142:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5146:25:5146:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5177:29:5177:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5181:29:5181:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_accumulate/rtl\lscc_mult_accumulate.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub/rtl\lscc_mult_add_sub.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/multiplier/rtl\lscc_multiplier.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1060:25:1060:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1064:25:1064:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1095:29:1095:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1099:29:1099:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp.v":"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2040:25:2040:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2048:25:2048:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2114:29:2114:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2122:29:2122:40|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v":194:11:194:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v":203:11:203:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_true.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_true.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1880:29:1880:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1885:29:1885:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1916:33:1916:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1920:33:1920:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1953:29:1953:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1958:29:1958:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1988:33:1988:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1992:33:1992:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2502:29:2502:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2507:29:2507:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2538:33:2538:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2542:33:2542:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2575:29:2575:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2580:29:2580:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2611:33:2611:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2615:33:2615:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3097:29:3097:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3102:29:3102:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3133:33:3133:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3137:33:3137:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3170:29:3170:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3175:29:3175:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3206:33:3206:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3210:33:3210:44|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_true.v":"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1897:29:1897:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1902:29:1902:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1933:33:1933:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1937:33:1937:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1970:29:1970:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1975:29:1975:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2006:33:2006:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2010:33:2010:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2439:29:2439:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2444:29:2444:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2475:33:2475:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2479:33:2479:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2512:29:2512:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2517:29:2517:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2548:33:2548:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2552:33:2552:44|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v":1485:25:1485:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v":1491:25:1491:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq.v":"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dq/rtl\lscc_lfmxo4_ram_dq.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v":100:11:100:22|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_rom.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_rom.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v" (library work)
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":970:25:970:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":976:25:976:36|Read directive translate_on.
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v":"C:\lscc\radiant\2025.2\ip\pmi\pmi_sub.v" (library work)
+@I:"C:\lscc\radiant\2025.2\ip\pmi\pmi_sub.v":"C:\lscc\radiant\2025.2\ip\pmi\../common/subtractor/rtl\lscc_subtractor.v" (library work)
+@I::"C:\lscc\radiant\2025.2\data\reveal\src\ertl\ertl.v" (library work)
+@I::"C:\lscc\radiant\2025.2\data\reveal\src\ertl\JTAG_SOFT.v" (library work)
+@I::"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v" (library work)
+@I::"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v" (library work)
+@I::"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_reveal_coretop.v" (library work)
+Verilog syntax check successful!
+File C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v changed - recompiling
+File C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v changed - recompiling
+File C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_reveal_coretop.v changed - recompiling
+File C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\reginit.bin changed - recompiling
+Running optimization stage 1 on rvl_jtag_int_3s_2s_0s_0s_2s_3s_3s .......
+Finished optimization stage 1 on rvl_jtag_int_3s_2s_0s_0s_2s_3s_3s (CPU Time 0h:00m:00s, Memory Used current: 198MB peak: 199MB)
+Running optimization stage 1 on rvl_decode_2s_1s .......
+Finished optimization stage 1 on rvl_decode_2s_1s (CPU Time 0h:00m:00s, Memory Used current: 198MB peak: 199MB)
+Running optimization stage 1 on rvl_tu_1s_0s_0s_0s_1s .......
+Finished optimization stage 1 on rvl_tu_1s_0s_0s_0s_1s (CPU Time 0h:00m:00s, Memory Used current: 198MB peak: 199MB)
+Running optimization stage 1 on pmi_rtl_ram_dist_4s_2s_2s_reg_none_binary_LFMXO5 .......
+Finished optimization stage 1 on pmi_rtl_ram_dist_4s_2s_2s_reg_none_binary_LFMXO5 (CPU Time 0h:00m:00s, Memory Used current: 198MB peak: 199MB)
+Running optimization stage 1 on rvl_te_Z1_layer0 .......
+Finished optimization stage 1 on rvl_te_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 199MB peak: 200MB)
+Running optimization stage 1 on rvl_tcnt_1s_3s_1_0s .......
+Finished optimization stage 1 on rvl_tcnt_1s_3s_1_0s (CPU Time 0h:00m:00s, Memory Used current: 199MB peak: 200MB)
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":11:7:11:22|Synthesizing module i3c_xo5_la0_trig in library work.
+Running optimization stage 1 on i3c_xo5_la0_trig .......
+Finished optimization stage 1 on i3c_xo5_la0_trig (CPU Time 0h:00m:00s, Memory Used current: 199MB peak: 200MB)
+Running optimization stage 1 on pmi_rtl_ram_dp_256s_8s_3s_reg_none_binary_LFMXO5 .......
+Finished optimization stage 1 on pmi_rtl_ram_dp_256s_8s_3s_reg_none_binary_LFMXO5 (CPU Time 0h:00m:00s, Memory Used current: 199MB peak: 200MB)
+Running optimization stage 1 on rvl_tm_Z2_layer0 .......
+Finished optimization stage 1 on rvl_tm_Z2_layer0 (CPU Time 0h:00m:00s, Memory Used current: 200MB peak: 201MB)
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v":12:7:12:17|Synthesizing module i3c_xo5_la0 in library work.
+Running optimization stage 1 on i3c_xo5_la0 .......
+Finished optimization stage 1 on i3c_xo5_la0 (CPU Time 0h:00m:00s, Memory Used current: 200MB peak: 201MB)
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_reveal_coretop.v":3:7:3:20|Synthesizing module reveal_coretop in library work.
+@W: CG360 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_reveal_coretop.v":41:21:41:31|Removing wire trigger_out, as there is no assignment to it.
+Running optimization stage 1 on reveal_coretop .......
+Finished optimization stage 1 on reveal_coretop (CPU Time 0h:00m:00s, Memory Used current: 200MB peak: 201MB)
+Running optimization stage 2 on reveal_coretop .......
+Finished optimization stage 2 on reveal_coretop (CPU Time 0h:00m:00s, Memory Used current: 200MB peak: 201MB)
+Running optimization stage 2 on i3c_xo5_la0 .......
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v":53:7:53:13|Input reset_n is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v":65:7:65:16|Input trigger_en is unused.
+Finished optimization stage 2 on i3c_xo5_la0 (CPU Time 0h:00m:00s, Memory Used current: 200MB peak: 201MB)
+Running optimization stage 2 on pmi_rtl_ram_dp_256s_8s_3s_reg_none_binary_LFMXO5 .......
+Finished optimization stage 2 on pmi_rtl_ram_dp_256s_8s_3s_reg_none_binary_LFMXO5 (CPU Time 0h:00m:00s, Memory Used current: 200MB peak: 201MB)
+Running optimization stage 2 on rvl_tm_Z2_layer0 .......
+Finished optimization stage 2 on rvl_tm_Z2_layer0 (CPU Time 0h:00m:00s, Memory Used current: 202MB peak: 207MB)
+Running optimization stage 2 on i3c_xo5_la0_trig .......
+Finished optimization stage 2 on i3c_xo5_la0_trig (CPU Time 0h:00m:00s, Memory Used current: 202MB peak: 207MB)
+Running optimization stage 2 on rvl_tcnt_1s_3s_1_0s .......
+Finished optimization stage 2 on rvl_tcnt_1s_3s_1_0s (CPU Time 0h:00m:00s, Memory Used current: 202MB peak: 207MB)
+Running optimization stage 2 on pmi_rtl_ram_dist_4s_2s_2s_reg_none_binary_LFMXO5 .......
+Finished optimization stage 2 on pmi_rtl_ram_dist_4s_2s_2s_reg_none_binary_LFMXO5 (CPU Time 0h:00m:00s, Memory Used current: 202MB peak: 207MB)
+Running optimization stage 2 on rvl_te_Z1_layer0 .......
+Extracted state machine for register next_then_shift
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+Finished optimization stage 2 on rvl_te_Z1_layer0 (CPU Time 0h:00m:00s, Memory Used current: 203MB peak: 222MB)
+Running optimization stage 2 on rvl_tu_1s_0s_0s_0s_1s .......
+Finished optimization stage 2 on rvl_tu_1s_0s_0s_0s_1s (CPU Time 0h:00m:00s, Memory Used current: 203MB peak: 222MB)
+Running optimization stage 2 on rvl_decode_2s_1s .......
+Finished optimization stage 2 on rvl_decode_2s_1s (CPU Time 0h:00m:00s, Memory Used current: 203MB peak: 222MB)
+Running optimization stage 2 on rvl_jtag_int_3s_2s_0s_0s_2s_3s_3s .......
+Finished optimization stage 2 on rvl_jtag_int_3s_2s_0s_0s_2s_3s_3s (CPU Time 0h:00m:00s, Memory Used current: 207MB peak: 222MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\synwork\layer0.duruntime
+
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 207MB peak: 222MB)
+
+
+Process completed successfully.
+# Sun Mar  8 01:24:28 2026
+
+###########################################################]
+###########################################################[
+
+Copyright (C) 1994-2025 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: W-2025.03LR-SP1
+Install: C:\lscc\radiant\2025.2\synpbase
+OS: Windows 10 or later
+Hostname: TE9BILL397
+
+Implementation : impl_1
+Synopsys Synopsys Netlist Linker, Version comp202503synp2, Build 178R, Built Nov 11 2025 09:38:30, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 156MB peak: 157MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sun Mar  8 01:24:30 2026
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\synwork\reveal_coretop_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 85MB peak: 86MB)
+
+Process took 0h:00m:14s realtime, 0h:00m:14s cputime
+
+Process completed successfully.
+# Sun Mar  8 01:24:31 2026
+
+###########################################################]

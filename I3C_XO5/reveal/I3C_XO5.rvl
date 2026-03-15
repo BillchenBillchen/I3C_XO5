@@ -1,0 +1,25 @@
+<Project Date="2026-03-08" ModBy="Inserter" Name="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/reveal/I3C_XO5.rvl" SigType="0">
+    <IP Version="1_6_042617"/>
+    <Design DesignEntry="Schematic/Verilog HDL" DesignName="I3C_XO5" DeviceFamily="LFMXO5" DeviceName="LFMXO5-25" JTAG="hard" Stage="presyn" Synthesis="synplify"/>
+    <Core ID="0" Insert="1" InsertDataset="0" Name="I3C_XO5_LA0" Reveal_sig="684779032">
+        <Setting>
+            <Clock EnableClk="" EnableClk_Pri="0" SampleClk="pll0_inst/clkop_o" SampleEnable="0"/>
+            <TraceBuffer BitTimeStamp="0" BufferDepth="256" Implementation="0" IncTrigSig="0" hasTimeStamp="0"/>
+            <Capture MinSamplesPerTrig="8" Mode="0"/>
+            <Event CntEnable="0" MaxEventCnt="8"/>
+            <TrigOut EnableTrigOut="0" MinPulseWidth="0" Polarity="0" TrigOutNet="reveal_debug_I3C_XO5_LA0_net" TrigOutNetType="1"/>
+            <DistRAM Disable="0"/>
+        </Setting>
+        <Dataset Name="Base">
+            <Trace>
+                <Sig Name="i3c_m_inst/lscc_i3c_controller_inst/ext_io_sda_o" Type="SIG"/>
+                <Sig Name="i3c_m_inst/lscc_i3c_controller_inst/ext_io_scl_o" Type="SIG"/>
+            </Trace>
+            <Trigger>
+                <TU ID="1" Serialbits="0" Sig="i3c_m_inst/lscc_i3c_controller_inst/ext_io_scl_o," Type="0"/>
+                <TU ID="2" Serialbits="0" Sig="i3c_m_inst/lscc_i3c_controller_inst/ext_io_sda_o," Type="0"/>
+                <TE ID="1" MaxEvnCnt="1" MaxSequence="2" Resource="0"/>
+            </Trigger>
+        </Dataset>
+    </Core>
+</Project>

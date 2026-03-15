@@ -1,0 +1,6 @@
+#Start recording tcl command: 2/25/2026 07:08:42
+#Project Location: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5; Project name: I3C_XO5
+source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/radiant_setup_template.tcl"
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 2/25/2026 07:30:37

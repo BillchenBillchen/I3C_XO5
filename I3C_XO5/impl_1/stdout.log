@@ -1,0 +1,42 @@
+Option definition override for: enable_hydra_infer_clocks_from_latch_data
+Running in Lattice mode
+
+                               Synplify Pro (R) 
+
+               Version W-2025.03LR-SP1 for win64 - Nov 11, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Starting:    C:\lscc\radiant\2025.2\synpbase\bin64\mbin\synplify.exe
+Install:     C:\lscc\radiant\2025.2\synpbase
+Hostname:    TE9BILL397
+Date:        Fri Mar 13 16:34:15 2026
+Version:     W-2025.03LR-SP1
+
+Arguments:   -product synplify_base -tcl C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1/launch_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+
+
+
+
+% run_tcl -fg C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1/launch_synplify.tcl
+No project opened.
+TCL script complete: "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1/launch_synplify.tcl"

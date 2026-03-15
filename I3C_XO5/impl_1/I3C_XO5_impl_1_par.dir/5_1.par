@@ -1,0 +1,82 @@
+
+PAR: Place And Route Radiant Software (64-bit) 2025.2.0.48.0.
+PARed on: Mon Mar 16 00:47:28 2026
+
+Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=ON \
+	I3C_XO5_impl_1_map.udb I3C_XO5_impl_1_par.dir/5_1.udb 
+
+Loading I3C_XO5_impl_1_map.udb ...
+Loading device for application GENERIC from file 'jd5f25.nph' in environment: C:/lscc/radiant/2025.2/ispfpga.
+Package Status:                     Final          Version 8.
+Performance Hardware Data Status:   Final          Version 1.8.
+
+
+
+Design:  I3C_XO5
+Family:  LFMXO5
+Device:  LFMXO5-25
+Package: BBG400
+Performance Grade:   9_High-Performance_1.0V
+
+Constraint Summary
+   Total number of constraints: 70
+   Total number of constraints dropped: 0
+
+	sig16414 : i3c_s_inst.lscc_i3c_target_inst.u_i3c_tgt.u_i3c_tgt_main.scl_reg_sdan.CN is a tiny
+	sig16414 : i3c_s_inst.lscc_i3c_target_inst.u_i3c_tgt.u_i3c_tgt_main.scl_reg_sdan.CN is a tiny
+
+Device SLICE utilization summary after final SLICE packing:
+   SLICE           9280/11520        80% used
+
+	sig16414 : i3c_s_inst.lscc_i3c_target_inst.u_i3c_tgt.u_i3c_tgt_main.scl_reg_sdan.CN is a tiny
+INFO <70001951> - par: Constrained CDC register input For a group of CDC paths.
+INFO <70001951> - par: Constrained CDC register input For a group of CDC paths.
+Number of Signals: 26759
+Number of Connections: 81512
+Device utilization summary:
+
+   VHI                   1/1           100% used
+   SIOLOGIC              9/306           3% used
+   DCC                   1/62            2% used
+   EBR                  74/80           93% used
+   MULT9                12/40           30% used
+   MULT18                6/20           30% used
+   MULT18X36             2/10           20% used
+   REG18                10/40           25% used
+   PREADD9              12/40           30% used
+   SEIO33               22/299           7% used
+                        22/251           8% bonded
+   OSC                   1/1           100% used
+   PLL                   1/2            50% used
+   CONFIG_JTAG           1/1           100% used
+   SLICE              9280/11520        81% used
+     LUT             16999/23040        74% used
+     REG              5718/23040        25% used
+
+
+Pin Constraint Summary:
+   18 out of 22 pins locked (81% locked).
+WARNING <77001033> - par: Unable to find the net 's0_sda_io' in the constraint
+
+WARNING <77001033> - par: Unable to find the net 's0_sda_io' in the constraint
+
+WARNING <77001033> - par: Unable to find the net 's0_sda_io' in the constraint
+
+WARNING <77001033> - par: Unable to find the net 's0_sda_io' in the constraint
+
+WARNING <77001033> - par: Unable to find the net 's0_sda_io' in the constraint
+
+WARNING <77001033> - par: Unable to find the net 's0_sda_io' in the constraint
+
+INFO: signal 'reveal_jtck' driving mixed DCC load types requires multi-feedlines.
+
+INFO: signal 'reveal_jtck' driving mixed DCC load types requires multi-feedlines.
+Starting Placer Phase 0 (HIER). CPU time: 32 secs , REAL time: 35 secs 
+...........
+Finished Placer Phase 0 (HIER). CPU time: 39 secs , REAL time: 41 secs 
+
+
+.   
+Starting Placer Phase 1. CPU time: 39 secs , REAL time: 42 secs 
+..  ..
+....

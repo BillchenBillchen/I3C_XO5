@@ -1,0 +1,496 @@
+# Fri Mar 13 10:06:20 2026
+
+
+Copyright (C) 1994-2025 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: W-2025.03LR-SP1
+Install: C:\lscc\radiant\2025.2\synpbase
+OS: Windows 10 or later
+Hostname: TE9BILL397
+
+Implementation : impl_1
+Synopsys Lattice Technology Pre-mapping, Version map202503latsp1, Build 093R, Built Dec  2 2025 10:00:10, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 184MB peak: 184MB)
+
+
+Done reading skeleton netlist (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 206MB peak: 206MB)
+
+Reading constraint file: C:\lscc\radiant\2025.2\scripts\tcl\flow\radiant_synplify_vars.tcl
+Reading constraint file: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\I3C_XO5_impl_1_cpe.ldc
+@W: MT453 :"c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/impl_1/i3c_xo5_impl_1_cpe.ldc":5:0:5:0|clock period is too long for clock osc0_inst_lf_clk_out_o, changing period from 31250.0 to 15625.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 15625.0 ns to 7812.5 ns. 
+@L: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\I3C_XO5_impl_1_scck.rpt 
+See clock summary report "C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\I3C_XO5_impl_1_scck.rpt"
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 245MB peak: 245MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 245MB peak: 246MB)
+
+Reading custom part data from path: C:\lscc\radiant\2025.2\synpbase\lib\lattice_custom\radiant_custom_partdata.txt
+
+Start loading timing files (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:25s; Memory used current: 259MB peak: 259MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:26s; CPU Time elapsed 0h:00m:26s; Memory used current: 259MB peak: 261MB)
+
+NConnInternalConnection caching is on
+@N: FX493 |Applying initial value "0" on instance inputArea_target.
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "0000" on instance jtag_tap_fsm_state[3:0].
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":159:0:159:7|Instance decode_u of partition view:work.rvl_decode_10s_10s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":173:0:173:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_9(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":187:0:187:3|Instance tu_1 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_8(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":201:0:201:3|Instance tu_2 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_7(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":215:0:215:3|Instance tu_3 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_6(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":229:0:229:3|Instance tu_4 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_5(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":243:0:243:3|Instance tu_5 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_4(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":257:0:257:3|Instance tu_6 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_3(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":271:0:271:3|Instance tu_7 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_2(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":285:0:285:3|Instance tu_8 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":299:0:299:3|Instance tu_9 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_0(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":319:0:319:3|Instance te_0 of partition view:work.rvl_te_Z104_layer0_9(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":364:0:364:3|Instance te_1 of partition view:work.rvl_te_Z104_layer0_8(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":409:0:409:3|Instance te_2 of partition view:work.rvl_te_Z104_layer0_7(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":454:0:454:3|Instance te_3 of partition view:work.rvl_te_Z104_layer0_6(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":499:0:499:3|Instance te_4 of partition view:work.rvl_te_Z104_layer0_5(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":544:0:544:3|Instance te_5 of partition view:work.rvl_te_Z104_layer0_4(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":589:0:589:3|Instance te_6 of partition view:work.rvl_te_Z104_layer0_3(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":634:0:634:3|Instance te_7 of partition view:work.rvl_te_Z104_layer0_2(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":679:0:679:3|Instance te_8 of partition view:work.rvl_te_Z104_layer0_1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":724:0:724:3|Instance te_9 of partition view:work.rvl_te_Z104_layer0_0(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":765:0:765:5|Instance tcnt_0 of partition view:work.rvl_tcnt_10s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":159:0:159:7|Instance decode_u of partition view:work.rvl_decode_10s_10s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":173:0:173:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_9(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":187:0:187:3|Instance tu_1 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_8(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":201:0:201:3|Instance tu_2 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_7(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":215:0:215:3|Instance tu_3 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_6(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":229:0:229:3|Instance tu_4 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_5(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":243:0:243:3|Instance tu_5 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_4(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":257:0:257:3|Instance tu_6 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_3(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":271:0:271:3|Instance tu_7 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_2(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":285:0:285:3|Instance tu_8 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":299:0:299:3|Instance tu_9 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_0(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":319:0:319:3|Instance te_0 of partition view:work.rvl_te_Z104_layer0_9(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":364:0:364:3|Instance te_1 of partition view:work.rvl_te_Z104_layer0_8(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":409:0:409:3|Instance te_2 of partition view:work.rvl_te_Z104_layer0_7(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":454:0:454:3|Instance te_3 of partition view:work.rvl_te_Z104_layer0_6(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":499:0:499:3|Instance te_4 of partition view:work.rvl_te_Z104_layer0_5(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":544:0:544:3|Instance te_5 of partition view:work.rvl_te_Z104_layer0_4(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":589:0:589:3|Instance te_6 of partition view:work.rvl_te_Z104_layer0_3(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":634:0:634:3|Instance te_7 of partition view:work.rvl_te_Z104_layer0_2(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":679:0:679:3|Instance te_8 of partition view:work.rvl_te_Z104_layer0_1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":724:0:724:3|Instance te_9 of partition view:work.rvl_te_Z104_layer0_0(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":765:0:765:5|Instance tcnt_0 of partition view:work.rvl_tcnt_10s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":159:0:159:7|Instance decode_u of partition view:work.rvl_decode_10s_10s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":173:0:173:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_9(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":187:0:187:3|Instance tu_1 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_8(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":201:0:201:3|Instance tu_2 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_7(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":215:0:215:3|Instance tu_3 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_6(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":229:0:229:3|Instance tu_4 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_5(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":243:0:243:3|Instance tu_5 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_4(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":257:0:257:3|Instance tu_6 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_3(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":271:0:271:3|Instance tu_7 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_2(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":285:0:285:3|Instance tu_8 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":299:0:299:3|Instance tu_9 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_0(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":319:0:319:3|Instance te_0 of partition view:work.rvl_te_Z104_layer0_9(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":364:0:364:3|Instance te_1 of partition view:work.rvl_te_Z104_layer0_8(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":409:0:409:3|Instance te_2 of partition view:work.rvl_te_Z104_layer0_7(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":454:0:454:3|Instance te_3 of partition view:work.rvl_te_Z104_layer0_6(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":499:0:499:3|Instance te_4 of partition view:work.rvl_te_Z104_layer0_5(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":544:0:544:3|Instance te_5 of partition view:work.rvl_te_Z104_layer0_4(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":589:0:589:3|Instance te_6 of partition view:work.rvl_te_Z104_layer0_3(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":634:0:634:3|Instance te_7 of partition view:work.rvl_te_Z104_layer0_2(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":679:0:679:3|Instance te_8 of partition view:work.rvl_te_Z104_layer0_1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":724:0:724:3|Instance te_9 of partition view:work.rvl_te_Z104_layer0_0(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":765:0:765:5|Instance tcnt_0 of partition view:work.rvl_tcnt_10s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v":122:0:122:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_18s_10s_0s_0s_5s_18s_18s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v":208:0:208:3|Instance tm_u of partition view:work.rvl_tm_Z105_layer0(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v":122:0:122:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_18s_10s_0s_0s_5s_18s_18s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v":208:0:208:3|Instance tm_u of partition view:work.rvl_tm_Z105_layer0(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v":122:0:122:9|Instance jtag_int_u of partition view:work.rvl_jtag_int_18s_10s_0s_0s_5s_18s_18s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v":208:0:208:3|Instance tm_u of partition view:work.rvl_tm_Z105_layer0(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":159:0:159:7|Instance decode_u of partition view:work.rvl_decode_10s_10s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":173:0:173:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_9(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":187:0:187:3|Instance tu_1 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_8(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":201:0:201:3|Instance tu_2 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_7(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":215:0:215:3|Instance tu_3 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_6(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":229:0:229:3|Instance tu_4 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_5(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":243:0:243:3|Instance tu_5 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_4(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":257:0:257:3|Instance tu_6 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_3(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":271:0:271:3|Instance tu_7 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_2(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":285:0:285:3|Instance tu_8 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":299:0:299:3|Instance tu_9 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_0(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":319:0:319:3|Instance te_0 of partition view:work.rvl_te_Z104_layer0_9(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":364:0:364:3|Instance te_1 of partition view:work.rvl_te_Z104_layer0_8(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":409:0:409:3|Instance te_2 of partition view:work.rvl_te_Z104_layer0_7(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":454:0:454:3|Instance te_3 of partition view:work.rvl_te_Z104_layer0_6(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":499:0:499:3|Instance te_4 of partition view:work.rvl_te_Z104_layer0_5(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":544:0:544:3|Instance te_5 of partition view:work.rvl_te_Z104_layer0_4(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":589:0:589:3|Instance te_6 of partition view:work.rvl_te_Z104_layer0_3(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":634:0:634:3|Instance te_7 of partition view:work.rvl_te_Z104_layer0_2(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":679:0:679:3|Instance te_8 of partition view:work.rvl_te_Z104_layer0_1(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":724:0:724:3|Instance te_9 of partition view:work.rvl_te_Z104_layer0_0(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":765:0:765:5|Instance tcnt_0 of partition view:work.rvl_tcnt_10s_3s_1_0s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":159:0:159:7|Instance decode_u of partition view:work.rvl_decode_10s_10s(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":173:0:173:3|Instance tu_0 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_9(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":187:0:187:3|Instance tu_1 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_8(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":201:0:201:3|Instance tu_2 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_7(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":215:0:215:3|Instance tu_3 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_6(verilog) has no references to its outputs; instance not removed. 
+@W: BN117 :"c:\users\billzhang\desktop\i3c_xo5\i3c_xo5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_trig_gen.v":229:0:229:3|Instance tu_4 of partition view:work.rvl_tu_1s_0s_0s_0s_1s_5(verilog) has no references to its outputs; instance not removed. 
+
+Only the first 100 messages of id 'BN117' are reported. To see all messages use 'report_messages -log C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\synlog\I3C_XO5_impl_1_premap.srr -id BN117' in the Tcl shell. To see all messages in future runs, use the command 'message_override -limit {BN117} -count unlimited' in the Tcl shell.
+
+Starting HSTDM IP insertion (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:27s; Memory used current: 318MB peak: 318MB)
+
+
+Finished HSTDM IP insertion (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; Memory used current: 318MB peak: 319MB)
+
+@W: MF174 |Either User specified value on attribute CDC_Register expect 2 register. find only 1 register on the path or Instance has multiple fanout. 
+@W: MF174 |Either User specified value on attribute CDC_Register expect 2 register. find only 1 register on the path or Instance has multiple fanout. 
+@W: MF174 |Either User specified value on attribute CDC_Register expect 2 register. find only 1 register on the path or Instance has multiple fanout. 
+@W: MF174 |Either User specified value on attribute CDC_Register expect 2 register. find only 1 register on the path or Instance has multiple fanout. 
+@W: MF174 |Either User specified value on attribute CDC_Register expect 2 register. find only 1 register on the path or Instance has multiple fanout. 
+@W: MF174 |Either User specified value on attribute CDC_Register expect 2 register. find only 1 register on the path or Instance has multiple fanout. 
+@W: MF174 |Either User specified value on attribute CDC_Register expect 2 register. find only 1 register on the path or Instance has multiple fanout. 
+@W: MF174 |Either User specified value on attribute CDC_Register expect 2 register. find only 1 register on the path or Instance has multiple fanout. 
+
+Started DisTri Cleanup (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; Memory used current: 318MB peak: 319MB)
+
+
+Finished DisTri Cleanup (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; Memory used current: 318MB peak: 319MB)
+
+@N: BN115 :"c:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":756:2:756:10|Removing instance inst_wr_a (in view: work.lscc_ram_dp_true_main_Z98_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":771:2:771:10|Removing instance inst_wr_b (in view: work.lscc_ram_dp_true_main_Z98_layer0(verilog)) because it does not drive other instances.
+Encoding state machine <encrypted> (in view: work.ahb2apb_ipgen_lscc_ahbl2apb_uniq_1_Z1_layer0(verilog))
+original code -> new code
+   000000001 -> 000000001
+   000000010 -> 000000010
+   000000100 -> 000000100
+   000001000 -> 000001000
+   000010000 -> 000010000
+   000100000 -> 000100000
+   001000000 -> 001000000
+   010000000 -> 010000000
+   100000000 -> 100000000
+Encoding state machine <encrypted> (in view: work.ahb2apb_ipgen_lscc_ahbl2apb_uniq_1_Z1_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   11 -> 10
+Encoding state machine <encrypted> (in view: work.ahb2apb_ipgen_lscc_ahbl2apb_uniq_1_Z1_layer0(verilog))
+original code -> new code
+   001 -> 00
+   010 -> 01
+   100 -> 10
+Encoding state machine <encrypted> (in view: work.ahbl_ipgen_lscc_ahbl_default_slv_uniq_1_32s_2s_0s_1s_2s_0_1_2_3(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine bus_sm_cs[3:0] (in view: work.gpio0_ipgen_lscc_apb2lmmi_uniq_1_9s_6s_1s_1_2_4_8_4s(verilog))
+original code -> new code
+   0001 -> 00
+   0010 -> 01
+   0100 -> 10
+   1000 -> 11
+Encoding state machine <encrypted> (in view: work.i3c_m_ipgen_apb2lmmi_uniq_1_Z13_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+Encoding state machine <encrypted> (in view: work.i3c_m_ipgen_packet_deframe_uniq_1_Z16_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine <encrypted> (in view: work.i3c_m_ipgen_packet_decode_uniq_1_Z17_layer0(verilog))
+original code -> new code
+   0000 -> 000000001
+   0001 -> 000000010
+   0010 -> 000000100
+   0011 -> 000001000
+   0100 -> 000010000
+   0101 -> 000100000
+   0110 -> 001000000
+   0111 -> 010000000
+   1000 -> 100000000
+Encoding state machine <encrypted> (in view: work.i3c_m_ipgen_packet_decode_uniq_1_Z17_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+Encoding state machine <encrypted> (in view: work.i3c_m_ipgen_i3c_fifo_uniq_1_Z26_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   11 -> 10
+Encoding state machine <encrypted> (in view: work.i3c_m_ipgen_i3c_fifo_uniq_2_Z32_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   11 -> 10
+Encoding state machine <encrypted> (in view: work.i3c_m_ipgen_i3c_p2s_sys_uniq_1_Z34_layer0(verilog))
+original code -> new code
+   0000 -> 0000000000000001
+   0001 -> 0000000000000010
+   0010 -> 0000000000000100
+   0011 -> 0000000000001000
+   0100 -> 0000000000010000
+   0101 -> 0000000000100000
+   0110 -> 0000000001000000
+   0111 -> 0000000010000000
+   1000 -> 0000000100000000
+   1001 -> 0000001000000000
+   1010 -> 0000010000000000
+   1011 -> 0000100000000000
+   1100 -> 0001000000000000
+   1101 -> 0010000000000000
+   1110 -> 0100000000000000
+   1111 -> 1000000000000000
+Encoding state machine <encrypted> (in view: work.i3c_m_ipgen_i3c_p2s_sys_uniq_1_Z34_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+Encoding state machine <encrypted> (in view: work.i3c_s_ipgen_apb2lmmi_uniq_1_Z38_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+   11 -> 11
+Encoding state machine <encrypted> (in view: work.i3c_s_ipgen_i3c_tgt_main_uniq_1_Z40_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine <encrypted> (in view: work.i3c_s_ipgen_i3c_fifo_uniq_1_Z47_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   11 -> 10
+Encoding state machine <encrypted> (in view: work.i3c_s_ipgen_i3c_fifo_uniq_2_Z49_layer0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   11 -> 10
+Encoding state machine <encrypted> (in view: work.risc_mc_ipgen_Riscv_Dbg_IMC_uniq_1(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+Encoding state machine cs_state[3:0] (in view: work.uart0_ipgen_lscc_uart_intface_uniq_1_Z102_layer0(verilog))
+original code -> new code
+   000 -> 00
+   001 -> 01
+   010 -> 10
+   011 -> 11
+Encoding state machine cs_state[4:0] (in view: work.uart0_ipgen_lscc_uart_rxcver_uniq_1_8s_0s_5s_1_2_4_8_16_MachXO3D(verilog))
+original code -> new code
+   00001 -> 00001
+   00010 -> 00010
+   00100 -> 00100
+   01000 -> 01000
+   10000 -> 10000
+Encoding state machine tx_state[6:0] (in view: work.uart0_ipgen_lscc_uart_txmitt_uniq_1_8s_0s_7s_1_2_4_8_16_32_64(verilog))
+original code -> new code
+   0000001 -> 0000001
+   0000010 -> 0000010
+   0000100 -> 0000100
+   0001000 -> 0001000
+   0010000 -> 0010000
+   0100000 -> 0100000
+   1000000 -> 1000000
+Encoding state machine <encrypted> (in view: work.rvl_te_Z104_layer0_9(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine <encrypted> (in view: work.rvl_te_Z104_layer0_8(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine <encrypted> (in view: work.rvl_te_Z104_layer0_7(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine <encrypted> (in view: work.rvl_te_Z104_layer0_6(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine <encrypted> (in view: work.rvl_te_Z104_layer0_5(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine <encrypted> (in view: work.rvl_te_Z104_layer0_4(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine <encrypted> (in view: work.rvl_te_Z104_layer0_3(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine <encrypted> (in view: work.rvl_te_Z104_layer0_2(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine <encrypted> (in view: work.rvl_te_Z104_layer0_1(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine <encrypted> (in view: work.rvl_te_Z104_layer0_0(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+
+Starting clock optimization report phase (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:28s; Memory used current: 327MB peak: 327MB)
+
+
+Finished clock optimization report phase (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:29s; Memory used current: 328MB peak: 328MB)
+
+@N: FX1184 |Applying syn_allowed_resources blockrams=80 on top level netlist I3C_XO5 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:29s; Memory used current: 328MB peak: 329MB)
+
+@W: MT548 :"c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/impl_1/i3c_xo5_impl_1_cpe.ldc":3:0:3:0|Source for clock osc0_inst_hf_clk_out_o not found in netlist.
+@W: MT548 :"c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/impl_1/i3c_xo5_impl_1_cpe.ldc":5:0:5:0|Source for clock osc0_inst_lf_clk_out_o not found in netlist.
+Some data will not be shown as it is part of encrypted module
+
+
+Clock Summary
+******************
+
+          Start                                                                              Requested     Requested     Clock        Clock                     Clock
+Level     Clock                                                                              Frequency     Period        Type         Group                     Load 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     3547 
+                                                                                                                                                                     
+0 -       pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       200.0 MHz     5.000         inferred     Inferred_clkgroup_0_3     1708 
+                                                                                                                                                                     
+0 -       I3C_XO5|reveal_jtck_inferred_clock                                                 200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     514  
+                                                                                                                                                                     
+0 -       i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i                                200.0 MHz     5.000         inferred     Inferred_clkgroup_0_6     329  
+                                                                                                                                                                     
+0 -       risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bbICH_inferred_clock               200.0 MHz     5.000         inferred     Inferred_clkgroup_0_4     83   
+                                                                                                                                                                     
+0 -       i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i                                200.0 MHz     5.000         inferred     Inferred_clkgroup_0_7     15   
+                                                                                                                                                                     
+0 -       risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bqAaKcoy7LeAHb1_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_5     9    
+=====================================================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                                                                   Clock     Source                                                                                    Clock Pin                                                                                                                                                                                                            Non-clock Pin     Non-clock Pin
+Clock                                                                              Load      Pin                                                                                       Seq Example                                                                                                                                                                                                          Seq Example       Comb Example 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       3547      pll0_inst.lscc_pll_inst.\\gen_no_refclk_mon\.u_PLL.CLKOP(PLL)                             sys_mem_inst.lscc_sys_mem_inst.\\CORE_MEMORY\.genblk1\.u_lscc_mem0.\\intf_AHBL\.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[8\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB     -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                           
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       1708      pll0_inst.lscc_pll_inst.\\gen_no_refclk_mon\.u_PLL.CLKOS(PLL)                             uart0_inst.lscc_uart_inst.u_txmitt.tx_in_shift_s.C                                                                                                                                                                   -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                           
+I3C_XO5|reveal_jtck_inferred_clock                                                 514       reveal_jtaghub_inst.JTCK(JTAGH19)                                                         -                                                                                                                                                                                                                    -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                           
+i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i                                329       i3c_s_inst.lscc_i3c_target_inst.\\gen_en_io_prim\.gen_prim\.u_i3c_scl.PADDI(BB_I3C_A)     -                                                                                                                                                                                                                    -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                           
+risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bbICH_inferred_clock               83        -                                                                                         -                                                                                                                                                                                                                    -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                           
+i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i                                15        i3c_s_inst.lscc_i3c_target_inst.\\gen_en_io_prim\.gen_prim\.u_i3c_sda.PADDI(BB_I3C_A)     -                                                                                                                                                                                                                    -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                           
+risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bqAaKcoy7LeAHb1_inferred_clock     9         -                                                                                         -                                                                                                                                                                                                                    -                 -            
+===========================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+
+ICG Latch Removal Summary:
+Number of ICG latches removed: 0
+Number of ICG latches not removed:	0
+
+
+@S |Clock Optimization Summary
+
+
+
+#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
+
+4 non-gated/non-generated clock tree(s) driving 822 clock pin(s) of sequential element(s)
+14 gated/generated clock tree(s) driving 5294 clock pin(s) of sequential element(s)
+0 instances converted, 5294 sequential instances remain driven by gated/generated clocks
+
+========================================================= Non-Gated/Non-Generated Clocks ==========================================================
+Clock Tree ID     Driving Element                                                                 Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       reveal_jtaghub_inst.JTCK                                                        JTAGH19                514        ENCRYPTED      
+@KP:ckid0_156     ENCRYPTED                                                                       JTAGH19                9          ENCRYPTED      
+@KP:ckid0_162     i3c_s_inst.lscc_i3c_target_inst.\\gen_en_io_prim\.gen_prim\.u_i3c_scl.PADDI     BB_I3C_A               284        ENCRYPTED      
+@KP:ckid0_169     i3c_s_inst.lscc_i3c_target_inst.\\gen_en_io_prim\.gen_prim\.u_i3c_sda.PADDI     BB_I3C_A               15         ENCRYPTED      
+===================================================================================================================================================
+=========================================================================== Gated/Generated Clocks ============================================================================
+Clock Tree ID     Driving Element                                              Drive Element Type     Unconverted Fanout     Sample Instance     Explanation                   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@KP:ckid0_131     pll0_inst.lscc_pll_inst.\\gen_no_refclk_mon\.u_PLL.CLKOP     PLL                    3458                   ENCRYPTED           Clock Optimization not enabled
+@KP:ckid0_152     pll0_inst.lscc_pll_inst.\\gen_no_refclk_mon\.u_PLL.CLKOS     PLL                    929                    ENCRYPTED           Clock Optimization not enabled
+@KP:ckid0_155     ENCRYPTED                                                    DCC                    83                     ENCRYPTED           Clock Optimization not enabled
+@KP:ckid0_158     ENCRYPTED                                                    port                   53                     ENCRYPTED           Clock Optimization not enabled
+@KP:ckid0_161     ENCRYPTED                                                    port                   45                     ENCRYPTED           Clock Optimization not enabled
+@KP:ckid0_165     ENCRYPTED                                                    port                   53                     ENCRYPTED           Clock Optimization not enabled
+@KP:ckid0_168     ENCRYPTED                                                    port                   45                     ENCRYPTED           Clock Optimization not enabled
+@KP:ckid0_172     ENCRYPTED                                                    port                   429                    ENCRYPTED           Clock Optimization not enabled
+@KP:ckid0_174     ENCRYPTED                                                    port                   43                     ENCRYPTED           Clock Optimization not enabled
+@KP:ckid0_177     ENCRYPTED                                                    port                   45                     ENCRYPTED           Clock Optimization not enabled
+@KP:ckid0_179     ENCRYPTED                                                    port                   22                     ENCRYPTED           Clock Optimization not enabled
+@KP:ckid0_181     ENCRYPTED                                                    port                   43                     ENCRYPTED           Clock Optimization not enabled
+@KP:ckid0_184     ENCRYPTED                                                    port                   45                     ENCRYPTED           Clock Optimization not enabled
+@KP:ckid0_185     ENCRYPTED                                                    port                   1                      ENCRYPTED           Clock Optimization not enabled
+===============================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######
+
+
+Summary of user generated gated clocks:
+0 user generated gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:35s; CPU Time elapsed 0h:00m:34s; Memory used current: 321MB peak: 329MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:00m:34s; Memory used current: 324MB peak: 329MB)
+
+Some data will not be shown as it is part of encrypted module
+@W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\I3C_XO5_impl_1_cck.rpt" .
+
+Finished constraint checker (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:00m:35s; Memory used current: 330MB peak: 330MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:00m:35s; Memory used current: 234MB peak: 331MB)
+
+Process took 0h:00m:37s realtime, 0h:00m:35s cputime
+# Fri Mar 13 10:06:57 2026
+
+###########################################################]

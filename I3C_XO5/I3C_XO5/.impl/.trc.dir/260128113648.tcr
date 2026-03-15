@@ -1,0 +1,25 @@
+#Start recording tcl command: 1/28/2026 10:39:50
+sbp_design open -name I3C_XO5 -path {C:/Users/billzhang/Desktop/I3C Controller IP Design Example/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx}
+# 定義要加入的檔案清單
+array set VFILE_LIST ""
+# Adding PLL0 (From Propel common_ng folder)
+# Adding OSC0 (From Propel common_ng folder)
+# 執行加入動作
+set index [array names VFILE_LIST]
+}
+# 定義要加入的檔案清單
+array set VFILE_LIST ""
+# Adding PLL0 (From Propel common_ng folder)
+# Adding OSC0 (From Propel common_ng folder)
+# 執行加入動作
+set index [array names VFILE_LIST]
+}
+sbp_delete {I3C_XO5/clk_i} {I3C_XO5/rstn_i} -type port
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C Controller IP Design Example/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C Controller IP Design Example/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C Controller IP Design Example/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C Controller IP Design Example/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design close
+#Stop recording: 1/28/2026 11:36:48

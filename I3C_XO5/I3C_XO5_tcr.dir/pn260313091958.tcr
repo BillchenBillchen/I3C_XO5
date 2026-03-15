@@ -1,0 +1,132 @@
+#Start recording tcl command: 3/12/2026 13:41:21
+#Project Location: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5; Project name: I3C_XO5
+prj_open "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5.rdf"
+rvl_open_project C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+rvl_close_project -force
+rva_open_project "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/untitled.rva"
+rva_set_te -name TE2 -enable on
+rva_run
+rva_set_trigoptn -teall and
+rva_run
+rva_set_te -name TE4 -enable on
+rva_stop
+rva_run
+rva_run
+rva_stop
+rva_set_te -name TE4 -enable off
+rva_set_tu -name TU3 -operator "=="
+rva_set_tu -name TU4 -operator "rising edge"
+rva_set_te -name TE4 -enable on
+rva_save_project "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/untitled.rva"
+rva_run
+rva_stop
+rva_set_te -name TE4 -enable off
+rva_set_te -name TE3 -enable off
+rva_run
+rva_stop
+rva_set_tu -name TU4 -operator "falling edge"
+rva_set_tu -name TU4 -value "0"
+rva_set_te -name TE4 -enable on
+rva_set_tu -name TU2 -operator "=="
+rva_set_tu -name TU2 -value "1"
+rva_save_project "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/untitled.rva"
+rva_run
+rva_manualtrig
+rva_run
+rva_manualtrig
+rva_run
+rva_manualtrig
+rva_run
+rva_manualtrig
+rva_manualtrig
+rva_set_tu -name TU4 -operator "rising edge"
+rva_save_project "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/untitled.rva"
+rva_set_tu -name TU4 -value "1"
+rva_run
+rva_run
+rva_run
+rva_manualtrig
+rva_set_tu -name TU2 -operator "falling edge"
+rva_set_tu -name TU2 -value "0"
+rva_set_tu -name TU4 -operator "=="
+rva_run
+rva_stop
+prj_remove_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/untitled.rva"
+rvl_open_project C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+rva_close_controller
+rvl_set_traceoptn BufferDepth=32768
+rvl_add_trace -insert_at i3c_s_inst/lscc_i3c_target_inst/scl_i {i3c_m_inst/lscc_i3c_controller_inst/scl_spu i3c_m_inst/lscc_i3c_controller_inst/scl_wpu i3c_m_inst/lscc_i3c_controller_inst/sda_spu i3c_m_inst/lscc_i3c_controller_inst/sda_wpu}
+rvl_add_trace  {i3c_s_inst/lscc_i3c_target_inst/scl_spu i3c_s_inst/lscc_i3c_target_inst/scl_wpu i3c_s_inst/lscc_i3c_target_inst/sda_spu i3c_s_inst/lscc_i3c_target_inst/sda_wpu}
+rvl_rename_tu TU1 TU
+rvl_rename_tu TU3 TU1
+rvl_rename_tu TU2 TU3
+rvl_rename_tu TU TU2
+rvl_set_tu -name TU3 -op .FE.
+rvl_set_tu -name TU3 -val 0
+rvl_set_tu -name TU4 -op ==
+rvl_set_tu -name TU5 -val 1
+rvl_set_tu -name TU7 -op .FE.
+rvl_set_tu -name TU10 -op .RE.
+rvl_set_tu -name TU10 -val 1
+rvl_save_project -overwrite C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+prj_run Synthesis -impl impl_1
+rvl_close_project -force
+rvl_open_project C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+rva_new_project -rva "untitled" -cable USB2 -rvl "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl" -dev "1. LFMXO5-25:0x010F7043 (debug enabled)" -port 0 -xcf ""
+prj_add_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/untitled.rva"
+rva_set_te -name TE1 -enable on
+rva_set_te -name TE4 -enable off
+rva_set_te -name TE3 -enable on
+rva_run
+rva_stop
+rva_set_te -name TE3 -enable off
+rva_set_te -name TE1 -enable off
+rva_run
+rvl_close_project
+rvl_open_project C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+rva_stop
+rva_set_te -name TE2 -enable off
+rva_set_te -name TE1 -enable on
+rva_set_te -name TE3 -enable on
+rva_set_te -name TE2 -enable on
+rva_set_te -name TE1 -enable off
+rva_set_te -name TE3 -enable off
+rva_set_trigoptn -teall or
+rva_run
+rva_run
+rva_run
+rva_run
+rva_run
+rva_run
+rva_close_controller
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+rva_new_project -rva "untitled" -cable USB2 -rvl "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl" -dev "1. LFMXO5-25:0x010F7043 (debug enabled)" -port 0 -xcf ""
+rva_run
+rva_stop
+rva_set_te -name TE2 -enable off
+rva_set_te -name TE3 -enable on
+rva_run
+rva_set_te -name TE4 -enable off
+rva_stop
+rva_run
+rva_stop
+rva_set_te -name TE1 -enable on
+rva_run
+rva_manualtrig
+rva_set_trigoptn -teall or
+rva_run
+rva_set_te -name TE3 -enable off
+rva_set_te -name TE1 -enable off
+rva_set_te -name TE3 -enable on
+rva_run
+rva_run
+rva_save_project "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/untitled.rva"
+#Stop recording: 3/13/2026 09:19:58

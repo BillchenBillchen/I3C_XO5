@@ -1,0 +1,11 @@
+<RadiantSimulationProject language="1" name="sim_controller" path="sim" simType="QuestaSim Qrun" stage="0" version="2.0">
+    <Source include="none" langstandard="" path="sim/IPs/i3c_m/3.7.0/rtl/i3c_m.v" type="VERILOG" worklib=""/>
+    <Source include="none" langstandard="" path="sim/IPs/i3c_m/3.7.0/testbench/dut_params.v" type="VERILOG" worklib=""/>
+    <Source include="none" langstandard="" path="sim/IPs/i3c_m/3.7.0/testbench/tb_models.v" type="VERILOG" worklib=""/>
+    <Source include="none" langstandard="" path="sim/IPs/i3c_m/3.7.0/testbench/tb_top.v" type="VERILOG" worklib=""/>
+    <SimLib value="pmi_work ovi_lfmxo5"/>
+    <GlbInc value="&quot;.&quot;"/>
+    <Macro value=""/>
+    <Udo value=""/>
+    <TopModule instance="" language="VERILOG" name="tb_top"/>
+</RadiantSimulationProject>

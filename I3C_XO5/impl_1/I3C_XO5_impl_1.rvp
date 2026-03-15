@@ -1,0 +1,47 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Bali Reveal project file
+
+#device options
+[Device]
+part = LFMXO5-25-9BBG400C
+family = LFMXO5
+device = LFMXO5-25
+speed = 9_High-Performance_1.0V
+package = BBG400
+operation = Commercial
+
+#design options
+[Design]
+title = I3C_XO5
+path = C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1
+core_generate = C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1
+search_path = C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5;C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5
+top = I3C_XO5
+synthesis = synplify
+
+#strategy options
+VHDL2008 = false
+
+#HDLs options
+[HDLs]
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/i3c_m/3.7.0/rtl/i3c_m.v = Verilog
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/i3c_s/3.7.0/rtl/i3c_s.v = Verilog
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/ahb2apb/1.2.0/rtl/ahb2apb.sv = System Verilog
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/pll0/1.9.1/rtl/pll0.v = Verilog
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/apb0/1.4.0/rtl/apb0.v = Verilog
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.v = Verilog
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/uart0/1.5.0/rtl/uart0.v = Verilog
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/osc0/1.4.0/rtl/osc0.v = Verilog
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/gpio0/1.8.0/rtl/gpio0.v = Verilog
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/module/ahbl/1.5.0/rtl/ahbl.v = Verilog
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/risc_mc/2.8.1/rtl/risc_mc.sv = System Verilog
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/lib/latticesemi.com/ip/sys_mem/2.5.1/rtl/sys_mem.v = Verilog
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_sim/I3C_target_sim/I3C_target_inst/rtl/I3C_target_inst.v = Verilog
+[HDL_Defines]
+SBP_SYNTHESIS=
+[HDL_Param]
+[Generated]
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1/reveal_workspace/tmpreveal/i3c_xo5_la0_trig_gen.v=Verilog
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1/reveal_workspace/tmpreveal/i3c_xo5_la0_gen.v=Verilog
+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1/reveal_workspace/tmpreveal/I3C_XO5_rvl_top.v=System Verilog,work
+C:/lscc/radiant/2025.2/data/reveal/src/ertl/reveal_constraint.sdc=SDC

@@ -1,0 +1,16 @@
+
+PAR: Place And Route Radiant Software (64-bit) 2025.2.0.48.0.
+PARed on: Sat Mar 14 17:24:42 2026
+
+Command Line: par -w -t 1 -cores 1 -hsp m -exp parPathBased=ON \
+	I3C_XO5_impl_1_syn.udb I3C_XO5_impl_1_map_par.dir/5_1.udb 
+
+Loading I3C_XO5_impl_1_syn.udb ...
+Loading device for application GENERIC from file 'jd5f25.nph' in environment: C:/lscc/radiant/2025.2/ispfpga.
+Package Status:                     Final          Version 8.
+Performance Hardware Data Status:   Final          Version 1.8.
+
+
+
+ERROR <78003014> - par: Failed to load the input design file <I3C_XO5_impl_1_syn.udb>.
+A fatal error occurred. The process will now exit.

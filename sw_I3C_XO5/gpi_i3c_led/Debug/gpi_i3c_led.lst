@@ -1,0 +1,3926 @@
+
+gpi_i3c_led.elf:     file format elf32-littleriscv
+gpi_i3c_led.elf
+architecture: riscv:rv32, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00000000
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00000000 paddr 0x00000000 align 2**12
+         filesz 0x00001c90 memsz 0x00002a10 flags rwx
+
+Sections:
+Idx Name           Size      VMA       LMA       File off  Algn  Flags
+  0 .text          0000190c  00000000  00000000  00001000  2**4  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .gprof         00000000  0000190c  0000190c  00002c90  2**2  CONTENTS
+  2 .ctors         00000000  0000190c  0000190c  00002c90  2**2  CONTENTS
+  3 .dtors         00000000  0000190c  0000190c  00002c90  2**2  CONTENTS
+  4 .rodata        00000370  0000190c  0000190c  0000290c  2**2  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .data          00000014  00001c7c  00001c7c  00002c7c  2**2  CONTENTS, ALLOC, LOAD, DATA
+  6 .bss           00000274  00001c90  00001c90  00002c90  2**3  ALLOC
+  7 .heap          00000100  00001f08  00001f08  00002c90  2**3  ALLOC
+  8 .stack         00000a00  00002010  00002010  00002c90  2**4  ALLOC
+  9 .debug_info    00003529  00000000  00000000  00002c90  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 10 .debug_abbrev  00000d82  00000000  00000000  000061b9  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 11 .debug_aranges 00000370  00000000  00000000  00006f40  2**3  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 12 .debug_ranges  00000378  00000000  00000000  000072b0  2**3  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 13 .debug_macro   000037a4  00000000  00000000  00007628  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 14 .debug_line    00005609  00000000  00000000  0000adcc  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 15 .debug_str     0000bc5c  00000000  00000000  000103d5  2**0  CONTENTS, READONLY, DEBUGGING, OCTETS
+ 16 .comment       00000033  00000000  00000000  0001c031  2**0  CONTENTS, READONLY
+ 17 .debug_frame   00000b3c  00000000  00000000  0001c064  2**2  CONTENTS, READONLY, DEBUGGING, OCTETS
+SYMBOL TABLE:
+00000000 l    d  .text	00000000 .text
+0000190c l    d  .gprof	00000000 .gprof
+0000190c l    d  .ctors	00000000 .ctors
+0000190c l    d  .dtors	00000000 .dtors
+0000190c l    d  .rodata	00000000 .rodata
+00001c7c l    d  .data	00000000 .data
+00001c90 l    d  .bss	00000000 .bss
+00001f08 l    d  .heap	00000000 .heap
+00002010 l    d  .stack	00000000 .stack
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 ./src/bsp/driver/riscv_mc/crt0.o
+0000017c l       .text	00000000 crtInit
+00000068 l       .text	00000000 __handle_isr
+0000005a l       .text	00000000 __handle_esr
+0000006a l       .text	00000000 __handle_exit
+00000214 l       .text	00000000 bss_init
+00000220 l       .text	00000000 bss_loop
+0000022c l       .text	00000000 bss_done
+00000232 l       .text	00000000 infinitLoop
+00000000 l    df *ABS*	00000000 uart.c
+00000000 l    df *ABS*	00000000 exit.c
+00000000 l    df *ABS*	00000000 interrupt.c
+00000000 l    df *ABS*	00000000 iob.c
+00001c90 l     O .bss	00000004 s_putc_func
+00001c94 l     O .bss	00000004 s_getc_func
+00001c98 l     O .bss	00000004 s_flush_func
+00000386 l     F .text	0000003c iob_putc
+000003c2 l     F .text	00000030 iob_getc
+000003f2 l     F .text	00000030 iob_flush
+00001c7c l     O .data	00000014 __stdio
+00000000 l    df *ABS*	00000000 pic.c
+00000000 l    df *ABS*	00000000 reg_access.c
+00000000 l    df *ABS*	00000000 i3c_target.c
+00000000 l    df *ABS*	00000000 i3c_controller.c
+000006fc l     F .text	000000c6 i3c_master_entdaa_config
+00000000 l    df *ABS*	00000000 gpio.c
+00000000 l    df *ABS*	00000000 main.c
+00000e34 l     F .text	00000054 lscc_uart_putc
+00000e88 l     F .text	00000014 lscc_uart_getc
+00000e9c l     F .text	00000014 lscc_uart_flush
+00000eb0 l     F .text	0000003a simple_delay_ms
+00000eea l     F .text	0000003e set_led_all_off
+00000f28 l     F .text	00000026 set_led_on
+00000f4e l     F .text	00000070 bsp_init
+00000000 l    df *ABS*	00000000 utils.c
+00000000 l    df *ABS*	00000000 printf.c
+00000000 l    df *ABS*	00000000 putchar.c
+00000000 l    df *ABS*	00000000 puts.c
+00000000 l    df *ABS*	00000000 vfiprintf.c
+0000139c l     F .text	0000003e __ultoa_invert
+00000000 l    df *ABS*	00000000 strnlen.c
+00000000 l    df *ABS*	00000000 fputc.c
+00001358 g     F .text	00000008 putchar
+00000de6 g     F .text	0000004e gpio_output_write
+00001332 g     F .text	00000026 printf
+00002490 g       .data	00000000 __global_pointer$
+000018b2 g     F .text	00000028 .hidden __riscv_save_8
+00000618 g     F .text	000000e4 i3c_master_init
+000018fe g     F .text	0000000c .hidden __riscv_restore_3
+000018ea g     F .text	00000020 .hidden __riscv_restore_10
+000018b2 g     F .text	00000028 .hidden __riscv_save_11
+000004f8 g     F .text	00000074 reg_8b_modify
+0000190c g       .text	00000000 _etext
+0000044a g     F .text	0000003a pic_int_pending
+00000bda g     F .text	00000138 i3c_master_private_i3c_write
+0000190c g       .ctors	00000000 _ctors_end
+000018fe g     F .text	0000000c .hidden __riscv_restore_2
+00000246 g     F .text	000000c4 irq_callback
+0000030a g     F .text	00000044 esr_callback
+00001eb8 g     O .bss	00000010 i3c_devinfo
+00000484 g     F .text	00000046 reg_32b_modify
+00001360 g     F .text	0000003c puts
+00001c90 g       .bss	00000000 _bss_start
+000018aa g     F .text	00000030 .hidden __riscv_save_12
+000007c2 g     F .text	000002b8 i3c_master_daa
+000013da g     F .text	00000498 __i_vfprintf
+000018ea g     F .text	00000020 .hidden __riscv_restore_11
+000018da g     F .text	0000000c .hidden __riscv_save_1
+000018fe g     F .text	0000000c .hidden __riscv_restore_0
+000018c0 g     F .text	0000001a .hidden __riscv_save_7
+000018f4 g     F .text	00000016 .hidden __riscv_restore_5
+00001c9c g     O .bss	00000004 pic_dev
+0000034e g     F .text	00000038 iob_init
+00001872 g     F .text	00000018 strnlen
+000018f4 g     F .text	00000016 .hidden __riscv_restore_6
+00001f04 g       .bss	00000000 _bss_end
+000018b2 g     F .text	00000028 .hidden __riscv_save_9
+000018c0 g     F .text	0000001a .hidden __riscv_save_4
+00000090 g     F .text	0000008a uart_init
+000004ca g     F .text	0000002e reg_8b_write
+000018da g     F .text	0000000c .hidden __riscv_save_3
+000019b8 g     O .rodata	00000020 wr_buf
+00001e28 g     O .bss	00000058 uart_core_uart
+00000000 g       .text	00000000 _ftext
+00000000 g       .text	00000000 _start
+0000190c g       .ctors	00000000 _ctors_start
+00001e80 g     O .bss	00000034 i3cm
+000018b2 g     F .text	00000028 .hidden __riscv_save_10
+000018f4 g     F .text	00000016 .hidden __riscv_restore_4
+000018ea g     F .text	00000020 .hidden __riscv_restore_8
+000018c0 g     F .text	0000001a .hidden __riscv_save_6
+00000a00 g       *ABS*	00000000 _STACK_SIZE
+00001316  w    F .text	0000001c delayMS
+000018ea g     F .text	00000020 .hidden __riscv_restore_9
+000018f4 g     F .text	00000016 .hidden __riscv_restore_7
+00000fbe g     F .text	00000318 main
+00000010 g       .text	00000000 trap_entry
+00000100 g       *ABS*	00000000 _HEAP_SIZE
+0000011a g     F .text	00000062 uart_putc
+00000422 g     F .text	00000028 pic_int_clear
+000012d6 g     F .text	00000040 delayCycle
+0000188a g     F .text	00000020 putc
+00002a10 g       .stack	00000000 _stack_start
+00001da0 g     O .bss	00000088 gpio_inst
+0000188a g     F .text	00000020 fputc
+000018da g     F .text	0000000c .hidden __riscv_save_2
+000018c0 g     F .text	0000001a .hidden __riscv_save_5
+00000000 g     F *ABS*	000004f2 vfscanf
+00001ca0 g     O .bss	00000100 int_table
+000018e6 g     F .text	00000024 .hidden __riscv_restore_12
+00001ee4 g     O .bss	00000020 rd_buf
+000018da g     F .text	0000000c .hidden __riscv_save_0
+0000023a  w    F .text	0000000c _exit
+0000056c g     F .text	00000034 reg_8b_read
+000005a0 g     F .text	00000078 i3c_target_init
+00001940  w    O .rodata	0000000c __iob
+00000d12 g     F .text	000000d4 gpio_init
+000018fe g     F .text	0000000c .hidden __riscv_restore_1
+00000a7a g     F .text	00000160 i3c_master_private_i3c_read
+00001ec8 g     O .bss	0000001c i3cs
+0000190c g       .dtors	00000000 _dtors_start
+000013da g     F .text	000004ee vfprintf
+
+
+
+Disassembly of section .text:
+
+00000000 <_ftext>:
+_ftext():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:9
+.global main
+.weak   irq_callback
+.weak   esr_callback
+
+_start:
+  j crtInit
+       0:	17c0006f          	j	17c <crtInit>
+	...
+
+00000010 <trap_entry>:
+trap_entry():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:14
+
+.global  trap_entry
+.align 4
+trap_entry:
+  sw x1,  - 1*4(sp)
+      10:	fe112e23          	sw	ra,-4(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:15
+  sw x5,  - 2*4(sp)
+      14:	fe512c23          	sw	t0,-8(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:16
+  sw x6,  - 3*4(sp)
+      18:	fe612a23          	sw	t1,-12(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:17
+  sw x7,  - 4*4(sp)
+      1c:	fe712823          	sw	t2,-16(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:18
+  sw x10, - 5*4(sp)
+      20:	fea12623          	sw	a0,-20(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:19
+  sw x11, - 6*4(sp)
+      24:	feb12423          	sw	a1,-24(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:20
+  sw x12, - 7*4(sp)
+      28:	fec12223          	sw	a2,-28(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:21
+  sw x13, - 8*4(sp)
+      2c:	fed12023          	sw	a3,-32(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:22
+  sw x14, - 9*4(sp)
+      30:	fce12e23          	sw	a4,-36(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:23
+  sw x15, -10*4(sp)
+      34:	fcf12c23          	sw	a5,-40(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:27
+#ifdef __riscv_32e
+  addi sp,sp,-10*4
+#else
+  sw x16, -11*4(sp)
+      38:	fd012a23          	sw	a6,-44(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:28
+  sw x17, -12*4(sp)
+      3c:	fd112823          	sw	a7,-48(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:29
+  sw x28, -13*4(sp)
+      40:	fdc12623          	sw	t3,-52(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:30
+  sw x29, -14*4(sp)
+      44:	fdd12423          	sw	t4,-56(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:31
+  sw x30, -15*4(sp)
+      48:	fde12223          	sw	t5,-60(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:32
+  sw x31, -16*4(sp)
+      4c:	fdf12023          	sw	t6,-64(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:33
+  addi sp,sp,-16*4
+      50:	7139                	addi	sp,sp,-64
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:35
+#endif
+  csrr a0, mcause    // load mcause value as parameter
+      52:	34202573          	csrr	a0,mcause
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:36
+  bltz a0, __handle_isr
+      56:	00054963          	bltz	a0,68 <__handle_isr>
+
+0000005a <__handle_esr>:
+__handle_esr():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:38
+__handle_esr:
+  csrr a1, mepc
+      5a:	341025f3          	csrr	a1,mepc
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:39
+  mv   a2, sp
+      5e:	860a                	mv	a2,sp
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:40
+  call esr_callback
+      60:	246d                	jal	30a <esr_callback>
+      62:	34151073          	csrw	mepc,a0
+      66:	a011                	j	6a <__handle_exit>
+
+00000068 <__handle_isr>:
+__handle_isr():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:41
+  csrw mepc, a0
+      68:	2af9                	jal	246 <irq_callback>
+
+0000006a <__handle_exit>:
+__handle_exit():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:41
+      6a:	50f2                	lw	ra,60(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:42
+  j    __handle_exit
+      6c:	52e2                	lw	t0,56(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:44
+__handle_isr:
+  call irq_callback
+      6e:	5352                	lw	t1,52(sp)
+      70:	53c2                	lw	t2,48(sp)
+      72:	5532                	lw	a0,44(sp)
+      74:	55a2                	lw	a1,40(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:59
+  lw x13, 2*4(sp)
+  lw x14, 1*4(sp)
+  lw x15, 0*4(sp)
+  addi sp,sp,10*4
+#else
+  lw x1 , 15*4(sp)
+      76:	5612                	lw	a2,36(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:60
+  lw x5,  14*4(sp)
+      78:	5682                	lw	a3,32(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:61
+  lw x6,  13*4(sp)
+      7a:	4772                	lw	a4,28(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:62
+  lw x7,  12*4(sp)
+      7c:	47e2                	lw	a5,24(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:63
+  lw x10, 11*4(sp)
+      7e:	4852                	lw	a6,20(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:64
+  lw x11, 10*4(sp)
+      80:	48c2                	lw	a7,16(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:65
+  lw x12,  9*4(sp)
+      82:	4e32                	lw	t3,12(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:66
+  lw x13,  8*4(sp)
+      84:	4ea2                	lw	t4,8(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:67
+  lw x14,  7*4(sp)
+      86:	4f12                	lw	t5,4(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:68
+  lw x15,  6*4(sp)
+      88:	4f82                	lw	t6,0(sp)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:69
+  lw x16,  5*4(sp)
+      8a:	6121                	addi	sp,sp,64
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:70
+  lw x17,  4*4(sp)
+      8c:	30200073          	mret
+
+00000090 <uart_init>:
+uart_init():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:173
+unsigned char uart_init(struct uart_instance *this_uart,
+			unsigned int base_addr,
+			unsigned int sys_clk,
+			unsigned int baud_rate,
+			unsigned char stop_bits, unsigned char data_width)
+{
+      90:	7139                	addi	sp,sp,-64
+      92:	de22                	sw	s0,60(sp)
+      94:	0080                	addi	s0,sp,64
+      96:	fca42e23          	sw	a0,-36(s0)
+      9a:	fcb42c23          	sw	a1,-40(s0)
+      9e:	fcc42a23          	sw	a2,-44(s0)
+      a2:	fcd42823          	sw	a3,-48(s0)
+      a6:	86ba                	mv	a3,a4
+      a8:	873e                	mv	a4,a5
+      aa:	87b6                	mv	a5,a3
+      ac:	fcf407a3          	sb	a5,-49(s0)
+      b0:	87ba                	mv	a5,a4
+      b2:	fcf40723          	sb	a5,-50(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:175
+	volatile struct uart_dev *dev;
+	if (NULL == this_uart) {
+      b6:	fdc42783          	lw	a5,-36(s0)
+      ba:	e399                	bnez	a5,c0 <uart_init+0x30>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:176
+		return 1;
+      bc:	4785                	li	a5,1
+      be:	a891                	j	112 <_HEAP_SIZE+0x12>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:178
+	}
+	this_uart->base = base_addr;
+      c0:	fdc42783          	lw	a5,-36(s0)
+      c4:	fd842703          	lw	a4,-40(s0)
+      c8:	c3d8                	sw	a4,4(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:179
+	dev = (volatile struct uart_dev *) (this_uart->base);
+      ca:	fdc42783          	lw	a5,-36(s0)
+      ce:	43dc                	lw	a5,4(a5)
+      d0:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:182
+
+	/*initialize the instance data */
+	this_uart->base = base_addr;
+      d4:	fdc42783          	lw	a5,-36(s0)
+      d8:	fd842703          	lw	a4,-40(s0)
+      dc:	c3d8                	sw	a4,4(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:183
+	this_uart->sys_clk = sys_clk;
+      de:	fdc42783          	lw	a5,-36(s0)
+      e2:	fd442703          	lw	a4,-44(s0)
+      e6:	c798                	sw	a4,8(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:184
+	this_uart->baudrate = baud_rate;
+      e8:	fdc42783          	lw	a5,-36(s0)
+      ec:	fd042703          	lw	a4,-48(s0)
+      f0:	cb98                	sw	a4,16(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:185
+	this_uart->databits = data_width;
+      f2:	fce44703          	lbu	a4,-50(s0)
+      f6:	fdc42783          	lw	a5,-36(s0)
+      fa:	cbd8                	sw	a4,20(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:186
+	this_uart->stopbits = stop_bits;
+      fc:	fcf44703          	lbu	a4,-49(s0)
+     100:	fdc42783          	lw	a5,-36(s0)
+     104:	cf98                	sw	a4,24(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:191
+
+	/* set the data-configuration */
+	//uart_config(this_uart, 8, 0, 0, 1);
+
+	this_uart->blockingTx = 1;
+     106:	fdc42783          	lw	a5,-36(s0)
+     10a:	4705                	li	a4,1
+     10c:	00e78f23          	sb	a4,30(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:218
+		pic_isr_register(this_uart->intrLevel, uart_isr, this_uart);	//uart_isr have two parameter!!!!!
+	}
+#endif
+
+	/* all done! */
+	return 0;
+     110:	4781                	li	a5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:219
+}
+     112:	853e                	mv	a0,a5
+     114:	5472                	lw	s0,60(sp)
+     116:	6121                	addi	sp,sp,64
+     118:	8082                	ret
+
+0000011a <uart_putc>:
+uart_putc():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:291
+ * Returns 0 if no error
+ ***************************************************************
+*/
+unsigned char uart_putc(struct uart_instance *this_uart,
+			unsigned char ucChar)
+{
+     11a:	7179                	addi	sp,sp,-48
+     11c:	d622                	sw	s0,44(sp)
+     11e:	1800                	addi	s0,sp,48
+     120:	fca42e23          	sw	a0,-36(s0)
+     124:	87ae                	mv	a5,a1
+     126:	fcf40da3          	sb	a5,-37(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:294
+	volatile unsigned char uiValue;
+	volatile struct uart_dev *dev;
+	if (NULL == this_uart) {
+     12a:	fdc42783          	lw	a5,-36(s0)
+     12e:	e399                	bnez	a5,134 <uart_putc+0x1a>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:295
+		return 1;
+     130:	4785                	li	a5,1
+     132:	a089                	j	174 <uart_putc+0x5a>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:297
+	}
+	dev = (volatile struct uart_dev *) (this_uart->base);
+     134:	fdc42783          	lw	a5,-36(s0)
+     138:	43dc                	lw	a5,4(a5)
+     13a:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:329
+	} else
+#endif
+	{
+		do {
+			/* if uart's ready to accept character, send immediately */
+			uiValue = dev->lsr;
+     13e:	fec42783          	lw	a5,-20(s0)
+     142:	4bdc                	lw	a5,20(a5)
+     144:	0ff7f793          	zext.b	a5,a5
+     148:	fef405a3          	sb	a5,-21(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:330
+			if (uiValue & UART_LSR_TX_RDY_MASK) {
+     14c:	feb44783          	lbu	a5,-21(s0)
+     150:	0ff7f793          	zext.b	a5,a5
+     154:	0207f793          	andi	a5,a5,32
+     158:	cb81                	beqz	a5,168 <uart_putc+0x4e>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:331
+				dev->rxtx = ucChar;
+     15a:	fdb44703          	lbu	a4,-37(s0)
+     15e:	fec42783          	lw	a5,-20(s0)
+     162:	c398                	sw	a4,0(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:332
+				return (0);
+     164:	4781                	li	a5,0
+     166:	a039                	j	174 <uart_putc+0x5a>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:336
+			}
+
+			/* if non-blocking tx, return immediately */
+			if (this_uart->blockingTx == 0)
+     168:	fdc42783          	lw	a5,-36(s0)
+     16c:	01e7c783          	lbu	a5,30(a5)
+     170:	f7f9                	bnez	a5,13e <uart_putc+0x24>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:337
+				return (UART_ERR_WOULD_BLOCK);
+     172:	4785                	li	a5,1
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/uart/uart.c:344
+		} while (1);
+	}
+
+	/* all done */
+	return 0;
+}
+     174:	853e                	mv	a0,a5
+     176:	5432                	lw	s0,44(sp)
+     178:	6145                	addi	sp,sp,48
+     17a:	8082                	ret
+
+0000017c <crtInit>:
+crtInit():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:83
+  .text
+
+
+crtInit:
+
+  mv x1, zero
+     17c:	00000093          	li	ra,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:84
+  mv x2, zero
+     180:	00000113          	li	sp,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:85
+  mv x3, zero
+     184:	00000193          	li	gp,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:86
+  mv x4, zero
+     188:	00000213          	li	tp,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:87
+  mv x5, zero
+     18c:	00000293          	li	t0,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:88
+  mv x6, zero
+     190:	00000313          	li	t1,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:89
+  mv x7, zero
+     194:	00000393          	li	t2,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:90
+  mv x8, zero
+     198:	00000413          	li	s0,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:91
+  mv x9, zero
+     19c:	00000493          	li	s1,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:92
+  mv x10, zero
+     1a0:	00000513          	li	a0,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:93
+  mv x11, zero
+     1a4:	00000593          	li	a1,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:94
+  mv x12, zero
+     1a8:	00000613          	li	a2,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:95
+  mv x13, zero
+     1ac:	00000693          	li	a3,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:96
+  mv x14, zero
+     1b0:	00000713          	li	a4,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:97
+  mv x15, zero
+     1b4:	00000793          	li	a5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:99
+#ifndef __riscv_32e
+  mv x16, zero
+     1b8:	00000813          	li	a6,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:100
+  mv x17, zero
+     1bc:	00000893          	li	a7,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:101
+  mv x18, zero
+     1c0:	00000913          	li	s2,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:102
+  mv x19, zero
+     1c4:	00000993          	li	s3,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:103
+  mv x20, zero
+     1c8:	00000a13          	li	s4,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:104
+  mv x21, zero
+     1cc:	00000a93          	li	s5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:105
+  mv x22, zero
+     1d0:	00000b13          	li	s6,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:106
+  mv x23, zero
+     1d4:	00000b93          	li	s7,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:107
+  mv x24, zero
+     1d8:	00000c13          	li	s8,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:108
+  mv x25, zero
+     1dc:	00000c93          	li	s9,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:109
+  mv x26, zero
+     1e0:	00000d13          	li	s10,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:110
+  mv x27, zero
+     1e4:	00000d93          	li	s11,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:111
+  mv x28, zero
+     1e8:	00000e13          	li	t3,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:112
+  mv x29, zero
+     1ec:	00000e93          	li	t4,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:113
+  mv x30, zero
+     1f0:	00000f13          	li	t5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:114
+  mv x31, zero
+     1f4:	00000f93          	li	t6,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:116
+#endif
+  la t0, trap_entry
+     1f8:	01000293          	li	t0,16
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:117
+  csrw mtvec, t0
+     1fc:	30529073          	csrw	mtvec,t0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:118
+  csrwi mstatus, 0
+     200:	30005073          	csrwi	mstatus,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:119
+  csrwi mie, 0
+     204:	30405073          	csrwi	mie,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:123
+
+  .option push
+  .option norelax
+  la gp, __global_pointer$
+     208:	00002197          	auipc	gp,0x2
+     20c:	28818193          	addi	gp,gp,648 # 2490 <__global_pointer$>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:140
+    add a0,a0,4
+    j stack_loop
+stack_done:
+#endif
+
+  la sp, _stack_start
+     210:	58018113          	addi	sp,gp,1408 # 2a10 <_stack_start>
+
+00000214 <bss_init>:
+bss_init():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:143
+
+bss_init:
+  la a0, _bss_start
+     214:	00002517          	auipc	a0,0x2
+     218:	a7c50513          	addi	a0,a0,-1412 # 1c90 <s_putc_func>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:144
+  la a1, _bss_end
+     21c:	a7418593          	addi	a1,gp,-1420 # 1f04 <_bss_end>
+
+00000220 <bss_loop>:
+bss_loop():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:146
+bss_loop:
+  beq a0,a1,bss_done
+     220:	00b50663          	beq	a0,a1,22c <bss_done>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:147
+  sw zero,0(a0)
+     224:	00052023          	sw	zero,0(a0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:148
+  add a0,a0,4
+     228:	0511                	addi	a0,a0,4
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:149
+  j bss_loop
+     22a:	bfdd                	j	220 <bss_loop>
+
+0000022c <bss_done>:
+bss_done():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:173
+//  li a0, 0x880     //880 enable timer + external interrupts
+//  csrw mie,a0
+//  li a0, 0x1808     //1808 enable interrupts
+//  csrw mstatus,a0
+
+  call main
+     22c:	593000ef          	jal	ra,fbe <main>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:174
+  call _exit
+     230:	2029                	jal	23a <_exit>
+
+00000232 <infinitLoop>:
+infinitLoop():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:176
+infinitLoop:
+  j infinitLoop
+     232:	a001                	j	232 <infinitLoop>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:179
+
+irq_callback:
+  ret
+     234:	8082                	ret
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/crt0.S:182
+
+esr_callback:
+  j esr_callback
+     236:	0d40006f          	j	30a <esr_callback>
+
+0000023a <_exit>:
+_exit():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/exit.c:57
+#include <stdio.h>
+#include <sys/cdefs.h>
+
+void __attribute__ ((weak, __noreturn__))
+_exit (int status)
+{
+     23a:	1101                	addi	sp,sp,-32
+     23c:	ce22                	sw	s0,28(sp)
+     23e:	1000                	addi	s0,sp,32
+     240:	fea42623          	sw	a0,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/exit.c:59 (discriminator 1)
+	(void) status;
+	while(1);
+     244:	a001                	j	244 <_exit+0xa>
+
+00000246 <irq_callback>:
+irq_callback():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:57
+#include "interrupt.h"
+
+extern struct interrupt_entry int_table[S_INT_NUM];
+
+void irq_callback(unsigned int mcause)
+{
+     246:	7179                	addi	sp,sp,-48
+     248:	d606                	sw	ra,44(sp)
+     24a:	d422                	sw	s0,40(sp)
+     24c:	1800                	addi	s0,sp,48
+     24e:	fca42e23          	sw	a0,-36(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:59
+
+	if ((mcause & MCAUSE_VAL_MASK) == MCAUSE_VAL_MTIP) {
+     252:	fdc42783          	lw	a5,-36(s0)
+     256:	00f7f713          	andi	a4,a5,15
+     25a:	479d                	li	a5,7
+     25c:	02f71563          	bne	a4,a5,286 <irq_callback+0x40>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:60
+		if (int_table[S_INT_TIMER].isr) {
+     260:	6789                	lui	a5,0x2
+     262:	ca078793          	addi	a5,a5,-864 # 1ca0 <int_table>
+     266:	0f87a783          	lw	a5,248(a5)
+     26a:	cbd9                	beqz	a5,300 <irq_callback+0xba>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:61
+			int_table[S_INT_TIMER].isr(int_table[S_INT_TIMER].
+     26c:	6789                	lui	a5,0x2
+     26e:	ca078793          	addi	a5,a5,-864 # 1ca0 <int_table>
+     272:	0f87a703          	lw	a4,248(a5)
+     276:	6789                	lui	a5,0x2
+     278:	ca078793          	addi	a5,a5,-864 # 1ca0 <int_table>
+     27c:	0fc7a783          	lw	a5,252(a5)
+     280:	853e                	mv	a0,a5
+     282:	9702                	jalr	a4
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:76
+				}
+				pic_int_clear(idx);
+			}
+		}
+	}
+}
+     284:	a8b5                	j	300 <irq_callback+0xba>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:64
+	} else if ((mcause & MCAUSE_VAL_MASK) == MCASUE_VAL_MEIP) {
+     286:	fdc42783          	lw	a5,-36(s0)
+     28a:	00f7f713          	andi	a4,a5,15
+     28e:	47ad                	li	a5,11
+     290:	06f71863          	bne	a4,a5,300 <irq_callback+0xba>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:66
+		for (idx = S_INT_PIC0; idx < S_INT_NUM; idx++) {
+     294:	fe042623          	sw	zero,-20(s0)
+     298:	a8b9                	j	2f6 <irq_callback+0xb0>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:67
+			if (pic_int_pending(idx)) {
+     29a:	fec42783          	lw	a5,-20(s0)
+     29e:	0ff7f793          	zext.b	a5,a5
+     2a2:	853e                	mv	a0,a5
+     2a4:	225d                	jal	44a <pic_int_pending>
+     2a6:	87aa                	mv	a5,a0
+     2a8:	c3b1                	beqz	a5,2ec <irq_callback+0xa6>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:68
+				if (int_table[idx].isr) {
+     2aa:	6789                	lui	a5,0x2
+     2ac:	ca078713          	addi	a4,a5,-864 # 1ca0 <int_table>
+     2b0:	fec42783          	lw	a5,-20(s0)
+     2b4:	078e                	slli	a5,a5,0x3
+     2b6:	97ba                	add	a5,a5,a4
+     2b8:	439c                	lw	a5,0(a5)
+     2ba:	c39d                	beqz	a5,2e0 <irq_callback+0x9a>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:69
+					int_table[idx].isr(int_table[idx].
+     2bc:	6789                	lui	a5,0x2
+     2be:	ca078713          	addi	a4,a5,-864 # 1ca0 <int_table>
+     2c2:	fec42783          	lw	a5,-20(s0)
+     2c6:	078e                	slli	a5,a5,0x3
+     2c8:	97ba                	add	a5,a5,a4
+     2ca:	4394                	lw	a3,0(a5)
+     2cc:	6789                	lui	a5,0x2
+     2ce:	ca078713          	addi	a4,a5,-864 # 1ca0 <int_table>
+     2d2:	fec42783          	lw	a5,-20(s0)
+     2d6:	078e                	slli	a5,a5,0x3
+     2d8:	97ba                	add	a5,a5,a4
+     2da:	43dc                	lw	a5,4(a5)
+     2dc:	853e                	mv	a0,a5
+     2de:	9682                	jalr	a3
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:72
+				pic_int_clear(idx);
+     2e0:	fec42783          	lw	a5,-20(s0)
+     2e4:	0ff7f793          	zext.b	a5,a5
+     2e8:	853e                	mv	a0,a5
+     2ea:	2a25                	jal	422 <pic_int_clear>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:66 (discriminator 2)
+		for (idx = S_INT_PIC0; idx < S_INT_NUM; idx++) {
+     2ec:	fec42783          	lw	a5,-20(s0)
+     2f0:	0785                	addi	a5,a5,1
+     2f2:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:66 (discriminator 1)
+     2f6:	fec42703          	lw	a4,-20(s0)
+     2fa:	47fd                	li	a5,31
+     2fc:	f8e7dfe3          	bge	a5,a4,29a <irq_callback+0x54>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:76
+}
+     300:	0001                	nop
+     302:	50b2                	lw	ra,44(sp)
+     304:	5422                	lw	s0,40(sp)
+     306:	6145                	addi	sp,sp,48
+     308:	8082                	ret
+
+0000030a <esr_callback>:
+esr_callback():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:80
+
+unsigned int esr_callback(unsigned int mcause, unsigned int mepc,
+			  unsigned int sp)
+{
+     30a:	1101                	addi	sp,sp,-32
+     30c:	ce06                	sw	ra,28(sp)
+     30e:	cc22                	sw	s0,24(sp)
+     310:	1000                	addi	s0,sp,32
+     312:	fea42623          	sw	a0,-20(s0)
+     316:	feb42423          	sw	a1,-24(s0)
+     31a:	fec42223          	sw	a2,-28(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:82
+
+	printf("Exception caught: mcause=%d ,", mcause);
+     31e:	fec42583          	lw	a1,-20(s0)
+     322:	6789                	lui	a5,0x2
+     324:	90c78513          	addi	a0,a5,-1780 # 190c <_etext>
+     328:	00a010ef          	jal	ra,1332 <printf>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:83
+	printf("mepc=%x, sp=%x \r\n", mepc, sp);
+     32c:	fe442603          	lw	a2,-28(s0)
+     330:	fe842583          	lw	a1,-24(s0)
+     334:	6789                	lui	a5,0x2
+     336:	92c78513          	addi	a0,a5,-1748 # 192c <_etext+0x20>
+     33a:	7f9000ef          	jal	ra,1332 <printf>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:107
+		break;
+	}
+
+	printf("\r\n");
+#endif
+	return mepc + 4;
+     33e:	fe842783          	lw	a5,-24(s0)
+     342:	0791                	addi	a5,a5,4
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/interrupt.c:108
+}
+     344:	853e                	mv	a0,a5
+     346:	40f2                	lw	ra,28(sp)
+     348:	4462                	lw	s0,24(sp)
+     34a:	6105                	addi	sp,sp,32
+     34c:	8082                	ret
+
+0000034e <iob_init>:
+iob_init():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:63
+static lscc_getc_func s_getc_func;
+static lscc_flush_func s_flush_func;
+
+
+void iob_init(lscc_putc_func putc_func, lscc_getc_func getc_func, lscc_flush_func flush_func)
+{
+     34e:	1101                	addi	sp,sp,-32
+     350:	ce22                	sw	s0,28(sp)
+     352:	1000                	addi	s0,sp,32
+     354:	fea42623          	sw	a0,-20(s0)
+     358:	feb42423          	sw	a1,-24(s0)
+     35c:	fec42223          	sw	a2,-28(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:64
+	s_putc_func = putc_func;
+     360:	6789                	lui	a5,0x2
+     362:	fec42703          	lw	a4,-20(s0)
+     366:	c8e7a823          	sw	a4,-880(a5) # 1c90 <s_putc_func>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:65
+	s_getc_func = getc_func;
+     36a:	6789                	lui	a5,0x2
+     36c:	fe842703          	lw	a4,-24(s0)
+     370:	c8e7aa23          	sw	a4,-876(a5) # 1c94 <s_getc_func>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:66
+	s_flush_func = flush_func;
+     374:	6789                	lui	a5,0x2
+     376:	fe442703          	lw	a4,-28(s0)
+     37a:	c8e7ac23          	sw	a4,-872(a5) # 1c98 <s_flush_func>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:67
+}
+     37e:	0001                	nop
+     380:	4472                	lw	s0,28(sp)
+     382:	6105                	addi	sp,sp,32
+     384:	8082                	ret
+
+00000386 <iob_putc>:
+iob_putc():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:71
+
+
+static int iob_putc(char c, FILE *file)
+{
+     386:	1101                	addi	sp,sp,-32
+     388:	ce06                	sw	ra,28(sp)
+     38a:	cc22                	sw	s0,24(sp)
+     38c:	1000                	addi	s0,sp,32
+     38e:	87aa                	mv	a5,a0
+     390:	feb42423          	sw	a1,-24(s0)
+     394:	fef407a3          	sb	a5,-17(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:72
+	return s_putc_func ? (*s_putc_func)(c, file) : EOF;
+     398:	6789                	lui	a5,0x2
+     39a:	c907a783          	lw	a5,-880(a5) # 1c90 <s_putc_func>
+     39e:	cf81                	beqz	a5,3b6 <iob_putc+0x30>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:72 (discriminator 1)
+     3a0:	6789                	lui	a5,0x2
+     3a2:	c907a703          	lw	a4,-880(a5) # 1c90 <s_putc_func>
+     3a6:	fef40783          	lb	a5,-17(s0)
+     3aa:	fe842583          	lw	a1,-24(s0)
+     3ae:	853e                	mv	a0,a5
+     3b0:	9702                	jalr	a4
+     3b2:	87aa                	mv	a5,a0
+     3b4:	a011                	j	3b8 <iob_putc+0x32>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:72 (discriminator 2)
+     3b6:	57fd                	li	a5,-1
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:73 (discriminator 5)
+}
+     3b8:	853e                	mv	a0,a5
+     3ba:	40f2                	lw	ra,28(sp)
+     3bc:	4462                	lw	s0,24(sp)
+     3be:	6105                	addi	sp,sp,32
+     3c0:	8082                	ret
+
+000003c2 <iob_getc>:
+iob_getc():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:77
+
+
+static int iob_getc(FILE *file)
+{
+     3c2:	1101                	addi	sp,sp,-32
+     3c4:	ce06                	sw	ra,28(sp)
+     3c6:	cc22                	sw	s0,24(sp)
+     3c8:	1000                	addi	s0,sp,32
+     3ca:	fea42623          	sw	a0,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:78
+	return s_getc_func ? (*s_getc_func)(file) : EOF;
+     3ce:	6789                	lui	a5,0x2
+     3d0:	c947a783          	lw	a5,-876(a5) # 1c94 <s_getc_func>
+     3d4:	cb89                	beqz	a5,3e6 <iob_getc+0x24>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:78 (discriminator 1)
+     3d6:	6789                	lui	a5,0x2
+     3d8:	c947a783          	lw	a5,-876(a5) # 1c94 <s_getc_func>
+     3dc:	fec42503          	lw	a0,-20(s0)
+     3e0:	9782                	jalr	a5
+     3e2:	87aa                	mv	a5,a0
+     3e4:	a011                	j	3e8 <iob_getc+0x26>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:78 (discriminator 2)
+     3e6:	57fd                	li	a5,-1
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:79 (discriminator 5)
+}
+     3e8:	853e                	mv	a0,a5
+     3ea:	40f2                	lw	ra,28(sp)
+     3ec:	4462                	lw	s0,24(sp)
+     3ee:	6105                	addi	sp,sp,32
+     3f0:	8082                	ret
+
+000003f2 <iob_flush>:
+iob_flush():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:83
+
+
+static int iob_flush(FILE *file)
+{
+     3f2:	1101                	addi	sp,sp,-32
+     3f4:	ce06                	sw	ra,28(sp)
+     3f6:	cc22                	sw	s0,24(sp)
+     3f8:	1000                	addi	s0,sp,32
+     3fa:	fea42623          	sw	a0,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:84
+	return s_flush_func ? (*s_flush_func)(file) : 0;
+     3fe:	6789                	lui	a5,0x2
+     400:	c987a783          	lw	a5,-872(a5) # 1c98 <s_flush_func>
+     404:	cb89                	beqz	a5,416 <iob_flush+0x24>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:84 (discriminator 1)
+     406:	6789                	lui	a5,0x2
+     408:	c987a783          	lw	a5,-872(a5) # 1c98 <s_flush_func>
+     40c:	fec42503          	lw	a0,-20(s0)
+     410:	9782                	jalr	a5
+     412:	87aa                	mv	a5,a0
+     414:	a011                	j	418 <iob_flush+0x26>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:84 (discriminator 2)
+     416:	4781                	li	a5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/iob.c:85 (discriminator 5)
+}
+     418:	853e                	mv	a0,a5
+     41a:	40f2                	lw	ra,28(sp)
+     41c:	4462                	lw	s0,24(sp)
+     41e:	6105                	addi	sp,sp,32
+     420:	8082                	ret
+
+00000422 <pic_int_clear>:
+pic_int_clear():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/pic.c:94
+	pic_dev->pic_en &= (~(1 << src));
+	return 0;
+}
+
+uint8_t pic_int_clear(uint8_t src)
+{
+     422:	1101                	addi	sp,sp,-32
+     424:	ce22                	sw	s0,28(sp)
+     426:	1000                	addi	s0,sp,32
+     428:	87aa                	mv	a5,a0
+     42a:	fef407a3          	sb	a5,-17(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/pic.c:95
+	pic_dev->pic_status = 1 << (src);
+     42e:	fef44783          	lbu	a5,-17(s0)
+     432:	4705                	li	a4,1
+     434:	00f71733          	sll	a4,a4,a5
+     438:	6789                	lui	a5,0x2
+     43a:	c9c7a783          	lw	a5,-868(a5) # 1c9c <pic_dev>
+     43e:	c398                	sw	a4,0(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/pic.c:96
+	return 0;
+     440:	4781                	li	a5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/pic.c:97
+}
+     442:	853e                	mv	a0,a5
+     444:	4472                	lw	s0,28(sp)
+     446:	6105                	addi	sp,sp,32
+     448:	8082                	ret
+
+0000044a <pic_int_pending>:
+pic_int_pending():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/pic.c:100
+
+uint8_t pic_int_pending(uint8_t src)
+{
+     44a:	7179                	addi	sp,sp,-48
+     44c:	d622                	sw	s0,44(sp)
+     44e:	1800                	addi	s0,sp,48
+     450:	87aa                	mv	a5,a0
+     452:	fcf40fa3          	sb	a5,-33(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/pic.c:101
+	uint32_t ifr = pic_dev->pic_status;
+     456:	6789                	lui	a5,0x2
+     458:	c9c7a783          	lw	a5,-868(a5) # 1c9c <pic_dev>
+     45c:	439c                	lw	a5,0(a5)
+     45e:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/pic.c:103
+
+	if (ifr & (1 << src)) {
+     462:	fdf44783          	lbu	a5,-33(s0)
+     466:	4705                	li	a4,1
+     468:	00f717b3          	sll	a5,a4,a5
+     46c:	873e                	mv	a4,a5
+     46e:	fec42783          	lw	a5,-20(s0)
+     472:	8ff9                	and	a5,a5,a4
+     474:	c399                	beqz	a5,47a <pic_int_pending+0x30>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/pic.c:104
+		return 1;
+     476:	4785                	li	a5,1
+     478:	a011                	j	47c <pic_int_pending+0x32>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/pic.c:107
+	}
+
+	return 0;
+     47a:	4781                	li	a5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/pic.c:108
+}
+     47c:	853e                	mv	a0,a5
+     47e:	5432                	lw	s0,44(sp)
+     480:	6145                	addi	sp,sp,48
+     482:	8082                	ret
+
+00000484 <reg_32b_modify>:
+reg_32b_modify():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:73
+	return 0;
+}
+
+uint8_t reg_32b_modify(uint32_t reg_addr, uint32_t bits_mask,
+			     uint32_t value)
+{
+     484:	7179                	addi	sp,sp,-48
+     486:	d622                	sw	s0,44(sp)
+     488:	1800                	addi	s0,sp,48
+     48a:	fca42e23          	sw	a0,-36(s0)
+     48e:	fcb42c23          	sw	a1,-40(s0)
+     492:	fcc42a23          	sw	a2,-44(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:74
+	uint32_t volatile *reg_value = (void *) reg_addr;
+     496:	fdc42783          	lw	a5,-36(s0)
+     49a:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:77
+
+	//*reg_value = ((*reg_value) & ~bits_mask) | value;
+	*reg_value = ((*reg_value) & (~bits_mask)) | (value & bits_mask);
+     49e:	fec42783          	lw	a5,-20(s0)
+     4a2:	4398                	lw	a4,0(a5)
+     4a4:	fd842783          	lw	a5,-40(s0)
+     4a8:	fff7c793          	not	a5,a5
+     4ac:	8f7d                	and	a4,a4,a5
+     4ae:	fd442683          	lw	a3,-44(s0)
+     4b2:	fd842783          	lw	a5,-40(s0)
+     4b6:	8ff5                	and	a5,a5,a3
+     4b8:	8f5d                	or	a4,a4,a5
+     4ba:	fec42783          	lw	a5,-20(s0)
+     4be:	c398                	sw	a4,0(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:78
+	return 0;
+     4c0:	4781                	li	a5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:79
+}
+     4c2:	853e                	mv	a0,a5
+     4c4:	5432                	lw	s0,44(sp)
+     4c6:	6145                	addi	sp,sp,48
+     4c8:	8082                	ret
+
+000004ca <reg_8b_write>:
+reg_8b_write():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:98
+	*reg_16b_value = *reg_value;
+	return 0;
+}
+
+uint8_t reg_8b_write(uint32_t reg_addr, uint8_t value)
+{
+     4ca:	7179                	addi	sp,sp,-48
+     4cc:	d622                	sw	s0,44(sp)
+     4ce:	1800                	addi	s0,sp,48
+     4d0:	fca42e23          	sw	a0,-36(s0)
+     4d4:	87ae                	mv	a5,a1
+     4d6:	fcf40da3          	sb	a5,-37(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:99
+	uint8_t volatile *reg_value = (void *) reg_addr;
+     4da:	fdc42783          	lw	a5,-36(s0)
+     4de:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:101
+
+	*reg_value = value;
+     4e2:	fec42783          	lw	a5,-20(s0)
+     4e6:	fdb44703          	lbu	a4,-37(s0)
+     4ea:	00e78023          	sb	a4,0(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:102
+	return 0;
+     4ee:	4781                	li	a5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:103
+}
+     4f0:	853e                	mv	a0,a5
+     4f2:	5432                	lw	s0,44(sp)
+     4f4:	6145                	addi	sp,sp,48
+     4f6:	8082                	ret
+
+000004f8 <reg_8b_modify>:
+reg_8b_modify():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:107
+
+uint8_t reg_8b_modify(uint32_t reg_addr, uint8_t bits_mask,
+			    uint8_t value)
+{
+     4f8:	7179                	addi	sp,sp,-48
+     4fa:	d622                	sw	s0,44(sp)
+     4fc:	1800                	addi	s0,sp,48
+     4fe:	fca42e23          	sw	a0,-36(s0)
+     502:	87ae                	mv	a5,a1
+     504:	8732                	mv	a4,a2
+     506:	fcf40da3          	sb	a5,-37(s0)
+     50a:	87ba                	mv	a5,a4
+     50c:	fcf40d23          	sb	a5,-38(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:108
+	uint8_t volatile *reg_value = (void *) reg_addr;
+     510:	fdc42783          	lw	a5,-36(s0)
+     514:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:110
+
+	*reg_value = ((*reg_value) & (~bits_mask)) | (value & bits_mask);
+     518:	fec42783          	lw	a5,-20(s0)
+     51c:	0007c783          	lbu	a5,0(a5)
+     520:	0ff7f793          	zext.b	a5,a5
+     524:	01879713          	slli	a4,a5,0x18
+     528:	8761                	srai	a4,a4,0x18
+     52a:	fdb40783          	lb	a5,-37(s0)
+     52e:	fff7c793          	not	a5,a5
+     532:	07e2                	slli	a5,a5,0x18
+     534:	87e1                	srai	a5,a5,0x18
+     536:	8ff9                	and	a5,a5,a4
+     538:	01879713          	slli	a4,a5,0x18
+     53c:	8761                	srai	a4,a4,0x18
+     53e:	fda44683          	lbu	a3,-38(s0)
+     542:	fdb44783          	lbu	a5,-37(s0)
+     546:	8ff5                	and	a5,a5,a3
+     548:	0ff7f793          	zext.b	a5,a5
+     54c:	07e2                	slli	a5,a5,0x18
+     54e:	87e1                	srai	a5,a5,0x18
+     550:	8fd9                	or	a5,a5,a4
+     552:	07e2                	slli	a5,a5,0x18
+     554:	87e1                	srai	a5,a5,0x18
+     556:	0ff7f713          	zext.b	a4,a5
+     55a:	fec42783          	lw	a5,-20(s0)
+     55e:	00e78023          	sb	a4,0(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:111
+	return 0;
+     562:	4781                	li	a5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:112
+}
+     564:	853e                	mv	a0,a5
+     566:	5432                	lw	s0,44(sp)
+     568:	6145                	addi	sp,sp,48
+     56a:	8082                	ret
+
+0000056c <reg_8b_read>:
+reg_8b_read():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:116
+
+uint8_t reg_8b_read(uint32_t reg_addr,
+			  uint8_t *reg_8b_value)
+{
+     56c:	7179                	addi	sp,sp,-48
+     56e:	d622                	sw	s0,44(sp)
+     570:	1800                	addi	s0,sp,48
+     572:	fca42e23          	sw	a0,-36(s0)
+     576:	fcb42c23          	sw	a1,-40(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:117
+	uint8_t volatile *reg_value = (void *) reg_addr;
+     57a:	fdc42783          	lw	a5,-36(s0)
+     57e:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:118
+	*reg_8b_value = *reg_value;
+     582:	fec42783          	lw	a5,-20(s0)
+     586:	0007c783          	lbu	a5,0(a5)
+     58a:	0ff7f713          	zext.b	a4,a5
+     58e:	fd842783          	lw	a5,-40(s0)
+     592:	00e78023          	sb	a4,0(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:119
+	return 0;
+     596:	4781                	li	a5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/riscv_mc/reg_access.c:120
+}
+     598:	853e                	mv	a0,a5
+     59a:	5432                	lw	s0,44(sp)
+     59c:	6145                	addi	sp,sp,48
+     59e:	8082                	ret
+
+000005a0 <i3c_target_init>:
+i3c_target_init():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_target/i3c_target.c:60
+ *             base_addr :  This parameter specify the I3C target IP base address. *
+ * @return     Success or Failure
+ * @exmaple    i3c_target_init(handle)
+ */
+unsigned int  i3c_target_init(struct i3c_target_handle_t *handle)
+{
+     5a0:	7179                	addi	sp,sp,-48
+     5a2:	d622                	sw	s0,44(sp)
+     5a4:	1800                	addi	s0,sp,48
+     5a6:	fca42e23          	sw	a0,-36(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_target/i3c_target.c:62
+	unsigned int status;
+	if(handle->base_addr != ZERO)
+     5aa:	fdc42783          	lw	a5,-36(s0)
+     5ae:	439c                	lw	a5,0(a5)
+     5b0:	cfa1                	beqz	a5,608 <i3c_target_init+0x68>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_target/i3c_target.c:64
+	{
+		i3c_tgt_reg_type_t *target = (i3c_tgt_reg_type_t *) (handle->base_addr);
+     5b2:	fdc42783          	lw	a5,-36(s0)
+     5b6:	439c                	lw	a5,0(a5)
+     5b8:	fef42423          	sw	a5,-24(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_target/i3c_target.c:65
+		target->interrupt_1_en=INTERRUPT_ENABLE;             //  enable the interrupt 1
+     5bc:	fe842783          	lw	a5,-24(s0)
+     5c0:	0ff00713          	li	a4,255
+     5c4:	0ce7a223          	sw	a4,196(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_target/i3c_target.c:66
+		target->interrupt_2_en=INTERRUPT_ENABLE;             //  enable the interrupt 2
+     5c8:	fe842783          	lw	a5,-24(s0)
+     5cc:	0ff00713          	li	a4,255
+     5d0:	0ce7a823          	sw	a4,208(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_target/i3c_target.c:67
+		target->interrupt_3_en=INTERRUPT_ENABLE;             //  enable the interrupt 3
+     5d4:	fe842783          	lw	a5,-24(s0)
+     5d8:	0ff00713          	li	a4,255
+     5dc:	0ce7ae23          	sw	a4,220(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_target/i3c_target.c:68
+		target->interrupt_4_en=INTERRUPT_ENABLE;             //  enable the interrupt 4
+     5e0:	fe842783          	lw	a5,-24(s0)
+     5e4:	0ff00713          	li	a4,255
+     5e8:	0ee7a423          	sw	a4,232(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_target/i3c_target.c:69
+		target->interrupt_5_en=INTERRUPT_ENABLE;             //  enable the interrupt 5
+     5ec:	fe842783          	lw	a5,-24(s0)
+     5f0:	0ff00713          	li	a4,255
+     5f4:	0ee7aa23          	sw	a4,244(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_target/i3c_target.c:70
+		target->controller_role_handoff=CLEAR;               //  ack secondary controller request
+     5f8:	fe842783          	lw	a5,-24(s0)
+     5fc:	1007a623          	sw	zero,268(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_target/i3c_target.c:71
+		status= SUCCESS;
+     600:	4785                	li	a5,1
+     602:	fef42623          	sw	a5,-20(s0)
+     606:	a019                	j	60c <i3c_target_init+0x6c>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_target/i3c_target.c:75
+	}
+	else
+	{
+		status= FAILURE;
+     608:	fe042623          	sw	zero,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_target/i3c_target.c:77
+	}
+	return status;
+     60c:	fec42783          	lw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_target/i3c_target.c:78
+}
+     610:	853e                	mv	a0,a5
+     612:	5432                	lw	s0,44(sp)
+     614:	6145                	addi	sp,sp,48
+     616:	8082                	ret
+
+00000618 <i3c_master_init>:
+i3c_master_init():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:72
+ * @param : addr : controller addr
+ * @param : slave_nums : slave number
+ * @return : status for this function
+ */
+uint8_t i3c_master_init(struct i3c_master_instance *this_i3cm,uint32_t addr,uint8_t mode,uint8_t clk,uint8_t slave_nums)
+{
+     618:	7179                	addi	sp,sp,-48
+     61a:	d606                	sw	ra,44(sp)
+     61c:	d422                	sw	s0,40(sp)
+     61e:	1800                	addi	s0,sp,48
+     620:	fca42e23          	sw	a0,-36(s0)
+     624:	fcb42c23          	sw	a1,-40(s0)
+     628:	87b2                	mv	a5,a2
+     62a:	fcf40ba3          	sb	a5,-41(s0)
+     62e:	87b6                	mv	a5,a3
+     630:	fcf40b23          	sb	a5,-42(s0)
+     634:	87ba                	mv	a5,a4
+     636:	fcf40aa3          	sb	a5,-43(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:76
+	uint32_t clk_value;
+	unsigned char reg_value;
+
+	if (NULL == this_i3cm) {
+     63a:	fdc42783          	lw	a5,-36(s0)
+     63e:	e781                	bnez	a5,646 <i3c_master_init+0x2e>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:77
+			return -1;
+     640:	0ff00793          	li	a5,255
+     644:	a07d                	j	6f2 <i3c_master_init+0xda>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:80
+	}
+
+	this_i3cm->base_addr = addr;
+     646:	fdc42783          	lw	a5,-36(s0)
+     64a:	fd842703          	lw	a4,-40(s0)
+     64e:	c398                	sw	a4,0(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:81
+	this_i3cm->devs_nums = slave_nums;
+     650:	fd544783          	lbu	a5,-43(s0)
+     654:	01079713          	slli	a4,a5,0x10
+     658:	8341                	srli	a4,a4,0x10
+     65a:	fdc42783          	lw	a5,-36(s0)
+     65e:	00e79423          	sh	a4,8(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:84
+
+	/* Enable the I2C mode */
+	reg_8b_modify(this_i3cm->base_addr | I3C_MASTER_CFG0, I2C_MODE_ALLOWED, I2C_MODE_ALLOWED);
+     662:	fdc42783          	lw	a5,-36(s0)
+     666:	439c                	lw	a5,0(a5)
+     668:	0087e793          	ori	a5,a5,8
+     66c:	4621                	li	a2,8
+     66e:	45a1                	li	a1,8
+     670:	853e                	mv	a0,a5
+     672:	3559                	jal	4f8 <reg_8b_modify>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:87
+
+#ifdef ENABLE_DAA_UID
+	reg_8b_modify(this_i3cm->base_addr |
+     674:	fdc42783          	lw	a5,-36(s0)
+     678:	439c                	lw	a5,0(a5)
+     67a:	0087e793          	ori	a5,a5,8
+     67e:	4609                	li	a2,2
+     680:	4589                	li	a1,2
+     682:	853e                	mv	a0,a5
+     684:	3d95                	jal	4f8 <reg_8b_modify>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:93
+							I3C_MASTER_CFG0,
+							EN_DAA_UID_IN_RXFIFO,
+							EN_DAA_UID_IN_RXFIFO);
+#endif
+
+	reg_8b_write(this_i3cm->base_addr |
+     686:	fdc42783          	lw	a5,-36(s0)
+     68a:	439c                	lw	a5,0(a5)
+     68c:	0887e793          	ori	a5,a5,136
+     690:	45c1                	li	a1,16
+     692:	853e                	mv	a0,a5
+     694:	3d1d                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:97
+							I3C_MASTER_INTR_ENABLE,
+									0x10);//enable all interrupt
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_DA_ACK_REG, 0xff);	//[cw] Clear num_da_acked on initialization
+     696:	fdc42783          	lw	a5,-36(s0)
+     69a:	439c                	lw	a5,0(a5)
+     69c:	0707e793          	ori	a5,a5,112
+     6a0:	0ff00593          	li	a1,255
+     6a4:	853e                	mv	a0,a5
+     6a6:	3515                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:108
+	 * then it is 9 to be written into the register.
+	 */
+	//reg_8b_write(this_i3cm->base_addr | I3C_MASTER_CLKPERIOD, 9); //10 is working (1.4 MHz)
+	//reg_8b_write(this_i3cm->base_addr | I3C_MASTER_OPEN_DRAIN_TIMER, 0); // 1 is working value
+
+	reg_8b_read(this_i3cm->base_addr | I3C_MASTER_CLKPERIOD, &reg_value);
+     6a8:	fdc42783          	lw	a5,-36(s0)
+     6ac:	439c                	lw	a5,0(a5)
+     6ae:	0047e793          	ori	a5,a5,4
+     6b2:	fef40713          	addi	a4,s0,-17
+     6b6:	85ba                	mv	a1,a4
+     6b8:	853e                	mv	a0,a5
+     6ba:	3d4d                	jal	56c <reg_8b_read>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:109
+	printf("Sys clk register: %d\n", reg_value);
+     6bc:	fef44783          	lbu	a5,-17(s0)
+     6c0:	85be                	mv	a1,a5
+     6c2:	6789                	lui	a5,0x2
+     6c4:	94c78513          	addi	a0,a5,-1716 # 194c <__iob+0xc>
+     6c8:	46b000ef          	jal	ra,1332 <printf>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:111
+
+	reg_8b_read(this_i3cm->base_addr | I3C_MASTER_OPEN_DRAIN_TIMER, &reg_value);
+     6cc:	fdc42783          	lw	a5,-36(s0)
+     6d0:	439c                	lw	a5,0(a5)
+     6d2:	00c7e793          	ori	a5,a5,12
+     6d6:	fef40713          	addi	a4,s0,-17
+     6da:	85ba                	mv	a1,a4
+     6dc:	853e                	mv	a0,a5
+     6de:	3579                	jal	56c <reg_8b_read>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:112
+	printf("Open drain timer register: %d\n", reg_value);
+     6e0:	fef44783          	lbu	a5,-17(s0)
+     6e4:	85be                	mv	a1,a5
+     6e6:	6789                	lui	a5,0x2
+     6e8:	96478513          	addi	a0,a5,-1692 # 1964 <__iob+0x24>
+     6ec:	447000ef          	jal	ra,1332 <printf>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:114
+
+	return 0;
+     6f0:	4781                	li	a5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:115 (discriminator 1)
+}
+     6f2:	853e                	mv	a0,a5
+     6f4:	50b2                	lw	ra,44(sp)
+     6f6:	5422                	lw	s0,40(sp)
+     6f8:	6145                	addi	sp,sp,48
+     6fa:	8082                	ret
+
+000006fc <i3c_master_entdaa_config>:
+i3c_master_entdaa_config():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:124
+ * @param : slave_nums : slave number
+ * @param : slave_addr : slave addr
+ * @return : status for this function
+ */
+static uint8_t i3c_master_entdaa_config(struct i3c_master_instance *this_i3cm, uint8_t slave_nums, uint8_t slave_addr)
+{
+     6fc:	7179                	addi	sp,sp,-48
+     6fe:	d606                	sw	ra,44(sp)
+     700:	d422                	sw	s0,40(sp)
+     702:	1800                	addi	s0,sp,48
+     704:	fca42e23          	sw	a0,-36(s0)
+     708:	87ae                	mv	a5,a1
+     70a:	8732                	mv	a4,a2
+     70c:	fcf40da3          	sb	a5,-37(s0)
+     710:	87ba                	mv	a5,a4
+     712:	fcf40d23          	sb	a5,-38(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:128
+	uint32_t wr_length, rd_length;
+	uint8_t control;
+
+	if (NULL == this_i3cm) {
+     716:	fdc42783          	lw	a5,-36(s0)
+     71a:	e781                	bnez	a5,722 <i3c_master_entdaa_config+0x26>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:129
+			return -1;
+     71c:	0ff00793          	li	a5,255
+     720:	a861                	j	7b8 <i3c_master_entdaa_config+0xbc>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:132
+	}
+
+	control = CCC_IN_FRAME|STOP_IN_FRAME|START_OF_CCC;
+     722:	47b5                	li	a5,13
+     724:	fef405a3          	sb	a5,-21(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:134
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_WRITE_FIFO,control);
+     728:	fdc42783          	lw	a5,-36(s0)
+     72c:	439c                	lw	a5,0(a5)
+     72e:	0c07e793          	ori	a5,a5,192
+     732:	feb44703          	lbu	a4,-21(s0)
+     736:	85ba                	mv	a1,a4
+     738:	853e                	mv	a0,a5
+     73a:	3b41                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:136
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_WRITE_FIFO,I3C_BROADCAST_ADDR); //broadcast
+     73c:	fdc42783          	lw	a5,-36(s0)
+     740:	439c                	lw	a5,0(a5)
+     742:	0c07e793          	ori	a5,a5,192
+     746:	07e00593          	li	a1,126
+     74a:	853e                	mv	a0,a5
+     74c:	3bbd                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:138
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_WRITE_FIFO,0x01 + slave_nums); //write length
+     74e:	fdc42783          	lw	a5,-36(s0)
+     752:	439c                	lw	a5,0(a5)
+     754:	0c07e713          	ori	a4,a5,192
+     758:	fdb44783          	lbu	a5,-37(s0)
+     75c:	0785                	addi	a5,a5,1
+     75e:	0ff7f793          	zext.b	a5,a5
+     762:	85be                	mv	a1,a5
+     764:	853a                	mv	a0,a4
+     766:	3395                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:140
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_WRITE_FIFO, I3C_CCC_ENTDAA); //ENTDAA CCC
+     768:	fdc42783          	lw	a5,-36(s0)
+     76c:	439c                	lw	a5,0(a5)
+     76e:	0c07e793          	ori	a5,a5,192
+     772:	459d                	li	a1,7
+     774:	853e                	mv	a0,a5
+     776:	3b91                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:142
+
+	for(int i = 0; i<slave_nums; i++ ){
+     778:	fe042623          	sw	zero,-20(s0)
+     77c:	a03d                	j	7aa <i3c_master_entdaa_config+0xae>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:144 (discriminator 3)
+		/* Shift the address to bits 7:1. Bit 0 is parity which is auto calculated by hardware */
+		reg_8b_write(this_i3cm->base_addr | I3C_MASTER_WRITE_FIFO, slave_addr++ << 1);
+     77e:	fdc42783          	lw	a5,-36(s0)
+     782:	439c                	lw	a5,0(a5)
+     784:	0c07e693          	ori	a3,a5,192
+     788:	fda44783          	lbu	a5,-38(s0)
+     78c:	00178713          	addi	a4,a5,1
+     790:	fce40d23          	sb	a4,-38(s0)
+     794:	0786                	slli	a5,a5,0x1
+     796:	0ff7f793          	zext.b	a5,a5
+     79a:	85be                	mv	a1,a5
+     79c:	8536                	mv	a0,a3
+     79e:	3335                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:142 (discriminator 3)
+	for(int i = 0; i<slave_nums; i++ ){
+     7a0:	fec42783          	lw	a5,-20(s0)
+     7a4:	0785                	addi	a5,a5,1
+     7a6:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:142 (discriminator 1)
+     7aa:	fdb44783          	lbu	a5,-37(s0)
+     7ae:	fec42703          	lw	a4,-20(s0)
+     7b2:	fcf746e3          	blt	a4,a5,77e <i3c_master_entdaa_config+0x82>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:147
+	}
+
+	return 0;
+     7b6:	4781                	li	a5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:148
+}
+     7b8:	853e                	mv	a0,a5
+     7ba:	50b2                	lw	ra,44(sp)
+     7bc:	5422                	lw	s0,40(sp)
+     7be:	6145                	addi	sp,sp,48
+     7c0:	8082                	ret
+
+000007c2 <i3c_master_daa>:
+i3c_master_daa():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:160
+ * @param : device_count : device count
+ * @param : slave_addr : slave addr
+ * @return : status for this function
+ */
+uint8_t i3c_master_daa(struct i3c_master_instance *this_i3cm,struct i3c_dev_info *m,uint8_t *dyn_address,uint32_t device_count, uint8_t slave_addr)
+{
+     7c2:	711d                	addi	sp,sp,-96
+     7c4:	ce86                	sw	ra,92(sp)
+     7c6:	cca2                	sw	s0,88(sp)
+     7c8:	caca                	sw	s2,84(sp)
+     7ca:	c8ce                	sw	s3,80(sp)
+     7cc:	1080                	addi	s0,sp,96
+     7ce:	faa42e23          	sw	a0,-68(s0)
+     7d2:	fab42c23          	sw	a1,-72(s0)
+     7d6:	fac42a23          	sw	a2,-76(s0)
+     7da:	fad42823          	sw	a3,-80(s0)
+     7de:	87ba                	mv	a5,a4
+     7e0:	faf407a3          	sb	a5,-81(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:161
+	int retry = 0;
+     7e4:	fe042623          	sw	zero,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:162
+	uint64_t device_pid = 0, device_pid_shift = 0;
+     7e8:	4781                	li	a5,0
+     7ea:	4801                	li	a6,0
+     7ec:	fef42023          	sw	a5,-32(s0)
+     7f0:	ff042223          	sw	a6,-28(s0)
+     7f4:	fcf42823          	sw	a5,-48(s0)
+     7f8:	fd042a23          	sw	a6,-44(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:166
+	uint8_t device_bcr,device_dcr;
+	unsigned char read_value;
+	int count;
+	int cnt=0;
+     7fc:	fc042c23          	sw	zero,-40(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:167
+	uint32_t int_status = 0, num_da_acked = 0;
+     800:	fc042423          	sw	zero,-56(s0)
+     804:	fc042223          	sw	zero,-60(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:169
+
+	if (NULL == this_i3cm) {
+     808:	fbc42783          	lw	a5,-68(s0)
+     80c:	e781                	bnez	a5,814 <i3c_master_daa+0x52>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:170
+			return -1;
+     80e:	0ff00793          	li	a5,255
+     812:	aca9                	j	a6c <_STACK_SIZE+0x6c>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:174
+	}
+
+	/* Slave address takes only 7-bit */
+	if (slave_addr > 127) {
+     814:	faf40783          	lb	a5,-81(s0)
+     818:	0007d563          	bgez	a5,822 <i3c_master_daa+0x60>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:175
+		return -1;
+     81c:	0ff00793          	li	a5,255
+     820:	a4b1                	j	a6c <_STACK_SIZE+0x6c>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:178
+	}
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_DA_ACK_REG, MASK_CLEAR);	//[cw] Make sure num_da_acked cleared to 0
+     822:	fbc42783          	lw	a5,-68(s0)
+     826:	439c                	lw	a5,0(a5)
+     828:	0707e793          	ori	a5,a5,112
+     82c:	0ff00593          	li	a1,255
+     830:	853e                	mv	a0,a5
+     832:	3961                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:180
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_INTR_STA, I3C_INT0_DEFAULT_STATUS);
+     834:	fbc42783          	lw	a5,-68(s0)
+     838:	439c                	lw	a5,0(a5)
+     83a:	0807e793          	ori	a5,a5,128
+     83e:	0c700593          	li	a1,199
+     842:	853e                	mv	a0,a5
+     844:	3159                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:182
+
+	i3c_master_entdaa_config(this_i3cm, device_count, slave_addr);
+     846:	fb042783          	lw	a5,-80(s0)
+     84a:	0ff7f793          	zext.b	a5,a5
+     84e:	faf44703          	lbu	a4,-81(s0)
+     852:	863a                	mv	a2,a4
+     854:	85be                	mv	a1,a5
+     856:	fbc42503          	lw	a0,-68(s0)
+     85a:	354d                	jal	6fc <i3c_master_entdaa_config>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:184
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_START_REG, START);
+     85c:	fbc42783          	lw	a5,-68(s0)
+     860:	439c                	lw	a5,0(a5)
+     862:	0447e793          	ori	a5,a5,68
+     866:	4585                	li	a1,1
+     868:	853e                	mv	a0,a5
+     86a:	3185                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:189
+
+	/* delayMS is defined in utils.c which auto-generated when creating RISC-V MC
+	 * software template
+	 * */
+	delayMS(1500);
+     86c:	5dc00513          	li	a0,1500
+     870:	2a7000ef          	jal	ra,1316 <delayMS>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:191
+
+	while(retry < MAX_RETRY)
+     874:	aad9                	j	a4a <_STACK_SIZE+0x4a>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:193
+	{
+		retry++;
+     876:	fec42783          	lw	a5,-20(s0)
+     87a:	0785                	addi	a5,a5,1
+     87c:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:194
+		reg_8b_read(this_i3cm->base_addr | I3C_MASTER_INTR_STA, (uint8_t *)&int_status);
+     880:	fbc42783          	lw	a5,-68(s0)
+     884:	439c                	lw	a5,0(a5)
+     886:	0807e793          	ori	a5,a5,128
+     88a:	fc840713          	addi	a4,s0,-56
+     88e:	85ba                	mv	a1,a4
+     890:	853e                	mv	a0,a5
+     892:	39e9                	jal	56c <reg_8b_read>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:197
+		DEBUG_PRINTF("i3c_master_daa() - int_status=0x%x\r\n",int_status);
+
+		if(int_status & I3C_INT0_COMMAND_DONE)
+     894:	fc842783          	lw	a5,-56(s0)
+     898:	0407f793          	andi	a5,a5,64
+     89c:	1a078763          	beqz	a5,a4a <_STACK_SIZE+0x4a>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:199
+		{
+			reg_8b_write(this_i3cm->base_addr | I3C_MASTER_INTR_STA,I3C_INT0_COMMAND_DONE);
+     8a0:	fbc42783          	lw	a5,-68(s0)
+     8a4:	439c                	lw	a5,0(a5)
+     8a6:	0807e793          	ori	a5,a5,128
+     8aa:	04000593          	li	a1,64
+     8ae:	853e                	mv	a0,a5
+     8b0:	3929                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:202
+			DEBUG_PRINTF("i3c_master_daa() - I3C_INT0_COMMAND_DONE\r\n");
+
+			if(int_status & I3C_INT0_SLAVE_NACK) // wait until all slaves ACK on DAA
+     8b2:	fc842783          	lw	a5,-56(s0)
+     8b6:	0807f793          	andi	a5,a5,128
+     8ba:	18078863          	beqz	a5,a4a <_STACK_SIZE+0x4a>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:204
+			{
+				reg_8b_write(this_i3cm->base_addr | I3C_MASTER_INTR_STA, I3C_INT0_SLAVE_NACK);
+     8be:	fbc42783          	lw	a5,-68(s0)
+     8c2:	439c                	lw	a5,0(a5)
+     8c4:	0807e793          	ori	a5,a5,128
+     8c8:	08000593          	li	a1,128
+     8cc:	853e                	mv	a0,a5
+     8ce:	3ef5                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:207
+				DEBUG_PRINTF("i3c_master_daa() - I3C_INT0_SLAVE_NACK\r\n");
+
+				reg_8b_read(this_i3cm->base_addr | I3C_MASTER_DA_ACK_REG, (uint8_t *)&num_da_acked);
+     8d0:	fbc42783          	lw	a5,-68(s0)
+     8d4:	439c                	lw	a5,0(a5)
+     8d6:	0707e793          	ori	a5,a5,112
+     8da:	fc440713          	addi	a4,s0,-60
+     8de:	85ba                	mv	a1,a4
+     8e0:	853e                	mv	a0,a5
+     8e2:	3169                	jal	56c <reg_8b_read>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:210
+				DEBUG_PRINTF("i3c_master_daa() - num_da_acked=%d\r\n", num_da_acked);
+
+				if (num_da_acked)
+     8e4:	fc442783          	lw	a5,-60(s0)
+     8e8:	14078f63          	beqz	a5,a46 <_STACK_SIZE+0x46>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:212
+				{
+					if(int_status & I3C_INT0_R_FIFO_n_EMPTY)
+     8ec:	fc842783          	lw	a5,-56(s0)
+     8f0:	8b89                	andi	a5,a5,2
+     8f2:	16078363          	beqz	a5,a58 <_STACK_SIZE+0x58>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:214
+					{
+						reg_8b_write(this_i3cm->base_addr | I3C_MASTER_INTR_STA, I3C_INT0_R_FIFO_n_EMPTY);
+     8f6:	fbc42783          	lw	a5,-68(s0)
+     8fa:	439c                	lw	a5,0(a5)
+     8fc:	0807e793          	ori	a5,a5,128
+     900:	4589                	li	a1,2
+     902:	853e                	mv	a0,a5
+     904:	36d9                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:216
+
+						for(cnt=0;cnt<device_count;cnt++)//get info from readfifo
+     906:	fc042c23          	sw	zero,-40(s0)
+     90a:	a23d                	j	a38 <_STACK_SIZE+0x38>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:218
+						{
+							for(count=5;count>=0;count--)
+     90c:	4795                	li	a5,5
+     90e:	fcf42e23          	sw	a5,-36(s0)
+     912:	a049                	j	994 <i3c_master_daa+0x1d2>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:220 (discriminator 3)
+							{
+								reg_8b_read(this_i3cm->base_addr | I3C_MASTER_READ_FIFO, (uint8_t *)&read_value);
+     914:	fbc42783          	lw	a5,-68(s0)
+     918:	439c                	lw	a5,0(a5)
+     91a:	1007e793          	ori	a5,a5,256
+     91e:	fcd40713          	addi	a4,s0,-51
+     922:	85ba                	mv	a1,a4
+     924:	853e                	mv	a0,a5
+     926:	3199                	jal	56c <reg_8b_read>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:221 (discriminator 3)
+								device_pid_shift = (uint64_t) read_value;
+     928:	fcd44783          	lbu	a5,-51(s0)
+     92c:	fcf42823          	sw	a5,-48(s0)
+     930:	fc042a23          	sw	zero,-44(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:222 (discriminator 3)
+								device_pid = device_pid | (device_pid_shift << (8*count));
+     934:	fdc42783          	lw	a5,-36(s0)
+     938:	078e                	slli	a5,a5,0x3
+     93a:	fe078713          	addi	a4,a5,-32
+     93e:	00074863          	bltz	a4,94e <i3c_master_daa+0x18c>
+     942:	fd042783          	lw	a5,-48(s0)
+     946:	00e799b3          	sll	s3,a5,a4
+     94a:	4901                	li	s2,0
+     94c:	a01d                	j	972 <i3c_master_daa+0x1b0>
+     94e:	fd042703          	lw	a4,-48(s0)
+     952:	00175693          	srli	a3,a4,0x1
+     956:	477d                	li	a4,31
+     958:	8f1d                	sub	a4,a4,a5
+     95a:	00e6d733          	srl	a4,a3,a4
+     95e:	fd442683          	lw	a3,-44(s0)
+     962:	00f699b3          	sll	s3,a3,a5
+     966:	013769b3          	or	s3,a4,s3
+     96a:	fd042703          	lw	a4,-48(s0)
+     96e:	00f71933          	sll	s2,a4,a5
+     972:	fe042783          	lw	a5,-32(s0)
+     976:	0127e7b3          	or	a5,a5,s2
+     97a:	fef42023          	sw	a5,-32(s0)
+     97e:	fe442783          	lw	a5,-28(s0)
+     982:	0137e7b3          	or	a5,a5,s3
+     986:	fef42223          	sw	a5,-28(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:218 (discriminator 3)
+							for(count=5;count>=0;count--)
+     98a:	fdc42783          	lw	a5,-36(s0)
+     98e:	17fd                	addi	a5,a5,-1
+     990:	fcf42e23          	sw	a5,-36(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:218 (discriminator 1)
+     994:	fdc42783          	lw	a5,-36(s0)
+     998:	f607dee3          	bgez	a5,914 <i3c_master_daa+0x152>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:225 (discriminator 2)
+							}
+
+							reg_8b_read(this_i3cm->base_addr | I3C_MASTER_READ_FIFO,(uint8_t *)&read_value);
+     99c:	fbc42783          	lw	a5,-68(s0)
+     9a0:	439c                	lw	a5,0(a5)
+     9a2:	1007e793          	ori	a5,a5,256
+     9a6:	fcd40713          	addi	a4,s0,-51
+     9aa:	85ba                	mv	a1,a4
+     9ac:	853e                	mv	a0,a5
+     9ae:	3e7d                	jal	56c <reg_8b_read>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:226 (discriminator 2)
+							device_bcr=read_value;
+     9b0:	fcd44783          	lbu	a5,-51(s0)
+     9b4:	fcf407a3          	sb	a5,-49(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:228 (discriminator 2)
+
+							reg_8b_read(this_i3cm->base_addr | I3C_MASTER_READ_FIFO,(uint8_t *)&read_value);
+     9b8:	fbc42783          	lw	a5,-68(s0)
+     9bc:	439c                	lw	a5,0(a5)
+     9be:	1007e793          	ori	a5,a5,256
+     9c2:	fcd40713          	addi	a4,s0,-51
+     9c6:	85ba                	mv	a1,a4
+     9c8:	853e                	mv	a0,a5
+     9ca:	364d                	jal	56c <reg_8b_read>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:229 (discriminator 2)
+							device_dcr=read_value;
+     9cc:	fcd44783          	lbu	a5,-51(s0)
+     9d0:	fcf40723          	sb	a5,-50(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:231 (discriminator 2)
+
+							m[cnt].pid=device_pid;
+     9d4:	fd842783          	lw	a5,-40(s0)
+     9d8:	0792                	slli	a5,a5,0x4
+     9da:	fb842703          	lw	a4,-72(s0)
+     9de:	00f706b3          	add	a3,a4,a5
+     9e2:	fe042703          	lw	a4,-32(s0)
+     9e6:	fe442783          	lw	a5,-28(s0)
+     9ea:	c698                	sw	a4,8(a3)
+     9ec:	c6dc                	sw	a5,12(a3)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:232 (discriminator 2)
+							m[cnt].bcr=device_bcr;
+     9ee:	fd842783          	lw	a5,-40(s0)
+     9f2:	0792                	slli	a5,a5,0x4
+     9f4:	fb842703          	lw	a4,-72(s0)
+     9f8:	97ba                	add	a5,a5,a4
+     9fa:	fcf44703          	lbu	a4,-49(s0)
+     9fe:	00e78123          	sb	a4,2(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:233 (discriminator 2)
+							m[cnt].dcr=device_dcr;
+     a02:	fd842783          	lw	a5,-40(s0)
+     a06:	0792                	slli	a5,a5,0x4
+     a08:	fb842703          	lw	a4,-72(s0)
+     a0c:	97ba                	add	a5,a5,a4
+     a0e:	fce44703          	lbu	a4,-50(s0)
+     a12:	00e781a3          	sb	a4,3(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:234 (discriminator 2)
+							m[cnt].init_dyn_addr=*dyn_address;
+     a16:	fd842783          	lw	a5,-40(s0)
+     a1a:	0792                	slli	a5,a5,0x4
+     a1c:	fb842703          	lw	a4,-72(s0)
+     a20:	97ba                	add	a5,a5,a4
+     a22:	fb442703          	lw	a4,-76(s0)
+     a26:	00074703          	lbu	a4,0(a4)
+     a2a:	00e78023          	sb	a4,0(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:216 (discriminator 2)
+						for(cnt=0;cnt<device_count;cnt++)//get info from readfifo
+     a2e:	fd842783          	lw	a5,-40(s0)
+     a32:	0785                	addi	a5,a5,1
+     a34:	fcf42c23          	sw	a5,-40(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:216 (discriminator 1)
+     a38:	fd842783          	lw	a5,-40(s0)
+     a3c:	fb042703          	lw	a4,-80(s0)
+     a40:	ece7e6e3          	bltu	a5,a4,90c <i3c_master_daa+0x14a>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:236
+						}
+						break;
+     a44:	a819                	j	a5a <_STACK_SIZE+0x5a>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:240
+					}
+					break;
+				} else {
+					return 1;
+     a46:	4785                	li	a5,1
+     a48:	a015                	j	a6c <_STACK_SIZE+0x6c>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:191
+	while(retry < MAX_RETRY)
+     a4a:	fec42703          	lw	a4,-20(s0)
+     a4e:	03100793          	li	a5,49
+     a52:	e2e7d2e3          	bge	a5,a4,876 <i3c_master_daa+0xb4>
+     a56:	a011                	j	a5a <_STACK_SIZE+0x5a>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:238
+					break;
+     a58:	0001                	nop
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:245
+				}
+			}
+		}
+	}
+	if(retry < MAX_RETRY )
+     a5a:	fec42703          	lw	a4,-20(s0)
+     a5e:	03100793          	li	a5,49
+     a62:	00e7c463          	blt	a5,a4,a6a <_STACK_SIZE+0x6a>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:246
+		return 0;
+     a66:	4781                	li	a5,0
+     a68:	a011                	j	a6c <_STACK_SIZE+0x6c>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:248
+	else
+		return 1;
+     a6a:	4785                	li	a5,1
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:249 (discriminator 1)
+}
+     a6c:	853e                	mv	a0,a5
+     a6e:	40f6                	lw	ra,92(sp)
+     a70:	4466                	lw	s0,88(sp)
+     a72:	4956                	lw	s2,84(sp)
+     a74:	49c6                	lw	s3,80(sp)
+     a76:	6125                	addi	sp,sp,96
+     a78:	8082                	ret
+
+00000a7a <i3c_master_private_i3c_read>:
+i3c_master_private_i3c_read():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:260
+ * @param : rd_length : read length
+ * @param : slave_dyn_addr : slave dynamic addr
+ * @return : status for this function
+ */
+uint8_t i3c_master_private_i3c_read(struct i3c_master_instance *this_i3cm,uint8_t *rd_buf,uint8_t rd_length,uint8_t slave_dyn_addr)
+{
+     a7a:	7179                	addi	sp,sp,-48
+     a7c:	d606                	sw	ra,44(sp)
+     a7e:	d422                	sw	s0,40(sp)
+     a80:	1800                	addi	s0,sp,48
+     a82:	fca42e23          	sw	a0,-36(s0)
+     a86:	fcb42c23          	sw	a1,-40(s0)
+     a8a:	87b2                	mv	a5,a2
+     a8c:	8736                	mv	a4,a3
+     a8e:	fcf40ba3          	sb	a5,-41(s0)
+     a92:	87ba                	mv	a5,a4
+     a94:	fcf40b23          	sb	a5,-42(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:261
+	uint8_t i=0;
+     a98:	fe0407a3          	sb	zero,-17(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:262
+	uint32_t int_status=0;
+     a9c:	fe042423          	sw	zero,-24(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:264
+
+	if (NULL == this_i3cm) {
+     aa0:	fdc42783          	lw	a5,-36(s0)
+     aa4:	e781                	bnez	a5,aac <i3c_master_private_i3c_read+0x32>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:265
+			return -1;
+     aa6:	0ff00793          	li	a5,255
+     aaa:	a21d                	j	bd0 <i3c_master_private_i3c_read+0x156>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:268
+	}
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_INTR_STA,I3C_INT0_DEFAULT_STATUS); //clear all pending bits
+     aac:	fdc42783          	lw	a5,-36(s0)
+     ab0:	439c                	lw	a5,0(a5)
+     ab2:	0807e793          	ori	a5,a5,128
+     ab6:	0c700593          	li	a1,199
+     aba:	853e                	mv	a0,a5
+     abc:	3439                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:271
+
+//[cw]	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_CFG0, 0); //ENTER I3C MODE
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_CFG0, I3C_PRIV_RW_NO_7E ); //[cw] ENTER I3C MODE with no broadcast
+     abe:	fdc42783          	lw	a5,-36(s0)
+     ac2:	439c                	lw	a5,0(a5)
+     ac4:	0087e793          	ori	a5,a5,8
+     ac8:	4585                	li	a1,1
+     aca:	853e                	mv	a0,a5
+     acc:	3afd                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:273
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_SOFT_RESET, RX_FIFO_RST ); //[cw] Reset RX FIFO
+     ace:	fdc42783          	lw	a5,-36(s0)
+     ad2:	439c                	lw	a5,0(a5)
+     ad4:	0207e793          	ori	a5,a5,32
+     ad8:	4589                	li	a1,2
+     ada:	853e                	mv	a0,a5
+     adc:	32fd                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:275
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_WRITE_FIFO,
+     ade:	fdc42783          	lw	a5,-36(s0)
+     ae2:	439c                	lw	a5,0(a5)
+     ae4:	0c07e793          	ori	a5,a5,192
+     ae8:	4591                	li	a1,4
+     aea:	853e                	mv	a0,a5
+     aec:	3af9                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:278
+										STOP_IN_FRAME);
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_WRITE_FIFO,
+     aee:	fdc42783          	lw	a5,-36(s0)
+     af2:	439c                	lw	a5,0(a5)
+     af4:	0c07e713          	ori	a4,a5,192
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:279
+										(slave_dyn_addr << 1) | 0x1);
+     af8:	fd644783          	lbu	a5,-42(s0)
+     afc:	0786                	slli	a5,a5,0x1
+     afe:	07e2                	slli	a5,a5,0x18
+     b00:	87e1                	srai	a5,a5,0x18
+     b02:	0017e793          	ori	a5,a5,1
+     b06:	07e2                	slli	a5,a5,0x18
+     b08:	87e1                	srai	a5,a5,0x18
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:278
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_WRITE_FIFO,
+     b0a:	0ff7f793          	zext.b	a5,a5
+     b0e:	85be                	mv	a1,a5
+     b10:	853a                	mv	a0,a4
+     b12:	3a65                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:281
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_WRITE_FIFO,
+     b14:	fdc42783          	lw	a5,-36(s0)
+     b18:	439c                	lw	a5,0(a5)
+     b1a:	0c07e793          	ori	a5,a5,192
+     b1e:	fd744703          	lbu	a4,-41(s0)
+     b22:	85ba                	mv	a1,a4
+     b24:	853e                	mv	a0,a5
+     b26:	3255                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:284
+										rd_length);
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_START_REG, START);
+     b28:	fdc42783          	lw	a5,-36(s0)
+     b2c:	439c                	lw	a5,0(a5)
+     b2e:	0447e793          	ori	a5,a5,68
+     b32:	4585                	li	a1,1
+     b34:	853e                	mv	a0,a5
+     b36:	3a51                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:286
+
+	delayMS(1);
+     b38:	4505                	li	a0,1
+     b3a:	7dc000ef          	jal	ra,1316 <delayMS>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:290
+
+	while(1)
+	{
+		reg_8b_read(this_i3cm->base_addr | I3C_MASTER_INTR_STA,(uint8_t *)&int_status);
+     b3e:	fdc42783          	lw	a5,-36(s0)
+     b42:	439c                	lw	a5,0(a5)
+     b44:	0807e793          	ori	a5,a5,128
+     b48:	fe840713          	addi	a4,s0,-24
+     b4c:	85ba                	mv	a1,a4
+     b4e:	853e                	mv	a0,a5
+     b50:	3c31                	jal	56c <reg_8b_read>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:292
+
+		if(int_status & I3C_INT0_COMMAND_DONE)
+     b52:	fe842783          	lw	a5,-24(s0)
+     b56:	0407f793          	andi	a5,a5,64
+     b5a:	d3f5                	beqz	a5,b3e <i3c_master_private_i3c_read+0xc4>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:294
+		{
+			if(int_status & I3C_INT0_SLAVE_NACK)
+     b5c:	fe842783          	lw	a5,-24(s0)
+     b60:	0807f793          	andi	a5,a5,128
+     b64:	cf81                	beqz	a5,b7c <i3c_master_private_i3c_read+0x102>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:296
+			{
+				reg_8b_write(this_i3cm->base_addr | I3C_MASTER_INTR_STA,I3C_INT0_DEFAULT_STATUS);
+     b66:	fdc42783          	lw	a5,-36(s0)
+     b6a:	439c                	lw	a5,0(a5)
+     b6c:	0807e793          	ori	a5,a5,128
+     b70:	0c700593          	li	a1,199
+     b74:	853e                	mv	a0,a5
+     b76:	3a91                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:297
+				return 1;
+     b78:	4785                	li	a5,1
+     b7a:	a899                	j	bd0 <i3c_master_private_i3c_read+0x156>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:299
+			}
+			else if (int_status & I3C_INT0_RD_CMD_DONE)
+     b7c:	fe842783          	lw	a5,-24(s0)
+     b80:	8b85                	andi	a5,a5,1
+     b82:	dfd5                	beqz	a5,b3e <i3c_master_private_i3c_read+0xc4>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:301
+			{
+				for(i=0; i<rd_length; i++)
+     b84:	fe0407a3          	sb	zero,-17(s0)
+     b88:	a025                	j	bb0 <i3c_master_private_i3c_read+0x136>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:303 (discriminator 3)
+				{
+					reg_8b_read(this_i3cm->base_addr | I3C_MASTER_READ_FIFO, (unsigned char*) rd_buf);
+     b8a:	fdc42783          	lw	a5,-36(s0)
+     b8e:	439c                	lw	a5,0(a5)
+     b90:	1007e793          	ori	a5,a5,256
+     b94:	fd842583          	lw	a1,-40(s0)
+     b98:	853e                	mv	a0,a5
+     b9a:	3ac9                	jal	56c <reg_8b_read>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:304 (discriminator 3)
+					rd_buf++;
+     b9c:	fd842783          	lw	a5,-40(s0)
+     ba0:	0785                	addi	a5,a5,1
+     ba2:	fcf42c23          	sw	a5,-40(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:301 (discriminator 3)
+				for(i=0; i<rd_length; i++)
+     ba6:	fef44783          	lbu	a5,-17(s0)
+     baa:	0785                	addi	a5,a5,1
+     bac:	fef407a3          	sb	a5,-17(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:301 (discriminator 1)
+     bb0:	fef44703          	lbu	a4,-17(s0)
+     bb4:	fd744783          	lbu	a5,-41(s0)
+     bb8:	fcf769e3          	bltu	a4,a5,b8a <i3c_master_private_i3c_read+0x110>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:307
+				}
+
+				reg_8b_write(this_i3cm->base_addr | I3C_MASTER_INTR_STA,I3C_INT0_DEFAULT_STATUS);
+     bbc:	fdc42783          	lw	a5,-36(s0)
+     bc0:	439c                	lw	a5,0(a5)
+     bc2:	0807e793          	ori	a5,a5,128
+     bc6:	0c700593          	li	a1,199
+     bca:	853e                	mv	a0,a5
+     bcc:	38fd                	jal	4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:308
+				return 0;
+     bce:	4781                	li	a5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:312 (discriminator 1)
+			}
+		}
+	}
+}
+     bd0:	853e                	mv	a0,a5
+     bd2:	50b2                	lw	ra,44(sp)
+     bd4:	5422                	lw	s0,40(sp)
+     bd6:	6145                	addi	sp,sp,48
+     bd8:	8082                	ret
+
+00000bda <i3c_master_private_i3c_write>:
+i3c_master_private_i3c_write():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:323
+ * @param : wr_length : write length
+ * @param : slave_dyn_addr : slave dynamic addr
+ * @return : status for this function
+ */
+uint8_t i3c_master_private_i3c_write(struct i3c_master_instance *this_i3cm,uint8_t *wr_buf,uint8_t wr_length,uint8_t slave_dyn_addr)
+{
+     bda:	7179                	addi	sp,sp,-48
+     bdc:	d606                	sw	ra,44(sp)
+     bde:	d422                	sw	s0,40(sp)
+     be0:	1800                	addi	s0,sp,48
+     be2:	fca42e23          	sw	a0,-36(s0)
+     be6:	fcb42c23          	sw	a1,-40(s0)
+     bea:	87b2                	mv	a5,a2
+     bec:	8736                	mv	a4,a3
+     bee:	fcf40ba3          	sb	a5,-41(s0)
+     bf2:	87ba                	mv	a5,a4
+     bf4:	fcf40b23          	sb	a5,-42(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:324
+	uint8_t count=0;
+     bf8:	fe040723          	sb	zero,-18(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:325
+	uint32_t int_status=0;
+     bfc:	fe042423          	sw	zero,-24(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:327
+
+	if (NULL == this_i3cm) {
+     c00:	fdc42783          	lw	a5,-36(s0)
+     c04:	e781                	bnez	a5,c0c <i3c_master_private_i3c_write+0x32>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:328
+			return -1;
+     c06:	0ff00793          	li	a5,255
+     c0a:	a8fd                	j	d08 <i3c_master_private_i3c_write+0x12e>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:331
+	}
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_INTR_STA, I3C_INT0_DEFAULT_STATUS); //clear all pending bits
+     c0c:	fdc42783          	lw	a5,-36(s0)
+     c10:	439c                	lw	a5,0(a5)
+     c12:	0807e793          	ori	a5,a5,128
+     c16:	0c700593          	li	a1,199
+     c1a:	853e                	mv	a0,a5
+     c1c:	8afff0ef          	jal	ra,4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:334
+
+//[cw]	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_CFG0, 0); //ENTER I3C MODE
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_CFG0, I3C_PRIV_RW_NO_7E ); //[cw] ENTER I3C MODE with no broadcast
+     c20:	fdc42783          	lw	a5,-36(s0)
+     c24:	439c                	lw	a5,0(a5)
+     c26:	0087e793          	ori	a5,a5,8
+     c2a:	4585                	li	a1,1
+     c2c:	853e                	mv	a0,a5
+     c2e:	89dff0ef          	jal	ra,4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:336
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_WRITE_FIFO,
+     c32:	fdc42783          	lw	a5,-36(s0)
+     c36:	439c                	lw	a5,0(a5)
+     c38:	0c07e793          	ori	a5,a5,192
+     c3c:	4591                	li	a1,4
+     c3e:	853e                	mv	a0,a5
+     c40:	88bff0ef          	jal	ra,4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:338
+											STOP_IN_FRAME);
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_WRITE_FIFO,
+     c44:	fdc42783          	lw	a5,-36(s0)
+     c48:	439c                	lw	a5,0(a5)
+     c4a:	0c07e713          	ori	a4,a5,192
+     c4e:	fd644783          	lbu	a5,-42(s0)
+     c52:	0786                	slli	a5,a5,0x1
+     c54:	0ff7f793          	zext.b	a5,a5
+     c58:	85be                	mv	a1,a5
+     c5a:	853a                	mv	a0,a4
+     c5c:	86fff0ef          	jal	ra,4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:340
+											slave_dyn_addr << 1);
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_WRITE_FIFO,
+     c60:	fdc42783          	lw	a5,-36(s0)
+     c64:	439c                	lw	a5,0(a5)
+     c66:	0c07e793          	ori	a5,a5,192
+     c6a:	fd744703          	lbu	a4,-41(s0)
+     c6e:	85ba                	mv	a1,a4
+     c70:	853e                	mv	a0,a5
+     c72:	859ff0ef          	jal	ra,4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:343
+											wr_length);
+
+	for(uint8_t i=0;i<wr_length;i++)
+     c76:	fe0407a3          	sb	zero,-17(s0)
+     c7a:	a035                	j	ca6 <i3c_master_private_i3c_write+0xcc>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:345 (discriminator 3)
+	{
+		reg_8b_write(this_i3cm->base_addr | I3C_MASTER_WRITE_FIFO, wr_buf[i]);
+     c7c:	fdc42783          	lw	a5,-36(s0)
+     c80:	439c                	lw	a5,0(a5)
+     c82:	0c07e693          	ori	a3,a5,192
+     c86:	fef44783          	lbu	a5,-17(s0)
+     c8a:	fd842703          	lw	a4,-40(s0)
+     c8e:	97ba                	add	a5,a5,a4
+     c90:	0007c783          	lbu	a5,0(a5)
+     c94:	85be                	mv	a1,a5
+     c96:	8536                	mv	a0,a3
+     c98:	833ff0ef          	jal	ra,4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:343 (discriminator 3)
+	for(uint8_t i=0;i<wr_length;i++)
+     c9c:	fef44783          	lbu	a5,-17(s0)
+     ca0:	0785                	addi	a5,a5,1
+     ca2:	fef407a3          	sb	a5,-17(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:343 (discriminator 1)
+     ca6:	fef44703          	lbu	a4,-17(s0)
+     caa:	fd744783          	lbu	a5,-41(s0)
+     cae:	fcf767e3          	bltu	a4,a5,c7c <i3c_master_private_i3c_write+0xa2>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:348
+	}
+
+	reg_8b_write(this_i3cm->base_addr | I3C_MASTER_START_REG, START);
+     cb2:	fdc42783          	lw	a5,-36(s0)
+     cb6:	439c                	lw	a5,0(a5)
+     cb8:	0447e793          	ori	a5,a5,68
+     cbc:	4585                	li	a1,1
+     cbe:	853e                	mv	a0,a5
+     cc0:	80bff0ef          	jal	ra,4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:354
+
+	// delayMS(1);
+
+	while(1)
+	{
+		reg_8b_read(this_i3cm->base_addr | I3C_MASTER_INTR_STA, (uint8_t *)&int_status);
+     cc4:	fdc42783          	lw	a5,-36(s0)
+     cc8:	439c                	lw	a5,0(a5)
+     cca:	0807e793          	ori	a5,a5,128
+     cce:	fe840713          	addi	a4,s0,-24
+     cd2:	85ba                	mv	a1,a4
+     cd4:	853e                	mv	a0,a5
+     cd6:	897ff0ef          	jal	ra,56c <reg_8b_read>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:356
+		DEBUG_PRINTF("\r\nI3C0: Write command done int=0x(%x).",int_status);
+		if (int_status & I3C_INT0_COMMAND_DONE) //wait cmd done
+     cda:	fe842783          	lw	a5,-24(s0)
+     cde:	0407f793          	andi	a5,a5,64
+     ce2:	d3ed                	beqz	a5,cc4 <i3c_master_private_i3c_write+0xea>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:358
+		{
+			reg_8b_write(this_i3cm->base_addr | I3C_MASTER_INTR_STA,I3C_INT0_DEFAULT_STATUS);
+     ce4:	fdc42783          	lw	a5,-36(s0)
+     ce8:	439c                	lw	a5,0(a5)
+     cea:	0807e793          	ori	a5,a5,128
+     cee:	0c700593          	li	a1,199
+     cf2:	853e                	mv	a0,a5
+     cf4:	fd6ff0ef          	jal	ra,4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:360
+
+			if(int_status & I3C_INT0_SLAVE_NACK)
+     cf8:	fe842783          	lw	a5,-24(s0)
+     cfc:	0807f793          	andi	a5,a5,128
+     d00:	c399                	beqz	a5,d06 <i3c_master_private_i3c_write+0x12c>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:362
+			{
+				return 1;
+     d02:	4785                	li	a5,1
+     d04:	a011                	j	d08 <i3c_master_private_i3c_write+0x12e>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:366
+			}
+			else
+			{
+				return 0;
+     d06:	4781                	li	a5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/i3c_controller/i3c_controller.c:370 (discriminator 1)
+			}
+		}
+	}
+}
+     d08:	853e                	mv	a0,a5
+     d0a:	50b2                	lw	ra,44(sp)
+     d0c:	5422                	lw	s0,40(sp)
+     d0e:	6145                	addi	sp,sp,48
+     d10:	8082                	ret
+
+00000d12 <gpio_init>:
+gpio_init():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:60
+#include <stddef.h>
+
+unsigned char gpio_init(struct gpio_instance *this_gpio,
+		uint32_t base_addr,
+		uint32_t lines_num, uint32_t gpio_dirs)
+{
+     d12:	7179                	addi	sp,sp,-48
+     d14:	d606                	sw	ra,44(sp)
+     d16:	d422                	sw	s0,40(sp)
+     d18:	1800                	addi	s0,sp,48
+     d1a:	fca42e23          	sw	a0,-36(s0)
+     d1e:	fcb42c23          	sw	a1,-40(s0)
+     d22:	fcc42a23          	sw	a2,-44(s0)
+     d26:	fcd42823          	sw	a3,-48(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:61
+	unsigned int index = 0;
+     d2a:	fe042623          	sw	zero,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:62
+	if (NULL == this_gpio) {
+     d2e:	fdc42783          	lw	a5,-36(s0)
+     d32:	e399                	bnez	a5,d38 <gpio_init+0x26>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:63
+		return 1;
+     d34:	4785                	li	a5,1
+     d36:	a05d                	j	ddc <gpio_init+0xca>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:65
+	}
+	this_gpio->base_address = base_addr;
+     d38:	fdc42783          	lw	a5,-36(s0)
+     d3c:	fd842703          	lw	a4,-40(s0)
+     d40:	c3d8                	sw	a4,4(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:67
+
+	for (index = 0; index < lines_num; index++) {
+     d42:	fe042623          	sw	zero,-20(s0)
+     d46:	a061                	j	dce <gpio_init+0xbc>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:68
+		this_gpio->gpio_config[index].pin = 0x01 << index;
+     d48:	fec42783          	lw	a5,-20(s0)
+     d4c:	4705                	li	a4,1
+     d4e:	00f717b3          	sll	a5,a4,a5
+     d52:	86be                	mv	a3,a5
+     d54:	fdc42703          	lw	a4,-36(s0)
+     d58:	fec42783          	lw	a5,-20(s0)
+     d5c:	078a                	slli	a5,a5,0x2
+     d5e:	97ba                	add	a5,a5,a4
+     d60:	c794                	sw	a3,8(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:70
+
+		if (gpio_dirs & (0x01 << index)) {
+     d62:	fec42783          	lw	a5,-20(s0)
+     d66:	4705                	li	a4,1
+     d68:	00f717b3          	sll	a5,a4,a5
+     d6c:	873e                	mv	a4,a5
+     d6e:	fd042783          	lw	a5,-48(s0)
+     d72:	8ff9                	and	a5,a5,a4
+     d74:	c79d                	beqz	a5,da2 <gpio_init+0x90>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:71
+			reg_32b_modify(this_gpio->base_address | GPIO_DIRECTION,
+     d76:	fdc42783          	lw	a5,-36(s0)
+     d7a:	43dc                	lw	a5,4(a5)
+     d7c:	0107e693          	ori	a3,a5,16
+     d80:	fdc42703          	lw	a4,-36(s0)
+     d84:	fec42783          	lw	a5,-20(s0)
+     d88:	078a                	slli	a5,a5,0x2
+     d8a:	97ba                	add	a5,a5,a4
+     d8c:	478c                	lw	a1,8(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:72
+					this_gpio->gpio_config[index].pin, (GPIO_OUTPUT << index));
+     d8e:	fec42783          	lw	a5,-20(s0)
+     d92:	4705                	li	a4,1
+     d94:	00f717b3          	sll	a5,a4,a5
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:71
+			reg_32b_modify(this_gpio->base_address | GPIO_DIRECTION,
+     d98:	863e                	mv	a2,a5
+     d9a:	8536                	mv	a0,a3
+     d9c:	ee8ff0ef          	jal	ra,484 <reg_32b_modify>
+     da0:	a015                	j	dc4 <gpio_init+0xb2>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:77
+#ifdef _DIRECTION_INTERNAL_MEMORY_USE_
+			this_gpio->gpio_config[index].direction = GPIO_OUTPUT;
+#endif
+		} else {
+			reg_32b_modify(this_gpio->base_address | GPIO_DIRECTION,
+     da2:	fdc42783          	lw	a5,-36(s0)
+     da6:	43dc                	lw	a5,4(a5)
+     da8:	0107e693          	ori	a3,a5,16
+     dac:	fdc42703          	lw	a4,-36(s0)
+     db0:	fec42783          	lw	a5,-20(s0)
+     db4:	078a                	slli	a5,a5,0x2
+     db6:	97ba                	add	a5,a5,a4
+     db8:	479c                	lw	a5,8(a5)
+     dba:	4601                	li	a2,0
+     dbc:	85be                	mv	a1,a5
+     dbe:	8536                	mv	a0,a3
+     dc0:	ec4ff0ef          	jal	ra,484 <reg_32b_modify>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:67 (discriminator 2)
+	for (index = 0; index < lines_num; index++) {
+     dc4:	fec42783          	lw	a5,-20(s0)
+     dc8:	0785                	addi	a5,a5,1
+     dca:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:67 (discriminator 1)
+     dce:	fec42703          	lw	a4,-20(s0)
+     dd2:	fd442783          	lw	a5,-44(s0)
+     dd6:	f6f769e3          	bltu	a4,a5,d48 <gpio_init+0x36>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:84
+#ifdef _DIRECTION_INTERNAL_MEMORY_USE_
+			this_gpio->gpio_config[index].direction = GPIO_INPUT;
+#endif
+		}
+	}
+	return 0;
+     dda:	4781                	li	a5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:85
+}
+     ddc:	853e                	mv	a0,a5
+     dde:	50b2                	lw	ra,44(sp)
+     de0:	5422                	lw	s0,40(sp)
+     de2:	6145                	addi	sp,sp,48
+     de4:	8082                	ret
+
+00000de6 <gpio_output_write>:
+gpio_output_write():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:104
+	return 0;
+}
+
+unsigned char gpio_output_write(struct gpio_instance *this_gpio,
+		uint32_t index, uint32_t value)
+{
+     de6:	1101                	addi	sp,sp,-32
+     de8:	ce06                	sw	ra,28(sp)
+     dea:	cc22                	sw	s0,24(sp)
+     dec:	1000                	addi	s0,sp,32
+     dee:	fea42623          	sw	a0,-20(s0)
+     df2:	feb42423          	sw	a1,-24(s0)
+     df6:	fec42223          	sw	a2,-28(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:105
+	if (NULL == this_gpio) {
+     dfa:	fec42783          	lw	a5,-20(s0)
+     dfe:	e399                	bnez	a5,e04 <gpio_output_write+0x1e>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:106
+		return 1;
+     e00:	4785                	li	a5,1
+     e02:	a025                	j	e2a <gpio_output_write+0x44>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:109
+	}
+
+	reg_32b_modify(this_gpio->base_address | GPIO_WR_DATA,
+     e04:	fec42783          	lw	a5,-20(s0)
+     e08:	43dc                	lw	a5,4(a5)
+     e0a:	0047e693          	ori	a3,a5,4
+     e0e:	fec42703          	lw	a4,-20(s0)
+     e12:	fe842783          	lw	a5,-24(s0)
+     e16:	078a                	slli	a5,a5,0x2
+     e18:	97ba                	add	a5,a5,a4
+     e1a:	479c                	lw	a5,8(a5)
+     e1c:	fe442603          	lw	a2,-28(s0)
+     e20:	85be                	mv	a1,a5
+     e22:	8536                	mv	a0,a3
+     e24:	e60ff0ef          	jal	ra,484 <reg_32b_modify>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:112
+			this_gpio->gpio_config[index].pin, value);
+
+	return 0;
+     e28:	4781                	li	a5,0
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/bsp/driver/gpio/gpio.c:113
+}
+     e2a:	853e                	mv	a0,a5
+     e2c:	40f2                	lw	ra,28(sp)
+     e2e:	4462                	lw	s0,24(sp)
+     e30:	6105                	addi	sp,sp,32
+     e32:	8082                	ret
+
+00000e34 <lscc_uart_putc>:
+lscc_uart_putc():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:32
+const uint8_t wr_buf[DATA_LENGTH] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F,
+                   0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17, 0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F};
+uint8_t rd_buf[DATA_LENGTH];
+
+// --- stdio routing functions for printf ---
+static int lscc_uart_putc(char c, FILE *file) {
+     e34:	7179                	addi	sp,sp,-48
+     e36:	d606                	sw	ra,44(sp)
+     e38:	d422                	sw	s0,40(sp)
+     e3a:	1800                	addi	s0,sp,48
+     e3c:	87aa                	mv	a5,a0
+     e3e:	fcb42c23          	sw	a1,-40(s0)
+     e42:	fcf40fa3          	sb	a5,-33(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:33
+	int ret = uart_putc(&uart_core_uart, c);
+     e46:	fdf44783          	lbu	a5,-33(s0)
+     e4a:	85be                	mv	a1,a5
+     e4c:	99818513          	addi	a0,gp,-1640 # 1e28 <uart_core_uart>
+     e50:	acaff0ef          	jal	ra,11a <uart_putc>
+     e54:	87aa                	mv	a5,a0
+     e56:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:34
+	if (c == '\n' && ret == 0)
+     e5a:	fdf40703          	lb	a4,-33(s0)
+     e5e:	47a9                	li	a5,10
+     e60:	00f71d63          	bne	a4,a5,e7a <lscc_uart_putc+0x46>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:34 (discriminator 1)
+     e64:	fec42783          	lw	a5,-20(s0)
+     e68:	eb89                	bnez	a5,e7a <lscc_uart_putc+0x46>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:35
+		ret = uart_putc(&uart_core_uart, '\r');
+     e6a:	45b5                	li	a1,13
+     e6c:	99818513          	addi	a0,gp,-1640 # 1e28 <uart_core_uart>
+     e70:	aaaff0ef          	jal	ra,11a <uart_putc>
+     e74:	87aa                	mv	a5,a0
+     e76:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:36
+	return ret;
+     e7a:	fec42783          	lw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:37
+}
+     e7e:	853e                	mv	a0,a5
+     e80:	50b2                	lw	ra,44(sp)
+     e82:	5422                	lw	s0,40(sp)
+     e84:	6145                	addi	sp,sp,48
+     e86:	8082                	ret
+
+00000e88 <lscc_uart_getc>:
+lscc_uart_getc():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:39
+
+static int lscc_uart_getc(FILE *file) { return EOF; }
+     e88:	1101                	addi	sp,sp,-32
+     e8a:	ce22                	sw	s0,28(sp)
+     e8c:	1000                	addi	s0,sp,32
+     e8e:	fea42623          	sw	a0,-20(s0)
+     e92:	57fd                	li	a5,-1
+     e94:	853e                	mv	a0,a5
+     e96:	4472                	lw	s0,28(sp)
+     e98:	6105                	addi	sp,sp,32
+     e9a:	8082                	ret
+
+00000e9c <lscc_uart_flush>:
+lscc_uart_flush():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:40
+static int lscc_uart_flush(FILE *file) { return EOF; }
+     e9c:	1101                	addi	sp,sp,-32
+     e9e:	ce22                	sw	s0,28(sp)
+     ea0:	1000                	addi	s0,sp,32
+     ea2:	fea42623          	sw	a0,-20(s0)
+     ea6:	57fd                	li	a5,-1
+     ea8:	853e                	mv	a0,a5
+     eaa:	4472                	lw	s0,28(sp)
+     eac:	6105                	addi	sp,sp,32
+     eae:	8082                	ret
+
+00000eb0 <simple_delay_ms>:
+simple_delay_ms():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:44
+// ------------------------------------------
+
+// Simple blocking delay
+static void simple_delay_ms(uint32_t ms) {
+     eb0:	7179                	addi	sp,sp,-48
+     eb2:	d622                	sw	s0,44(sp)
+     eb4:	1800                	addi	s0,sp,48
+     eb6:	fca42e23          	sw	a0,-36(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:45
+	for (volatile uint32_t i = 0; i < (ms * 10000); i++);
+     eba:	fe042623          	sw	zero,-20(s0)
+     ebe:	a031                	j	eca <simple_delay_ms+0x1a>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:45 (discriminator 3)
+     ec0:	fec42783          	lw	a5,-20(s0)
+     ec4:	0785                	addi	a5,a5,1
+     ec6:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:45 (discriminator 1)
+     eca:	fdc42703          	lw	a4,-36(s0)
+     ece:	6789                	lui	a5,0x2
+     ed0:	71078793          	addi	a5,a5,1808 # 2710 <__global_pointer$+0x280>
+     ed4:	02f70733          	mul	a4,a4,a5
+     ed8:	fec42783          	lw	a5,-20(s0)
+     edc:	fee7e2e3          	bltu	a5,a4,ec0 <simple_delay_ms+0x10>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:46
+}
+     ee0:	0001                	nop
+     ee2:	0001                	nop
+     ee4:	5432                	lw	s0,44(sp)
+     ee6:	6145                	addi	sp,sp,48
+     ee8:	8082                	ret
+
+00000eea <set_led_all_off>:
+set_led_all_off():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:48
+
+static void set_led_all_off() {
+     eea:	1101                	addi	sp,sp,-32
+     eec:	ce06                	sw	ra,28(sp)
+     eee:	cc22                	sw	s0,24(sp)
+     ef0:	1000                	addi	s0,sp,32
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:50
+#ifdef GPIO_INST_BASE_ADDR
+    for (int i = 0; i < GPIO_INST_LINES_NUM; i++) {
+     ef2:	fe042623          	sw	zero,-20(s0)
+     ef6:	a831                	j	f12 <set_led_all_off+0x28>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:51 (discriminator 3)
+        gpio_output_write(&gpio_inst, i, 0xFF);
+     ef8:	fec42783          	lw	a5,-20(s0)
+     efc:	0ff00613          	li	a2,255
+     f00:	85be                	mv	a1,a5
+     f02:	91018513          	addi	a0,gp,-1776 # 1da0 <gpio_inst>
+     f06:	35c5                	jal	de6 <gpio_output_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:50 (discriminator 3)
+    for (int i = 0; i < GPIO_INST_LINES_NUM; i++) {
+     f08:	fec42783          	lw	a5,-20(s0)
+     f0c:	0785                	addi	a5,a5,1
+     f0e:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:50 (discriminator 1)
+     f12:	fec42703          	lw	a4,-20(s0)
+     f16:	47a1                	li	a5,8
+     f18:	fee7d0e3          	bge	a5,a4,ef8 <set_led_all_off+0xe>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:54
+    }
+#endif
+}
+     f1c:	0001                	nop
+     f1e:	0001                	nop
+     f20:	40f2                	lw	ra,28(sp)
+     f22:	4462                	lw	s0,24(sp)
+     f24:	6105                	addi	sp,sp,32
+     f26:	8082                	ret
+
+00000f28 <set_led_on>:
+set_led_on():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:56
+
+static void set_led_on(uint8_t id) {
+     f28:	1101                	addi	sp,sp,-32
+     f2a:	ce06                	sw	ra,28(sp)
+     f2c:	cc22                	sw	s0,24(sp)
+     f2e:	1000                	addi	s0,sp,32
+     f30:	87aa                	mv	a5,a0
+     f32:	fef407a3          	sb	a5,-17(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:58
+#ifdef GPIO_INST_BASE_ADDR
+    gpio_output_write(&gpio_inst, id, 0x00);
+     f36:	fef44783          	lbu	a5,-17(s0)
+     f3a:	4601                	li	a2,0
+     f3c:	85be                	mv	a1,a5
+     f3e:	91018513          	addi	a0,gp,-1776 # 1da0 <gpio_inst>
+     f42:	3555                	jal	de6 <gpio_output_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:60
+#endif
+}
+     f44:	0001                	nop
+     f46:	40f2                	lw	ra,28(sp)
+     f48:	4462                	lw	s0,24(sp)
+     f4a:	6105                	addi	sp,sp,32
+     f4c:	8082                	ret
+
+00000f4e <bsp_init>:
+bsp_init():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:63
+
+static void bsp_init(void)
+{
+     f4e:	1101                	addi	sp,sp,-32
+     f50:	ce06                	sw	ra,28(sp)
+     f52:	cc22                	sw	s0,24(sp)
+     f54:	1000                	addi	s0,sp,32
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:65
+#ifdef GPIO_INST_BASE_ADDR
+	gpio_inst.instance_name = GPIO_INST_NAME;
+     f56:	91018793          	addi	a5,gp,-1776 # 1da0 <gpio_inst>
+     f5a:	6709                	lui	a4,0x2
+     f5c:	9d870713          	addi	a4,a4,-1576 # 19d8 <wr_buf+0x20>
+     f60:	c398                	sw	a4,0(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:66
+	gpio_init(&gpio_inst, GPIO_INST_BASE_ADDR, GPIO_INST_LINES_NUM, GPIO_INST_GPIO_DIRS);
+     f62:	0ff00693          	li	a3,255
+     f66:	4625                	li	a2,9
+     f68:	65c1                	lui	a1,0x10
+     f6a:	91018513          	addi	a0,gp,-1776 # 1da0 <gpio_inst>
+     f6e:	3355                	jal	d12 <gpio_init>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:67
+    set_led_all_off();
+     f70:	3fad                	jal	eea <set_led_all_off>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:70
+#endif
+
+	unsigned char uart_status = uart_init(&uart_core_uart, UART0_INST_BASE_ADDR, UART0_INST_SYS_CLK, UART0_INST_BAUD_RATE, 1, 8);
+     f72:	47a1                	li	a5,8
+     f74:	4705                	li	a4,1
+     f76:	66f1                	lui	a3,0x1c
+     f78:	20068693          	addi	a3,a3,512 # 1c200 <_stack_start+0x197f0>
+     f7c:	4665                	li	a2,25
+     f7e:	65c5                	lui	a1,0x11
+     f80:	c0058593          	addi	a1,a1,-1024 # 10c00 <_stack_start+0xe1f0>
+     f84:	99818513          	addi	a0,gp,-1640 # 1e28 <uart_core_uart>
+     f88:	908ff0ef          	jal	ra,90 <uart_init>
+     f8c:	87aa                	mv	a5,a0
+     f8e:	fef407a3          	sb	a5,-17(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:72
+	
+	if (uart_status != 0) {
+     f92:	fef44783          	lbu	a5,-17(s0)
+     f96:	c781                	beqz	a5,f9e <bsp_init+0x50>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:74
+#ifdef GPIO_INST_BASE_ADDR
+		set_led_on(7); // Error state
+     f98:	451d                	li	a0,7
+     f9a:	3779                	jal	f28 <set_led_on>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:76 (discriminator 1)
+#endif
+		while(1); 
+     f9c:	a001                	j	f9c <bsp_init+0x4e>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:79
+	}
+
+	iob_init(lscc_uart_putc, lscc_uart_getc, lscc_uart_flush);
+     f9e:	6785                	lui	a5,0x1
+     fa0:	e9c78613          	addi	a2,a5,-356 # e9c <lscc_uart_flush>
+     fa4:	6785                	lui	a5,0x1
+     fa6:	e8878593          	addi	a1,a5,-376 # e88 <lscc_uart_getc>
+     faa:	6785                	lui	a5,0x1
+     fac:	e3478513          	addi	a0,a5,-460 # e34 <lscc_uart_putc>
+     fb0:	b9eff0ef          	jal	ra,34e <iob_init>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:80
+}
+     fb4:	0001                	nop
+     fb6:	40f2                	lw	ra,28(sp)
+     fb8:	4462                	lw	s0,24(sp)
+     fba:	6105                	addi	sp,sp,32
+     fbc:	8082                	ret
+
+00000fbe <main>:
+main():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:82
+
+int main(void) {
+     fbe:	7179                	addi	sp,sp,-48
+     fc0:	d606                	sw	ra,44(sp)
+     fc2:	d422                	sw	s0,40(sp)
+     fc4:	1800                	addi	s0,sp,48
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:83
+	bsp_init();
+     fc6:	3761                	jal	f4e <bsp_init>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:85
+
+	printf("Started! Running 3-second LED breathing effect...\n");
+     fc8:	6789                	lui	a5,0x2
+     fca:	9e478513          	addi	a0,a5,-1564 # 19e4 <wr_buf+0x2c>
+     fce:	2e49                	jal	1360 <puts>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:88
+
+	// Step 1: 3 Seconds "Breathing" (or sweeping) LED startup
+	uint32_t sweep_time_ms = 0;
+     fd0:	fe042223          	sw	zero,-28(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:89
+	uint8_t sweep_idx = 0;
+     fd4:	fe0407a3          	sb	zero,-17(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:103
+//		}
+//		sweep_time_ms += 100;
+//	}
+
+	// Step 2: Initialize I3C Master and Auto-Tune Timing Parameters
+	printf("Starting I3C Master Configuration...\n");
+     fd8:	6789                	lui	a5,0x2
+     fda:	a1878513          	addi	a0,a5,-1512 # 1a18 <wr_buf+0x60>
+     fde:	2649                	jal	1360 <puts>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:105
+
+	if (i3c_master_init(&i3cm, I3C_M_INST_BASE_ADDR, 0, I3C_M_INST_GUI_I2C_SCL_PULSE_WIDTH - 1, 1) != 0) {
+     fe0:	4705                	li	a4,1
+     fe2:	46b1                	li	a3,12
+     fe4:	4601                	li	a2,0
+     fe6:	67c1                	lui	a5,0x10
+     fe8:	40078593          	addi	a1,a5,1024 # 10400 <_stack_start+0xd9f0>
+     fec:	9f018513          	addi	a0,gp,-1552 # 1e80 <i3cm>
+     ff0:	e28ff0ef          	jal	ra,618 <i3c_master_init>
+     ff4:	87aa                	mv	a5,a0
+     ff6:	cb89                	beqz	a5,1008 <main+0x4a>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:106
+		printf("I3C master base initialization FAILED! Cannot proceed.\n");
+     ff8:	6789                	lui	a5,0x2
+     ffa:	a4078513          	addi	a0,a5,-1472 # 1a40 <wr_buf+0x88>
+     ffe:	268d                	jal	1360 <puts>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:107
+		set_led_all_off();
+    1000:	35ed                	jal	eea <set_led_all_off>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:108
+		set_led_on(7); // LED 7 恆亮代表硬體 IP Init 初始化發生錯誤
+    1002:	451d                	li	a0,7
+    1004:	3715                	jal	f28 <set_led_on>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:109 (discriminator 1)
+        while(1);
+    1006:	a001                	j	1006 <main+0x48>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:112
+	} 
+	
+    printf("I3C Master init OK.\n");
+    1008:	6789                	lui	a5,0x2
+    100a:	a7878513          	addi	a0,a5,-1416 # 1a78 <wr_buf+0xc0>
+    100e:	2e89                	jal	1360 <puts>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:118
+
+    // ==========================================
+    // 新增：初始化並啟用 I3C Target (Slave)
+    // 這是單板 Loopback 測試必須的，Target IP 需要被 CPU 喚醒
+    // ==========================================
+    printf("Starting I3C Target Configuration...\n");
+    1010:	6789                	lui	a5,0x2
+    1012:	a8c78513          	addi	a0,a5,-1396 # 1a8c <wr_buf+0xd4>
+    1016:	26a9                	jal	1360 <puts>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:121
+    
+    // 設定 Target IP 的 Base Address (使用系統產生的 sys_platform.h 裡的定義)
+    i3cs.base_addr = I3C_S_INST_BASE_ADDR;
+    1018:	a3818793          	addi	a5,gp,-1480 # 1ec8 <i3cs>
+    101c:	6745                	lui	a4,0x11
+    101e:	80070713          	addi	a4,a4,-2048 # 10800 <_stack_start+0xddf0>
+    1022:	c398                	sw	a4,0(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:124
+    
+    // 呼叫驅動程式裡的初始化函式
+    if (i3c_target_init(&i3cs) != SUCCESS) {
+    1024:	a3818513          	addi	a0,gp,-1480 # 1ec8 <i3cs>
+    1028:	d78ff0ef          	jal	ra,5a0 <i3c_target_init>
+    102c:	872a                	mv	a4,a0
+    102e:	4785                	li	a5,1
+    1030:	00f70a63          	beq	a4,a5,1044 <main+0x86>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:125
+        printf("I3C Target initialization FAILED! Cannot proceed.\n");
+    1034:	6789                	lui	a5,0x2
+    1036:	ab478513          	addi	a0,a5,-1356 # 1ab4 <wr_buf+0xfc>
+    103a:	261d                	jal	1360 <puts>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:126
+        set_led_all_off();
+    103c:	357d                	jal	eea <set_led_all_off>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:127
+        set_led_on(6); // 亮第 6 顆燈表示 Target 初始化失敗
+    103e:	4519                	li	a0,6
+    1040:	35e5                	jal	f28 <set_led_on>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:128 (discriminator 2)
+        while(1);
+    1042:	a001                	j	1042 <main+0x84>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:131
+    }
+    
+    printf("I3C Target init OK. STARTING DAA TEST...\n");
+    1044:	6789                	lui	a5,0x2
+    1046:	ae878513          	addi	a0,a5,-1304 # 1ae8 <wr_buf+0x130>
+    104a:	2e19                	jal	1360 <puts>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:135
+    // ==========================================
+    
+    // We will test timing parameters. For simplicity, let's test a stable safe value 
+    uint8_t clk_val = 15; // Slower clock for better stability
+    104c:	47bd                	li	a5,15
+    104e:	fef401a3          	sb	a5,-29(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:136
+    uint8_t od_val = 15;  // Max OD timer for stability
+    1052:	47bd                	li	a5,15
+    1054:	fef40123          	sb	a5,-30(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:139
+
+    // Apply safe timing parameters once
+    uint8_t ctrl_val = 0;
+    1058:	fe040023          	sb	zero,-32(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:140
+    reg_8b_read(i3cm.base_addr | 0x04, &ctrl_val);
+    105c:	9f018793          	addi	a5,gp,-1552 # 1e80 <i3cm>
+    1060:	439c                	lw	a5,0(a5)
+    1062:	0047e793          	ori	a5,a5,4
+    1066:	fe040713          	addi	a4,s0,-32
+    106a:	85ba                	mv	a1,a4
+    106c:	853e                	mv	a0,a5
+    106e:	cfeff0ef          	jal	ra,56c <reg_8b_read>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:141
+    reg_8b_write(i3cm.base_addr | 0x04, ctrl_val & ~0x01); // Disable
+    1072:	9f018793          	addi	a5,gp,-1552 # 1e80 <i3cm>
+    1076:	439c                	lw	a5,0(a5)
+    1078:	0047e713          	ori	a4,a5,4
+    107c:	fe044783          	lbu	a5,-32(s0)
+    1080:	9bf9                	andi	a5,a5,-2
+    1082:	0ff7f793          	zext.b	a5,a5
+    1086:	85be                	mv	a1,a5
+    1088:	853a                	mv	a0,a4
+    108a:	c40ff0ef          	jal	ra,4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:142
+    reg_8b_write(i3cm.base_addr | 0x00, clk_val); 
+    108e:	9f018793          	addi	a5,gp,-1552 # 1e80 <i3cm>
+    1092:	439c                	lw	a5,0(a5)
+    1094:	fe344703          	lbu	a4,-29(s0)
+    1098:	85ba                	mv	a1,a4
+    109a:	853e                	mv	a0,a5
+    109c:	c2eff0ef          	jal	ra,4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:143
+    reg_8b_write(i3cm.base_addr | 0x1A, od_val);
+    10a0:	9f018793          	addi	a5,gp,-1552 # 1e80 <i3cm>
+    10a4:	439c                	lw	a5,0(a5)
+    10a6:	01a7e793          	ori	a5,a5,26
+    10aa:	fe244703          	lbu	a4,-30(s0)
+    10ae:	85ba                	mv	a1,a4
+    10b0:	853e                	mv	a0,a5
+    10b2:	c18ff0ef          	jal	ra,4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:144
+    reg_8b_write(i3cm.base_addr | 0x04, ctrl_val | 0x01); // Enable
+    10b6:	9f018793          	addi	a5,gp,-1552 # 1e80 <i3cm>
+    10ba:	439c                	lw	a5,0(a5)
+    10bc:	0047e713          	ori	a4,a5,4
+    10c0:	fe044783          	lbu	a5,-32(s0)
+    10c4:	0017e793          	ori	a5,a5,1
+    10c8:	0ff7f793          	zext.b	a5,a5
+    10cc:	85be                	mv	a1,a5
+    10ce:	853a                	mv	a0,a4
+    10d0:	bfaff0ef          	jal	ra,4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:147
+
+    // Process DAA
+    i3c_devinfo.pid = 0;
+    10d4:	a2818793          	addi	a5,gp,-1496 # 1eb8 <i3c_devinfo>
+    10d8:	4681                	li	a3,0
+    10da:	4701                	li	a4,0
+    10dc:	c794                	sw	a3,8(a5)
+    10de:	c7d8                	sw	a4,12(a5)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:148
+    uint8_t dyn_address = 0;
+    10e0:	fc040fa3          	sb	zero,-33(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:151
+    
+    // Block until DAA is successful.
+    uint8_t daa_toggle = 0;
+    10e4:	fe040723          	sb	zero,-18(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:153
+    while(1) {
+        if (daa_toggle) {
+    10e8:	fee44783          	lbu	a5,-18(s0)
+    10ec:	c781                	beqz	a5,10f4 <main+0x136>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:154
+            set_led_on(1); // 燈號 1 閃爍代表正在不間斷發送 DAA 尋找 Target
+    10ee:	4505                	li	a0,1
+    10f0:	3d25                	jal	f28 <set_led_on>
+    10f2:	a011                	j	10f6 <main+0x138>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:156
+        } else {
+            set_led_all_off();
+    10f4:	3bdd                	jal	eea <set_led_all_off>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:158
+        }
+        daa_toggle = !daa_toggle;
+    10f6:	fee44783          	lbu	a5,-18(s0)
+    10fa:	0017b793          	seqz	a5,a5
+    10fe:	0ff7f793          	zext.b	a5,a5
+    1102:	fef40723          	sb	a5,-18(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:160
+
+        uint8_t ret = i3c_master_daa(&i3cm, &i3c_devinfo, &dyn_address, I3C_SLAVE_NUMS, SLAVE_ADDR);
+    1106:	fdf40793          	addi	a5,s0,-33
+    110a:	02000713          	li	a4,32
+    110e:	4685                	li	a3,1
+    1110:	863e                	mv	a2,a5
+    1112:	a2818593          	addi	a1,gp,-1496 # 1eb8 <i3c_devinfo>
+    1116:	9f018513          	addi	a0,gp,-1552 # 1e80 <i3cm>
+    111a:	ea8ff0ef          	jal	ra,7c2 <i3c_master_daa>
+    111e:	87aa                	mv	a5,a0
+    1120:	fef400a3          	sb	a5,-31(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:161
+        if (ret == 0) {
+    1124:	fe144783          	lbu	a5,-31(s0)
+    1128:	e3ad                	bnez	a5,118a <main+0x1cc>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:162
+            printf("\n>> SUCCESS! I3C Slave Found and Assigned!\n");
+    112a:	6789                	lui	a5,0x2
+    112c:	b1478513          	addi	a0,a5,-1260 # 1b14 <wr_buf+0x15c>
+    1130:	2c05                	jal	1360 <puts>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:163
+            break;
+    1132:	0001                	nop
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:172
+        simple_delay_ms(5);
+        reg_8b_write(i3cm.base_addr | 0x0C, 0x00);
+    }
+    
+    // DAA -> Write Indicator: LED 0 Constants ON
+    set_led_all_off();
+    1134:	3b5d                	jal	eea <set_led_all_off>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:173
+    set_led_on(0);
+    1136:	4501                	li	a0,0
+    1138:	3bc5                	jal	f28 <set_led_on>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:176
+
+    // Step 3: Write and Read process
+    printf("STARTING I3C TESTS: Private Write ...\n");
+    113a:	6789                	lui	a5,0x2
+    113c:	b4078513          	addi	a0,a5,-1216 # 1b40 <wr_buf+0x188>
+    1140:	2405                	jal	1360 <puts>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:177
+    printf("Writing data from I3C controller to the target\n");
+    1142:	6789                	lui	a5,0x2
+    1144:	b6878513          	addi	a0,a5,-1176 # 1b68 <wr_buf+0x1b0>
+    1148:	2c21                	jal	1360 <puts>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:178
+    i3c_master_private_i3c_write(&i3cm, (uint8_t *) wr_buf, DATA_LENGTH, SLAVE_ADDR);
+    114a:	02000693          	li	a3,32
+    114e:	02000613          	li	a2,32
+    1152:	6789                	lui	a5,0x2
+    1154:	9b878593          	addi	a1,a5,-1608 # 19b8 <wr_buf>
+    1158:	9f018513          	addi	a0,gp,-1552 # 1e80 <i3cm>
+    115c:	3cbd                	jal	bda <i3c_master_private_i3c_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:180
+    
+    simple_delay_ms(100); // Give slave a little time to process
+    115e:	06400513          	li	a0,100
+    1162:	33b9                	jal	eb0 <simple_delay_ms>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:182
+
+    printf("STARTING I3C TESTS: Private Read ...\n");
+    1164:	6789                	lui	a5,0x2
+    1166:	b9878513          	addi	a0,a5,-1128 # 1b98 <wr_buf+0x1e0>
+    116a:	2add                	jal	1360 <puts>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:183
+    i3c_master_private_i3c_read(&i3cm, (uint8_t *) rd_buf, DATA_LENGTH-2, SLAVE_ADDR);
+    116c:	02000693          	li	a3,32
+    1170:	4679                	li	a2,30
+    1172:	a5418593          	addi	a1,gp,-1452 # 1ee4 <rd_buf>
+    1176:	9f018513          	addi	a0,gp,-1552 # 1e80 <i3cm>
+    117a:	901ff0ef          	jal	ra,a7a <i3c_master_private_i3c_read>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:185
+    
+    bool data_match = true;
+    117e:	4785                	li	a5,1
+    1180:	fef406a3          	sb	a5,-19(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:186
+    for (int i = 0; i < DATA_LENGTH-2; i++) {
+    1184:	fe042423          	sw	zero,-24(s0)
+    1188:	a06d                	j	1232 <main+0x274>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:165
+        printf(".");
+    118a:	02e00513          	li	a0,46
+    118e:	22e9                	jal	1358 <putchar>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:166
+        reg_8b_write(i3cm.base_addr | 0x0C, 0x01);
+    1190:	9f018793          	addi	a5,gp,-1552 # 1e80 <i3cm>
+    1194:	439c                	lw	a5,0(a5)
+    1196:	00c7e793          	ori	a5,a5,12
+    119a:	4585                	li	a1,1
+    119c:	853e                	mv	a0,a5
+    119e:	b2cff0ef          	jal	ra,4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:167
+        simple_delay_ms(5);
+    11a2:	4515                	li	a0,5
+    11a4:	3331                	jal	eb0 <simple_delay_ms>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:168
+        reg_8b_write(i3cm.base_addr | 0x0C, 0x00);
+    11a6:	9f018793          	addi	a5,gp,-1552 # 1e80 <i3cm>
+    11aa:	439c                	lw	a5,0(a5)
+    11ac:	00c7e793          	ori	a5,a5,12
+    11b0:	4581                	li	a1,0
+    11b2:	853e                	mv	a0,a5
+    11b4:	b16ff0ef          	jal	ra,4ca <reg_8b_write>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:152
+    while(1) {
+    11b8:	bf05                	j	10e8 <main+0x12a>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:187
+        printf("Read back data from I3C slave at count %d: %x\n", i, rd_buf[i]);
+    11ba:	a5418713          	addi	a4,gp,-1452 # 1ee4 <rd_buf>
+    11be:	fe842783          	lw	a5,-24(s0)
+    11c2:	97ba                	add	a5,a5,a4
+    11c4:	0007c783          	lbu	a5,0(a5)
+    11c8:	863e                	mv	a2,a5
+    11ca:	fe842583          	lw	a1,-24(s0)
+    11ce:	6789                	lui	a5,0x2
+    11d0:	bc078513          	addi	a0,a5,-1088 # 1bc0 <wr_buf+0x208>
+    11d4:	2ab9                	jal	1332 <printf>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:189
+
+        if (rd_buf[i] != wr_buf[i]) {
+    11d6:	a5418713          	addi	a4,gp,-1452 # 1ee4 <rd_buf>
+    11da:	fe842783          	lw	a5,-24(s0)
+    11de:	97ba                	add	a5,a5,a4
+    11e0:	0007c703          	lbu	a4,0(a5)
+    11e4:	6789                	lui	a5,0x2
+    11e6:	9b878693          	addi	a3,a5,-1608 # 19b8 <wr_buf>
+    11ea:	fe842783          	lw	a5,-24(s0)
+    11ee:	97b6                	add	a5,a5,a3
+    11f0:	0007c783          	lbu	a5,0(a5)
+    11f4:	02f70a63          	beq	a4,a5,1228 <main+0x26a>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:190
+            printf("Data mismatch %x != %x\n", rd_buf[i], wr_buf[i]);
+    11f8:	a5418713          	addi	a4,gp,-1452 # 1ee4 <rd_buf>
+    11fc:	fe842783          	lw	a5,-24(s0)
+    1200:	97ba                	add	a5,a5,a4
+    1202:	0007c783          	lbu	a5,0(a5)
+    1206:	86be                	mv	a3,a5
+    1208:	6789                	lui	a5,0x2
+    120a:	9b878713          	addi	a4,a5,-1608 # 19b8 <wr_buf>
+    120e:	fe842783          	lw	a5,-24(s0)
+    1212:	97ba                	add	a5,a5,a4
+    1214:	0007c783          	lbu	a5,0(a5)
+    1218:	863e                	mv	a2,a5
+    121a:	85b6                	mv	a1,a3
+    121c:	6789                	lui	a5,0x2
+    121e:	bf078513          	addi	a0,a5,-1040 # 1bf0 <wr_buf+0x238>
+    1222:	2a01                	jal	1332 <printf>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:191
+            data_match = false;
+    1224:	fe0406a3          	sb	zero,-19(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:186 (discriminator 2)
+    for (int i = 0; i < DATA_LENGTH-2; i++) {
+    1228:	fe842783          	lw	a5,-24(s0)
+    122c:	0785                	addi	a5,a5,1
+    122e:	fef42423          	sw	a5,-24(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:186 (discriminator 1)
+    1232:	fe842703          	lw	a4,-24(s0)
+    1236:	47f5                	li	a5,29
+    1238:	f8e7d1e3          	bge	a5,a4,11ba <main+0x1fc>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:195
+        }
+    }
+
+    i3c_master_private_i3c_read(&i3cm, (uint8_t *) rd_buf, 2, SLAVE_ADDR);
+    123c:	02000693          	li	a3,32
+    1240:	4609                	li	a2,2
+    1242:	a5418593          	addi	a1,gp,-1452 # 1ee4 <rd_buf>
+    1246:	9f018513          	addi	a0,gp,-1552 # 1e80 <i3cm>
+    124a:	831ff0ef          	jal	ra,a7a <i3c_master_private_i3c_read>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:196
+    printf("Read back data from I3C target: %x\n", rd_buf[0]);
+    124e:	a5418793          	addi	a5,gp,-1452 # 1ee4 <rd_buf>
+    1252:	0007c783          	lbu	a5,0(a5)
+    1256:	85be                	mv	a1,a5
+    1258:	6789                	lui	a5,0x2
+    125a:	c0878513          	addi	a0,a5,-1016 # 1c08 <wr_buf+0x250>
+    125e:	28d1                	jal	1332 <printf>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:197
+    printf("Read back data from I3C target: %x\n", rd_buf[1]);
+    1260:	a5418793          	addi	a5,gp,-1452 # 1ee4 <rd_buf>
+    1264:	0017c783          	lbu	a5,1(a5)
+    1268:	85be                	mv	a1,a5
+    126a:	6789                	lui	a5,0x2
+    126c:	c0878513          	addi	a0,a5,-1016 # 1c08 <wr_buf+0x250>
+    1270:	20c9                	jal	1332 <printf>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:199
+    
+    if (data_match) {
+    1272:	fed44783          	lbu	a5,-19(s0)
+    1276:	c3a9                	beqz	a5,12b8 <main+0x2fa>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:200
+        printf("All Data Matches Write!\n");
+    1278:	6789                	lui	a5,0x2
+    127a:	c2c78513          	addi	a0,a5,-980 # 1c2c <wr_buf+0x274>
+    127e:	20cd                	jal	1360 <puts>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:202
+        
+        printf("TEST FINISHED\n");
+    1280:	6789                	lui	a5,0x2
+    1282:	c4478513          	addi	a0,a5,-956 # 1c44 <wr_buf+0x28c>
+    1286:	28e9                	jal	1360 <puts>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:205
+
+        // Success Loop: Provide the original "Breathing/Sweeping" effect indefinitely
+        set_led_all_off();
+    1288:	318d                	jal	eea <set_led_all_off>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:206
+        sweep_idx = 0;
+    128a:	fe0407a3          	sb	zero,-17(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:208
+        while(1) {
+            set_led_on(sweep_idx);
+    128e:	fef44783          	lbu	a5,-17(s0)
+    1292:	853e                	mv	a0,a5
+    1294:	3951                	jal	f28 <set_led_on>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:209
+            simple_delay_ms(100); 
+    1296:	06400513          	li	a0,100
+    129a:	3919                	jal	eb0 <simple_delay_ms>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:210
+            set_led_all_off();
+    129c:	31b9                	jal	eea <set_led_all_off>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:212
+            
+            sweep_idx++;
+    129e:	fef44783          	lbu	a5,-17(s0)
+    12a2:	0785                	addi	a5,a5,1
+    12a4:	fef407a3          	sb	a5,-17(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:213
+            if (sweep_idx >= 8) {
+    12a8:	fef44703          	lbu	a4,-17(s0)
+    12ac:	479d                	li	a5,7
+    12ae:	fee7f0e3          	bgeu	a5,a4,128e <main+0x2d0>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:214
+                sweep_idx = 0;
+    12b2:	fe0407a3          	sb	zero,-17(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:208
+            set_led_on(sweep_idx);
+    12b6:	bfe1                	j	128e <main+0x2d0>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:218
+            }
+        }
+    } else {
+        printf("Data mismatch error!\n");
+    12b8:	6789                	lui	a5,0x2
+    12ba:	c5478513          	addi	a0,a5,-940 # 1c54 <wr_buf+0x29c>
+    12be:	204d                	jal	1360 <puts>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:221 (discriminator 1)
+        // Error Loop: Blink LED 6 continuously if data verfication failed
+        while(1) {
+            set_led_all_off();
+    12c0:	312d                	jal	eea <set_led_all_off>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:222 (discriminator 1)
+            set_led_on(6);
+    12c2:	4519                	li	a0,6
+    12c4:	3195                	jal	f28 <set_led_on>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:223 (discriminator 1)
+            simple_delay_ms(500); 
+    12c6:	1f400513          	li	a0,500
+    12ca:	36dd                	jal	eb0 <simple_delay_ms>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:224 (discriminator 1)
+            set_led_all_off();
+    12cc:	3939                	jal	eea <set_led_all_off>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:225 (discriminator 1)
+            simple_delay_ms(500); 
+    12ce:	1f400513          	li	a0,500
+    12d2:	3ef9                	jal	eb0 <simple_delay_ms>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/main.c:221 (discriminator 1)
+            set_led_all_off();
+    12d4:	b7f5                	j	12c0 <main+0x302>
+
+000012d6 <delayCycle>:
+delayCycle():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/utils.c:75
+}
+
+#else
+
+void delayCycle(uint32_t cycle)
+{
+    12d6:	7179                	addi	sp,sp,-48
+    12d8:	d622                	sw	s0,44(sp)
+    12da:	1800                	addi	s0,sp,48
+    12dc:	fca42e23          	sw	a0,-36(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/utils.c:78
+    if (!RTL_SIM)
+    {
+    	volatile uint32_t count = cycle;
+    12e0:	fdc42783          	lw	a5,-36(s0)
+    12e4:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/utils.c:79
+    	count *= CYCLE_HZ;
+    12e8:	fec42703          	lw	a4,-20(s0)
+    12ec:	6789                	lui	a5,0x2
+    12ee:	08d78793          	addi	a5,a5,141 # 208d <_bss_end+0x189>
+    12f2:	02f707b3          	mul	a5,a4,a5
+    12f6:	fef42623          	sw	a5,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/utils.c:81
+
+    	while(count--)
+    12fa:	a011                	j	12fe <delayCycle+0x28>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/utils.c:82
+    		continue;
+    12fc:	0001                	nop
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/utils.c:81
+    	while(count--)
+    12fe:	fec42783          	lw	a5,-20(s0)
+    1302:	fff78713          	addi	a4,a5,-1
+    1306:	fee42623          	sw	a4,-20(s0)
+    130a:	fbed                	bnez	a5,12fc <delayCycle+0x26>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/utils.c:88
+    } else
+    {
+    	uint32_t count_sim = 10;
+    	while (count_sim--);
+    }
+}
+    130c:	0001                	nop
+    130e:	0001                	nop
+    1310:	5432                	lw	s0,44(sp)
+    1312:	6145                	addi	sp,sp,48
+    1314:	8082                	ret
+
+00001316 <delayMS>:
+delayMS():
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/utils.c:91
+
+void __attribute__ ((weak)) delayMS(uint32_t ms)
+{
+    1316:	1101                	addi	sp,sp,-32
+    1318:	ce06                	sw	ra,28(sp)
+    131a:	cc22                	sw	s0,24(sp)
+    131c:	1000                	addi	s0,sp,32
+    131e:	fea42623          	sw	a0,-20(s0)
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/utils.c:92
+	delayCycle(ms);
+    1322:	fec42503          	lw	a0,-20(s0)
+    1326:	3f45                	jal	12d6 <delayCycle>
+C:\Users\billzhang\Desktop\I3C_XO5\sw_I3C_XO5\gpi_i3c_led\Debug/../src/utils.c:93
+}
+    1328:	0001                	nop
+    132a:	40f2                	lw	ra,28(sp)
+    132c:	4462                	lw	s0,24(sp)
+    132e:	6105                	addi	sp,sp,32
+    1330:	8082                	ret
+
+00001332 <printf>:
+printf():
+    1332:	7139                	addi	sp,sp,-64
+    1334:	da3e                	sw	a5,52(sp)
+    1336:	6789                	lui	a5,0x2
+    1338:	d22e                	sw	a1,36(sp)
+    133a:	85aa                	mv	a1,a0
+    133c:	9447a503          	lw	a0,-1724(a5) # 1944 <__iob+0x4>
+    1340:	d432                	sw	a2,40(sp)
+    1342:	1050                	addi	a2,sp,36
+    1344:	ce06                	sw	ra,28(sp)
+    1346:	d636                	sw	a3,44(sp)
+    1348:	d83a                	sw	a4,48(sp)
+    134a:	dc42                	sw	a6,56(sp)
+    134c:	de46                	sw	a7,60(sp)
+    134e:	c632                	sw	a2,12(sp)
+    1350:	2069                	jal	13da <vfprintf>
+    1352:	40f2                	lw	ra,28(sp)
+    1354:	6121                	addi	sp,sp,64
+    1356:	8082                	ret
+
+00001358 <putchar>:
+putchar():
+    1358:	6789                	lui	a5,0x2
+    135a:	9447a583          	lw	a1,-1724(a5) # 1944 <__iob+0x4>
+    135e:	a335                	j	188a <fputc>
+
+00001360 <puts>:
+puts():
+    1360:	57a002ef          	jal	t0,18da <__riscv_save_0>
+    1364:	6789                	lui	a5,0x2
+    1366:	9447a583          	lw	a1,-1724(a5) # 1944 <__iob+0x4>
+    136a:	1141                	addi	sp,sp,-16
+    136c:	842a                	mv	s0,a0
+    136e:	0045c783          	lbu	a5,4(a1)
+    1372:	4481                	li	s1,0
+    1374:	8b89                	andi	a5,a5,2
+    1376:	eb91                	bnez	a5,138a <puts+0x2a>
+    1378:	54fd                	li	s1,-1
+    137a:	8526                	mv	a0,s1
+    137c:	0141                	addi	sp,sp,16
+    137e:	a341                	j	18fe <__riscv_restore_0>
+    1380:	c62e                	sw	a1,12(sp)
+    1382:	9782                	jalr	a5
+    1384:	45b2                	lw	a1,12(sp)
+    1386:	c111                	beqz	a0,138a <puts+0x2a>
+    1388:	54fd                	li	s1,-1
+    138a:	00044503          	lbu	a0,0(s0)
+    138e:	0405                	addi	s0,s0,1
+    1390:	459c                	lw	a5,8(a1)
+    1392:	f57d                	bnez	a0,1380 <puts+0x20>
+    1394:	4529                	li	a0,10
+    1396:	9782                	jalr	a5
+    1398:	d16d                	beqz	a0,137a <puts+0x1a>
+    139a:	bff9                	j	1378 <puts+0x18>
+
+0000139c <__ultoa_invert>:
+__ultoa_invert():
+    139c:	20067793          	andi	a5,a2,512
+    13a0:	872a                	mv	a4,a0
+    13a2:	852e                	mv	a0,a1
+    13a4:	02700593          	li	a1,39
+    13a8:	c781                	beqz	a5,13b0 <__ultoa_invert+0x14>
+    13aa:	dff67613          	andi	a2,a2,-513
+    13ae:	459d                	li	a1,7
+    13b0:	4825                	li	a6,9
+    13b2:	86ba                	mv	a3,a4
+    13b4:	02c6f7b3          	remu	a5,a3,a2
+    13b8:	0ff7f793          	zext.b	a5,a5
+    13bc:	02c75733          	divu	a4,a4,a2
+    13c0:	00f87563          	bgeu	a6,a5,13ca <__ultoa_invert+0x2e>
+    13c4:	97ae                	add	a5,a5,a1
+    13c6:	0ff7f793          	zext.b	a5,a5
+    13ca:	0505                	addi	a0,a0,1
+    13cc:	03078793          	addi	a5,a5,48
+    13d0:	fef50fa3          	sb	a5,-1(a0)
+    13d4:	fcc6ffe3          	bgeu	a3,a2,13b2 <__ultoa_invert+0x16>
+    13d8:	8082                	ret
+
+000013da <vfprintf>:
+vfprintf():
+    13da:	4d0002ef          	jal	t0,18aa <__riscv_save_12>
+    13de:	00454783          	lbu	a5,4(a0)
+    13e2:	1101                	addi	sp,sp,-32
+    13e4:	597d                	li	s2,-1
+    13e6:	8b89                	andi	a5,a5,2
+    13e8:	48078263          	beqz	a5,186c <vfprintf+0x492>
+    13ec:	67c1                	lui	a5,0x10
+    13ee:	17fd                	addi	a5,a5,-1
+    13f0:	8aaa                	mv	s5,a0
+    13f2:	8a32                	mv	s4,a2
+    13f4:	4901                	li	s2,0
+    13f6:	01410c13          	addi	s8,sp,20
+    13fa:	6c85                	lui	s9,0x1
+    13fc:	c43e                	sw	a5,8(sp)
+    13fe:	0005c483          	lbu	s1,0(a1)
+    1402:	46048563          	beqz	s1,186c <vfprintf+0x492>
+    1406:	02500793          	li	a5,37
+    140a:	00158b93          	addi	s7,a1,1
+    140e:	00f49863          	bne	s1,a5,141e <vfprintf+0x44>
+    1412:	0015c483          	lbu	s1,1(a1)
+    1416:	00258b93          	addi	s7,a1,2
+    141a:	00f49763          	bne	s1,a5,1428 <vfprintf+0x4e>
+    141e:	0905                	addi	s2,s2,1
+    1420:	85d6                	mv	a1,s5
+    1422:	8526                	mv	a0,s1
+    1424:	219d                	jal	188a <fputc>
+    1426:	a295                	j	158a <vfprintf+0x1b0>
+    1428:	4981                	li	s3,0
+    142a:	4b01                	li	s6,0
+    142c:	4401                	li	s0,0
+    142e:	467d                	li	a2,31
+    1430:	06c00593          	li	a1,108
+    1434:	06800513          	li	a0,104
+    1438:	06a00813          	li	a6,106
+    143c:	07400893          	li	a7,116
+    1440:	4325                	li	t1,9
+    1442:	02a00e13          	li	t3,42
+    1446:	02e00e93          	li	t4,46
+    144a:	4729                	li	a4,10
+    144c:	07f00f13          	li	t5,127
+    1450:	02b00693          	li	a3,43
+    1454:	02d00f93          	li	t6,45
+    1458:	03000293          	li	t0,48
+    145c:	02000393          	li	t2,32
+    1460:	02300d93          	li	s11,35
+    1464:	04866d63          	bltu	a2,s0,14be <vfprintf+0xe4>
+    1468:	04d48063          	beq	s1,a3,14a8 <vfprintf+0xce>
+    146c:	0296e363          	bltu	a3,s1,1492 <vfprintf+0xb8>
+    1470:	02748e63          	beq	s1,t2,14ac <vfprintf+0xd2>
+    1474:	05b48263          	beq	s1,s11,14b8 <vfprintf+0xde>
+    1478:	fd048793          	addi	a5,s1,-48
+    147c:	0ff7f793          	zext.b	a5,a5
+    1480:	04f36c63          	bltu	t1,a5,14d8 <vfprintf+0xfe>
+    1484:	04047493          	andi	s1,s0,64
+    1488:	c0b1                	beqz	s1,14cc <vfprintf+0xf2>
+    148a:	02e989b3          	mul	s3,s3,a4
+    148e:	99be                	add	s3,s3,a5
+    1490:	a039                	j	149e <vfprintf+0xc4>
+    1492:	03f48063          	beq	s1,t6,14b2 <vfprintf+0xd8>
+    1496:	fe5491e3          	bne	s1,t0,1478 <vfprintf+0x9e>
+    149a:	00146413          	ori	s0,s0,1
+    149e:	000bc483          	lbu	s1,0(s7)
+    14a2:	0b85                	addi	s7,s7,1
+    14a4:	f0e1                	bnez	s1,1464 <vfprintf+0x8a>
+    14a6:	a069                	j	1530 <vfprintf+0x156>
+    14a8:	00246413          	ori	s0,s0,2
+    14ac:	00446413          	ori	s0,s0,4
+    14b0:	b7fd                	j	149e <vfprintf+0xc4>
+    14b2:	00846413          	ori	s0,s0,8
+    14b6:	b7e5                	j	149e <vfprintf+0xc4>
+    14b8:	01046413          	ori	s0,s0,16
+    14bc:	b7cd                	j	149e <vfprintf+0xc4>
+    14be:	fa8f7de3          	bgeu	t5,s0,1478 <vfprintf+0x9e>
+    14c2:	04b49763          	bne	s1,a1,1510 <vfprintf+0x136>
+    14c6:	08046413          	ori	s0,s0,128
+    14ca:	bfd1                	j	149e <vfprintf+0xc4>
+    14cc:	02eb0b33          	mul	s6,s6,a4
+    14d0:	02046413          	ori	s0,s0,32
+    14d4:	9b3e                	add	s6,s6,a5
+    14d6:	b7e1                	j	149e <vfprintf+0xc4>
+    14d8:	03c49363          	bne	s1,t3,14fe <vfprintf+0x124>
+    14dc:	04047493          	andi	s1,s0,64
+    14e0:	000a2783          	lw	a5,0(s4)
+    14e4:	0a11                	addi	s4,s4,4
+    14e6:	e4c5                	bnez	s1,158e <vfprintf+0x1b4>
+    14e8:	0007c663          	bltz	a5,14f4 <vfprintf+0x11a>
+    14ec:	02046413          	ori	s0,s0,32
+    14f0:	8b3e                	mv	s6,a5
+    14f2:	b775                	j	149e <vfprintf+0xc4>
+    14f4:	40f00b33          	neg	s6,a5
+    14f8:	02846413          	ori	s0,s0,40
+    14fc:	b74d                	j	149e <vfprintf+0xc4>
+    14fe:	fdd492e3          	bne	s1,t4,14c2 <vfprintf+0xe8>
+    1502:	04047793          	andi	a5,s0,64
+    1506:	36079363          	bnez	a5,186c <vfprintf+0x492>
+    150a:	04046413          	ori	s0,s0,64
+    150e:	bf41                	j	149e <vfprintf+0xc4>
+    1510:	00a49a63          	bne	s1,a0,1524 <vfprintf+0x14a>
+    1514:	10047793          	andi	a5,s0,256
+    1518:	c399                	beqz	a5,151e <vfprintf+0x144>
+    151a:	20046413          	ori	s0,s0,512
+    151e:	10046413          	ori	s0,s0,256
+    1522:	bfb5                	j	149e <vfprintf+0xc4>
+    1524:	0ef4f793          	andi	a5,s1,239
+    1528:	f7078be3          	beq	a5,a6,149e <vfprintf+0xc4>
+    152c:	f71489e3          	beq	s1,a7,149e <vfprintf+0xc4>
+    1530:	0009d763          	bgez	s3,153e <vfprintf+0x164>
+    1534:	fbf47413          	andi	s0,s0,-65
+    1538:	0442                	slli	s0,s0,0x10
+    153a:	8041                	srli	s0,s0,0x10
+    153c:	4981                	li	s3,0
+    153e:	0204e793          	ori	a5,s1,32
+    1542:	f9b78713          	addi	a4,a5,-101 # ff9b <_stack_start+0xd58b>
+    1546:	0ff77713          	zext.b	a4,a4
+    154a:	4689                	li	a3,2
+    154c:	00e6f663          	bgeu	a3,a4,1558 <vfprintf+0x17e>
+    1550:	06100713          	li	a4,97
+    1554:	02e79f63          	bne	a5,a4,1592 <vfprintf+0x1b8>
+    1558:	007a0493          	addi	s1,s4,7
+    155c:	98e1                	andi	s1,s1,-8
+    155e:	6789                	lui	a5,0x2
+    1560:	04a1                	addi	s1,s1,8
+    1562:	4a1d                	li	s4,7
+    1564:	c7478d93          	addi	s11,a5,-908 # 1c74 <wr_buf+0x2bc>
+    1568:	8821                	andi	s0,s0,8
+    156a:	c051                	beqz	s0,15ee <vfprintf+0x214>
+    156c:	414b0b33          	sub	s6,s6,s4
+    1570:	014d8433          	add	s0,s11,s4
+    1574:	088d9063          	bne	s11,s0,15f4 <vfprintf+0x21a>
+    1578:	9952                	add	s2,s2,s4
+    157a:	845a                	mv	s0,s6
+    157c:	2e804263          	bgtz	s0,1860 <vfprintf+0x486>
+    1580:	000b5363          	bgez	s6,1586 <vfprintf+0x1ac>
+    1584:	4b01                	li	s6,0
+    1586:	995a                	add	s2,s2,s6
+    1588:	8a26                	mv	s4,s1
+    158a:	85de                	mv	a1,s7
+    158c:	bd8d                	j	13fe <vfprintf+0x24>
+    158e:	89be                	mv	s3,a5
+    1590:	b739                	j	149e <vfprintf+0xc4>
+    1592:	06300713          	li	a4,99
+    1596:	00e49c63          	bne	s1,a4,15ae <vfprintf+0x1d4>
+    159a:	000a2783          	lw	a5,0(s4)
+    159e:	004a0493          	addi	s1,s4,4
+    15a2:	01410d93          	addi	s11,sp,20
+    15a6:	00f10a23          	sb	a5,20(sp)
+    15aa:	4a05                	li	s4,1
+    15ac:	bf75                	j	1568 <vfprintf+0x18e>
+    15ae:	07300713          	li	a4,115
+    15b2:	04e49763          	bne	s1,a4,1600 <vfprintf+0x226>
+    15b6:	000a2d83          	lw	s11,0(s4)
+    15ba:	004a0493          	addi	s1,s4,4
+    15be:	000d9563          	bnez	s11,15c8 <vfprintf+0x1ee>
+    15c2:	6789                	lui	a5,0x2
+    15c4:	c6c78d93          	addi	s11,a5,-916 # 1c6c <wr_buf+0x2b4>
+    15c8:	04047793          	andi	a5,s0,64
+    15cc:	55fd                	li	a1,-1
+    15ce:	c391                	beqz	a5,15d2 <vfprintf+0x1f8>
+    15d0:	85ce                	mv	a1,s3
+    15d2:	856e                	mv	a0,s11
+    15d4:	2c79                	jal	1872 <strnlen>
+    15d6:	8a2a                	mv	s4,a0
+    15d8:	bf41                	j	1568 <vfprintf+0x18e>
+    15da:	85d6                	mv	a1,s5
+    15dc:	02000513          	li	a0,32
+    15e0:	246d                	jal	188a <fputc>
+    15e2:	1b7d                	addi	s6,s6,-1
+    15e4:	41640933          	sub	s2,s0,s6
+    15e8:	ff6a69e3          	bltu	s4,s6,15da <vfprintf+0x200>
+    15ec:	b741                	j	156c <vfprintf+0x192>
+    15ee:	012b0433          	add	s0,s6,s2
+    15f2:	bfcd                	j	15e4 <vfprintf+0x20a>
+    15f4:	000dc503          	lbu	a0,0(s11)
+    15f8:	85d6                	mv	a1,s5
+    15fa:	0d85                	addi	s11,s11,1
+    15fc:	2479                	jal	188a <fputc>
+    15fe:	bf9d                	j	1574 <vfprintf+0x19a>
+    1600:	06400713          	li	a4,100
+    1604:	00e48663          	beq	s1,a4,1610 <vfprintf+0x236>
+    1608:	06900713          	li	a4,105
+    160c:	04e49e63          	bne	s1,a4,1668 <vfprintf+0x28e>
+    1610:	08047793          	andi	a5,s0,128
+    1614:	000a2503          	lw	a0,0(s4)
+    1618:	004a0493          	addi	s1,s4,4
+    161c:	cb95                	beqz	a5,1650 <vfprintf+0x276>
+    161e:	00055663          	bgez	a0,162a <vfprintf+0x250>
+    1622:	40a00533          	neg	a0,a0
+    1626:	40046413          	ori	s0,s0,1024
+    162a:	fef47793          	andi	a5,s0,-17
+    162e:	01079d13          	slli	s10,a5,0x10
+    1632:	04047413          	andi	s0,s0,64
+    1636:	010d5d13          	srli	s10,s10,0x10
+    163a:	c409                	beqz	s0,1644 <vfprintf+0x26a>
+    163c:	00a9ea33          	or	s4,s3,a0
+    1640:	060a0e63          	beqz	s4,16bc <vfprintf+0x2e2>
+    1644:	4629                	li	a2,10
+    1646:	85e2                	mv	a1,s8
+    1648:	3b91                	jal	139c <__ultoa_invert>
+    164a:	41850a33          	sub	s4,a0,s8
+    164e:	a0bd                	j	16bc <vfprintf+0x2e2>
+    1650:	10047793          	andi	a5,s0,256
+    1654:	d7e9                	beqz	a5,161e <vfprintf+0x244>
+    1656:	20047793          	andi	a5,s0,512
+    165a:	c781                	beqz	a5,1662 <vfprintf+0x288>
+    165c:	0562                	slli	a0,a0,0x18
+    165e:	8561                	srai	a0,a0,0x18
+    1660:	bf7d                	j	161e <vfprintf+0x244>
+    1662:	0542                	slli	a0,a0,0x10
+    1664:	8541                	srai	a0,a0,0x10
+    1666:	bf65                	j	161e <vfprintf+0x244>
+    1668:	07500713          	li	a4,117
+    166c:	10e49263          	bne	s1,a4,1770 <vfprintf+0x396>
+    1670:	983d                	andi	s0,s0,-17
+    1672:	0442                	slli	s0,s0,0x10
+    1674:	8041                	srli	s0,s0,0x10
+    1676:	4629                	li	a2,10
+    1678:	08047793          	andi	a5,s0,128
+    167c:	000a2503          	lw	a0,0(s4)
+    1680:	004a0493          	addi	s1,s4,4
+    1684:	eb91                	bnez	a5,1698 <vfprintf+0x2be>
+    1686:	10047793          	andi	a5,s0,256
+    168a:	c799                	beqz	a5,1698 <vfprintf+0x2be>
+    168c:	20047793          	andi	a5,s0,512
+    1690:	12078863          	beqz	a5,17c0 <vfprintf+0x3e6>
+    1694:	0ff57513          	zext.b	a0,a0
+    1698:	ff947793          	andi	a5,s0,-7
+    169c:	01079d13          	slli	s10,a5,0x10
+    16a0:	04047713          	andi	a4,s0,64
+    16a4:	010d5d13          	srli	s10,s10,0x10
+    16a8:	df59                	beqz	a4,1646 <vfprintf+0x26c>
+    16aa:	00a9e733          	or	a4,s3,a0
+    16ae:	ff41                	bnez	a4,1646 <vfprintf+0x26c>
+    16b0:	9825                	andi	s0,s0,-23
+    16b2:	01041d13          	slli	s10,s0,0x10
+    16b6:	010d5d13          	srli	s10,s10,0x10
+    16ba:	4a01                	li	s4,0
+    16bc:	040d7713          	andi	a4,s10,64
+    16c0:	10070363          	beqz	a4,17c6 <vfprintf+0x3ec>
+    16c4:	ffed7d93          	andi	s11,s10,-2
+    16c8:	0dc2                	slli	s11,s11,0x10
+    16ca:	010ddd93          	srli	s11,s11,0x10
+    16ce:	8452                	mv	s0,s4
+    16d0:	013a5d63          	bge	s4,s3,16ea <vfprintf+0x310>
+    16d4:	6705                	lui	a4,0x1
+    16d6:	00ed7733          	and	a4,s10,a4
+    16da:	844e                	mv	s0,s3
+    16dc:	e719                	bnez	a4,16ea <vfprintf+0x310>
+    16de:	feed7793          	andi	a5,s10,-18
+    16e2:	01079d93          	slli	s11,a5,0x10
+    16e6:	010ddd93          	srli	s11,s11,0x10
+    16ea:	010df793          	andi	a5,s11,16
+    16ee:	0e078763          	beqz	a5,17dc <vfprintf+0x402>
+    16f2:	101c                	addi	a5,sp,32
+    16f4:	97d2                	add	a5,a5,s4
+    16f6:	ff37c703          	lbu	a4,-13(a5)
+    16fa:	03000793          	li	a5,48
+    16fe:	0cf71763          	bne	a4,a5,17cc <vfprintf+0x3f2>
+    1702:	fefdfd93          	andi	s11,s11,-17
+    1706:	0dc2                	slli	s11,s11,0x10
+    1708:	010ddd93          	srli	s11,s11,0x10
+    170c:	008df793          	andi	a5,s11,8
+    1710:	ef89                	bnez	a5,172a <vfprintf+0x350>
+    1712:	001df793          	andi	a5,s11,1
+    1716:	0e078863          	beqz	a5,1806 <vfprintf+0x42c>
+    171a:	89d2                	mv	s3,s4
+    171c:	01645763          	bge	s0,s6,172a <vfprintf+0x350>
+    1720:	408b0433          	sub	s0,s6,s0
+    1724:	014409b3          	add	s3,s0,s4
+    1728:	845a                	mv	s0,s6
+    172a:	010df793          	andi	a5,s11,16
+    172e:	408b0b33          	sub	s6,s6,s0
+    1732:	0e078e63          	beqz	a5,182e <vfprintf+0x454>
+    1736:	85d6                	mv	a1,s5
+    1738:	03000513          	li	a0,48
+    173c:	22b9                	jal	188a <fputc>
+    173e:	00cdd793          	srli	a5,s11,0xc
+    1742:	8b85                	andi	a5,a5,1
+    1744:	e3f9                	bnez	a5,180a <vfprintf+0x430>
+    1746:	0905                	addi	s2,s2,1
+    1748:	844e                	mv	s0,s3
+    174a:	108a4563          	blt	s4,s0,1854 <vfprintf+0x47a>
+    174e:	4781                	li	a5,0
+    1750:	0149c463          	blt	s3,s4,1758 <vfprintf+0x37e>
+    1754:	414987b3          	sub	a5,s3,s4
+    1758:	993e                	add	s2,s2,a5
+    175a:	8452                	mv	s0,s4
+    175c:	e0040ee3          	beqz	s0,1578 <vfprintf+0x19e>
+    1760:	147d                	addi	s0,s0,-1
+    1762:	008c07b3          	add	a5,s8,s0
+    1766:	0007c503          	lbu	a0,0(a5)
+    176a:	85d6                	mv	a1,s5
+    176c:	2a39                	jal	188a <fputc>
+    176e:	b7fd                	j	175c <vfprintf+0x382>
+    1770:	06f00713          	li	a4,111
+    1774:	04e48463          	beq	s1,a4,17bc <vfprintf+0x3e2>
+    1778:	07000713          	li	a4,112
+    177c:	00e49763          	bne	s1,a4,178a <vfprintf+0x3b0>
+    1780:	010c8793          	addi	a5,s9,16 # 1010 <main+0x52>
+    1784:	8c5d                	or	s0,s0,a5
+    1786:	4641                	li	a2,16
+    1788:	bdc5                	j	1678 <vfprintf+0x29e>
+    178a:	07800713          	li	a4,120
+    178e:	02e79163          	bne	a5,a4,17b0 <vfprintf+0x3d6>
+    1792:	05800793          	li	a5,88
+    1796:	00f48463          	beq	s1,a5,179e <vfprintf+0x3c4>
+    179a:	6785                	lui	a5,0x1
+    179c:	b7e5                	j	1784 <vfprintf+0x3aa>
+    179e:	6789                	lui	a5,0x2
+    17a0:	80078793          	addi	a5,a5,-2048 # 1800 <vfprintf+0x426>
+    17a4:	8c5d                	or	s0,s0,a5
+    17a6:	0442                	slli	s0,s0,0x10
+    17a8:	8041                	srli	s0,s0,0x10
+    17aa:	21000613          	li	a2,528
+    17ae:	b5e9                	j	1678 <vfprintf+0x29e>
+    17b0:	85d6                	mv	a1,s5
+    17b2:	02500513          	li	a0,37
+    17b6:	28d1                	jal	188a <fputc>
+    17b8:	0909                	addi	s2,s2,2
+    17ba:	b19d                	j	1420 <vfprintf+0x46>
+    17bc:	4621                	li	a2,8
+    17be:	bd6d                	j	1678 <vfprintf+0x29e>
+    17c0:	47a2                	lw	a5,8(sp)
+    17c2:	8d7d                	and	a0,a0,a5
+    17c4:	bdd1                	j	1698 <vfprintf+0x2be>
+    17c6:	8452                	mv	s0,s4
+    17c8:	8dea                	mv	s11,s10
+    17ca:	b705                	j	16ea <vfprintf+0x310>
+    17cc:	00cdd793          	srli	a5,s11,0xc
+    17d0:	8b85                	andi	a5,a5,1
+    17d2:	e399                	bnez	a5,17d8 <vfprintf+0x3fe>
+    17d4:	0405                	addi	s0,s0,1
+    17d6:	bf1d                	j	170c <vfprintf+0x332>
+    17d8:	0409                	addi	s0,s0,2
+    17da:	bf0d                	j	170c <vfprintf+0x332>
+    17dc:	406df793          	andi	a5,s11,1030
+    17e0:	d795                	beqz	a5,170c <vfprintf+0x332>
+    17e2:	bfcd                	j	17d4 <vfprintf+0x3fa>
+    17e4:	85d6                	mv	a1,s5
+    17e6:	02000513          	li	a0,32
+    17ea:	c63e                	sw	a5,12(sp)
+    17ec:	2879                	jal	188a <fputc>
+    17ee:	47b2                	lw	a5,12(sp)
+    17f0:	0785                	addi	a5,a5,1
+    17f2:	ff67c9e3          	blt	a5,s6,17e4 <vfprintf+0x40a>
+    17f6:	4781                	li	a5,0
+    17f8:	008b4463          	blt	s6,s0,1800 <vfprintf+0x426>
+    17fc:	408b07b3          	sub	a5,s6,s0
+    1800:	993e                	add	s2,s2,a5
+    1802:	943e                	add	s0,s0,a5
+    1804:	b71d                	j	172a <vfprintf+0x350>
+    1806:	87a2                	mv	a5,s0
+    1808:	b7ed                	j	17f2 <vfprintf+0x418>
+    180a:	6785                	lui	a5,0x1
+    180c:	80078793          	addi	a5,a5,-2048 # 800 <i3c_master_daa+0x3e>
+    1810:	00fdfdb3          	and	s11,s11,a5
+    1814:	0dc2                	slli	s11,s11,0x10
+    1816:	010ddd93          	srli	s11,s11,0x10
+    181a:	0909                	addi	s2,s2,2
+    181c:	05800513          	li	a0,88
+    1820:	000d9463          	bnez	s11,1828 <vfprintf+0x44e>
+    1824:	07800513          	li	a0,120
+    1828:	85d6                	mv	a1,s5
+    182a:	2085                	jal	188a <fputc>
+    182c:	bf31                	j	1748 <vfprintf+0x36e>
+    182e:	406df793          	andi	a5,s11,1030
+    1832:	f0078be3          	beqz	a5,1748 <vfprintf+0x36e>
+    1836:	002df793          	andi	a5,s11,2
+    183a:	02000513          	li	a0,32
+    183e:	c399                	beqz	a5,1844 <vfprintf+0x46a>
+    1840:	02b00513          	li	a0,43
+    1844:	400dfd93          	andi	s11,s11,1024
+    1848:	000d8463          	beqz	s11,1850 <vfprintf+0x476>
+    184c:	02d00513          	li	a0,45
+    1850:	0905                	addi	s2,s2,1
+    1852:	bfd9                	j	1828 <vfprintf+0x44e>
+    1854:	85d6                	mv	a1,s5
+    1856:	03000513          	li	a0,48
+    185a:	2805                	jal	188a <fputc>
+    185c:	147d                	addi	s0,s0,-1
+    185e:	b5f5                	j	174a <vfprintf+0x370>
+    1860:	85d6                	mv	a1,s5
+    1862:	02000513          	li	a0,32
+    1866:	2015                	jal	188a <fputc>
+    1868:	147d                	addi	s0,s0,-1
+    186a:	bb09                	j	157c <vfprintf+0x1a2>
+    186c:	854a                	mv	a0,s2
+    186e:	6105                	addi	sp,sp,32
+    1870:	a89d                	j	18e6 <__riscv_restore_12>
+
+00001872 <strnlen>:
+    1872:	95aa                	add	a1,a1,a0
+    1874:	87aa                	mv	a5,a0
+    1876:	00b78563          	beq	a5,a1,1880 <strnlen+0xe>
+    187a:	0007c703          	lbu	a4,0(a5)
+    187e:	e701                	bnez	a4,1886 <strnlen+0x14>
+    1880:	40a78533          	sub	a0,a5,a0
+    1884:	8082                	ret
+    1886:	0785                	addi	a5,a5,1
+    1888:	b7fd                	j	1876 <strnlen+0x4>
+
+0000188a <fputc>:
+    188a:	050002ef          	jal	t0,18da <__riscv_save_0>
+    188e:	0045c703          	lbu	a4,4(a1)
+    1892:	8b09                	andi	a4,a4,2
+    1894:	cb01                	beqz	a4,18a4 <fputc+0x1a>
+    1896:	459c                	lw	a5,8(a1)
+    1898:	842a                	mv	s0,a0
+    189a:	0ff57513          	zext.b	a0,a0
+    189e:	9782                	jalr	a5
+    18a0:	00055363          	bgez	a0,18a6 <fputc+0x1c>
+    18a4:	547d                	li	s0,-1
+    18a6:	8522                	mv	a0,s0
+    18a8:	a899                	j	18fe <__riscv_restore_0>
+
+000018aa <__riscv_save_12>:
+    18aa:	7139                	addi	sp,sp,-64
+    18ac:	4301                	li	t1,0
+    18ae:	c66e                	sw	s11,12(sp)
+    18b0:	a019                	j	18b6 <__riscv_save_10+0x4>
+
+000018b2 <__riscv_save_10>:
+    18b2:	7139                	addi	sp,sp,-64
+    18b4:	5341                	li	t1,-16
+    18b6:	c86a                	sw	s10,16(sp)
+    18b8:	ca66                	sw	s9,20(sp)
+    18ba:	cc62                	sw	s8,24(sp)
+    18bc:	ce5e                	sw	s7,28(sp)
+    18be:	a019                	j	18c4 <__riscv_save_4+0x4>
+
+000018c0 <__riscv_save_4>:
+    18c0:	7139                	addi	sp,sp,-64
+    18c2:	5301                	li	t1,-32
+    18c4:	d05a                	sw	s6,32(sp)
+    18c6:	d256                	sw	s5,36(sp)
+__riscv_save_7():
+    18c8:	d452                	sw	s4,40(sp)
+    18ca:	d64e                	sw	s3,44(sp)
+    18cc:	d84a                	sw	s2,48(sp)
+    18ce:	da26                	sw	s1,52(sp)
+    18d0:	dc22                	sw	s0,56(sp)
+    18d2:	de06                	sw	ra,60(sp)
+    18d4:	40610133          	sub	sp,sp,t1
+    18d8:	8282                	jr	t0
+
+000018da <__riscv_save_0>:
+__riscv_save_1():
+    18da:	1141                	addi	sp,sp,-16
+    18dc:	c04a                	sw	s2,0(sp)
+    18de:	c226                	sw	s1,4(sp)
+    18e0:	c422                	sw	s0,8(sp)
+    18e2:	c606                	sw	ra,12(sp)
+    18e4:	8282                	jr	t0
+
+000018e6 <__riscv_restore_12>:
+__riscv_restore_12():
+    18e6:	4db2                	lw	s11,12(sp)
+    18e8:	0141                	addi	sp,sp,16
+
+000018ea <__riscv_restore_10>:
+    18ea:	4d02                	lw	s10,0(sp)
+    18ec:	4c92                	lw	s9,4(sp)
+    18ee:	4c22                	lw	s8,8(sp)
+    18f0:	4bb2                	lw	s7,12(sp)
+    18f2:	0141                	addi	sp,sp,16
+
+000018f4 <__riscv_restore_4>:
+    18f4:	4b02                	lw	s6,0(sp)
+    18f6:	4a92                	lw	s5,4(sp)
+    18f8:	4a22                	lw	s4,8(sp)
+    18fa:	49b2                	lw	s3,12(sp)
+    18fc:	0141                	addi	sp,sp,16
+
+000018fe <__riscv_restore_0>:
+    18fe:	4902                	lw	s2,0(sp)
+    1900:	4492                	lw	s1,4(sp)
+    1902:	4422                	lw	s0,8(sp)
+    1904:	40b2                	lw	ra,12(sp)
+    1906:	0141                	addi	sp,sp,16
+    1908:	8082                	ret
+	...

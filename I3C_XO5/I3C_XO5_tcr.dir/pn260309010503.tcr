@@ -1,0 +1,146 @@
+#Start recording tcl command: 3/6/2026 17:29:51
+#Project Location: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5; Project name: I3C_XO5
+prj_open "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5.rdf"
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Map -impl impl_1
+prj_run Map -impl impl_1 -forceOne
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+rvl_new_project -stage presyn
+rvl_add_core I3C_XO5_LA0
+rvl_add_trace  {m0_scl_io}
+rvl_add_trace  {m0_sda_io}
+rvl_set_traceoptn SampleClk=pll0_inst/clkop_o
+rvl_add_tu -radix Bin 
+rvl_set_tu -name TU1 -set_sig {m0_scl_io }
+rvl_set_tu -name TU1 -op .FE.
+rvl_add_tu -radix Bin 
+rvl_set_tu -name TU2 -set_sig {m0_sda_io }
+rvl_set_tu -name TU2 -op .RE.
+rvl_set_tu -name TU2 -val 1
+rvl_set_tu -name TU1 -op ==
+rvl_add_te
+rvl_set_te -expression {TU1 & TU2} TE1
+rvl_save_project -overwrite C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5.rvl
+prj_add_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl"
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+rvl_del_trace {m0_scl_io m0_sda_io}
+rvl_add_trace  {i3c_m_inst/lscc_i3c_controller_inst/ext_io_sda_o}
+rvl_add_trace  {i3c_m_inst/lscc_i3c_controller_inst/ext_io_scl_o}
+rvl_set_tu -name TU1 -set_sig {i3c_m_inst/lscc_i3c_controller_inst/ext_io_scl_o }
+rvl_set_tu -name TU2 -set_sig {i3c_m_inst/lscc_i3c_controller_inst/ext_io_sda_o }
+rvl_save_project -overwrite C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5.rvl
+prj_run Synthesis -impl impl_1 -task PostSynReveal -forceAll
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run Synthesis -impl impl_1 -forceOne
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_remove_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl"
+prj_add_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl"
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_disable_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl"
+rvl_close_project
+rvl_open_project C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+prj_remove_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl"
+rvl_close_project -force
+rvl_new_project -stage presyn
+rvl_add_core I3C_XO5_LA0
+rvl_add_trace  {i3c_m_inst/lscc_i3c_controller_inst/ext_io_scl_o}
+rvl_add_trace  {i3c_m_inst/lscc_i3c_controller_inst/ext_io_sda_o}
+rvl_set_traceoptn SampleClk=pll0_inst/clkop_o
+rvl_add_tu -radix Bin 
+rvl_set_tu -name TU1 -set_sig {i3c_m_inst/lscc_i3c_controller_inst/ext_io_scl_o }
+rvl_add_tu -radix Bin 
+rvl_set_tu -name TU2 -set_sig {i3c_m_inst/lscc_i3c_controller_inst/ext_io_sda_o }
+rvl_set_tu -name TU2 -op .FE.
+rvl_set_tu -name TU2 -val 1
+rvl_add_te
+rvl_set_te -expression {TU1 & TU2} TE1
+rvl_save_project -overwrite C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/reveal/I3C_XO5.rvl
+file copy -force -- "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/reveal/I3C_XO5.rvl" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/reveal/I3C_XO5.rvs" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1"
+prj_add_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl"
+rvl_close_project -force
+rvl_open_project C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+rvl_close_project -force
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+rva_new_project -rva "untitled" -cable USB2 -rvl "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/reveal/I3C_XO5.rvl" -dev "1. LFMXO5-25:0x010F7043 (debug enabled)" -port 0 -xcf ""
+prj_add_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/reveal/untitled.rva"
+rva_run
+rva_stop
+rva_set_te -name TE1 -enable off
+rva_set_te -name TE1 -enable on
+rva_close_controller
+rvl_open_project C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+rvl_set_te -expression TU1 TE1
+rvl_add_te
+rvl_set_te -expression TU2 TE2
+rvl_save_project -overwrite C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+rvl_close_project -force
+rvl_open_project C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+prj_run Synthesis -impl impl_1
+rvl_close_project -force
+rvl_open_project C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+rvl_add_tu -radix Bin 
+rvl_set_tu -name TU3 -set_sig {i3c_m_inst/lscc_i3c_controller_inst/rst_n_i }
+rvl_add_tu -radix Bin 
+rvl_set_tu -name TU3 -val 1
+rvl_del_tu TU4
+rvl_add_te
+rvl_set_te -expression TU3 TE3
+rvl_add_tu -radix Bin 
+rvl_set_tu -name TU4 -set_sig {i3c_m_inst/lscc_i3c_controller_inst/ext_io_scl_o }
+rvl_set_tu -name TU4 -val 1
+rvl_add_te
+rvl_set_te -expression TU4 TE4
+rvl_set_trigoptn TriggerOut=on
+rvl_set_trigoptn TriggerOut=off
+rvl_save_project -overwrite C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+rvl_close_project -force
+rvl_open_project C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+rva_new_project -rva "untitled" -cable USB2 -rvl "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/reveal/I3C_XO5.rvl" -dev "1. LFMXO5-25:0x010F7043 (debug enabled)" -port 0 -xcf ""
+prj_add_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/reveal/untitled.rva"
+rva_close_controller
+rva_new_project -rva "untitled" -cable USB2 -rvl "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/reveal/I3C_XO5.rvl" -dev "1. LFMXO5-25:0x010F7043 (debug enabled)" -port 0 -xcf ""
+prj_add_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/reveal/untitled.rva"
+rva_close_controller
+rvl_close_project -force
+rvl_open_project C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+rvl_close_project -force
+#Stop recording: 3/9/2026 01:05:03

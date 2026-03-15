@@ -1,0 +1,55 @@
+<!DOCTYPE ispTLA>
+<ispTLA>
+ <CreationDate>Fri Mar 13 14:37:19 2026</CreationDate>
+ <XCFFileName/>
+ <CableSetting>
+  <IsTRSTConnected val="false"/>
+  <TRSTSetting val="0"/>
+  <IsBSCANConnected val="false"/>
+  <BSCANSetting val="0"/>
+  <CableType val="USB2"/>
+  <PortAddress val="0"/>
+  <PortSetting val="0"/>
+  <TCKDelay val="1"/>
+ </CableSetting>
+ <DeviceCount>1</DeviceCount>
+ <Device>
+  <DeviceIndex>0</DeviceIndex>
+  <DeviceName>1. LFMXO5-25</DeviceName>
+  <DeviceID>0x010F7043 (debug enabled)</DeviceID>
+  <HasIspTRACY>true</HasIspTRACY>
+  <HasJTAG2WB>false</HasJTAG2WB>
+  <SERDES/>
+  <IRBypassLen>8</IRBypassLen>
+  <RVLFileName>I3C_XO5.rvl</RVLFileName>
+  <RVSFileName>I3C_XO5.rvs</RVSFileName>
+  <LACoreCount>1</LACoreCount>
+  <WinUI CoreIndex="0" CoreType="LA">
+   <TraceSigTreeData>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_m_inst/lscc_i3c_controller_inst/scl_i" NodeType="0" PortIndex="17"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_m_inst/lscc_i3c_controller_inst/scl_o" NodeType="0" PortIndex="16"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_m_inst/lscc_i3c_controller_inst/scl_oe" NodeType="0" PortIndex="15"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_m_inst/lscc_i3c_controller_inst/sda_i" NodeType="0" PortIndex="14"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_m_inst/lscc_i3c_controller_inst/sda_o" NodeType="0" PortIndex="13"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_m_inst/lscc_i3c_controller_inst/sda_oe" NodeType="0" PortIndex="12"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_m_inst/lscc_i3c_controller_inst/scl_spu" NodeType="0" PortIndex="11"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_m_inst/lscc_i3c_controller_inst/scl_wpu" NodeType="0" PortIndex="10"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_m_inst/lscc_i3c_controller_inst/sda_spu" NodeType="0" PortIndex="9"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_m_inst/lscc_i3c_controller_inst/sda_wpu" NodeType="0" PortIndex="8"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_s_inst/lscc_i3c_target_inst/scl_i" NodeType="0" PortIndex="7"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_s_inst/lscc_i3c_target_inst/sda_i" NodeType="0" PortIndex="6"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_s_inst/lscc_i3c_target_inst/sda_o" NodeType="0" PortIndex="5"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_s_inst/lscc_i3c_target_inst/sda_oe" NodeType="0" PortIndex="4"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_s_inst/lscc_i3c_target_inst/scl_spu" NodeType="0" PortIndex="3"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_s_inst/lscc_i3c_target_inst/scl_wpu" NodeType="0" PortIndex="2"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_s_inst/lscc_i3c_target_inst/sda_spu" NodeType="0" PortIndex="1"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_s_inst/lscc_i3c_target_inst/sda_wpu" NodeType="0" PortIndex="0"/>
+   </TraceSigTreeData>
+   <TriggerUI PreSelect="1" PreSelectType="0" UserSelect="0" UserSelectPos="0"/>
+   <CoreRun Run="true"/>
+   <CoreWndUIData>
+    <ClockFrequency Frequency="-1.0" Unit="ns"/>
+   </CoreWndUIData>
+  </WinUI>
+ </Device>
+</ispTLA>

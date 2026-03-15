@@ -1,0 +1,10 @@
+#Start recording tcl command: 2/25/2026 06:19:49
+sbp_design open -name I3C_XO5 -path {C:/Users/billzhang/Desktop/I3C_XO5_sim/I3C_XO5/I3C_XO5.sbx}
+sbp_design drc
+sbp_delete {I3C_XO5/osc0_inst_lf_clk_out_o_net} -type net
+sbp_connect_net {I3C_XO5/pll0_inst/clki_i} {I3C_XO5/osc0_inst/hf_clk_out_o}
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5_sim/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5_sim/I3C_XO5/../} -nc
+sbp_design close
+#Stop recording: 2/25/2026 07:04:38

@@ -1,0 +1,9 @@
+-ver "C:/lscc/radiant/2025.2/ip/pmi/pmi_lfmxo5.v"
+-lib pmi -vhd "C:/lscc/radiant/2025.2/ip/pmi/pmi_lfmxo5.vhd"
+-ver "C:/Users/billzhang/Desktop/I3C_XO5/I3C_sim/I3C_target_sim/I3C_target_inst/rtl/I3C_target_inst.v"
+-sdc "C:/Users/billzhang/Desktop/I3C_XO5/I3C_sim/I3C_target_sim/I3C_target_inst/constraints/I3C_target_inst.ldc"
+-sdc "C:/Users/billzhang/Desktop/I3C_XO5/I3C_sim/I3C_target_sim/I3C_target_inst/constraints/constraint.sdc"
+-path "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_sim/I3C_target_sim/I3C_target_inst" "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5"
+-top I3C_target_inst
+-a "LFMXO5"
+-t "LFMXO5-25"

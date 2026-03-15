@@ -1,0 +1,26 @@
+<top name = "I3C_XO5"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+    <clockitem name = "pll0_inst_clkos_o_net"  type = "net" />
+    <clockitem name = "pll0_inst_clkop_o_net"  type = "net" />
+    <clockitem name = "osc0_inst_hf_clk_out_o_net"  type = "net" />
+    <clockitem name = "i3c_s_inst/lscc_i3c_target_inst/sda_i_keep"  type = "net" />
+    <clockitem name = "i3c_s_inst/lscc_i3c_target_inst/scl_i_keep"  type = "net" />
+    <clockitem name = "i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/n389"  type = "net" />
+    <clockitem name = "i3c_m_inst/lscc_i3c_controller_inst/u_i3c_mst/u_packet_to_i3cbus/u_rxfifo/n45"  type = "net" />
+    <clockitem name = "risc_mc_inst/riscvsmall_inst/genblk_Riscv_Dbg_IMC.vex_debug/TCK"  type = "net" />
+    <clockitem name = "i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/gen_fifo_target.u_tx_fifo/n45"  type = "net" />
+    <clockitem name = "risc_mc_inst/riscvsmall_inst/genblk_Riscv_Dbg_IMC.vex_debug/vex_jtag_bridge_i/bscan_DRCK"  type = "net" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 10
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+</top>

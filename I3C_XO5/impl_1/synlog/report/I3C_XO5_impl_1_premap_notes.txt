@@ -1,0 +1,9 @@
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: FX493 |Applying initial value "0" on instance inputArea_target.
+@N: FX493 |Applying initial value "0000" on instance jtag_tap_fsm_state[3:0].
+@N: BN115 :"c:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":756:2:756:10|Removing instance inst_wr_a (in view: work.lscc_ram_dp_true_main_Z98_layer0(verilog)) because it does not drive other instances.
+@N: BN115 :"c:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":771:2:771:10|Removing instance inst_wr_b (in view: work.lscc_ram_dp_true_main_Z98_layer0(verilog)) because it does not drive other instances.
+@N: FX1184 |Applying syn_allowed_resources blockrams=80 on top level netlist I3C_XO5 
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.

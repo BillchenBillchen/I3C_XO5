@@ -1,0 +1,4 @@
+-gui
+-msgset "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/promote.xml"
+
+-g REGISTER_INIT:ON

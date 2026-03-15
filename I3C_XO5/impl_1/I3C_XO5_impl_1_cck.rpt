@@ -1,0 +1,187 @@
+
+Copyright (C) 1994-2025 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: W-2025.03LR-SP1
+Install: C:\lscc\radiant\2025.2\synpbase
+OS: Windows 10 or later
+Hostname: TE9BILL397
+
+Implementation : impl_1
+
+# Written on Fri Mar 13 10:06:57 2026
+
+##### DESIGN INFO #######################################################
+
+Top View:                "I3C_XO5"
+Constraint File(s):      "C:\lscc\radiant\2025.2\scripts\tcl\flow\radiant_synplify_vars.tcl"
+                         "C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\I3C_XO5_impl_1_cpe.ldc"
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 2 issues in 2 out of 3 constraints
+
+
+##### DETAILS ############################################################
+
+
+Clock Summary
+*************
+
+          Start                                                                              Requested     Requested     Clock        Clock                     Clock
+Level     Clock                                                                              Frequency     Period        Type         Group                     Load 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     3547 
+                                                                                                                                                                     
+0 -       pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       200.0 MHz     5.000         inferred     Inferred_clkgroup_0_3     1708 
+                                                                                                                                                                     
+0 -       I3C_XO5|reveal_jtck_inferred_clock                                                 200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     514  
+                                                                                                                                                                     
+0 -       i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i                                200.0 MHz     5.000         inferred     Inferred_clkgroup_0_6     329  
+                                                                                                                                                                     
+0 -       risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bbICH_inferred_clock               200.0 MHz     5.000         inferred     Inferred_clkgroup_0_4     83   
+                                                                                                                                                                     
+0 -       i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i                                200.0 MHz     5.000         inferred     Inferred_clkgroup_0_7     15   
+                                                                                                                                                                     
+0 -       risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bqAaKcoy7LeAHb1_inferred_clock     200.0 MHz     5.000         inferred     Inferred_clkgroup_0_5     9    
+=====================================================================================================================================================================
+
+
+Clock Load Summary
+******************
+
+                                                                                   Clock     Source                                                                                    Clock Pin                                                                                                                                                                                                            Non-clock Pin     Non-clock Pin
+Clock                                                                              Load      Pin                                                                                       Seq Example                                                                                                                                                                                                          Seq Example       Comb Example 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       3547      pll0_inst.lscc_pll_inst.\\gen_no_refclk_mon\.u_PLL.CLKOP(PLL)                             sys_mem_inst.lscc_sys_mem_inst.\\CORE_MEMORY\.genblk1\.u_lscc_mem0.\\intf_AHBL\.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[8\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB     -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                           
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       1708      pll0_inst.lscc_pll_inst.\\gen_no_refclk_mon\.u_PLL.CLKOS(PLL)                             uart0_inst.lscc_uart_inst.u_txmitt.tx_in_shift_s.C                                                                                                                                                                   -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                           
+I3C_XO5|reveal_jtck_inferred_clock                                                 514       reveal_jtaghub_inst.JTCK(JTAGH19)                                                         -                                                                                                                                                                                                                    -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                           
+i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i                                329       i3c_s_inst.lscc_i3c_target_inst.\\gen_en_io_prim\.gen_prim\.u_i3c_scl.PADDI(BB_I3C_A)     -                                                                                                                                                                                                                    -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                           
+risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bbICH_inferred_clock               83        -                                                                                         -                                                                                                                                                                                                                    -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                           
+i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i                                15        i3c_s_inst.lscc_i3c_target_inst.\\gen_en_io_prim\.gen_prim\.u_i3c_sda.PADDI(BB_I3C_A)     -                                                                                                                                                                                                                    -                 -            
+                                                                                                                                                                                                                                                                                                                                                                                                                                           
+risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bqAaKcoy7LeAHb1_inferred_clock     9         -                                                                                         -                                                                                                                                                                                                                    -                 -            
+===========================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Starting                                                                           Ending                                                                             |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                                                             System                                                                             |     5.000            |     No paths         |     No paths         |     No paths                         
+System                                                                             I3C_XO5|reveal_jtck_inferred_clock                                                 |     No paths         |     No paths         |     5.000            |     No paths                         
+System                                                                             pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       |     5.000            |     No paths         |     No paths         |     No paths                         
+System                                                                             pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       |     5.000            |     No paths         |     5.000            |     No paths                         
+System                                                                             risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bqAaKcoy7LeAHb1_inferred_clock     |     5.000            |     No paths         |     5.000            |     No paths                         
+System                                                                             i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i                                |     5.000            |     No paths         |     5.000            |     No paths                         
+System                                                                             i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i                                |     5.000            |     No paths         |     5.000            |     No paths                         
+I3C_XO5|reveal_jtck_inferred_clock                                                 System                                                                             |     No paths         |     No paths         |     No paths         |     5.000                            
+I3C_XO5|reveal_jtck_inferred_clock                                                 I3C_XO5|reveal_jtck_inferred_clock                                                 |     No paths         |     5.000            |     No paths         |     No paths                         
+I3C_XO5|reveal_jtck_inferred_clock                                                 pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       |     No paths         |     No paths         |     No paths         |     Diff grp                         
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       System                                                                             |     5.000            |     No paths         |     No paths         |     No paths                         
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       I3C_XO5|reveal_jtck_inferred_clock                                                 |     No paths         |     No paths         |     Diff grp         |     No paths                         
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       |     5.000            |     No paths         |     No paths         |     No paths                         
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       |     Diff grp         |     No paths         |     No paths         |     No paths                         
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bbICH_inferred_clock               |     Diff grp         |     No paths         |     No paths         |     No paths                         
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       System                                                                             |     5.000            |     No paths         |     No paths         |     5.000                            
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       |     Diff grp         |     No paths         |     No paths         |     Diff grp                         
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       |     5.000            |     5.000            |     2.500            |     2.500                            
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i                                |     Diff grp         |     No paths         |     Diff grp         |     No paths                         
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i                                |     Diff grp         |     No paths         |     Diff grp         |     No paths                         
+risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bbICH_inferred_clock               System                                                                             |     No paths         |     No paths         |     No paths         |     5.000                            
+risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bbICH_inferred_clock               pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       |     Diff grp         |     No paths         |     No paths         |     No paths                         
+risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bbICH_inferred_clock               risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bbICH_inferred_clock               |     5.000            |     No paths         |     2.500            |     No paths                         
+risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bqAaKcoy7LeAHb1_inferred_clock     System                                                                             |     5.000            |     No paths         |     No paths         |     No paths                         
+risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bqAaKcoy7LeAHb1_inferred_clock     risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bbICH_inferred_clock               |     No paths         |     No paths         |     No paths         |     Diff grp                         
+risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bqAaKcoy7LeAHb1_inferred_clock     risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bqAaKcoy7LeAHb1_inferred_clock     |     5.000            |     5.000            |     2.500            |     2.500                            
+i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i                                System                                                                             |     5.000            |     No paths         |     No paths         |     5.000                            
+i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i                                pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       |     Diff grp         |     No paths         |     No paths         |     Diff grp                         
+i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i                                pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       |     Diff grp         |     No paths         |     No paths         |     Diff grp                         
+i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i                                i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i                                |     5.000            |     5.000            |     2.500            |     2.500                            
+i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i                                i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i                                |     Diff grp         |     No paths         |     Diff grp         |     Diff grp                         
+i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i                                pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       |     Diff grp         |     No paths         |     No paths         |     No paths                         
+i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i                                i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i                                |     Diff grp         |     Diff grp         |     Diff grp         |     Diff grp                         
+i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i                                i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i                                |     No paths         |     5.000            |     No paths         |     2.500                            
+=================================================================================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:TCK
+p:TDI
+p:TDO
+p:TMS
+p:led_o[0] (bidir end point)
+p:led_o[0] (bidir start point)
+p:led_o[1] (bidir end point)
+p:led_o[1] (bidir start point)
+p:led_o[2] (bidir end point)
+p:led_o[2] (bidir start point)
+p:led_o[3] (bidir end point)
+p:led_o[3] (bidir start point)
+p:led_o[4] (bidir end point)
+p:led_o[4] (bidir start point)
+p:led_o[5] (bidir end point)
+p:led_o[5] (bidir start point)
+p:led_o[6] (bidir end point)
+p:led_o[6] (bidir start point)
+p:led_o[7] (bidir end point)
+p:led_o[7] (bidir start point)
+p:led_o[8] (bidir end point)
+p:led_o[8] (bidir start point)
+p:m0_scl_io (bidir end point)
+p:m0_scl_io (bidir start point)
+p:m0_sda_io (bidir end point)
+p:m0_sda_io (bidir start point)
+p:risc_inst_timer_timer_irq_o_port
+p:rstn_I
+p:rxd_i
+p:s0_rst_o
+p:s0_scl_io (bidir end point)
+p:s0_scl_io (bidir start point)
+p:s0_sda_io (bidir end point)
+p:s0_sda_io (bidir start point)
+p:txd_o
+
+
+Inapplicable constraints
+************************
+
+create_clock -name osc0_inst_hf_clk_out_o -period 20 [get_pins {osc0_inst/lscc_osc_inst/gen_osca\.u_OSC_A/HFCLKOUT}]
+	@E:MT548:"c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/impl_1/i3c_xo5_impl_1_cpe.ldc":3:0:3:0|Source for clock osc0_inst_hf_clk_out_o not found in netlist.
+create_clock -name osc0_inst_lf_clk_out_o -period 31250 [get_pins {osc0_inst/lscc_osc_inst/gen_osca\.u_OSC_A/LFCLKOUT}]
+	@E:MT548:"c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/impl_1/i3c_xo5_impl_1_cpe.ldc":5:0:5:0|Source for clock osc0_inst_lf_clk_out_o not found in netlist.
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

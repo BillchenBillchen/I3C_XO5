@@ -1,0 +1,39 @@
+<!DOCTYPE ispTLA>
+<ispTLA>
+ <CreationDate>Mon Mar 9 01:23:14 2026</CreationDate>
+ <XCFFileName/>
+ <CableSetting>
+  <IsTRSTConnected val="false"/>
+  <TRSTSetting val="0"/>
+  <IsBSCANConnected val="false"/>
+  <BSCANSetting val="0"/>
+  <CableType val="USB2"/>
+  <PortAddress val="0"/>
+  <PortSetting val="0"/>
+  <TCKDelay val="1"/>
+ </CableSetting>
+ <DeviceCount>1</DeviceCount>
+ <Device>
+  <DeviceIndex>0</DeviceIndex>
+  <DeviceName>1. LFMXO5-25</DeviceName>
+  <DeviceID>0x010F7043 (debug enabled)</DeviceID>
+  <HasIspTRACY>true</HasIspTRACY>
+  <HasJTAG2WB>false</HasJTAG2WB>
+  <SERDES/>
+  <IRBypassLen>8</IRBypassLen>
+  <RVLFileName>I3C_XO5.rvl</RVLFileName>
+  <RVSFileName>I3C_XO5.rvs</RVSFileName>
+  <LACoreCount>1</LACoreCount>
+  <WinUI CoreIndex="0" CoreType="LA">
+   <TraceSigTreeData>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_m_inst/lscc_i3c_controller_inst/ext_io_scl_o" NodeType="0" PortIndex="1"/>
+    <TraceSignal Color="" IsHidden="false" Name="i3c_m_inst/lscc_i3c_controller_inst/ext_io_sda_o" NodeType="0" PortIndex="0"/>
+   </TraceSigTreeData>
+   <TriggerUI PreSelect="1" PreSelectType="0" UserSelect="0" UserSelectPos="0"/>
+   <CoreRun Run="true"/>
+   <CoreWndUIData>
+    <ClockFrequency Frequency="-1.0" Unit="ns"/>
+   </CoreWndUIData>
+  </WinUI>
+ </Device>
+</ispTLA>

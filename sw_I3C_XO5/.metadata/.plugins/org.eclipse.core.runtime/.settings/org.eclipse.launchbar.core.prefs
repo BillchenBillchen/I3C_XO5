@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:gpi_i3c_led.elf,org.eclipse.launchbar.core.descriptorType.default\:gpi_i3c_led
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:gpi_i3c_led.elf/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:gpi_i3c_led.elf/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:gpi_i3c_led/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:gpi_i3c_led/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:riscv_mc_helloworld/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:riscv_mc_helloworld/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

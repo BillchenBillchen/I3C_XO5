@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LatticeIPSummary>
+    <IpInfo IP_Module_Name="i3c_m" IP_Name="I3C Controller" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="3.7.0" Vlnv="latticesemi.com:ip:i3c_controller:3.7.0"/>
+    <IpInfo IP_Module_Name="i3c_s" IP_Name="I3C Target" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="3.7.0" Vlnv="latticesemi.com:ip:i3c_target:3.7.0"/>
+    <IpInfo IP_Module_Name="ahb2apb" IP_Name="AHB Lite to APB Bridge" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.2.0" Vlnv="latticesemi.com:module:ahb_lite_to_apb_bridge:1.2.0"/>
+    <IpInfo IP_Module_Name="pll0" IP_Name="PLL" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.9.1" Vlnv="latticesemi.com:module:pll:1.9.1"/>
+    <IpInfo IP_Module_Name="apb0" IP_Name="APB Interconnect" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.4.0" Vlnv="latticesemi.com:module:apb_interconnect:1.4.0"/>
+    <IpInfo IP_Module_Name="uart0" IP_Name="UART" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.5.0" Vlnv="latticesemi.com:ip:uart:1.5.0"/>
+    <IpInfo IP_Module_Name="osc0" IP_Name="OSC" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.4.0" Vlnv="latticesemi.com:module:osc:1.4.0"/>
+    <IpInfo IP_Module_Name="gpio0" IP_Name="GPIO" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.8.0" Vlnv="latticesemi.com:ip:gpio:1.8.0"/>
+    <IpInfo IP_Module_Name="ahbl" IP_Name="AHB Lite Interconnect" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="1.5.0" Vlnv="latticesemi.com:module:ahb_lite_interconnect:1.5.0"/>
+    <IpInfo IP_Module_Name="risc_mc" IP_Name="RISC-V MC" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="2.8.1" Vlnv="latticesemi.com:ip:riscv_mc:2.8.1"/>
+    <IpInfo IP_Module_Name="sys_mem" IP_Name="System Memory" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="2.5.1" Vlnv="latticesemi.com:ip:system_memory:2.5.1"/>
+    <IpInfo IP_Module_Name="I3C_target_inst" IP_Name="I3C Target" License_Feature="-" License_Status="-" Vendor="latticesemi.com" Version="3.7.0" Vlnv="latticesemi.com:ip:i3c_target:3.7.0"/>
+</LatticeIPSummary>

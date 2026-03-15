@@ -1,0 +1,543 @@
+# Sun Mar  8 01:24:39 2026
+
+
+Copyright (C) 1994-2025 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: W-2025.03LR-SP1
+Install: C:\lscc\radiant\2025.2\synpbase
+OS: Windows 10 or later
+Hostname: TE9BILL397
+
+Implementation : impl_1
+Synopsys Lattice Technology Mapper, Version map202503latsp1, Build 093R, Built Dec  2 2025 10:00:10, @
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 184MB peak: 184MB)
+
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 186MB peak: 201MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 186MB peak: 201MB)
+
+Reading custom part data from path: C:\lscc\radiant\2025.2\synpbase\lib\lattice_custom\radiant_custom_partdata.txt
+
+Start loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 202MB peak: 202MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 204MB peak: 205MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 259MB peak: 259MB)
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 263MB peak: 263MB)
+
+
+Starting area decomp  (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 263MB peak: 264MB)
+
+
+Finished area decomp  (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 266MB peak: 266MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 267MB peak: 267MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 269MB peak: 269MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+NConnInternalConnection caching is on
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 272MB peak: 272MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 272MB peak: 273MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 273MB peak: 273MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 273MB peak: 274MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 273MB peak: 274MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 281MB peak: 282MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:06s		     0.66ns		 440 /       327
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 281MB peak: 282MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 281MB peak: 282MB)
+
+
+Starting CDBProcessSetClockGroups... (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 282MB peak: 282MB)
+
+
+Finished with CDBProcessSetClockGroups (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 282MB peak: 282MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 227MB peak: 282MB)
+
+Writing Analyst data base C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\synwork\reveal_coretop_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 283MB peak: 283MB)
+
+Writing Verilog Simulation files
+
+Writing scf file... (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 285MB peak: 285MB)
+
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 285MB peak: 286MB)
+
+
+Finished Writing Netlists (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 285MB peak: 286MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 281MB peak: 286MB)
+
+@W: MT420 |Found inferred clock reveal_coretop|jtck with period 5.00ns. Please declare a user-defined clock on port jtck.
+@W: MT420 |Found inferred clock reveal_coretop|clk[0] with period 5.00ns. Please declare a user-defined clock on port clk[0].
+
+
+##### START OF TIMING REPORT #####[
+# Timing report written on Sun Mar  8 01:24:50 2026
+#
+
+
+Top view:               reveal_coretop
+Requested Frequency:    200.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    C:\lscc\radiant\2025.2\scripts\tcl\flow\radiant_synplify_vars.tcl
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: 0.643
+
+                          Requested     Estimated     Requested     Estimated               Clock        Clock                                     
+Starting Clock            Frequency     Frequency     Period        Period        Slack     Type         Group                                     
+---------------------------------------------------------------------------------------------------------------------------------------------------
+reveal_coretop|clk[0]     200.0 MHz     238.4 MHz     5.000         4.195         0.805     inferred     Inferred_clkgroup_1, Inferred_clkgroup_0_2
+reveal_coretop|jtck       200.0 MHz     229.5 MHz     5.000         4.356         0.643     inferred     Inferred_clkgroup_0, Inferred_clkgroup_0_1
+System                    200.0 MHz     928.5 MHz     5.000         1.077         3.923     system       system_clkgroup                           
+===================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                        |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------
+Starting               Ending                 |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------
+System                 reveal_coretop|jtck    |  No paths    -      |  No paths    -      |  5.000       3.923  |  No paths    -    
+System                 reveal_coretop|clk[0]  |  5.000       4.446  |  No paths    -      |  No paths    -      |  No paths    -    
+reveal_coretop|jtck    System                 |  No paths    -      |  No paths    -      |  No paths    -      |  5.000       2.211
+reveal_coretop|jtck    reveal_coretop|jtck    |  No paths    -      |  5.000       0.644  |  No paths    -      |  No paths    -    
+reveal_coretop|jtck    reveal_coretop|clk[0]  |  No paths    -      |  No paths    -      |  No paths    -      |  Diff grp    -    
+reveal_coretop|clk[0]  System                 |  5.000       2.735  |  No paths    -      |  No paths    -      |  No paths    -    
+reveal_coretop|clk[0]  reveal_coretop|jtck    |  No paths    -      |  No paths    -      |  Diff grp    -      |  No paths    -    
+reveal_coretop|clk[0]  reveal_coretop|clk[0]  |  5.000       0.805  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: reveal_coretop|clk[0]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+              Starting                                                                    Arrival          
+Instance      Reference                 Type        Pin     Net                           Time        Slack
+              Clock                                                                                        
+-----------------------------------------------------------------------------------------------------------
+encrypted     reveal_coretop|clk[0]     FD1P3DX     Q       u66Hae3oxv                    0.888       0.805
+encrypted     reveal_coretop|clk[0]     FD1P3DX     Q       b8dvsIedgk9mBmfHwv4Hxcxhn     0.798       0.895
+encrypted     reveal_coretop|clk[0]     FD1P3DX     Q       b8dvsIedgk9mBmfHwv4Hxcxm3     0.798       0.895
+encrypted     reveal_coretop|clk[0]     FD1P3DX     Q       b8dvsIedgk9mBmfHwv4HxcxrJ     0.798       0.895
+encrypted     reveal_coretop|clk[0]     FD1P3DX     Q       b8dvsIedgk9mBmfHwv4Hxcxxn     0.798       0.895
+encrypted     reveal_coretop|clk[0]     FD1P3DX     Q       b8dvsIedgk9mBmfHwv4Hxcx23     0.798       0.895
+encrypted     reveal_coretop|clk[0]     FD1P3DX     Q       b8dvsIedgk9mBmfHwv4Hxcx7J     0.798       0.895
+encrypted     reveal_coretop|clk[0]     FD1P3DX     Q       b8dvsIedgk9mBmfHwv4HxcxDn     0.798       1.418
+encrypted     reveal_coretop|clk[0]     FD1P3DX     Q       b8dvsIedgk9mBmfHwv4HxcxI3     0.798       1.418
+encrypted     reveal_coretop|clk[0]     FD1P3DX     Q       8HGg98s                       0.923       1.844
+===========================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+              Starting                                                                        Required          
+Instance      Reference                 Type        Pin     Net                               Time         Slack
+              Clock                                                                                             
+----------------------------------------------------------------------------------------------------------------
+encrypted     reveal_coretop|clk[0]     FD1P3DX     D       ba4xq0fKorbqwd4hLdILeCzfnhI3      5.144        0.805
+encrypted     reveal_coretop|clk[0]     FD1P3DX     D       jfAznBqqLz2uaG4v2ocwyc7Hxn        5.144        0.805
+encrypted     reveal_coretop|clk[0]     FD1P3DX     D       f2242maydB46ltt6mCdadt47az3m3     5.144        0.805
+encrypted     reveal_coretop|clk[0]     FD1P3DX     D       ba4xq0fKorbqwd4hLdILeCzfnh7J      5.144        0.864
+encrypted     reveal_coretop|clk[0]     FD1P3DX     D       ba4xq0fKorbqwd4hLdILeCzfnhDn      5.144        0.864
+encrypted     reveal_coretop|clk[0]     FD1P3DX     D       jfAznBqqLz2uaG4v2ocwyc7Hm3        5.144        0.864
+encrypted     reveal_coretop|clk[0]     FD1P3DX     D       jfAznBqqLz2uaG4v2ocwyc7HrJ        5.144        0.864
+encrypted     reveal_coretop|clk[0]     FD1P3DX     D       f2242maydB46ltt6mCdadt47az3bJ     5.144        0.864
+encrypted     reveal_coretop|clk[0]     FD1P3DX     D       f2242maydB46ltt6mCdadt47az3hn     5.144        0.864
+encrypted     reveal_coretop|clk[0]     FD1P3DX     D       ba4xq0fKorbqwd4hLdILeCzfnhxn      5.144        0.923
+================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            -0.144
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.144
+
+    - Propagation time:                      4.339
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.805
+
+    Number of logic level(s):                8
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            reveal_coretop|clk[0] [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            reveal_coretop|clk[0] [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of    
+Name                                       Type        Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+encrypted                                  FD1P3DX     Q        Out     0.888     0.888 r     -         
+u66Hae3oxv                                 Net         -        -       -         -           6         
+encrypted                                  LUT4        A        In      0.000     0.888 r     -         
+encrypted                                  LUT4        Z        Out     0.523     1.411 f     -         
+bisc3lsgeKLFmdIy24bE6owFlFDaax9tCj7LHA     Net         -        -       -         -           1         
+encrypted                                  LUT4        C        In      0.000     1.411 f     -         
+encrypted                                  LUT4        Z        Out     0.633     2.044 f     -         
+bLgwtqj2otoA3s4fyo7f4yu13b0DaEcAtws        Net         -        -       -         -           4         
+encrypted                                  LUT4        C        In      0.000     2.044 f     -         
+encrypted                                  LUT4        Z        Out     0.728     2.772 f     -         
+qoEdtDHxcj                                 Net         -        -       -         -           25        
+encrypted                                  CCU2        A1       In      0.000     2.772 f     -         
+encrypted                                  CCU2        COUT     Out     0.784     3.555 r     -         
+2Dtibmup35aFzm0da05wtmxfhgwbDn             Net         -        -       -         -           1         
+encrypted                                  CCU2        CIN      In      0.000     3.555 r     -         
+encrypted                                  CCU2        COUT     Out     0.059     3.615 r     -         
+2Dtibmup35aFzm0da05wtmxfhgwcbJ             Net         -        -       -         -           1         
+encrypted                                  CCU2        CIN      In      0.000     3.615 r     -         
+encrypted                                  CCU2        COUT     Out     0.059     3.674 r     -         
+2Dtibmup35aFzm0da05wtmxfhgwcm3             Net         -        -       -         -           1         
+encrypted                                  CCU2        CIN      In      0.000     3.674 r     -         
+encrypted                                  CCU2        COUT     Out     0.059     3.732 r     -         
+2Dtibmup35aFzm0da05wtmxfhgwcxn             Net         -        -       -         -           1         
+encrypted                                  CCU2        CIN      In      0.000     3.732 r     -         
+encrypted                                  CCU2        S0       Out     0.607     4.339 r     -         
+ba4xq0fKorbqwd4hLdILeCzfnhI3               Net         -        -       -         -           1         
+encrypted                                  FD1P3DX     D        In      0.000     4.339 r     -         
+========================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: reveal_coretop|jtck
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+              Starting                                                          Arrival          
+Instance      Reference               Type        Pin     Net                   Time        Slack
+              Clock                                                                              
+-------------------------------------------------------------------------------------------------
+encrypted     reveal_coretop|jtck     FD1P3DX     Q       JrykuKumiJldlLyI3     0.798       0.643
+encrypted     reveal_coretop|jtck     FD1P3DX     Q       JrykuKumiJldlLzbJ     0.798       0.643
+encrypted     reveal_coretop|jtck     FD1P3DX     Q       JrykuKumiJldlLzhn     0.798       0.643
+encrypted     reveal_coretop|jtck     FD1P3DX     Q       JrykuKumiJldlLzm3     0.798       0.643
+encrypted     reveal_coretop|jtck     FD1P3DX     Q       JrykuKumiJldlLzrJ     0.798       0.643
+encrypted     reveal_coretop|jtck     FD1P3DX     Q       JrykuKumiJldlLzxn     0.798       0.643
+encrypted     reveal_coretop|jtck     FD1P3DX     Q       JrykuKumiJldlLz23     0.798       0.643
+encrypted     reveal_coretop|jtck     FD1P3DX     Q       JrykuKumiJldlLz7J     0.798       0.643
+encrypted     reveal_coretop|jtck     FD1P3DX     Q       JrykuKumiJldlLzDn     0.798       0.643
+encrypted     reveal_coretop|jtck     FD1P3DX     Q       JrykuKumiJldlLzI3     0.798       0.643
+=================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+              Starting                                                                      Required          
+Instance      Reference               Type        Pin     Net                               Time         Slack
+              Clock                                                                                           
+--------------------------------------------------------------------------------------------------------------
+encrypted     reveal_coretop|jtck     FD1P3DX     D       cLrLye41nb21F68HzDza23            5.144        0.643
+encrypted     reveal_coretop|jtck     FD1P3DX     D       f2242iptfGG54FCF82lLaCyq0t6Dn     5.144        0.694
+encrypted     reveal_coretop|jtck     FD1P3DX     D       cLrLye41nb21F68HzDzarJ            5.144        0.703
+encrypted     reveal_coretop|jtck     FD1P3DX     D       cLrLye41nb21F68HzDzaxn            5.144        0.703
+encrypted     reveal_coretop|jtck     FD1P3DX     D       f2242iptfGG54FCF82lLaCyq0t623     5.144        0.753
+encrypted     reveal_coretop|jtck     FD1P3DX     D       f2242iptfGG54FCF82lLaCyq0t67J     5.144        0.753
+encrypted     reveal_coretop|jtck     FD1P3DX     D       cLrLye41nb21F68HzDzahn            5.144        0.761
+encrypted     reveal_coretop|jtck     FD1P3DX     D       cLrLye41nb21F68HzDzam3            5.144        0.761
+encrypted     reveal_coretop|jtck     FD1P3DX     D       f2242iptfGG54FCF82lLaCyq0t6rJ     5.144        0.812
+encrypted     reveal_coretop|jtck     FD1P3DX     D       f2242iptfGG54FCF82lLaCyq0t6xn     5.144        0.812
+==============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            -0.144
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         5.144
+
+    - Propagation time:                      4.500
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     0.644
+
+    Number of logic level(s):                12
+    Starting point:                          encrypted / Q
+    Ending point:                            encrypted / D
+    The start point is clocked by            reveal_coretop|jtck [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            reveal_coretop|jtck [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                          Type        Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+encrypted                     FD1P3DX     Q        Out     0.798     0.798 r     -         
+JrykuKumiJldlLyI3             Net         -        -       -         -           2         
+encrypted                     LUT4        A        In      0.000     0.798 r     -         
+encrypted                     LUT4        Z        Out     0.523     1.321 r     -         
+qdwhak1p2bI860tv9w90jbb       Net         -        -       -         -           1         
+encrypted                     LUT4        D        In      0.000     1.321 r     -         
+encrypted                     LUT4        Z        Out     0.668     1.989 r     -         
+1zb21lB                       Net         -        -       -         -           7         
+encrypted                     LUT4        A        In      0.000     1.989 r     -         
+encrypted                     LUT4        Z        Out     0.708     2.697 r     -         
+dcByHnmsj                     Net         -        -       -         -           17        
+encrypted                     CCU2        A1       In      0.000     2.697 r     -         
+encrypted                     CCU2        COUT     Out     0.784     3.481 r     -         
+pI5Jqy9bvyyu4oz0tziuEI3       Net         -        -       -         -           1         
+encrypted                     CCU2        CIN      In      0.000     3.481 r     -         
+encrypted                     CCU2        COUT     Out     0.059     3.540 r     -         
+pI5Jqy9bvyyu4oz0tziuFhn       Net         -        -       -         -           1         
+encrypted                     CCU2        CIN      In      0.000     3.540 r     -         
+encrypted                     CCU2        COUT     Out     0.059     3.599 r     -         
+pI5Jqy9bvyyu4oz0tziuFrJ       Net         -        -       -         -           1         
+encrypted                     CCU2        CIN      In      0.000     3.599 r     -         
+encrypted                     CCU2        COUT     Out     0.059     3.658 r     -         
+pI5Jqy9bvyyu4oz0tziuF23       Net         -        -       -         -           1         
+encrypted                     CCU2        CIN      In      0.000     3.658 r     -         
+encrypted                     CCU2        COUT     Out     0.059     3.717 r     -         
+pI5Jqy9bvyyu4oz0tziuFDn       Net         -        -       -         -           1         
+encrypted                     CCU2        CIN      In      0.000     3.717 r     -         
+encrypted                     CCU2        COUT     Out     0.059     3.776 r     -         
+bAKkrEdGD888ob3ymEgmLkBrJ     Net         -        -       -         -           1         
+encrypted                     CCU2        CIN      In      0.000     3.776 r     -         
+encrypted                     CCU2        COUT     Out     0.059     3.835 r     -         
+bAKkrEdGD888ob3ymEgmLkB23     Net         -        -       -         -           1         
+encrypted                     CCU2        CIN      In      0.000     3.835 r     -         
+encrypted                     CCU2        COUT     Out     0.059     3.894 r     -         
+bAKkrEdGD888ob3ymEgmLkBDn     Net         -        -       -         -           1         
+encrypted                     CCU2        CIN      In      0.000     3.894 r     -         
+encrypted                     CCU2        S0       Out     0.607     4.500 r     -         
+cLrLye41nb21F68HzDza23        Net         -        -       -         -           1         
+encrypted                     FD1P3DX     D        In      0.000     4.500 r     -         
+===========================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                              Starting                                                              Arrival          
+Instance                                                      Reference     Type        Pin       Net                               Time        Slack
+                                                              Clock                                                                                  
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+i3c_xo5_la0_inst_0.trig_u.tcnt_0_rd_dout_tcnt_RNIGS3AO[2]     System        WIDEFN9     Z         rd_dout_trig[2]                   0.000       3.923
+encrypted                                                     System        WIDEFN9     Z         fh7orf                            0.000       4.446
+encrypted                                                     System        WIDEFN9     Z         fh7orf                            0.000       4.446
+encrypted                                                     System        WIDEFN9     Z         fh7ori                            0.000       4.446
+encrypted                                                     System        WIDEFN9     Z         fh7ori                            0.000       4.446
+i3c_xo5_la0_inst_0.trig_u.tcnt_0_rd_dout_tcnt_RNIEPV9S[1]     System        WIDEFN9     Z         rd_dout_trig[1]                   0.000       4.446
+encrypted                                                     System        WIDEFN9     Z         f2241JtAmafb1gID0twKBpJ6n52mp     0.000       4.446
+encrypted                                                     System        PDP16K      DO[0]     iuA1likF40BrJ                     0.000       4.789
+encrypted                                                     System        PDP16K      DO[0]     iuA1likF40BrJ                     0.000       4.789
+encrypted                                                     System        PDP16K      DO[1]     iuA1likF40Bxn                     0.000       4.789
+=====================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+              Starting                                                      Required          
+Instance      Reference     Type        Pin     Net                         Time         Slack
+              Clock                                                                           
+----------------------------------------------------------------------------------------------
+encrypted     System        FD1P3DX     D       qoEdtAB02F                  4.789        3.923
+encrypted     System        FD1P3DX     D       qoEdtAChcj                  4.789        4.446
+encrypted     System        FD1P3BX     D       pIFCqjGjnI0pGLoAGaqxpIF     4.789        4.446
+encrypted     System        FD1P3DX     D       cd                          4.789        4.446
+encrypted     System        FD1P3DX     D       cd                          4.789        4.446
+encrypted     System        FD1P3DX     D       iuA1likF40BrJ               4.789        4.789
+encrypted     System        FD1P3DX     D       iuA1likF40Bxn               4.789        4.789
+encrypted     System        FD1P3DX     D       iuA1likF40B23               4.789        4.789
+encrypted     System        FD1P3DX     D       fh7oH9                      4.789        4.789
+encrypted     System        FD1P3DX     D       fh7oH8                      4.789        4.789
+==============================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.211
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.789
+
+    - Propagation time:                      0.866
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 3.923
+
+    Number of logic level(s):                2
+    Starting point:                          i3c_xo5_la0_inst_0.trig_u.tcnt_0_rd_dout_tcnt_RNIGS3AO[2] / Z
+    Ending point:                            encrypted / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            reveal_coretop|jtck [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                            Pin      Pin               Arrival     No. of    
+Name                                                          Type        Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------
+i3c_xo5_la0_inst_0.trig_u.tcnt_0_rd_dout_tcnt_RNIGS3AO[2]     WIDEFN9     Z        Out     0.000     0.000 r     -         
+rd_dout_trig[2]                                               Net         -        -       -         -           1         
+encrypted                                                     LUT4        C        In      0.000     0.000 r     -         
+encrypted                                                     LUT4        Z        Out     0.523     0.523 f     -         
+bbIjCvxtucd2C0cBBg30zvdvw4rJ                                  Net         -        -       -         -           1         
+encrypted                                                     LUT4        D        In      0.000     0.523 f     -         
+encrypted                                                     LUT4        Z        Out     0.343     0.866 r     -         
+qoEdtAB02F                                                    Net         -        -       -         -           1         
+encrypted                                                     FD1P3DX     D        In      0.000     0.866 r     -         
+===========================================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 282MB peak: 286MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 282MB peak: 286MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lfmxo5_25-9
+
+Register bits: 327 of 23040 (1%)
+PIC Latch:       0
+I/O cells:       0
+Block Rams : 1 of 80 (1%)
+
+
+Details:
+CCU2:           33
+DPR16X4:        1
+FD1P3BX:        35
+FD1P3DX:        266
+FD1P3IX:        26
+GSR:            1
+INV:            15
+LUT4:           401
+PDP16K:         1
+VHI:            12
+VLO:            12
+WIDEFN9:        10
+
+Resource Usage inside macros:
+Registers: 0
+LUTs: 0
+EBRs: 0
+LRAMs: 0
+DSPs: 0
+Distributed RAMs: 0
+Carry Chains: 0
+Blackboxes: 0
+
+Mapping Summary:
+Total number of registers: 327 + 0 = 327 of 23040 (1.42%)
+Total number of LUTs: 401 + 0 = 401 
+Total number of EBRs: 1 + 0 = 1 of 80 (1.25%)
+Total number of LRAMs: 0 + 0 = 0 of 0 (0.00%)
+Total number of DSPs: 0 + 0 = 0 of 20 (0.00%)
+Total number of Distributed RAMs: 1 + 0 = 1 
+Total number of Carry Chains: 33 + 0 = 33 
+Total number of BlackBoxes: 25 + 0 = 25 
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 133MB peak: 286MB)
+
+Process took 0h:00m:11s realtime, 0h:00m:11s cputime
+# Sun Mar  8 01:24:51 2026
+
+###########################################################]

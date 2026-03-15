@@ -1,0 +1,4 @@
+#Start recording tcl command: 1/28/2026 11:37:09
+sbp_design open -name I3C_XO5 -path {C:/Users/billzhang/Desktop/I3C Controller IP Design Example/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx}
+sbp_design close
+#Stop recording: 1/28/2026 11:42:14

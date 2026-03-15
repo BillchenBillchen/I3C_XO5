@@ -1,0 +1,26 @@
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 2025.2.0.48.0
+Command Line: postsyn -a LFMXO5 -p LFMXO5-25 -t BBG400 -sp 9_High-Performance_1.0V -oc Commercial -w -o reveal_coretop.udb -ldc reveal_coretop.ldc -gui -msgset C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/promote.xml reveal_coretop.vm 
+   Architecture:     LFMXO5
+   Device:           LFMXO5-25
+   Package:          BBG400
+   Performance:      9_High-Performance_1.0V
+Reading input file 'reveal_coretop.vm' ...
+Reading constraint file 'reveal_coretop.ldc' ...
+Removing unused logic ...
+INFO <35811146> - Signal i3c_xo5_la0_inst_0/N_16 undriven or does not drive anything - clipped
+INFO <35811146> - Signal i3c_xo5_la0_inst_0/N_17 undriven or does not drive anything - clipped
+INFO <35811146> - Signal i3c_xo5_la0_inst_0/N_18 undriven or does not drive anything - clipped
+INFO <35811146> - Signal NC0 undriven or does not drive anything - clipped
+INFO <35811146> - Signal GSR_INST.GSROUT undriven or does not drive anything - clipped
+Starting design annotation....
+ 
+Constraint Summary:
+   Total number of constraints: 0
+   Total number of constraints dropped: 0
+ 
+Writing output file 'reveal_coretop.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 1 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 128 MB
+Checksum -- postsyn: 2bebf26874d3efefd7fca514807f20b2def774a9

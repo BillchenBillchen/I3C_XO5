@@ -1,0 +1,20 @@
+<Project Date="2026-03-09" ModBy="Analyzer" Name="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/reveal/I3C_XO5.rvs">
+ <Core Name="I3C_XO5_LA0">
+  <Setting>
+   <Capture NumTrigsCap="1" SamplesPerTrig="256"/>
+   <Event CntEnableRun="0" EventCnt="0"/>
+   <TrigSetting AND_ALL="0" PostTrgSamples="" PreTrgSamples="" TURadix="0"/>
+  </Setting>
+  <Dataset Name="Base">
+   <Trace>
+    <Sig Name="i3c_m_inst/lscc_i3c_controller_inst/ext_io_sda_o"/>
+    <Sig Name="i3c_m_inst/lscc_i3c_controller_inst/ext_io_scl_o"/>
+   </Trace>
+   <Trigger>
+    <TU ID="1" Index="1" Name="TU1" Operator="0" Radix="0" Value="0"/>
+    <TU ID="2" Index="2" Name="TU2" Operator="7" Radix="0" Value="1"/>
+    <TE Enable="1" Expression="TU1 &amp; TU2" ID="1" Index="1" Name="TE1"/>
+   </Trigger>
+  </Dataset>
+ </Core>
+</Project>

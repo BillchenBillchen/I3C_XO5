@@ -1,0 +1,17 @@
+@P:  Worst Slack : 0.643
+@P:  reveal_coretop|clk[0] - Estimated Frequency : 238.4 MHz
+@P:  reveal_coretop|clk[0] - Requested Frequency : 200.0 MHz
+@P:  reveal_coretop|clk[0] - Estimated Period : 4.195
+@P:  reveal_coretop|clk[0] - Requested Period : 5.000
+@P:  reveal_coretop|clk[0] - Slack : 0.805
+@P:  reveal_coretop|jtck - Estimated Frequency : 229.5 MHz
+@P:  reveal_coretop|jtck - Requested Frequency : 200.0 MHz
+@P:  reveal_coretop|jtck - Estimated Period : 4.356
+@P:  reveal_coretop|jtck - Requested Period : 5.000
+@P:  reveal_coretop|jtck - Slack : 0.643
+@P:  System - Estimated Frequency : 928.5 MHz
+@P:  System - Requested Frequency : 200.0 MHz
+@P:  System - Estimated Period : 1.077
+@P:  System - Requested Period : 5.000
+@P:  System - Slack : 3.923
+@P:  CPU Time : 0h:00m:10s

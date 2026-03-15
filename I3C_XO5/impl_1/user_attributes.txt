@@ -1,0 +1,2057 @@
+Object              Attribute           Value               
+
+AxB_i               syn_multstyle       logic               
+A_pipe              syn_ramstyle        registers           
+X_pipe              syn_ramstyle        registers           
+pp_pipe             syn_multstyle       logic               
+AxB_i               syn_multstyle       DSP                 
+A_pipe              syn_ramstyle        registers           
+X_pipe              syn_ramstyle        registers           
+pp_pipe             syn_multstyle       DSP                 
+mem                 syn_ramstyle        distributed         
+mem                 syn_ramstyle        distributed         
+mem                 syn_romstyle        logic               
+mem                 syn_ramstyle        block_ram           
+mem                 syn_ramstyle        registers           
+mem                 syn_ramstyle        distributed         
+full_r              syn_preserve        1                   
+full_mem_r          syn_preserve        1                   
+full_ext_r          syn_preserve        1                   
+empty_r             syn_preserve        1                   
+empty_mem_r         syn_preserve        1                   
+empty_ext_r         syn_preserve        1                   
+wr_addr_r           syn_preserve        1                   
+wr_addr_p1_r        syn_preserve        1                   
+wr_addr_p1cmp_r     syn_preserve        1                   
+wr_cmpaddr_r        syn_preserve        1                   
+waddr_r             syn_preserve        1                   
+wr_cmpaddr_p1_r     syn_preserve        1                   
+rd_addr_r           syn_preserve        1                   
+rd_addr_p1_r        syn_preserve        1                   
+rd_addr_p1cmp_r     syn_preserve        1                   
+rd_cmpaddr_r        syn_preserve        1                   
+raddr_r             syn_preserve        1                   
+rd_cmpaddr_p1_r     syn_preserve        1                   
+full_flag_r         syn_preserve        1                   
+empty_flag_r        syn_preserve        1                   
+wr_flag_addr_r      syn_preserve        1                   
+wr_flag_addr_p1_r   syn_preserve        1                   
+rd_flag_addr_r      syn_preserve        1                   
+rd_flag_addr_p1_r   syn_preserve        1                   
+mem                 syn_ramstyle        block_ram           
+mem                 syn_ramstyle        distributed         
+mem                 syn_ramstyle        registers           
+full_r              syn_preserve        1                   
+full_ext_r          syn_preserve        1                   
+wr_addr_r           syn_preserve        1                   
+wr_addr_arith_r     syn_preserve        1                   
+wr_addr_nxt_c       syn_keep            1                   
+rp_sync1_r          syn_maxfan          1                   
+rp_sync1_r          CDC_Register        2                   
+rp_sync1_r          syn_preserve        1                   
+rp_sync2_r          syn_preserve        1                   
+wr_grey_w           syn_keep            1                   
+wr_grey_sync_r      syn_preserve        1                   
+rp_sync_w           syn_keep            1                   
+full_nxt_c          syn_keep            1                   
+empty_r             syn_preserve        1                   
+empty_ext_r         syn_preserve        1                   
+rd_addr_r           syn_preserve        1                   
+rd_addr_arith_r     syn_preserve        1                   
+rd_addr_nxt_c       syn_keep            1                   
+wp_sync1_r          syn_maxfan          1                   
+wp_sync1_r          CDC_Register        2                   
+wp_sync1_r          syn_preserve        1                   
+wp_sync2_r          syn_preserve        1                   
+rd_grey_w           syn_keep            1                   
+rd_grey_sync_r      syn_preserve        1                   
+wp_sync_w           syn_keep            1                   
+empty_nxt_c         syn_keep            1                   
+af_flag_r           syn_preserve        1                   
+af_flag_ext_r       syn_preserve        1                   
+ae_flag_r           syn_preserve        1                   
+ae_flag_ext_r       syn_preserve        1                   
+distmem             syn_ramstyle        distributed         
+distmem             syn_ramstyle        registers           
+dest_rst            syn_preserve        1                   
+dest_rst_n          syn_preserve        1                   
+lscc_reset_async    LATTICE_IP_MODULE   1                   
+rstn_sync           syn_preserve        1                   
+rst_sync            syn_preserve        1                   
+mem                 syn_ramstyle        block_ram           
+mem                 syn_ramstyle        block_ram           
+mem                 syn_ramstyle        block_ram           
+mem                 syn_ramstyle        block_ram           
+mem                 syn_ramstyle        block_ram           
+mem                 syn_ramstyle        block_ram           
+mem                 syn_ramstyle        block_ram           
+mem                 syn_ramstyle        block_ram           
+mem                 syn_ramstyle        block_ram           
+mem                 syn_ramstyle        distributed         
+JTAG_SOFT           GSR                 DISABLED            
+JTAG_SOFT           .syn_enc_keyindex   SYNPLICITY,SYNP15_1 
+JTAG_SOFT           .syn_enc_contents   `pragma protect version=1
+`pragma protect author="Lattice Semiconductor Corporation"
+`pragma protect author_info="Lattice Semiconductor Corporation"
+`pragma protect encrypt_agent="Radiant encrypt_hdl"
+`pragma protect encrypt_agent_info="Radiant encrypt_hdl Version 1.0"
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Synplicity"
+`pragma protect key_keyname="SYNP15_1"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+mRiWIW1JhwTHN5OeidPZtE6bkI8EoCCtg1CAB7iHuVYLdJmMO6gvwod7TaGeMfYr
+h+7xwcUOc2OyTYQCg7BXn+AThK5nhsaCF3CJ7X4DSDO0SbUpXfaw6AzJWT/9/4Ur
+beJ+YG15gcaLc6BIZbagThzAiIJXGhMUutmdme9oGnOFZLLMNmZJm+GR0aMXA9QM
+t4rnhObd7unWes7fCOqIEvxjuFwj1r2LDyCQ/x56MghnpChn8YVePwAblA7yjEUg
+sK5Yow8rzOScNRcEtZ4/4MTm9mkIAfHgknNkiJBZ6OArv/bLX+3WanZtGTPKpvMb
+6QLCymEUCeFCbTv78DUzJQ==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Synplicity"
+`pragma protect key_keyname="SYNP05_001"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+vua5BYavoCocsPo37a7c+rYVMG2rbuz256CQdb8PRl6xBgsQDzgkOB+cP3lqXW/Y
+KucZ0t1HO8zkPHO9m4ZVYUJRalNAP0SVqyhJZXPUJB9HjHksffC7tcqBzz+7lHh2
+CBZLZRV5XOQcLJQJqhJW0l2K9ZGHSokVzjpudfCOeQBUxf4fWU8KSq/OEH/YJ26/
+TZS03G02ZY/kPWfby7XAh1ogYe/lDkW7qECNGyFhW3EMTcW/pquWcPORfyDNVfGz
+PWLFg4SQTFbjtLOWvrWtfgaq4TLADdoGSA3ls83l189C3YLxsK4UwSu2tNs9nw7k
+rS4oJPFKPrP+ZOu5brKAeQ==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Mentor Graphics Corporation"
+`pragma protect key_keyname="MGC-VERIF-SIM-RSA-2"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+UANjqg0XXn8XZaGzXtzvQIxAeUNnwKAwHtycF4vudCvJf/ZeoT9Z+MvA3vgeNw4s
+PzBB9aTKHm2TQ3aBJZqYYGr4fA7q0m3tTzmhJnAdPRddp8EXuxHYqGapK5VAEwzV
+/HJFwQrm6iHdFMf4ESOXqynXeU64A3F2GI4eCEvjpcZvOdKRSvLUFQ7wF+t4pHOP
+KdJi4QYq0YVvpKbx64t35xZEL7uWPDLEdLfVS8QYIFvnkEkX/JlmsP2qLkEeNtm3
+MMUCufbVYlMJwnxn+uB03OUYlpqBEVuGH1l2e6IDBhCFxM3cFVZ4oK+gCTsP/ocO
+CMJRbA3ibWZC9eHQziEwYw==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=128)
+`pragma protect key_keyowner="Synopsys"
+`pragma protect key_keyname="SNPS-VCS-RSA-1"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+xd+B5cUAYZcv0f60/Ny4sqTkcxcMBCq51u9tUN5iawAxtJSEARpAHMHRIhFmGeu3
+JiApzPXy1LV+ByCoReQpGZUgeVkEup17K5FW3GQTv661S/zf0jnpr7rivLThoI4H
+R+5zIuFfDmDnNjcYnQzEMbVZQtu1P5pF9C7nRGGMW/4=
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Aldec"
+`pragma protect key_keyname="ALDEC15_001"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+W+hGpKddB5CDg11sdcRwfZuBj/bHEu0zNbWFYNZcb15vAA2DsNZGMIVTc2kwkOv8
+Q5/CWgNvjmM7jls8A4lfVa3fyPUnWNe4MTmZjP4f+ZoEPoq1Dd/Yb+CK8MZASatD
+diSVrHTJ4c7W4qGjt5zJ35MAMOHKeGIsGR/Sop+xuSEnVaoPfg07qC6e4Yv0c5OD
+ufDa5cNueKEB++h2dVI46rOWXyV7BQS1FRvi1UuR0NmQw9ENiAa6j/wPO/GmEFxl
+9KaSdrSH5alHNgEqkn/3S4RO5eI5Drohfv2hZM3xKc40gt5Sx4odRv9i5Wiy7NI+
+TzM4RBjnpCjzCpcp+c5seA==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Cadence Design Systems."
+`pragma protect key_keyname="CDS_RSA_KEY_VER_1"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+DIuQsvGrEbhoHfz0NDmooeZL+daE22kCU9XOkya41pe6KJp2BRWM3tH+zuRW0hp0
+6JaB4DJovV2TLNW3F76hlX2d+uJWg3wto4Pjzd7A/beAZr/HD6CCEa59tMgqghvX
+sahB+zXmhKLAd/999m4OJJuFFOCLEUUaMah1lT2F8jhKIPo+Mbbo8rw97MCiVeaD
+ArUZV6ZfSX78b+J02y1et6qudzfgkPgiRIyWzmjHSNya3tQinsI3wErJgXANiwFp
+pCeFbxENIYalYTCDvRs4tqWlI8gdPN5R5YgsiPeq7rVa7RIZv6TvsuGcPlUEB4Nq
+8xn1wUOq//mJcu1iS3MxSA==
+
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=256)
+`pragma protect key_keyowner="Lattice Semiconductor"
+`pragma protect key_keyname="LSCC_RADIANT_2"
+`pragma protect key_method="rsa"
+`pragma protect key_block
+oJe0CCmqlpAfXTikUIj+l3Rj7Tzv3BbDEBKMv0tuFyyeDhN9fHLkM1udJkVY8o4U
+MOWuH/yxS28gRuEO+tpXULx94YEUYV3nWWLkMijTIeTgGhUg7Jm+ddAwE9AJykZM
+N95vqbBmJJtGG/L2/geZ5+dVZtEpXf6Z09nxHWdrb0IjIogsLrRx65tizVeLHqAW
+C64zrpLZxP0O3LljtUUlsDloe2Cwb1gDiNTVQvOljdSQQU8Ok6anvdT1RX1sqH2H
+ABW13YEfS6fRQVIuvcaX3M23tHqzAldglovQpqOHSHQ4U7yKNu7gl3XbWSYFTZZj
+Ei1tJUtlwnitAxcG6hAHbw==
+
+`pragma protect data_method="aes256-cbc"
+`pragma protect encoding=(enctype="base64", line_length=64, bytes=33152)
+`pragma protect data_block
+
+JTAG_SOFT           .syn_enc_key        230,58,49,109,196,207,64,41,107,118,127,73,132,49,210,6,229,14,19,17,103,186,87,225,73,211,53,199,115,200,175,82,30,194,201,102,174,221,102,255,65,103,35,248,53,163,34,246,121,230,250,149,192,178,227,123,214,192,238,106,138,231,37,44,58,97,103,82,179,18,220,155,77,34,233,43,136,218,216,240,11,163,74,88,116,90,35,1,130,23,9,54,105,165,8,52,194,20,181,200,227,107,14,224,170,226,238,38,233,202,118,52,68,108,99,40,161,232,88,78,52,34,12,185,249,216,131,86,163,103,146,0,111,89,195,100,246,187,21,225,11,78,190,36,211,22,62,145,163,166,168,232,159,23,126,8,68,39,251,91,58,102,218,69,154,27,16,86,179,65,225,169,213,162,126,219,140,26,91,5,31,27,90,247,69,6,187,63,182,243,12,133,18,56,245,41,249,148,188,66,212,98,2,226,72,133,220,190,19,13,150,114,133,198,133,126,18,104,230,108,239,42,49,144,103,106,147,164,217,205,153,10,149,224,166,145,124,31,136,154,61,20,194,153,145,81,188,250,174,108,192,114,120,150,188,10,
+JTAG_SOFT           .syn_enc_envelope   version=1
+data_method=aes256-cbc
+output_method=persistent_key
+keyver=3.5
+
+rvl_rst             syn_keep            1                   
+i3c_xo5_la0         GSR                 DISABLED            
+reveal_coretop      syn_hier            hard                
+i3c_m               LATTICE_IP_GENERATED1                   
+i3c_m               ORIG_MODULE_NAME    i3c_m               
+i3c_m_ipgen_lscc_i3c_controllerLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_i3c_mst LATTICE_IP_MODULE   1                   
+tgt_scl_i           syn_preserve        1                   
+tgt_sda_i           syn_preserve        1                   
+tgt_rxfifo_wclk     syn_preserve        1                   
+tgt_txfifo_rclk     syn_preserve        1                   
+scl_src_i           syn_keep            1                   
+clk_i_div2          syn_keep            1                   
+sda_o_dly           syn_keep            1                   
+sda_oe_dly          syn_keep            1                   
+i3c_m_ipgen_packet_to_i3cbusLATTICE_IP_MODULE   1                   
+mux_rxfifo_wclk     syn_keep            1                   
+mux_txfifo_rclk     syn_keep            1                   
+i3c_m_ipgen_packet_decodeLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_packet_deframeLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_i3c_p2s_sysLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_lmmi_slvLATTICE_IP_MODULE   1                   
+lmmi_offset_q       syn_keep            1                   
+int_csr_ss          syn_keep            1                   
+lmmi_wdata_q        syn_keep            1                   
+lmmi_wr_rdn_q       syn_keep            1                   
+lmmi_req_ss         syn_keep            1                   
+lmmi_ack_ss         syn_keep            1                   
+i3c_m_ipgen_i3c_csr LATTICE_IP_MODULE   1                   
+csr_rdat            syn_keep            1                   
+int_csr             syn_keep            1                   
+i3c_m_ipgen_usr_fifo_intfLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_apb2lmmiLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_ahbl2lmmi_singleLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_shregpipe_1in3outLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_i3c_fifoLATTICE_IP_MODULE   1                   
+wclk_w              syn_keep            1                   
+rclk_w              syn_keep            1                   
+memArray            syn_ramstyle        block_ram           
+memArray            syn_ramstyle        distributed         
+i3c_m_ipgen_sc_i3c_tgtLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_sc_i3c_tgt_mainLATTICE_IP_MODULE   1                   
+enter_daa_mode      syn_keep            1                   
+i2c_mode            syn_keep            1                   
+i3c_sm_cur_st       syn_keep            1                   
+daa_sm_cur_st       syn_keep            1                   
+sda_o_reg           syn_keep            1                   
+sda_oe_reg          syn_keep            1                   
+sdr_sda_o           syn_keep            1                   
+sdr_sda_oe          syn_keep            1                   
+i3c_m_ipgen_sc_i3c_tgt_ccc_decodeLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_sc_i3c_tgt_deftgtsLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_sc_i3c_bus_condLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_sc_i3c_tgt_pattern_detectorLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_sc_i3c_tgt_timing_controlLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_sc_i3c_tgt_csrLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_sc_i3c_tgt_hdrLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_sc_lmmi_reg_intfLATTICE_IP_MODULE   1                   
+i3c_m_ipgen_sc_i3c_tgt_ctl_role_handshakeLATTICE_IP_MODULE   1                   
+i3c_s               LATTICE_IP_GENERATED1                   
+i3c_s               ORIG_MODULE_NAME    i3c_s               
+i3c_s_ipgen_lscc_i3c_targetLATTICE_IP_MODULE   1                   
+scl_i               syn_keep            1                   
+sda_i               syn_keep            1                   
+sda_oe              syn_keep            1                   
+sda_o               syn_keep            1                   
+i3c_s_ipgen_i3c_tgt LATTICE_IP_MODULE   1                   
+i3c_s_ipgen_i3c_tgt_mainLATTICE_IP_MODULE   1                   
+enter_daa_mode      syn_keep            1                   
+i2c_mode            syn_keep            1                   
+i3c_sm_cur_st       syn_keep            1                   
+daa_sm_cur_st       syn_keep            1                   
+sda_o_reg           syn_keep            1                   
+sda_oe_reg          syn_keep            1                   
+sdr_sda_o           syn_keep            1                   
+sdr_sda_oe          syn_keep            1                   
+i3c_s_ipgen_i3c_tgt_ccc_decodeLATTICE_IP_MODULE   1                   
+i3c_s_ipgen_i3c_bus_condLATTICE_IP_MODULE   1                   
+i3c_s_ipgen_i3c_tgt_pattern_detectorLATTICE_IP_MODULE   1                   
+i3c_s_ipgen_i3c_tgt_hdrLATTICE_IP_MODULE   1                   
+i3c_s_ipgen_lmmi_reg_intfLATTICE_IP_MODULE   1                   
+i3c_s_ipgen_i3c_tgt_csrLATTICE_IP_MODULE   1                   
+i3c_s_ipgen_i3c_fifoLATTICE_IP_MODULE   1                   
+wclk_w              syn_keep            1                   
+rclk_w              syn_keep            1                   
+memArray            syn_ramstyle        block_ram           
+memArray            syn_ramstyle        distributed         
+i3c_s_ipgen_apb2lmmiLATTICE_IP_MODULE   1                   
+i3c_s_ipgen_ahbl2lmmi_singleLATTICE_IP_MODULE   1                   
+i3c_s_ipgen_i3c_tgt_ctl_role_handshakeLATTICE_IP_MODULE   1                   
+i3c_s_ipgen_usr_fifo_intfLATTICE_IP_MODULE   1                   
+i3c_s_ipgen_i3c_tgt_timing_controlLATTICE_IP_MODULE   1                   
+i3c_s_ipgen_i3c_tgt_deftgtsLATTICE_IP_MODULE   1                   
+ahb2apb             LATTICE_IP_GENERATED1                   
+ahb2apb             ORIG_MODULE_NAME    ahb2apb             
+ahb2apb_ipgen_lscc_ahbl2apbLATTICE_IP_MODULE   1                   
+pll0                LATTICE_IP_GENERATED1                   
+pll0                ORIG_MODULE_NAME    pll0                
+pll0_ipgen_pll_csr  LATTICE_IP_MODULE   1                   
+apb0                LATTICE_IP_GENERATED1                   
+apb0                ORIG_MODULE_NAME    apb0                
+apb0_ipgen_lscc_apb_interconnectLATTICE_IP_MODULE   1                   
+apb0_ipgen_lscc_apb_multiplexorLATTICE_IP_MODULE   1                   
+apb0_ipgen_lscc_apb_arbiterLATTICE_IP_MODULE   1                   
+apb0_ipgen_lscc_apb_prio_arbLATTICE_IP_MODULE   1                   
+apb0_ipgen_lscc_apb_thermo_maskLATTICE_IP_MODULE   1                   
+apb0_ipgen_lscc_apb_arbmuxLATTICE_IP_MODULE   1                   
+apb0_ipgen_lscc_apb_crossbarLATTICE_IP_MODULE   1                   
+apb0_ipgen_lscc_apb_decoderLATTICE_IP_MODULE   1                   
+apb0_ipgen_lscc_apb_busLATTICE_IP_MODULE   1                   
+uart0               LATTICE_IP_GENERATED1                   
+uart0               ORIG_MODULE_NAME    uart0               
+osc0                LATTICE_IP_GENERATED1                   
+osc0                ORIG_MODULE_NAME    osc0                
+gpio0               LATTICE_IP_GENERATED1                   
+gpio0               ORIG_MODULE_NAME    gpio0               
+ahbl                LATTICE_IP_GENERATED1                   
+ahbl                ORIG_MODULE_NAME    ahbl                
+ahbl_ipgen_lscc_ahbl_interconnectLATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_arbiterLATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_prio_arbLATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_input_stageLATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_multiplexorLATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_arbmuxLATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_busLATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_crossbarLATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_decoderLATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_decoder_primLATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_decoder_compLATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_default_slvLATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_fair_arbLATTICE_IP_MODULE   1                   
+risc_mc             LATTICE_IP_GENERATED1                   
+risc_mc             ORIG_MODULE_NAME    risc_mc             
+risc_mc_ipgen_vex_jtag_bridgesyn_hier            hard                
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+RegFilePlugin_regFileram_style           distributed         
+IBusCachedPlugin_predictor_historysyn_ramstyle        block_ram           
+ways_0_tags         syn_ramstyle        block_ram           
+ways_0_data_symbol0 syn_ramstyle        block_ram           
+ways_0_data_symbol1 syn_ramstyle        block_ram           
+ways_0_data_symbol2 syn_ramstyle        block_ram           
+ways_0_data_symbol3 syn_ramstyle        block_ram           
+ways_1_tags         syn_ramstyle        block_ram           
+ways_1_data_symbol0 syn_ramstyle        block_ram           
+ways_1_data_symbol1 syn_ramstyle        block_ram           
+ways_1_data_symbol2 syn_ramstyle        block_ram           
+ways_1_data_symbol3 syn_ramstyle        block_ram           
+lineLoader_address  syn_keep            1                   
+lineLoader_address  syn_keep            1                   
+lineLoader_address  keep                1                   
+lineLoader_wordIndexsyn_keep            1                   
+lineLoader_wordIndexsyn_keep            1                   
+lineLoader_wordIndexkeep                1                   
+banks_0             syn_ramstyle        block_ram           
+banks_1             syn_ramstyle        block_ram           
+ways_0_tags         syn_ramstyle        block_ram           
+ways_1_tags         syn_ramstyle        block_ram           
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+RegFilePlugin_regFileram_style           distributed         
+IBusCachedPlugin_predictor_history_compressedGensyn_ramstyle        block_ram           
+ways_0_tags         syn_ramstyle        block_ram           
+ways_0_data_symbol0 syn_ramstyle        block_ram           
+ways_0_data_symbol1 syn_ramstyle        block_ram           
+ways_0_data_symbol2 syn_ramstyle        block_ram           
+ways_0_data_symbol3 syn_ramstyle        block_ram           
+ways_1_tags         syn_ramstyle        block_ram           
+ways_1_data_symbol0 syn_ramstyle        block_ram           
+ways_1_data_symbol1 syn_ramstyle        block_ram           
+ways_1_data_symbol2 syn_ramstyle        block_ram           
+ways_1_data_symbol3 syn_ramstyle        block_ram           
+lineLoader_address  syn_keep            1                   
+lineLoader_address  syn_keep            1                   
+lineLoader_address  keep                1                   
+lineLoader_wordIndexsyn_keep            1                   
+lineLoader_wordIndexsyn_keep            1                   
+lineLoader_wordIndexkeep                1                   
+banks_0             syn_ramstyle        block_ram           
+banks_1             syn_ramstyle        block_ram           
+ways_0_tags         syn_ramstyle        block_ram           
+ways_1_tags         syn_ramstyle        block_ram           
+execute_RS2         syn_keep            1                   
+execute_RS2         syn_keep            1                   
+execute_RS2         keep                1                   
+execute_RS1         syn_keep            1                   
+execute_RS1         syn_keep            1                   
+execute_RS1         keep                1                   
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+RegFilePlugin_regFileram_style           distributed         
+IBusCachedPlugin_predictor_history_compressedGensyn_ramstyle        block_ram           
+ways_0_tags         syn_ramstyle        block_ram           
+ways_0_data_symbol0 syn_ramstyle        block_ram           
+ways_0_data_symbol1 syn_ramstyle        block_ram           
+ways_0_data_symbol2 syn_ramstyle        block_ram           
+ways_0_data_symbol3 syn_ramstyle        block_ram           
+ways_1_tags         syn_ramstyle        block_ram           
+ways_1_data_symbol0 syn_ramstyle        block_ram           
+ways_1_data_symbol1 syn_ramstyle        block_ram           
+ways_1_data_symbol2 syn_ramstyle        block_ram           
+ways_1_data_symbol3 syn_ramstyle        block_ram           
+lineLoader_address  syn_keep            1                   
+lineLoader_address  syn_keep            1                   
+lineLoader_address  keep                1                   
+lineLoader_wordIndexsyn_keep            1                   
+lineLoader_wordIndexsyn_keep            1                   
+lineLoader_wordIndexkeep                1                   
+banks_0             syn_ramstyle        block_ram           
+banks_1             syn_ramstyle        block_ram           
+ways_0_tags         syn_ramstyle        block_ram           
+ways_1_tags         syn_ramstyle        block_ram           
+execute_RS2         syn_keep            1                   
+execute_RS2         syn_keep            1                   
+execute_RS2         keep                1                   
+execute_RS1         syn_keep            1                   
+execute_RS1         syn_keep            1                   
+execute_RS1         keep                1                   
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+RegFilePlugin_regFileram_style           distributed         
+IBusCachedPlugin_predictor_history_compressedGensyn_ramstyle        block_ram           
+ways_0_tags         syn_ramstyle        block_ram           
+ways_0_data_symbol0 syn_ramstyle        block_ram           
+ways_0_data_symbol1 syn_ramstyle        block_ram           
+ways_0_data_symbol2 syn_ramstyle        block_ram           
+ways_0_data_symbol3 syn_ramstyle        block_ram           
+ways_1_tags         syn_ramstyle        block_ram           
+ways_1_data_symbol0 syn_ramstyle        block_ram           
+ways_1_data_symbol1 syn_ramstyle        block_ram           
+ways_1_data_symbol2 syn_ramstyle        block_ram           
+ways_1_data_symbol3 syn_ramstyle        block_ram           
+lineLoader_address  syn_keep            1                   
+lineLoader_address  syn_keep            1                   
+lineLoader_address  keep                1                   
+lineLoader_wordIndexsyn_keep            1                   
+lineLoader_wordIndexsyn_keep            1                   
+lineLoader_wordIndexkeep                1                   
+banks_0             syn_ramstyle        block_ram           
+banks_1             syn_ramstyle        block_ram           
+ways_0_tags         syn_ramstyle        block_ram           
+ways_1_tags         syn_ramstyle        block_ram           
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+RegFilePlugin_regFileram_style           distributed         
+IBusCachedPlugin_predictor_historysyn_ramstyle        block_ram           
+ways_0_tags         syn_ramstyle        block_ram           
+ways_0_data_symbol0 syn_ramstyle        block_ram           
+ways_0_data_symbol1 syn_ramstyle        block_ram           
+ways_0_data_symbol2 syn_ramstyle        block_ram           
+ways_0_data_symbol3 syn_ramstyle        block_ram           
+ways_1_tags         syn_ramstyle        block_ram           
+ways_1_data_symbol0 syn_ramstyle        block_ram           
+ways_1_data_symbol1 syn_ramstyle        block_ram           
+ways_1_data_symbol2 syn_ramstyle        block_ram           
+ways_1_data_symbol3 syn_ramstyle        block_ram           
+lineLoader_address  syn_keep            1                   
+lineLoader_address  syn_keep            1                   
+lineLoader_address  keep                1                   
+lineLoader_wordIndexsyn_keep            1                   
+lineLoader_wordIndexsyn_keep            1                   
+lineLoader_wordIndexkeep                1                   
+banks_0             syn_ramstyle        block_ram           
+banks_1             syn_ramstyle        block_ram           
+ways_0_tags         syn_ramstyle        block_ram           
+ways_1_tags         syn_ramstyle        block_ram           
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+RegFilePlugin_regFileram_style           distributed         
+IBusCachedPlugin_predictor_history_compressedGensyn_ramstyle        block_ram           
+ways_0_tags         syn_ramstyle        block_ram           
+ways_0_data_symbol0 syn_ramstyle        block_ram           
+ways_0_data_symbol1 syn_ramstyle        block_ram           
+ways_0_data_symbol2 syn_ramstyle        block_ram           
+ways_0_data_symbol3 syn_ramstyle        block_ram           
+ways_1_tags         syn_ramstyle        block_ram           
+ways_1_data_symbol0 syn_ramstyle        block_ram           
+ways_1_data_symbol1 syn_ramstyle        block_ram           
+ways_1_data_symbol2 syn_ramstyle        block_ram           
+ways_1_data_symbol3 syn_ramstyle        block_ram           
+lineLoader_address  syn_keep            1                   
+lineLoader_address  syn_keep            1                   
+lineLoader_address  keep                1                   
+lineLoader_wordIndexsyn_keep            1                   
+lineLoader_wordIndexsyn_keep            1                   
+lineLoader_wordIndexkeep                1                   
+banks_0             syn_ramstyle        block_ram           
+banks_1             syn_ramstyle        block_ram           
+ways_0_tags         syn_ramstyle        block_ram           
+ways_1_tags         syn_ramstyle        block_ram           
+execute_RS2         syn_keep            1                   
+execute_RS2         syn_keep            1                   
+execute_RS2         keep                1                   
+execute_RS1         syn_keep            1                   
+execute_RS1         syn_keep            1                   
+execute_RS1         keep                1                   
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+RegFilePlugin_regFileram_style           distributed         
+IBusCachedPlugin_predictor_history_compressedGensyn_ramstyle        block_ram           
+ways_0_tags         syn_ramstyle        block_ram           
+ways_0_data_symbol0 syn_ramstyle        block_ram           
+ways_0_data_symbol1 syn_ramstyle        block_ram           
+ways_0_data_symbol2 syn_ramstyle        block_ram           
+ways_0_data_symbol3 syn_ramstyle        block_ram           
+ways_1_tags         syn_ramstyle        block_ram           
+ways_1_data_symbol0 syn_ramstyle        block_ram           
+ways_1_data_symbol1 syn_ramstyle        block_ram           
+ways_1_data_symbol2 syn_ramstyle        block_ram           
+ways_1_data_symbol3 syn_ramstyle        block_ram           
+lineLoader_address  syn_keep            1                   
+lineLoader_address  syn_keep            1                   
+lineLoader_address  keep                1                   
+lineLoader_wordIndexsyn_keep            1                   
+lineLoader_wordIndexsyn_keep            1                   
+lineLoader_wordIndexkeep                1                   
+banks_0             syn_ramstyle        block_ram           
+banks_1             syn_ramstyle        block_ram           
+ways_0_tags         syn_ramstyle        block_ram           
+ways_1_tags         syn_ramstyle        block_ram           
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+execute_RS2         syn_keep            1                   
+execute_RS2         syn_keep            1                   
+execute_RS2         keep                1                   
+execute_RS1         syn_keep            1                   
+execute_RS1         syn_keep            1                   
+execute_RS1         keep                1                   
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+execute_RS2         syn_keep            1                   
+execute_RS2         syn_keep            1                   
+execute_RS2         keep                1                   
+execute_RS1         syn_keep            1                   
+execute_RS1         syn_keep            1                   
+execute_RS1         keep                1                   
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+execute_RS2         syn_keep            1                   
+execute_RS2         syn_keep            1                   
+execute_RS2         keep                1                   
+execute_RS1         syn_keep            1                   
+execute_RS1         syn_keep            1                   
+execute_RS1         keep                1                   
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+sys_mem             LATTICE_IP_GENERATED1                   
+sys_mem             ORIG_MODULE_NAME    sys_mem             
+sys_mem_ipgen_lscc_reset_asyncLATTICE_IP_MODULE   1                   
+dest_rst            syn_preserve        1                   
+rstn_sync           syn_preserve        1                   
+memArray            syn_ramstyle        distributed         
+I3C_target_inst     LATTICE_IP_GENERATED1                   
+I3C_target_inst     ORIG_MODULE_NAME    I3C_target_inst     
+I3C_target_inst_ipgen_lscc_i3c_targetLATTICE_IP_MODULE   1                   
+scl_i               syn_keep            1                   
+sda_i               syn_keep            1                   
+sda_oe              syn_keep            1                   
+sda_o               syn_keep            1                   
+I3C_target_inst_ipgen_i3c_tgtLATTICE_IP_MODULE   1                   
+I3C_target_inst_ipgen_i3c_tgt_mainLATTICE_IP_MODULE   1                   
+enter_daa_mode      syn_keep            1                   
+i2c_mode            syn_keep            1                   
+i3c_sm_cur_st       syn_keep            1                   
+daa_sm_cur_st       syn_keep            1                   
+sda_o_reg           syn_keep            1                   
+sda_oe_reg          syn_keep            1                   
+sdr_sda_o           syn_keep            1                   
+sdr_sda_oe          syn_keep            1                   
+I3C_target_inst_ipgen_i3c_tgt_ccc_decodeLATTICE_IP_MODULE   1                   
+I3C_target_inst_ipgen_i3c_bus_condLATTICE_IP_MODULE   1                   
+I3C_target_inst_ipgen_i3c_tgt_pattern_detectorLATTICE_IP_MODULE   1                   
+I3C_target_inst_ipgen_i3c_tgt_hdrLATTICE_IP_MODULE   1                   
+I3C_target_inst_ipgen_lmmi_reg_intfLATTICE_IP_MODULE   1                   
+I3C_target_inst_ipgen_i3c_tgt_csrLATTICE_IP_MODULE   1                   
+I3C_target_inst_ipgen_i3c_fifoLATTICE_IP_MODULE   1                   
+wclk_w              syn_keep            1                   
+rclk_w              syn_keep            1                   
+memArray            syn_ramstyle        block_ram           
+memArray            syn_ramstyle        distributed         
+I3C_target_inst_ipgen_apb2lmmiLATTICE_IP_MODULE   1                   
+I3C_target_inst_ipgen_ahbl2lmmi_singleLATTICE_IP_MODULE   1                   
+I3C_target_inst_ipgen_i3c_tgt_ctl_role_handshakeLATTICE_IP_MODULE   1                   
+I3C_target_inst_ipgen_usr_fifo_intfLATTICE_IP_MODULE   1                   
+I3C_target_inst_ipgen_i3c_tgt_timing_controlLATTICE_IP_MODULE   1                   
+I3C_target_inst_ipgen_i3c_tgt_deftgtsLATTICE_IP_MODULE   1                   
+ahb2apb_uniq_1      LATTICE_IP_GENERATED1                   
+ahb2apb_uniq_1      ORIG_MODULE_NAME    ahb2apb             
+ahbl_uniq_1         LATTICE_IP_GENERATED1                   
+ahbl_uniq_1         ORIG_MODULE_NAME    ahbl                
+apb0_uniq_1         LATTICE_IP_GENERATED1                   
+apb0_uniq_1         ORIG_MODULE_NAME    apb0                
+gpio0_uniq_1        LATTICE_IP_GENERATED1                   
+gpio0_uniq_1        ORIG_MODULE_NAME    gpio0               
+i3c_m_uniq_1        LATTICE_IP_GENERATED1                   
+i3c_m_uniq_1        ORIG_MODULE_NAME    i3c_m               
+i3c_s_uniq_1        LATTICE_IP_GENERATED1                   
+i3c_s_uniq_1        ORIG_MODULE_NAME    i3c_s               
+osc0_uniq_1         LATTICE_IP_GENERATED1                   
+osc0_uniq_1         ORIG_MODULE_NAME    osc0                
+pll0_uniq_1         LATTICE_IP_GENERATED1                   
+pll0_uniq_1         ORIG_MODULE_NAME    pll0                
+clkop_o             RVL_DEBUG_core0_clock0clkop_o_0           
+risc_mc_uniq_1      LATTICE_IP_GENERATED1                   
+risc_mc_uniq_1      ORIG_MODULE_NAME    risc_mc             
+sys_mem_uniq_1      LATTICE_IP_GENERATED1                   
+sys_mem_uniq_1      ORIG_MODULE_NAME    sys_mem             
+uart0_uniq_1        LATTICE_IP_GENERATED1                   
+uart0_uniq_1        ORIG_MODULE_NAME    uart0               
+ahb2apb_ipgen_lscc_ahbl2apb_uniq_1LATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_interconnect_uniq_1LATTICE_IP_MODULE   1                   
+apb0_ipgen_lscc_apb_interconnect_uniq_1LATTICE_IP_MODULE   1                   
+i3c_m_ipgen_lscc_i3c_controller_uniq_1LATTICE_IP_MODULE   1                   
+scl_i               RVL_DEBUG_core0_trigger9scl_i_0             
+scl_i               RVL_DEBUG_core0_trace0scl_i_0             
+scl_i               preserve_signal     1                   
+scl_i               syn_keep            1                   
+sda_i               RVL_DEBUG_core0_trigger6sda_i_0             
+sda_i               RVL_DEBUG_core0_trace3sda_i_0             
+sda_i               preserve_signal     1                   
+sda_i               syn_keep            1                   
+scl_oe              RVL_DEBUG_core0_trigger7scl_oe_0            
+scl_oe              RVL_DEBUG_core0_trace2scl_oe_0            
+scl_oe              preserve_signal     1                   
+scl_oe              syn_keep            1                   
+sda_oe              RVL_DEBUG_core0_trigger4sda_oe_0            
+sda_oe              RVL_DEBUG_core0_trace5sda_oe_0            
+sda_oe              preserve_signal     1                   
+sda_oe              syn_keep            1                   
+scl_o               RVL_DEBUG_core0_trigger8scl_o_0             
+scl_o               RVL_DEBUG_core0_trace1scl_o_0             
+scl_o               preserve_signal     1                   
+scl_o               syn_keep            1                   
+sda_o               RVL_DEBUG_core0_trigger5sda_o_0             
+sda_o               RVL_DEBUG_core0_trace4sda_o_0             
+sda_o               preserve_signal     1                   
+sda_o               syn_keep            1                   
+sda_spu             RVL_DEBUG_core0_trace8sda_spu_0           
+sda_spu             preserve_signal     1                   
+sda_spu             syn_keep            1                   
+sda_wpu             RVL_DEBUG_core0_trace9sda_wpu_0           
+sda_wpu             preserve_signal     1                   
+sda_wpu             syn_keep            1                   
+scl_spu             RVL_DEBUG_core0_trace6scl_spu_0           
+scl_spu             preserve_signal     1                   
+scl_spu             syn_keep            1                   
+scl_wpu             RVL_DEBUG_core0_trace7scl_wpu_0           
+scl_wpu             preserve_signal     1                   
+scl_wpu             syn_keep            1                   
+i3c_s_ipgen_lscc_i3c_target_uniq_1LATTICE_IP_MODULE   1                   
+scl_i               syn_keep            1                   
+scl_i               RVL_DEBUG_core0_trigger3scl_i_0             
+scl_i               RVL_DEBUG_core0_trace10scl_i_0             
+scl_i               preserve_signal     1                   
+scl_i               syn_keep            1                   
+sda_i               syn_keep            1                   
+sda_i               RVL_DEBUG_core0_trigger2sda_i_0             
+sda_i               RVL_DEBUG_core0_trace11sda_i_0             
+sda_i               preserve_signal     1                   
+sda_i               syn_keep            1                   
+sda_oe              syn_keep            1                   
+sda_oe              RVL_DEBUG_core0_trigger0sda_oe_0            
+sda_oe              RVL_DEBUG_core0_trace13sda_oe_0            
+sda_oe              preserve_signal     1                   
+sda_oe              syn_keep            1                   
+sda_o               syn_keep            1                   
+sda_o               RVL_DEBUG_core0_trigger1sda_o_0             
+sda_o               RVL_DEBUG_core0_trace12sda_o_0             
+sda_o               preserve_signal     1                   
+sda_o               syn_keep            1                   
+scl_spu             RVL_DEBUG_core0_trace14scl_spu_0           
+scl_spu             preserve_signal     1                   
+scl_spu             syn_keep            1                   
+scl_wpu             RVL_DEBUG_core0_trace15scl_wpu_0           
+scl_wpu             preserve_signal     1                   
+scl_wpu             syn_keep            1                   
+sda_spu             RVL_DEBUG_core0_trace16sda_spu_0           
+sda_spu             preserve_signal     1                   
+sda_spu             syn_keep            1                   
+sda_wpu             RVL_DEBUG_core0_trace17sda_wpu_0           
+sda_wpu             preserve_signal     1                   
+sda_wpu             syn_keep            1                   
+i3c_m_ipgen_i3c_mst_uniq_1LATTICE_IP_MODULE   1                   
+tgt_scl_i           syn_preserve        1                   
+tgt_sda_i           syn_preserve        1                   
+tgt_rxfifo_wclk     syn_preserve        1                   
+tgt_txfifo_rclk     syn_preserve        1                   
+scl_src_i           syn_keep            1                   
+i3c_s_ipgen_i3c_tgt_uniq_1LATTICE_IP_MODULE   1                   
+i3c_m_ipgen_packet_to_i3cbus_uniq_1LATTICE_IP_MODULE   1                   
+mux_rxfifo_wclk     syn_keep            1                   
+mux_txfifo_rclk     syn_keep            1                   
+i3c_m_ipgen_i3c_p2s_sys_uniq_1LATTICE_IP_MODULE   1                   
+i3c_m_ipgen_lmmi_slv_uniq_1LATTICE_IP_MODULE   1                   
+lmmi_offset_q       syn_keep            1                   
+i3c_m_ipgen_i3c_csr_uniq_1LATTICE_IP_MODULE   1                   
+csr_rdat            syn_keep            1                   
+int_csr             syn_keep            1                   
+i3c_s_ipgen_i3c_tgt_main_uniq_1LATTICE_IP_MODULE   1                   
+enter_daa_mode      syn_keep            1                   
+i2c_mode            syn_keep            1                   
+i3c_sm_cur_st       syn_keep            1                   
+daa_sm_cur_st       syn_keep            1                   
+sda_o_reg           syn_keep            1                   
+sda_oe_reg          syn_keep            1                   
+sdr_sda_o           syn_keep            1                   
+sdr_sda_oe          syn_keep            1                   
+i3c_s_ipgen_lmmi_reg_intf_uniq_1LATTICE_IP_MODULE   1                   
+i3c_s_ipgen_i3c_tgt_csr_uniq_1LATTICE_IP_MODULE   1                   
+i3c_m_ipgen_packet_decode_uniq_1LATTICE_IP_MODULE   1                   
+i3c_m_ipgen_i3c_fifo_uniq_1LATTICE_IP_MODULE   1                   
+wclk_w              syn_keep            1                   
+rclk_w              syn_keep            1                   
+i3c_m_ipgen_i3c_fifo_uniq_2LATTICE_IP_MODULE   1                   
+wclk_w              syn_keep            1                   
+rclk_w              syn_keep            1                   
+i3c_s_ipgen_i3c_bus_cond_uniq_1LATTICE_IP_MODULE   1                   
+i3c_s_ipgen_i3c_tgt_ccc_decode_uniq_1LATTICE_IP_MODULE   1                   
+i3c_s_ipgen_i3c_tgt_pattern_detector_uniq_1LATTICE_IP_MODULE   1                   
+i3c_m_ipgen_packet_deframe_uniq_1LATTICE_IP_MODULE   1                   
+i3c_m_ipgen_shregpipe_1in3out_uniq_1LATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_bus_uniq_1LATTICE_IP_MODULE   1                   
+apb0_ipgen_lscc_apb_bus_uniq_1LATTICE_IP_MODULE   1                   
+i3c_m_ipgen_apb2lmmi_uniq_1LATTICE_IP_MODULE   1                   
+i3c_s_ipgen_apb2lmmi_uniq_1LATTICE_IP_MODULE   1                   
+execute_RS2         syn_keep            1                   
+execute_RS2         syn_keep            1                   
+execute_RS2         keep                1                   
+execute_RS1         syn_keep            1                   
+execute_RS1         syn_keep            1                   
+execute_RS1         keep                1                   
+RegFilePlugin_regFilesyn_ramstyle        block_ram           
+ahbl_ipgen_lscc_ahbl_decoder_uniq_1LATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_multiplexor_uniq_1LATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_default_slv_uniq_1LATTICE_IP_MODULE   1                   
+apb0_ipgen_lscc_apb_decoder_uniq_1LATTICE_IP_MODULE   1                   
+apb0_ipgen_lscc_apb_multiplexor_uniq_1LATTICE_IP_MODULE   1                   
+risc_mc_ipgen_vex_jtag_bridge_uniq_1syn_hier            hard                
+\gen_multistage.gen_fiforeg.memArray syn_ramstyle        distributed         
+\gen_multistage.gen_fiforeg.memArray syn_ramstyle        distributed         
+i3c_s_ipgen_i3c_fifo_uniq_1LATTICE_IP_MODULE   1                   
+wclk_w              syn_keep            1                   
+rclk_w              syn_keep            1                   
+i3c_s_ipgen_i3c_fifo_uniq_2LATTICE_IP_MODULE   1                   
+wclk_w              syn_keep            1                   
+rclk_w              syn_keep            1                   
+i3c_s_ipgen_i3c_tgt_timing_control_uniq_1LATTICE_IP_MODULE   1                   
+\gen_multistage.gen_fiforeg.memArray syn_ramstyle        distributed         
+\gen_multistage.gen_fiforeg.memArray syn_ramstyle        distributed         
+\gen_multistage.gen_fiforeg.memArray syn_ramstyle        distributed         
+\gen_multistage.gen_fiforeg.memArray syn_ramstyle        distributed         
+ahbl_ipgen_lscc_ahbl_decoder_prim_uniq_1LATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_decoder_prim_uniq_2LATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_decoder_comp_uniq_1LATTICE_IP_MODULE   1                   
+ahbl_ipgen_lscc_ahbl_decoder_comp_uniq_2LATTICE_IP_MODULE   1                   
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input A enable      
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input A reset       
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input clock enable  
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input register reset
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULT18X36           \user               Yes                 
+MULT18X36           \infer              Yes                 
+MULT18X36           \desc               18X36 multiplier with optional input/output register
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input clock enable  
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input clock enable  
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input register reset
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULT36X36           \user               Yes                 
+MULT36X36           \infer              Yes                 
+MULT36X36           \desc               36X36 multiplier with optional input and output registers
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input A clock enable
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input A register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input B clock enable
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input B register reset
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULT9X9             \user               Yes                 
+MULT9X9             \infer              Yes                 
+MULT9X9             \desc               9X9 multiplier with optional input and output registers
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input A clock enable
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input A reset       
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input B clock enable
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input B reset       
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULTADDSUB18X18     \user               Yes                 
+MULTADDSUB18X18     \infer              Yes                 
+MULTADDSUB18X18     \desc               18X18 multiplier and accumulator
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Input clock         
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input clock enable  
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input clock enable  
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input clock enable  
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input register reset
+SIGNED              \pintype            DATA                
+SIGNED              \desc               One SIGNED port for all inputs due to ACC54 HW limitation.
+RSTPIPE             \pintype            RSTDIRECT           
+RSTPIPE             \desc               Output register reset
+CEPIPE              \pintype            ENABLE              
+CEPIPE              \desc               Output clock enable 
+RSTCTRL             \pintype            RSTDIRECT           
+RSTCTRL             \desc               Input control (addsub, m9addsub, signed, and loadc) reset.
+CECTRL              \pintype            ENABLE              
+CECTRL              \desc               Input control (addsub, m9addsub, signed, and loadc) enable.
+RSTCIN              \pintype            RSTDIRECT           
+RSTCIN              \desc               Input carryin reset.
+CECIN               \pintype            ENABLE              
+CECIN               \desc               Input carryin enable.
+LOADC               \pintype            CONTROL             
+LOADC               \desc               1=Load value from C input
+ADDSUB              \pintype            CONTROL             
+ADDSUB              \desc               0=Add, 1=subtract   
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+CIN                 \pintype            DATA                
+CIN                 \desc               Carry in            
+MULTADDSUB18X36     \user               Yes                 
+MULTADDSUB18X36     \infer              Yes                 
+MULTADDSUB18X36     \desc               18X36 multiplier and accumulator
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input A clock enable
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input A register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input B clock enable
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input B register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input C clock enable
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input C register reset
+RSTCTRL             \pintype            RSTDIRECT           
+RSTCTRL             \desc               Input control (addsub, m9addsub, signed, and loadc) reset.
+CECTRL              \pintype            ENABLE              
+CECTRL              \desc               Input control (addsub, m9addsub, signed, and loadc) enable.
+RSTCIN              \pintype            RSTDIRECT           
+RSTCIN              \desc               Input carryin reset.
+CECIN               \pintype            ENABLE              
+CECIN               \desc               Input carryin enable.
+SIGNED              \pintype            DATA                
+SIGNED              \desc               One SIGNED port for all inputs due to ACC54 HW limitation.
+RSTPIPE             \pintype            RSTDIRECT           
+RSTPIPE             \desc               Pipeline register reset
+CEPIPE              \pintype            ENABLE              
+CEPIPE              \desc               Pipeline clock enable
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+LOADC               \pintype            CONTROL             
+LOADC               \desc               1=Load value from input C
+ADDSUB              \pintype            CONTROL             
+ADDSUB              \desc               0=add, 1=subtract   
+CIN                 \pintype            DATA                
+CIN                 \desc               Carry in            
+MULTADDSUB36X36     \user               Yes                 
+MULTADDSUB36X36     \infer              Yes                 
+MULTADDSUB36X36     \desc               36X36 multiplier and accumulator
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input A clock enable
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input A register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input B clock enable
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input B register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input C clock enable
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input C register reset
+RSTCTRL             \pintype            RSTDIRECT           
+RSTCTRL             \desc               Input control (addsub, m9addsub, signed, and loadc) reset.
+CECTRL              \pintype            ENABLE              
+CECTRL              \desc               Input control (addsub, m9addsub, signed, and loadc) enable.
+RSTCIN              \pintype            RSTDIRECT           
+RSTCIN              \desc               Input carryin reset.
+CECIN               \pintype            ENABLE              
+CECIN               \desc               Input carryin enable.
+SIGNED              \pintype            DATA                
+SIGNED              \desc               One SIGNED port for all inputs due to ACC54 HW limitation.
+RSTPIPE             \pintype            RSTDIRECT           
+RSTPIPE             \desc               Pipeline register reset
+CEPIPE              \pintype            ENABLE              
+CEPIPE              \desc               Pipeline clock enable
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+LOADC               \pintype            CONTROL             
+LOADC               \desc               1=Load value from input C
+ADDSUB              \pintype            CONTROL             
+ADDSUB              \desc               0=add, 1=subtract   
+CIN                 \pintype            DATA                
+CIN                 \desc               Carry in            
+MULTPREADD18X18     \user               Yes                 
+MULTPREADD18X18     \infer              Yes                 
+MULTPREADD18X18     \desc               18X18 multiplier with pre-adder
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input clock enable  
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input clock enable  
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input clock enable  
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input register reset
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+SIGNEDC             \pintype            DATA                
+SIGNEDC             \desc               Operand C signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULTPREADD9X9       \user               Yes                 
+MULTPREADD9X9       \infer              Yes                 
+MULTPREADD9X9       \desc               9X9 multiplier with pre-adder
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input clock enable  
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input clock enable  
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input clock enable  
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input register reset
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+SIGNEDC             \pintype            DATA                
+SIGNEDC             \desc               Operand C signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULTADDSUB18X18WIDE \user               Yes                 
+MULTADDSUB18X18WIDE \infer              Yes                 
+MULTADDSUB18X18WIDE \desc               18x18 wide multiply add/sub
+A0                  \pintype            DATA                
+A0                  \desc               Operand A0          
+B0                  \pintype            DATA                
+B0                  \desc               Operand B0          
+A1                  \pintype            DATA                
+A1                  \desc               Operand A1          
+B1                  \pintype            DATA                
+B1                  \desc               Operand B1          
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA0                \pintype            ENABLE              
+CEA0                \desc               Input A0 clock enable
+CEA1                \pintype            ENABLE              
+CEA1                \desc               Input A1 clock enable
+RSTA0               \pintype            RSTDIRECT           
+RSTA0               \desc               Input A0 register reset
+RSTA1               \pintype            RSTDIRECT           
+RSTA1               \desc               Input A1 register reset
+CEB0                \pintype            ENABLE              
+CEB0                \desc               Input B0 clock enable
+CEB1                \pintype            ENABLE              
+CEB1                \desc               Input B1 clock enable
+RSTB0               \pintype            RSTDIRECT           
+RSTB0               \desc               Input B0 register reset
+RSTB1               \pintype            RSTDIRECT           
+RSTB1               \desc               Input B1 register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input C register clock enable
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input C register reset
+RSTCTRL             \pintype            RSTDIRECT           
+RSTCTRL             \desc               Input control (addsub, m9addsub, signed, and loadc) reset.
+CECTRL              \pintype            ENABLE              
+CECTRL              \desc               Input control (addsub, m9addsub, signed, and loadc) enable.
+SIGNED              \pintype            DATA                
+SIGNED              \desc               One SIGNED port for all inputs due to ACC54 HW limitation.
+RSTPIPE             \pintype            RSTDIRECT           
+RSTPIPE             \desc               Pipeline register reset
+CEPIPE              \pintype            ENABLE              
+CEPIPE              \desc               Pipeline clock enable
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output register clock enable
+LOADC               \pintype            CONTROL             
+LOADC               \desc               1=Load value from C input
+ADDSUB              \pintype            CONTROL             
+ADDSUB              \desc               0=add, 1=subtract   
+MULTADDSUB9X9WIDE   \user               Yes                 
+MULTADDSUB9X9WIDE   \infer              Yes                 
+MULTADDSUB9X9WIDE   \desc               9x9 wide multiply add/sub
+A0                  \pintype            DATA                
+A0                  \desc               Operand A0          
+B0                  \pintype            DATA                
+B0                  \desc               Operand B0          
+A1                  \pintype            DATA                
+A1                  \desc               Operand A1          
+B1                  \pintype            DATA                
+B1                  \desc               Operand B1          
+A2                  \pintype            DATA                
+A2                  \desc               Operand A2          
+B2                  \pintype            DATA                
+B2                  \desc               Operand B2          
+A3                  \pintype            DATA                
+A3                  \desc               Operand A3          
+B3                  \pintype            DATA                
+B3                  \desc               Operand B3          
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA0A1              \pintype            ENABLE              
+CEA0A1              \desc               Input A0 and A1 clock enable.
+CEA2A3              \pintype            ENABLE              
+CEA2A3              \desc               Input A2 and A3 clock enable.
+RSTA0A1             \pintype            RSTDIRECT           
+RSTA0A1             \desc               Input A0 and A1 register reset.
+RSTA2A3             \pintype            RSTDIRECT           
+RSTA2A3             \desc               Input A2 and A3 register reset.
+CEB0B1              \pintype            ENABLE              
+CEB0B1              \desc               Input B0 and B1 clock enable.
+CEB2B3              \pintype            ENABLE              
+CEB2B3              \desc               Input B2 and B3 clock enable.
+RSTB0B1             \pintype            RSTDIRECT           
+RSTB0B1             \desc               Input B0 and B1 register reset.
+RSTB2B3             \pintype            RSTDIRECT           
+RSTB2B3             \desc               Input B2 and B3 register reset.
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input C clock enable
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input C register reset
+RSTCTRL             \pintype            RSTDIRECT           
+RSTCTRL             \desc               Input control (addsub, m9addsub, signed, and loadc) reset.
+CECTRL              \pintype            ENABLE              
+CECTRL              \desc               Input control (addsub, m9addsub, signed, and loadc) enable.
+SIGNED              \pintype            DATA                
+SIGNED              \desc               One SIGNED port for all inputs due to ACC54 HW limitation.
+RSTPIPE             \pintype            RSTDIRECT           
+RSTPIPE             \desc               Output register reset
+CEPIPE              \pintype            ENABLE              
+CEPIPE              \desc               Output clock enable 
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output register clock enable
+LOADC               \pintype            CONTROL             
+LOADC               \desc               1=Load value from input C
+ADDSUB              \pintype            CONTROL             
+ADDSUB              \desc               0=add, 1=subtract   
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input A enable      
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input A reset       
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input clock enable  
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input register reset
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULT18X36           \user               Yes                 
+MULT18X36           \infer              Yes                 
+MULT18X36           \desc               18X36 multiplier with optional input/output register
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input clock enable  
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input clock enable  
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input register reset
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULT36X36           \user               Yes                 
+MULT36X36           \infer              Yes                 
+MULT36X36           \desc               36X36 multiplier with optional input and output registers
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input A clock enable
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input A register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input B clock enable
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input B register reset
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULT9X9             \user               Yes                 
+MULT9X9             \infer              Yes                 
+MULT9X9             \desc               9X9 multiplier with optional input and output registers
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input A clock enable
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input A reset       
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input B clock enable
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input B reset       
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULTADDSUB18X18     \user               Yes                 
+MULTADDSUB18X18     \infer              Yes                 
+MULTADDSUB18X18     \desc               18X18 multiplier and accumulator
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Input clock         
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input clock enable  
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input clock enable  
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input clock enable  
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input register reset
+SIGNED              \pintype            DATA                
+SIGNED              \desc               One SIGNED port for all inputs due to ACC54 HW limitation.
+RSTPIPE             \pintype            RSTDIRECT           
+RSTPIPE             \desc               Output register reset
+CEPIPE              \pintype            ENABLE              
+CEPIPE              \desc               Output clock enable 
+RSTCTRL             \pintype            RSTDIRECT           
+RSTCTRL             \desc               Input control (addsub, m9addsub, signed, and loadc) reset.
+CECTRL              \pintype            ENABLE              
+CECTRL              \desc               Input control (addsub, m9addsub, signed, and loadc) enable.
+RSTCIN              \pintype            RSTDIRECT           
+RSTCIN              \desc               Input carryin reset.
+CECIN               \pintype            ENABLE              
+CECIN               \desc               Input carryin enable.
+LOADC               \pintype            CONTROL             
+LOADC               \desc               1=Load value from C input
+ADDSUB              \pintype            CONTROL             
+ADDSUB              \desc               0=Add, 1=subtract   
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+CIN                 \pintype            DATA                
+CIN                 \desc               Carry in            
+MULTADDSUB18X36     \user               Yes                 
+MULTADDSUB18X36     \infer              Yes                 
+MULTADDSUB18X36     \desc               18X36 multiplier and accumulator
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input A clock enable
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input A register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input B clock enable
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input B register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input C clock enable
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input C register reset
+RSTCTRL             \pintype            RSTDIRECT           
+RSTCTRL             \desc               Input control (addsub, m9addsub, signed, and loadc) reset.
+CECTRL              \pintype            ENABLE              
+CECTRL              \desc               Input control (addsub, m9addsub, signed, and loadc) enable.
+RSTCIN              \pintype            RSTDIRECT           
+RSTCIN              \desc               Input carryin reset.
+CECIN               \pintype            ENABLE              
+CECIN               \desc               Input carryin enable.
+SIGNED              \pintype            DATA                
+SIGNED              \desc               One SIGNED port for all inputs due to ACC54 HW limitation.
+RSTPIPE             \pintype            RSTDIRECT           
+RSTPIPE             \desc               Pipeline register reset
+CEPIPE              \pintype            ENABLE              
+CEPIPE              \desc               Pipeline clock enable
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+LOADC               \pintype            CONTROL             
+LOADC               \desc               1=Load value from input C
+ADDSUB              \pintype            CONTROL             
+ADDSUB              \desc               0=add, 1=subtract   
+CIN                 \pintype            DATA                
+CIN                 \desc               Carry in            
+MULTADDSUB36X36     \user               Yes                 
+MULTADDSUB36X36     \infer              Yes                 
+MULTADDSUB36X36     \desc               36X36 multiplier and accumulator
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input A clock enable
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input A register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input B clock enable
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input B register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input C clock enable
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input C register reset
+RSTCTRL             \pintype            RSTDIRECT           
+RSTCTRL             \desc               Input control (addsub, m9addsub, signed, and loadc) reset.
+CECTRL              \pintype            ENABLE              
+CECTRL              \desc               Input control (addsub, m9addsub, signed, and loadc) enable.
+RSTCIN              \pintype            RSTDIRECT           
+RSTCIN              \desc               Input carryin reset.
+CECIN               \pintype            ENABLE              
+CECIN               \desc               Input carryin enable.
+SIGNED              \pintype            DATA                
+SIGNED              \desc               One SIGNED port for all inputs due to ACC54 HW limitation.
+RSTPIPE             \pintype            RSTDIRECT           
+RSTPIPE             \desc               Pipeline register reset
+CEPIPE              \pintype            ENABLE              
+CEPIPE              \desc               Pipeline clock enable
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+LOADC               \pintype            CONTROL             
+LOADC               \desc               1=Load value from input C
+ADDSUB              \pintype            CONTROL             
+ADDSUB              \desc               0=add, 1=subtract   
+CIN                 \pintype            DATA                
+CIN                 \desc               Carry in            
+MULTPREADD18X18     \user               Yes                 
+MULTPREADD18X18     \infer              Yes                 
+MULTPREADD18X18     \desc               18X18 multiplier with pre-adder
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input clock enable  
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input clock enable  
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input clock enable  
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input register reset
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+SIGNEDC             \pintype            DATA                
+SIGNEDC             \desc               Operand C signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULTPREADD9X9       \user               Yes                 
+MULTPREADD9X9       \infer              Yes                 
+MULTPREADD9X9       \desc               9X9 multiplier with pre-adder
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input clock enable  
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input clock enable  
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input clock enable  
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input register reset
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+SIGNEDC             \pintype            DATA                
+SIGNEDC             \desc               Operand C signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULTADDSUB18X18WIDE \user               Yes                 
+MULTADDSUB18X18WIDE \infer              Yes                 
+MULTADDSUB18X18WIDE \desc               18x18 wide multiply add/sub
+A0                  \pintype            DATA                
+A0                  \desc               Operand A0          
+B0                  \pintype            DATA                
+B0                  \desc               Operand B0          
+A1                  \pintype            DATA                
+A1                  \desc               Operand A1          
+B1                  \pintype            DATA                
+B1                  \desc               Operand B1          
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA0                \pintype            ENABLE              
+CEA0                \desc               Input A0 clock enable
+CEA1                \pintype            ENABLE              
+CEA1                \desc               Input A1 clock enable
+RSTA0               \pintype            RSTDIRECT           
+RSTA0               \desc               Input A0 register reset
+RSTA1               \pintype            RSTDIRECT           
+RSTA1               \desc               Input A1 register reset
+CEB0                \pintype            ENABLE              
+CEB0                \desc               Input B0 clock enable
+CEB1                \pintype            ENABLE              
+CEB1                \desc               Input B1 clock enable
+RSTB0               \pintype            RSTDIRECT           
+RSTB0               \desc               Input B0 register reset
+RSTB1               \pintype            RSTDIRECT           
+RSTB1               \desc               Input B1 register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input C register clock enable
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input C register reset
+RSTCTRL             \pintype            RSTDIRECT           
+RSTCTRL             \desc               Input control (addsub, m9addsub, signed, and loadc) reset.
+CECTRL              \pintype            ENABLE              
+CECTRL              \desc               Input control (addsub, m9addsub, signed, and loadc) enable.
+SIGNED              \pintype            DATA                
+SIGNED              \desc               One SIGNED port for all inputs due to ACC54 HW limitation.
+RSTPIPE             \pintype            RSTDIRECT           
+RSTPIPE             \desc               Pipeline register reset
+CEPIPE              \pintype            ENABLE              
+CEPIPE              \desc               Pipeline clock enable
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output register clock enable
+LOADC               \pintype            CONTROL             
+LOADC               \desc               1=Load value from C input
+ADDSUB              \pintype            CONTROL             
+ADDSUB              \desc               0=add, 1=subtract   
+MULTADDSUB9X9WIDE   \user               Yes                 
+MULTADDSUB9X9WIDE   \infer              Yes                 
+MULTADDSUB9X9WIDE   \desc               9x9 wide multiply add/sub
+A0                  \pintype            DATA                
+A0                  \desc               Operand A0          
+B0                  \pintype            DATA                
+B0                  \desc               Operand B0          
+A1                  \pintype            DATA                
+A1                  \desc               Operand A1          
+B1                  \pintype            DATA                
+B1                  \desc               Operand B1          
+A2                  \pintype            DATA                
+A2                  \desc               Operand A2          
+B2                  \pintype            DATA                
+B2                  \desc               Operand B2          
+A3                  \pintype            DATA                
+A3                  \desc               Operand A3          
+B3                  \pintype            DATA                
+B3                  \desc               Operand B3          
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA0A1              \pintype            ENABLE              
+CEA0A1              \desc               Input A0 and A1 clock enable.
+CEA2A3              \pintype            ENABLE              
+CEA2A3              \desc               Input A2 and A3 clock enable.
+RSTA0A1             \pintype            RSTDIRECT           
+RSTA0A1             \desc               Input A0 and A1 register reset.
+RSTA2A3             \pintype            RSTDIRECT           
+RSTA2A3             \desc               Input A2 and A3 register reset.
+CEB0B1              \pintype            ENABLE              
+CEB0B1              \desc               Input B0 and B1 clock enable.
+CEB2B3              \pintype            ENABLE              
+CEB2B3              \desc               Input B2 and B3 clock enable.
+RSTB0B1             \pintype            RSTDIRECT           
+RSTB0B1             \desc               Input B0 and B1 register reset.
+RSTB2B3             \pintype            RSTDIRECT           
+RSTB2B3             \desc               Input B2 and B3 register reset.
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input C clock enable
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input C register reset
+RSTCTRL             \pintype            RSTDIRECT           
+RSTCTRL             \desc               Input control (addsub, m9addsub, signed, and loadc) reset.
+CECTRL              \pintype            ENABLE              
+CECTRL              \desc               Input control (addsub, m9addsub, signed, and loadc) enable.
+SIGNED              \pintype            DATA                
+SIGNED              \desc               One SIGNED port for all inputs due to ACC54 HW limitation.
+RSTPIPE             \pintype            RSTDIRECT           
+RSTPIPE             \desc               Output register reset
+CEPIPE              \pintype            ENABLE              
+CEPIPE              \desc               Output clock enable 
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output register clock enable
+LOADC               \pintype            CONTROL             
+LOADC               \desc               1=Load value from input C
+ADDSUB              \pintype            CONTROL             
+ADDSUB              \desc               0=add, 1=subtract   
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input A enable      
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input A reset       
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input clock enable  
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input register reset
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULT18X36           \user               Yes                 
+MULT18X36           \infer              Yes                 
+MULT18X36           \desc               18X36 multiplier with optional input/output register
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input clock enable  
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input clock enable  
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input register reset
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULT36X36           \user               Yes                 
+MULT36X36           \infer              Yes                 
+MULT36X36           \desc               36X36 multiplier with optional input and output registers
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input A clock enable
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input A register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input B clock enable
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input B register reset
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULT9X9             \user               Yes                 
+MULT9X9             \infer              Yes                 
+MULT9X9             \desc               9X9 multiplier with optional input and output registers
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input A clock enable
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input A reset       
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input B clock enable
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input B reset       
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULTADDSUB18X18     \user               Yes                 
+MULTADDSUB18X18     \infer              Yes                 
+MULTADDSUB18X18     \desc               18X18 multiplier and accumulator
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Input clock         
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input clock enable  
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input clock enable  
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input clock enable  
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input register reset
+SIGNED              \pintype            DATA                
+SIGNED              \desc               One SIGNED port for all inputs due to ACC54 HW limitation.
+RSTPIPE             \pintype            RSTDIRECT           
+RSTPIPE             \desc               Output register reset
+CEPIPE              \pintype            ENABLE              
+CEPIPE              \desc               Output clock enable 
+RSTCTRL             \pintype            RSTDIRECT           
+RSTCTRL             \desc               Input control (addsub, m9addsub, signed, and loadc) reset.
+CECTRL              \pintype            ENABLE              
+CECTRL              \desc               Input control (addsub, m9addsub, signed, and loadc) enable.
+RSTCIN              \pintype            RSTDIRECT           
+RSTCIN              \desc               Input carryin reset.
+CECIN               \pintype            ENABLE              
+CECIN               \desc               Input carryin enable.
+LOADC               \pintype            CONTROL             
+LOADC               \desc               1=Load value from C input
+ADDSUB              \pintype            CONTROL             
+ADDSUB              \desc               0=Add, 1=subtract   
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+CIN                 \pintype            DATA                
+CIN                 \desc               Carry in            
+MULTADDSUB18X36     \user               Yes                 
+MULTADDSUB18X36     \infer              Yes                 
+MULTADDSUB18X36     \desc               18X36 multiplier and accumulator
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input A clock enable
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input A register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input B clock enable
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input B register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input C clock enable
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input C register reset
+RSTCTRL             \pintype            RSTDIRECT           
+RSTCTRL             \desc               Input control (addsub, m9addsub, signed, and loadc) reset.
+CECTRL              \pintype            ENABLE              
+CECTRL              \desc               Input control (addsub, m9addsub, signed, and loadc) enable.
+RSTCIN              \pintype            RSTDIRECT           
+RSTCIN              \desc               Input carryin reset.
+CECIN               \pintype            ENABLE              
+CECIN               \desc               Input carryin enable.
+SIGNED              \pintype            DATA                
+SIGNED              \desc               One SIGNED port for all inputs due to ACC54 HW limitation.
+RSTPIPE             \pintype            RSTDIRECT           
+RSTPIPE             \desc               Pipeline register reset
+CEPIPE              \pintype            ENABLE              
+CEPIPE              \desc               Pipeline clock enable
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+LOADC               \pintype            CONTROL             
+LOADC               \desc               1=Load value from input C
+ADDSUB              \pintype            CONTROL             
+ADDSUB              \desc               0=add, 1=subtract   
+CIN                 \pintype            DATA                
+CIN                 \desc               Carry in            
+MULTADDSUB36X36     \user               Yes                 
+MULTADDSUB36X36     \infer              Yes                 
+MULTADDSUB36X36     \desc               36X36 multiplier and accumulator
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input A clock enable
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input A register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input B clock enable
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input B register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input C clock enable
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input C register reset
+RSTCTRL             \pintype            RSTDIRECT           
+RSTCTRL             \desc               Input control (addsub, m9addsub, signed, and loadc) reset.
+CECTRL              \pintype            ENABLE              
+CECTRL              \desc               Input control (addsub, m9addsub, signed, and loadc) enable.
+RSTCIN              \pintype            RSTDIRECT           
+RSTCIN              \desc               Input carryin reset.
+CECIN               \pintype            ENABLE              
+CECIN               \desc               Input carryin enable.
+SIGNED              \pintype            DATA                
+SIGNED              \desc               One SIGNED port for all inputs due to ACC54 HW limitation.
+RSTPIPE             \pintype            RSTDIRECT           
+RSTPIPE             \desc               Pipeline register reset
+CEPIPE              \pintype            ENABLE              
+CEPIPE              \desc               Pipeline clock enable
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+LOADC               \pintype            CONTROL             
+LOADC               \desc               1=Load value from input C
+ADDSUB              \pintype            CONTROL             
+ADDSUB              \desc               0=add, 1=subtract   
+CIN                 \pintype            DATA                
+CIN                 \desc               Carry in            
+MULTPREADD18X18     \user               Yes                 
+MULTPREADD18X18     \infer              Yes                 
+MULTPREADD18X18     \desc               18X18 multiplier with pre-adder
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input clock enable  
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input clock enable  
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input clock enable  
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input register reset
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+SIGNEDC             \pintype            DATA                
+SIGNEDC             \desc               Operand C signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULTPREADD9X9       \user               Yes                 
+MULTPREADD9X9       \infer              Yes                 
+MULTPREADD9X9       \desc               9X9 multiplier with pre-adder
+A                   \pintype            DATA                
+A                   \desc               Operand A           
+B                   \pintype            DATA                
+B                   \desc               Operand B           
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA                 \pintype            ENABLE              
+CEA                 \desc               Input clock enable  
+RSTA                \pintype            RSTDIRECT           
+RSTA                \desc               Input register reset
+CEB                 \pintype            ENABLE              
+CEB                 \desc               Input clock enable  
+RSTB                \pintype            RSTDIRECT           
+RSTB                \desc               Input register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input clock enable  
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input register reset
+SIGNEDA             \pintype            DATA                
+SIGNEDA             \desc               Operand A signed    
+SIGNEDB             \pintype            DATA                
+SIGNEDB             \desc               Operand B signed    
+SIGNEDC             \pintype            DATA                
+SIGNEDC             \desc               Operand C signed    
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output clock enable 
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+MULTADDSUB18X18WIDE \user               Yes                 
+MULTADDSUB18X18WIDE \infer              Yes                 
+MULTADDSUB18X18WIDE \desc               18x18 wide multiply add/sub
+A0                  \pintype            DATA                
+A0                  \desc               Operand A0          
+B0                  \pintype            DATA                
+B0                  \desc               Operand B0          
+A1                  \pintype            DATA                
+A1                  \desc               Operand A1          
+B1                  \pintype            DATA                
+B1                  \desc               Operand B1          
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA0                \pintype            ENABLE              
+CEA0                \desc               Input A0 clock enable
+CEA1                \pintype            ENABLE              
+CEA1                \desc               Input A1 clock enable
+RSTA0               \pintype            RSTDIRECT           
+RSTA0               \desc               Input A0 register reset
+RSTA1               \pintype            RSTDIRECT           
+RSTA1               \desc               Input A1 register reset
+CEB0                \pintype            ENABLE              
+CEB0                \desc               Input B0 clock enable
+CEB1                \pintype            ENABLE              
+CEB1                \desc               Input B1 clock enable
+RSTB0               \pintype            RSTDIRECT           
+RSTB0               \desc               Input B0 register reset
+RSTB1               \pintype            RSTDIRECT           
+RSTB1               \desc               Input B1 register reset
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input C register clock enable
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input C register reset
+RSTCTRL             \pintype            RSTDIRECT           
+RSTCTRL             \desc               Input control (addsub, m9addsub, signed, and loadc) reset.
+CECTRL              \pintype            ENABLE              
+CECTRL              \desc               Input control (addsub, m9addsub, signed, and loadc) enable.
+SIGNED              \pintype            DATA                
+SIGNED              \desc               One SIGNED port for all inputs due to ACC54 HW limitation.
+RSTPIPE             \pintype            RSTDIRECT           
+RSTPIPE             \desc               Pipeline register reset
+CEPIPE              \pintype            ENABLE              
+CEPIPE              \desc               Pipeline clock enable
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output register clock enable
+LOADC               \pintype            CONTROL             
+LOADC               \desc               1=Load value from C input
+ADDSUB              \pintype            CONTROL             
+ADDSUB              \desc               0=add, 1=subtract   
+MULTADDSUB9X9WIDE   \user               Yes                 
+MULTADDSUB9X9WIDE   \infer              Yes                 
+MULTADDSUB9X9WIDE   \desc               9x9 wide multiply add/sub
+A0                  \pintype            DATA                
+A0                  \desc               Operand A0          
+B0                  \pintype            DATA                
+B0                  \desc               Operand B0          
+A1                  \pintype            DATA                
+A1                  \desc               Operand A1          
+B1                  \pintype            DATA                
+B1                  \desc               Operand B1          
+A2                  \pintype            DATA                
+A2                  \desc               Operand A2          
+B2                  \pintype            DATA                
+B2                  \desc               Operand B2          
+A3                  \pintype            DATA                
+A3                  \desc               Operand A3          
+B3                  \pintype            DATA                
+B3                  \desc               Operand B3          
+C                   \pintype            DATA                
+C                   \desc               Operand C           
+CLK                 \pintype            CLOCK               
+CLK                 \desc               Clock               
+CEA0A1              \pintype            ENABLE              
+CEA0A1              \desc               Input A0 and A1 clock enable.
+CEA2A3              \pintype            ENABLE              
+CEA2A3              \desc               Input A2 and A3 clock enable.
+RSTA0A1             \pintype            RSTDIRECT           
+RSTA0A1             \desc               Input A0 and A1 register reset.
+RSTA2A3             \pintype            RSTDIRECT           
+RSTA2A3             \desc               Input A2 and A3 register reset.
+CEB0B1              \pintype            ENABLE              
+CEB0B1              \desc               Input B0 and B1 clock enable.
+CEB2B3              \pintype            ENABLE              
+CEB2B3              \desc               Input B2 and B3 clock enable.
+RSTB0B1             \pintype            RSTDIRECT           
+RSTB0B1             \desc               Input B0 and B1 register reset.
+RSTB2B3             \pintype            RSTDIRECT           
+RSTB2B3             \desc               Input B2 and B3 register reset.
+CEC                 \pintype            ENABLE              
+CEC                 \desc               Input C clock enable
+RSTC                \pintype            RSTDIRECT           
+RSTC                \desc               Input C register reset
+RSTCTRL             \pintype            RSTDIRECT           
+RSTCTRL             \desc               Input control (addsub, m9addsub, signed, and loadc) reset.
+CECTRL              \pintype            ENABLE              
+CECTRL              \desc               Input control (addsub, m9addsub, signed, and loadc) enable.
+SIGNED              \pintype            DATA                
+SIGNED              \desc               One SIGNED port for all inputs due to ACC54 HW limitation.
+RSTPIPE             \pintype            RSTDIRECT           
+RSTPIPE             \desc               Output register reset
+CEPIPE              \pintype            ENABLE              
+CEPIPE              \desc               Output clock enable 
+RSTOUT              \pintype            RSTDIRECT           
+RSTOUT              \desc               Output register reset
+CEOUT               \pintype            ENABLE              
+CEOUT               \desc               Output register clock enable
+LOADC               \pintype            CONTROL             
+LOADC               \desc               1=Load value from input C
+ADDSUB              \pintype            CONTROL             
+ADDSUB              \desc               0=add, 1=subtract   
+Z                   \pintype            DATA                
+Z                   \desc               Multiplication result

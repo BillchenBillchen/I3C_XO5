@@ -1,0 +1,1 @@
+C:/lscc/radiant/2025.2/bin/nt64/moduleparser.exe -PROJ sim_controller -I C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/. -pf C:/lscc/radiant/2025.2/cae_library/synthesis/verilog/lfmxo5.v -lib lfmxo5 -sort -lst C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/sim_controller/source_files.lst

@@ -1,0 +1,297 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:Can't find top module!
+@N: CD140 :	| Using the VHDL 1993 Standard for file 'C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.vhd'.
+@N|Running in 64-bit mode
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3275:17:3275:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3282:17:3282:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3339:17:3339:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3346:17:3346:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3401:17:3401:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3408:17:3408:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5142:25:5142:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5146:25:5146:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5177:29:5177:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5181:29:5181:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1060:25:1060:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1064:25:1064:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1095:29:1095:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1099:29:1099:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2040:25:2040:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2048:25:2048:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2114:29:2114:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2122:29:2122:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v":194:11:194:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v":203:11:203:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1880:29:1880:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1885:29:1885:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1916:33:1916:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1920:33:1920:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1953:29:1953:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1958:29:1958:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1988:33:1988:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1992:33:1992:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2502:29:2502:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2507:29:2507:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2538:33:2538:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2542:33:2542:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2575:29:2575:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2580:29:2580:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2611:33:2611:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2615:33:2615:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3097:29:3097:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3102:29:3102:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3133:33:3133:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3137:33:3137:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3170:29:3170:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3175:29:3175:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3206:33:3206:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3210:33:3210:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1897:29:1897:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1902:29:1902:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1933:33:1933:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1937:33:1937:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1970:29:1970:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1975:29:1975:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2006:33:2006:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2010:33:2010:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2439:29:2439:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2444:29:2444:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2475:33:2475:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2479:33:2479:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2512:29:2512:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2517:29:2517:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2548:33:2548:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2552:33:2552:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v":1485:25:1485:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v":1491:25:1491:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v":100:11:100:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":970:25:970:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":976:25:976:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":313:13:313:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v":333:13:333:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_complex_mult.v":101:11:101:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":129:13:129:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/counter/rtl\lscc_cntr.v":143:13:143:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v":126:11:126:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_distributed_shift_reg.v":135:11:135:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3275:17:3275:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3282:17:3282:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3339:17:3339:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3346:17:3346:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3401:17:3401:29|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo/rtl\lscc_fifo.v":3408:17:3408:28|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5142:25:5142:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5146:25:5146:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5177:29:5177:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/fifo_dc/rtl\lscc_fifo_dc.v":5181:29:5181:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":94:11:94:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mac.v":109:11:109:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":210:13:210:25|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/mult_add_sub_sum/rtl\lscc_mult_add_sub_sum.v":227:13:227:24|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":84:11:84:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsubsum.v":93:11:93:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":91:11:91:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_multaddsub.v":100:11:100:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":87:11:87:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_mult.v":96:11:96:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1060:25:1060:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1064:25:1064:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1095:29:1095:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp/rtl\lscc_ram_dp.v":1099:29:1099:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2040:25:2040:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2048:25:2048:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2114:29:2114:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp/rtl\lscc_lfmxo4_ram_dp.v":2122:29:2122:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v":194:11:194:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dp_be.v":203:11:203:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1880:29:1880:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1885:29:1885:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1916:33:1916:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1920:33:1920:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1953:29:1953:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1958:29:1958:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1988:33:1988:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1992:33:1992:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2502:29:2502:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2507:29:2507:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2538:33:2538:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2542:33:2542:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2575:29:2575:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2580:29:2580:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2611:33:2611:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":2615:33:2615:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3097:29:3097:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3102:29:3102:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3133:33:3133:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3137:33:3137:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3170:29:3170:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3175:29:3175:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3206:33:3206:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":3210:33:3210:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1897:29:1897:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1902:29:1902:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1933:33:1933:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1937:33:1937:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1970:29:1970:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":1975:29:1975:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2006:33:2006:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2010:33:2010:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2439:29:2439:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2444:29:2444:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2475:33:2475:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2479:33:2479:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2512:29:2512:41|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2517:29:2517:40|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2548:33:2548:45|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../LFMXO4/ram_dp_true/rtl\lscc_lfmxo4_ram_dp_true.v":2552:33:2552:44|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v":1485:25:1485:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dq/rtl\lscc_ram_dq.v":1491:25:1491:36|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v":92:11:92:23|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v":100:11:100:22|Read directive translate_on.
+@N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":970:25:970:37|Read directive translate_off.
+@N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":976:25:976:36|Read directive translate_on.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":192455:66:192455:79|Synthesizing module ahb2apb_uniq_1 in library work.
+@N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lfmxo5.v":7110:7:7110:8|Synthesizing module BB in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":215001:7:215001:39|Synthesizing module gpio0_ipgen_lscc_gpio_lmmi_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":216124:7:216124:38|Synthesizing module gpio0_ipgen_lscc_apb2lmmi_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":196788:7:196788:34|Synthesizing module gpio0_ipgen_lscc_gpio_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":194133:64:194133:75|Synthesizing module gpio0_uniq_1 in library work.
+@N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lfmxo5.v":128:7:128:14|Synthesizing module BB_I3C_A in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":196913:33:196913:70|Synthesizing module i3c_m_ipgen_lscc_i3c_controller_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":194189:64:194189:75|Synthesizing module i3c_m_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":197267:33:197267:66|Synthesizing module i3c_s_ipgen_lscc_i3c_target_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":194339:64:194339:75|Synthesizing module i3c_s_uniq_1 in library work.
+@N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lfmxo5.v":2141:7:2141:10|Synthesizing module OSCA in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":197659:7:197659:32|Synthesizing module osc0_ipgen_lscc_osc_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":194466:63:194466:73|Synthesizing module osc0_uniq_1 in library work.
+@N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lfmxo5.v":2886:7:2886:9|Synthesizing module PLL in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":197705:7:197705:32|Synthesizing module pll0_ipgen_lscc_pll_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":194512:63:194512:73|Synthesizing module pll0_uniq_1 in library work.
+@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225250:107:225250:117|Removing redundant assignment.
+@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225448:67:225448:76|Removing redundant assignment.
+@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225460:59:225460:68|Removing redundant assignment.
+@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225921:107:225921:117|Removing redundant assignment.
+@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226119:67:226119:76|Removing redundant assignment.
+@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226131:59:226131:68|Removing redundant assignment.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v":69:7:69:13|Input reset_n is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v":89:7:89:16|Input trigger_en is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199681:10:199681:14|Input DCD_N is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199682:10:199682:14|Input CTS_N is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199683:10:199683:14|Input DSR_N is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199684:10:199684:13|Input RI_N is unused.
+@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":202541:4:202541:9|Trying to extract state machine for register tx_state.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":202496:10:202496:23|Input fifo_empty_thr is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":202497:10:202497:22|Input fifo_full_thr is unused.
+@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":202214:4:202214:9|Trying to extract state machine for register cs_state.
+@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":201962:4:201962:9|Trying to extract state machine for register cs_state.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":201717:38:201717:45|Input rbr_fifo is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":201738:10:201738:19|Input fifo_empty is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":201741:10:201741:15|Input thr_rd is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":201742:10:201742:25|Input fifo_almost_full is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199071:10:199071:19|Input axi_aclk_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199072:10:199072:21|Input axi_resetn_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199112:29:199112:41|Input axi_s0_awid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199113:17:199113:31|Input axi_s0_awaddr_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199114:16:199114:29|Input axi_s0_awlen_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199115:16:199115:30|Input axi_s0_awsize_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199116:16:199116:31|Input axi_s0_awburst_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199117:10:199117:24|Input axi_s0_awlock_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199118:16:199118:31|Input axi_s0_awcache_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199119:16:199119:29|Input axi_s0_awqos_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199120:16:199120:32|Input axi_s0_awregion_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199121:16:199121:30|Input axi_s0_awprot_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199122:10:199122:25|Input axi_s0_awvalid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199124:31:199124:44|Input axi_s0_wdata_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199125:37:199125:50|Input axi_s0_wstrb_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199126:10:199126:23|Input axi_s0_wlast_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199127:10:199127:24|Input axi_s0_wvalid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199132:10:199132:24|Input axi_s0_bready_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199133:29:199133:41|Input axi_s0_arid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199134:17:199134:31|Input axi_s0_araddr_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199135:16:199135:29|Input axi_s0_arlen_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199136:16:199136:30|Input axi_s0_arsize_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199137:16:199137:31|Input axi_s0_arburst_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199138:10:199138:24|Input axi_s0_arlock_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199139:16:199139:31|Input axi_s0_arcache_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199140:16:199140:29|Input axi_s0_arqos_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199141:16:199141:32|Input axi_s0_arregion_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199142:16:199142:30|Input axi_s0_arprot_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199143:10:199143:25|Input axi_s0_arvalid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199150:10:199150:24|Input axi_s0_rready_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199154:29:199154:41|Input axi_s1_awid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199155:17:199155:31|Input axi_s1_awaddr_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199156:16:199156:29|Input axi_s1_awlen_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199157:16:199157:30|Input axi_s1_awsize_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199158:16:199158:31|Input axi_s1_awburst_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199159:10:199159:24|Input axi_s1_awlock_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199160:16:199160:31|Input axi_s1_awcache_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199161:16:199161:29|Input axi_s1_awqos_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199162:16:199162:32|Input axi_s1_awregion_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199163:16:199163:30|Input axi_s1_awprot_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199164:10:199164:25|Input axi_s1_awvalid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199166:31:199166:44|Input axi_s1_wdata_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199167:37:199167:50|Input axi_s1_wstrb_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199168:10:199168:23|Input axi_s1_wlast_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199169:10:199169:24|Input axi_s1_wvalid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199174:10:199174:24|Input axi_s1_bready_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199175:29:199175:41|Input axi_s1_arid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199176:17:199176:31|Input axi_s1_araddr_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199177:16:199177:29|Input axi_s1_arlen_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199178:16:199178:30|Input axi_s1_arsize_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199179:16:199179:31|Input axi_s1_arburst_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199180:10:199180:24|Input axi_s1_arlock_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199181:16:199181:31|Input axi_s1_arcache_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199182:16:199182:29|Input axi_s1_arqos_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199183:16:199183:32|Input axi_s1_arregion_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199184:16:199184:30|Input axi_s1_arprot_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199185:10:199185:25|Input axi_s1_arvalid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199192:10:199192:24|Input axi_s1_rready_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199196:10:199196:19|Input fifo_clk_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199197:10:199197:21|Input fifo_wr_en_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199198:16:199198:29|Input fifo_wr_data_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199199:10:199199:28|Input fifo_interface_en_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199200:10:199200:28|Input fifo_address_rstn_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199205:10:199205:23|Input axis_rx_aclk_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199206:10:199206:24|Input axi_rx_tvalid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199207:31:199207:44|Input axi_rx_tdata_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199208:37:199208:50|Input axi_rx_tstrb_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199209:10:199209:23|Input axi_rx_tlast_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226570:10:226570:14|Input clk_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226571:10:226571:14|Input rst_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226575:31:226575:39|Input addr_s0_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226583:31:226583:39|Input addr_s1_i is unused.
+@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1025:10:1025:14|Input clk_i is unused.
+@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1026:10:1026:17|Input clk_en_i is unused.
+@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1027:10:1027:16|Input wr_en_i is unused.
+@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1028:10:1028:14|Input rst_i is unused.
+@N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1029:27:1029:35|Input wr_data_i is unused.
+@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225748:4:225748:9|Trying to extract state machine for register ahbl_state.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225634:10:225634:25|Input ahbl_hmastlock_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225635:16:225635:27|Input ahbl_hprot_i is unused.
+@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225077:4:225077:9|Trying to extract state machine for register ahbl_state.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":224963:10:224963:25|Input ahbl_hmastlock_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":224964:16:224964:27|Input ahbl_hprot_i is unused.
+@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":216319:4:216319:9|Trying to extract state machine for register bus_sm_cs.
+@N|Running in 64-bit mode
+
