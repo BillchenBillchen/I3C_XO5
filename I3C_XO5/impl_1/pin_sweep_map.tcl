@@ -1,4 +1,4 @@
-#-- Pin Sweep: Map TCL
+#-- Pin Sweep: MAP TCL
 #-- Usage: radiantc pin_sweep_map.tcl <pdc_path>
 
 set ret 0

@@ -2,13 +2,13 @@
 --- Copyright (C) 1992-2025 Lattice Semiconductor Corporation.
 --- All Rights Reserved.
 --- Lattice Radiant Software install path: C:/lscc/radiant/2025.2
---- Date    : 00:46:40 03/16/26
+--- Date    : 09:36:57 03/16/26
 --- UserName: billzhang
 --- HostName: TE9Bill397
 --- RunDir  : C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5
---- PID     : 39144
---- TclFile : C:\Users\billzhang\AppData\Roaming\LatticeSemi\DiamondNG\tcl\radiantc.tcl.39144
---- LogFile : C:\Users\billzhang\AppData\Roaming\LatticeSemi\DiamondNG\tcl\radiantc.log.39144
+--- PID     : 32784
+--- TclFile : C:\Users\billzhang\AppData\Roaming\LatticeSemi\DiamondNG\tcl\radiantc.tcl.32784
+--- LogFile : C:\Users\billzhang\AppData\Roaming\LatticeSemi\DiamondNG\tcl\radiantc.log.32784
 --------------------------------------------------------------------------------
 
 >>> MAP: PDC = C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/D3/I3C_XO5_D3.pdc
@@ -1312,11 +1312,11 @@ Constraint Summary:
      set_false_path -through [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i}]
 
 
-Total CPU Time: 16 secs  
-Total REAL Time: 18 secs  
-Peak Memory Usage: 642 MB
+Total CPU Time: 15 secs  
+Total REAL Time: 17 secs  
+Peak Memory Usage: 643 MB
 
 Checksum -- map: b62b33a65b9629086f26bed212a44fc81e490c6
-**** CMD map_run - CPU/Elapsed: 0 secs / 20 secs , MEM/Increased: 63.099 Mb/ -0.025 Mb, DATE: 00:47:00 03/16/26
+**** CMD map_run - CPU/Elapsed: 0 secs / 18 secs , MEM/Increased: 63.488 Mb/ 0.111 Mb, DATE: 09:37:16 03/16/26
 >>> MAP completed.
-Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /20 secs 
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /19 secs 

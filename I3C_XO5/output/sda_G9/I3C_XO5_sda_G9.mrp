@@ -1,0 +1,538 @@
+
+                         Lattice Mapping Report File
+
+Design:  I3C_XO5
+Family:  LFMXO5
+Device:  LFMXO5-25
+Package: BBG400
+Performance Grade:  9_High-Performance_1.0V
+
+Mapper:    version Radiant Software (64-bit) 2025.2.0.48.0
+Mapped on: Mon Mar 16 16:42:40 2026
+
+Design Information
+------------------
+
+Command line:   map -pdc C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G
+     9/I3C_XO5_sda_G9.pdc -i I3C_XO5_impl_1_syn.udb -o I3C_XO5_impl_1_map.udb
+     -mp I3C_XO5_impl_1.mrp -hierrpt -gui -msgset
+     C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/promote.xml
+
+
+
+
+
+   Number of warnings:  0
+   Number of criticals: 2
+   Number of errors:    114
+
+Design Errors/Criticals/Warnings
+--------------------------------
+
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (1) : ldc_set_location: 's0_sda_io0ldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (1) : ldc_set_location: Duplicate option '-site' is set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (3) : ldc_set_location: 's0_sda_io1ldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (3) : ldc_set_location: Duplicate option '-site' is set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (5) : ldc_set_location: 's0_sda_io2ldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (5) : ldc_set_location: Duplicate option '-site' is set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (7) : ldc_set_location: 's0_sda_io3ldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (7) : ldc_set_location: Duplicate option '-site' is set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (9) : ldc_set_location: 's0_sda_io4ldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (9) : ldc_set_location: Duplicate option '-site' is set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (11) : ldc_set_location: 's0_sda_io5ldc_set_location'
+
+                                    Page 1
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (11) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (13) : ldc_set_location: 's0_sda_io6ldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (13) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (15) : ldc_set_location: 's0_sda_io7ldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (15) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (17) : ldc_set_location: 's0_sda_io8ldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (17) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (19) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (19) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (21) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (21) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (23) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (23) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (25) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (25) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (27) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+
+                                    Page 2
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (27) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (29) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (29) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (31) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (31) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (33) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (33) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (35) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (35) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (37) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (37) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (39) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (39) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (41) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (41) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (43) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+
+                                    Page 3
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (43) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (45) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (45) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (47) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (47) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (49) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (49) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (51) : ldc_set_location: 's0_sda_iolldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (51) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (53) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (53) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (55) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (55) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (57) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (57) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (59) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+
+                                    Page 4
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+     I3C_XO5_sda_G9.pdc (59) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (61) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (61) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (63) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (63) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (65) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (65) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (67) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (67) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (69) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (69) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (71) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (71) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (73) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (73) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (75) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (75) : ldc_set_location: Duplicate option '-site' is
+
+                                    Page 5
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (77) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (77) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (79) : ldc_set_location: 's0_sda_io0ldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (79) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (81) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (81) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (83) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (83) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (85) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (85) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (87) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (87) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (89) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (89) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (91) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (91) : ldc_set_location: Duplicate option '-site' is
+     set.
+
+                                    Page 6
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (93) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (93) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (95) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (95) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (97) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (97) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (99) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (99) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (101) : ldc_set_location: 's0_sda_io2ldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (101) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (103) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (103) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (105) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (105) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (107) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (107) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+
+                                    Page 7
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+     I3C_XO5_sda_G9.pdc (109) : ldc_set_location: 's0_sda_iogldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (109) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (111) : ldc_set_location: 's0_sda_io0ldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (111) : ldc_set_location: Duplicate option '-site' is
+     set.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (113) : ldc_set_location: 's0_sda_io0ldc_set_location'
+     object type is ambiguous and try to match as 'port' type. Please provide
+     proper objects using get commands to avoid ambiguous patterns.
+ERROR <1026000> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_G9/
+     I3C_XO5_sda_G9.pdc (113) : ldc_set_location: Duplicate option '-site' is
+     set.
+CRITICAL <52281053> - map: There is no set_clock_uncertainty constraint on the
+     PLL clock output 'CLKOP' of instance
+     'pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst'. Please see
+     FPGA-AN-02059-1.0 - Lattice Radiant Timing Constraints Methodology for
+     further details.
+CRITICAL <52281053> - map: There is no set_clock_uncertainty constraint on the
+     PLL clock output 'CLKOS' of instance
+     'pll0_inst/lscc_pll_inst/gen_no_refclk_mon.u_PLL.PLL_inst'. Please see
+     FPGA-AN-02059-1.0 - Lattice Radiant Timing Constraints Methodology for
+     further details.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 8
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2025 Lattice Semiconductor
+     Corporation,  All rights reserved.

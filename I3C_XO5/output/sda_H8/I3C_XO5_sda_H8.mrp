@@ -1,0 +1,142 @@
+
+                         Lattice Mapping Report File
+
+Design:  I3C_XO5
+Family:  LFMXO5
+Device:  LFMXO5-25
+Package: BBG400
+Performance Grade:  9_High-Performance_1.0V
+
+Mapper:    version Radiant Software (64-bit) 2025.2.0.48.0
+Mapped on: Mon Mar 16 16:38:26 2026
+
+Design Information
+------------------
+
+Command line:   map -pdc C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_H
+     8/I3C_XO5_sda_H8.pdc -i I3C_XO5_impl_1_syn.udb -o I3C_XO5_impl_1_map.udb
+     -mp I3C_XO5_impl_1.mrp -hierrpt -gui -msgset
+     C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/promote.xml
+
+
+
+
+
+   Number of warnings:  15
+   Number of criticals: 0
+   Number of errors:    1
+
+Design Errors/Criticals/Warnings
+--------------------------------
+
+WARNING <1026001> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_H
+     8/I3C_XO5_sda_H8.pdc (35) : No net matched
+     'i3c_s_inst/lscc_i3c_target_inst/scl_i'.
+WARNING <1026001> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_H
+     8/I3C_XO5_sda_H8.pdc (36) : No net matched
+     'i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_i
+     i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_i
+     i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_i
+     i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_i'.
+WARNING <1026001> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_H
+     8/I3C_XO5_sda_H8.pdc (37) : No net matched
+     'i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_i
+     i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_i
+     i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_i
+     i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_i'.
+WARNING <1026001> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_H
+     8/I3C_XO5_sda_H8.pdc (38) : No net matched
+     'i3c_s_inst/lscc_i3c_target_inst/scl_i'.
+WARNING <1026001> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_H
+     8/I3C_XO5_sda_H8.pdc (42) : No net matched
+     'i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_i
+     i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_i
+     i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_i
+     i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_i'.
+WARNING <1026001> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_H
+     8/I3C_XO5_sda_H8.pdc (43) : No net matched
+     'i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_i
+     i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_i
+     i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_i
+     i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_i'.
+WARNING <1026001> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_H
+     8/I3C_XO5_sda_H8.pdc (45) : No net matched
+
+                                    Page 1
+
+
+
+
+
+Design Errors/Criticals/Warnings (cont)
+---------------------------------------
+     'i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_i
+     i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_i
+     i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_i
+     i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_i'.
+WARNING <1026001> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_H
+     8/I3C_XO5_sda_H8.pdc (54) : No net matched 'i3c_s_inst/lscc_i3c_target_inst
+     /u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i
+     i3c_s_inst/lscc_i3c_target_inst/sda_i'.
+WARNING <1026001> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_H
+     8/I3C_XO5_sda_H8.pdc (55) : No net matched
+     'i3c_s_inst/lscc_i3c_target_inst/scl_i'.
+WARNING <1027013> - map: No net matched 'i3c_s_inst/lscc_i3c_target_inst/scl_i'.
+WARNING <1026001> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_H
+     8/I3C_XO5_sda_H8.pdc (35) : Can't resolve object
+     'i3c_s_inst/lscc_i3c_target_inst/scl_i' in constraint 'set_false_path
+     -through [get_nets i3c_s_inst/lscc_i3c_target_inst/scl_i]'.
+WARNING <1027013> - map: No net matched 'i3c_s_inst/lscc_i3c_target_inst/u_i3c_t
+     gt/u_i3c_tgt_main/rst_stop_sdan_n_1_i
+     i3c_s_inst/lscc_i3c_target_inst/sda_i'.
+WARNING <1026001> - map: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_H
+     8/I3C_XO5_sda_H8.pdc (54) : Can't resolve object 'i3c_s_inst/lscc_i3c_targe
+     t_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i
+     i3c_s_inst/lscc_i3c_target_inst/sda_i' in constraint 'set_false_path
+     -through [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_mai
+     n/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i}]'.
+WARNING <1011001> - map: Remove invalid constraint 'set_false_path -through
+     [get_nets i3c_s_inst/lscc_i3c_target_inst/scl_i]'.
+WARNING <1011001> - map: Remove invalid constraint 'set_false_path -through
+     [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_sto
+     p_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i}]'.
+ERROR <71003011> - map: The pin [E4] is assigned to port [m0_sda_io] and cannot
+     be assigned to port [s0_sda_io]. Change the pin's assignment.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 2
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2025 Lattice Semiconductor
+     Corporation,  All rights reserved.

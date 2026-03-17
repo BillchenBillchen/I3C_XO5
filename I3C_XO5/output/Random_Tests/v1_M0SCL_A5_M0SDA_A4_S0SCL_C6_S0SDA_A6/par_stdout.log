@@ -1,0 +1,24 @@
+--- Lattice Radiant Software (64-bit) 2025.2.0.48.0
+--- Copyright (C) 1992-2025 Lattice Semiconductor Corporation.
+--- All Rights Reserved.
+--- Lattice Radiant Software install path: C:/lscc/radiant/2025.2
+--- Date    : 00:58:24 03/17/26
+--- UserName: billzhang
+--- HostName: TE9Bill397
+--- RunDir  : C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5
+--- PID     : 67048
+--- TclFile : C:\Users\billzhang\AppData\Roaming\LatticeSemi\DiamondNG\tcl\radiantc.tcl.67048
+--- LogFile : C:\Users\billzhang\AppData\Roaming\LatticeSemi\DiamondNG\tcl\radiantc.log.67048
+--------------------------------------------------------------------------------
+
+>>> PAR...
+
+
+Exception Condition: core file C:\Users\BILLZH~1\AppData\Local\Temp\lsc_diamond_61620.dmp is generated
+For support, contact Lattice Semiconductor technical support
+	at 1-800-LATTICE or 503-268-8001,
+	or techsupport@latticesemi.com.
+**** CMD par_run - CPU/Elapsed: 0 secs / 0 secs , MEM/Increased: 63.623 Mb/ 0.111 Mb, DATE: 00:58:25 03/17/26
+ERROR: Error: the command par_run failed.
+
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /0 secs 

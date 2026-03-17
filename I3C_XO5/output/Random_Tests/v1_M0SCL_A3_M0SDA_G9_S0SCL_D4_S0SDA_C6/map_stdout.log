@@ -1,0 +1,67 @@
+--- Lattice Radiant Software (64-bit) 2025.2.0.48.0
+--- Copyright (C) 1992-2025 Lattice Semiconductor Corporation.
+--- All Rights Reserved.
+--- Lattice Radiant Software install path: C:/lscc/radiant/2025.2
+--- Date    : 00:33:25 03/17/26
+--- UserName: billzhang
+--- HostName: TE9Bill397
+--- RunDir  : C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5
+--- PID     : 85144
+--- TclFile : C:\Users\billzhang\AppData\Roaming\LatticeSemi\DiamondNG\tcl\radiantc.tcl.85144
+--- LogFile : C:\Users\billzhang\AppData\Roaming\LatticeSemi\DiamondNG\tcl\radiantc.log.85144
+--------------------------------------------------------------------------------
+
+>>> MAP: PDC = C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc
+map:  version Radiant Software (64-bit) 2025.2.0.48.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2025 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:   map -pdc C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc -i I3C_XO5_impl_1_syn.udb -o I3C_XO5_impl_1_map.udb -mp I3C_XO5_impl_1.mrp -hierrpt -gui -msgset C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/promote.xml 
+
+Loading device for application GENERIC from file 'jd5f25.nph' in environment: C:/lscc/radiant/2025.2/ispfpga.
+Package Status:                     Final          Version 8.
+
+
+
+Design:  I3C_XO5
+Family:  LFMXO5
+Device:  LFMXO5-25
+Package: BBG400
+Performance Grade:  9_High-Performance_1.0V
+
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg1="35" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/scl_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg4="35"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg1="36" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg4="36"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg1="37" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg4="37"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg1="38" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/scl_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg4="38"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg1="42" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg4="42"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg1="43" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg4="43"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg1="45" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg4="45"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg1="54" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg4="54"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg1="55" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/scl_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg4="55"  />
+    <postMsg mid="1027013" type="Warning" dynamic="2" navigation="0" arg0="net" arg1="i3c_s_inst/lscc_i3c_target_inst/scl_i"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg1="35" arg2="Can&apos;t resolve object &apos;i3c_s_inst/lscc_i3c_target_inst/scl_i&apos; in constraint &apos;set_false_path -through [get_nets i3c_s_inst/lscc_i3c_target_inst/scl_i]&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg4="35"  />
+    <postMsg mid="1027013" type="Warning" dynamic="2" navigation="0" arg0="net" arg1="i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg1="54" arg2="Can&apos;t resolve object &apos;i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i&apos; in constraint &apos;set_false_path -through [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i}]&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/Random_Tests/v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6/I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.pdc" arg4="54"  />
+    <postMsg mid="1011001" type="Warning" dynamic="1" navigation="0" arg0="set_false_path -through [get_nets i3c_s_inst/lscc_i3c_target_inst/scl_i]"  />
+    <postMsg mid="1011001" type="Warning" dynamic="1" navigation="0" arg0="set_false_path -through [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i}]"  />
+Running general design DRC...
+
+    <postMsg mid="71003010" type="Error" dynamic="2" navigation="0" arg0="s0_scl_io" arg1="D4"  />
+Errors detected in general drc.
+
+Errors found in user's design.  Output files not written. Check map report for more details.
+ 
+
+
+   Number of warnings:  15
+   Number of criticals: 0
+   Number of errors:    1
+
+**** CMD map_run - CPU/Elapsed: 0 secs / 5 secs , MEM/Increased: 63.390 Mb/ 0.119 Mb, DATE: 00:33:30 03/17/26
+ERROR: Error: the command map_run failed.
+
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /5 secs 

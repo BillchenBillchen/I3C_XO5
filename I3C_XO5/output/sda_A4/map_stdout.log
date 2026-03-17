@@ -1,0 +1,1322 @@
+--- Lattice Radiant Software (64-bit) 2025.2.0.48.0
+--- Copyright (C) 1992-2025 Lattice Semiconductor Corporation.
+--- All Rights Reserved.
+--- Lattice Radiant Software install path: C:/lscc/radiant/2025.2
+--- Date    : 17:36:44 03/16/26
+--- UserName: billzhang
+--- HostName: TE9Bill397
+--- RunDir  : C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5
+--- PID     : 68564
+--- TclFile : C:\Users\billzhang\AppData\Roaming\LatticeSemi\DiamondNG\tcl\radiantc.tcl.68564
+--- LogFile : C:\Users\billzhang\AppData\Roaming\LatticeSemi\DiamondNG\tcl\radiantc.log.68564
+--------------------------------------------------------------------------------
+
+>>> MAP: PDC = C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc
+map:  version Radiant Software (64-bit) 2025.2.0.48.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2025 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:   map -pdc C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc -i I3C_XO5_impl_1_syn.udb -o I3C_XO5_impl_1_map.udb -mp I3C_XO5_impl_1.mrp -hierrpt -gui -msgset C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/promote.xml 
+
+Loading device for application GENERIC from file 'jd5f25.nph' in environment: C:/lscc/radiant/2025.2/ispfpga.
+Package Status:                     Final          Version 8.
+
+
+
+Design:  I3C_XO5
+Family:  LFMXO5
+Device:  LFMXO5-25
+Package: BBG400
+Performance Grade:  9_High-Performance_1.0V
+
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg1="35" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/scl_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg4="35"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg1="36" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg4="36"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg1="37" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg4="37"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg1="38" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/scl_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg4="38"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg1="42" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg4="42"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg1="43" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg4="43"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg1="45" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/rxfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/txfifo_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_csr_rst_n_i i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/ip_core_rst_n_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg4="45"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg1="54" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg4="54"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg1="55" arg2="No net matched &apos;i3c_s_inst/lscc_i3c_target_inst/scl_i&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg4="55"  />
+    <postMsg mid="1027013" type="Warning" dynamic="2" navigation="0" arg0="net" arg1="i3c_s_inst/lscc_i3c_target_inst/scl_i"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg1="35" arg2="Can&apos;t resolve object &apos;i3c_s_inst/lscc_i3c_target_inst/scl_i&apos; in constraint &apos;set_false_path -through [get_nets i3c_s_inst/lscc_i3c_target_inst/scl_i]&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg4="35"  />
+    <postMsg mid="1027013" type="Warning" dynamic="2" navigation="0" arg0="net" arg1="i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i"  />
+    <postMsg mid="1026001" type="Warning" dynamic="3" navigation="2" arg0="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg1="54" arg2="Can&apos;t resolve object &apos;i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i&apos; in constraint &apos;set_false_path -through [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i}]&apos;." arg3="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/output/sda_A4/I3C_XO5_sda_A4.pdc" arg4="54"  />
+    <postMsg mid="1011001" type="Warning" dynamic="1" navigation="0" arg0="set_false_path -through [get_nets i3c_s_inst/lscc_i3c_target_inst/scl_i]"  />
+    <postMsg mid="1011001" type="Warning" dynamic="1" navigation="0" arg0="set_false_path -through [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i}]"  />
+Running general design DRC...
+
+    <postMsg mid="1009991" type="Warning" dynamic="1" navigation="0" arg0="ldc_set_attribute {USE_PRIMARY=FALSE} [get_nets s0_sda_io] : fail to resolve object &apos;s0_sda_io&apos;"  />
+    <postMsg mid="1009991" type="Warning" dynamic="1" navigation="0" arg0="ldc_set_attribute {USE_PRIMARY=FALSE} [get_nets s0_sda_io] : fail to resolve object &apos;s0_sda_io&apos;"  />
+    <postMsg mid="1009991" type="Warning" dynamic="1" navigation="0" arg0="ldc_set_attribute {USE_PRIMARY=FALSE} [get_nets s0_sda_io] : fail to resolve object &apos;s0_sda_io&apos;"  />
+
+
+
+Design Summary:
+   Number of registers:        5727 out of 23937 (24%)
+      Number of SLICE         registers: 5718 out of 23040 (25%)
+      Number of PIO Input     registers:    9 out of   299 (3%)
+      Number of PIO Output    registers:    0 out of   299 (0%)
+      Number of PIO Tri-State registers:    0 out of   299 (0%)
+   Number of LUT4s:            16999 out of 23040 (74%)
+      Number used as logic LUT4s:                       11551
+      Number used as distributed RAM:                   3840 (6 per 16X4 RAM)
+      Number used as ripple logic:                      1608 (2 per CCU2)
+   Number of PIOs used/reserved:   25 out of   299 (8%)
+      Number of PIOs reserved:      3 (per sysConfig and/or prohibit constraint)
+      Number of PIOs used:         22
+        Number of PIOs used for single ended IO:        22
+        Number of PIO pairs used for differential IO:    0
+
+        Number allocated to regular speed PIOs:    22 out of  251 (9%)
+        Number allocated to high speed PIOs:        0 out of   48 (0%)
+   Number of Dedicated IO used for ADC:    0 out of    4 (0%)
+   Number of IDDR/ODDR/TDDR functions used:      0 out of   646 (0%)
+   Number of IOs using at least one DDR function: 0 (0 differential)
+   Number of Block RAMs:          74 out of 80 (93%)
+   Number of Large RAMs:          0 out of 1 (0%)
+   Number of Logical DSP Functions:
+      Number of Pre-Adders (9+9):    0 out of 40 (0%)
+      Number of Multipliers (18x18): 6 out of 20 (30%)
+         Number of 9X9:        0 (1 18x18 = 2   9x9)
+         Number of 18x18:      2 (1 18x18 = 1 18x18)
+         Number of 18x36:      2 (2 18x18 = 1 18x36)
+         Number of 36x36:      0 (4 18x18 = 1 36x36)
+      Number of 54-bit Accumulators: 0 out of 10 (0%)
+      Number of 18-bit Registers:    2 out of 40 (5%)
+   Number of Physical DSP Components:
+      Number of PREADD9:             12 out of 40 (30%)
+         Used PREADD9:               0
+         Bypassed PREADD9:           12
+      Number of MULT9:               12 out of 40 (30%)
+         Used MULT9:                 12
+         Bypassed MULT9:             0
+      Number of MULT18:              6 out of 20 (30%)
+         Used MULT18:                6
+         Disabled MULT18:            0
+      Number of MULT18X36:           2 out of 10 (20%)
+         Used MULT18X36:             2
+         Disabled MULT18X36:         0
+      Number of MULT36:              0 out of 5 (0%)
+      Number of ACC54:               0 out of 10 (0%)
+      Number of REG18:               10 out of 40 (25%)
+         Used REG18:                 2
+         Bypassed REG18:             8
+   Number of PLLs:                1 out of 2 (50%)
+   Number of DDRDLLs:             0 out of 2 (0%)
+   Number of DLLDELs:             0 out of 8 (0%)
+   Number of DQSs:                0 out of 4 (0%)
+   Number of DCSs:                0 out of 1 (0%)
+   Number of DCCs:                1 out of 62 (2%)
+   Number of PCLKDIVs:            0 out of 1 (0%)
+   Number of ECLKDIVs:            0 out of 8 (0%)
+   Number of ECLKSYNCs:           0 out of 8 (0%)
+   Number of ADC Blocks:          0 out of 1 (0%)
+   Number of SGMIICDRs:           0 out of 2 (0%)
+   Number of PMUs:                0 out of 1 (0%)
+   Number of BNKREF18s:           0 out of 2 (0%)
+   Number of BNKREF33s:           0 out of 8 (0%)
+   Number of I2CFIFOs:            0 out of 1 (0%)
+   Number of Oscillator:          1 out of 1 (100%)
+   Number of GSR:                 0 out of 1 (0%)
+   Number of Cryptographic Block: 0 out of 1 (0%)
+   Number of Config IP:           0 out of 1 (0%)
+                 TSALL:           0 out of 1 (0%)
+   Number of JTAG:                1 out of 1 (100%)
+   Number of Config LMMI:         0 out of 1 (0%)
+   Number of Config MULTIBOOT:    0 out of 1 (0%)
+   Number of SED:                 0 out of 1 (0%)
+   Number of Config WDT:          0 out of 1 (0%)
+   Number of Clocks:  9
+      Net reveal_jtck: 582 loads, 5 rising, 577 falling (Driver: Pin reveal_jtaghub_inst.jtagg_u/JTCK)
+      Net reveal_jtaghub_inst.tck: 1 loads, 1 rising, 0 falling (Driver: Port TCK)
+      Net pll0_inst_clkop_o_net: 3865 loads, 3865 rising, 0 falling (Driver: Pin pll0_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst/CLKOP)
+      Net reveal_ist_35: 14 loads, 5 rising, 9 falling (Driver: Port s0_sda_io)
+      Net reveal_ist_32: 323 loads, 222 rising, 101 falling (Driver: Port s0_scl_io)
+      Net pll0_inst_clkos_o_net: 1654 loads, 1632 rising, 22 falling (Driver: Pin pll0_inst.lscc_pll_inst.gen_no_refclk_mon.u_PLL.PLL_inst/CLKOS)
+      Net secured_signal_16963: 1 loads, 1 rising, 0 falling (Driver: Pin secured_comp_10999/Z)
+      Net osc0_inst_hf_clk_out_o_net: 1 loads, 1 rising, 0 falling (Driver: Pin osc0_inst.lscc_osc_inst.gen_osca.u_OSC_A.OSCA_inst/HFCLKOUT)
+      Net secured_signal_24911: 83 loads, 82 rising, 1 falling (Driver: Pin secured_comp_17464/CLKO)
+   Number of Clock Enables:  452
+      Net VCC: 66 loads, 0 SLICEs
+      Net reveal_jtaghub_inst.er1_shift_reg8: 23 loads, 23 SLICEs
+      Net reveal_ip_enable[0]: 37 loads, 37 SLICEs
+      Net reveal_jtaghub_inst.JUPDATE: 17 loads, 17 SLICEs
+      Net secured_signal_133: 36 loads, 0 SLICEs
+      Net secured_signal_140: 11 loads, 11 SLICEs
+      Net secured_signal_158: 15 loads, 15 SLICEs
+      Net secured_signal_208: 15 loads, 15 SLICEs
+      Net secured_signal_258: 1 loads, 1 SLICEs
+      Net secured_signal_259: 1 loads, 1 SLICEs
+      Net secured_signal_301: 15 loads, 15 SLICEs
+      Net secured_signal_310: 16 loads, 16 SLICEs
+      Net secured_signal_313: 2 loads, 2 SLICEs
+      Net secured_signal_314: 15 loads, 15 SLICEs
+      Net secured_signal_331: 18 loads, 18 SLICEs
+      Net secured_signal_333: 15 loads, 15 SLICEs
+      Net secured_signal_334: 15 loads, 15 SLICEs
+      Net secured_signal_345: 15 loads, 15 SLICEs
+      Net secured_signal_397: 15 loads, 15 SLICEs
+      Net secured_signal_557: 18 loads, 0 SLICEs
+      Net secured_signal_558: 18 loads, 0 SLICEs
+      Net secured_signal_762: 2 loads, 2 SLICEs
+      Net secured_signal_768: 20 loads, 20 SLICEs
+      Net secured_signal_822: 16 loads, 16 SLICEs
+      Net secured_signal_842: 5 loads, 5 SLICEs
+      Net secured_signal_894: 16 loads, 16 SLICEs
+      Net secured_signal_902: 1 loads, 1 SLICEs
+      Net secured_signal_904: 1 loads, 1 SLICEs
+      Net secured_signal_961: 1 loads, 1 SLICEs
+      Net secured_signal_973: 2 loads, 2 SLICEs
+      Net secured_signal_1011: 26 loads, 26 SLICEs
+      Net secured_signal_1129: 2 loads, 2 SLICEs
+      Net secured_signal_1152: 10 loads, 10 SLICEs
+      Net secured_signal_1153: 3 loads, 3 SLICEs
+      Net secured_signal_1175: 1 loads, 1 SLICEs
+      Net secured_signal_1191: 16 loads, 16 SLICEs
+      Net secured_signal_1203: 1 loads, 1 SLICEs
+      Net secured_signal_1206: 1 loads, 1 SLICEs
+      Net secured_signal_1234: 1 loads, 1 SLICEs
+      Net secured_signal_1249: 2 loads, 2 SLICEs
+      Net secured_signal_1259: 2 loads, 2 SLICEs
+      Net secured_signal_1291: 1 loads, 1 SLICEs
+      Net secured_signal_2238: 16 loads, 16 SLICEs
+      Net secured_signal_2250: 1 loads, 1 SLICEs
+      Net secured_signal_2253: 1 loads, 1 SLICEs
+      Net secured_signal_2282: 1 loads, 1 SLICEs
+      Net secured_signal_2293: 2 loads, 2 SLICEs
+      Net secured_signal_2305: 1 loads, 1 SLICEs
+      Net secured_signal_2306: 2 loads, 2 SLICEs
+      Net secured_signal_3274: 16 loads, 16 SLICEs
+      Net secured_signal_3314: 1 loads, 1 SLICEs
+      Net secured_signal_3332: 2 loads, 2 SLICEs
+      Net secured_signal_3340: 2 loads, 2 SLICEs
+      Net secured_signal_3374: 1 loads, 1 SLICEs
+      Net secured_signal_3375: 1 loads, 1 SLICEs
+      Net secured_signal_3376: 1 loads, 1 SLICEs
+      Net secured_signal_4313: 16 loads, 16 SLICEs
+      Net secured_signal_4353: 1 loads, 1 SLICEs
+      Net secured_signal_4371: 2 loads, 2 SLICEs
+      Net secured_signal_4379: 2 loads, 2 SLICEs
+      Net secured_signal_4413: 1 loads, 1 SLICEs
+      Net secured_signal_4414: 1 loads, 1 SLICEs
+      Net secured_signal_4415: 1 loads, 1 SLICEs
+      Net secured_signal_5352: 16 loads, 16 SLICEs
+      Net secured_signal_5392: 1 loads, 1 SLICEs
+      Net secured_signal_5410: 2 loads, 2 SLICEs
+      Net secured_signal_5418: 2 loads, 2 SLICEs
+      Net secured_signal_5452: 1 loads, 1 SLICEs
+      Net secured_signal_5453: 1 loads, 1 SLICEs
+      Net secured_signal_5454: 1 loads, 1 SLICEs
+      Net secured_signal_6391: 16 loads, 16 SLICEs
+      Net secured_signal_6431: 1 loads, 1 SLICEs
+      Net secured_signal_6449: 2 loads, 2 SLICEs
+      Net secured_signal_6457: 2 loads, 2 SLICEs
+      Net secured_signal_6491: 1 loads, 1 SLICEs
+      Net secured_signal_6492: 1 loads, 1 SLICEs
+      Net secured_signal_6493: 1 loads, 1 SLICEs
+      Net secured_signal_7430: 16 loads, 16 SLICEs
+      Net secured_signal_7470: 1 loads, 1 SLICEs
+      Net secured_signal_7488: 2 loads, 2 SLICEs
+      Net secured_signal_7496: 2 loads, 2 SLICEs
+      Net secured_signal_7530: 1 loads, 1 SLICEs
+      Net secured_signal_7531: 1 loads, 1 SLICEs
+      Net secured_signal_7532: 1 loads, 1 SLICEs
+      Net secured_signal_8469: 16 loads, 16 SLICEs
+      Net secured_signal_8509: 1 loads, 1 SLICEs
+      Net secured_signal_8527: 2 loads, 2 SLICEs
+      Net secured_signal_8535: 2 loads, 2 SLICEs
+      Net secured_signal_8569: 1 loads, 1 SLICEs
+      Net secured_signal_8570: 1 loads, 1 SLICEs
+      Net secured_signal_8571: 1 loads, 1 SLICEs
+      Net secured_signal_9508: 16 loads, 16 SLICEs
+      Net secured_signal_9548: 1 loads, 1 SLICEs
+      Net secured_signal_9566: 2 loads, 2 SLICEs
+      Net secured_signal_9574: 2 loads, 2 SLICEs
+      Net secured_signal_9608: 1 loads, 1 SLICEs
+      Net secured_signal_9609: 1 loads, 1 SLICEs
+      Net secured_signal_9610: 1 loads, 1 SLICEs
+      Net secured_signal_10548: 16 loads, 16 SLICEs
+      Net secured_signal_10556: 1 loads, 1 SLICEs
+      Net secured_signal_10560: 1 loads, 1 SLICEs
+      Net secured_signal_10587: 1 loads, 1 SLICEs
+      Net secured_signal_10600: 16 loads, 16 SLICEs
+      Net secured_signal_10603: 2 loads, 2 SLICEs
+      Net secured_signal_10615: 2 loads, 2 SLICEs
+      Net secured_signal_10649: 1 loads, 1 SLICEs
+      Net secured_signal_11594: 1 loads, 1 SLICEs
+      Net secured_signal_11595: 1 loads, 1 SLICEs
+      Net secured_signal_11600: 3 loads, 3 SLICEs
+      Net secured_signal_11617: 1 loads, 1 SLICEs
+      Net secured_signal_11618: 1 loads, 1 SLICEs
+      Net secured_signal_11623: 3 loads, 3 SLICEs
+      Net secured_signal_11640: 1 loads, 1 SLICEs
+      Net secured_signal_11641: 1 loads, 1 SLICEs
+      Net secured_signal_11646: 3 loads, 3 SLICEs
+      Net secured_signal_11666: 1 loads, 1 SLICEs
+      Net secured_signal_11667: 1 loads, 1 SLICEs
+      Net secured_signal_11672: 3 loads, 3 SLICEs
+      Net secured_signal_11692: 1 loads, 1 SLICEs
+      Net secured_signal_11693: 1 loads, 1 SLICEs
+      Net secured_signal_11698: 3 loads, 3 SLICEs
+      Net secured_signal_11718: 1 loads, 1 SLICEs
+      Net secured_signal_11719: 1 loads, 1 SLICEs
+      Net secured_signal_11724: 3 loads, 3 SLICEs
+      Net secured_signal_11744: 1 loads, 1 SLICEs
+      Net secured_signal_11745: 1 loads, 1 SLICEs
+      Net secured_signal_11750: 3 loads, 3 SLICEs
+      Net secured_signal_11770: 1 loads, 1 SLICEs
+      Net secured_signal_11771: 1 loads, 1 SLICEs
+      Net secured_signal_11776: 3 loads, 3 SLICEs
+      Net secured_signal_11796: 1 loads, 1 SLICEs
+      Net secured_signal_11797: 1 loads, 1 SLICEs
+      Net secured_signal_11802: 3 loads, 3 SLICEs
+      Net secured_signal_11822: 1 loads, 1 SLICEs
+      Net secured_signal_11823: 1 loads, 1 SLICEs
+      Net secured_signal_11828: 3 loads, 3 SLICEs
+      Net ahb2apb_inst_APB_M0_interconnect_PSELx: 4 loads, 4 SLICEs
+      Net secured_signal_12034: 5 loads, 5 SLICEs
+      Net secured_signal_12035: 1 loads, 1 SLICEs
+      Net secured_signal_12243: 32 loads, 32 SLICEs
+      Net secured_signal_12263: 35 loads, 35 SLICEs
+      Net secured_signal_12357: 36 loads, 36 SLICEs
+      Net secured_signal_12429: 9 loads, 9 SLICEs
+      Net secured_signal_12552: 32 loads, 32 SLICEs
+      Net secured_signal_12557: 45 loads, 45 SLICEs
+      Net secured_signal_12559: 1 loads, 1 SLICEs
+      Net gpio0_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0.int_type_r_1_sqmuxa: 9 loads, 9 SLICEs
+      Net gpio0_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0.direction_r_1_sqmuxa: 9 loads, 9 SLICEs
+      Net gpio0_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0.int_method_r_1_sqmuxa: 9 loads, 9 SLICEs
+      Net gpio0_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0.int_enable_r_1_sqmuxa: 9 loads, 9 SLICEs
+      Net gpio0_inst.lscc_gpio_inst.genblk1.lscc_gpio_lmmi_0.un1_gpio_out_r22_i_a2: 9 loads, 9 SLICEs
+      Net gpio0_inst.lscc_gpio_inst.genblk2.lscc_apb2lmmi_0.bus_sm_cs[1]: 2 loads, 2 SLICEs
+      Net gpio0_inst.lscc_gpio_inst.genblk2.lscc_apb2lmmi_0.apb_pready_o_RNO: 1 loads, 1 SLICEs
+      Net gpio0_inst.lscc_gpio_inst.genblk2.lscc_apb2lmmi_0.lmmi_offset_nxt_0_sqmuxa: 13 loads, 13 SLICEs
+      Net gpio0_inst.lscc_gpio_inst.genblk2.lscc_apb2lmmi_0.N_533_i: 9 loads, 9 SLICEs
+      Net secured_signal_13025: 8 loads, 8 SLICEs
+      Net secured_signal_13026: 4 loads, 4 SLICEs
+      Net secured_signal_13029: 8 loads, 8 SLICEs
+      Net secured_signal_13070: 8 loads, 8 SLICEs
+      Net secured_signal_13079: 5 loads, 5 SLICEs
+      Net secured_signal_13109: 4 loads, 4 SLICEs
+      Net secured_signal_13206: 1 loads, 1 SLICEs
+      Net secured_signal_13207: 8 loads, 8 SLICEs
+      Net secured_signal_13208: 7 loads, 7 SLICEs
+      Net secured_signal_13338: 8 loads, 8 SLICEs
+      Net secured_signal_13396: 8 loads, 8 SLICEs
+      Net secured_signal_13431: 1 loads, 1 SLICEs
+      Net secured_signal_13433: 1 loads, 1 SLICEs
+      Net secured_signal_13435: 1 loads, 1 SLICEs
+      Net secured_signal_13437: 2 loads, 2 SLICEs
+      Net secured_signal_13444: 1 loads, 1 SLICEs
+      Net secured_signal_13471: 1 loads, 1 SLICEs
+      Net secured_signal_13513: 1 loads, 1 SLICEs
+      Net secured_signal_13520: 1 loads, 1 SLICEs
+      Net secured_signal_13536: 1 loads, 1 SLICEs
+      Net secured_signal_13591: 1 loads, 1 SLICEs
+      Net secured_signal_13638: 1 loads, 1 SLICEs
+      Net secured_signal_13653: 8 loads, 8 SLICEs
+      Net secured_signal_13655: 1 loads, 1 SLICEs
+      Net secured_signal_13679: 1 loads, 1 SLICEs
+      Net secured_signal_13681: 1 loads, 1 SLICEs
+      Net secured_signal_13692: 1 loads, 1 SLICEs
+      Net secured_signal_13765: 1 loads, 1 SLICEs
+      Net secured_signal_13782: 1 loads, 1 SLICEs
+      Net secured_signal_13791: 1 loads, 1 SLICEs
+      Net secured_signal_13795: 2 loads, 2 SLICEs
+      Net secured_signal_13809: 1 loads, 1 SLICEs
+      Net secured_signal_13871: 8 loads, 8 SLICEs
+      Net secured_signal_13872: 8 loads, 8 SLICEs
+      Net secured_signal_13875: 1 loads, 1 SLICEs
+      Net secured_signal_13946: 1 loads, 1 SLICEs
+      Net secured_signal_13947: 1 loads, 1 SLICEs
+      Net secured_signal_13992: 8 loads, 8 SLICEs
+      Net secured_signal_14016: 8 loads, 8 SLICEs
+      Net secured_signal_14047: 8 loads, 8 SLICEs
+      Net secured_signal_14048: 8 loads, 8 SLICEs
+      Net secured_signal_14091: 1 loads, 1 SLICEs
+      Net secured_signal_14092: 8 loads, 8 SLICEs
+      Net secured_signal_14095: 3 loads, 3 SLICEs
+      Net secured_signal_14288: 2 loads, 2 SLICEs
+      Net secured_signal_14362: 1 loads, 0 SLICEs
+      Net secured_signal_14370: 1 loads, 0 SLICEs
+      Net secured_signal_14568: 2 loads, 2 SLICEs
+      Net secured_signal_14571: 1 loads, 0 SLICEs
+      Net secured_signal_14661: 1 loads, 0 SLICEs
+      Net secured_signal_14772: 1 loads, 1 SLICEs
+      Net secured_signal_14803: 2 loads, 2 SLICEs
+      Net secured_signal_14806: 1 loads, 1 SLICEs
+      Net secured_signal_14809: 1 loads, 1 SLICEs
+      Net secured_signal_14835: 15 loads, 15 SLICEs
+      Net secured_signal_14838: 1 loads, 1 SLICEs
+      Net secured_signal_14862: 1 loads, 1 SLICEs
+      Net secured_signal_14868: 2 loads, 2 SLICEs
+      Net secured_signal_14919: 1 loads, 1 SLICEs
+      Net secured_signal_14928: 1 loads, 1 SLICEs
+      Net secured_signal_14936: 1 loads, 1 SLICEs
+      Net secured_signal_14961: 1 loads, 1 SLICEs
+      Net secured_signal_14970: 1 loads, 1 SLICEs
+      Net secured_signal_14973: 1 loads, 1 SLICEs
+      Net secured_signal_14991: 2 loads, 2 SLICEs
+      Net secured_signal_14994: 2 loads, 2 SLICEs
+      Net secured_signal_15065: 2 loads, 2 SLICEs
+      Net secured_signal_15114: 2 loads, 2 SLICEs
+      Net secured_signal_15148: 3 loads, 3 SLICEs
+      Net secured_signal_15164: 2 loads, 2 SLICEs
+      Net secured_signal_15169: 8 loads, 8 SLICEs
+      Net secured_signal_15173: 1 loads, 1 SLICEs
+      Net secured_signal_15175: 16 loads, 16 SLICEs
+      Net secured_signal_15199: 4 loads, 4 SLICEs
+      Net secured_signal_15227: 4 loads, 4 SLICEs
+      Net secured_signal_15233: 1 loads, 1 SLICEs
+      Net secured_signal_15238: 17 loads, 17 SLICEs
+      Net secured_signal_15242: 9 loads, 9 SLICEs
+      Net secured_signal_15245: 1 loads, 1 SLICEs
+      Net secured_signal_15406: 2 loads, 2 SLICEs
+      Net secured_signal_15473: 1 loads, 0 SLICEs
+      Net secured_signal_15482: 1 loads, 0 SLICEs
+      Net secured_signal_15717: 2 loads, 2 SLICEs
+      Net secured_signal_15785: 1 loads, 0 SLICEs
+      Net secured_signal_15794: 1 loads, 0 SLICEs
+      Net secured_signal_16086: 7 loads, 7 SLICEs
+      Net secured_signal_16087: 3 loads, 3 SLICEs
+      Net secured_signal_16115: 8 loads, 8 SLICEs
+      Net secured_signal_16118: 8 loads, 8 SLICEs
+      Net secured_signal_16128: 18 loads, 18 SLICEs
+      Net secured_signal_16130: 8 loads, 8 SLICEs
+      Net secured_signal_16154: 8 loads, 8 SLICEs
+      Net secured_signal_16331: 6 loads, 6 SLICEs
+      Net secured_signal_16332: 8 loads, 8 SLICEs
+      Net secured_signal_16333: 7 loads, 7 SLICEs
+      Net secured_signal_16334: 3 loads, 3 SLICEs
+      Net secured_signal_16336: 7 loads, 7 SLICEs
+      Net secured_signal_16337: 8 loads, 8 SLICEs
+      Net secured_signal_16338: 8 loads, 8 SLICEs
+      Net secured_signal_16341: 8 loads, 8 SLICEs
+      Net secured_signal_16342: 8 loads, 8 SLICEs
+      Net secured_signal_16343: 8 loads, 8 SLICEs
+      Net secured_signal_16344: 8 loads, 8 SLICEs
+      Net secured_signal_16346: 8 loads, 8 SLICEs
+      Net secured_signal_16347: 8 loads, 8 SLICEs
+      Net secured_signal_16348: 7 loads, 7 SLICEs
+      Net secured_signal_16349: 6 loads, 6 SLICEs
+      Net secured_signal_16350: 2 loads, 2 SLICEs
+      Net secured_signal_16351: 8 loads, 8 SLICEs
+      Net secured_signal_16352: 8 loads, 8 SLICEs
+      Net secured_signal_16353: 8 loads, 8 SLICEs
+      Net secured_signal_16354: 8 loads, 8 SLICEs
+      Net secured_signal_16708: 8 loads, 8 SLICEs
+      Net secured_signal_16738: 1 loads, 1 SLICEs
+      Net secured_signal_16744: 11 loads, 11 SLICEs
+      Net secured_signal_16823: 1 loads, 1 SLICEs
+      Net secured_signal_16856: 2 loads, 2 SLICEs
+      Net secured_signal_16859: 3 loads, 3 SLICEs
+      Net secured_signal_16860: 1 loads, 1 SLICEs
+      Net secured_signal_16864: 2 loads, 2 SLICEs
+      Net secured_signal_16889: 1 loads, 1 SLICEs
+      Net secured_signal_16900: 2 loads, 2 SLICEs
+      Net secured_signal_16906: 8 loads, 8 SLICEs
+      Net secured_signal_16912: 1 loads, 1 SLICEs
+      Net secured_signal_16919: 1 loads, 1 SLICEs
+      Net secured_signal_16920: 8 loads, 8 SLICEs
+      Net secured_signal_16922: 8 loads, 8 SLICEs
+      Net secured_signal_16924: 1 loads, 1 SLICEs
+      Net secured_signal_16954: 8 loads, 8 SLICEs
+      Net secured_signal_17057: 8 loads, 8 SLICEs
+      Net secured_signal_17133: 1 loads, 1 SLICEs
+      Net secured_signal_17135: 1 loads, 1 SLICEs
+      Net secured_signal_17139: 5 loads, 5 SLICEs
+      Net secured_signal_17143: 1 loads, 1 SLICEs
+      Net secured_signal_17172: 1 loads, 1 SLICEs
+      Net secured_signal_17179: 1 loads, 1 SLICEs
+      Net secured_signal_17185: 1 loads, 1 SLICEs
+      Net secured_signal_17195: 8 loads, 8 SLICEs
+      Net secured_signal_17199: 8 loads, 8 SLICEs
+      Net secured_signal_17205: 8 loads, 8 SLICEs
+      Net secured_signal_17223: 1 loads, 1 SLICEs
+      Net secured_signal_17226: 1 loads, 1 SLICEs
+      Net secured_signal_17228: 3 loads, 3 SLICEs
+      Net secured_signal_17230: 1 loads, 1 SLICEs
+      Net secured_signal_17232: 1 loads, 1 SLICEs
+      Net secured_signal_17234: 1 loads, 1 SLICEs
+      Net secured_signal_17237: 8 loads, 8 SLICEs
+      Net secured_signal_17243: 1 loads, 1 SLICEs
+      Net secured_signal_17306: 1 loads, 1 SLICEs
+      Net secured_signal_17309: 8 loads, 8 SLICEs
+      Net secured_signal_17331: 2 loads, 2 SLICEs
+      Net secured_signal_17345: 8 loads, 8 SLICEs
+      Net secured_signal_17347: 8 loads, 8 SLICEs
+      Net secured_signal_17358: 8 loads, 8 SLICEs
+      Net secured_signal_17382: 1 loads, 1 SLICEs
+      Net secured_signal_17390: 1 loads, 1 SLICEs
+      Net secured_signal_17418: 8 loads, 8 SLICEs
+      Net secured_signal_17437: 2 loads, 2 SLICEs
+      Net secured_signal_17463: 2 loads, 2 SLICEs
+      Net secured_signal_17470: 1 loads, 1 SLICEs
+      Net secured_signal_17471: 8 loads, 8 SLICEs
+      Net secured_signal_17473: 1 loads, 1 SLICEs
+      Net secured_signal_17475: 1 loads, 1 SLICEs
+      Net secured_signal_17479: 8 loads, 8 SLICEs
+      Net secured_signal_17486: 1 loads, 1 SLICEs
+      Net secured_signal_17487: 1 loads, 1 SLICEs
+      Net secured_signal_17608: 1 loads, 1 SLICEs
+      Net secured_signal_17610: 1 loads, 1 SLICEs
+      Net secured_signal_17876: 7 loads, 7 SLICEs
+      Net secured_signal_17907: 1 loads, 1 SLICEs
+      Net secured_signal_18274: 2 loads, 2 SLICEs
+      Net secured_signal_18279: 8 loads, 8 SLICEs
+      Net secured_signal_18283: 1 loads, 1 SLICEs
+      Net secured_signal_18285: 16 loads, 16 SLICEs
+      Net secured_signal_18292: 32 loads, 32 SLICEs
+      Net secured_signal_18294: 32 loads, 32 SLICEs
+      Net secured_signal_18349: 2 loads, 0 SLICEs
+      Net secured_signal_18553: 32 loads, 32 SLICEs
+      Net secured_signal_18573: 32 loads, 32 SLICEs
+      Net secured_signal_18614: 5 loads, 5 SLICEs
+      Net secured_signal_18798: 1 loads, 1 SLICEs
+      Net secured_signal_18893: 2 loads, 2 SLICEs
+      Net secured_signal_18895: 38 loads, 38 SLICEs
+      Net secured_signal_18898: 1 loads, 1 SLICEs
+      Net secured_signal_18902: 2 loads, 2 SLICEs
+      Net secured_signal_19106: 1 loads, 1 SLICEs
+      Net secured_signal_19219: 1 loads, 1 SLICEs
+      Net risc_mc_inst_AHBL_M0_INSTR_interconnect_HREADYOUT: 1 loads, 1 SLICEs
+      Net secured_signal_19266: 1 loads, 1 SLICEs
+      Net secured_signal_19268: 1 loads, 1 SLICEs
+      Net secured_signal_19269: 15 loads, 15 SLICEs
+      Net secured_signal_19271: 2 loads, 2 SLICEs
+      Net secured_signal_19273: 1 loads, 1 SLICEs
+      Net secured_signal_19274: 1 loads, 1 SLICEs
+      Net secured_signal_19296: 40 loads, 40 SLICEs
+      Net secured_signal_19327: 14 loads, 14 SLICEs
+      Net secured_signal_19688: 1 loads, 1 SLICEs
+      Net secured_signal_19718: 1 loads, 1 SLICEs
+      Net secured_signal_19741: 1 loads, 1 SLICEs
+      Net secured_signal_19744: 3 loads, 3 SLICEs
+      Net secured_signal_19746: 32 loads, 32 SLICEs
+      Net secured_signal_19748: 30 loads, 30 SLICEs
+      Net secured_signal_19755: 16 loads, 16 SLICEs
+      Net secured_signal_19804: 1 loads, 1 SLICEs
+      Net secured_signal_19805: 1 loads, 1 SLICEs
+      Net secured_signal_19828: 188 loads, 188 SLICEs
+      Net secured_signal_19909: 35 loads, 35 SLICEs
+      Net secured_signal_20297: 34 loads, 34 SLICEs
+      Net secured_signal_20353: 5 loads, 5 SLICEs
+      Net secured_signal_20354: 1 loads, 1 SLICEs
+      Net secured_signal_20474: 1 loads, 1 SLICEs
+      Net secured_signal_20498: 1 loads, 1 SLICEs
+      Net secured_signal_20500: 1 loads, 1 SLICEs
+      Net secured_signal_20665: 32 loads, 32 SLICEs
+      Net secured_signal_20686: 252 loads, 248 SLICEs
+      Net secured_signal_20987: 1 loads, 1 SLICEs
+      Net secured_signal_21142: 1 loads, 1 SLICEs
+      Net secured_signal_21353: 32 loads, 32 SLICEs
+      Net secured_signal_21355: 32 loads, 32 SLICEs
+      Net secured_signal_22136: 32 loads, 32 SLICEs
+      Net secured_signal_22920: 33 loads, 33 SLICEs
+      Net secured_signal_24847: 1 loads, 1 SLICEs
+      Net secured_signal_24858: 8 loads, 8 SLICEs
+      Net secured_signal_24859: 65 loads, 65 SLICEs
+      Net secured_signal_24871: 1 loads, 1 SLICEs
+      Net secured_signal_24917: 4 loads, 4 SLICEs
+      Net secured_signal_24925: 1 loads, 1 SLICEs
+      Net secured_signal_24938: 4 loads, 4 SLICEs
+      Net secured_signal_24941: 34 loads, 34 SLICEs
+      Net secured_signal_24944: 2 loads, 2 SLICEs
+      Net secured_signal_24946: 32 loads, 32 SLICEs
+      Net secured_signal_25067: 2 loads, 2 SLICEs
+      Net secured_signal_25071: 32 loads, 32 SLICEs
+      Net secured_signal_25108: 1 loads, 1 SLICEs
+      Net secured_signal_25113: 1 loads, 1 SLICEs
+      Net secured_signal_25115: 2 loads, 2 SLICEs
+      Net secured_signal_25131: 35 loads, 35 SLICEs
+      Net secured_signal_25133: 1 loads, 1 SLICEs
+      Net secured_signal_25141: 1 loads, 1 SLICEs
+      Net secured_signal_25554: 64 loads, 64 SLICEs
+      Net secured_signal_25636: 8 loads, 8 SLICEs
+      Net secured_signal_25637: 8 loads, 8 SLICEs
+      Net secured_signal_25638: 8 loads, 8 SLICEs
+      Net secured_signal_25639: 8 loads, 8 SLICEs
+      Net secured_signal_25640: 8 loads, 8 SLICEs
+      Net secured_signal_25641: 8 loads, 8 SLICEs
+      Net secured_signal_25642: 8 loads, 8 SLICEs
+      Net secured_signal_25643: 8 loads, 8 SLICEs
+      Net secured_signal_25742: 4 loads, 4 SLICEs
+      Net secured_signal_25751: 4 loads, 4 SLICEs
+      Net secured_signal_25752: 4 loads, 4 SLICEs
+      Net secured_signal_25780: 3 loads, 3 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.raddr_ahead_2_sqmuxa_i: 14 loads, 14 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.addr_counte: 5 loads, 5 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.u_ahbl_raddrq.dtout11: 14 loads, 14 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.u_ahbl_raddrq.memArray_nxt_[0]_0_sqmuxa: 14 loads, 14 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.u_ahbl_raddrq.memArray_nxt_[3]_0_sqmuxa: 14 loads, 14 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.u_ahbl_raddrq.memArray_nxt_[1]_0_sqmuxa: 14 loads, 14 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.u_ahbl_raddrq.memArray_nxt_[2]_0_sqmuxa: 14 loads, 14 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.no_gen_reg_mode.u_ahbl_rdatq.memArray_nxt_[2]_0_sqmuxa: 32 loads, 32 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.no_gen_reg_mode.u_ahbl_rdatq.memArray_nxt_[1]_0_sqmuxa: 32 loads, 32 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.no_gen_reg_mode.u_ahbl_rdatq.dtout10: 32 loads, 32 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s0.genblk1.bridge_s0.no_gen_reg_mode.u_ahbl_rdatq.memArray_nxt_[0]_0_sqmuxa: 32 loads, 32 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.u_ahbl_raddrq.memArray_nxt_[0]_0_sqmuxa: 19 loads, 19 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.u_ahbl_raddrq.memArray_nxt_[3]_0_sqmuxa: 19 loads, 19 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.u_ahbl_raddrq.memArray_nxt_[1]_0_sqmuxa: 19 loads, 19 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.u_ahbl_raddrq.memArray_nxt_[2]_0_sqmuxa: 19 loads, 19 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.u_ahbl_raddrq.dtout11: 19 loads, 19 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.addr_counte: 5 loads, 5 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.raddr_ahead_2_sqmuxa_i: 16 loads, 16 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.gen_wdata_fifo.u_ahbl_wdataq.N_617_i: 32 loads, 32 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.gen_wdata_fifo.u_ahbl_wdataq.N_618_i: 32 loads, 32 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.gen_wdata_fifo.u_ahbl_wdataq.N_616_i: 32 loads, 32 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.gen_wdata_fifo.u_ahbl_wdataq.N_615_i: 32 loads, 32 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.gen_wdata_fifo.u_ahbl_wdataq.N_595_i: 32 loads, 32 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.no_gen_reg_mode.u_ahbl_rdatq.N_620_i: 32 loads, 32 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.no_gen_reg_mode.u_ahbl_rdatq.N_621_i: 32 loads, 32 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.no_gen_reg_mode.u_ahbl_rdatq.dtout10: 32 loads, 32 SLICEs
+      Net sys_mem_inst.lscc_sys_mem_inst.bridge_s1.genblk1.bridge_s1.no_gen_reg_mode.u_ahbl_rdatq.N_623_i: 32 loads, 32 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_intface.divisorce[8]: 8 loads, 8 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_intface.divisorce[0]: 8 loads, 8 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_intface.ier_1_sqmuxa: 3 loads, 3 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_intface.lcr_1_sqmuxa: 7 loads, 7 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_intface.data_8bit26: 8 loads, 8 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_intface.thr_nonfifo_0_sqmuxa: 8 loads, 8 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_rxcver.rbr_datardy_RNO: 1 loads, 1 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_rxcver.hunt_one_RNO_0: 1 loads, 1 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_rxcver.N_334_i: 12 loads, 12 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_rxcver.N_335_i: 1 loads, 1 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_rxcver.un1_cs_state_3_i: 1 loads, 1 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_rxcver.un1_cs_state_0_sqmuxa_2_i_0: 1 loads, 1 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_rxcver.rbr24: 8 loads, 8 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_rxcver.un1_lsr_rd: 4 loads, 4 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_txmitt.tx_state[0]: 17 loads, 17 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_txmitt.un2_counter_eq_1_1: 9 loads, 9 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_txmitt.un1_thr_wr_1: 1 loads, 1 SLICEs
+      Net uart0_inst.lscc_uart_inst.u_txmitt.un1_tsr_empty8: 1 loads, 1 SLICEs
+   Number of LSRs:  688
+      Net VCC: 90 loads, 0 SLICEs
+      Net reveal_jrstn: 525 loads, 524 SLICEs
+      Net I3C_XO5_reveal_coretop_instance.i3c_xo5_la0_inst_0.reset_rvl_n: 403 loads, 403 SLICEs
+      Pin s0_scl_io: 8 loads, 8 SLICEs (Net: reveal_ist_32)
+      Net secured_signal_1583: 1 loads, 1 SLICEs
+      Net secured_signal_1585: 1 loads, 1 SLICEs
+      Net secured_signal_1587: 1 loads, 1 SLICEs
+      Net secured_signal_1589: 1 loads, 1 SLICEs
+      Net secured_signal_1591: 1 loads, 1 SLICEs
+      Net secured_signal_1593: 1 loads, 1 SLICEs
+      Net secured_signal_1595: 1 loads, 1 SLICEs
+      Net secured_signal_1597: 1 loads, 1 SLICEs
+      Net secured_signal_1599: 1 loads, 1 SLICEs
+      Net secured_signal_1601: 1 loads, 1 SLICEs
+      Net secured_signal_1603: 1 loads, 1 SLICEs
+      Net secured_signal_1605: 1 loads, 1 SLICEs
+      Net secured_signal_1607: 1 loads, 1 SLICEs
+      Net secured_signal_1609: 1 loads, 1 SLICEs
+      Net secured_signal_1611: 1 loads, 1 SLICEs
+      Net secured_signal_1613: 1 loads, 1 SLICEs
+      Net secured_signal_1615: 1 loads, 1 SLICEs
+      Net secured_signal_1617: 1 loads, 1 SLICEs
+      Net secured_signal_1619: 1 loads, 1 SLICEs
+      Net secured_signal_1621: 1 loads, 1 SLICEs
+      Net secured_signal_1623: 1 loads, 1 SLICEs
+      Net secured_signal_1625: 1 loads, 1 SLICEs
+      Net secured_signal_1627: 1 loads, 1 SLICEs
+      Net secured_signal_1629: 1 loads, 1 SLICEs
+      Net secured_signal_1631: 1 loads, 1 SLICEs
+      Net secured_signal_1633: 1 loads, 1 SLICEs
+      Net secured_signal_1635: 1 loads, 1 SLICEs
+      Net secured_signal_1637: 1 loads, 1 SLICEs
+      Net secured_signal_1639: 1 loads, 1 SLICEs
+      Net secured_signal_1641: 1 loads, 1 SLICEs
+      Net secured_signal_1643: 1 loads, 1 SLICEs
+      Net secured_signal_1645: 1 loads, 1 SLICEs
+      Net secured_signal_1647: 1 loads, 1 SLICEs
+      Net secured_signal_1649: 1 loads, 1 SLICEs
+      Net secured_signal_1651: 1 loads, 1 SLICEs
+      Net secured_signal_1653: 1 loads, 1 SLICEs
+      Net secured_signal_1655: 1 loads, 1 SLICEs
+      Net secured_signal_1657: 1 loads, 1 SLICEs
+      Net secured_signal_1659: 1 loads, 1 SLICEs
+      Net secured_signal_1661: 1 loads, 1 SLICEs
+      Net secured_signal_1663: 1 loads, 1 SLICEs
+      Net secured_signal_1665: 1 loads, 1 SLICEs
+      Net secured_signal_1667: 1 loads, 1 SLICEs
+      Net secured_signal_1669: 1 loads, 1 SLICEs
+      Net secured_signal_1671: 1 loads, 1 SLICEs
+      Net secured_signal_1673: 1 loads, 1 SLICEs
+      Net secured_signal_1675: 1 loads, 1 SLICEs
+      Net secured_signal_1677: 1 loads, 1 SLICEs
+      Net secured_signal_1679: 1 loads, 1 SLICEs
+      Net secured_signal_1681: 1 loads, 1 SLICEs
+      Net secured_signal_1683: 1 loads, 1 SLICEs
+      Net secured_signal_1685: 1 loads, 1 SLICEs
+      Net secured_signal_1687: 1 loads, 1 SLICEs
+      Net secured_signal_1689: 1 loads, 1 SLICEs
+      Net secured_signal_1691: 1 loads, 1 SLICEs
+      Net secured_signal_1693: 1 loads, 1 SLICEs
+      Net secured_signal_1695: 1 loads, 1 SLICEs
+      Net secured_signal_1697: 1 loads, 1 SLICEs
+      Net secured_signal_1699: 1 loads, 1 SLICEs
+      Net secured_signal_1701: 1 loads, 1 SLICEs
+      Net secured_signal_1703: 1 loads, 1 SLICEs
+      Net secured_signal_1705: 1 loads, 1 SLICEs
+      Net secured_signal_1707: 1 loads, 1 SLICEs
+      Net secured_signal_1709: 1 loads, 1 SLICEs
+      Net secured_signal_2623: 1 loads, 1 SLICEs
+      Net secured_signal_2625: 1 loads, 1 SLICEs
+      Net secured_signal_2627: 1 loads, 1 SLICEs
+      Net secured_signal_2629: 1 loads, 1 SLICEs
+      Net secured_signal_2631: 1 loads, 1 SLICEs
+      Net secured_signal_2633: 1 loads, 1 SLICEs
+      Net secured_signal_2635: 1 loads, 1 SLICEs
+      Net secured_signal_2637: 1 loads, 1 SLICEs
+      Net secured_signal_2639: 1 loads, 1 SLICEs
+      Net secured_signal_2641: 1 loads, 1 SLICEs
+      Net secured_signal_2643: 1 loads, 1 SLICEs
+      Net secured_signal_2645: 1 loads, 1 SLICEs
+      Net secured_signal_2647: 1 loads, 1 SLICEs
+      Net secured_signal_2649: 1 loads, 1 SLICEs
+      Net secured_signal_2651: 1 loads, 1 SLICEs
+      Net secured_signal_2653: 1 loads, 1 SLICEs
+      Net secured_signal_2655: 1 loads, 1 SLICEs
+      Net secured_signal_2657: 1 loads, 1 SLICEs
+      Net secured_signal_2659: 1 loads, 1 SLICEs
+      Net secured_signal_2661: 1 loads, 1 SLICEs
+      Net secured_signal_2663: 1 loads, 1 SLICEs
+      Net secured_signal_2665: 1 loads, 1 SLICEs
+      Net secured_signal_2667: 1 loads, 1 SLICEs
+      Net secured_signal_2669: 1 loads, 1 SLICEs
+      Net secured_signal_2671: 1 loads, 1 SLICEs
+      Net secured_signal_2673: 1 loads, 1 SLICEs
+      Net secured_signal_2675: 1 loads, 1 SLICEs
+      Net secured_signal_2677: 1 loads, 1 SLICEs
+      Net secured_signal_2679: 1 loads, 1 SLICEs
+      Net secured_signal_2681: 1 loads, 1 SLICEs
+      Net secured_signal_2683: 1 loads, 1 SLICEs
+      Net secured_signal_2685: 1 loads, 1 SLICEs
+      Net secured_signal_2687: 1 loads, 1 SLICEs
+      Net secured_signal_2689: 1 loads, 1 SLICEs
+      Net secured_signal_2691: 1 loads, 1 SLICEs
+      Net secured_signal_2693: 1 loads, 1 SLICEs
+      Net secured_signal_2695: 1 loads, 1 SLICEs
+      Net secured_signal_2697: 1 loads, 1 SLICEs
+      Net secured_signal_2699: 1 loads, 1 SLICEs
+      Net secured_signal_2701: 1 loads, 1 SLICEs
+      Net secured_signal_2703: 1 loads, 1 SLICEs
+      Net secured_signal_2705: 1 loads, 1 SLICEs
+      Net secured_signal_2707: 1 loads, 1 SLICEs
+      Net secured_signal_2709: 1 loads, 1 SLICEs
+      Net secured_signal_2711: 1 loads, 1 SLICEs
+      Net secured_signal_2713: 1 loads, 1 SLICEs
+      Net secured_signal_2715: 1 loads, 1 SLICEs
+      Net secured_signal_2717: 1 loads, 1 SLICEs
+      Net secured_signal_2719: 1 loads, 1 SLICEs
+      Net secured_signal_2721: 1 loads, 1 SLICEs
+      Net secured_signal_2723: 1 loads, 1 SLICEs
+      Net secured_signal_2725: 1 loads, 1 SLICEs
+      Net secured_signal_2727: 1 loads, 1 SLICEs
+      Net secured_signal_2729: 1 loads, 1 SLICEs
+      Net secured_signal_2731: 1 loads, 1 SLICEs
+      Net secured_signal_2733: 1 loads, 1 SLICEs
+      Net secured_signal_2735: 1 loads, 1 SLICEs
+      Net secured_signal_2737: 1 loads, 1 SLICEs
+      Net secured_signal_2739: 1 loads, 1 SLICEs
+      Net secured_signal_2741: 1 loads, 1 SLICEs
+      Net secured_signal_2743: 1 loads, 1 SLICEs
+      Net secured_signal_2745: 1 loads, 1 SLICEs
+      Net secured_signal_2747: 1 loads, 1 SLICEs
+      Net secured_signal_2749: 1 loads, 1 SLICEs
+      Net secured_signal_3662: 1 loads, 1 SLICEs
+      Net secured_signal_3664: 1 loads, 1 SLICEs
+      Net secured_signal_3666: 1 loads, 1 SLICEs
+      Net secured_signal_3668: 1 loads, 1 SLICEs
+      Net secured_signal_3670: 1 loads, 1 SLICEs
+      Net secured_signal_3672: 1 loads, 1 SLICEs
+      Net secured_signal_3674: 1 loads, 1 SLICEs
+      Net secured_signal_3676: 1 loads, 1 SLICEs
+      Net secured_signal_3678: 1 loads, 1 SLICEs
+      Net secured_signal_3680: 1 loads, 1 SLICEs
+      Net secured_signal_3682: 1 loads, 1 SLICEs
+      Net secured_signal_3684: 1 loads, 1 SLICEs
+      Net secured_signal_3686: 1 loads, 1 SLICEs
+      Net secured_signal_3688: 1 loads, 1 SLICEs
+      Net secured_signal_3690: 1 loads, 1 SLICEs
+      Net secured_signal_3692: 1 loads, 1 SLICEs
+      Net secured_signal_3694: 1 loads, 1 SLICEs
+      Net secured_signal_3696: 1 loads, 1 SLICEs
+      Net secured_signal_3698: 1 loads, 1 SLICEs
+      Net secured_signal_3700: 1 loads, 1 SLICEs
+      Net secured_signal_3702: 1 loads, 1 SLICEs
+      Net secured_signal_3704: 1 loads, 1 SLICEs
+      Net secured_signal_3706: 1 loads, 1 SLICEs
+      Net secured_signal_3708: 1 loads, 1 SLICEs
+      Net secured_signal_3710: 1 loads, 1 SLICEs
+      Net secured_signal_3712: 1 loads, 1 SLICEs
+      Net secured_signal_3714: 1 loads, 1 SLICEs
+      Net secured_signal_3716: 1 loads, 1 SLICEs
+      Net secured_signal_3718: 1 loads, 1 SLICEs
+      Net secured_signal_3720: 1 loads, 1 SLICEs
+      Net secured_signal_3722: 1 loads, 1 SLICEs
+      Net secured_signal_3724: 1 loads, 1 SLICEs
+      Net secured_signal_3726: 1 loads, 1 SLICEs
+      Net secured_signal_3728: 1 loads, 1 SLICEs
+      Net secured_signal_3730: 1 loads, 1 SLICEs
+      Net secured_signal_3732: 1 loads, 1 SLICEs
+      Net secured_signal_3734: 1 loads, 1 SLICEs
+      Net secured_signal_3736: 1 loads, 1 SLICEs
+      Net secured_signal_3738: 1 loads, 1 SLICEs
+      Net secured_signal_3740: 1 loads, 1 SLICEs
+      Net secured_signal_3742: 1 loads, 1 SLICEs
+      Net secured_signal_3744: 1 loads, 1 SLICEs
+      Net secured_signal_3746: 1 loads, 1 SLICEs
+      Net secured_signal_3748: 1 loads, 1 SLICEs
+      Net secured_signal_3750: 1 loads, 1 SLICEs
+      Net secured_signal_3752: 1 loads, 1 SLICEs
+      Net secured_signal_3754: 1 loads, 1 SLICEs
+      Net secured_signal_3756: 1 loads, 1 SLICEs
+      Net secured_signal_3758: 1 loads, 1 SLICEs
+      Net secured_signal_3760: 1 loads, 1 SLICEs
+      Net secured_signal_3762: 1 loads, 1 SLICEs
+      Net secured_signal_3764: 1 loads, 1 SLICEs
+      Net secured_signal_3766: 1 loads, 1 SLICEs
+      Net secured_signal_3768: 1 loads, 1 SLICEs
+      Net secured_signal_3770: 1 loads, 1 SLICEs
+      Net secured_signal_3772: 1 loads, 1 SLICEs
+      Net secured_signal_3774: 1 loads, 1 SLICEs
+      Net secured_signal_3776: 1 loads, 1 SLICEs
+      Net secured_signal_3778: 1 loads, 1 SLICEs
+      Net secured_signal_3780: 1 loads, 1 SLICEs
+      Net secured_signal_3782: 1 loads, 1 SLICEs
+      Net secured_signal_3784: 1 loads, 1 SLICEs
+      Net secured_signal_3786: 1 loads, 1 SLICEs
+      Net secured_signal_3788: 1 loads, 1 SLICEs
+      Net secured_signal_4701: 1 loads, 1 SLICEs
+      Net secured_signal_4703: 1 loads, 1 SLICEs
+      Net secured_signal_4705: 1 loads, 1 SLICEs
+      Net secured_signal_4707: 1 loads, 1 SLICEs
+      Net secured_signal_4709: 1 loads, 1 SLICEs
+      Net secured_signal_4711: 1 loads, 1 SLICEs
+      Net secured_signal_4713: 1 loads, 1 SLICEs
+      Net secured_signal_4715: 1 loads, 1 SLICEs
+      Net secured_signal_4717: 1 loads, 1 SLICEs
+      Net secured_signal_4719: 1 loads, 1 SLICEs
+      Net secured_signal_4721: 1 loads, 1 SLICEs
+      Net secured_signal_4723: 1 loads, 1 SLICEs
+      Net secured_signal_4725: 1 loads, 1 SLICEs
+      Net secured_signal_4727: 1 loads, 1 SLICEs
+      Net secured_signal_4729: 1 loads, 1 SLICEs
+      Net secured_signal_4731: 1 loads, 1 SLICEs
+      Net secured_signal_4733: 1 loads, 1 SLICEs
+      Net secured_signal_4735: 1 loads, 1 SLICEs
+      Net secured_signal_4737: 1 loads, 1 SLICEs
+      Net secured_signal_4739: 1 loads, 1 SLICEs
+      Net secured_signal_4741: 1 loads, 1 SLICEs
+      Net secured_signal_4743: 1 loads, 1 SLICEs
+      Net secured_signal_4745: 1 loads, 1 SLICEs
+      Net secured_signal_4747: 1 loads, 1 SLICEs
+      Net secured_signal_4749: 1 loads, 1 SLICEs
+      Net secured_signal_4751: 1 loads, 1 SLICEs
+      Net secured_signal_4753: 1 loads, 1 SLICEs
+      Net secured_signal_4755: 1 loads, 1 SLICEs
+      Net secured_signal_4757: 1 loads, 1 SLICEs
+      Net secured_signal_4759: 1 loads, 1 SLICEs
+      Net secured_signal_4761: 1 loads, 1 SLICEs
+      Net secured_signal_4763: 1 loads, 1 SLICEs
+      Net secured_signal_4765: 1 loads, 1 SLICEs
+      Net secured_signal_4767: 1 loads, 1 SLICEs
+      Net secured_signal_4769: 1 loads, 1 SLICEs
+      Net secured_signal_4771: 1 loads, 1 SLICEs
+      Net secured_signal_4773: 1 loads, 1 SLICEs
+      Net secured_signal_4775: 1 loads, 1 SLICEs
+      Net secured_signal_4777: 1 loads, 1 SLICEs
+      Net secured_signal_4779: 1 loads, 1 SLICEs
+      Net secured_signal_4781: 1 loads, 1 SLICEs
+      Net secured_signal_4783: 1 loads, 1 SLICEs
+      Net secured_signal_4785: 1 loads, 1 SLICEs
+      Net secured_signal_4787: 1 loads, 1 SLICEs
+      Net secured_signal_4789: 1 loads, 1 SLICEs
+      Net secured_signal_4791: 1 loads, 1 SLICEs
+      Net secured_signal_4793: 1 loads, 1 SLICEs
+      Net secured_signal_4795: 1 loads, 1 SLICEs
+      Net secured_signal_4797: 1 loads, 1 SLICEs
+      Net secured_signal_4799: 1 loads, 1 SLICEs
+      Net secured_signal_4801: 1 loads, 1 SLICEs
+      Net secured_signal_4803: 1 loads, 1 SLICEs
+      Net secured_signal_4805: 1 loads, 1 SLICEs
+      Net secured_signal_4807: 1 loads, 1 SLICEs
+      Net secured_signal_4809: 1 loads, 1 SLICEs
+      Net secured_signal_4811: 1 loads, 1 SLICEs
+      Net secured_signal_4813: 1 loads, 1 SLICEs
+      Net secured_signal_4815: 1 loads, 1 SLICEs
+      Net secured_signal_4817: 1 loads, 1 SLICEs
+      Net secured_signal_4819: 1 loads, 1 SLICEs
+      Net secured_signal_4821: 1 loads, 1 SLICEs
+      Net secured_signal_4823: 1 loads, 1 SLICEs
+      Net secured_signal_4825: 1 loads, 1 SLICEs
+      Net secured_signal_4827: 1 loads, 1 SLICEs
+      Net secured_signal_5740: 1 loads, 1 SLICEs
+      Net secured_signal_5742: 1 loads, 1 SLICEs
+      Net secured_signal_5744: 1 loads, 1 SLICEs
+      Net secured_signal_5746: 1 loads, 1 SLICEs
+      Net secured_signal_5748: 1 loads, 1 SLICEs
+      Net secured_signal_5750: 1 loads, 1 SLICEs
+      Net secured_signal_5752: 1 loads, 1 SLICEs
+      Net secured_signal_5754: 1 loads, 1 SLICEs
+      Net secured_signal_5756: 1 loads, 1 SLICEs
+      Net secured_signal_5758: 1 loads, 1 SLICEs
+      Net secured_signal_5760: 1 loads, 1 SLICEs
+      Net secured_signal_5762: 1 loads, 1 SLICEs
+      Net secured_signal_5764: 1 loads, 1 SLICEs
+      Net secured_signal_5766: 1 loads, 1 SLICEs
+      Net secured_signal_5768: 1 loads, 1 SLICEs
+      Net secured_signal_5770: 1 loads, 1 SLICEs
+      Net secured_signal_5772: 1 loads, 1 SLICEs
+      Net secured_signal_5774: 1 loads, 1 SLICEs
+      Net secured_signal_5776: 1 loads, 1 SLICEs
+      Net secured_signal_5778: 1 loads, 1 SLICEs
+      Net secured_signal_5780: 1 loads, 1 SLICEs
+      Net secured_signal_5782: 1 loads, 1 SLICEs
+      Net secured_signal_5784: 1 loads, 1 SLICEs
+      Net secured_signal_5786: 1 loads, 1 SLICEs
+      Net secured_signal_5788: 1 loads, 1 SLICEs
+      Net secured_signal_5790: 1 loads, 1 SLICEs
+      Net secured_signal_5792: 1 loads, 1 SLICEs
+      Net secured_signal_5794: 1 loads, 1 SLICEs
+      Net secured_signal_5796: 1 loads, 1 SLICEs
+      Net secured_signal_5798: 1 loads, 1 SLICEs
+      Net secured_signal_5800: 1 loads, 1 SLICEs
+      Net secured_signal_5802: 1 loads, 1 SLICEs
+      Net secured_signal_5804: 1 loads, 1 SLICEs
+      Net secured_signal_5806: 1 loads, 1 SLICEs
+      Net secured_signal_5808: 1 loads, 1 SLICEs
+      Net secured_signal_5810: 1 loads, 1 SLICEs
+      Net secured_signal_5812: 1 loads, 1 SLICEs
+      Net secured_signal_5814: 1 loads, 1 SLICEs
+      Net secured_signal_5816: 1 loads, 1 SLICEs
+      Net secured_signal_5818: 1 loads, 1 SLICEs
+      Net secured_signal_5820: 1 loads, 1 SLICEs
+      Net secured_signal_5822: 1 loads, 1 SLICEs
+      Net secured_signal_5824: 1 loads, 1 SLICEs
+      Net secured_signal_5826: 1 loads, 1 SLICEs
+      Net secured_signal_5828: 1 loads, 1 SLICEs
+      Net secured_signal_5830: 1 loads, 1 SLICEs
+      Net secured_signal_5832: 1 loads, 1 SLICEs
+      Net secured_signal_5834: 1 loads, 1 SLICEs
+      Net secured_signal_5836: 1 loads, 1 SLICEs
+      Net secured_signal_5838: 1 loads, 1 SLICEs
+      Net secured_signal_5840: 1 loads, 1 SLICEs
+      Net secured_signal_5842: 1 loads, 1 SLICEs
+      Net secured_signal_5844: 1 loads, 1 SLICEs
+      Net secured_signal_5846: 1 loads, 1 SLICEs
+      Net secured_signal_5848: 1 loads, 1 SLICEs
+      Net secured_signal_5850: 1 loads, 1 SLICEs
+      Net secured_signal_5852: 1 loads, 1 SLICEs
+      Net secured_signal_5854: 1 loads, 1 SLICEs
+      Net secured_signal_5856: 1 loads, 1 SLICEs
+      Net secured_signal_5858: 1 loads, 1 SLICEs
+      Net secured_signal_5860: 1 loads, 1 SLICEs
+      Net secured_signal_5862: 1 loads, 1 SLICEs
+      Net secured_signal_5864: 1 loads, 1 SLICEs
+      Net secured_signal_5866: 1 loads, 1 SLICEs
+      Net secured_signal_6779: 1 loads, 1 SLICEs
+      Net secured_signal_6781: 1 loads, 1 SLICEs
+      Net secured_signal_6783: 1 loads, 1 SLICEs
+      Net secured_signal_6785: 1 loads, 1 SLICEs
+      Net secured_signal_6787: 1 loads, 1 SLICEs
+      Net secured_signal_6789: 1 loads, 1 SLICEs
+      Net secured_signal_6791: 1 loads, 1 SLICEs
+      Net secured_signal_6793: 1 loads, 1 SLICEs
+      Net secured_signal_6795: 1 loads, 1 SLICEs
+      Net secured_signal_6797: 1 loads, 1 SLICEs
+      Net secured_signal_6799: 1 loads, 1 SLICEs
+      Net secured_signal_6801: 1 loads, 1 SLICEs
+      Net secured_signal_6803: 1 loads, 1 SLICEs
+      Net secured_signal_6805: 1 loads, 1 SLICEs
+      Net secured_signal_6807: 1 loads, 1 SLICEs
+      Net secured_signal_6809: 1 loads, 1 SLICEs
+      Net secured_signal_6811: 1 loads, 1 SLICEs
+      Net secured_signal_6813: 1 loads, 1 SLICEs
+      Net secured_signal_6815: 1 loads, 1 SLICEs
+      Net secured_signal_6817: 1 loads, 1 SLICEs
+      Net secured_signal_6819: 1 loads, 1 SLICEs
+      Net secured_signal_6821: 1 loads, 1 SLICEs
+      Net secured_signal_6823: 1 loads, 1 SLICEs
+      Net secured_signal_6825: 1 loads, 1 SLICEs
+      Net secured_signal_6827: 1 loads, 1 SLICEs
+      Net secured_signal_6829: 1 loads, 1 SLICEs
+      Net secured_signal_6831: 1 loads, 1 SLICEs
+      Net secured_signal_6833: 1 loads, 1 SLICEs
+      Net secured_signal_6835: 1 loads, 1 SLICEs
+      Net secured_signal_6837: 1 loads, 1 SLICEs
+      Net secured_signal_6839: 1 loads, 1 SLICEs
+      Net secured_signal_6841: 1 loads, 1 SLICEs
+      Net secured_signal_6843: 1 loads, 1 SLICEs
+      Net secured_signal_6845: 1 loads, 1 SLICEs
+      Net secured_signal_6847: 1 loads, 1 SLICEs
+      Net secured_signal_6849: 1 loads, 1 SLICEs
+      Net secured_signal_6851: 1 loads, 1 SLICEs
+      Net secured_signal_6853: 1 loads, 1 SLICEs
+      Net secured_signal_6855: 1 loads, 1 SLICEs
+      Net secured_signal_6857: 1 loads, 1 SLICEs
+      Net secured_signal_6859: 1 loads, 1 SLICEs
+      Net secured_signal_6861: 1 loads, 1 SLICEs
+      Net secured_signal_6863: 1 loads, 1 SLICEs
+      Net secured_signal_6865: 1 loads, 1 SLICEs
+      Net secured_signal_6867: 1 loads, 1 SLICEs
+      Net secured_signal_6869: 1 loads, 1 SLICEs
+      Net secured_signal_6871: 1 loads, 1 SLICEs
+      Net secured_signal_6873: 1 loads, 1 SLICEs
+      Net secured_signal_6875: 1 loads, 1 SLICEs
+      Net secured_signal_6877: 1 loads, 1 SLICEs
+      Net secured_signal_6879: 1 loads, 1 SLICEs
+      Net secured_signal_6881: 1 loads, 1 SLICEs
+      Net secured_signal_6883: 1 loads, 1 SLICEs
+      Net secured_signal_6885: 1 loads, 1 SLICEs
+      Net secured_signal_6887: 1 loads, 1 SLICEs
+      Net secured_signal_6889: 1 loads, 1 SLICEs
+      Net secured_signal_6891: 1 loads, 1 SLICEs
+      Net secured_signal_6893: 1 loads, 1 SLICEs
+      Net secured_signal_6895: 1 loads, 1 SLICEs
+      Net secured_signal_6897: 1 loads, 1 SLICEs
+      Net secured_signal_6899: 1 loads, 1 SLICEs
+      Net secured_signal_6901: 1 loads, 1 SLICEs
+      Net secured_signal_6903: 1 loads, 1 SLICEs
+      Net secured_signal_6905: 1 loads, 1 SLICEs
+      Net secured_signal_7818: 1 loads, 1 SLICEs
+      Net secured_signal_7820: 1 loads, 1 SLICEs
+      Net secured_signal_7822: 1 loads, 1 SLICEs
+      Net secured_signal_7824: 1 loads, 1 SLICEs
+      Net secured_signal_7826: 1 loads, 1 SLICEs
+      Net secured_signal_7828: 1 loads, 1 SLICEs
+      Net secured_signal_7830: 1 loads, 1 SLICEs
+      Net secured_signal_7832: 1 loads, 1 SLICEs
+      Net secured_signal_7834: 1 loads, 1 SLICEs
+      Net secured_signal_7836: 1 loads, 1 SLICEs
+      Net secured_signal_7838: 1 loads, 1 SLICEs
+      Net secured_signal_7840: 1 loads, 1 SLICEs
+      Net secured_signal_7842: 1 loads, 1 SLICEs
+      Net secured_signal_7844: 1 loads, 1 SLICEs
+      Net secured_signal_7846: 1 loads, 1 SLICEs
+      Net secured_signal_7848: 1 loads, 1 SLICEs
+      Net secured_signal_7850: 1 loads, 1 SLICEs
+      Net secured_signal_7852: 1 loads, 1 SLICEs
+      Net secured_signal_7854: 1 loads, 1 SLICEs
+      Net secured_signal_7856: 1 loads, 1 SLICEs
+      Net secured_signal_7858: 1 loads, 1 SLICEs
+      Net secured_signal_7860: 1 loads, 1 SLICEs
+      Net secured_signal_7862: 1 loads, 1 SLICEs
+      Net secured_signal_7864: 1 loads, 1 SLICEs
+      Net secured_signal_7866: 1 loads, 1 SLICEs
+      Net secured_signal_7868: 1 loads, 1 SLICEs
+      Net secured_signal_7870: 1 loads, 1 SLICEs
+      Net secured_signal_7872: 1 loads, 1 SLICEs
+      Net secured_signal_7874: 1 loads, 1 SLICEs
+      Net secured_signal_7876: 1 loads, 1 SLICEs
+      Net secured_signal_7878: 1 loads, 1 SLICEs
+      Net secured_signal_7880: 1 loads, 1 SLICEs
+      Net secured_signal_7882: 1 loads, 1 SLICEs
+      Net secured_signal_7884: 1 loads, 1 SLICEs
+      Net secured_signal_7886: 1 loads, 1 SLICEs
+      Net secured_signal_7888: 1 loads, 1 SLICEs
+      Net secured_signal_7890: 1 loads, 1 SLICEs
+      Net secured_signal_7892: 1 loads, 1 SLICEs
+      Net secured_signal_7894: 1 loads, 1 SLICEs
+      Net secured_signal_7896: 1 loads, 1 SLICEs
+      Net secured_signal_7898: 1 loads, 1 SLICEs
+      Net secured_signal_7900: 1 loads, 1 SLICEs
+      Net secured_signal_7902: 1 loads, 1 SLICEs
+      Net secured_signal_7904: 1 loads, 1 SLICEs
+      Net secured_signal_7906: 1 loads, 1 SLICEs
+      Net secured_signal_7908: 1 loads, 1 SLICEs
+      Net secured_signal_7910: 1 loads, 1 SLICEs
+      Net secured_signal_7912: 1 loads, 1 SLICEs
+      Net secured_signal_7914: 1 loads, 1 SLICEs
+      Net secured_signal_7916: 1 loads, 1 SLICEs
+      Net secured_signal_7918: 1 loads, 1 SLICEs
+      Net secured_signal_7920: 1 loads, 1 SLICEs
+      Net secured_signal_7922: 1 loads, 1 SLICEs
+      Net secured_signal_7924: 1 loads, 1 SLICEs
+      Net secured_signal_7926: 1 loads, 1 SLICEs
+      Net secured_signal_7928: 1 loads, 1 SLICEs
+      Net secured_signal_7930: 1 loads, 1 SLICEs
+      Net secured_signal_7932: 1 loads, 1 SLICEs
+      Net secured_signal_7934: 1 loads, 1 SLICEs
+      Net secured_signal_7936: 1 loads, 1 SLICEs
+      Net secured_signal_7938: 1 loads, 1 SLICEs
+      Net secured_signal_7940: 1 loads, 1 SLICEs
+      Net secured_signal_7942: 1 loads, 1 SLICEs
+      Net secured_signal_7944: 1 loads, 1 SLICEs
+      Net secured_signal_8857: 1 loads, 1 SLICEs
+      Net secured_signal_8859: 1 loads, 1 SLICEs
+      Net secured_signal_8861: 1 loads, 1 SLICEs
+      Net secured_signal_8863: 1 loads, 1 SLICEs
+      Net secured_signal_8865: 1 loads, 1 SLICEs
+      Net secured_signal_8867: 1 loads, 1 SLICEs
+      Net secured_signal_8869: 1 loads, 1 SLICEs
+      Net secured_signal_8871: 1 loads, 1 SLICEs
+      Net secured_signal_8873: 1 loads, 1 SLICEs
+      Net secured_signal_8875: 1 loads, 1 SLICEs
+      Net secured_signal_8877: 1 loads, 1 SLICEs
+      Net secured_signal_8879: 1 loads, 1 SLICEs
+      Net secured_signal_8881: 1 loads, 1 SLICEs
+      Net secured_signal_8883: 1 loads, 1 SLICEs
+      Net secured_signal_8885: 1 loads, 1 SLICEs
+      Net secured_signal_8887: 1 loads, 1 SLICEs
+      Net secured_signal_8889: 1 loads, 1 SLICEs
+      Net secured_signal_8891: 1 loads, 1 SLICEs
+      Net secured_signal_8893: 1 loads, 1 SLICEs
+      Net secured_signal_8895: 1 loads, 1 SLICEs
+      Net secured_signal_8897: 1 loads, 1 SLICEs
+      Net secured_signal_8899: 1 loads, 1 SLICEs
+      Net secured_signal_8901: 1 loads, 1 SLICEs
+      Net secured_signal_8903: 1 loads, 1 SLICEs
+      Net secured_signal_8905: 1 loads, 1 SLICEs
+      Net secured_signal_8907: 1 loads, 1 SLICEs
+      Net secured_signal_8909: 1 loads, 1 SLICEs
+      Net secured_signal_8911: 1 loads, 1 SLICEs
+      Net secured_signal_8913: 1 loads, 1 SLICEs
+      Net secured_signal_8915: 1 loads, 1 SLICEs
+      Net secured_signal_8917: 1 loads, 1 SLICEs
+      Net secured_signal_8919: 1 loads, 1 SLICEs
+      Net secured_signal_8921: 1 loads, 1 SLICEs
+      Net secured_signal_8923: 1 loads, 1 SLICEs
+      Net secured_signal_8925: 1 loads, 1 SLICEs
+      Net secured_signal_8927: 1 loads, 1 SLICEs
+      Net secured_signal_8929: 1 loads, 1 SLICEs
+      Net secured_signal_8931: 1 loads, 1 SLICEs
+      Net secured_signal_8933: 1 loads, 1 SLICEs
+      Net secured_signal_8935: 1 loads, 1 SLICEs
+      Net secured_signal_8937: 1 loads, 1 SLICEs
+      Net secured_signal_8939: 1 loads, 1 SLICEs
+      Net secured_signal_8941: 1 loads, 1 SLICEs
+      Net secured_signal_8943: 1 loads, 1 SLICEs
+      Net secured_signal_8945: 1 loads, 1 SLICEs
+      Net secured_signal_8947: 1 loads, 1 SLICEs
+      Net secured_signal_8949: 1 loads, 1 SLICEs
+      Net secured_signal_8951: 1 loads, 1 SLICEs
+      Net secured_signal_8953: 1 loads, 1 SLICEs
+      Net secured_signal_8955: 1 loads, 1 SLICEs
+      Net secured_signal_8957: 1 loads, 1 SLICEs
+      Net secured_signal_8959: 1 loads, 1 SLICEs
+      Net secured_signal_8961: 1 loads, 1 SLICEs
+      Net secured_signal_8963: 1 loads, 1 SLICEs
+      Net secured_signal_8965: 1 loads, 1 SLICEs
+      Net secured_signal_8967: 1 loads, 1 SLICEs
+      Net secured_signal_8969: 1 loads, 1 SLICEs
+      Net secured_signal_8971: 1 loads, 1 SLICEs
+      Net secured_signal_8973: 1 loads, 1 SLICEs
+      Net secured_signal_8975: 1 loads, 1 SLICEs
+      Net secured_signal_8977: 1 loads, 1 SLICEs
+      Net secured_signal_8979: 1 loads, 1 SLICEs
+      Net secured_signal_8981: 1 loads, 1 SLICEs
+      Net secured_signal_8983: 1 loads, 1 SLICEs
+      Net secured_signal_9896: 1 loads, 1 SLICEs
+      Net secured_signal_9898: 1 loads, 1 SLICEs
+      Net secured_signal_9900: 1 loads, 1 SLICEs
+      Net secured_signal_9902: 1 loads, 1 SLICEs
+      Net secured_signal_9904: 1 loads, 1 SLICEs
+      Net secured_signal_9906: 1 loads, 1 SLICEs
+      Net secured_signal_9908: 1 loads, 1 SLICEs
+      Net secured_signal_9910: 1 loads, 1 SLICEs
+      Net secured_signal_9912: 1 loads, 1 SLICEs
+      Net secured_signal_9914: 1 loads, 1 SLICEs
+      Net secured_signal_9916: 1 loads, 1 SLICEs
+      Net secured_signal_9918: 1 loads, 1 SLICEs
+      Net secured_signal_9920: 1 loads, 1 SLICEs
+      Net secured_signal_9922: 1 loads, 1 SLICEs
+      Net secured_signal_9924: 1 loads, 1 SLICEs
+      Net secured_signal_9926: 1 loads, 1 SLICEs
+      Net secured_signal_9928: 1 loads, 1 SLICEs
+      Net secured_signal_9930: 1 loads, 1 SLICEs
+      Net secured_signal_9932: 1 loads, 1 SLICEs
+      Net secured_signal_9934: 1 loads, 1 SLICEs
+      Net secured_signal_9936: 1 loads, 1 SLICEs
+      Net secured_signal_9938: 1 loads, 1 SLICEs
+      Net secured_signal_9940: 1 loads, 1 SLICEs
+      Net secured_signal_9942: 1 loads, 1 SLICEs
+      Net secured_signal_9944: 1 loads, 1 SLICEs
+      Net secured_signal_9946: 1 loads, 1 SLICEs
+      Net secured_signal_9948: 1 loads, 1 SLICEs
+      Net secured_signal_9950: 1 loads, 1 SLICEs
+      Net secured_signal_9952: 1 loads, 1 SLICEs
+      Net secured_signal_9954: 1 loads, 1 SLICEs
+      Net secured_signal_9956: 1 loads, 1 SLICEs
+      Net secured_signal_9958: 1 loads, 1 SLICEs
+      Net secured_signal_9960: 1 loads, 1 SLICEs
+      Net secured_signal_9962: 1 loads, 1 SLICEs
+      Net secured_signal_9964: 1 loads, 1 SLICEs
+      Net secured_signal_9966: 1 loads, 1 SLICEs
+      Net secured_signal_9968: 1 loads, 1 SLICEs
+      Net secured_signal_9970: 1 loads, 1 SLICEs
+      Net secured_signal_9972: 1 loads, 1 SLICEs
+      Net secured_signal_9974: 1 loads, 1 SLICEs
+      Net secured_signal_9976: 1 loads, 1 SLICEs
+      Net secured_signal_9978: 1 loads, 1 SLICEs
+      Net secured_signal_9980: 1 loads, 1 SLICEs
+      Net secured_signal_9982: 1 loads, 1 SLICEs
+      Net secured_signal_9984: 1 loads, 1 SLICEs
+      Net secured_signal_9986: 1 loads, 1 SLICEs
+      Net secured_signal_9988: 1 loads, 1 SLICEs
+      Net secured_signal_9990: 1 loads, 1 SLICEs
+      Net secured_signal_9992: 1 loads, 1 SLICEs
+      Net secured_signal_9994: 1 loads, 1 SLICEs
+      Net secured_signal_9996: 1 loads, 1 SLICEs
+      Net secured_signal_9998: 1 loads, 1 SLICEs
+      Net secured_signal_10000: 1 loads, 1 SLICEs
+      Net secured_signal_10002: 1 loads, 1 SLICEs
+      Net secured_signal_10004: 1 loads, 1 SLICEs
+      Net secured_signal_10006: 1 loads, 1 SLICEs
+      Net secured_signal_10008: 1 loads, 1 SLICEs
+      Net secured_signal_10010: 1 loads, 1 SLICEs
+      Net secured_signal_10012: 1 loads, 1 SLICEs
+      Net secured_signal_10014: 1 loads, 1 SLICEs
+      Net secured_signal_10016: 1 loads, 1 SLICEs
+      Net secured_signal_10018: 1 loads, 1 SLICEs
+      Net secured_signal_10020: 1 loads, 1 SLICEs
+      Net secured_signal_10022: 1 loads, 1 SLICEs
+      Net secured_signal_10952: 1 loads, 1 SLICEs
+      Net secured_signal_10954: 1 loads, 1 SLICEs
+      Net secured_signal_10956: 1 loads, 1 SLICEs
+      Net secured_signal_10958: 1 loads, 1 SLICEs
+      Net secured_signal_10960: 1 loads, 1 SLICEs
+      Net secured_signal_10962: 1 loads, 1 SLICEs
+      Net secured_signal_10964: 1 loads, 1 SLICEs
+      Net secured_signal_10966: 1 loads, 1 SLICEs
+      Net secured_signal_10968: 1 loads, 1 SLICEs
+      Net secured_signal_10970: 1 loads, 1 SLICEs
+      Net secured_signal_10972: 1 loads, 1 SLICEs
+      Net secured_signal_10974: 1 loads, 1 SLICEs
+      Net secured_signal_10976: 1 loads, 1 SLICEs
+      Net secured_signal_10978: 1 loads, 1 SLICEs
+      Net secured_signal_10980: 1 loads, 1 SLICEs
+      Net secured_signal_10982: 1 loads, 1 SLICEs
+      Net secured_signal_10984: 1 loads, 1 SLICEs
+      Net secured_signal_10986: 1 loads, 1 SLICEs
+      Net secured_signal_10988: 1 loads, 1 SLICEs
+      Net secured_signal_10990: 1 loads, 1 SLICEs
+      Net secured_signal_10992: 1 loads, 1 SLICEs
+      Net secured_signal_10994: 1 loads, 1 SLICEs
+      Net secured_signal_10996: 1 loads, 1 SLICEs
+      Net secured_signal_10998: 1 loads, 1 SLICEs
+      Net secured_signal_11000: 1 loads, 1 SLICEs
+      Net secured_signal_11002: 1 loads, 1 SLICEs
+      Net secured_signal_11004: 1 loads, 1 SLICEs
+      Net secured_signal_11006: 1 loads, 1 SLICEs
+      Net secured_signal_11008: 1 loads, 1 SLICEs
+      Net secured_signal_11010: 1 loads, 1 SLICEs
+      Net secured_signal_11012: 1 loads, 1 SLICEs
+      Net secured_signal_11014: 1 loads, 1 SLICEs
+      Net secured_signal_11016: 1 loads, 1 SLICEs
+      Net secured_signal_11018: 1 loads, 1 SLICEs
+      Net secured_signal_11020: 1 loads, 1 SLICEs
+      Net secured_signal_11022: 1 loads, 1 SLICEs
+      Net secured_signal_11024: 1 loads, 1 SLICEs
+      Net secured_signal_11026: 1 loads, 1 SLICEs
+      Net secured_signal_11028: 1 loads, 1 SLICEs
+      Net secured_signal_11030: 1 loads, 1 SLICEs
+      Net secured_signal_11032: 1 loads, 1 SLICEs
+      Net secured_signal_11034: 1 loads, 1 SLICEs
+      Net secured_signal_11036: 1 loads, 1 SLICEs
+      Net secured_signal_11038: 1 loads, 1 SLICEs
+      Net secured_signal_11040: 1 loads, 1 SLICEs
+      Net secured_signal_11042: 1 loads, 1 SLICEs
+      Net secured_signal_11044: 1 loads, 1 SLICEs
+      Net secured_signal_11046: 1 loads, 1 SLICEs
+      Net secured_signal_11048: 1 loads, 1 SLICEs
+      Net secured_signal_11050: 1 loads, 1 SLICEs
+      Net secured_signal_11052: 1 loads, 1 SLICEs
+      Net secured_signal_11054: 1 loads, 1 SLICEs
+      Net secured_signal_11056: 1 loads, 1 SLICEs
+      Net secured_signal_11058: 1 loads, 1 SLICEs
+      Net secured_signal_11060: 1 loads, 1 SLICEs
+      Net secured_signal_11062: 1 loads, 1 SLICEs
+      Net secured_signal_11064: 1 loads, 1 SLICEs
+      Net secured_signal_11066: 1 loads, 1 SLICEs
+      Net secured_signal_11068: 1 loads, 1 SLICEs
+      Net secured_signal_11070: 1 loads, 1 SLICEs
+      Net secured_signal_11072: 1 loads, 1 SLICEs
+      Net secured_signal_11074: 1 loads, 1 SLICEs
+      Net secured_signal_11076: 1 loads, 1 SLICEs
+      Net secured_signal_11078: 1 loads, 1 SLICEs
+      Net risc_mc_inst_system_resetn_o_net: 1535 loads, 1462 SLICEs
+      Net secured_signal_12896: 21 loads, 21 SLICEs
+      Net secured_signal_12900: 5 loads, 5 SLICEs
+      Net secured_signal_12912: 98 loads, 98 SLICEs
+      Net secured_signal_13350: 22 loads, 22 SLICEs
+      Net secured_signal_13427: 236 loads, 236 SLICEs
+      Net secured_signal_14226: 1 loads, 1 SLICEs
+      Net secured_signal_14227: 1 loads, 1 SLICEs
+      Net secured_signal_14229: 87 loads, 85 SLICEs
+      Net secured_signal_14449: 22 loads, 22 SLICEs
+      Net secured_signal_14490: 87 loads, 85 SLICEs
+      Net secured_signal_14730: 22 loads, 22 SLICEs
+      Net secured_signal_14959: 2 loads, 2 SLICEs
+      Net secured_signal_14982: 57 loads, 57 SLICEs
+      Net secured_signal_15179: 12 loads, 12 SLICEs
+      Net secured_signal_15181: 223 loads, 223 SLICEs
+      Net secured_signal_15182: 15 loads, 15 SLICEs
+      Net secured_signal_15185: 4 loads, 4 SLICEs
+      Net secured_signal_15192: 192 loads, 192 SLICEs
+      Net secured_signal_15201: 133 loads, 133 SLICEs
+      Net secured_signal_15205: 97 loads, 95 SLICEs
+      Net secured_signal_15208: 97 loads, 95 SLICEs
+      Net secured_signal_15590: 22 loads, 22 SLICEs
+      Net secured_signal_15902: 22 loads, 22 SLICEs
+      Net secured_signal_16946: 75 loads, 75 SLICEs
+      Net secured_signal_17311: 1 loads, 1 SLICEs
+      Net secured_signal_17611: 2 loads, 2 SLICEs
+      Net secured_signal_17662: 2 loads, 2 SLICEs
+      Net secured_signal_17664: 1 loads, 1 SLICEs
+      Net secured_signal_17665: 15 loads, 15 SLICEs
+      Net secured_signal_17756: 2 loads, 2 SLICEs
+      Net secured_signal_17982: 1 loads, 1 SLICEs
+      Net pll0_inst.lscc_pll_inst.rstn_I_c_i: 1 loads, 0 SLICEs
+      Net secured_signal_18899: 1 loads, 1 SLICEs
+      Net secured_signal_19244: 224 loads, 224 SLICEs
+      Net secured_signal_19831: 1 loads, 1 SLICEs
+      Net secured_signal_20686: 1 loads, 1 SLICEs
+      Net secured_signal_21251: 1 loads, 1 SLICEs
+      Net secured_signal_21656: 1 loads, 1 SLICEs
+      Net secured_signal_23607: 16 loads, 16 SLICEs
+      Net secured_signal_24842: 1 loads, 1 SLICEs
+      Net secured_signal_24910: 1 loads, 1 SLICEs
+      Net secured_signal_24951: 36 loads, 36 SLICEs
+      Net secured_signal_25126: 2 loads, 2 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net risc_mc_inst_system_resetn_o_net: 1536 loads
+      Net I3C_XO5_reveal_coretop_instance.i3c_xo5_la0_inst_0.trig_u.tu_out[0]: 1280 loads
+      Net I3C_XO5_reveal_coretop_instance.i3c_xo5_la0_inst_0.trig_u.tu_out[1]: 1280 loads
+      Net I3C_XO5_reveal_coretop_instance.i3c_xo5_la0_inst_0.trig_u.tu_out[2]: 1280 loads
+      Net I3C_XO5_reveal_coretop_instance.i3c_xo5_la0_inst_0.trig_u.tu_out[3]: 1280 loads
+      Net VCC: 830 loads
+      Net I3C_XO5_reveal_coretop_instance.i3c_xo5_la0_inst_0.te_prog_din[0]: 641 loads
+      Net I3C_XO5_reveal_coretop_instance.i3c_xo5_la0_inst_0.te_prog_din[1]: 640 loads
+      Net I3C_XO5_reveal_coretop_instance.i3c_xo5_la0_inst_0.trig_u.tu_out[4]: 640 loads
+      Net reveal_jrstn: 526 loads
+Running physical design DRC...
+
+ 
+
+
+   Number of warnings:  18
+   Number of criticals: 0
+   Number of errors:    0
+
+Constraint Summary:
+   Total number of constraints: 77
+   Total number of constraints duplicated: 16
+   Total number of constraints dropped: 2
+   Dropped constraints are:
+     set_false_path -through [get_nets i3c_s_inst/lscc_i3c_target_inst/scl_i]
+     set_false_path -through [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i}]
+
+
+Total CPU Time: 16 secs  
+Total REAL Time: 17 secs  
+Peak Memory Usage: 643 MB
+
+Checksum -- map: 7cadb0d7f649258667dfd91b17b63230276bfb64
+**** CMD map_run - CPU/Elapsed: 0 secs / 18 secs , MEM/Increased: 63.529 Mb/ 0.111 Mb, DATE: 17:37:02 03/16/26
+>>> MAP completed.
+Thank you for using Radiant. Total CPU/Elapsed time: 0 secs /18 secs 

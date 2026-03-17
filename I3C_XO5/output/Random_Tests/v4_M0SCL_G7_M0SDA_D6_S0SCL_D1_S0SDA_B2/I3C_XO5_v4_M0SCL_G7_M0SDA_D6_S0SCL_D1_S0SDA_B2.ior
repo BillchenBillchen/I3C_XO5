@@ -1,0 +1,50 @@
+Lattice Timing Report -  Setup , Version Radiant Software (64-bit) 2025.2.0.48.0
+
+Mon Mar 16 16:29:42 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2025 Lattice Semiconductor Corporation,  All rights reserved.
+
+Command line:    timing -iotime -html -rpt I3C_XO5_impl_1.ior I3C_XO5_impl_1.udb -gui -msgset C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/promote.xml
+
+-------------------------------------------
+Design:          I3C_XO5
+Family:          LFMXO5
+Device:          LFMXO5-25
+Package:         BBG400
+Performance:     9_High-Performance_1.0V
+Package Status:                     Final          Version 8
+Performance Hardware Data Status :   Final Version 1.8
+-------------------------------------------
+
+I/O Timing Report
+=================
+
+Performance Grade Translation Table
+------------------------------------------------
+         Code          |   Performance Grade    
+------------------------------------------------
+9_High-Performance_1.0V| 9_High-Performance_1.0V
+------------------------------------------------
+
+FPGA Input Port Results for Performance Grade: 9_High-Performance_1.0V
+----------------------------------------------------------
+-----------------------------------------------------
+Port Name|Setup|Grade|Edge|Hold|Grade|edge|Clock Port
+-----------------------------------------------------
+-----------------------------------------------------
+***Warning: IO ports are not constrained.
+---------------------------------------------------------------------------------------------------------
+
+FPGA Output Port Results for Performance Grade: 9_High-Performance_1.0V
+----------------------------------------------------------
+--------------------------------------------------------------------------------
+Port Name|Clock To Out (MAX)|Grade|Edge|Clock To Out (MIN)|Grade|edge|Clock Port
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+***Warning: IO ports are not constrained.
+---------------------------------------------------------------------------------------------------------
+

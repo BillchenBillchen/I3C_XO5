@@ -1,0 +1,82 @@
+# ── Radiant build artifacts ─────────────────────────────────────────────
+impl_1/*.udb
+impl_1/*.bit
+impl_1/*.jed
+impl_1/*.par
+impl_1/*.mrp
+impl_1/*.mrp.html
+impl_1/*.bgn
+impl_1/*.bgn.html
+impl_1/*.pad
+impl_1/*.pad.html
+impl_1/*.par.html
+impl_1/*.fea
+impl_1/*.ior
+impl_1/*.ior.html
+impl_1/*.twr
+impl_1/*.twr.html
+impl_1/*.tw1
+impl_1/*.tw1.html
+impl_1/*.tws
+impl_1/*.sdf
+impl_1/*.vo
+impl_1/*.pwrprd
+impl_1/*.drc
+impl_1/IBIS/
+impl_1/incr/
+impl_1/*_par.dir/
+impl_1/message_log.xml
+impl_1/synlog.tcl
+impl_1/stdout.log*
+impl_1/stdout_job.log*
+impl_1/launch_synplify.tcl
+impl_1/impl_1_syn.prj
+impl_1/reveal_debug.log
+impl_1/.build_status
+impl_1/*_synres.html
+impl_1/*_map_mapres.html
+impl_1/*_css.*.html
+impl_1/*_summary.html
+
+# Keep these specific TCL scripts in impl_1
+!impl_1/pin_sweep_map.tcl
+!impl_1/pin_sweep_bit.tcl
+
+# ── Synthesized netlist outputs in impl_1 ────────────────────────────────
+impl_1/ahb2apb.v
+impl_1/ahbl.v
+impl_1/apb0.v
+impl_1/gpio0.v
+impl_1/i3c_m.v
+impl_1/i3c_s.v
+impl_1/osc0.v
+impl_1/pll0.v
+impl_1/risc_mc.v
+impl_1/sys_mem.v
+impl_1/uart0.v
+impl_1/i3c_target_inst.v
+impl_1/I3C_target_inst.v
+
+# ── Radiant floorplanner / project UI state ──────────────────────────────
+.floorplanner.ini
+promote.xml
+dliteTcl.log
+dliteTcl.tcl
+pn*.dmp
+drc.log
+source/impl_1/I3C_XO5.rvs
+source/impl_1/untitled.svf
+source/impl_1.xcf
+
+# ── Eclipse / SDK workspace metadata ─────────────────────────────────────
+../sw_I3C_XO5/.metadata/
+
+# ── Archives and large PDFs ───────────────────────────────────────────────
+*.7z
+*.pdf
+
+# ── Simulation artifacts ──────────────────────────────────────────────────
+sim/sim_controller/qrun.log
+sim/sim_controller/qrun.out/
+sim/sim_controller/vsim.wlf
+sim/sim_target/

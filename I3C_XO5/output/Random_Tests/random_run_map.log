@@ -1,0 +1,190 @@
+[2026-03-17 00:32:40] ======================================================
+[2026-03-17 00:32:40] Bank 0 Random Pin Sweep started. N=10 versions
+[2026-03-17 00:32:40] Pin pool: 29 pins
+[2026-03-17 00:32:40] ======================================================
+[2026-03-17 00:32:40] ========== [v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6] ==========
+[2026-03-17 00:32:40]   M0_SCL=A3  M0_SDA=G9  S0_SCL=D4  S0_SDA=C6
+[2026-03-17 00:32:41]   map starting...
+[2026-03-17 00:33:31]   map FAILED (exit code: 1)
+[2026-03-17 00:33:31] [v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6\I3C_XO5_v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6.bit
+[2026-03-17 00:33:31] ========== [v2_M0SCL_G9_M0SDA_C3_S0SCL_D3_S0SDA_F4] ==========
+[2026-03-17 00:33:31]   M0_SCL=G9  M0_SDA=C3  S0_SCL=D3  S0_SDA=F4
+[2026-03-17 00:33:31]   map starting...
+[2026-03-17 00:33:56]   map FAILED (exit code: 1)
+[2026-03-17 00:33:56] [v2_M0SCL_G9_M0SDA_C3_S0SCL_D3_S0SDA_F4] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v2_M0SCL_G9_M0SDA_C3_S0SCL_D3_S0SDA_F4\I3C_XO5_v2_M0SCL_G9_M0SDA_C3_S0SCL_D3_S0SDA_F4.bit
+[2026-03-17 00:33:56] ========== [v3_M0SCL_A5_M0SDA_C6_S0SCL_D4_S0SDA_A3] ==========
+[2026-03-17 00:33:56]   M0_SCL=A5  M0_SDA=C6  S0_SCL=D4  S0_SDA=A3
+[2026-03-17 00:33:56]   map starting...
+[2026-03-17 00:34:20]   map FAILED (exit code: 1)
+[2026-03-17 00:34:20] [v3_M0SCL_A5_M0SDA_C6_S0SCL_D4_S0SDA_A3] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v3_M0SCL_A5_M0SDA_C6_S0SCL_D4_S0SDA_A3\I3C_XO5_v3_M0SCL_A5_M0SDA_C6_S0SCL_D4_S0SDA_A3.bit
+[2026-03-17 00:34:20] ========== [v4_M0SCL_G7_M0SDA_D6_S0SCL_D1_S0SDA_B2] ==========
+[2026-03-17 00:34:20]   M0_SCL=G7  M0_SDA=D6  S0_SCL=D1  S0_SDA=B2
+[2026-03-17 00:34:20]   map starting...
+[2026-03-17 00:34:56]   map completed successfully.
+[2026-03-17 00:34:56]   par starting...
+[2026-03-17 00:42:31]   par completed successfully.
+[2026-03-17 00:42:31]   bit starting...
+[2026-03-17 00:43:24]   bit completed successfully.
+[2026-03-17 00:43:24] [v4_M0SCL_G7_M0SDA_D6_S0SCL_D1_S0SDA_B2] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v4_M0SCL_G7_M0SDA_D6_S0SCL_D1_S0SDA_B2\I3C_XO5_v4_M0SCL_G7_M0SDA_D6_S0SCL_D1_S0SDA_B2.bit
+[2026-03-17 00:43:24] ========== [v5_M0SCL_A6_M0SDA_C3_S0SCL_B1_S0SDA_E3] ==========
+[2026-03-17 00:43:24]   M0_SCL=A6  M0_SDA=C3  S0_SCL=B1  S0_SDA=E3
+[2026-03-17 00:43:24]   map starting...
+[2026-03-17 00:44:00]   map completed successfully.
+[2026-03-17 00:44:00]   par starting...
+[2026-03-17 00:50:39]   par completed successfully.
+[2026-03-17 00:50:39]   bit starting...
+[2026-03-17 00:51:29]   bit completed successfully.
+[2026-03-17 00:51:29] [v5_M0SCL_A6_M0SDA_C3_S0SCL_B1_S0SDA_E3] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v5_M0SCL_A6_M0SDA_C3_S0SCL_B1_S0SDA_E3\I3C_XO5_v5_M0SCL_A6_M0SDA_C3_S0SCL_B1_S0SDA_E3.bit
+[2026-03-17 00:51:29] ========== [v6_M0SCL_A5_M0SDA_G4_S0SCL_C1_S0SDA_B4] ==========
+[2026-03-17 00:51:29]   M0_SCL=A5  M0_SDA=G4  S0_SCL=C1  S0_SDA=B4
+[2026-03-17 00:51:29]   map starting...
+[2026-03-17 00:52:05]   map completed successfully.
+[2026-03-17 00:52:05]   par starting...
+[2026-03-17 00:57:14] ======================================================
+[2026-03-17 00:57:14] Bank 0 Random Pin Sweep started. N=10 versions
+[2026-03-17 00:57:14] Pin pool: 27 pins
+[2026-03-17 00:57:14] ======================================================
+[2026-03-17 00:57:15] ========== [v1_M0SCL_A5_M0SDA_A4_S0SCL_C6_S0SDA_A6] ==========
+[2026-03-17 00:57:15]   M0_SCL=A5  M0_SDA=A4  S0_SCL=C6  S0_SDA=A6
+[2026-03-17 00:57:15]   map starting...
+[2026-03-17 00:57:58]   map completed successfully.
+[2026-03-17 00:57:58]   par starting...
+[2026-03-17 00:58:25]   par FAILED (exit code: 1)
+[2026-03-17 00:58:25] [v1_M0SCL_A5_M0SDA_A4_S0SCL_C6_S0SDA_A6] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v1_M0SCL_A5_M0SDA_A4_S0SCL_C6_S0SDA_A6\I3C_XO5_v1_M0SCL_A5_M0SDA_A4_S0SCL_C6_S0SDA_A6.bit
+[2026-03-17 00:58:25] ========== [v2_M0SCL_C5_M0SDA_D6_S0SCL_E4_S0SDA_E3] ==========
+[2026-03-17 00:58:25]   M0_SCL=C5  M0_SDA=D6  S0_SCL=E4  S0_SDA=E3
+[2026-03-17 00:58:25]   map starting...
+[2026-03-17 00:59:11]   map completed successfully.
+[2026-03-17 00:59:11]   par starting...
+[2026-03-17 00:59:37]   par FAILED (exit code: 1)
+[2026-03-17 00:59:37] [v2_M0SCL_C5_M0SDA_D6_S0SCL_E4_S0SDA_E3] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v2_M0SCL_C5_M0SDA_D6_S0SCL_E4_S0SDA_E3\I3C_XO5_v2_M0SCL_C5_M0SDA_D6_S0SCL_E4_S0SDA_E3.bit
+[2026-03-17 00:59:37] ========== [v3_M0SCL_B4_M0SDA_B2_S0SCL_D1_S0SDA_C1] ==========
+[2026-03-17 00:59:37]   M0_SCL=B4  M0_SDA=B2  S0_SCL=D1  S0_SDA=C1
+[2026-03-17 00:59:37]   map starting...
+[2026-03-17 01:00:29]   map completed successfully.
+[2026-03-17 01:00:29]   par starting...
+[2026-03-17 01:00:55]   par FAILED (exit code: 1)
+[2026-03-17 01:00:55] [v6_M0SCL_A5_M0SDA_G4_S0SCL_C1_S0SDA_B4] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v6_M0SCL_A5_M0SDA_G4_S0SCL_C1_S0SDA_B4\I3C_XO5_v6_M0SCL_A5_M0SDA_G4_S0SCL_C1_S0SDA_B4.bit
+[2026-03-17 01:00:55] ========== [v7_M0SCL_D6_M0SDA_B5_S0SCL_E3_S0SDA_D4] ==========
+[2026-03-17 01:00:55]   M0_SCL=D6  M0_SDA=B5  S0_SCL=E3  S0_SDA=D4
+[2026-03-17 01:00:55]   map starting...
+[2026-03-17 01:01:28]   map FAILED (exit code: 1)
+[2026-03-17 01:01:28] [v7_M0SCL_D6_M0SDA_B5_S0SCL_E3_S0SDA_D4] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v7_M0SCL_D6_M0SDA_B5_S0SCL_E3_S0SDA_D4\I3C_XO5_v7_M0SCL_D6_M0SDA_B5_S0SCL_E3_S0SDA_D4.bit
+[2026-03-17 01:01:28] ========== [v8_M0SCL_A3_M0SDA_C3_S0SCL_B5_S0SDA_B1] ==========
+[2026-03-17 01:01:28]   M0_SCL=A3  M0_SDA=C3  S0_SCL=B5  S0_SDA=B1
+[2026-03-17 01:01:28]   map starting...
+[2026-03-17 01:02:21]   map completed successfully.
+[2026-03-17 01:02:21]   par starting...
+[2026-03-17 01:02:50]   par FAILED (exit code: 1)
+[2026-03-17 01:02:50] [v8_M0SCL_A3_M0SDA_C3_S0SCL_B5_S0SDA_B1] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v8_M0SCL_A3_M0SDA_C3_S0SCL_B5_S0SDA_B1\I3C_XO5_v8_M0SCL_A3_M0SDA_C3_S0SCL_B5_S0SDA_B1.bit
+[2026-03-17 01:02:50] ========== [v9_M0SCL_F4_M0SDA_G4_S0SCL_B4_S0SDA_E3] ==========
+[2026-03-17 01:02:50]   M0_SCL=F4  M0_SDA=G4  S0_SCL=B4  S0_SDA=E3
+[2026-03-17 01:02:50]   map starting...
+[2026-03-17 01:03:24]   map FAILED (exit code: 1)
+[2026-03-17 01:03:24] [v9_M0SCL_F4_M0SDA_G4_S0SCL_B4_S0SDA_E3] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v9_M0SCL_F4_M0SDA_G4_S0SCL_B4_S0SDA_E3\I3C_XO5_v9_M0SCL_F4_M0SDA_G4_S0SCL_B4_S0SDA_E3.bit
+[2026-03-17 01:03:24] ========== [v10_M0SCL_D1_M0SDA_C5_S0SCL_F4_S0SDA_B5] ==========
+[2026-03-17 01:03:24]   M0_SCL=D1  M0_SDA=C5  S0_SCL=F4  S0_SDA=B5
+[2026-03-17 01:03:24]   map starting...
+[2026-03-17 01:03:57]   map FAILED (exit code: 1)
+[2026-03-17 01:03:57] [v10_M0SCL_D1_M0SDA_C5_S0SCL_F4_S0SDA_B5] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v10_M0SCL_D1_M0SDA_C5_S0SCL_F4_S0SDA_B5\I3C_XO5_v10_M0SCL_D1_M0SDA_C5_S0SCL_F4_S0SDA_B5.bit
+[2026-03-17 01:03:57] ======================================================
+[2026-03-17 01:03:57] === PIN MAP SUMMARY (burn order) ===
+[2026-03-17 01:03:57]   v1: M0_SCL=A3  M0_SDA=G9  S0_SCL=D4  S0_SDA=C6  dir=v1_M0SCL_A3_M0SDA_G9_S0SCL_D4_S0SDA_C6
+[2026-03-17 01:03:57]   v2: M0_SCL=G9  M0_SDA=C3  S0_SCL=D3  S0_SDA=F4  dir=v2_M0SCL_G9_M0SDA_C3_S0SCL_D3_S0SDA_F4
+[2026-03-17 01:03:57]   v3: M0_SCL=A5  M0_SDA=C6  S0_SCL=D4  S0_SDA=A3  dir=v3_M0SCL_A5_M0SDA_C6_S0SCL_D4_S0SDA_A3
+[2026-03-17 01:03:57]   v4: M0_SCL=G7  M0_SDA=D6  S0_SCL=D1  S0_SDA=B2  dir=v4_M0SCL_G7_M0SDA_D6_S0SCL_D1_S0SDA_B2
+[2026-03-17 01:03:57]   v5: M0_SCL=A6  M0_SDA=C3  S0_SCL=B1  S0_SDA=E3  dir=v5_M0SCL_A6_M0SDA_C3_S0SCL_B1_S0SDA_E3
+[2026-03-17 01:03:57]   v6: M0_SCL=A5  M0_SDA=G4  S0_SCL=C1  S0_SDA=B4  dir=v6_M0SCL_A5_M0SDA_G4_S0SCL_C1_S0SDA_B4
+[2026-03-17 01:03:57]   v7: M0_SCL=D6  M0_SDA=B5  S0_SCL=E3  S0_SDA=D4  dir=v7_M0SCL_D6_M0SDA_B5_S0SCL_E3_S0SDA_D4
+[2026-03-17 01:03:57]   v8: M0_SCL=A3  M0_SDA=C3  S0_SCL=B5  S0_SDA=B1  dir=v8_M0SCL_A3_M0SDA_C3_S0SCL_B5_S0SDA_B1
+[2026-03-17 01:03:57]   v9: M0_SCL=F4  M0_SDA=G4  S0_SCL=B4  S0_SDA=E3  dir=v9_M0SCL_F4_M0SDA_G4_S0SCL_B4_S0SDA_E3
+[2026-03-17 01:03:57]   v10: M0_SCL=D1  M0_SDA=C5  S0_SCL=F4  S0_SDA=B5  dir=v10_M0SCL_D1_M0SDA_C5_S0SCL_F4_S0SDA_B5
+[2026-03-17 01:03:57] ======================================================
+[2026-03-17 01:03:57] All 10 versions completed.
+[2026-03-17 01:03:57] LED guide:
+[2026-03-17 01:03:57]   LED2 blink only     = DAA failed (wrong pin combo)
+[2026-03-17 01:03:57]   LED2 blink + LED3   = DAA retry >= 20, check wiring
+[2026-03-17 01:03:57]   LED1 solid          = DAA SUCCESS => record this combo as the answer
+[2026-03-17 01:03:57] ======================================================
+[2026-03-17 01:10:55]   par completed successfully.
+[2026-03-17 01:10:55]   bit starting...
+[2026-03-17 01:11:48]   bit completed successfully.
+[2026-03-17 01:11:48] [v3_M0SCL_B4_M0SDA_B2_S0SCL_D1_S0SDA_C1] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v3_M0SCL_B4_M0SDA_B2_S0SCL_D1_S0SDA_C1\I3C_XO5_v3_M0SCL_B4_M0SDA_B2_S0SCL_D1_S0SDA_C1.bit
+[2026-03-17 01:11:48] ========== [v4_M0SCL_G8_M0SDA_G7_S0SCL_E4_S0SDA_G9] ==========
+[2026-03-17 01:11:48]   M0_SCL=G8  M0_SDA=G7  S0_SCL=E4  S0_SDA=G9
+[2026-03-17 01:11:48]   map starting...
+[2026-03-17 01:12:29]   map completed successfully.
+[2026-03-17 01:12:29]   par starting...
+[2026-03-17 01:21:52]   par completed successfully.
+[2026-03-17 01:21:52]   bit starting...
+[2026-03-17 01:23:00]   bit completed successfully.
+[2026-03-17 01:23:00] [v4_M0SCL_G8_M0SDA_G7_S0SCL_E4_S0SDA_G9] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v4_M0SCL_G8_M0SDA_G7_S0SCL_E4_S0SDA_G9\I3C_XO5_v4_M0SCL_G8_M0SDA_G7_S0SCL_E4_S0SDA_G9.bit
+[2026-03-17 01:23:00] ========== [v5_M0SCL_D5_M0SDA_C1_S0SCL_A6_S0SDA_B2] ==========
+[2026-03-17 01:23:00]   M0_SCL=D5  M0_SDA=C1  S0_SCL=A6  S0_SDA=B2
+[2026-03-17 01:23:00]   map starting...
+[2026-03-17 01:23:44]   map completed successfully.
+[2026-03-17 01:23:44]   par starting...
+[2026-03-17 01:36:13]   par completed successfully.
+[2026-03-17 01:36:13]   bit starting...
+[2026-03-17 01:37:08]   bit completed successfully.
+[2026-03-17 01:37:08] [v5_M0SCL_D5_M0SDA_C1_S0SCL_A6_S0SDA_B2] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v5_M0SCL_D5_M0SDA_C1_S0SCL_A6_S0SDA_B2\I3C_XO5_v5_M0SCL_D5_M0SDA_C1_S0SCL_A6_S0SDA_B2.bit
+[2026-03-17 01:37:08] ========== [v6_M0SCL_B2_M0SDA_G8_S0SCL_D1_S0SDA_A6] ==========
+[2026-03-17 01:37:08]   M0_SCL=B2  M0_SDA=G8  S0_SCL=D1  S0_SDA=A6
+[2026-03-17 01:37:08]   map starting...
+[2026-03-17 01:37:50]   map completed successfully.
+[2026-03-17 01:37:50]   par starting...
+[2026-03-17 01:47:06]   par completed successfully.
+[2026-03-17 01:47:06]   bit starting...
+[2026-03-17 01:48:01]   bit completed successfully.
+[2026-03-17 01:48:01] [v6_M0SCL_B2_M0SDA_G8_S0SCL_D1_S0SDA_A6] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v6_M0SCL_B2_M0SDA_G8_S0SCL_D1_S0SDA_A6\I3C_XO5_v6_M0SCL_B2_M0SDA_G8_S0SCL_D1_S0SDA_A6.bit
+[2026-03-17 01:48:01] ========== [v7_M0SCL_D6_M0SDA_D1_S0SCL_B6_S0SDA_B2] ==========
+[2026-03-17 01:48:01]   M0_SCL=D6  M0_SDA=D1  S0_SCL=B6  S0_SDA=B2
+[2026-03-17 01:48:01]   map starting...
+[2026-03-17 01:48:43]   map completed successfully.
+[2026-03-17 01:48:43]   par starting...
+[2026-03-17 01:57:46]   par completed successfully.
+[2026-03-17 01:57:46]   bit starting...
+[2026-03-17 01:58:40]   bit completed successfully.
+[2026-03-17 01:58:40] [v7_M0SCL_D6_M0SDA_D1_S0SCL_B6_S0SDA_B2] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v7_M0SCL_D6_M0SDA_D1_S0SCL_B6_S0SDA_B2\I3C_XO5_v7_M0SCL_D6_M0SDA_D1_S0SCL_B6_S0SDA_B2.bit
+[2026-03-17 01:58:40] ========== [v8_M0SCL_D6_M0SDA_G8_S0SCL_C4_S0SDA_C3] ==========
+[2026-03-17 01:58:40]   M0_SCL=D6  M0_SDA=G8  S0_SCL=C4  S0_SDA=C3
+[2026-03-17 01:58:40]   map starting...
+[2026-03-17 01:59:08]   map FAILED (exit code: 1)
+[2026-03-17 01:59:08] [v8_M0SCL_D6_M0SDA_G8_S0SCL_C4_S0SDA_C3] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v8_M0SCL_D6_M0SDA_G8_S0SCL_C4_S0SDA_C3\I3C_XO5_v8_M0SCL_D6_M0SDA_G8_S0SCL_C4_S0SDA_C3.bit
+[2026-03-17 01:59:08] ========== [v9_M0SCL_B1_M0SDA_D3_S0SCL_A2_S0SDA_D5] ==========
+[2026-03-17 01:59:08]   M0_SCL=B1  M0_SDA=D3  S0_SCL=A2  S0_SDA=D5
+[2026-03-17 01:59:08]   map starting...
+[2026-03-17 01:59:49]   map completed successfully.
+[2026-03-17 01:59:49]   par starting...
+[2026-03-17 02:09:44]   par completed successfully.
+[2026-03-17 02:09:44]   bit starting...
+[2026-03-17 02:10:38]   bit completed successfully.
+[2026-03-17 02:10:38] [v9_M0SCL_B1_M0SDA_D3_S0SCL_A2_S0SDA_D5] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v9_M0SCL_B1_M0SDA_D3_S0SCL_A2_S0SDA_D5\I3C_XO5_v9_M0SCL_B1_M0SDA_D3_S0SCL_A2_S0SDA_D5.bit
+[2026-03-17 02:10:38] ========== [v10_M0SCL_B6_M0SDA_C3_S0SCL_C1_S0SDA_D6] ==========
+[2026-03-17 02:10:38]   M0_SCL=B6  M0_SDA=C3  S0_SCL=C1  S0_SDA=D6
+[2026-03-17 02:10:38]   map starting...
+[2026-03-17 02:11:20]   map completed successfully.
+[2026-03-17 02:11:20]   par starting...
+[2026-03-17 02:22:51]   par completed successfully.
+[2026-03-17 02:22:51]   bit starting...
+[2026-03-17 02:23:47]   bit completed successfully.
+[2026-03-17 02:23:47] [v10_M0SCL_B6_M0SDA_C3_S0SCL_C1_S0SDA_D6] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\Random_Tests\v10_M0SCL_B6_M0SDA_C3_S0SCL_C1_S0SDA_D6\I3C_XO5_v10_M0SCL_B6_M0SDA_C3_S0SCL_C1_S0SDA_D6.bit
+[2026-03-17 02:23:47] ======================================================
+[2026-03-17 02:23:47] === PIN MAP SUMMARY (burn order) ===
+[2026-03-17 02:23:47]   v1: M0_SCL=A5  M0_SDA=A4  S0_SCL=C6  S0_SDA=A6  dir=v1_M0SCL_A5_M0SDA_A4_S0SCL_C6_S0SDA_A6
+[2026-03-17 02:23:47]   v2: M0_SCL=C5  M0_SDA=D6  S0_SCL=E4  S0_SDA=E3  dir=v2_M0SCL_C5_M0SDA_D6_S0SCL_E4_S0SDA_E3
+[2026-03-17 02:23:47]   v3: M0_SCL=B4  M0_SDA=B2  S0_SCL=D1  S0_SDA=C1  dir=v3_M0SCL_B4_M0SDA_B2_S0SCL_D1_S0SDA_C1
+[2026-03-17 02:23:47]   v4: M0_SCL=G8  M0_SDA=G7  S0_SCL=E4  S0_SDA=G9  dir=v4_M0SCL_G8_M0SDA_G7_S0SCL_E4_S0SDA_G9
+[2026-03-17 02:23:47]   v5: M0_SCL=D5  M0_SDA=C1  S0_SCL=A6  S0_SDA=B2  dir=v5_M0SCL_D5_M0SDA_C1_S0SCL_A6_S0SDA_B2
+[2026-03-17 02:23:47]   v6: M0_SCL=B2  M0_SDA=G8  S0_SCL=D1  S0_SDA=A6  dir=v6_M0SCL_B2_M0SDA_G8_S0SCL_D1_S0SDA_A6
+[2026-03-17 02:23:47]   v7: M0_SCL=D6  M0_SDA=D1  S0_SCL=B6  S0_SDA=B2  dir=v7_M0SCL_D6_M0SDA_D1_S0SCL_B6_S0SDA_B2
+[2026-03-17 02:23:47]   v8: M0_SCL=D6  M0_SDA=G8  S0_SCL=C4  S0_SDA=C3  dir=v8_M0SCL_D6_M0SDA_G8_S0SCL_C4_S0SDA_C3
+[2026-03-17 02:23:47]   v9: M0_SCL=B1  M0_SDA=D3  S0_SCL=A2  S0_SDA=D5  dir=v9_M0SCL_B1_M0SDA_D3_S0SCL_A2_S0SDA_D5
+[2026-03-17 02:23:47]   v10: M0_SCL=B6  M0_SDA=C3  S0_SCL=C1  S0_SDA=D6  dir=v10_M0SCL_B6_M0SDA_C3_S0SCL_C1_S0SDA_D6
+[2026-03-17 02:23:47] ======================================================
+[2026-03-17 02:23:47] All 10 versions completed.
+[2026-03-17 02:23:47] LED guide:
+[2026-03-17 02:23:47]   LED2 blink only     = DAA failed (wrong pin combo)
+[2026-03-17 02:23:47]   LED2 blink + LED3   = DAA retry >= 20, check wiring
+[2026-03-17 02:23:47]   LED1 solid          = DAA SUCCESS => record this combo as the answer
+[2026-03-17 02:23:47] ======================================================
