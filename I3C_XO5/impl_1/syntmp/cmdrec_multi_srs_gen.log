@@ -1,7 +1,7 @@
 C:\lscc\radiant\2025.2\synpbase\bin64\syn_nfilter.exe  -link  -top  I3C_XO5  -multisrs  C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\synwork\I3C_XO5_impl_1_comp.srs  -osyn  C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\synwork\I3C_XO5_impl_1_mult.srs  -log  C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\synlog\I3C_XO5_impl_1_multi_srs_gen.srr 
 relcom:..\..\..\..\..\..\..\lscc\radiant\2025.2\synpbase\bin64\syn_nfilter.exe -link -top I3C_XO5 -multisrs ..\synwork\I3C_XO5_impl_1_comp.srs -osyn ..\synwork\I3C_XO5_impl_1_mult.srs -log ..\synlog\I3C_XO5_impl_1_multi_srs_gen.srr
-rc:0 success:1 runtime:29
-file:..\synwork\i3c_xo5_impl_1_comp.srs|io:i|time:1773367549|size:3187030|exec:0|csum:EC4AC03C646EBDF76602B9CB7369A75E
-file:..\synwork\i3c_xo5_impl_1_mult.srs|io:o|time:1773367579|size:18350|exec:0|csum:
-file:..\synlog\i3c_xo5_impl_1_multi_srs_gen.srr|io:o|time:1773367579|size:1158|exec:0|csum:
+rc:0 success:1 runtime:26
+file:..\synwork\i3c_xo5_impl_1_comp.srs|io:i|time:1774506775|size:3188963|exec:0|csum:B62F44FD184714FF44F639468BFBB7AF
+file:..\synwork\i3c_xo5_impl_1_mult.srs|io:o|time:1774506802|size:18384|exec:0|csum:
+file:..\synlog\i3c_xo5_impl_1_multi_srs_gen.srr|io:o|time:1774506802|size:1158|exec:0|csum:
 file:..\..\..\..\..\..\..\lscc\radiant\2025.2\synpbase\bin64\syn_nfilter.exe|io:i|time:1762883177|size:10805248|exec:1|csum:852D19A9663831A0E2C4EB49CF2B6DEC

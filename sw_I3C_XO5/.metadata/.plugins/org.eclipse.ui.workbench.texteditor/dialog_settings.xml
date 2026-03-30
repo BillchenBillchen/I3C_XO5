@@ -1,22 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="main"/>
+		<item key="selection" value="GPIO_INST_BASE_ADDR"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="main"/>
-			<item value="uart_init"/>
+			<item value="GPIO_INST_BASE_ADDR"/>
+			<item value="halt_with_blink_error"/>
+			<item value="wr_buf"/>
+			<item value="rd_buf"/>
+			<item value="i3c_target_fifo_loopback_enable"/>
+			<item value="LED0"/>
+			<item value="LED1"/>
+			<item value="startup_sweep"/>
+			<item value="gpio_output_write"/>
+			<item value="actual_rd_length "/>
+			<item value="I3C_MASTER_DA_ACK_REG"/>
+			<item value="DAA"/>
+			<item value="daa_toggle"/>
+			<item value="i3c_master_daa"/>
+			<item value="i3c_target_init"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="762"/>
-		<item key="DIALOG_Y_ORIGIN" value="217"/>
+		<item key="DIALOG_X_ORIGIN" value="1263"/>
+		<item key="DIALOG_Y_ORIGIN" value="418"/>
 		<item key="DIALOG_WIDTH" value="414"/>
 		<item key="DIALOG_HEIGHT" value="454"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>

@@ -1,27 +1,27 @@
-@P:  Worst Slack : -3.433
-@P:  I3C_XO5|reveal_jtck_inferred_clock - Estimated Frequency : 181.6 MHz
+@P:  Worst Slack : -3.243
+@P:  I3C_XO5|reveal_jtck_inferred_clock - Estimated Frequency : 203.0 MHz
 @P:  I3C_XO5|reveal_jtck_inferred_clock - Requested Frequency : 200.0 MHz
-@P:  I3C_XO5|reveal_jtck_inferred_clock - Estimated Period : 5.506
+@P:  I3C_XO5|reveal_jtck_inferred_clock - Estimated Period : 4.926
 @P:  I3C_XO5|reveal_jtck_inferred_clock - Requested Period : 5.000
-@P:  I3C_XO5|reveal_jtck_inferred_clock - Slack : -0.506
-@P:  i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i - Estimated Frequency : 87.3 MHz
+@P:  I3C_XO5|reveal_jtck_inferred_clock - Slack : 0.074
+@P:  i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i - Estimated Frequency : 90.1 MHz
 @P:  i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i - Requested Frequency : 200.0 MHz
-@P:  i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i - Estimated Period : 11.452
+@P:  i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i - Estimated Period : 11.099
 @P:  i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i - Requested Period : 5.000
-@P:  i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i - Slack : -3.258
+@P:  i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i - Slack : -3.050
 @P:  i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i - Estimated Frequency : 369.8 MHz
 @P:  i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i - Requested Frequency : 200.0 MHz
 @P:  i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i - Estimated Period : 2.704
 @P:  i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i - Requested Period : 5.000
 @P:  i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i - Slack : 1.148
-@P:  pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock - Estimated Frequency : 118.6 MHz
+@P:  pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock - Estimated Frequency : 121.3 MHz
 @P:  pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock - Requested Frequency : 200.0 MHz
-@P:  pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock - Estimated Period : 8.432
+@P:  pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock - Estimated Period : 8.242
 @P:  pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock - Requested Period : 5.000
-@P:  pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock - Slack : -3.433
-@P:  pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock - Estimated Frequency : 127.3 MHz
+@P:  pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock - Slack : -3.243
+@P:  pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock - Estimated Frequency : 128.9 MHz
 @P:  pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock - Requested Frequency : 200.0 MHz
-@P:  pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock - Estimated Period : 7.854
+@P:  pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock - Estimated Period : 7.758
 @P:  pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock - Requested Period : 5.000
 @P:  pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock - Slack : -1.702
 @P:  risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bbICH_inferred_clock - Estimated Frequency : 192.8 MHz
@@ -34,9 +34,9 @@
 @P:  risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bqAaKcoy7LeAHb1_inferred_clock - Estimated Period : 3.424
 @P:  risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bqAaKcoy7LeAHb1_inferred_clock - Requested Period : 5.000
 @P:  risc_mc_ipgen_vex_jtag_bridge_uniq_1_Z54_layer0|bqAaKcoy7LeAHb1_inferred_clock - Slack : 0.788
-@P:  System - Estimated Frequency : 186.4 MHz
+@P:  System - Estimated Frequency : 175.1 MHz
 @P:  System - Requested Frequency : 200.0 MHz
-@P:  System - Estimated Period : 5.366
+@P:  System - Estimated Period : 5.712
 @P:  System - Requested Period : 5.000
-@P:  System - Slack : -0.366
-@P:  CPU Time : 0h:06m:07s
+@P:  System - Slack : -0.712
+@P:  CPU Time : 0h:05m:49s

@@ -12,6 +12,9 @@ if {![file exists {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1}]} {
 cd {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1}
 # synthesize IPs
 # synthesize VMs
+# propgate constraints
+file delete -force -- I3C_XO5_impl_1_cpe.ldc
+::radiant::runengine::run_engine_newmsg cpe -syn synpro -f "I3C_XO5_impl_1.cprj" "i3c_m.cprj" "i3c_s.cprj" "ahb2apb.cprj" "pll0.cprj" "apb0.cprj" "uart0.cprj" "osc0.cprj" "gpio0.cprj" "ahbl.cprj" "risc_mc.cprj" "sys_mem.cprj" "I3C_target_inst.cprj" -a "LFMXO5"  -o I3C_XO5_impl_1_cpe.ldc
 # synthesize top design
 file delete -force -- I3C_XO5_impl_1.vm I3C_XO5_impl_1.ldc
 if {[file normalize "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1/I3C_XO5_impl_1_synplify.tcl"] != [file normalize "./I3C_XO5_impl_1_synplify.tcl"]} {

@@ -44,7 +44,7 @@
                 <field>
                   <name>rd_data</name>
                   <description>Read actual values of GPIO's</description>
-                  <bitRange>[8:0]</bitRange>
+                  <bitRange>[11:0]</bitRange>
                   <access>read-only</access>
                 </field>
 
@@ -66,7 +66,7 @@
                 <field>
                   <name>wr_data</name>
                   <description>Write GPIO output register</description>
-                  <bitRange>[8:0]</bitRange>
+                  <bitRange>[11:0]</bitRange>
                   <access>read-write</access>
                 </field>
 
@@ -88,7 +88,7 @@
                 <field>
                   <name>set_data</name>
                   <description>Set GPIO output register</description>
-                  <bitRange>[8:0]</bitRange>
+                  <bitRange>[11:0]</bitRange>
                   <access>write-only</access>
                 </field>
 
@@ -110,7 +110,7 @@
                 <field>
                   <name>clear_data</name>
                   <description>Clear GPIO output register</description>
-                  <bitRange>[8:0]</bitRange>
+                  <bitRange>[11:0]</bitRange>
                   <access>write-only</access>
                 </field>
 
@@ -132,7 +132,7 @@
                 <field>
                   <name>direction_reg</name>
                   <description>GPIO Direction register</description>
-                  <bitRange>[8:0]</bitRange>
+                  <bitRange>[11:0]</bitRange>
                   <access>read-write</access>
                 </field>
 
@@ -154,7 +154,7 @@
                 <field>
                   <name>int_type</name>
                   <description>Interrupt Type Cofiguration Register, 1-Edge, 0-Level</description>
-                  <bitRange>[8:0]</bitRange>
+                  <bitRange>[11:0]</bitRange>
                   <access>read-write</access>
                 </field>
 
@@ -176,7 +176,7 @@
                 <field>
                   <name>int_method</name>
                   <description>Interrupt Method Register, if Interrupt Type is Edge` 1-Rising edge 0-faling edge, if Interrupt Type is Level` 1-High level, 0-Low level</description>
-                  <bitRange>[8:0]</bitRange>
+                  <bitRange>[11:0]</bitRange>
                   <access>read-write</access>
                 </field>
 
@@ -198,7 +198,7 @@
                 <field>
                   <name>int_status</name>
                   <description>Interrupt Status Register, indicates interrupt status</description>
-                  <bitRange>[8:0]</bitRange>
+                  <bitRange>[11:0]</bitRange>
                   <access>read-write</access>
                 </field>
 
@@ -220,7 +220,7 @@
                 <field>
                   <name>Int_enable</name>
                   <description>Interrupt Enable Register, enables appropriate channel interrupt</description>
-                  <bitRange>[8:0]</bitRange>
+                  <bitRange>[11:0]</bitRange>
                   <access>read-write</access>
                 </field>
 
@@ -242,7 +242,7 @@
                 <field>
                   <name>int_set</name>
                   <description>Interrupt Set Register, user can generate interrupt by writing '1' to the corresponding bit of this register</description>
-                  <bitRange>[8:0]</bitRange>
+                  <bitRange>[11:0]</bitRange>
                   <access>write-only</access>
                 </field>
 

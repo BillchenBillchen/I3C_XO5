@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BuildStatus>
     <Strategy name="Strategy1">
-        <Milestone name="Export" build_result="2" build_time="1773397059">
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1773397059"/>
-            <Task name="IBIS" build_result="2" update_result="0" update_time="1773397073"/>
-            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1773397111"/>
+        <Milestone name="Export" build_result="2" build_time="1774507922">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1774507922"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1774507933"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1774507967"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1773396279">
-            <Task name="Map" build_result="2" update_result="0" update_time="1773396279"/>
-            <Task name="MapTrace" build_result="2" update_result="0" update_time="1773396301"/>
+        <Milestone name="Map" build_result="2" build_time="1774507283">
+            <Task name="Map" build_result="2" update_result="0" update_time="1774507283"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1774507302"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1773396928">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1773396928"/>
+        <Milestone name="PAR" build_result="2" build_time="1774507821">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1774507821"/>
             <Task name="PostParVM" build_result="0" update_result="3" update_time="0"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1773396961"/>
-            <Task name="IOTiming" build_result="2" update_result="0" update_time="1773396987"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1774507843"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1774507859"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1773368030">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1773368030"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1774507221">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1774507221"/>
             <Task name="Synplify_Lint" build_result="0" update_result="3" update_time="0"/>
-            <Task name="SynTrace" build_result="2" update_result="0" update_time="1773368041"/>
-            <Task name="SynVerilogSimFile" build_result="2" update_result="0" update_time="1773368045"/>
-            <Task name="LSE_Compile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="SynTrace" build_result="2" update_result="0" update_time="1774507229"/>
+            <Task name="SynVerilogSimFile" build_result="2" update_result="0" update_time="1774507233"/>
+            <Task name="LSE_Compile" build_result="1" update_result="2" update_time="1774506145"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
             <Task name="HDLE" build_result="0" update_result="3" update_time="0"/>
             <Task name="BKM" build_result="0" update_result="3" update_time="0"/>
             <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
-            <Task name="PIODRC" build_result="2" update_result="0" update_time="1773391883"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="1774505951"/>
             <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Report name="I3C_XO5_impl_1.bgn" last_build_time="1773397058" last_build_size="5009"/>
-        <Report name="I3C_XO5_impl_1.bit" last_build_time="1773397058" last_build_size="682734"/>
-        <Report name="I3C_XO5_impl_1.ior.html" last_build_time="1773396985" last_build_size="3322"/>
-        <Report name="I3C_XO5_impl_1.tw1.html" last_build_time="1773396300" last_build_size="701269"/>
-        <Report name="I3C_XO5_impl_1.twr.html" last_build_time="1773396959" last_build_size="666177"/>
-        <Report name="I3C_XO5_impl_1.tws.html" last_build_time="1773368040" last_build_size="422699"/>
-        <Report name="I3C_XO5_impl_1.udb" last_build_time="1773396927" last_build_size="3516506"/>
-        <Report name="I3C_XO5_impl_1_map.udb" last_build_time="1773396274" last_build_size="2214793"/>
-        <Report name="I3C_XO5_impl_1_syn.udb" last_build_time="1773368023" last_build_size="1011116"/>
-        <Report name="I3C_XO5_impl_1_syn.vo" last_build_time="1773368045" last_build_size="20246497"/>
-        <Report name="I3C_XO5_impl_1_vo.sdf" last_build_time="1773397108" last_build_size="35760414"/>
-        <Report name="I3C_XO5_impl_1_vo.vo" last_build_time="1773397103" last_build_size="42733430"/>
-        <Report name="IBIS/I3C_XO5_impl_1.ibs" last_build_time="1773397073" last_build_size="205661"/>
+        <Report name="I3C_XO5_impl_1.bgn" last_build_time="1774507921" last_build_size="5009"/>
+        <Report name="I3C_XO5_impl_1.bit" last_build_time="1774507921" last_build_size="682734"/>
+        <Report name="I3C_XO5_impl_1.ior.html" last_build_time="1774507858" last_build_size="3322"/>
+        <Report name="I3C_XO5_impl_1.tw1.html" last_build_time="1774507301" last_build_size="457461"/>
+        <Report name="I3C_XO5_impl_1.twr.html" last_build_time="1774507842" last_build_size="789587"/>
+        <Report name="I3C_XO5_impl_1.tws.html" last_build_time="1774507229" last_build_size="308537"/>
+        <Report name="I3C_XO5_impl_1.udb" last_build_time="1774507820" last_build_size="2926691"/>
+        <Report name="I3C_XO5_impl_1_map.udb" last_build_time="1774507277" last_build_size="1888353"/>
+        <Report name="I3C_XO5_impl_1_rtl.udb" last_build_time="0" last_build_size="0"/>
+        <Report name="I3C_XO5_impl_1_syn.udb" last_build_time="1774507215" last_build_size="883117"/>
+        <Report name="I3C_XO5_impl_1_syn.vo" last_build_time="1774507233" last_build_size="17266623"/>
+        <Report name="I3C_XO5_impl_1_vo.sdf" last_build_time="1774507964" last_build_size="28330793"/>
+        <Report name="I3C_XO5_impl_1_vo.vo" last_build_time="1774507960" last_build_size="35175249"/>
+        <Report name="IBIS/I3C_XO5_impl_1.ibs" last_build_time="1774507933" last_build_size="205832"/>
     </Strategy>
 </BuildStatus>
-                                                                                            

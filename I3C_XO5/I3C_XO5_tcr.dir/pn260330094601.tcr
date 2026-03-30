@@ -1,0 +1,90 @@
+#Start recording tcl command: 3/19/2026 14:21:45
+#Project Location: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5; Project name: I3C_XO5
+prj_open "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5.rdf"
+rva_open_project "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/untitled.rva"
+rva_run
+rva_close_controller
+rvl_open_project C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+rvl_add_trace  {{i3c_m_inst/lscc_i3c_controller_inst/lmmi_rdata_o[7:0]}}
+rvl_add_trace  {i3c_m_inst/lscc_i3c_controller_inst/lmmi_rdata_valid_o}
+rvl_add_trace  {{i3c_m_inst/lscc_i3c_controller_inst/lmmi_wdata_i[7:0]}}
+rvl_add_trace  {i3c_m_inst/lscc_i3c_controller_inst/lmmi_wr_rdn_i}
+rvl_del_tu TU7
+rvl_rename_tu TU8 TU7
+rvl_rename_tu TU9 TU8
+rvl_set_tu -name TU10 -add_sig {{i3c_m_inst/lscc_i3c_controller_inst/lmmi_rdata_o[7:0]} }
+rvl_set_tu -name TU10 -set_sig {{i3c_m_inst/lscc_i3c_controller_inst/lmmi_rdata_o[7:0]} }
+rvl_del_tu TU8
+rvl_del_tu TU10
+rvl_set_tu -name TU7 -set_sig {i3c_m_inst/lscc_i3c_controller_inst/lmmi_rdata_valid_o }
+rvl_add_tu -radix Bin 
+rvl_set_tu -name TU8 -set_sig {i3c_m_inst/lscc_i3c_controller_inst/lmmi_wr_rdn_i }
+rvl_del_te TE9
+rvl_set_tu -name TU7 -op .RE.
+rvl_set_tu -name TU7 -val 1
+rvl_set_tu -name TU8 -op .RE.
+rvl_set_tu -name TU8 -val 1
+rvl_del_te TE10
+rvl_save_project -overwrite C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+rvl_del_trace {i3c_m_inst/lscc_i3c_controller_inst/lmmi_rdata_valid_o i3c_m_inst/lscc_i3c_controller_inst/lmmi_rdata_o}
+rvl_save_project -overwrite C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+rvl_set_traceoptn BufferDepth=16384
+rvl_save_project -overwrite C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+rva_open_project "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/untitled.rva"
+prj_remove_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/untitled.rva"
+rva_set_core -name "I3C_XO5_LA0" -run off
+rva_set_core -name "I3C_XO5_LA0" -run on
+rva_close_controller
+rva_new_project -rva "untitled" -cable USB2 -rvl "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl" -dev "1. LFMXO5-25:0x010F7043 (debug enabled)" -port 0 -xcf ""
+prj_add_source "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/untitled.rva"
+rva_run
+rva_stop
+rva_set_te -name TE3 -enable off
+rva_set_te -name TE8 -enable on
+rva_run
+rva_stop
+rva_set_te -name TE8 -enable off
+rva_set_te -name TE2 -enable on
+rva_run
+rva_run
+rva_run
+rva_run
+rva_run
+rva_run
+rva_run
+rva_run
+rva_run
+rva_run
+rva_run
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+rva_run
+rva_stop
+rva_run
+rva_run
+rva_run
+rva_run
+rva_run
+rva_run
+rva_run
+rva_run
+rvl_close_project -force
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+rva_save_project "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/untitled.rva"
+#Stop recording: 3/30/2026 09:46:01

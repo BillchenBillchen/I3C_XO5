@@ -1,4 +1,4 @@
-22:20:12 **** Incremental Build of configuration Debug for project gpi_i3c_led ****
+15:22:49 **** Incremental Build of configuration Debug for project gpi_i3c_led ****
 make all 
 Building file: ../src/main.c
 Invoking: GNU RISC-V Cross C Compiler
@@ -12,8 +12,6 @@ Archive member included to satisfy reference by file (symbol)
 
 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_printf.c.o)
                               ./src/bsp/driver/riscv_mc/interrupt.o (printf)
-c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_putchar.c.o)
-                              ./src/main.o (putchar)
 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_puts.c.o)
                               ./src/main.o (puts)
 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_vfiprintf.c.o)
@@ -29,7 +27,7 @@ c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/
 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_fgetc.c.o)
                               c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_vfiscanf.c.o) (fgetc)
 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_fputc.c.o)
-                              c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_putchar.c.o) (fputc)
+                              c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_vfiprintf.c.o) (fputc)
 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_ungetc.c.o)
                               c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_vfiscanf.c.o) (ungetc)
 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_exchange.c.o)
@@ -328,8 +326,6 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 ./src/bsp/driver/riscv_mc/reg_access.o
  .text.reg_32b_write
                 0x0000000000000000       0x2a ./src/bsp/driver/riscv_mc/reg_access.o
- .text.reg_32b_read
-                0x0000000000000000       0x2c ./src/bsp/driver/riscv_mc/reg_access.o
  .text.reg_16b_write
                 0x0000000000000000       0x2e ./src/bsp/driver/riscv_mc/reg_access.o
  .text.reg_16b_read
@@ -504,8 +500,6 @@ Discarded input sections
                 0x0000000000000000       0xc8 ./src/bsp/driver/i3c_target/i3c_target.o
  .text.i3c_target_hdrddr_read
                 0x0000000000000000       0xde ./src/bsp/driver/i3c_target/i3c_target.o
- .text.i3c_target_fifo_loopback_enable
-                0x0000000000000000       0x3e ./src/bsp/driver/i3c_target/i3c_target.o
  .text.i3c_target_daa_wait
                 0x0000000000000000       0x44 ./src/bsp/driver/i3c_target/i3c_target.o
  .text.i3c_target_static_addr_wait
@@ -597,8 +591,6 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 ./src/bsp/driver/gpio/gpio.o
  .text.gpio_set_direction
                 0x0000000000000000       0x5a ./src/bsp/driver/gpio/gpio.o
- .text.gpio_input_get
-                0x0000000000000000       0x3e ./src/bsp/driver/gpio/gpio.o
  .debug_macro   0x0000000000000000      0x778 ./src/bsp/driver/gpio/gpio.o
  .debug_macro   0x0000000000000000      0x4c5 ./src/bsp/driver/gpio/gpio.o
  .debug_macro   0x0000000000000000       0x8e ./src/bsp/driver/gpio/gpio.o
@@ -782,9 +774,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_printf.c.o)
  .data          0x0000000000000000        0x0 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_printf.c.o)
  .bss           0x0000000000000000        0x0 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_printf.c.o)
- .text          0x0000000000000000        0x0 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_putchar.c.o)
- .data          0x0000000000000000        0x0 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_putchar.c.o)
- .bss           0x0000000000000000        0x0 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_putchar.c.o)
  .text          0x0000000000000000        0x0 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_puts.c.o)
  .data          0x0000000000000000        0x0 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_puts.c.o)
  .bss           0x0000000000000000        0x0 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_puts.c.o)
@@ -854,7 +843,7 @@ sys_mem_inst     0x0000000000000000 0x0000000000010000 xrw
 
 Linker script and memory map
 
-                0x00000000000013da                vfprintf = __i_vfprintf
+                0x00000000000014fe                vfprintf = __i_vfprintf
                 0x0000000000000000                vfscanf = __i_vfscanf
 LOAD ./src/bsp/driver/uart/uart.o
 LOAD ./src/bsp/driver/riscv_mc/cache.o
@@ -881,7 +870,7 @@ LOAD c:/lscc/propel/2025.2/sdk/riscv-none-embed-gcc/bin/../lib/gcc/riscv-none-em
                 0x0000000000000100                _HEAP_SIZE = DEFINED (_HEAP_SIZE)?_HEAP_SIZE:0x100
                 0x0000000000000a00                _STACK_SIZE = DEFINED (_STACK_SIZE)?_STACK_SIZE:0xa00
 
-.text           0x0000000000000000     0x190c
+.text           0x0000000000000000     0x1a30
                 0x0000000000000000                _ftext = .
                 [!provide]                        PROVIDE (_sprof = .)
  *(SORT_BY_NAME(.crt*))
@@ -919,169 +908,177 @@ LOAD c:/lscc/propel/2025.2/sdk/riscv-none-embed-gcc/bin/../lib/gcc/riscv-none-em
  .text.pic_int_pending
                 0x000000000000044a       0x3a ./src/bsp/driver/riscv_mc/pic.o
                 0x000000000000044a                pic_int_pending
+ .text.reg_32b_read
+                0x0000000000000484       0x2c ./src/bsp/driver/riscv_mc/reg_access.o
+                0x0000000000000484                reg_32b_read
  .text.reg_32b_modify
-                0x0000000000000484       0x46 ./src/bsp/driver/riscv_mc/reg_access.o
-                0x0000000000000484                reg_32b_modify
+                0x00000000000004b0       0x46 ./src/bsp/driver/riscv_mc/reg_access.o
+                0x00000000000004b0                reg_32b_modify
  .text.reg_8b_write
-                0x00000000000004ca       0x2e ./src/bsp/driver/riscv_mc/reg_access.o
-                0x00000000000004ca                reg_8b_write
+                0x00000000000004f6       0x2e ./src/bsp/driver/riscv_mc/reg_access.o
+                0x00000000000004f6                reg_8b_write
  .text.reg_8b_modify
-                0x00000000000004f8       0x74 ./src/bsp/driver/riscv_mc/reg_access.o
-                0x00000000000004f8                reg_8b_modify
+                0x0000000000000524       0x74 ./src/bsp/driver/riscv_mc/reg_access.o
+                0x0000000000000524                reg_8b_modify
  .text.reg_8b_read
-                0x000000000000056c       0x34 ./src/bsp/driver/riscv_mc/reg_access.o
-                0x000000000000056c                reg_8b_read
+                0x0000000000000598       0x34 ./src/bsp/driver/riscv_mc/reg_access.o
+                0x0000000000000598                reg_8b_read
  .text.i3c_target_init
-                0x00000000000005a0       0x78 ./src/bsp/driver/i3c_target/i3c_target.o
-                0x00000000000005a0                i3c_target_init
+                0x00000000000005cc       0x78 ./src/bsp/driver/i3c_target/i3c_target.o
+                0x00000000000005cc                i3c_target_init
+ .text.i3c_target_fifo_loopback_enable
+                0x0000000000000644       0x3e ./src/bsp/driver/i3c_target/i3c_target.o
+                0x0000000000000644                i3c_target_fifo_loopback_enable
  .text.i3c_master_init
-                0x0000000000000618       0xe4 ./src/bsp/driver/i3c_controller/i3c_controller.o
-                0x0000000000000618                i3c_master_init
+                0x0000000000000682       0xe4 ./src/bsp/driver/i3c_controller/i3c_controller.o
+                0x0000000000000682                i3c_master_init
  .text.i3c_master_entdaa_config
-                0x00000000000006fc       0xc6 ./src/bsp/driver/i3c_controller/i3c_controller.o
+                0x0000000000000766       0xc6 ./src/bsp/driver/i3c_controller/i3c_controller.o
  .text.i3c_master_daa
-                0x00000000000007c2      0x2b8 ./src/bsp/driver/i3c_controller/i3c_controller.o
-                0x00000000000007c2                i3c_master_daa
+                0x000000000000082c      0x2b8 ./src/bsp/driver/i3c_controller/i3c_controller.o
+                0x000000000000082c                i3c_master_daa
  .text.i3c_master_private_i3c_read
-                0x0000000000000a7a      0x160 ./src/bsp/driver/i3c_controller/i3c_controller.o
-                0x0000000000000a7a                i3c_master_private_i3c_read
+                0x0000000000000ae4      0x162 ./src/bsp/driver/i3c_controller/i3c_controller.o
+                0x0000000000000ae4                i3c_master_private_i3c_read
  .text.i3c_master_private_i3c_write
-                0x0000000000000bda      0x138 ./src/bsp/driver/i3c_controller/i3c_controller.o
-                0x0000000000000bda                i3c_master_private_i3c_write
+                0x0000000000000c46      0x138 ./src/bsp/driver/i3c_controller/i3c_controller.o
+                0x0000000000000c46                i3c_master_private_i3c_write
  .text.gpio_init
-                0x0000000000000d12       0xd4 ./src/bsp/driver/gpio/gpio.o
-                0x0000000000000d12                gpio_init
+                0x0000000000000d7e       0xd4 ./src/bsp/driver/gpio/gpio.o
+                0x0000000000000d7e                gpio_init
  .text.gpio_output_write
-                0x0000000000000de6       0x4e ./src/bsp/driver/gpio/gpio.o
-                0x0000000000000de6                gpio_output_write
+                0x0000000000000e52       0x4e ./src/bsp/driver/gpio/gpio.o
+                0x0000000000000e52                gpio_output_write
+ .text.gpio_input_get
+                0x0000000000000ea0       0x3a ./src/bsp/driver/gpio/gpio.o
+                0x0000000000000ea0                gpio_input_get
  .text.lscc_uart_putc
-                0x0000000000000e34       0x54 ./src/main.o
+                0x0000000000000eda       0x54 ./src/main.o
  .text.lscc_uart_getc
-                0x0000000000000e88       0x14 ./src/main.o
+                0x0000000000000f2e       0x14 ./src/main.o
  .text.lscc_uart_flush
-                0x0000000000000e9c       0x14 ./src/main.o
+                0x0000000000000f42       0x14 ./src/main.o
  .text.simple_delay_ms
-                0x0000000000000eb0       0x3a ./src/main.o
+                0x0000000000000f56       0x3a ./src/main.o
  .text.set_led_all_off
-                0x0000000000000eea       0x3e ./src/main.o
+                0x0000000000000f90       0x3e ./src/main.o
  .text.set_led_on
-                0x0000000000000f28       0x26 ./src/main.o
+                0x0000000000000fce       0x26 ./src/main.o
+ .text.set_led_all_on
+                0x0000000000000ff4       0x3c ./src/main.o
+ .text.set_led_bar
+                0x0000000000001030       0x60 ./src/main.o
+ .text.halt_with_blink_error
+                0x0000000000001090       0x26 ./src/main.o
  .text.bsp_init
-                0x0000000000000f4e       0x70 ./src/main.o
- .text.main     0x0000000000000fbe      0x318 ./src/main.o
-                0x0000000000000fbe                main
+                0x00000000000010b6       0x6e ./src/main.o
+ .text.main     0x0000000000001124      0x2de ./src/main.o
+                0x0000000000001124                main
  .text.delayCycle
-                0x00000000000012d6       0x40 ./src/utils.o
-                0x00000000000012d6                delayCycle
- .text.delayMS  0x0000000000001316       0x1c ./src/utils.o
-                0x0000000000001316                delayMS
- .text.printf   0x0000000000001332       0x26 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_printf.c.o)
-                0x0000000000001332                printf
- .text.putchar  0x0000000000001358        0x8 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_putchar.c.o)
-                0x0000000000001358                putchar
- .text.puts     0x0000000000001360       0x3c c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_puts.c.o)
-                0x0000000000001360                puts
+                0x0000000000001402       0x40 ./src/utils.o
+                0x0000000000001402                delayCycle
+ .text.delayMS  0x0000000000001442       0x1c ./src/utils.o
+                0x0000000000001442                delayMS
+ .text.printf   0x000000000000145e       0x26 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_printf.c.o)
+                0x000000000000145e                printf
+ .text.puts     0x0000000000001484       0x3c c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_puts.c.o)
+                0x0000000000001484                puts
  .text.__ultoa_invert
-                0x000000000000139c       0x3e c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_vfiprintf.c.o)
+                0x00000000000014c0       0x3e c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_vfiprintf.c.o)
  .text.vfprintf
-                0x00000000000013da      0x498 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_vfiprintf.c.o)
-                0x00000000000013da                __i_vfprintf
- .text.strnlen  0x0000000000001872       0x18 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_string_strnlen.c.o)
-                0x0000000000001872                strnlen
- .text.fputc    0x000000000000188a       0x20 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_fputc.c.o)
-                0x000000000000188a                fputc
-                0x000000000000188a                putc
- .text          0x00000000000018aa       0x60 c:/lscc/propel/2025.2/sdk/riscv-none-embed-gcc/bin/../lib/gcc/riscv-none-embed/10.2.0/rv32imc/ilp32\libgcc.a(save-restore.o)
-                0x00000000000018aa                __riscv_save_12
-                0x00000000000018b2                __riscv_save_9
-                0x00000000000018b2                __riscv_save_11
-                0x00000000000018b2                __riscv_save_10
-                0x00000000000018b2                __riscv_save_8
-                0x00000000000018c0                __riscv_save_4
-                0x00000000000018c0                __riscv_save_6
-                0x00000000000018c0                __riscv_save_5
-                0x00000000000018c0                __riscv_save_7
-                0x00000000000018da                __riscv_save_3
-                0x00000000000018da                __riscv_save_2
-                0x00000000000018da                __riscv_save_1
-                0x00000000000018da                __riscv_save_0
-                0x00000000000018e6                __riscv_restore_12
-                0x00000000000018ea                __riscv_restore_11
-                0x00000000000018ea                __riscv_restore_9
-                0x00000000000018ea                __riscv_restore_10
-                0x00000000000018ea                __riscv_restore_8
-                0x00000000000018f4                __riscv_restore_5
-                0x00000000000018f4                __riscv_restore_7
-                0x00000000000018f4                __riscv_restore_6
-                0x00000000000018f4                __riscv_restore_4
-                0x00000000000018fe                __riscv_restore_3
-                0x00000000000018fe                __riscv_restore_0
-                0x00000000000018fe                __riscv_restore_2
-                0x00000000000018fe                __riscv_restore_1
+                0x00000000000014fe      0x498 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_vfiprintf.c.o)
+                0x00000000000014fe                __i_vfprintf
+ .text.strnlen  0x0000000000001996       0x18 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_string_strnlen.c.o)
+                0x0000000000001996                strnlen
+ .text.fputc    0x00000000000019ae       0x20 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_fputc.c.o)
+                0x00000000000019ae                fputc
+                0x00000000000019ae                putc
+ .text          0x00000000000019ce       0x60 c:/lscc/propel/2025.2/sdk/riscv-none-embed-gcc/bin/../lib/gcc/riscv-none-embed/10.2.0/rv32imc/ilp32\libgcc.a(save-restore.o)
+                0x00000000000019ce                __riscv_save_12
+                0x00000000000019d6                __riscv_save_9
+                0x00000000000019d6                __riscv_save_11
+                0x00000000000019d6                __riscv_save_10
+                0x00000000000019d6                __riscv_save_8
+                0x00000000000019e4                __riscv_save_4
+                0x00000000000019e4                __riscv_save_6
+                0x00000000000019e4                __riscv_save_5
+                0x00000000000019e4                __riscv_save_7
+                0x00000000000019fe                __riscv_save_3
+                0x00000000000019fe                __riscv_save_2
+                0x00000000000019fe                __riscv_save_1
+                0x00000000000019fe                __riscv_save_0
+                0x0000000000001a0a                __riscv_restore_12
+                0x0000000000001a0e                __riscv_restore_11
+                0x0000000000001a0e                __riscv_restore_9
+                0x0000000000001a0e                __riscv_restore_10
+                0x0000000000001a0e                __riscv_restore_8
+                0x0000000000001a18                __riscv_restore_5
+                0x0000000000001a18                __riscv_restore_7
+                0x0000000000001a18                __riscv_restore_6
+                0x0000000000001a18                __riscv_restore_4
+                0x0000000000001a22                __riscv_restore_3
+                0x0000000000001a22                __riscv_restore_0
+                0x0000000000001a22                __riscv_restore_2
+                0x0000000000001a22                __riscv_restore_1
  *(.init)
  *(.fini)
-                0x000000000000190c                . = ALIGN (0x4)
- *fill*         0x000000000000190a        0x2 
-                0x000000000000190c                _etext = .
+                0x0000000000001a30                . = ALIGN (0x4)
+ *fill*         0x0000000000001a2e        0x2 
+                0x0000000000001a30                _etext = .
 
-.gprof          0x000000000000190c        0x0
+.gprof          0x0000000000001a30        0x0
                 [!provide]                        PROVIDE (_s_part_prof = .)
  *(.gprof)
-                0x000000000000190c                . = ALIGN (0x4)
+                0x0000000000001a30                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (_eprof = .)
 
-.ctors          0x000000000000190c        0x0
-                0x000000000000190c                _ctors_start = .
+.ctors          0x0000000000001a30        0x0
+                0x0000000000001a30                _ctors_start = .
  *(.init_array*)
  *(SORT_BY_NAME(.ctors.*))
  *(.ctors)
-                0x000000000000190c                . = ALIGN (0x4)
-                0x000000000000190c                _ctors_end = .
+                0x0000000000001a30                . = ALIGN (0x4)
+                0x0000000000001a30                _ctors_end = .
 
-.dtors          0x000000000000190c        0x0
-                0x000000000000190c                _dtors_start = .
+.dtors          0x0000000000001a30        0x0
+                0x0000000000001a30                _dtors_start = .
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x000000000000190c                . = ALIGN (0x4)
+                0x0000000000001a30                . = ALIGN (0x4)
 
-.rodata         0x000000000000190c      0x370
+.rodata         0x0000000000001a30      0x3d0
  *(.rdata)
  *(.rodata .rodata.*)
- .rodata        0x000000000000190c       0x32 ./src/bsp/driver/riscv_mc/interrupt.o
- *fill*         0x000000000000193e        0x2 
- .rodata.__iob  0x0000000000001940        0xc ./src/bsp/driver/riscv_mc/iob.o
-                0x0000000000001940                __iob
- .rodata        0x000000000000194c       0x69 ./src/bsp/driver/i3c_controller/i3c_controller.o
- *fill*         0x00000000000019b5        0x3 
- .rodata.wr_buf
-                0x00000000000019b8       0x20 ./src/main.o
-                0x00000000000019b8                wr_buf
- .rodata        0x00000000000019d8      0x291 ./src/main.o
- *fill*         0x0000000000001c69        0x3 
+ .rodata        0x0000000000001a30       0x32 ./src/bsp/driver/riscv_mc/interrupt.o
+ *fill*         0x0000000000001a62        0x2 
+ .rodata.__iob  0x0000000000001a64        0xc ./src/bsp/driver/riscv_mc/iob.o
+                0x0000000000001a64                __iob
+ .rodata        0x0000000000001a70       0x69 ./src/bsp/driver/i3c_controller/i3c_controller.o
+ *fill*         0x0000000000001ad9        0x3 
+ .rodata        0x0000000000001adc      0x311 ./src/main.o
+ *fill*         0x0000000000001ded        0x3 
  .rodata.str1.4
-                0x0000000000001c6c       0x10 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_vfiprintf.c.o)
+                0x0000000000001df0       0x10 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_vfiprintf.c.o)
  *(.gnu.linkonce.r.*)
-                0x0000000000001c7c                . = ALIGN (0x4)
+                0x0000000000001e00                . = ALIGN (0x4)
 
-.rela.dyn       0x0000000000001c7c        0x0
- .rela.text     0x0000000000001c7c        0x0 ./src/bsp/driver/uart/uart.o
+.rela.dyn       0x0000000000001e00        0x0
+ .rela.text     0x0000000000001e00        0x0 ./src/bsp/driver/uart/uart.o
  .rela.text.i3c_master_daa
-                0x0000000000001c7c        0x0 ./src/bsp/driver/uart/uart.o
+                0x0000000000001e00        0x0 ./src/bsp/driver/uart/uart.o
  .rela.text.i3c_master_private_i3c_read
-                0x0000000000001c7c        0x0 ./src/bsp/driver/uart/uart.o
+                0x0000000000001e00        0x0 ./src/bsp/driver/uart/uart.o
  .rela.text.printf
-                0x0000000000001c7c        0x0 ./src/bsp/driver/uart/uart.o
- .rela.text.putchar
-                0x0000000000001c7c        0x0 ./src/bsp/driver/uart/uart.o
+                0x0000000000001e00        0x0 ./src/bsp/driver/uart/uart.o
  .rela.text.puts
-                0x0000000000001c7c        0x0 ./src/bsp/driver/uart/uart.o
+                0x0000000000001e00        0x0 ./src/bsp/driver/uart/uart.o
 
-.data           0x0000000000001c7c       0x14
+.data           0x0000000000001e00       0x14
  *(.data .data.*)
- .data.__stdio  0x0000000000001c7c       0x14 ./src/bsp/driver/riscv_mc/iob.o
+ .data.__stdio  0x0000000000001e00       0x14 ./src/bsp/driver/riscv_mc/iob.o
  *(.gnu.linkonce.d.*)
-                0x0000000000001c90                . = ALIGN (0x4)
-                0x0000000000002490                PROVIDE (__global_pointer$ = (. + 0x800))
+                0x0000000000001e14                . = ALIGN (0x4)
+                0x0000000000002614                PROVIDE (__global_pointer$ = (. + 0x800))
  *(.sdata .sdata.*)
  *(.gnu.linkonce.s.*)
  *(.srodata.cst16)
@@ -1089,65 +1086,69 @@ LOAD c:/lscc/propel/2025.2/sdk/riscv-none-embed-gcc/bin/../lib/gcc/riscv-none-em
  *(.srodata.cst4)
  *(.srodata.cst2)
  *(.srodata .srodata.*)
-                0x0000000000001c90                . = ALIGN (0x4)
+                0x0000000000001e14                . = ALIGN (0x4)
 
-.bss            0x0000000000001c90      0x274
-                0x0000000000001c90                _bss_start = .
+.bss            0x0000000000001e18      0x25c
+                0x0000000000001e18                _bss_start = .
  *(.sbss*)
  .sbss.s_putc_func
-                0x0000000000001c90        0x4 ./src/bsp/driver/riscv_mc/iob.o
+                0x0000000000001e18        0x4 ./src/bsp/driver/riscv_mc/iob.o
  .sbss.s_getc_func
-                0x0000000000001c94        0x4 ./src/bsp/driver/riscv_mc/iob.o
+                0x0000000000001e1c        0x4 ./src/bsp/driver/riscv_mc/iob.o
  .sbss.s_flush_func
-                0x0000000000001c98        0x4 ./src/bsp/driver/riscv_mc/iob.o
- .sbss.pic_dev  0x0000000000001c9c        0x4 ./src/bsp/driver/riscv_mc/pic.o
-                0x0000000000001c9c                pic_dev
+                0x0000000000001e20        0x4 ./src/bsp/driver/riscv_mc/iob.o
+ .sbss.pic_dev  0x0000000000001e24        0x4 ./src/bsp/driver/riscv_mc/pic.o
+                0x0000000000001e24                pic_dev
+ .sbss.wr_buf   0x0000000000001e28        0x1 ./src/main.o
+                0x0000000000001e28                wr_buf
+ *fill*         0x0000000000001e29        0x3 
+ .sbss.rd_buf   0x0000000000001e2c        0x1 ./src/main.o
+                0x0000000000001e2c                rd_buf
  *(.gnu.linkonce.sb.*)
  *(.bss .bss.*)
+ *fill*         0x0000000000001e2d        0x3 
  .bss.int_table
-                0x0000000000001ca0      0x100 ./src/bsp/driver/riscv_mc/pic.o
-                0x0000000000001ca0                int_table
+                0x0000000000001e30      0x100 ./src/bsp/driver/riscv_mc/pic.o
+                0x0000000000001e30                int_table
  .bss.gpio_inst
-                0x0000000000001da0       0x88 ./src/main.o
-                0x0000000000001da0                gpio_inst
+                0x0000000000001f30       0x88 ./src/main.o
+                0x0000000000001f30                gpio_inst
  .bss.uart_core_uart
-                0x0000000000001e28       0x58 ./src/main.o
-                0x0000000000001e28                uart_core_uart
- .bss.i3cm      0x0000000000001e80       0x34 ./src/main.o
-                0x0000000000001e80                i3cm
- *fill*         0x0000000000001eb4        0x4 
+                0x0000000000001fb8       0x58 ./src/main.o
+                0x0000000000001fb8                uart_core_uart
+ .bss.i3cm      0x0000000000002010       0x34 ./src/main.o
+                0x0000000000002010                i3cm
+ *fill*         0x0000000000002044        0x4 
  .bss.i3c_devinfo
-                0x0000000000001eb8       0x10 ./src/main.o
-                0x0000000000001eb8                i3c_devinfo
- .bss.i3cs      0x0000000000001ec8       0x1c ./src/main.o
-                0x0000000000001ec8                i3cs
- .bss.rd_buf    0x0000000000001ee4       0x20 ./src/main.o
-                0x0000000000001ee4                rd_buf
+                0x0000000000002048       0x10 ./src/main.o
+                0x0000000000002048                i3c_devinfo
+ .bss.i3cs      0x0000000000002058       0x1c ./src/main.o
+                0x0000000000002058                i3cs
  *(.gnu.linkonce.b.*)
  *(COMMON)
-                0x0000000000001f04                . = ALIGN (0x4)
-                0x0000000000001f04                _bss_end = .
+                0x0000000000002074                . = ALIGN (0x4)
+                0x0000000000002074                _bss_end = .
 
-.heap           0x0000000000001f08      0x100
+.heap           0x0000000000002078      0x100
                 [!provide]                        PROVIDE (_heap_start = .)
                 [!provide]                        PROVIDE (__heap_start = .)
-                0x0000000000002008                . = (. + _HEAP_SIZE)
- *fill*         0x0000000000001f08      0x100 
-                0x0000000000002008                . = ALIGN (0x8)
+                0x0000000000002178                . = (. + _HEAP_SIZE)
+ *fill*         0x0000000000002078      0x100 
+                0x0000000000002178                . = ALIGN (0x8)
                 [!provide]                        PROVIDE (_heap_end = .)
                 [!provide]                        PROVIDE (__heap_end = .)
 
-.stack          0x0000000000002010      0xa00
+.stack          0x0000000000002180      0xa00
                 [!provide]                        PROVIDE (_stack_end = .)
-                0x0000000000002a10                . = (. + _STACK_SIZE)
- *fill*         0x0000000000002010      0xa00 
-                0x0000000000002a10                . = ALIGN (0x10)
-                0x0000000000002a10                PROVIDE (_stack_start = .)
+                0x0000000000002b80                . = (. + _STACK_SIZE)
+ *fill*         0x0000000000002180      0xa00 
+                0x0000000000002b80                . = ALIGN (0x10)
+                0x0000000000002b80                PROVIDE (_stack_start = .)
                 [!provide]                        PROVIDE (_end = .)
                 [!provide]                        PROVIDE (end = .)
 OUTPUT(gpi_i3c_led.elf elf32-littleriscv)
 
-.debug_info     0x0000000000000000     0x3529
+.debug_info     0x0000000000000000     0x3594
  .debug_info    0x0000000000000000      0x4c1 ./src/bsp/driver/uart/uart.o
  .debug_info    0x00000000000004c1       0x22 ./src/bsp/driver/riscv_mc/crt0.o
  .debug_info    0x00000000000004e3       0xa0 ./src/bsp/driver/riscv_mc/exit.o
@@ -1158,10 +1159,10 @@ OUTPUT(gpi_i3c_led.elf elf32-littleriscv)
  .debug_info    0x0000000000001211      0xcf1 ./src/bsp/driver/i3c_target/i3c_target.o
  .debug_info    0x0000000000001f02      0xafe ./src/bsp/driver/i3c_controller/i3c_controller.o
  .debug_info    0x0000000000002a00      0x266 ./src/bsp/driver/gpio/gpio.o
- .debug_info    0x0000000000002c66      0x74a ./src/main.o
- .debug_info    0x00000000000033b0      0x179 ./src/utils.o
+ .debug_info    0x0000000000002c66      0x7b5 ./src/main.o
+ .debug_info    0x000000000000341b      0x179 ./src/utils.o
 
-.debug_abbrev   0x0000000000000000      0xd82
+.debug_abbrev   0x0000000000000000      0xd7b
  .debug_abbrev  0x0000000000000000      0x147 ./src/bsp/driver/uart/uart.o
  .debug_abbrev  0x0000000000000147       0x12 ./src/bsp/driver/riscv_mc/crt0.o
  .debug_abbrev  0x0000000000000159       0x5b ./src/bsp/driver/riscv_mc/exit.o
@@ -1172,10 +1173,10 @@ OUTPUT(gpi_i3c_led.elf elf32-littleriscv)
  .debug_abbrev  0x0000000000000646      0x187 ./src/bsp/driver/i3c_target/i3c_target.o
  .debug_abbrev  0x00000000000007cd      0x1c9 ./src/bsp/driver/i3c_controller/i3c_controller.o
  .debug_abbrev  0x0000000000000996      0x10b ./src/bsp/driver/gpio/gpio.o
- .debug_abbrev  0x0000000000000aa1      0x1fc ./src/main.o
- .debug_abbrev  0x0000000000000c9d       0xe5 ./src/utils.o
+ .debug_abbrev  0x0000000000000aa1      0x1f5 ./src/main.o
+ .debug_abbrev  0x0000000000000c96       0xe5 ./src/utils.o
 
-.debug_aranges  0x0000000000000000      0x370
+.debug_aranges  0x0000000000000000      0x388
  .debug_aranges
                 0x0000000000000000       0x40 ./src/bsp/driver/uart/uart.o
  .debug_aranges
@@ -1197,9 +1198,9 @@ OUTPUT(gpi_i3c_led.elf elf32-littleriscv)
  .debug_aranges
                 0x00000000000002a0       0x38 ./src/bsp/driver/gpio/gpio.o
  .debug_aranges
-                0x00000000000002d8       0x58 ./src/main.o
+                0x00000000000002d8       0x70 ./src/main.o
  .debug_aranges
-                0x0000000000000330       0x40 ./src/utils.o
+                0x0000000000000348       0x40 ./src/utils.o
 
 .debug_ranges   0x0000000000000000      0x378
  .debug_ranges  0x0000000000000000       0x30 ./src/bsp/driver/uart/uart.o
@@ -1215,7 +1216,7 @@ OUTPUT(gpi_i3c_led.elf elf32-littleriscv)
  .debug_ranges  0x00000000000002d0       0x78 ./src/main.o
  .debug_ranges  0x0000000000000348       0x30 ./src/utils.o
 
-.debug_macro    0x0000000000000000     0x37a4
+.debug_macro    0x0000000000000000     0x37aa
  .debug_macro   0x0000000000000000      0x18a ./src/bsp/driver/uart/uart.o
  .debug_macro   0x000000000000018a      0x778 ./src/bsp/driver/uart/uart.o
  .debug_macro   0x0000000000000902      0x4c5 ./src/bsp/driver/uart/uart.o
@@ -1260,17 +1261,17 @@ OUTPUT(gpi_i3c_led.elf elf32-littleriscv)
  .debug_macro   0x0000000000002d8f       0x10 ./src/bsp/driver/gpio/gpio.o
  .debug_macro   0x0000000000002d9f       0x46 ./src/bsp/driver/gpio/gpio.o
  .debug_macro   0x0000000000002de5      0x174 ./src/bsp/driver/gpio/gpio.o
- .debug_macro   0x0000000000002f59      0x1ae ./src/main.o
- .debug_macro   0x0000000000003107       0x58 ./src/main.o
- .debug_macro   0x000000000000315f       0x16 ./src/main.o
- .debug_macro   0x0000000000003175      0x497 ./src/main.o
- .debug_macro   0x000000000000360c       0xb5 ./src/main.o
- .debug_macro   0x00000000000036c1       0x1c ./src/main.o
- .debug_macro   0x00000000000036dd       0x16 ./src/main.o
- .debug_macro   0x00000000000036f3       0x89 ./src/utils.o
- .debug_macro   0x000000000000377c       0x28 ./src/utils.o
+ .debug_macro   0x0000000000002f59      0x1b4 ./src/main.o
+ .debug_macro   0x000000000000310d       0x58 ./src/main.o
+ .debug_macro   0x0000000000003165       0x16 ./src/main.o
+ .debug_macro   0x000000000000317b      0x497 ./src/main.o
+ .debug_macro   0x0000000000003612       0xb5 ./src/main.o
+ .debug_macro   0x00000000000036c7       0x1c ./src/main.o
+ .debug_macro   0x00000000000036e3       0x16 ./src/main.o
+ .debug_macro   0x00000000000036f9       0x89 ./src/utils.o
+ .debug_macro   0x0000000000003782       0x28 ./src/utils.o
 
-.debug_line     0x0000000000000000     0x5609
+.debug_line     0x0000000000000000     0x56fc
  .debug_line    0x0000000000000000      0x735 ./src/bsp/driver/uart/uart.o
  .debug_line    0x0000000000000735      0x27d ./src/bsp/driver/riscv_mc/crt0.o
  .debug_line    0x00000000000009b2      0x2da ./src/bsp/driver/riscv_mc/exit.o
@@ -1281,10 +1282,10 @@ OUTPUT(gpi_i3c_led.elf elf32-littleriscv)
  .debug_line    0x0000000000001df3      0xfee ./src/bsp/driver/i3c_target/i3c_target.o
  .debug_line    0x0000000000002de1     0x16dd ./src/bsp/driver/i3c_controller/i3c_controller.o
  .debug_line    0x00000000000044be      0x43f ./src/bsp/driver/gpio/gpio.o
- .debug_line    0x00000000000048fd      0xa10 ./src/main.o
- .debug_line    0x000000000000530d      0x2fc ./src/utils.o
+ .debug_line    0x00000000000048fd      0xb03 ./src/main.o
+ .debug_line    0x0000000000005400      0x2fc ./src/utils.o
 
-.debug_str      0x0000000000000000     0xbc5c
+.debug_str      0x0000000000000000     0xbc8a
  .debug_str     0x0000000000000000     0x81ca ./src/bsp/driver/uart/uart.o
                                        0x849b (size before relaxing)
  .debug_str     0x00000000000081ca       0x2e ./src/bsp/driver/riscv_mc/crt0.o
@@ -1305,9 +1306,9 @@ OUTPUT(gpi_i3c_led.elf elf32-littleriscv)
                                        0x9073 (size before relaxing)
  .debug_str     0x0000000000009eeb      0x21f ./src/bsp/driver/gpio/gpio.o
                                        0x4c90 (size before relaxing)
- .debug_str     0x000000000000a10a     0x1aef ./src/main.o
-                                       0xad0c (size before relaxing)
- .debug_str     0x000000000000bbf9       0x63 ./src/utils.o
+ .debug_str     0x000000000000a10a     0x1b1d ./src/main.o
+                                       0xad3a (size before relaxing)
+ .debug_str     0x000000000000bc27       0x63 ./src/utils.o
                                        0x61ac (size before relaxing)
 
 .comment        0x0000000000000000       0x33
@@ -1324,13 +1325,12 @@ OUTPUT(gpi_i3c_led.elf elf32-littleriscv)
  .comment       0x0000000000000033       0x34 ./src/main.o
  .comment       0x0000000000000033       0x34 ./src/utils.o
  .comment       0x0000000000000033       0x34 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_printf.c.o)
- .comment       0x0000000000000033       0x34 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_putchar.c.o)
  .comment       0x0000000000000033       0x34 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_puts.c.o)
  .comment       0x0000000000000033       0x34 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_vfiprintf.c.o)
  .comment       0x0000000000000033       0x34 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_string_strnlen.c.o)
  .comment       0x0000000000000033       0x34 c:\lscc\propel\2025.2\sdk\riscv-none-embed-gcc\bin\../riscv-none-embed/picolibc/riscv-none-embed/lib/rv32imc/ilp32\libc.a(libc_tinystdio_fputc.c.o)
 
-.debug_frame    0x0000000000000000      0xb3c
+.debug_frame    0x0000000000000000      0xba8
  .debug_frame   0x0000000000000000       0xc4 ./src/bsp/driver/uart/uart.o
  .debug_frame   0x00000000000000c4       0x2c ./src/bsp/driver/riscv_mc/exit.o
  .debug_frame   0x00000000000000f0       0x60 ./src/bsp/driver/riscv_mc/interrupt.o
@@ -1340,8 +1340,8 @@ OUTPUT(gpi_i3c_led.elf elf32-littleriscv)
  .debug_frame   0x0000000000000484      0x1e4 ./src/bsp/driver/i3c_target/i3c_target.o
  .debug_frame   0x0000000000000668      0x220 ./src/bsp/driver/i3c_controller/i3c_controller.o
  .debug_frame   0x0000000000000888       0xb0 ./src/bsp/driver/gpio/gpio.o
- .debug_frame   0x0000000000000938      0x138 ./src/main.o
- .debug_frame   0x0000000000000a70       0xcc ./src/utils.o
+ .debug_frame   0x0000000000000938      0x1a4 ./src/main.o
+ .debug_frame   0x0000000000000adc       0xcc ./src/utils.o
 Finished building target: gpi_i3c_led.elf
  
 Invoking: GNU RISC-V Cross Create Listing
@@ -1351,18 +1351,18 @@ Finished building: gpi_i3c_led.lst
 Invoking: GNU RISC-V Cross Print Size
 riscv-none-embed-size --format=berkeley "gpi_i3c_led.elf"
    text	   data	    bss	    dec	    hex	filename
-   7292	     20	   3444	  10756	   2a04	gpi_i3c_led.elf
+   7680	     20	   3420	  11120	   2b70	gpi_i3c_led.elf
 Finished building: gpi_i3c_led.siz
  
 Invoking: Lattice Create Memory Deployment
 riscv-none-embed-objcopy -O binary --gap-fill 0 "gpi_i3c_led.elf" "gpi_i3c_led.bin"; srec_cat "gpi_i3c_led.bin" -Binary -byte-swap 4 -DISable Header -Output "gpi_i3c_led.mem" -MEM 32
 Finished building: gpi_i3c_led.mem
  
-22:20:45 **** Incremental Build of configuration Debug for project gpi_i3c_led ****
+15:23:01 **** Incremental Build of configuration Debug for project gpi_i3c_led ****
 make all 
 Invoking: GNU RISC-V Cross Print Size
 riscv-none-embed-size --format=berkeley "gpi_i3c_led.elf"
    text	   data	    bss	    dec	    hex	filename
-   7292	     20	   3444	  10756	   2a04	gpi_i3c_led.elf
+   7680	     20	   3420	  11120	   2b70	gpi_i3c_led.elf
 Finished building: gpi_i3c_led.siz
  

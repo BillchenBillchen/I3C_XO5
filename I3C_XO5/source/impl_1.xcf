@@ -20,7 +20,7 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>../../impl_1/I3C_XO5_impl_1.bit</File>
-			<FileTime>02/26/26 15:00:39</FileTime>
+			<FileTime>03/17/26 11:20:34</FileTime>
 			<JedecChecksum>N/A</JedecChecksum>
 			<MemoryType>Static Random Access Memory (SRAM)</MemoryType>
 			<Operation>Erase,Program,Verify</Operation>
@@ -47,6 +47,6 @@
 	<CableOptions>
 		<CableName>USB2</CableName>
 		<PortAdd>FTUSB-0</PortAdd>
-		<USBID>Dual RS232-HS A Location 0121 Serial A</USBID>
+		<USBID>Dual RS232-HS A Location 0111 Serial A</USBID>
 	</CableOptions>
 </ispXCF>

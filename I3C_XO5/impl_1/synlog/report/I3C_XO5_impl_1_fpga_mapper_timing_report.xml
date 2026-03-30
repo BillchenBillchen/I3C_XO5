@@ -17,14 +17,14 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>I3C_XO5|reveal_jtck_inferred_clock</data>
 <data>200.0 MHz</data>
-<data>181.6 MHz</data>
-<data>-0.506</data>
+<data>203.0 MHz</data>
+<data>0.074</data>
 </row>
 <row>
 <data>i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i</data>
 <data>200.0 MHz</data>
-<data>87.3 MHz</data>
-<data>-3.258</data>
+<data>90.1 MHz</data>
+<data>-3.050</data>
 </row>
 <row>
 <data>i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|sda_i</data>
@@ -35,13 +35,13 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock</data>
 <data>200.0 MHz</data>
-<data>118.6 MHz</data>
-<data>-3.433</data>
+<data>121.3 MHz</data>
+<data>-3.243</data>
 </row>
 <row>
 <data>pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock</data>
 <data>200.0 MHz</data>
-<data>127.3 MHz</data>
+<data>128.9 MHz</data>
 <data>-1.702</data>
 </row>
 <row>
@@ -59,7 +59,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>System</data>
 <data>200.0 MHz</data>
-<data>186.4 MHz</data>
-<data>-0.366</data>
+<data>175.1 MHz</data>
+<data>-0.712</data>
 </row>
 </report_table>

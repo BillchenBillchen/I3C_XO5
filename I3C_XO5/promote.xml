@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/promote.xml" version="Diamond (64-bit) 2025.2.0.48.0" date="Fri Mar 13 18:18:31 2026" vendor="Lattice Semiconductor Corporation" >
+<userSetting name="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/promote.xml" version="Diamond (64-bit) 2025.2.0.48.0" date="Thu Mar 26 14:52:47 2026" vendor="Lattice Semiconductor Corporation" >
+  <msg mid="2043927" type="Warning" internal="true" />
+  <msg mid="35901063" type="Warning" internal="true" />
   <msg mid="2043310" type="Info" internal="true" />
-  <msg mid="35901206" type="Warning" internal="true" />
-  <msg mid="35901012" type="Error" internal="true" />
-  <msg mid="35921504" type="Info" internal="true" />
   <msg mid="35901209" type="Warning" internal="true" />
   <msg mid="2043330" type="Warning" internal="true" />
   <msg mid="35909000" type="Info" internal="true" />
-  <msg mid="2043927" type="Warning" internal="true" />
-  <msg mid="35901063" type="Warning" internal="true" />
   <msg mid="2044561" type="Info" internal="true" />
   <msg mid="35911012" type="Info" internal="true" />
   <msg mid="2043063" type="Warning" internal="true" />
@@ -16,6 +13,9 @@
   <msg mid="2044050" type="Warning" internal="true" />
   <msg mid="2043018" type="Info" internal="true" />
   <msg mid="35911000" type="Warning" internal="true" />
+  <msg mid="35901012" type="Error" internal="true" />
+  <msg mid="35921504" type="Info" internal="true" />
+  <msg mid="35901206" type="Warning" internal="true" />
   <msg mid="35901328" type="Info" internal="true" />
   <msg mid="35901010" type="Error" internal="true" />
   <msg mid="2044320" type="Info" internal="true" />

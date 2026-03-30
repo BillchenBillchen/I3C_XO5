@@ -2,7 +2,57 @@
 <HEAD>
 <TITLE>Lattice TCL Log</TITLE>
 </HEAD>
-<BODY><DIV id="content" ><PRE><A name="260312133334" href="#260312133334"></A><B><U><big>260312133334</big></U></B>
+<BODY><DIV id="content" ><PRE><A name="260330094524" href="#260330094524"></A><B><U><big>260330094524</big></U></B>
+#Start recording tcl command: 3/20/2026 11:48:35
+sbp_design open -name I3C_XO5 -path {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx}
+sbp_config_ip -vlnv {latticesemi.com:ip:gpio0:1.8.0} -meta_vlnv {latticesemi.com:ip:gpio:1.8.0} -cfg_value {DIRECTION_DEF_VAL_INPUT:FF,IO_LINES_COUNT:12}
+sbp_replace -vlnv {latticesemi.com:ip:gpio0:1.8.0} -name {gpio0_inst} -component {I3C_XO5/gpio0_inst}
+sbp_modify_port -name I3C_XO5/led_o -direction inout -from 11 -to 0
+sbp_connect_net {I3C_XO5/led_o} {I3C_XO5/gpio0_inst/gpio_io}
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design drc
+sbp_design drc
+sbp_design generate
+sbp_design save
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design close
+#Stop recording: 3/30/2026 09:45:24
+
+<A name="260318140028" href="#260318140028"></A><B><U><big>260318140028</big></U></B>
+#Start recording tcl command: 3/13/2026 16:28:30
+sbp_design open -name I3C_XO5 -path {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx}
+sbp_design close
+#Stop recording: 3/18/2026 14:00:28
+
+<A name="260313091852" href="#260313091852"></A><B><U><big>260313091852</big></U></B>
+#Start recording tcl command: 3/12/2026 16:01:29
+sbp_design open -name I3C_XO5 -path {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx}
+sbp_delete {I3C_XO5/i3c_m_inst_scl_io_net} -type net
+sbp_delete {I3C_XO5/i3c_m_inst_sda_io_net} -type net
+sbp_delete {I3C_XO5/I3C_XO5_s0_sda_io_net} -type net
+sbp_delete {I3C_XO5/I3C_XO5_s0_scl_io_net} -type net
+sbp_connect_net {I3C_XO5/i3c_s_inst/scl_io} {I3C_XO5/i3c_m_inst/scl_io}
+sbp_connect_net {I3C_XO5/i3c_s_inst/sda_io} {I3C_XO5/i3c_m_inst/sda_io}
+sbp_delete {I3C_XO5/m0_scl_io} -type port
+sbp_delete {I3C_XO5/m0_sda_io} -type port
+sbp_delete {I3C_XO5/s0_scl_io} -type port
+sbp_delete {I3C_XO5/s0_sda_io} -type port
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design generate
+sbp_design save
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design generate
+sbp_design save
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design undo
+sbp_design close
+#Stop recording: 3/13/2026 09:18:52
+
+<A name="260312133334" href="#260312133334"></A><B><U><big>260312133334</big></U></B>
 #Start recording tcl command: 3/6/2026 12:56:52
 sbp_design open -name I3C_XO5 -path {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx}
 sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../}

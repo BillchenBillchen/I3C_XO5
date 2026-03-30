@@ -2,10 +2,11 @@ Runtime Summary:
 ================
 
 	* Library: work, DesignUnit: lscc_ram_dp_true_inst_Z65_layer0
-		Hardware Generation Phase   : 0h:00m:15s
+		Hardware Generation Phase   : 0h:00m:23s
 
 	* Library: work, DesignUnit: risc_mc_ipgen_Riscv_Dbg_IMC_uniq_1
-		Optimization Phase          : 0h:00m:09s
+		Initial Cleanup Phase       : 0h:00m:01s
+		Optimization Phase          : 0h:00m:07s
 
 	* Library: work, DesignUnit: i3c_s_ipgen_i3c_tgt_main_uniq_1_Z40_layer0
 		Optimization Phase          : 0h:00m:01s
@@ -24,23 +25,23 @@ Runtime Summary:
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: i3c_xo5_la0
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: pmi_rtl_ram_dp_32768s_15s_18s_reg_none_binary_LFMXO5
+		* Library: work, DesignUnit: pmi_rtl_ram_dp_16384s_14s_27s_reg_none_binary_LFMXO5
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: rvl_tm_Z105_layer0
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: i3c_xo5_la0_trig
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: rvl_tcnt_10s_3s_1_0s
+		* Library: work, DesignUnit: rvl_tcnt_8s_3s_1_0s
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: pmi_rtl_ram_dist_1024s_10s_2s_reg_none_binary_LFMXO5
+		* Library: work, DesignUnit: pmi_rtl_ram_dist_256s_8s_2s_reg_none_binary_LFMXO5
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: rvl_te_Z104_layer0
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: rvl_tu_1s_0s_0s_0s_1s
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: rvl_decode_10s_10s
+		* Library: work, DesignUnit: rvl_decode_8s_8s
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: rvl_jtag_int_18s_10s_0s_0s_5s_18s_18s
+		* Library: work, DesignUnit: rvl_jtag_int_27s_8s_0s_0s_5s_27s_27s
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: uart0_uniq_1
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
@@ -151,7 +152,7 @@ Runtime Summary:
 		* Library: work, DesignUnit: risc_mc_ipgen_riscvsmall_uniq_1_Z55_layer0
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: risc_mc_ipgen_Riscv_Dbg_IMC_uniq_1
-			Hardware Generation Phase, Initial Cleanup Phase: Negligible CPU time
+			Hardware Generation Phase: Negligible CPU time
 		* Library: work, DesignUnit: risc_mc_ipgen_Riscv_Dbg_IMC_StreamFifoLowLatency_uniq_1
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: risc_mc_ipgen_Riscv_Dbg_IMC_StreamFifo_uniq_1
@@ -308,7 +309,7 @@ Runtime Summary:
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: gpio0_ipgen_lscc_gpio_uniq_1_Z12_layer0
 			Hardware Generation Phase, Optimization Phase: Negligible CPU time
-		* Library: work, DesignUnit: gpio0_ipgen_lscc_apb2lmmi_uniq_1_9s_6s_1s_1_2_4_8_4s
+		* Library: work, DesignUnit: gpio0_ipgen_lscc_apb2lmmi_uniq_1_12s_6s_1s_1_2_4_8_4s
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time
 		* Library: work, DesignUnit: gpio0_ipgen_lscc_gpio_lmmi_uniq_1_Z11_layer0
 			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time

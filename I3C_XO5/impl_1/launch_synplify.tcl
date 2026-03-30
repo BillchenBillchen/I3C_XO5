@@ -1,6 +1,6 @@
 #-- Lattice Semiconductor Corporation Ltd.
 #-- Synplify OEM project file C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1/launch_synplify.tcl
-#-- Written on Fri Mar 13 16:34:07 2026
+#-- Written on Tue Mar 17 10:31:09 2026
 
 project -close
 set filename "C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1/impl_1_syn.prj"

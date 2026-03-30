@@ -282,7 +282,7 @@
                 <lattice:configurableParameters>
                     <lattice:configurableParameter>
                         <lattice:name sequence_id="1">LINES_NUM</lattice:name>
-                        <lattice:value>9</lattice:value>
+                        <lattice:value>12</lattice:value>
                     </lattice:configurableParameter>
                     <lattice:configurableParameter>
                         <lattice:name sequence_id="2">GPIO_DIRS</lattice:name>

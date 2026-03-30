@@ -10,14 +10,14 @@
             <ipxact:componentRef library="ip" name="gpio" vendor="latticesemi.com" version="1.8.0">
                 <ipxact:configurableElementValues>
                     <ipxact:configurableElementValue referenceId="FAMILY">LFMXO5</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="IO_LINES_COUNT">9</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="IO_LINES_COUNT">12</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="EXTERNAL_BUF">False</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="OUT_RESET_VAL_INPUT">0</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="OUT_RESET_VAL">32'h00000000</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="IO_OUT_DEF_VAL">0 0000 0000</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="IO_OUT_DEF_VAL">0000 0000 0000</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="DIRECTION_DEF_VAL_INPUT">FF</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="DIRECTION_DEF_VAL">32'h000000FF</ipxact:configurableElementValue>
-                    <ipxact:configurableElementValue referenceId="DIRECTION_DEF_ENCODING">i oooo oooo</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="DIRECTION_DEF_ENCODING">iiii oooo oooo</ipxact:configurableElementValue>
                     <ipxact:configurableElementValue referenceId="IF_USER_INTF">APB</ipxact:configurableElementValue>
                 </ipxact:configurableElementValues>
             </ipxact:componentRef>
@@ -31,7 +31,7 @@
                 <ipxact:externalPortReference portRef="gpio_io">
                     <ipxact:partSelect>
                         <ipxact:range>
-                            <ipxact:left>8</ipxact:left>
+                            <ipxact:left>11</ipxact:left>
                             <ipxact:right>0</ipxact:right>
                         </ipxact:range>
                     </ipxact:partSelect>

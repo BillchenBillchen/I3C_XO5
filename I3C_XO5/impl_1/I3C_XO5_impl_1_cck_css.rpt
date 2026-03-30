@@ -12,7 +12,7 @@ Hostname: TE9BILL397
 
 Implementation : impl_1
 
-# Written on Fri Mar 13 10:06:57 2026
+# Written on Thu Mar 26 14:33:57 2026
 
 ##### DESIGN INFO #######################################################
 
@@ -37,11 +37,11 @@ Clock Summary
           Start                                                                              Requested     Requested     Clock        Clock                     Clock
 Level     Clock                                                                              Frequency     Period        Type         Group                     Load 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-0 -       pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     3547 
+0 -       pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       200.0 MHz     5.000         inferred     Inferred_clkgroup_0_2     3504 
                                                                                                                                                                      
-0 -       pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       200.0 MHz     5.000         inferred     Inferred_clkgroup_0_3     1708 
+0 -       pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       200.0 MHz     5.000         inferred     Inferred_clkgroup_0_3     1741 
                                                                                                                                                                      
-0 -       I3C_XO5|reveal_jtck_inferred_clock                                                 200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     514  
+0 -       I3C_XO5|reveal_jtck_inferred_clock                                                 200.0 MHz     5.000         inferred     Inferred_clkgroup_0_1     473  
                                                                                                                                                                      
 0 -       i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i                                200.0 MHz     5.000         inferred     Inferred_clkgroup_0_6     329  
                                                                                                                                                                      
@@ -59,11 +59,11 @@ Clock Load Summary
                                                                                    Clock     Source                                                                                    Clock Pin                                                                                                                                                                                                            Non-clock Pin     Non-clock Pin
 Clock                                                                              Load      Pin                                                                                       Seq Example                                                                                                                                                                                                          Seq Example       Comb Example 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       3547      pll0_inst.lscc_pll_inst.\\gen_no_refclk_mon\.u_PLL.CLKOP(PLL)                             sys_mem_inst.lscc_sys_mem_inst.\\CORE_MEMORY\.genblk1\.u_lscc_mem0.\\intf_AHBL\.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[8\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB     -                 -            
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkop_o_inferred_clock                       3504      pll0_inst.lscc_pll_inst.\\gen_no_refclk_mon\.u_PLL.CLKOP(PLL)                             sys_mem_inst.lscc_sys_mem_inst.\\CORE_MEMORY\.genblk1\.u_lscc_mem0.\\intf_AHBL\.lifcl_LAVAT\.ebr\.dp\.LIFCL\.u_mem.mem_main.uinst_0.prim\.NON_MIX\.xADDR\[0\]\.xDATA\[8\]\.no_mem_file\.u_mem0.LIFCL\.dp16k.CLKB     -                 -            
                                                                                                                                                                                                                                                                                                                                                                                                                                            
-pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       1708      pll0_inst.lscc_pll_inst.\\gen_no_refclk_mon\.u_PLL.CLKOS(PLL)                             uart0_inst.lscc_uart_inst.u_txmitt.tx_in_shift_s.C                                                                                                                                                                   -                 -            
+pll0_ipgen_lscc_pll_uniq_1_Z53_layer0|clkos_o_inferred_clock                       1741      pll0_inst.lscc_pll_inst.\\gen_no_refclk_mon\.u_PLL.CLKOS(PLL)                             uart0_inst.lscc_uart_inst.u_txmitt.tx_in_shift_s.C                                                                                                                                                                   -                 -            
                                                                                                                                                                                                                                                                                                                                                                                                                                            
-I3C_XO5|reveal_jtck_inferred_clock                                                 514       reveal_jtaghub_inst.JTCK(JTAGH19)                                                         -                                                                                                                                                                                                                    -                 -            
+I3C_XO5|reveal_jtck_inferred_clock                                                 473       reveal_jtaghub_inst.JTCK(JTAGH19)                                                         -                                                                                                                                                                                                                    -                 -            
                                                                                                                                                                                                                                                                                                                                                                                                                                            
 i3c_s_ipgen_lscc_i3c_target_uniq_1_Z51_layer0|scl_i                                329       i3c_s_inst.lscc_i3c_target_inst.\\gen_en_io_prim\.gen_prim\.u_i3c_scl.PADDI(BB_I3C_A)     -                                                                                                                                                                                                                    -                 -            
                                                                                                                                                                                                                                                                                                                                                                                                                                            
@@ -145,6 +145,12 @@ p:led_o[7] (bidir end point)
 p:led_o[7] (bidir start point)
 p:led_o[8] (bidir end point)
 p:led_o[8] (bidir start point)
+p:led_o[9] (bidir end point)
+p:led_o[9] (bidir start point)
+p:led_o[10] (bidir end point)
+p:led_o[10] (bidir start point)
+p:led_o[11] (bidir end point)
+p:led_o[11] (bidir start point)
 p:m0_scl_io (bidir end point)
 p:m0_scl_io (bidir start point)
 p:m0_sda_io (bidir end point)

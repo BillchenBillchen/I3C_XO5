@@ -1,11 +1,11 @@
 DRC: Design Rule Check Radiant Software (64-bit) 2025.2.0.48.0
-Fri Mar 13 18:03:57 2026
+Thu Mar 26 15:03:33 2026
 
 WARNING <1027013> - No net matched 'i3c_s_inst/lscc_i3c_target_inst/scl_i'.
-WARNING <1026001> - C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.pdc (36) : Can't resolve object 'i3c_s_inst/lscc_i3c_target_inst/scl_i' in constraint 'set_false_path -through [get_nets i3c_s_inst/lscc_i3c_target_inst/scl_i]'.
+WARNING <1026001> - C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.pdc (37) : Can't resolve object 'i3c_s_inst/lscc_i3c_target_inst/scl_i' in constraint 'set_false_path -through [get_nets i3c_s_inst/lscc_i3c_target_inst/scl_i]'.
 WARNING <1027013> - No net matched 'i3c_s_inst/lscc_i3c_target_inst/scl_i'.
-WARNING <1026001> - C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.pdc (39) : Can't resolve object 'i3c_s_inst/lscc_i3c_target_inst/scl_i' in constraint 'set_false_path -through [get_nets i3c_s_inst/lscc_i3c_target_inst/scl_i]'.
+WARNING <1026001> - C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.pdc (40) : Can't resolve object 'i3c_s_inst/lscc_i3c_target_inst/scl_i' in constraint 'set_false_path -through [get_nets i3c_s_inst/lscc_i3c_target_inst/scl_i]'.
 WARNING <1027013> - No net matched 'i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i'.
-WARNING <1026001> - C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.pdc (55) : Can't resolve object 'i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i' in constraint 'set_false_path -through [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i}]'.
+WARNING <1026001> - C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.pdc (56) : Can't resolve object 'i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i' in constraint 'set_false_path -through [get_nets {i3c_s_inst/lscc_i3c_target_inst/u_i3c_tgt/u_i3c_tgt_main/rst_stop_sdan_n_1_i i3c_s_inst/lscc_i3c_target_inst/sda_i}]'.
 WARNING <1027013> - No net matched 'i3c_s_inst/lscc_i3c_target_inst/scl_i'.
-WARNING <1026001> - C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.pdc (56) : Can't resolve object 'i3c_s_inst/lscc_i3c_target_inst/scl_i' in constraint 'set_false_path -through [get_nets i3c_s_inst/lscc_i3c_target_inst/scl_i]'.
+WARNING <1026001> - C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.pdc (57) : Can't resolve object 'i3c_s_inst/lscc_i3c_target_inst/scl_i' in constraint 'set_false_path -through [get_nets i3c_s_inst/lscc_i3c_target_inst/scl_i]'.

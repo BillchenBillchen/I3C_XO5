@@ -1,10 +1,10 @@
-<Project Date="2026-03-12" ModBy="Inserter" Name="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl" SigType="0">
+<Project Date="2026-03-20" ModBy="Inserter" Name="C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/source/impl_1/I3C_XO5.rvl" SigType="0">
     <IP Version="1_6_042617"/>
     <Design DesignEntry="Schematic/Verilog HDL" DesignName="I3C_XO5" DeviceFamily="LFMXO5" DeviceName="LFMXO5-25" JTAG="hard" Stage="presyn" Synthesis="synplify"/>
-    <Core ID="0" Insert="1" InsertDataset="0" Name="I3C_XO5_LA0" Reveal_sig="685303015">
+    <Core ID="0" Insert="1" InsertDataset="0" Name="I3C_XO5_LA0" Reveal_sig="686349713">
         <Setting>
             <Clock EnableClk="" EnableClk_Pri="0" SampleClk="pll0_inst/clkop_o" SampleEnable="0"/>
-            <TraceBuffer BitTimeStamp="0" BufferDepth="32768" Implementation="0" IncTrigSig="0" hasTimeStamp="0"/>
+            <TraceBuffer BitTimeStamp="0" BufferDepth="16384" Implementation="0" IncTrigSig="0" hasTimeStamp="0"/>
             <Capture MinSamplesPerTrig="128" Mode="0"/>
             <Event CntEnable="0" MaxEventCnt="8"/>
             <TrigOut EnableTrigOut="0" MinPulseWidth="0" Polarity="0" TrigOutNet="reveal_debug_I3C_XO5_LA0_net" TrigOutNetType="1"/>
@@ -12,6 +12,17 @@
         </Setting>
         <Dataset Name="Base">
             <Trace>
+                <Sig Name="i3c_m_inst/lscc_i3c_controller_inst/lmmi_wr_rdn_i" Type="SIG"/>
+                <Bus Name="i3c_m_inst/lscc_i3c_controller_inst/lmmi_wdata_i">
+                    <Sig Name="i3c_m_inst/lscc_i3c_controller_inst/lmmi_wdata_i:0" Type="SIG"/>
+                    <Sig Name="i3c_m_inst/lscc_i3c_controller_inst/lmmi_wdata_i:1" Type="SIG"/>
+                    <Sig Name="i3c_m_inst/lscc_i3c_controller_inst/lmmi_wdata_i:2" Type="SIG"/>
+                    <Sig Name="i3c_m_inst/lscc_i3c_controller_inst/lmmi_wdata_i:3" Type="SIG"/>
+                    <Sig Name="i3c_m_inst/lscc_i3c_controller_inst/lmmi_wdata_i:4" Type="SIG"/>
+                    <Sig Name="i3c_m_inst/lscc_i3c_controller_inst/lmmi_wdata_i:5" Type="SIG"/>
+                    <Sig Name="i3c_m_inst/lscc_i3c_controller_inst/lmmi_wdata_i:6" Type="SIG"/>
+                    <Sig Name="i3c_m_inst/lscc_i3c_controller_inst/lmmi_wdata_i:7" Type="SIG"/>
+                </Bus>
                 <Sig Name="i3c_s_inst/lscc_i3c_target_inst/sda_wpu" Type="SIG"/>
                 <Sig Name="i3c_s_inst/lscc_i3c_target_inst/sda_spu" Type="SIG"/>
                 <Sig Name="i3c_s_inst/lscc_i3c_target_inst/scl_wpu" Type="SIG"/>
@@ -38,10 +49,8 @@
                 <TU ID="4" Serialbits="0" Sig="i3c_m_inst/lscc_i3c_controller_inst/sda_i," Type="0"/>
                 <TU ID="5" Serialbits="0" Sig="i3c_m_inst/lscc_i3c_controller_inst/sda_o," Type="0"/>
                 <TU ID="6" Serialbits="0" Sig="i3c_m_inst/lscc_i3c_controller_inst/sda_oe," Type="0"/>
-                <TU ID="7" Serialbits="0" Sig="i3c_s_inst/lscc_i3c_target_inst/scl_i," Type="0"/>
-                <TU ID="8" Serialbits="0" Sig="i3c_s_inst/lscc_i3c_target_inst/sda_i," Type="0"/>
-                <TU ID="9" Serialbits="0" Sig="i3c_s_inst/lscc_i3c_target_inst/sda_o," Type="0"/>
-                <TU ID="10" Serialbits="0" Sig="i3c_s_inst/lscc_i3c_target_inst/sda_oe," Type="0"/>
+                <TU ID="7" Serialbits="0" Sig="i3c_m_inst/lscc_i3c_controller_inst/lmmi_rdata_valid_o," Type="0"/>
+                <TU ID="8" Serialbits="0" Sig="i3c_m_inst/lscc_i3c_controller_inst/lmmi_wr_rdn_i," Type="0"/>
                 <TE ID="1" MaxEvnCnt="1" MaxSequence="2" Resource="0"/>
                 <TE ID="2" MaxEvnCnt="1" MaxSequence="2" Resource="0"/>
                 <TE ID="3" MaxEvnCnt="1" MaxSequence="2" Resource="0"/>
@@ -50,8 +59,6 @@
                 <TE ID="6" MaxEvnCnt="1" MaxSequence="2" Resource="0"/>
                 <TE ID="7" MaxEvnCnt="1" MaxSequence="2" Resource="0"/>
                 <TE ID="8" MaxEvnCnt="1" MaxSequence="2" Resource="0"/>
-                <TE ID="9" MaxEvnCnt="1" MaxSequence="2" Resource="0"/>
-                <TE ID="10" MaxEvnCnt="1" MaxSequence="2" Resource="0"/>
             </Trigger>
         </Dataset>
     </Core>

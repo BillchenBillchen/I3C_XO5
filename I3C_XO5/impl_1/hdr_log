@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2025 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Mar 12 14:31:54 2026
+Thu Mar 26 14:21:51 2026
 
 
 Command Line:  synthesis -comp -f I3C_XO5_impl_1_lattice.synproj -gui -msgset C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/promote.xml 
@@ -683,10 +683,10 @@ INFO <35901018> - synthesis: c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/i3c_xo5/
 INFO <35901018> - synthesis: c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/i3c_xo5/lib/latticesemi.com/module/apb0/1.4.0/rtl/apb0.v(3647): compiling module '**'. VERI-1018
 INFO <35901018> - synthesis: c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/i3c_xo5/lib/latticesemi.com/module/apb0/1.4.0/rtl/apb0.v(3647): compiling module '**'. VERI-1018
 INFO <35901018> - synthesis: c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/i3c_xo5/lib/latticesemi.com/ip/gpio0/1.8.0/rtl/gpio0.v(11): compiling module gpio0. VERI-1018
-INFO <35901018> - synthesis: c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/i3c_xo5/lib/latticesemi.com/ip/gpio0/1.8.0/rtl/gpio0.v(508): compiling module gpio0_ipgen_lscc_gpio(FAMILY="LFMXO5",DIRECTION_DEF_VAL="32'h000000FF",IO_LINES_COUNT=9,OUT_RESET_VAL="32'h00000000",IF_USER_INTF="APB"). VERI-1018
-INFO <35901018> - synthesis: c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/i3c_xo5/lib/latticesemi.com/ip/gpio0/1.8.0/rtl/gpio0.v(745): compiling module gpio0_ipgen_lscc_gpio_lmmi(FAMILY="LFMXO5",DIRECTION_DEF_VAL="32'h000000FF",IO_LINES_COUNT=9,OUT_RESET_VAL="32'h00000000",IF_USER_INTF="APB"). VERI-1018
+INFO <35901018> - synthesis: c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/i3c_xo5/lib/latticesemi.com/ip/gpio0/1.8.0/rtl/gpio0.v(508): compiling module gpio0_ipgen_lscc_gpio(FAMILY="LFMXO5",DIRECTION_DEF_VAL="32'h000000FF",IO_LINES_COUNT=12,OUT_RESET_VAL="32'h00000000",IF_USER_INTF="APB"). VERI-1018
+INFO <35901018> - synthesis: c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/i3c_xo5/lib/latticesemi.com/ip/gpio0/1.8.0/rtl/gpio0.v(745): compiling module gpio0_ipgen_lscc_gpio_lmmi(FAMILY="LFMXO5",DIRECTION_DEF_VAL="32'h000000FF",IO_LINES_COUNT=12,OUT_RESET_VAL="32'h00000000",IF_USER_INTF="APB"). VERI-1018
 INFO <35901018> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/verilog/lfmxo5.v(7110): compiling module BB. VERI-1018
-INFO <35901018> - synthesis: c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/i3c_xo5/lib/latticesemi.com/ip/gpio0/1.8.0/rtl/gpio0.v(121): compiling module gpio0_ipgen_lscc_apb2lmmi(DATA_WIDTH=9,ADDR_WIDTH=6). VERI-1018
+INFO <35901018> - synthesis: c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/i3c_xo5/lib/latticesemi.com/ip/gpio0/1.8.0/rtl/gpio0.v(121): compiling module gpio0_ipgen_lscc_apb2lmmi(DATA_WIDTH=12,ADDR_WIDTH=6). VERI-1018
 INFO <35901018> - synthesis: c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/i3c_xo5/lib/latticesemi.com/ip/i3c_m/3.7.0/rtl/i3c_m.v(11): compiling module i3c_m. VERI-1018
 INFO <35901018> - synthesis: c:/users/billzhang/desktop/i3c_xo5/i3c_xo5/i3c_xo5/lib/latticesemi.com/ip/i3c_m/3.7.0/rtl/i3c_m.v(132): compiling module i3c_m_ipgen_lscc_i3c_controller(FAMILY="LFMXO5",ENABLE_IBI=1,ENABLE_HJI=1,SEL_INTF="APB",FIFO_DEPTH=512,REG_MAPPING=1,USE_INTCLKDIV=1,DEFAULT_RATE=0,DEFAULT_ODTIMER=3,I2C_RATE=12,IBI_DATA_PAY=1,MAX_D_SPEED_LIMIT=1,DCR=0,PID_MANUF=414,PID_PART=1,PID_INST=1,PID_ADD=0,STATIC_ADDR_EN=1,STATIC_ADDR=8,DYNAMIC_ADDR=8,MXDS_W=0,MXDS_TSCO=0,MXDS_R=0,MXDS_RD_TURN=0). VERI-1018
 INFO <35901018> - synthesis: C:/lscc/radiant/2025.2/ispfpga/../cae_library/synthesis/verilog/lfmxo5.v(128): compiling module BB_I3C_A. VERI-1018

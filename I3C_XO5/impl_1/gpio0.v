@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE 
-// Netlist written on Fri Mar 13 16:33:55 2026
+// Netlist written on Thu Mar 26 14:23:45 2026
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "c:/lscc/radiant/2025.2/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v"
@@ -138,7 +138,7 @@
 module gpio0 (gpio_io, clk_i, resetn_i, apb_penable_i, apb_psel_i, 
             apb_pwrite_i, apb_paddr_i, apb_pwdata_i, apb_prdata_o, apb_pslverr_o, 
             apb_pready_o, int_o) /* synthesis ORIG_MODULE_NAME="gpio0", LATTICE_IP_GENERATED="1", cpe_box=1 */ ;
-    inout [8:0]gpio_io;
+    inout [11:0]gpio_io;
     input clk_i;
     input resetn_i;
     input apb_penable_i;

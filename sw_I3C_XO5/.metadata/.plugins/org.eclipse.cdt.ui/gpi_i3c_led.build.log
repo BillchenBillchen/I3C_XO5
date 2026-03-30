@@ -1,11 +1,11 @@
-22:20:45 **** Incremental Build of configuration Debug for project gpi_i3c_led ****
+15:23:01 **** Incremental Build of configuration Debug for project gpi_i3c_led ****
 make all 
 Invoking: GNU RISC-V Cross Print Size
 riscv-none-embed-size --format=berkeley "gpi_i3c_led.elf"
    text	   data	    bss	    dec	    hex	filename
-   7292	     20	   3444	  10756	   2a04	gpi_i3c_led.elf
+   7680	     20	   3420	  11120	   2b70	gpi_i3c_led.elf
 Finished building: gpi_i3c_led.siz
  
 
-22:20:46 Build Finished. 0 errors, 0 warnings. (took 1s.251ms)
+15:23:02 Build Finished. 0 errors, 0 warnings. (took 849ms)
 

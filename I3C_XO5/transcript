@@ -13,513 +13,337 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-cd C:/Users/billzhang/Desktop/I3C_XO5/I3C_sim/I3C_target_sim/I3C_target_inst/testbench
-do sim.do
-# Questa Lattice OEM Edition-64 vmap 2025.2 Lib Mapping Utility 2025.05 May 31 2025
-# vmap work work 
-# ** Note: (vmap-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
-# Modifying C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini
+cd C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/sim_controller
+do sim_controller.vdo
+# ** Note: (qrun-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
+# Deleting directory qrun.out...
+# Creating library 'qrun.out/work'.
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 14:17:21 on Mar 10,2026
-# vlog -reportprogress 300 -work work ../rtl/I3C_target_inst.v 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module I3C_target_inst
-# -- Compiling module I3C_target_inst_ipgen_lscc_i3c_target
 # 
-# Top level modules:
-# 	I3C_target_inst
-# End time: 14:17:22 on Mar 10,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 14:17:22 on Mar 10,2026
-# vlog -reportprogress 300 -work work "+incdir+." "+incdir+../eval" tb_top.v 
+# 
+# Start time: 15:00:29 on Mar 19,2026
+# 
+# vlog -reportprogress 300 -L work -sv "+incdir+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5" "+incdir+C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench" -L pmi_work -L ovi_lfmxo5 C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/rtl/i3c_m.v C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/dut_params.v C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_top.v -work qrun.out/work -statslog qrun.out/stats_log -csession=incr 
+# 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module i3c_bfm_lmmi
-# -- Compiling module i3c_bfm_apb
-# -- Compiling module i3c_bfm_ahbl
-# -- Compiling module i3c_bfm_stream
+# 
+# -- Compiling module i3c_m
+# 
+# -- Compiling module i3c_m_ipgen_lscc_i3c_controller
+# 
+# -- Compiling package dut_params_v_unit
+# 
 # -- Compiling module tb_top
 # 
-# Top level modules:
-# 	tb_top
-# End time: 14:17:23 on Mar 10,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# ** UI-Msg (Error): (vish-3296) Unknown option '-PL'.
-# Use the -help option for complete vsim usage.
-# ** Error: Error loading design
-# Error in macro ./sim.do line 22
-# Error loading design
-#     while executing
-# "error "Error loading design""
-#     (procedure "vsim" line 202)
-#     invoked from within
-# "vsim -L ovi_machxo5 -PL pmi_work -voptargs=+acc work.tb_top"
-do sim.do
-# Questa Lattice OEM Edition-64 vmap 2025.2 Lib Mapping Utility 2025.05 May 31 2025
-# vmap work work 
-# ** Note: (vmap-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
-# Modifying C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 14:29:07 on Mar 10,2026
-# vlog -reportprogress 300 -work work ../rtl/I3C_target_inst.v 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module I3C_target_inst
-# -- Compiling module I3C_target_inst_ipgen_lscc_i3c_target
+# -- Compiling module i3c_device_inst
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# ** Warning: C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/IPs/i3c_m/3.7.0/testbench/tb_models.v(94): (vlog-2275) Existing <protected> '<protected>'<protected> will be overwritten<protected>.
+# 
+# -- Compiling module mst_bfm_lmmi
+# 
+# -- Compiling module mst_bfm_apb
+# 
+# -- Compiling module mst_bfm_ahbl
+# 
+# -- Compiling module mst_bfm_stream
+# 
+# 
 # 
 # Top level modules:
-# 	I3C_target_inst
-# End time: 14:29:08 on Mar 10,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 14:29:08 on Mar 10,2026
-# vlog -reportprogress 300 -work work "+incdir+." "+incdir+../eval" tb_top.v 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module i3c_bfm_lmmi
-# -- Compiling module i3c_bfm_apb
-# -- Compiling module i3c_bfm_ahbl
-# -- Compiling module i3c_bfm_stream
-# -- Compiling module tb_top
 # 
-# Top level modules:
 # 	tb_top
-# End time: 14:29:09 on Mar 10,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# ** Note: (vsim-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim -L ovi_machxo5 -L pmi_work -voptargs="+acc" work.tb_top 
-# Start time: 14:29:10 on Mar 10,2026
-# ** Note: (vsim-3812) Design is being optimized...
+# 
+# End time: 15:00:31 on Mar 19,2026, Elapsed time: 0:00:02
+# 
+# Errors: 0, Warnings: 54
+# 
+# Questa Lattice OEM Edition-64 vopt 2025.2 Compiler 2025.05 May 31 2025
+# 
+# 
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# 
+# Start time: 15:00:33 on Mar 19,2026
+# 
+# vopt -reportprogress 300 -L work "+acc" "+noacc+pmi_work.*" "+noacc+ovi_lfmxo5.*" -L pmi_work -L ovi_lfmxo5 tb_top -suppress vopt-7033 -work qrun.out/work -statslog qrun.out/stats_log -csession=incr -o qrun_opt -csessionid=3 
+# 
 # ** Note: (vopt-220) 'C:/lscc/radiant/2025.2/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_top.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_bfm.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error: tb_top.v(3414): Module 'GSR' is not defined.
-#  For instance 'GSR_INST' at path 'tb_top'
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_bfm.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_bfm.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_bfm.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_models.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: nofile(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: nofile(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: nofile(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: nofile(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: nofile(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_bfm.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error: ../rtl/I3C_target_inst.v(341): Module 'BB_I3C_A' is not defined.
-#  For instance 'u_i3c_sda' at path 'tb_top.u_I3C_target_inst.lscc_i3c_target_inst.gen_en_io_prim'
-# ** Error: ../rtl/I3C_target_inst.v(335): Module 'BB_I3C_A' is not defined.
-#  For instance 'u_i3c_scl' at path 'tb_top.u_I3C_target_inst.lscc_i3c_target_inst.gen_en_io_prim'
-# ** Error: tb_models.v(94): in protected region
-# ** Error: tb_models.v(94): in protected region
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_bfm.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_bfm.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_bfm.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_bfm.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: tb_bfm.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: ../rtl/I3C_target_inst.v(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: nofile(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: nofile(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: nofile(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: nofile(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: nofile(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: nofile(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error: nofile(2918): Module 'FIFO16K' is not defined.
-#  For instance 'fifo16K' at path 'tb_top.u_ctl_model.u_i3c_mst.u_packet_to_i3cbus.u_txfifo.gen_pmi.gen_async.u_fifo.u_fifo0.fifo_dc0._HARD_IP.u_fifo._SAME_WIDTH._FIFO_ADDR[0]._FIFO_DATA[0].u_fifo'
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: nofile(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Error (suppressible): (vopt-19) Failed to access library 'ovi_machxo5' at "ovi_machxo5".
-# No such file or directory. (errno = ENOENT)
-# ** Warning: nofile(1): (vopt-2669) Unable to find library 'ovi_machxo5'.
-# ** Error: nofile(8473): Module 'PDP16K' is not defined.
-#  For instance 'pdp16k' at path 'tb_top.u_I3C_target_inst.lscc_i3c_target_inst.u_i3c_tgt.gen_fifo_target.u_tx_fifo.gen_pmi.gen_async.u_fifo.u_fifo0.fifo_dc0._FABRIC.u_fifo.EBR.EBR_LIFCL.u_fifo_mem0.mem_main.NON_MIX.ADDR_ROUTE[0].DATA_ROUTE[0].no_init.u_mem0'
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=184, Warnings=60.
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./sim.do PAUSED at line 22
-# End time: 14:33:47 on Mar 10,2026, Elapsed time: 0:04:37
-# Errors: 184, Warnings: 60
+# 
+# 
+# 
+# Top level modules:
+# 
+# 	tb_top
+# 
+# 
+# 
+# Analyzing design...
+# 
+# -- Loading module tb_top
+# 
+# -- Loading module ovi_lfmxo5.GSR
+# 
+# -- Loading module ovi_lfmxo5.GSR_CORE
+# 
+# -- Loading module ovi_lfmxo5.VHI
+# 
+# -- Loading module ovi_lfmxo5.VLO
+# 
+# -- Loading module i3c_device_inst
+# 
+# -- Loading module i3c_m
+# 
+# -- Loading module i3c_m_ipgen_lscc_i3c_controller
+# 
+# -- Loading module mst_bfm_stream
+# 
+# -- Loading module ovi_lfmxo5.BB_I3C_A
+# 
+# -- Loading module ovi_lfmxo5.SEIO33_CORE
+# 
+# -- Loading module pmi_work.pmi_fifo_dc
+# 
+# -- Loading module pmi_work.lscc_fifo_dc
+# 
+# -- Loading module pmi_work.lscc_fifo_dc_fwft_fabric
+# 
+# -- Loading module pmi_work.lscc_fifo_dc_main
+# 
+# -- Loading module mst_bfm_apb
+# 
+# -- Loading module pmi_work.lscc_soft_fifo_dc
+# 
+# -- Loading module pmi_work.lscc_reset_async
+# 
+# -- Loading module pmi_work.lscc_hard_fifo_dc
+# 
+# -- Loading module pmi_work.lscc_fifo_soft_mem
+# 
+# -- Loading module pmi_work.lscc_fifo_mem_main
+# 
+# -- Loading module pmi_work.lscc_fifo_dc_hw_core
+# 
+# -- Loading module pmi_work.lscc_fifo_mem_core
+# 
+# -- Loading module ovi_lfmxo5.FIFO16K
+# 
+# -- Loading module ovi_lfmxo5.FIFO16K_MODE
+# 
+# -- Loading module ovi_lfmxo5.EBR_CORE
+# 
+# -- Loading module ovi_lfmxo5.PDP16K
+# 
+# -- Loading module ovi_lfmxo5.PDP16K_MODE
+# 
+# Optimizing 118 design-units (inlining 290/324 module instances):
+# 
+# -- Optimizing module i3c_device_inst(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_fwft_fabric(fast)
+# 
+# -- Inlining module pmi_work.lscc_reset_async(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_mem_core(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_mem_main(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_soft_mem(fast)
+# 
+# -- Inlining module pmi_work.lscc_soft_fifo_dc(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_main(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc(fast)
+# 
+# -- Optimizing module pmi_work.pmi_fifo_dc(fast)
+# 
+# -- Inlining module pmi_work.lscc_soft_fifo_dc(fast__1)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_main(fast__1)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc(fast__1)
+# 
+# -- Optimizing module pmi_work.pmi_fifo_dc(fast__1)
+# 
+# -- Optimizing module i3c_m_ipgen_lscc_i3c_controller(fast)
+# 
+# -- Optimizing module tb_top(fast)
+# 
+# -- Inlining module ovi_lfmxo5.EBR_CORE(fast)
+# 
+# -- Inlining module ovi_lfmxo5.VHI(fast)
+# 
+# -- Inlining module ovi_lfmxo5.VLO(fast)
+# 
+# -- Inlining module ovi_lfmxo5.PDP16K_MODE(fast)
+# 
+# -- Optimizing module ovi_lfmxo5.PDP16K(fast)
+# 
+# -- Inlining module ovi_lfmxo5.EBR_CORE(fast__2)
+# 
+# -- Inlining module ovi_lfmxo5.FIFO16K_MODE(fast__1)
+# 
+# -- Optimizing module ovi_lfmxo5.FIFO16K(fast__1)
+# 
+# -- Inlining module ovi_lfmxo5.EBR_CORE(fast__1)
+# 
+# -- Inlining module ovi_lfmxo5.VHI(fast)
+# 
+# -- Inlining module ovi_lfmxo5.VLO(fast)
+# 
+# -- Inlining module ovi_lfmxo5.FIFO16K_MODE(fast)
+# 
+# -- Optimizing module ovi_lfmxo5.FIFO16K(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_fwft_fabric(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_hw_core(fast__1)
+# 
+# -- Inlining module pmi_work.lscc_hard_fifo_dc(fast__1)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_main(fast__3)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc(fast__3)
+# 
+# -- Optimizing module pmi_work.pmi_fifo_dc(fast__3)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_hw_core(fast)
+# 
+# -- Inlining module pmi_work.lscc_hard_fifo_dc(fast)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc_main(fast__2)
+# 
+# -- Inlining module pmi_work.lscc_fifo_dc(fast__2)
+# 
+# -- Optimizing module pmi_work.pmi_fifo_dc(fast__2)
+# 
+# -- Inlining module ovi_lfmxo5.SEIO33_CORE(fast)
+# 
+# -- Inlining module ovi_lfmxo5.VHI(fast)
+# 
+# -- Inlining module ovi_lfmxo5.VLO(fast)
+# 
+# -- Optimizing module ovi_lfmxo5.BB_I3C_A(fast)
+# 
+# -- Inlining module ovi_lfmxo5.GSR_CORE(fast)
+# 
+# -- Optimizing module ovi_lfmxo5.GSR(fast)
+# 
+# -- Optimizing module mst_bfm_apb(fast)
+# 
+# -- Optimizing module mst_bfm_stream(fast)
+# 
+# -- Optimizing module i3c_m(fast)
+# 
+# Optimized design name is qrun_opt
+# 
+# End time: 15:00:39 on Mar 19,2026, Elapsed time: 0:00:06
+# 
+# Errors: 0, Warnings: 1
+# 
+vsim -L work -L pmi_work -L ovi_lfmxo5 -lib qrun.out/work -wlf vsim.wlf -gui -do {view wave} -do {add wave /*} -do {run -all} -statslog qrun.out/stats_log qrun_opt -suppress vsim-7033,vsim-8630,3009,3389 -appendlog -l qrun.log

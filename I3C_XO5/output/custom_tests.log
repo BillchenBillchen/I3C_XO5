@@ -6,3 +6,142 @@
 [2026-03-16 00:46:06]   map starting...
 [2026-03-16 00:47:01]   map completed successfully.
 [2026-03-16 00:47:01]   par starting...
+[2026-03-16 00:59:40]   par completed successfully.
+[2026-03-16 00:59:40]   bit starting...
+[2026-03-16 01:00:35]   bit completed successfully.
+[2026-03-16 01:00:35] Test D3 finished.
+[2026-03-16 01:00:35] ========== Starting custom test: Swap (Â∞çË™ø Master/Slave (Master:G7,G9 / Slave:C3,E4)) ==========
+[2026-03-16 01:00:35]   map starting...
+[2026-03-16 01:01:17]   map completed successfully.
+[2026-03-16 01:01:17]   par starting...
+[2026-03-16 01:09:50]   par completed successfully.
+[2026-03-16 01:09:50]   bit starting...
+[2026-03-16 01:10:38]   bit completed successfully.
+[2026-03-16 01:10:38] Test Swap finished.
+[2026-03-16 09:36:30] ========== Starting custom test: D3 (Master SCL at D3 (Original)) ==========
+[2026-03-16 09:36:30]   map starting...
+[2026-03-16 09:37:16]   map completed successfully.
+[2026-03-16 09:37:16]   par starting...
+[2026-03-16 09:45:04]   par completed successfully.
+[2026-03-16 09:45:04]   bit starting...
+[2026-03-16 09:46:01]   bit completed successfully.
+[2026-03-16 09:46:01] Test D3 finished.
+[2026-03-16 09:46:01] ========== Starting custom test: Swap (Â∞çË™ø Master/Slave (Master:G7,G9 / Slave:C3,E4)) ==========
+[2026-03-16 09:46:01]   map starting...
+[2026-03-16 09:46:46]   map completed successfully.
+[2026-03-16 09:46:46]   par starting...
+[2026-03-16 09:56:55]   par completed successfully.
+[2026-03-16 09:56:55]   bit starting...
+[2026-03-16 09:57:52]   bit completed successfully.
+[2026-03-16 09:57:52] Test Swap finished.
+[2026-03-16 09:57:52] ========== Starting custom test: Orig (?üÁ??çÁΩÆ (Master:G7,G9 / Slave:G8,H8)) ==========
+[2026-03-16 09:57:52]   map starting...
+[2026-03-16 09:58:42]   map completed successfully.
+[2026-03-16 09:58:42]   par starting...
+[2026-03-16 10:09:11]   par completed successfully.
+[2026-03-16 10:09:11]   bit starting...
+[2026-03-16 10:10:17]   bit completed successfully.
+[2026-03-16 10:10:17] Test Orig finished.
+[2026-03-16 16:37:12] ======================================================
+[2026-03-16 16:37:12] s0_sda_io sweep started. Total candidates: 10
+[2026-03-16 16:37:12] Fixed: m0_scl=C3  m0_sda=E4  s0_scl=G7
+[2026-03-16 16:37:12] ======================================================
+[2026-03-16 16:37:12] ========== [sda_G9] s0_sda_io = G9 ==========
+[2026-03-16 16:37:12]   map starting...
+[2026-03-16 16:37:37]   map FAILED (exit code: 1)
+[2026-03-16 16:37:37] [sda_G9] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\sda_G9\I3C_XO5_sda_G9.bit
+[2026-03-16 16:37:37] ========== [sda_G8] s0_sda_io = G8 ==========
+[2026-03-16 16:37:37]   map starting...
+[2026-03-16 16:38:02]   map FAILED (exit code: 1)
+[2026-03-16 16:38:02] [sda_G8] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\sda_G8\I3C_XO5_sda_G8.bit
+[2026-03-16 16:38:02] ========== [sda_H8] s0_sda_io = H8 ==========
+[2026-03-16 16:38:02]   map starting...
+[2026-03-16 16:38:27]   map FAILED (exit code: 1)
+[2026-03-16 16:38:27] [sda_H8] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\sda_H8\I3C_XO5_sda_H8.bit
+[2026-03-16 16:38:27] ========== [sda_H9] s0_sda_io = H9 ==========
+[2026-03-16 16:38:27]   map starting...
+[2026-03-16 16:38:53]   map FAILED (exit code: 1)
+[2026-03-16 16:38:53] [sda_H9] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\sda_H9\I3C_XO5_sda_H9.bit
+[2026-03-16 16:38:53] ========== [sda_H7] s0_sda_io = H7 ==========
+[2026-03-16 16:38:53]   map starting...
+[2026-03-16 16:39:20]   map FAILED (exit code: 1)
+[2026-03-16 16:39:20] [sda_H7] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\sda_H7\I3C_XO5_sda_H7.bit
+[2026-03-16 16:39:20] ========== [sda_F8] s0_sda_io = F8 ==========
+[2026-03-16 16:39:20]   map starting...
+[2026-03-16 16:39:47]   map FAILED (exit code: 1)
+[2026-03-16 16:39:47] [sda_F8] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\sda_F8\I3C_XO5_sda_F8.bit
+[2026-03-16 16:39:47] ========== [sda_F9] s0_sda_io = F9 ==========
+[2026-03-16 16:39:47]   map starting...
+[2026-03-16 16:40:15]   map FAILED (exit code: 1)
+[2026-03-16 16:40:15] [sda_F9] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\sda_F9\I3C_XO5_sda_F9.bit
+[2026-03-16 16:40:15] ========== [sda_E3] s0_sda_io = E3 ==========
+[2026-03-16 16:40:15]   map starting...
+[2026-03-16 16:40:43]   map FAILED (exit code: 1)
+[2026-03-16 16:40:43] [sda_E3] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\sda_E3\I3C_XO5_sda_E3.bit
+[2026-03-16 16:40:43] ========== [sda_D4] s0_sda_io = D4 ==========
+[2026-03-16 16:40:43]   map starting...
+[2026-03-16 16:41:09]   map FAILED (exit code: 1)
+[2026-03-16 16:41:09] [sda_D4] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\sda_D4\I3C_XO5_sda_D4.bit
+[2026-03-16 16:41:09] ========== [sda_E5] s0_sda_io = E5 ==========
+[2026-03-16 16:41:09]   map starting...
+[2026-03-16 16:42:17] ======================================================
+[2026-03-16 16:42:17] s0_sda_io sweep started. Total candidates: 10
+[2026-03-16 16:42:17] Fixed: m0_scl=C3  m0_sda=E4  s0_scl=G7
+[2026-03-16 16:42:17] ======================================================
+[2026-03-16 16:42:17] ========== [sda_G9] s0_sda_io = G9 ==========
+[2026-03-16 16:42:17]   map starting...
+[2026-03-16 16:42:42]   map FAILED (exit code: 1)
+[2026-03-16 16:42:42] [sda_G9] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\sda_G9\I3C_XO5_sda_G9.bit
+[2026-03-16 16:42:42] ========== [sda_G8] s0_sda_io = G8 ==========
+[2026-03-16 16:42:42]   map starting...
+[2026-03-16 16:54:31] ======================================================
+[2026-03-16 16:54:31] s0_sda_io sweep started. Total candidates: 4
+[2026-03-16 16:54:31] Fixed: m0_scl=G7  m0_sda=G9  s0_scl=D3
+[2026-03-16 16:54:31] ======================================================
+[2026-03-16 16:54:31] ========== [sda_E4] s0_sda_io = E4 ==========
+[2026-03-16 16:54:31]   map starting...
+[2026-03-16 16:54:59]   map FAILED (exit code: 1)
+[2026-03-16 16:54:59] [sda_E4] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\sda_E4\I3C_XO5_sda_E4.bit
+[2026-03-16 16:54:59] ========== [sda_C3] s0_sda_io = C3 ==========
+[2026-03-16 16:54:59]   map starting...
+[2026-03-16 17:00:26] ======================================================
+[2026-03-16 17:00:26] s0_sda_io sweep started. Total candidates: 4
+[2026-03-16 17:00:26] Fixed: m0_scl=G7  m0_sda=G9  s0_scl=D3
+[2026-03-16 17:00:26] ======================================================
+[2026-03-16 17:00:26] ========== [sda_E4] s0_sda_io = E4 ==========
+[2026-03-16 17:00:26]   map starting...
+[2026-03-16 17:01:06]   map completed successfully.
+[2026-03-16 17:01:06]   par starting...
+[2026-03-16 17:09:37]   par completed successfully.
+[2026-03-16 17:09:37]   bit starting...
+[2026-03-16 17:10:29]   bit completed successfully.
+[2026-03-16 17:10:29] [sda_E4] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\sda_E4\I3C_XO5_sda_E4.bit
+[2026-03-16 17:10:29] ========== [sda_C3] s0_sda_io = C3 ==========
+[2026-03-16 17:10:29]   map starting...
+[2026-03-16 17:11:10]   map completed successfully.
+[2026-03-16 17:11:10]   par starting...
+[2026-03-16 17:21:39]   par completed successfully.
+[2026-03-16 17:21:39]   bit starting...
+[2026-03-16 17:22:38]   bit completed successfully.
+[2026-03-16 17:22:38] [sda_C3] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\sda_C3\I3C_XO5_sda_C3.bit
+[2026-03-16 17:22:38] ========== [sda_C2] s0_sda_io = C2 ==========
+[2026-03-16 17:22:38]   map starting...
+[2026-03-16 17:23:19]   map completed successfully.
+[2026-03-16 17:23:19]   par starting...
+[2026-03-16 17:35:27]   par completed successfully.
+[2026-03-16 17:35:27]   bit starting...
+[2026-03-16 17:36:22]   bit completed successfully.
+[2026-03-16 17:36:22] [sda_C2] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\sda_C2\I3C_XO5_sda_C2.bit
+[2026-03-16 17:36:22] ========== [sda_A4] s0_sda_io = A4 ==========
+[2026-03-16 17:36:22]   map starting...
+[2026-03-16 17:37:02]   map completed successfully.
+[2026-03-16 17:37:02]   par starting...
+[2026-03-16 17:45:58]   par completed successfully.
+[2026-03-16 17:45:58]   bit starting...
+[2026-03-16 17:46:19]   bit FAILED (exit code: 1)
+[2026-03-16 17:46:19] [sda_A4] done. Bitstream: C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\output\sda_A4\I3C_XO5_sda_A4.bit
+[2026-03-16 17:46:19] ======================================================
+[2026-03-16 17:46:19] All s0_sda_io sweep tests finished.
+[2026-03-16 17:46:19] Burn each .bit to board, observe if LED progresses past LED2.
+[2026-03-16 17:46:19] The first candidate that shows LED1 ON = correct s0_sda pin.
+[2026-03-16 17:46:19] ======================================================

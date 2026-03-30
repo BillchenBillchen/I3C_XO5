@@ -130,7 +130,7 @@
                         <ipxact:displayName>Read_GPIO</ipxact:displayName>
                         <ipxact:description>Read actual values of GPIO's</ipxact:description>
                         <ipxact:bitOffset>0</ipxact:bitOffset>
-                        <ipxact:bitWidth>9</ipxact:bitWidth>
+                        <ipxact:bitWidth>12</ipxact:bitWidth>
                         <ipxact:volatile>true</ipxact:volatile>
                         <ipxact:access>read-only</ipxact:access>
                         <ipxact:testable testConstraint="unconstrained">false</ipxact:testable>
@@ -149,7 +149,7 @@
                         <ipxact:displayName>Write_GPIO</ipxact:displayName>
                         <ipxact:description>Write GPIO output register</ipxact:description>
                         <ipxact:bitOffset>0</ipxact:bitOffset>
-                        <ipxact:bitWidth>9</ipxact:bitWidth>
+                        <ipxact:bitWidth>12</ipxact:bitWidth>
                         <ipxact:volatile>true</ipxact:volatile>
                         <ipxact:access>read-write</ipxact:access>
                         <ipxact:testable testConstraint="unconstrained">false</ipxact:testable>
@@ -168,7 +168,7 @@
                         <ipxact:displayName>Set_GPIO</ipxact:displayName>
                         <ipxact:description>Set GPIO output register</ipxact:description>
                         <ipxact:bitOffset>0</ipxact:bitOffset>
-                        <ipxact:bitWidth>9</ipxact:bitWidth>
+                        <ipxact:bitWidth>12</ipxact:bitWidth>
                         <ipxact:volatile>true</ipxact:volatile>
                         <ipxact:access>write-only</ipxact:access>
                         <ipxact:testable testConstraint="unconstrained">false</ipxact:testable>
@@ -187,7 +187,7 @@
                         <ipxact:displayName>Clear_GPIO</ipxact:displayName>
                         <ipxact:description>Clear GPIO output register</ipxact:description>
                         <ipxact:bitOffset>0</ipxact:bitOffset>
-                        <ipxact:bitWidth>9</ipxact:bitWidth>
+                        <ipxact:bitWidth>12</ipxact:bitWidth>
                         <ipxact:volatile>true</ipxact:volatile>
                         <ipxact:access>write-only</ipxact:access>
                         <ipxact:testable testConstraint="unconstrained">false</ipxact:testable>
@@ -206,7 +206,7 @@
                         <ipxact:displayName>Direction_GPIO</ipxact:displayName>
                         <ipxact:description>GPIO Direction register</ipxact:description>
                         <ipxact:bitOffset>0</ipxact:bitOffset>
-                        <ipxact:bitWidth>9</ipxact:bitWidth>
+                        <ipxact:bitWidth>12</ipxact:bitWidth>
                         <ipxact:volatile>true</ipxact:volatile>
                         <ipxact:access>read-write</ipxact:access>
                         <ipxact:testable testConstraint="unconstrained">false</ipxact:testable>
@@ -225,7 +225,7 @@
                         <ipxact:displayName>Interrupt_Type_Register</ipxact:displayName>
                         <ipxact:description>Interrupt Type Cofiguration Register, 1-Edge, 0-Level</ipxact:description>
                         <ipxact:bitOffset>0</ipxact:bitOffset>
-                        <ipxact:bitWidth>9</ipxact:bitWidth>
+                        <ipxact:bitWidth>12</ipxact:bitWidth>
                         <ipxact:volatile>true</ipxact:volatile>
                         <ipxact:access>read-write</ipxact:access>
                         <ipxact:testable testConstraint="unconstrained">false</ipxact:testable>
@@ -244,7 +244,7 @@
                         <ipxact:displayName>Interrupt_Method_Register</ipxact:displayName>
                         <ipxact:description>Interrupt Method Register, if Interrupt Type is Edge` 1-Rising edge 0-faling edge, if Interrupt Type is Level` 1-High level, 0-Low level</ipxact:description>
                         <ipxact:bitOffset>0</ipxact:bitOffset>
-                        <ipxact:bitWidth>9</ipxact:bitWidth>
+                        <ipxact:bitWidth>12</ipxact:bitWidth>
                         <ipxact:volatile>true</ipxact:volatile>
                         <ipxact:access>read-write</ipxact:access>
                         <ipxact:testable testConstraint="unconstrained">false</ipxact:testable>
@@ -263,7 +263,7 @@
                         <ipxact:displayName>Interrupt_Status_Register</ipxact:displayName>
                         <ipxact:description>Interrupt Status Register, indicates interrupt status</ipxact:description>
                         <ipxact:bitOffset>0</ipxact:bitOffset>
-                        <ipxact:bitWidth>9</ipxact:bitWidth>
+                        <ipxact:bitWidth>12</ipxact:bitWidth>
                         <ipxact:volatile>true</ipxact:volatile>
                         <ipxact:access>read-write</ipxact:access>
                         <ipxact:testable testConstraint="unconstrained">false</ipxact:testable>
@@ -282,7 +282,7 @@
                         <ipxact:displayName>Interrupt_Enable_Register</ipxact:displayName>
                         <ipxact:description>Interrupt Enable Register, enables appropriate channel interrupt</ipxact:description>
                         <ipxact:bitOffset>0</ipxact:bitOffset>
-                        <ipxact:bitWidth>9</ipxact:bitWidth>
+                        <ipxact:bitWidth>12</ipxact:bitWidth>
                         <ipxact:volatile>true</ipxact:volatile>
                         <ipxact:access>read-write</ipxact:access>
                         <ipxact:testable testConstraint="unconstrained">false</ipxact:testable>
@@ -301,7 +301,7 @@
                         <ipxact:displayName>Interrupt_Set_Register</ipxact:displayName>
                         <ipxact:description>Interrupt Set Register, user can generate interrupt by writing '1' to the corresponding bit of this register</ipxact:description>
                         <ipxact:bitOffset>0</ipxact:bitOffset>
-                        <ipxact:bitWidth>9</ipxact:bitWidth>
+                        <ipxact:bitWidth>12</ipxact:bitWidth>
                         <ipxact:volatile>true</ipxact:volatile>
                         <ipxact:access>write-only</ipxact:access>
                         <ipxact:testable testConstraint="unconstrained">false</ipxact:testable>
@@ -328,7 +328,7 @@
                     <ipxact:direction>inout</ipxact:direction>
                     <ipxact:vectors>
                         <ipxact:vector>
-                            <ipxact:left>8</ipxact:left>
+                            <ipxact:left>11</ipxact:left>
                             <ipxact:right>0</ipxact:right>
                         </ipxact:vector>
                     </ipxact:vectors>
@@ -533,7 +533,7 @@
         </lsccip:deviceInfo>
         <lsccip:generationInfo>
             <lsccip:fileVersion>20180929</lsccip:fileVersion>
-            <lsccip:createdTimestamp>2026 02 26 17:09:03</lsccip:createdTimestamp>
+            <lsccip:createdTimestamp>2026 03 26 14:18:59</lsccip:createdTimestamp>
             <lsccip:radiantBuild>&quot;Lattice Propel&quot; (64-bit) 2025.2.0.2512111315</lsccip:radiantBuild>
         </lsccip:generationInfo>
     </ipxact:vendorExtensions>

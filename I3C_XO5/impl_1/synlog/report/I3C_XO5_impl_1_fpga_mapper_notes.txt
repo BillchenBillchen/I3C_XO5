@@ -5,7 +5,6 @@
 @N: FX493 |Applying initial value "0" on instance jtag_tap_fsm_state[1].
 @N: FX493 |Applying initial value "0" on instance jtag_tap_fsm_state[2].
 @N: FX493 |Applying initial value "0" on instance jtag_tap_fsm_state[3].
-@N: MF794 |RAM genblk4\.tr_mem.mem[17:0] required 1 registers during mapping 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 

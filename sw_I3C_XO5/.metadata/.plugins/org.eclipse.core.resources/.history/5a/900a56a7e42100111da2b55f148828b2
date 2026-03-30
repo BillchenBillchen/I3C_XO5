@@ -1,0 +1,177 @@
+#include "i3c_controller.h"
+#include "i3c_target.h"      // 必須保留以支援 Target 端初始化
+#include "uart.h"
+#include "utils.h"
+#include "reg_access.h"
+#include <stdio.h>
+#include <stdbool.h>
+#include "sys_platform.h"
+#include "iob.h"
+
+// --- 變數定義符合當前 BSP 與 Base Address ---
+#define I3C_SLAVE_NUMS    1
+#define DATA_LENGTH       32
+#define SLAVE_ADDR        0x20
+#define DAA_WARN_RETRY    20
+
+#ifdef GPIO_INST_BASE_ADDR
+#include "gpio.h"
+struct gpio_instance gpio_inst;
+#endif
+
+struct uart_instance uart_core_uart;
+struct i3c_master_instance i3cm;
+struct i3c_dev_info i3c_devinfo;
+struct i3c_target_handle_t i3cs;
+
+const uint8_t wr_buf[DATA_LENGTH] = {
+    0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,
+    0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F,
+    0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17,
+    0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F
+};
+uint8_t rd_buf[DATA_LENGTH];
+
+// --- stdio 路由函式 (保留自原 XO5 版) ---
+static int lscc_uart_putc(char c, FILE *file) {
+    int ret = uart_putc(&uart_core_uart, c);
+    if (c == '\n' && ret == 0)
+        ret = uart_putc(&uart_core_uart, '\r');
+    return ret;
+}
+static int lscc_uart_getc(FILE *file) { return EOF; }
+static int lscc_uart_flush(FILE *file) { return EOF; }
+
+static void simple_delay_ms(uint32_t ms) {
+    for (volatile uint32_t i = 0; i < (ms * 10000); i++);
+}
+
+// --- LED 控制函式 (保留以符合用戶除錯需求) ---
+static void set_led_all_off(void) {
+#ifdef GPIO_INST_BASE_ADDR
+    for (int i = 0; i < GPIO_INST_LINES_NUM; i++)
+        gpio_output_write(&gpio_inst, i, 0xFF);
+#endif
+}
+
+static void set_led_on(uint8_t id) {
+#ifdef GPIO_INST_BASE_ADDR
+    gpio_output_write(&gpio_inst, id, 0x00);
+#endif
+}
+
+static void startup_sweep(void) {
+    for (uint8_t i = 0; i < 8; i++) {
+        set_led_all_off();
+        set_led_on(i);
+        simple_delay_ms(50);
+    }
+    set_led_all_off();
+}
+
+static void bsp_init(void) {
+#ifdef GPIO_INST_BASE_ADDR
+    gpio_inst.instance_name = GPIO_INST_NAME;
+    gpio_init(&gpio_inst, GPIO_INST_BASE_ADDR, GPIO_INST_LINES_NUM, GPIO_INST_GPIO_DIRS);
+#endif
+
+    uart_init(&uart_core_uart, UART0_INST_BASE_ADDR, UART0_INST_SYS_CLK, UART0_INST_BAUD_RATE, 1, 8);
+    iob_init(lscc_uart_putc, lscc_uart_getc, lscc_uart_flush);
+}
+
+int main(void) {
+    uint8_t ret = 0;
+    uint8_t dyn_address;
+    int i;
+
+    bsp_init();
+    startup_sweep();
+    printf("BSP Init OK. Starting I3C CPNX-Logic Test...\n");
+
+    i3c_devinfo.pid = 0;
+
+    // --- Master 初始化 (套用當前 Base Address) ---
+    if (i3c_master_init(&i3cm, I3C_M_INST_BASE_ADDR, 0, 
+                        I3C_M_INST_GUI_I2C_SCL_PULSE_WIDTH - 1, I3C_SLAVE_NUMS) == 0) {
+        printf("I3C master initialization is success\n");
+    } else {
+        printf("Fail to initialize I3C master\n");
+        set_led_on(6); 
+        return -1;
+    }
+
+    // --- Target 端初始化 (XO5 硬體通訊必須有此步驟) ---
+    i3cs.base_addr = I3C_S_INST_BASE_ADDR;
+    if (i3c_target_init(&i3cs) == SUCCESS) {
+        printf("I3C target initialization is success\n");
+    } else {
+        printf("Fail to initialize I3C target\n");
+        set_led_on(5);
+    }
+
+    // --- 自定義 Timing (穩化 OD 階段) ---
+    reg_8b_write(i3cm.base_addr | 0x1A, 15); // Open Drain Timer
+
+    printf("STARTING DAA TEST...\n");
+    set_led_on(2); // LED2 亮代表進入 DAA
+
+    ret = i3c_master_daa(&i3cm, &i3c_devinfo, &dyn_address, I3C_SLAVE_NUMS, SLAVE_ADDR);
+
+    if (ret) {
+        printf("Fail I3C master DAA: error = %d\n", ret);
+        set_led_on(3); // DAA 失敗警告
+    } else {
+        printf("I3C master DAA is success\n");
+        printf("  bcr = %x\n", i3c_devinfo.bcr);
+        printf("  dcr = %x\n", i3c_devinfo.dcr);
+        printf("  pid = %016llx \n", i3c_devinfo.pid);
+        printf("  dyn addr = %x\n", i3c_devinfo.init_dyn_addr);
+        
+        // DAA 成功閃爍
+        for(int j=0; j<3; j++) {
+            set_led_all_off(); simple_delay_ms(100);
+            set_led_on(0); set_led_on(1); simple_delay_ms(100);
+        }
+    }
+
+    printf("STARTING I3C TESTS: Private Write ...\n");
+    printf("Writing data from I3C controller to the target\n");
+    set_led_on(1);
+    i3c_master_private_i3c_write(&i3cm, (uint8_t *) wr_buf, DATA_LENGTH, SLAVE_ADDR);
+
+    printf("STARTING I3C TESTS: Private Read ...\n");
+    set_led_on(0);
+    i3c_master_private_i3c_read(&i3cm, (uint8_t *) rd_buf, DATA_LENGTH - 2, SLAVE_ADDR);
+    
+    bool data_match = true;
+    for (i = 0; i < DATA_LENGTH - 2; i++) {
+        printf("Read count %d: 0x%02X ", i, rd_buf[i]);
+        if (rd_buf[i] == wr_buf[i]) {
+            printf("(OK)\n");
+        } else {
+            printf("(MISMATCH! Exp: 0x%02X)\n", wr_buf[i]);
+            data_match = false;
+        }
+    }
+
+    i3c_master_private_i3c_read(&i3cm, (uint8_t *) rd_buf, 2, SLAVE_ADDR);
+    printf("Final two bytes: 0x%02X, 0x%02X\n", rd_buf[0], rd_buf[1]);
+    if (rd_buf[0] != wr_buf[30] || rd_buf[1] != wr_buf[31]) data_match = false;
+
+    if (data_match) {
+        printf("TEST FINISHED: ALL MATCH\n");
+        uint8_t s = 0;
+        while(1) {
+            set_led_all_off(); set_led_on(s); simple_delay_ms(100);
+            s = (s + 1) % 8;
+        }
+    } else {
+        printf("TEST FINISHED: DATA ERROR\n");
+        while(1) {
+            set_led_on(0); simple_delay_ms(500);
+            set_led_all_off(); simple_delay_ms(500);
+        }
+    }
+
+    return 0;
+}

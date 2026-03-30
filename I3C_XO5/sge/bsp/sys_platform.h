@@ -144,7 +144,7 @@ and make sure to disable it when developing the application firmware. */
 /* gpio0_inst parameters */
 #define GPIO0_INST_GPIO_DIRS 0x000000FF
 #define GPIO_INST_GPIO_DIRS GPIO0_INST_GPIO_DIRS
-#define GPIO0_INST_LINES_NUM 9
+#define GPIO0_INST_LINES_NUM 12
 #define GPIO_INST_LINES_NUM GPIO0_INST_LINES_NUM
 
 /* i3c_m_inst parameters */

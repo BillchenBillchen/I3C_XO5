@@ -1,5 +1,5 @@
 localparam FAMILY = "LFMXO5";
-localparam IO_LINES_COUNT = 9;
+localparam IO_LINES_COUNT = 12;
 localparam EXTERNAL_BUF = 0;
 localparam OUT_RESET_VAL = "32'h00000000";
 localparam DIRECTION_DEF_VAL = "32'h000000FF";

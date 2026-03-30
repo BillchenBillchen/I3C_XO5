@@ -42,7 +42,7 @@
 --VHDL instantiation template
 
 component I3C_XO5 is
-    port (led_o: inout std_logic_vector(8 downto 0);
+    port (led_o: inout std_logic_vector(11 downto 0);
         m0_scl_io: inout std_logic;
         m0_sda_io: inout std_logic;
         risc_inst_timer_timer_irq_o_port: out std_logic;
@@ -55,14 +55,14 @@ component I3C_XO5 is
     );
     
 end component I3C_XO5;
-_inst: I3C_XO5 port map (led_o => __,
+_inst: I3C_XO5 port map (rxd_i => __,
+                         txd_o => __,
                          m0_scl_io => __,
                          m0_sda_io => __,
                          s0_rst_o => __,
                          s0_scl_io => __,
                          s0_sda_io => __,
                          rstn_I => __,
-                         risc_inst_timer_timer_irq_o_port => __,
-                         rxd_i => __,
-                         txd_o => __);
+                         led_o => __,
+                         risc_inst_timer_timer_irq_o_port => __);
                          

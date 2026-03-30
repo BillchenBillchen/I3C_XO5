@@ -56,9 +56,9 @@
 #CUR:"C:\\lscc\\radiant\\2025.2\\ip\\pmi\\../common/subtractor/rtl/lscc_subtractor.v":1760761305
 #CUR:"C:\\lscc\\radiant\\2025.2\\data\\reveal\\src\\ertl\\ertl.v":1760761521
 #CUR:"C:\\lscc\\radiant\\2025.2\\data\\reveal\\src\\ertl\\JTAG_SOFT.v":1760761521
-#CUR:"C:\\Users\\billzhang\\Desktop\\I3C_XO5\\I3C_XO5\\impl_1\\reveal_workspace\\tmpreveal\\i3c_xo5_la0_trig_gen.v":1773367039
-#CUR:"C:\\Users\\billzhang\\Desktop\\I3C_XO5\\I3C_XO5\\impl_1\\reveal_workspace\\tmpreveal\\i3c_xo5_la0_gen.v":1773367039
-#CUR:"C:\\Users\\billzhang\\Desktop\\I3C_XO5\\I3C_XO5\\impl_1\\reveal_workspace\\tmpreveal\\I3C_XO5_rvl_top.v":1773367045
+#CUR:"C:\\Users\\billzhang\\Desktop\\I3C_XO5\\I3C_XO5\\impl_1\\reveal_workspace\\tmpreveal\\i3c_xo5_la0_trig_gen.v":1774506185
+#CUR:"C:\\Users\\billzhang\\Desktop\\I3C_XO5\\I3C_XO5\\impl_1\\reveal_workspace\\tmpreveal\\i3c_xo5_la0_gen.v":1774506185
+#CUR:"C:\\Users\\billzhang\\Desktop\\I3C_XO5\\I3C_XO5\\impl_1\\reveal_workspace\\tmpreveal\\I3C_XO5_rvl_top.v":1774506191
 0			"C:\lscc\radiant\2025.2\ip\pmi\pmi_lfmxo5.v" verilog
 1		*	"C:\lscc\radiant\2025.2\ip\pmi\pmi_addsub.v" verilog
 2		*	"C:\lscc\radiant\2025.2\ip\pmi\../common/adder_subtractor/rtl\lscc_add_sub.v" verilog

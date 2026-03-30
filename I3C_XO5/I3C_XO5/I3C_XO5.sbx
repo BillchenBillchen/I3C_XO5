@@ -120,7 +120,7 @@
                         <ipxact:direction>inout</ipxact:direction>
                         <ipxact:vectors>
                             <ipxact:vector>
-                                <ipxact:left>8</ipxact:left>
+                                <ipxact:left>11</ipxact:left>
                                 <ipxact:right>0</ipxact:right>
                             </ipxact:vector>
                         </ipxact:vectors>
@@ -405,8 +405,8 @@
                     <ipxact:internalPortReference componentRef="i3c_m_inst" portRef="clk_i" />
                     <ipxact:internalPortReference componentRef="uart0_inst" portRef="clk_i" />
                     <ipxact:internalPortReference componentRef="pll0_inst" portRef="clkos_o" />
-                    <ipxact:internalPortReference componentRef="gpio0_inst" portRef="clk_i" />
                     <ipxact:internalPortReference componentRef="i3c_s_inst" portRef="clk_i" />
+                    <ipxact:internalPortReference componentRef="gpio0_inst" portRef="clk_i" />
                 </ipxact:portReferences>
             </ipxact:adHocConnection>
             <ipxact:adHocConnection>
@@ -429,8 +429,8 @@
                     <ipxact:internalPortReference componentRef="i3c_m_inst" portRef="rst_n_i" />
                     <ipxact:internalPortReference componentRef="risc_mc_inst" portRef="system_resetn_o" />
                     <ipxact:internalPortReference componentRef="ahb2apb_inst" portRef="presetn_i" />
-                    <ipxact:internalPortReference componentRef="gpio0_inst" portRef="resetn_i" />
                     <ipxact:internalPortReference componentRef="i3c_s_inst" portRef="rst_n_i" />
+                    <ipxact:internalPortReference componentRef="gpio0_inst" portRef="resetn_i" />
                 </ipxact:portReferences>
             </ipxact:adHocConnection>
             <ipxact:adHocConnection>
@@ -442,13 +442,13 @@
                 </ipxact:portReferences>
             </ipxact:adHocConnection>
             <ipxact:adHocConnection>
-                <ipxact:name>gpio0_inst_gpio_io_netbus</ipxact:name>
-                <ipxact:displayName>gpio0_inst_gpio_io_netbus</ipxact:displayName>
+                <ipxact:name>I3C_XO5_led_o_netbus</ipxact:name>
+                <ipxact:displayName>I3C_XO5_led_o_netbus</ipxact:displayName>
                 <ipxact:portReferences>
                     <ipxact:internalPortReference componentRef="gpio0_inst" portRef="gpio_io">
                         <ipxact:partSelect>
                             <ipxact:range>
-                                <ipxact:left>8</ipxact:left>
+                                <ipxact:left>11</ipxact:left>
                                 <ipxact:right>0</ipxact:right>
                             </ipxact:range>
                         </ipxact:partSelect>
@@ -456,7 +456,7 @@
                     <ipxact:externalPortReference portRef="led_o">
                         <ipxact:partSelect>
                             <ipxact:range>
-                                <ipxact:left>8</ipxact:left>
+                                <ipxact:left>11</ipxact:left>
                                 <ipxact:right>0</ipxact:right>
                             </ipxact:range>
                         </ipxact:partSelect>
@@ -708,7 +708,7 @@
                         <ipxact:direction>inout</ipxact:direction>
                         <ipxact:vectors>
                             <ipxact:vector>
-                                <ipxact:left>8</ipxact:left>
+                                <ipxact:left>11</ipxact:left>
                                 <ipxact:right>0</ipxact:right>
                             </ipxact:vector>
                         </ipxact:vectors>
@@ -729,7 +729,7 @@
         <ipxact:parameters>
             <ipxact:parameter>
                 <ipxact:name>DIRECTION_DEF_ENCODING</ipxact:name>
-                <ipxact:value>i oooo oooo</ipxact:value>
+                <ipxact:value>iiii oooo oooo</ipxact:value>
             </ipxact:parameter>
             <ipxact:parameter>
                 <ipxact:name>DIRECTION_DEF_VAL</ipxact:name>
@@ -753,11 +753,11 @@
             </ipxact:parameter>
             <ipxact:parameter>
                 <ipxact:name>IO_LINES_COUNT</ipxact:name>
-                <ipxact:value>9</ipxact:value>
+                <ipxact:value>12</ipxact:value>
             </ipxact:parameter>
             <ipxact:parameter>
                 <ipxact:name>IO_OUT_DEF_VAL</ipxact:name>
-                <ipxact:value>0 0000 0000</ipxact:value>
+                <ipxact:value>0000 0000 0000</ipxact:value>
             </ipxact:parameter>
             <ipxact:parameter>
                 <ipxact:name>OUT_RESET_VAL</ipxact:name>

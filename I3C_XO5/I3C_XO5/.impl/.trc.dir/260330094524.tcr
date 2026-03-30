@@ -1,0 +1,16 @@
+#Start recording tcl command: 3/20/2026 11:48:35
+sbp_design open -name I3C_XO5 -path {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx}
+sbp_config_ip -vlnv {latticesemi.com:ip:gpio0:1.8.0} -meta_vlnv {latticesemi.com:ip:gpio:1.8.0} -cfg_value {DIRECTION_DEF_VAL_INPUT:FF,IO_LINES_COUNT:12}
+sbp_replace -vlnv {latticesemi.com:ip:gpio0:1.8.0} -name {gpio0_inst} -component {I3C_XO5/gpio0_inst}
+sbp_modify_port -name I3C_XO5/led_o -direction inout -from 11 -to 0
+sbp_connect_net {I3C_XO5/led_o} {I3C_XO5/gpio0_inst/gpio_io}
+sbp_design save
+sbp_design generate
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design drc
+sbp_design drc
+sbp_design generate
+sbp_design save
+sbp_design pge sge  -i {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/I3C_XO5.sbx} -o {C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/I3C_XO5/../} -nc
+sbp_design close
+#Stop recording: 3/30/2026 09:45:24

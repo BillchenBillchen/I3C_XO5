@@ -171,127 +171,127 @@
 @N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\pmi_ram_dq_be.v":100:11:100:22|Read directive translate_on.
 @N: CG334 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":970:25:970:37|Read directive translate_off.
 @N: CG333 :"C:\lscc\radiant\2025.2\ip\pmi\../common/rom/rtl\lscc_rom.v":976:25:976:36|Read directive translate_on.
-@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":192455:66:192455:79|Synthesizing module ahb2apb_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":192474:66:192474:79|Synthesizing module ahb2apb_uniq_1 in library work.
 @N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lfmxo5.v":7110:7:7110:8|Synthesizing module BB in library work.
-@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":215001:7:215001:39|Synthesizing module gpio0_ipgen_lscc_gpio_lmmi_uniq_1 in library work.
-@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":216124:7:216124:38|Synthesizing module gpio0_ipgen_lscc_apb2lmmi_uniq_1 in library work.
-@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":196788:7:196788:34|Synthesizing module gpio0_ipgen_lscc_gpio_uniq_1 in library work.
-@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":194133:64:194133:75|Synthesizing module gpio0_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":215026:7:215026:39|Synthesizing module gpio0_ipgen_lscc_gpio_lmmi_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":216413:7:216413:38|Synthesizing module gpio0_ipgen_lscc_apb2lmmi_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":196821:7:196821:34|Synthesizing module gpio0_ipgen_lscc_gpio_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":194152:64:194152:75|Synthesizing module gpio0_uniq_1 in library work.
 @N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lfmxo5.v":128:7:128:14|Synthesizing module BB_I3C_A in library work.
-@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":196913:33:196913:70|Synthesizing module i3c_m_ipgen_lscc_i3c_controller_uniq_1 in library work.
-@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":194189:64:194189:75|Synthesizing module i3c_m_uniq_1 in library work.
-@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":197267:33:197267:66|Synthesizing module i3c_s_ipgen_lscc_i3c_target_uniq_1 in library work.
-@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":194339:64:194339:75|Synthesizing module i3c_s_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":196946:33:196946:70|Synthesizing module i3c_m_ipgen_lscc_i3c_controller_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":194208:64:194208:75|Synthesizing module i3c_m_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":197300:33:197300:66|Synthesizing module i3c_s_ipgen_lscc_i3c_target_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":194380:64:194380:75|Synthesizing module i3c_s_uniq_1 in library work.
 @N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lfmxo5.v":2141:7:2141:10|Synthesizing module OSCA in library work.
-@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":197659:7:197659:32|Synthesizing module osc0_ipgen_lscc_osc_uniq_1 in library work.
-@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":194466:63:194466:73|Synthesizing module osc0_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":197684:7:197684:32|Synthesizing module osc0_ipgen_lscc_osc_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":194499:63:194499:73|Synthesizing module osc0_uniq_1 in library work.
 @N: CG364 :"C:\lscc\radiant\2025.2\synpbase\lib\lucent\lfmxo5.v":2886:7:2886:9|Synthesizing module PLL in library work.
-@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":197705:7:197705:32|Synthesizing module pll0_ipgen_lscc_pll_uniq_1 in library work.
-@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":194512:63:194512:73|Synthesizing module pll0_uniq_1 in library work.
-@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225250:107:225250:117|Removing redundant assignment.
-@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225448:67:225448:76|Removing redundant assignment.
-@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225460:59:225460:68|Removing redundant assignment.
-@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225921:107:225921:117|Removing redundant assignment.
-@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226119:67:226119:76|Removing redundant assignment.
-@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226131:59:226131:68|Removing redundant assignment.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v":69:7:69:13|Input reset_n is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v":89:7:89:16|Input trigger_en is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199681:10:199681:14|Input DCD_N is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199682:10:199682:14|Input CTS_N is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199683:10:199683:14|Input DSR_N is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199684:10:199684:13|Input RI_N is unused.
-@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":202541:4:202541:9|Trying to extract state machine for register tx_state.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":202496:10:202496:23|Input fifo_empty_thr is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":202497:10:202497:22|Input fifo_full_thr is unused.
-@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":202214:4:202214:9|Trying to extract state machine for register cs_state.
-@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":201962:4:201962:9|Trying to extract state machine for register cs_state.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":201717:38:201717:45|Input rbr_fifo is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":201738:10:201738:19|Input fifo_empty is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":201741:10:201741:15|Input thr_rd is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":201742:10:201742:25|Input fifo_almost_full is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199071:10:199071:19|Input axi_aclk_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199072:10:199072:21|Input axi_resetn_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199112:29:199112:41|Input axi_s0_awid_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199113:17:199113:31|Input axi_s0_awaddr_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199114:16:199114:29|Input axi_s0_awlen_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199115:16:199115:30|Input axi_s0_awsize_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199116:16:199116:31|Input axi_s0_awburst_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199117:10:199117:24|Input axi_s0_awlock_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199118:16:199118:31|Input axi_s0_awcache_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199119:16:199119:29|Input axi_s0_awqos_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199120:16:199120:32|Input axi_s0_awregion_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199121:16:199121:30|Input axi_s0_awprot_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199122:10:199122:25|Input axi_s0_awvalid_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199124:31:199124:44|Input axi_s0_wdata_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199125:37:199125:50|Input axi_s0_wstrb_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199126:10:199126:23|Input axi_s0_wlast_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199127:10:199127:24|Input axi_s0_wvalid_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199132:10:199132:24|Input axi_s0_bready_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199133:29:199133:41|Input axi_s0_arid_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199134:17:199134:31|Input axi_s0_araddr_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199135:16:199135:29|Input axi_s0_arlen_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199136:16:199136:30|Input axi_s0_arsize_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199137:16:199137:31|Input axi_s0_arburst_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199138:10:199138:24|Input axi_s0_arlock_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199139:16:199139:31|Input axi_s0_arcache_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199140:16:199140:29|Input axi_s0_arqos_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199141:16:199141:32|Input axi_s0_arregion_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199142:16:199142:30|Input axi_s0_arprot_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199143:10:199143:25|Input axi_s0_arvalid_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199150:10:199150:24|Input axi_s0_rready_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199154:29:199154:41|Input axi_s1_awid_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199155:17:199155:31|Input axi_s1_awaddr_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199156:16:199156:29|Input axi_s1_awlen_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199157:16:199157:30|Input axi_s1_awsize_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199158:16:199158:31|Input axi_s1_awburst_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199159:10:199159:24|Input axi_s1_awlock_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199160:16:199160:31|Input axi_s1_awcache_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199161:16:199161:29|Input axi_s1_awqos_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199162:16:199162:32|Input axi_s1_awregion_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199163:16:199163:30|Input axi_s1_awprot_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199164:10:199164:25|Input axi_s1_awvalid_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199166:31:199166:44|Input axi_s1_wdata_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199167:37:199167:50|Input axi_s1_wstrb_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199168:10:199168:23|Input axi_s1_wlast_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199169:10:199169:24|Input axi_s1_wvalid_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199174:10:199174:24|Input axi_s1_bready_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199175:29:199175:41|Input axi_s1_arid_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199176:17:199176:31|Input axi_s1_araddr_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199177:16:199177:29|Input axi_s1_arlen_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199178:16:199178:30|Input axi_s1_arsize_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199179:16:199179:31|Input axi_s1_arburst_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199180:10:199180:24|Input axi_s1_arlock_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199181:16:199181:31|Input axi_s1_arcache_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199182:16:199182:29|Input axi_s1_arqos_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199183:16:199183:32|Input axi_s1_arregion_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199184:16:199184:30|Input axi_s1_arprot_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199185:10:199185:25|Input axi_s1_arvalid_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199192:10:199192:24|Input axi_s1_rready_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199196:10:199196:19|Input fifo_clk_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199197:10:199197:21|Input fifo_wr_en_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199198:16:199198:29|Input fifo_wr_data_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199199:10:199199:28|Input fifo_interface_en_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199200:10:199200:28|Input fifo_address_rstn_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199205:10:199205:23|Input axis_rx_aclk_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199206:10:199206:24|Input axi_rx_tvalid_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199207:31:199207:44|Input axi_rx_tdata_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199208:37:199208:50|Input axi_rx_tstrb_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199209:10:199209:23|Input axi_rx_tlast_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226570:10:226570:14|Input clk_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226571:10:226571:14|Input rst_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226575:31:226575:39|Input addr_s0_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226583:31:226583:39|Input addr_s1_i is unused.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":197730:7:197730:32|Synthesizing module pll0_ipgen_lscc_pll_uniq_1 in library work.
+@N: CG364 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":194545:63:194545:73|Synthesizing module pll0_uniq_1 in library work.
+@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225539:107:225539:117|Removing redundant assignment.
+@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225737:67:225737:76|Removing redundant assignment.
+@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225749:59:225749:68|Removing redundant assignment.
+@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226210:107:226210:117|Removing redundant assignment.
+@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226408:67:226408:76|Removing redundant assignment.
+@N: CG179 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226420:59:226420:68|Removing redundant assignment.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v":65:7:65:13|Input reset_n is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\i3c_xo5_la0_gen.v":83:7:83:16|Input trigger_en is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199706:10:199706:14|Input DCD_N is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199707:10:199707:14|Input CTS_N is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199708:10:199708:14|Input DSR_N is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199709:10:199709:13|Input RI_N is unused.
+@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":202566:4:202566:9|Trying to extract state machine for register tx_state.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":202521:10:202521:23|Input fifo_empty_thr is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":202522:10:202522:22|Input fifo_full_thr is unused.
+@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":202239:4:202239:9|Trying to extract state machine for register cs_state.
+@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":201987:4:201987:9|Trying to extract state machine for register cs_state.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":201742:38:201742:45|Input rbr_fifo is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":201763:10:201763:19|Input fifo_empty is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":201766:10:201766:15|Input thr_rd is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":201767:10:201767:25|Input fifo_almost_full is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199096:10:199096:19|Input axi_aclk_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199097:10:199097:21|Input axi_resetn_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199137:29:199137:41|Input axi_s0_awid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199138:17:199138:31|Input axi_s0_awaddr_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199139:16:199139:29|Input axi_s0_awlen_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199140:16:199140:30|Input axi_s0_awsize_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199141:16:199141:31|Input axi_s0_awburst_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199142:10:199142:24|Input axi_s0_awlock_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199143:16:199143:31|Input axi_s0_awcache_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199144:16:199144:29|Input axi_s0_awqos_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199145:16:199145:32|Input axi_s0_awregion_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199146:16:199146:30|Input axi_s0_awprot_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199147:10:199147:25|Input axi_s0_awvalid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199149:31:199149:44|Input axi_s0_wdata_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199150:37:199150:50|Input axi_s0_wstrb_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199151:10:199151:23|Input axi_s0_wlast_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199152:10:199152:24|Input axi_s0_wvalid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199157:10:199157:24|Input axi_s0_bready_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199158:29:199158:41|Input axi_s0_arid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199159:17:199159:31|Input axi_s0_araddr_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199160:16:199160:29|Input axi_s0_arlen_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199161:16:199161:30|Input axi_s0_arsize_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199162:16:199162:31|Input axi_s0_arburst_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199163:10:199163:24|Input axi_s0_arlock_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199164:16:199164:31|Input axi_s0_arcache_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199165:16:199165:29|Input axi_s0_arqos_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199166:16:199166:32|Input axi_s0_arregion_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199167:16:199167:30|Input axi_s0_arprot_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199168:10:199168:25|Input axi_s0_arvalid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199175:10:199175:24|Input axi_s0_rready_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199179:29:199179:41|Input axi_s1_awid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199180:17:199180:31|Input axi_s1_awaddr_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199181:16:199181:29|Input axi_s1_awlen_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199182:16:199182:30|Input axi_s1_awsize_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199183:16:199183:31|Input axi_s1_awburst_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199184:10:199184:24|Input axi_s1_awlock_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199185:16:199185:31|Input axi_s1_awcache_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199186:16:199186:29|Input axi_s1_awqos_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199187:16:199187:32|Input axi_s1_awregion_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199188:16:199188:30|Input axi_s1_awprot_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199189:10:199189:25|Input axi_s1_awvalid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199191:31:199191:44|Input axi_s1_wdata_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199192:37:199192:50|Input axi_s1_wstrb_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199193:10:199193:23|Input axi_s1_wlast_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199194:10:199194:24|Input axi_s1_wvalid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199199:10:199199:24|Input axi_s1_bready_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199200:29:199200:41|Input axi_s1_arid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199201:17:199201:31|Input axi_s1_araddr_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199202:16:199202:29|Input axi_s1_arlen_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199203:16:199203:30|Input axi_s1_arsize_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199204:16:199204:31|Input axi_s1_arburst_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199205:10:199205:24|Input axi_s1_arlock_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199206:16:199206:31|Input axi_s1_arcache_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199207:16:199207:29|Input axi_s1_arqos_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199208:16:199208:32|Input axi_s1_arregion_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199209:16:199209:30|Input axi_s1_arprot_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199210:10:199210:25|Input axi_s1_arvalid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199217:10:199217:24|Input axi_s1_rready_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199221:10:199221:19|Input fifo_clk_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199222:10:199222:21|Input fifo_wr_en_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199223:16:199223:29|Input fifo_wr_data_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199224:10:199224:28|Input fifo_interface_en_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199225:10:199225:28|Input fifo_address_rstn_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199230:10:199230:23|Input axis_rx_aclk_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199231:10:199231:24|Input axi_rx_tvalid_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199232:31:199232:44|Input axi_rx_tdata_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199233:37:199233:50|Input axi_rx_tstrb_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":199234:10:199234:23|Input axi_rx_tlast_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226859:10:226859:14|Input clk_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226860:10:226860:14|Input rst_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226864:31:226864:39|Input addr_s0_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226872:31:226872:39|Input addr_s1_i is unused.
 @N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1025:10:1025:14|Input clk_i is unused.
 @N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1026:10:1026:17|Input clk_en_i is unused.
 @N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1027:10:1027:16|Input wr_en_i is unused.
 @N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1028:10:1028:14|Input rst_i is unused.
 @N: CL159 :"C:\lscc\radiant\2025.2\ip\pmi\../common/ram_dp_true/rtl\lscc_ram_dp_true.v":1029:27:1029:35|Input wr_data_i is unused.
-@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225748:4:225748:9|Trying to extract state machine for register ahbl_state.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225634:10:225634:25|Input ahbl_hmastlock_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225635:16:225635:27|Input ahbl_hprot_i is unused.
-@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225077:4:225077:9|Trying to extract state machine for register ahbl_state.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":224963:10:224963:25|Input ahbl_hmastlock_i is unused.
-@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":224964:16:224964:27|Input ahbl_hprot_i is unused.
-@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":216319:4:216319:9|Trying to extract state machine for register bus_sm_cs.
+@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":226037:4:226037:9|Trying to extract state machine for register ahbl_state.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225923:10:225923:25|Input ahbl_hmastlock_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225924:16:225924:27|Input ahbl_hprot_i is unused.
+@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225366:4:225366:9|Trying to extract state machine for register ahbl_state.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225252:10:225252:25|Input ahbl_hmastlock_i is unused.
+@N: CL159 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":225253:16:225253:27|Input ahbl_hprot_i is unused.
+@N: CL201 :"C:\Users\billzhang\Desktop\I3C_XO5\I3C_XO5\impl_1\reveal_workspace\tmpreveal\I3C_XO5_rvl_top.v":216608:4:216608:9|Trying to extract state machine for register bus_sm_cs.
 @N|Running in 64-bit mode
 

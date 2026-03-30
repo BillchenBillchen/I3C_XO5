@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2025 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Mar 15 00:04:03 2026
+Thu Mar 26 14:51:35 2026
 
 
 Command: bitgen -w -gui -msgset C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/promote.xml -g REGISTER_INIT:ON I3C_XO5_impl_1.udb C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/impl_1/I3C_XO5_impl_1 
@@ -81,7 +81,7 @@ Bitstream generation complete!
 
 Note: Found debugger inserted in the design
 
-Total CPU Time: 26 secs 
-Total REAL Time: 28 secs 
-Peak Memory Usage: 730 MB
+Total CPU Time: 25 secs 
+Total REAL Time: 26 secs 
+Peak Memory Usage: 686 MB
 

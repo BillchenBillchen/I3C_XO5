@@ -1,6 +1,6 @@
 component gpio0 is
     port(
-        gpio_io: inout std_logic_vector(8 downto 0);
+        gpio_io: inout std_logic_vector(11 downto 0);
         clk_i: in std_logic;
         resetn_i: in std_logic;
         apb_penable_i: in std_logic;

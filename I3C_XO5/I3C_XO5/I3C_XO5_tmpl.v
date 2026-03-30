@@ -41,13 +41,13 @@
 
 //Verilog instantiation template
 
-I3C_XO5 _inst (.led_o(), 
+I3C_XO5 _inst (.rxd_i(), 
+               .txd_o(), 
                .m0_scl_io(), 
                .m0_sda_io(), 
                .s0_rst_o(), 
                .s0_scl_io(), 
                .s0_sda_io(), 
                .rstn_I(), 
-               .risc_inst_timer_timer_irq_o_port(), 
-               .rxd_i(), 
-               .txd_o());
+               .led_o(), 
+               .risc_inst_timer_timer_irq_o_port());

@@ -25,5 +25,5 @@
 -end
 
 -do "view wave"
--do "add wave /*"
+-do "do C:/Users/billzhang/Desktop/I3C_XO5/I3C_XO5/sim/wave.do"
 -do "run -all"

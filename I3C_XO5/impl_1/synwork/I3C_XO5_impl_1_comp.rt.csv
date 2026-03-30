@@ -1,6 +1,6 @@
 Library, Design Unit ,Compile time , Hardware Gen ,Optimization Stg1 ,Optimization Stg2 , Peak Mem Usage, Incr Mem Usage, Hardware Gen ,Optimization Stg1 ,Optimization Stg2
-work, lscc_ram_dp_true_inst_Z65_layer0,0h:00m:15s,0h:00m:15s,-,0h:00m:00s,   408 MB,    21 MB,    21 MB,     0 MB,     0 MB
-work, risc_mc_ipgen_Riscv_Dbg_IMC_uniq_1,0h:00m:10s,0h:00m:00s,0h:00m:00s,0h:00m:09s,   531 MB,    79 MB,     0 MB,    17 MB,    61 MB
-work, i3c_s_ipgen_i3c_tgt_main_uniq_1_Z40_layer0,0h:00m:02s,0h:00m:00s,0h:00m:00s,0h:00m:01s,   531 MB,    22 MB,     2 MB,    10 MB,    10 MB
-work, lscc_soft_fifo_dc_Z19_layer0,0h:00m:01s,0h:00m:01s,0h:00m:00s,0h:00m:00s,   531 MB,     1 MB,     0 MB,     1 MB,     0 MB
-work, lscc_fifo_dc_main_Z18_layer0,0h:00m:02s,0h:00m:02s,-,0h:00m:00s,   531 MB,     1 MB,     1 MB,     0 MB,     0 MB
+work, lscc_ram_dp_true_inst_Z65_layer0,0h:00m:23s,0h:00m:23s,-,0h:00m:00s,   392 MB,    21 MB,    21 MB,     0 MB,     0 MB
+work, risc_mc_ipgen_Riscv_Dbg_IMC_uniq_1,0h:00m:09s,0h:00m:00s,0h:00m:01s,0h:00m:07s,   515 MB,    75 MB,     0 MB,    17 MB,    58 MB
+work, i3c_s_ipgen_i3c_tgt_main_uniq_1_Z40_layer0,0h:00m:02s,0h:00m:00s,0h:00m:00s,0h:00m:01s,   515 MB,    22 MB,     2 MB,    11 MB,    10 MB
+work, lscc_soft_fifo_dc_Z19_layer0,0h:00m:01s,0h:00m:01s,0h:00m:00s,0h:00m:00s,   515 MB,     1 MB,     1 MB,     1 MB,     0 MB
+work, lscc_fifo_dc_main_Z18_layer0,0h:00m:02s,0h:00m:02s,-,0h:00m:00s,   515 MB,     1 MB,     1 MB,     0 MB,     0 MB

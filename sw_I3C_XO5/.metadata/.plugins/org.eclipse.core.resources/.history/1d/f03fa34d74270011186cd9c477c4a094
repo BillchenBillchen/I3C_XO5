@@ -1,0 +1,264 @@
+#include "i3c_controller.h"
+#include "i3c_target.h"
+#include "uart.h"
+#include "utils.h"
+#include "reg_access.h"
+#include <stdio.h>
+#include <stdbool.h>
+#include "sys_platform.h"
+#include "iob.h"
+
+#define I3C_SLAVE_NUMS    1
+#define DATA_LENGTH       32
+#define SLAVE_ADDR        0x20
+#define DAA_WARN_RETRY    20   // 超過此重試次數額外亮 LED3，提示可能接線異常
+
+#ifdef GPIO_INST_BASE_ADDR
+#include "gpio.h"
+struct gpio_instance gpio_inst;
+#endif
+
+struct uart_instance uart_core_uart;
+struct i3c_master_instance i3cm;
+struct i3c_dev_info i3c_devinfo;
+struct i3c_target_handle_t i3cs;
+
+const uint8_t wr_buf[DATA_LENGTH] = {
+    0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,
+    0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F,
+    0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17,
+    0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F
+};
+uint8_t rd_buf[DATA_LENGTH];
+uint8_t target_tx_buf[DATA_LENGTH];  // Target TX FIFO 預填緩衝區
+uint8_t target_rx_buf[DATA_LENGTH];  // Target RX FIFO 清空緩衝區
+
+// --- stdio routing functions for printf ---
+static int lscc_uart_putc(char c, FILE *file) {
+    int ret = uart_putc(&uart_core_uart, c);
+    if (c == '\n' && ret == 0)
+        ret = uart_putc(&uart_core_uart, '\r');
+    return ret;
+}
+static int lscc_uart_getc(FILE *file) { return EOF; }
+static int lscc_uart_flush(FILE *file) { return EOF; }
+// ------------------------------------------
+
+static void simple_delay_ms(uint32_t ms) {
+    for (volatile uint32_t i = 0; i < (ms * 10000); i++);
+}
+
+static void set_led_all_off(void) {
+#ifdef GPIO_INST_BASE_ADDR
+    for (int i = 0; i < GPIO_INST_LINES_NUM; i++)
+        gpio_output_write(&gpio_inst, i, 0xFF);
+#endif
+}
+
+static void set_led_on(uint8_t id) {
+#ifdef GPIO_INST_BASE_ADDR
+    gpio_output_write(&gpio_inst, id, 0x00);
+#endif
+}
+
+static void bsp_init(void) {
+#ifdef GPIO_INST_BASE_ADDR
+    gpio_inst.instance_name = GPIO_INST_NAME;
+    gpio_init(&gpio_inst, GPIO_INST_BASE_ADDR, GPIO_INST_LINES_NUM, GPIO_INST_GPIO_DIRS);
+    set_led_all_off();
+#endif
+
+    unsigned char uart_status = uart_init(
+        &uart_core_uart, UART0_INST_BASE_ADDR,
+        UART0_INST_SYS_CLK, UART0_INST_BAUD_RATE, 1, 8);
+
+    if (uart_status != 0) {
+#ifdef GPIO_INST_BASE_ADDR
+        // LED7 恆亮：BSP / UART 初始化失敗，printf 無效，只能靠燈號
+        set_led_on(7);
+#endif
+        while(1);
+    }
+
+    iob_init(lscc_uart_putc, lscc_uart_getc, lscc_uart_flush);
+}
+
+int main(void) {
+    bsp_init();
+
+    printf("\n\nSTARTING I3C DUAL-ROLE TEST...\n");
+
+    // ── Step 1: I3C Master Init ──────────────────────────────────────
+    printf("Starting I3C Master init...\n");
+
+    if (i3c_master_init(&i3cm, I3C_M_INST_BASE_ADDR, 0,
+                        I3C_M_INST_GUI_I2C_SCL_PULSE_WIDTH - 1, 1) != 0) {
+        printf("ERROR: I3C Master init FAILED.\n");
+        // LED6 恆亮：Master IP 初始化失敗
+        set_led_all_off();
+        set_led_on(6);
+        while(1);
+    }
+    printf("I3C Master init OK.\n");
+
+    // ── Step 2: I3C Target Init ──────────────────────────────────────
+    printf("Starting I3C Target init...\n");
+
+    i3cs.base_addr = I3C_S_INST_BASE_ADDR;
+
+    if (i3c_target_init(&i3cs) != SUCCESS) {
+        printf("ERROR: I3C Target init FAILED.\n");
+        // LED5 恆亮：Target IP 初始化失敗
+        set_led_all_off();
+        set_led_on(5);
+        while(1);
+    }
+    printf("I3C Target init OK.\n");
+
+    // ── Step 3: Target FIFO Loopback Enable ─────────────────────────
+    if (i3c_target_fifo_loopback_enable(&i3cs) != SUCCESS) {
+        printf("ERROR: Target FIFO loopback enable FAILED.\n");
+        // LED4 恆亮：Target FIFO Loopback 啟用失敗
+        set_led_all_off();
+        set_led_on(4);
+        while(1);
+    }
+    printf("Target FIFO loopback enabled.\n");
+
+    // ── Step 4: Timing Parameters ────────────────────────────────────
+    uint8_t clk_val  = 15;
+    uint8_t od_val   = 15;
+    uint8_t ctrl_val = 0;
+    reg_8b_read(i3cm.base_addr | 0x04, &ctrl_val);
+    reg_8b_write(i3cm.base_addr | 0x04, ctrl_val & ~0x01);
+    reg_8b_write(i3cm.base_addr | 0x00, clk_val);
+    reg_8b_write(i3cm.base_addr | 0x1A, od_val);
+    reg_8b_write(i3cm.base_addr | 0x04, ctrl_val | 0x01);
+
+    // ── Step 5: DAA (包含自動重試與成功燈號) ──────────────────────────
+    printf("Starting DAA...\n");
+
+    i3c_devinfo.pid    = 0;
+    uint8_t dyn_address = 0;
+    uint8_t daa_toggle  = 0;
+    uint32_t daa_retry  = 0;
+
+    while (1) {
+        // LED2 閃爍：DAA 搜尋進行中
+        if (daa_toggle) {
+            set_led_all_off();
+            set_led_on(2);
+        } else {
+            set_led_all_off();
+        }
+
+        // 若重試超過 DAA_WARN_RETRY 次，額外亮 LED3 警告
+        if (daa_retry >= DAA_WARN_RETRY) {
+            set_led_on(3);
+        }
+        daa_toggle = !daa_toggle;
+
+        uint8_t ret = i3c_master_daa(&i3cm, &i3c_devinfo, &dyn_address,
+                                     I3C_SLAVE_NUMS, SLAVE_ADDR);
+        if (ret == 0) {
+            printf("\n>> DAA SUCCESS! Dynamic Addr = 0x%02X\n", dyn_address);
+
+            // DAA 成功：LED 0~3 同時閃爍三次
+            for (int f = 0; f < 3; f++) {
+                set_led_all_off();
+                set_led_on(0); set_led_on(1); set_led_on(2); set_led_on(3);
+                simple_delay_ms(100);
+                set_led_all_off();
+                simple_delay_ms(100);
+            }
+            break;
+        }
+
+        daa_retry++;
+        printf(".");
+
+        // 軟重置，嘗試恢復匯流排
+        reg_8b_write(i3cm.base_addr | 0x0C, 0x01);
+        simple_delay_ms(5);
+        reg_8b_write(i3cm.base_addr | 0x0C, 0x00);
+    }
+
+    // ── Step 6: Master Private Write ────────────────────────────────
+    // LED1 恆亮：DAA 完成，即將進行 Write
+    set_led_all_off();
+    set_led_on(1);
+    printf("DAA done. Starting Private Write...\n");
+
+    i3c_master_private_i3c_write(&i3cm, (uint8_t *)wr_buf, DATA_LENGTH, SLAVE_ADDR);
+    simple_delay_ms(100);
+
+    // ── Step 7: Target 清空 RX FIFO ─────────────────────────────────
+    // Master Write 完成後，Target RX FIFO 已收到資料，必須先讀出清空，
+    // 避免殘留資料汙染後續 TX FIFO 的 loopback 路徑。
+    printf("Draining Target RX FIFO...\n");
+    i3cs.buf = (unsigned int *) target_rx_buf;
+    i3cs.len = DATA_LENGTH;
+    i3c_target_private_read(&i3cs);
+    printf("Target RX FIFO drained.\n");
+
+    // ── Step 8: Target 預填 TX FIFO ─────────────────────────────────
+    // 在 Master 發起 Read 之前，Target TX FIFO 必須備妥資料，
+    // 否則 Master 收到空回應或 NACK，交易將掛住。
+    printf("Pre-filling Target TX FIFO...\n");
+    for (int i = 0; i < DATA_LENGTH; i++) {
+        target_tx_buf[i] = wr_buf[i];
+    }
+    i3cs.buf = (unsigned int *) target_tx_buf;
+    i3cs.len = DATA_LENGTH;
+    i3c_target_private_write(&i3cs);
+    printf("Target TX FIFO pre-filled.\n");
+
+    // ── Step 9: Master Private Read ─────────────────────────────────
+    // LED1 + LED0 恆亮：Write 完成，即將進行 Read
+    set_led_on(0);
+    printf("Starting Private Read...\n");
+
+    i3c_master_private_i3c_read(&i3cm, (uint8_t *)rd_buf, DATA_LENGTH - 2, SLAVE_ADDR);
+
+    bool data_match = true;
+    for (int i = 0; i < DATA_LENGTH - 2; i++) {
+        printf("rd[%d] = 0x%02X\n", i, rd_buf[i]);
+        if (rd_buf[i] != wr_buf[i]) {
+            printf("  MISMATCH: expected 0x%02X\n", wr_buf[i]);
+            data_match = false;
+        }
+    }
+
+    i3c_master_private_i3c_read(&i3cm, (uint8_t *)rd_buf, 2, SLAVE_ADDR);
+    printf("rd[30] = 0x%02X, rd[31] = 0x%02X\n", rd_buf[0], rd_buf[1]);
+    if (rd_buf[0] != wr_buf[30] || rd_buf[1] != wr_buf[31])
+        data_match = false;
+
+    // ── Step 10: Result ──────────────────────────────────────────────
+    set_led_all_off();
+    set_led_on(0);
+
+    if (data_match) {
+        printf("All data match! TEST PASSED.\n");
+        // LED 0~7 掃描循環：全部測試通過
+        uint8_t sweep_idx = 0;
+        while(1) {
+            set_led_all_off();
+            set_led_on(sweep_idx);
+            simple_delay_ms(100);
+            sweep_idx = (sweep_idx + 1) % 8;
+        }
+    } else {
+        printf("ERROR: Data mismatch! TEST FAILED.\n");
+        // LED0 閃爍：資料驗證失敗
+        while(1) {
+            set_led_all_off();
+            set_led_on(0);
+            simple_delay_ms(500);
+            set_led_all_off();
+            simple_delay_ms(500);
+        }
+    }
+
+    return 0;
+}
